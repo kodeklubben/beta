@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kodeklubben (server)</title>
+    <style type="text/css">.App__container__vvzpy {
+  margin-top: 125px; }
+.NavBar__flagGroup__3f0i_ {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px; }
+
+.NavBar__flag__3cn9U {
+  width: 30px;
+  height: 20px;
+  float: right;
+  margin-left: 5px; }
+.NavLink__linkBase__1m4Sm {
+  text-decoration: none !important;
+  font-size: 17pt; }
+
+.NavLink__linkStudent__1zq2x {
+  color: #265732; }
+
+.NavLink__linkTeacher__25L85 {
+  color: #215651; }
+.ModeIndicator__modeIndicator__gvKNO {
+  font-size: 1.2em;
+  margin-top: -15px;
+  text-align: right; }
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic);.Footer__container__1SZrv {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 15pt;
+  font-family: "Roboto", "Verdana", sans-serif; }
+  .Footer__container__1SZrv a {
+    text-decoration: none; }
+
+.Footer__containerStudent__3Yr5f {
+  background-color: #b1daae;
+  color: #265732; }
+  .Footer__containerStudent__3Yr5f a {
+    color: #265732; }
+
+.Footer__containerTeacher__36KZb {
+  background-color: #a3cccb;
+  color: #215651; }
+  .Footer__containerTeacher__36KZb a {
+    color: #215651; }
+
+.Footer__center__3xqZ_ {
+  text-align: center; }
+
+.Footer__inline__1Q6ds {
+  display: inline-block;
+  margin: 20px 10px; }
+
+.Footer__svg__29r7H {
+  width: 100px;
+  height: auto;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__img__25Ink {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: auto;
+  height: 50px;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__divider__LJrti {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid;
+  width: 50%; }
+
+.Footer__svg__29r7H:hover,
+.Footer__img__25Ink:hover {
+  transform: scale(1.2); }
+</style>
+<link href="/vendor2.04c375e06c230a54ba3e.css" rel="stylesheet"></head>
+<body>
+    <div id="app"><div><div class="App__container__vvzpy" data-reactroot="" data-reactid="1" data-react-checksum="1502750671"><div class="container-fluid" data-reactid="2"><div class="row" data-reactid="3"><nav class="navbar navbar-default navbar-fixed-top" data-reactid="4"><div class="container-fluid" data-reactid="5"><div class="btn-language-dropdown pull-right dropdown btn-group" data-reactid="6"><button class="dropdown-toggle btn-language-student btn-language btn btn-default" id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" data-reactid="7"><span data-reactid="8"><!-- react-text: 9 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="10"/></span></button><ul class="dropdown-menu" role="menu" aria-labelledby="language-dropdown" data-reactid="11"><li role="presentation" class="" data-reactid="12"><a role="menuitem" href="" tabindex="-1" data-reactid="13"><span data-reactid="14"><!-- react-text: 15 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="16"/></span></a></li><li role="presentation" class="" data-reactid="17"><a role="menuitem" href="" tabindex="-1" data-reactid="18"><span data-reactid="19"><!-- react-text: 20 -->Norsk nynorsk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="21"/></span></a></li><li role="presentation" class="" data-reactid="22"><a role="menuitem" href="" tabindex="-1" data-reactid="23"><span data-reactid="24"><!-- react-text: 25 -->Svenska<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="26"/></span></a></li><li role="presentation" class="" data-reactid="27"><a role="menuitem" href="" tabindex="-1" data-reactid="28"><span data-reactid="29"><!-- react-text: 30 -->Dansk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="31"/></span></a></li></ul></div><div class="navbar-header" data-reactid="32"><span class="navbar-brand" data-reactid="33"><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/" data-reactid="34"><span class="glyphicon glyphicon-home" data-reactid="35"></span></a><span data-reactid="36"><!-- react-text: 37 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/scratch" data-reactid="38">scratch</a></span><span class="hidden-xs" data-reactid="39"><!-- react-text: 40 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm active" href="/scratch/snoballkrig/snoballkrig" data-reactid="41">snoballkrig</a></span></span><button type="button" class="navbar-toggle collapsed" data-reactid="42"><span class="sr-only" data-reactid="43">Toggle navigation</span><span class="icon-bar" data-reactid="44"></span><span class="icon-bar" data-reactid="45"></span><span class="icon-bar" data-reactid="46"></span></button></div><div class="navbar-collapse collapse" data-reactid="47"><div class="navbar-form navbar-right" data-reactid="48"><div class="form-group" data-reactid="49"><input type="text" placeholder="Søk" class="form-control" data-reactid="50"/></div><!-- react-text: 51 --> <!-- /react-text --><div class="btn-toggle" data-reactid="52"><div data-reactid="53">Velg modus:</div><div class="btn-group btn-group" data-reactid="54"><button class="btn-student-nav active btn btn-default" type="button" data-reactid="55">ELEV</button><button class="btn-teacher-nav btn btn-default" type="button" data-reactid="56">LÆRER</button></div></div></div></div></div></nav></div><div class="row" data-reactid="57"><div class="col-xs-12" data-reactid="58"><div class="ModeIndicator__modeIndicator__gvKNO" data-reactid="59"><!-- react-text: 60 -->Du er i <!-- /react-text --><span class="text-student" data-reactid="61">elevmodus</span></div></div></div></div><div data-reactid="62"><h1 data-reactid="63"><!-- react-text: 64 -->Snøballkrig<!-- /react-text --><!-- react-text: 65 --> - Level <!-- /react-text --><!-- react-text: 66 -->4<!-- /react-text --></h1><p data-reactid="67"><i data-reactid="68"><!-- react-text: 69 -->av <!-- /react-text --><!-- react-text: 70 -->Geir Arne Hjelle<!-- /react-text --></i></p><div data-reactid="71"><section class="intro" id="introduksjon">
+<h1 class="intro" id="introduksjon">Introduksjon</h1>
+<p>I denne oppgaven vil vi lage et spill hvor det er om å gjøre å jage
+bort de slemme guttene ved å kaste snøball på dem. Underveis vil vi
+lære hvordan vi kan gjøre et spill mer utfordrende etterhvert ved at
+figurene vi spiller mot blir raskere og vanskeligere å jage bort.</p>
+<figure><img src="/_/tjesi_oppgaver/src/scratch/snoballkrig/snoballkrig.0a78b3.png" alt="" /></figure>
+</section>
+<section class="activity" id="steg-1-en-snoballkaster">
+<h1 class="activity" id="steg-1-en-snoballkaster">Steg 1: En snøballkaster</h1>
+<p><em>Vi begynner med å lage oss en passelig bakgrunn, samt snøballkasteren
+som vi skal styre.</em></p>
+<section class="check" id="sjekkliste">
+<h2 class="check" id="sjekkliste">Sjekkliste</h2>
+<ul>
+<li>
+<p>Start et nytt prosjekt. Slett kattefiguren.</p>
+</li>
+<li>
+<figure>La oss lage en bakgrunn. Til dette spillet trenger vi en ganske
+enkel bakgrunn med litt vinterfølelse. Den kan vi tegne selv:</figure>
+<p>Velg <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAASCAIAAAAL/BNYAAAAA3NCSVQICAjb4U/gAAAAGXRFWHRTb2Z0d2FyZQBnbm9tZS1zY3JlZW5zaG907wO/PgAAAWhJREFUKJGV001LAmEQB/CZTSQRF1JEyIMHk67b+gFs6ZCH6mLUat+m+iC9UDft4kU7lUJpkVHdTExccy3yYC2G4jMdNjZbXannOj9m/jPw4LOqwp8fZ1UgIiICgEKxuLO9+1StTtIAgIi1Wm1/78Ax7Zj1+y01ESHie6dzdHg86PfFsGC328drnRJRMnmiNBS3Z0YQBL1ks4qRO8/l8/kpjlsQw26PZ/yWjDFEVBQlk8nYbDae5yVpUR9o1kTEcRwAnJ3l2m9txgbSkuT1eg1g1gBQr9dvrq8AMTgXjEQixia/tNH4/u6h2/10uXhZlp1Op0HNGgDUZjObPWVEm/GNQCAwTH+00TidTmvaRzwhh0Vx9FDfF0TEXq+n1BuNhhqNLutxGWN6C7PWNC2VTJVKt2FRjK3HhqeN0ZVK5eKygADl8uNoAHPul9YrMca7+NW1FSObZe5mSw3Nh7YSCZ/PN6E3/us3fAGf6qiB37u5YAAAAABJRU5ErkJggg==" alt="Tegn ny bakgrunn" /> for å tegne en
+ny bakgrunn. Pass på at du bruker vektorgrafikk, og tegn en stor
+firkant som dekker hele bakgrunnen. Velg så en mørkeblå
+forgrunnsfarge og en lysere bakgrunnsfarge. Klikk på
+malingsspannet for å fylle firkanten med farge, og velg en
+overgang nederst til venstre. Klikk på bakgrunnen for å fylle den
+med farge.</p>
+<figure>Velg nå hvit som forgrunnsfarge, og lag en litt mindre boks som
+dekker nedre del av bakgrunnen. Fyll også denne med passende farger.</figure>
+<figure><img src="/_/tjesi_oppgaver/src/scratch/snoballkrig/bakgrunn.4b9533.png" alt="" /></figure>
+<figure>Kall bakgrunnen for <code>Spill</code>.</figure>
+</li>
+<li>
+<p>Legg følgende lille skript på scenen:</p>
+<pre class=blocks>når grønt flagg klikkes
+send melding [start v]
+</pre>
+<p>Du har kanskje sett dette trikset tidligere. Dette gjør det
+enklere for oss å senere komme tilbake og legge på en startmeny og
+lignende.</p>
+</li>
+<li>
+<p>Neste steg er å finne en passende figur som vi kan styre rundt og
+kaste snøballer med. Vi har brukt snømannen, <code>Fantasi/Snowman</code>, men
+du kan bruke en figur du liker. Gi figuren navnet <code>Helten</code>.</p>
+</li>
+<li>
+<p>Lag en ny variabel, <code class="blockdata">hastighet</code>, som gjelder kun for
+denne figuren, og lag dette skriptet:</p>
+<pre class=blocks>når grønt flagg klikkes
+sett størrelse til (75) %
+begrens rotasjon [vend sideveis v]
+sett [hastighet v] til [5]
+</pre>
+<p>På det grønne flagget legger vi innstillinger som skal gjelde for
+<strong>Helten</strong> gjennom hele spillet. Endre gjerne på størrelsen og
+hastigheten etterhvert som du tester spillet, slik at du finner
+innstillinger du liker.</p>
+</li>
+<li>
+<p>Nå kan vi lage selve hovedløkken til <strong>Helten</strong>. Lag først en løkke
+som starter på meldingen <code>start</code>:</p>
+<pre class=blocks>når jeg mottar [start v]
+gå til x: (0) y: (-75)
+for alltid
+slutt
+</pre>
+</li>
+<li>
+<p>Inne i løkken trenger vi to <code class="blockcontrol">hvis</code>-klosser som flytter
+<strong>Helten</strong> <code class="blockdata">hastighet</code> steg mot høyre eller venstre når
+piltastene høyre og venstre er trykket. Lag disse selv.</p>
+</li>
+<li>
+<p>Til slutt lager du en <code class="blockcontrol">hvis</code>-kloss hvor du sender ut
+meldingen <code>kast</code> når mellomrom-tasten trykkes.</p>
+</li>
+</ul>
+</section>
+<section class="flag" id="test-prosjektet">
+<h2 class="flag" id="test-prosjektet">Test prosjektet</h2>
+<figure><strong>Klikk på det grønne flagget.</strong></figure>
+<ul>
+<li>
+<p>Beveger figuren din seg rundt på scenen når du trykker høyre og
+venstre piltast? Det skal foreløbig ikke skje noe når du trykker
+mellomrom, siden ingen figurer svarer på <code>kast</code>-meldingen.</p>
+</li>
+<li>
+<p>Du må sannsynligvis endre litt på <code>y</code>-posisjonen figuren din starter
+på, slik at det ser naturlig ut i forhold til bakgrunnen.</p>
+</li>
+<li>
+<p>Hvis du har en figur med flere drakter kan du også bruke
+<code class="blocklooks">neste drakt</code>-klosser for å animere figuren din slik
+at den beveger seg mer naturlig.</p>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-2-mange-snoballer">
+<h1 class="activity" id="steg-2-mange-snoballer">Steg 2: Mange snøballer</h1>
+<p><em>Det blir ingen snøballkrig uten snøballer. La oss lage kjempemange av
+dem! Med kram snø!</em></p>
+<section class="check" id="sjekkliste-2">
+<h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
+<ul>
+<li>
+<p>Tegn en ny figur. Bruk sirkelverkøyet til å tegne en liten hvit
+sirkel, fargelegg den deretter slik at den blir helt hvit. Trykk på
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAaCAYAAACgoey0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGLSURBVEhLxZbbboJAFEX9Nv//oV6w9QLUxqbekJsggno6m0SDkZ7uoNGHnRCzmDUzjJndiqJIXpFWVbr2PLFtR4bDkViDd3nrdBvHsgblWGFYv7CLOAgCGU9sgTyKYsmyTE6nU+Pg/dnsu1zAdPp1s6sXse24slqv5XA8PjTxdisfZgdd9/NKfhFjW7P9XorDgUq73aY4jJekafnJqp/1SpwXhbCBmGXBqeJ9ngsbiFkWnCrGVrOBmGXBqeKdOYlsIGZZcKo43e2EDcQsC04V4/SxgZhl/z3V2yQRJpCew/Bg1BXjz35OdfCmz9XxVHEUx8KkOhGGB6OKQ3NTsYGcZcGp4iAMhQ3ELAtOFfvmhmIDMcuCU8Ub3xc2ELMsOFXsbTbCBmKWBaeKUQLYQMyy4P4Uj8YT+ZnPyzLABGKGA4NmgzpVex97Zla9viXzxUKWq9VDgrE63V7ZQHw/qBdjNuhGfVPSsPLFcnl3hqNxbd+C66pl4gfHdKN72mX13bqVnrf7Rvysjv0y8S8qKUloDR4MNgAAAABJRU5ErkJggg==" alt="Velg senterpunkt" /> og pass på at
+senterpunktet er satt midt på snøballen. Kall figuren <code>Snøball</code>.</p>
+</li>
+<li>
+<p>På samme måte som for <strong>Helten</strong> setter vi først opp noen
+standardinnstillinger for snøballen. Lag en variabel
+<code class="blockdata">hastighet</code> som kun gjelder for denne figuren:</p>
+<pre class=blocks>når grønt flagg klikkes
+skjul
+sett størrelse til (40) %
+sett [hastighet v] til [10]
+</pre>
+</li>
+<li>
+<p>Vi bruker <code class="blocklooks">skjul</code> fordi vi vil lage kloner (kopier) av
+denne snøballen som vi kaster av gårde. Dette er et veldig nyttig
+triks i Scratch. Selve koden som reagerer på <code>kast</code>-meldingen er
+veldig enkel.</p>
+<pre class=blocks>når jeg mottar [kast v]
+lag klon av [meg v]
+</pre>
+</li>
+<li>
+<p>Selve oppførselen til hver enkelt snøball programmerer vi så på en
+<code class="blockcontrol">når jeg starter som klon</code>-kloss.</p>
+<pre class=blocks>når jeg starter som klon
+gå til [Helten v]
+pek i retning ([retning v] av [Helten v])
+vis
+gjenta til &lt;berører [kant v]&gt;
+    gå (hastighet) steg
+slutt
+slett denne klonen
+</pre>
+</li>
+</ul>
+</section>
+<section class="flag" id="test-prosjektet-2">
+<h2 class="flag" id="test-prosjektet-2">Test prosjektet</h2>
+<figure><strong>Klikk på det grønne flagget.</strong></figure>
+<ul>
+<li>
+<figure>Hva skjer når du trykker mellomrom-tasten? Kastes det snøballer i
+riktig retning?</figure>
+</li>
+<li>
+<p>Det ser kanskje ikke ut som om <strong>Helten</strong> kaster snøballene med
+hendene? Du kan legge på noen <code class="blockmotion">Bevegelse</code>-klosser rett
+før du <code class="blocklooks">vis</code>er snøballen for at det skal se bedre ut.</p>
+</li>
+<li>
+<p>Som en liten utfordring kan du også prøve å legge på litt effekt av
+tyngdekraften på snøballen ved å endre litt på <code>y</code> mens snøballen
+flyr.</p>
+</li>
+<li>
+<p>Et lite problem er at <strong>Helten</strong> vår er <em>for</em> flink til å kaste
+snøball! Hver gang vi trykker mellomrom blir det kastet mange
+snøballer. Dette kan vi løse ganske enkelt ved å vente til
+mellomrom-tasten er sluppet før vi kaster snøballen. Legg til</p>
+<pre class=blocks>vent til &lt;ikke &lt;tast [mellomrom v] trykket?&gt;&gt;
+</pre>
+<p>på <strong>Helten</strong>-figuren før <code>kast</code>-meldingen sendes.</p>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-3-slemme-gutter">
+<h1 class="activity" id="steg-3-slemme-gutter">Steg 3: Slemme gutter</h1>
+<p><em>Nå skal vi se hvordan vi kan lage slemme gutter som prøver å ta
+oss. La oss jage dem bort med snøballer.</em></p>
+<section class="check" id="sjekkliste-3">
+<h2 class="check" id="sjekkliste-3">Sjekkliste</h2>
+<ul>
+<li>
+<p>Lag en ny figur. Vi har brukt <code>Mennesker/Boy3 walking</code>, men du kan
+bruke den figuren du liker. Kanskje det er morsommere å ha
+snøballkrig mot et monster? Kall figuren <code>Skumling</code>.</p>
+</li>
+<li>
+<p>På samme måte som for snøballene vil vi lage kloner av
+<strong>Skumling</strong>. Men først bestemmer vi hvordan han skal se ut. Lag
+igjen en variabel <code class="blockdata">hastighet</code> som gjelder kun for denne
+figuren. Deretter,</p>
+<pre class=blocks>når grønt flagg klikkes
+skjul
+gå til x: (0) y: (-70)
+begrens rotasjon [vend sideveis v]
+sett størrelse til (30) %
+sett [hastighet v] til [3]
+</pre>
+</li>
+<li>
+<figure>Vi vil la klonene dukke opp med litt tilfeldig mellomrom, og fra
+begge sider av skjermen.</figure>
+<pre class=blocks>når jeg mottar [start v]
+for alltid
+    hvis &lt;(tilfeldig tall fra (0) til (1)) = [0]&gt;
+        pek i retning (90 v)
+        sett x til (-250)
+    ellers
+        pek i retning (-90 v)
+        sett x til (250)
+    slutt
+    lag klon av [meg v]
+    vent (tilfeldig tall fra (2) til (4)) sekunder
+slutt
+</pre>
+</li>
+<li>
+<p>På samme måte som for snøballene må vi også bestemme oppførselen til
+hver enkelt <strong>Skumling</strong>.</p>
+<p>Lag først en <code class="blockcontrol">når jeg starter som klon</code>-kloss hvor
+du først viser figuren, og deretter lager en
+<code class="blockcontrol">for alltid</code>-løkke hvor figuren beveger seg
+<code class="blockdata">hastighet</code> steg og deretter venter et lite øyeblikk,
+for eksempel 0.1 sekunder.</p>
+</li>
+<li>
+<p>Deretter lager vi en <em>ny</em>
+<code class="blockcontrol">når jeg starter som klon</code>-kloss hvor vi undersøker
+om vi treffer enten en <strong>snøball</strong> eller <strong>Helten</strong>.</p>
+<pre class=blocks>når jeg starter som klon
+for alltid
+    hvis &lt;berører [Helten v]?&gt;
+        send melding [slutt v]
+        slett denne klonen
+    slutt
+    hvis &lt;berører [Snøball v]?&gt;
+        slett denne klonen
+    slutt
+slutt
+</pre>
+<p>Grunnen til at disse må ligge i et eget skript er at det første
+skriptet venter litt mellom hver gang figuren tar et steg. Hadde
+vi lagt disse <code class="blockcontrol">hvis</code>-klossene på det skriptet ville
+vi bare sjekket om <strong>Skumlingen</strong> var truffet av en snøball
+innimellom ventingen. Ved å lage et eget skript sjekker vi dette
+hele tiden.</p>
+</li>
+</ul>
+</section>
+<section class="flag" id="test-prosjektet-3">
+<h2 class="flag" id="test-prosjektet-3">Test prosjektet</h2>
+<figure><strong>Klikk på det grønne flagget.</strong></figure>
+<ul>
+<li>
+<figure>Dukker det opp skumlinger? Kommer de fra begge sider? Går de mot
+midten?</figure>
+</li>
+<li>
+<p>Hva skjer når en <strong>Skumling</strong> blir truffet av en <strong>Snøball</strong>? Du kan
+kanskje legge på en passende lydeffekt og animasjon før klonen
+slettes? Vi ser også at snøballen flyr videre etter at den har
+truffet en <strong>Skumling</strong>. Prøv å endre i skriptet for <strong>Snøball</strong>
+slik at snøballen også blir borte.</p>
+</li>
+<li>
+<p>Hva skjer når en <strong>Skumling</strong> tar <strong>Helten</strong>?</p>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-4-telle-poeng-og-avslutte-spillet">
+<h1 class="activity" id="steg-4-telle-poeng-og-avslutte-spillet">Steg 4: Telle poeng og avslutte spillet</h1>
+<figure><em>Nå som vi nesten har et ferdig spill, vil vi også ha poeng!</em></figure>
+<section class="check" id="sjekkliste-4">
+<h2 class="check" id="sjekkliste-4">Sjekkliste</h2>
+<ul>
+<li>
+<p>Å telle poeng er ganske lett. Lag først en variabel som heter
+<code class="blockdata">Poeng</code> og la den gjelde for alle figurer. La variabelen
+også vises på scenen, slik at vi ser hvor mange poeng vi har fått.</p>
+</li>
+<li>
+<p>Pass på at <code class="blockdata">Poeng</code> blir satt til 0 når meldingen
+<code>start</code> sendes, for eksempel med et skript på scenen.</p>
+</li>
+<li>
+<p>Endre <code class="blockdata">Poeng</code> med 1 når en <strong>Skumling</strong> blir truffet
+av en snøball.</p>
+</li>
+</ul>
+<p>Vi har tidligere laget meldingen <code>slutt</code> som sendes ut når <strong>Helten</strong>
+blir tatt av en <strong>Skumling</strong>. Nå vil vi bruke denne til å avslutte
+spillet. Men først, la oss lage en meny og en bakgrunn som forteller
+oss at vi tapte.</p>
+<ul>
+<li>
+<p>Klikk på <code>Scene</code> til venstre for <code>Figurer</code>, og velg
+<code>Bakgrunner</code>-fanen. Lag to kopier av bakgrunnen din og
+kall dem henholdsvis <code>Meny</code> og <code>Slutt</code>.</p>
+<p>På <code>Meny</code>-bakgrunnen kan du lage en fin tittel. Skriv også
+<code>Trykk 'S' for å starte</code>.</p>
+<p>På <code>Slutt</code>-bakgrunnen kan du skrive en passende melding for når
+spillet er slutt. Skriv også <code>Trykk 'S' for å spille igjen</code>.</p>
+</li>
+<li>
+<figure>Endre nå litt på skriptene på scenen. Først vil vi bare vise menyen
+når det grønne flagget klikkes:</figure>
+<pre class=blocks>når grønt flagg klikkes
+bytt bakgrunn til [Meny v]
+</pre>
+<figure>Deretter vil vi starte spillet når <code>S</code> trykkes:</figure>
+<pre class=blocks>når [s v] trykkes
+send melding [start v]
+</pre>
+<p>Pass også på at du bytter til bakgrunnen <code>Spill</code> når meldingen
+<code>start</code> mottas, og til bakgrunnen <code>Slutt</code> når meldingen <code>slutt</code>
+mottas.</p>
+</li>
+<li>
+<p>Til slutt må vi passe på at spillet faktisk avsluttes etter at
+<code>slutt</code>-meldingen er sendt. Legg på skript for å
+<code class="blockcontrol">slette denne klonen</code> på <strong>Snøball</strong> og <strong>Skumling</strong>,
+og skript for å skjule <strong>Helten</strong> når <code>slutt</code> mottas.</p>
+</li>
+</ul>
+</section>
+<section class="flag" id="test-prosjektet-4">
+<h2 class="flag" id="test-prosjektet-4">Test prosjektet</h2>
+<figure><strong>Klikk på det grønne flagget.</strong></figure>
+<ul>
+<li>
+<p>Fungerer programflyten? Starter spillet når du trykker <code>S</code>?
+Avsluttes spillet når <strong>Helten</strong> blir fanget? Vises de riktige
+bakgrunnene når de skal?</p>
+</li>
+<li>
+<p>Legg gjerne på litt lydeffekter og enkle animasjoner der det passer.</p>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-5-store-slemme-gutter">
+<h1 class="activity" id="steg-5-store-slemme-gutter">Steg 5: Store, slemme gutter</h1>
+<figure><em>Til slutt skal vi gjøre spillet vanskeligere jo lengre vi spiller</em></figure>
+<ul>
+<li>
+<p>Vi innfører først en ny variabel <code class="blockdata">Nivå</code> som skal gjelde
+for alle figurer. Denne styrer hvor vanskelig spillet skal være. La
+den gjerne være synlig.</p>
+</li>
+<li>
+<p>Vi regner ut nivå basert på <code class="blockdata">Poeng</code>. Utvid skriptet
+ditt som mottar <code>start</code>-meldingen på scenen med den følgende løkken:</p>
+<pre class=blocks>for alltid
+    sett [Nivå v] til ((1) + ([gulv v] av ((Poeng) / (5))))
+slutt
+</pre>
+<p>Funksjonen <code class="blockoperators">gulv</code> runder nedover. Dermed sier vi
+at <code class="blockdata">Nivå</code> skal øke for hver femte <strong>Skumling</strong> vi
+jager vekk.</p>
+</li>
+<li>
+<p>Nå kan vi bruke <code class="blockdata">Nivå</code> til å lage <strong>Skumlingene</strong>
+slemmere. For eksempel kan de bli større, gå raskere og kanskje
+trenge flere snøballer før de blir borte.</p>
+<p>Lag et par nye variabler som gjelder for denne figuren:
+<code class="blockdata">Slem</code> og <code class="blockdata">Liv</code>. <code class="blockdata">Slem</code> vil si
+noe om hvor stor og slem den enkelte <strong>Skumlingen</strong> er. Ved å la
+dette være et tall mellom 1 og <code class="blockdata">Nivå</code> blir spillet
+vanskeligere etterhvert som <code class="blockdata">Nivå</code> øker. For eksempel
+kan du legge til disse klossene på <strong>Skumling</strong> sitt hovedskript:</p>
+<pre class=blocks>når jeg starter som klon
+sett [Slem v] til (tilfeldig tall fra (1) til (Nivå))
+sett [Liv v] til (Slem)
+endre [hastighet v] med (Slem)
+endre [farge v] effekt med ((10) * (Slem))
+endre størrelse med ((5) * (Slem))
+vis
+for alltid
+    gå (hastighet) steg
+    vent (0.1) sekunder
+slutt
+</pre>
+</li>
+<li>
+<p>For at en <strong>Skumling</strong> skal tåle flere snøballer må vi også endre
+litt på hva som skjer når han blir truffet. I stedet for å bare
+slette klonen vil vi endre <code class="blockdata">Liv</code> med -1, og deretter
+gi poeng og slette klonen bare om <code class="blockdata">Liv</code> er 0.</p>
+</li>
+<li>
+<p>Vi bør kanskje gi flere poeng for å jage bort de slemme
+<strong>Skumlingene</strong>? Dette gjør du ved å endre <code class="blockdata">Poeng</code> med
+<code class="blockdata">Slem</code> når en <strong>Skumling</strong> jages bort.</p>
+</li>
+<li>
+<p>Om vi får mer enn ett poeng for hver <strong>Skumling</strong> bør vi også endre
+på hvordan vi regner ut <code class="blockdata">Nivå</code>. Hvis ikke vil spillet
+bli veldig fort vanskeligere etterhvert. Du kan for eksempel bruke
+denne utregningen:</p>
+<pre class=blocks>for alltid
+    sett [Nivå v] til ((1) + ([gulv v] av ([kvadratrot v] av ((Poeng) / (3)))))
+slutt
+</pre>
+<p>Da vil vi fortsatt øke nivået for omtrent hver femte <strong>Skumling</strong>
+som jages bort.</p>
+</li>
+</ul>
+<section class="flag" id="test-prosjektet-5">
+<h2 class="flag" id="test-prosjektet-5">Test prosjektet</h2>
+<figure><strong>Klikk på det grønne flagget.</strong></figure>
+<ul>
+<li>
+<p>Blir spillet vanskeligere etterhvert? Prøv å endre på de
+forskjellige variablene og innstilingene vi har laget slik at
+spillet blir passe vanskelig.</p>
+</li>
+<li>
+<figure>Har du flere ideer til hvordan spillet kan gjøres enda morsommere?
+Prøv dem ut!</figure>
+</li>
+</ul>
+</section>
+</section>
+</div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="72"><div class="Footer__center__3xqZ_ row" data-reactid="73"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="74">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="75">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="76"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="77"><img class="Footer__img__25Ink" src="/src/assets/graphics/smn.41dee6.jpg" data-reactid="78"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="79"><img class="Footer__img__25Ink" src="/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="80"/></a></div></div></div></div></div>
+<script type="text/javascript" src="/manifest.25bf77659b320cd3a087.js"></script><script type="text/javascript" src="/vendor.a6b03d2258d76438e766.js"></script><script type="text/javascript" src="/main.7f73ab0e0b72746f9c8a.js"></script><script type="text/javascript" src="/vendor2.04c375e06c230a54ba3e.js"></script></body>
+</html>

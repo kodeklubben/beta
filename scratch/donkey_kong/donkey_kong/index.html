@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kodeklubben (server)</title>
+    <style type="text/css">.App__container__vvzpy {
+  margin-top: 125px; }
+.NavBar__flagGroup__3f0i_ {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px; }
+
+.NavBar__flag__3cn9U {
+  width: 30px;
+  height: 20px;
+  float: right;
+  margin-left: 5px; }
+.NavLink__linkBase__1m4Sm {
+  text-decoration: none !important;
+  font-size: 17pt; }
+
+.NavLink__linkStudent__1zq2x {
+  color: #265732; }
+
+.NavLink__linkTeacher__25L85 {
+  color: #215651; }
+.ModeIndicator__modeIndicator__gvKNO {
+  font-size: 1.2em;
+  margin-top: -15px;
+  text-align: right; }
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic);.Footer__container__1SZrv {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 15pt;
+  font-family: "Roboto", "Verdana", sans-serif; }
+  .Footer__container__1SZrv a {
+    text-decoration: none; }
+
+.Footer__containerStudent__3Yr5f {
+  background-color: #b1daae;
+  color: #265732; }
+  .Footer__containerStudent__3Yr5f a {
+    color: #265732; }
+
+.Footer__containerTeacher__36KZb {
+  background-color: #a3cccb;
+  color: #215651; }
+  .Footer__containerTeacher__36KZb a {
+    color: #215651; }
+
+.Footer__center__3xqZ_ {
+  text-align: center; }
+
+.Footer__inline__1Q6ds {
+  display: inline-block;
+  margin: 20px 10px; }
+
+.Footer__svg__29r7H {
+  width: 100px;
+  height: auto;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__img__25Ink {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: auto;
+  height: 50px;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__divider__LJrti {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid;
+  width: 50%; }
+
+.Footer__svg__29r7H:hover,
+.Footer__img__25Ink:hover {
+  transform: scale(1.2); }
+</style>
+<link href="/vendor2.04c375e06c230a54ba3e.css" rel="stylesheet"></head>
+<body>
+    <div id="app"><div><div class="App__container__vvzpy" data-reactroot="" data-reactid="1" data-react-checksum="1151690969"><div class="container-fluid" data-reactid="2"><div class="row" data-reactid="3"><nav class="navbar navbar-default navbar-fixed-top" data-reactid="4"><div class="container-fluid" data-reactid="5"><div class="btn-language-dropdown pull-right dropdown btn-group" data-reactid="6"><button class="dropdown-toggle btn-language-student btn-language btn btn-default" id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" data-reactid="7"><span data-reactid="8"><!-- react-text: 9 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="10"/></span></button><ul class="dropdown-menu" role="menu" aria-labelledby="language-dropdown" data-reactid="11"><li role="presentation" class="" data-reactid="12"><a role="menuitem" href="" tabindex="-1" data-reactid="13"><span data-reactid="14"><!-- react-text: 15 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="16"/></span></a></li><li role="presentation" class="" data-reactid="17"><a role="menuitem" href="" tabindex="-1" data-reactid="18"><span data-reactid="19"><!-- react-text: 20 -->Norsk nynorsk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="21"/></span></a></li><li role="presentation" class="" data-reactid="22"><a role="menuitem" href="" tabindex="-1" data-reactid="23"><span data-reactid="24"><!-- react-text: 25 -->Svenska<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="26"/></span></a></li><li role="presentation" class="" data-reactid="27"><a role="menuitem" href="" tabindex="-1" data-reactid="28"><span data-reactid="29"><!-- react-text: 30 -->Dansk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="31"/></span></a></li></ul></div><div class="navbar-header" data-reactid="32"><span class="navbar-brand" data-reactid="33"><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/" data-reactid="34"><span class="glyphicon glyphicon-home" data-reactid="35"></span></a><span data-reactid="36"><!-- react-text: 37 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/scratch" data-reactid="38">scratch</a></span><span class="hidden-xs" data-reactid="39"><!-- react-text: 40 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm active" href="/scratch/donkey_kong/donkey_kong" data-reactid="41">donkey kong</a></span></span><button type="button" class="navbar-toggle collapsed" data-reactid="42"><span class="sr-only" data-reactid="43">Toggle navigation</span><span class="icon-bar" data-reactid="44"></span><span class="icon-bar" data-reactid="45"></span><span class="icon-bar" data-reactid="46"></span></button></div><div class="navbar-collapse collapse" data-reactid="47"><div class="navbar-form navbar-right" data-reactid="48"><div class="form-group" data-reactid="49"><input type="text" placeholder="Søk" class="form-control" data-reactid="50"/></div><!-- react-text: 51 --> <!-- /react-text --><div class="btn-toggle" data-reactid="52"><div data-reactid="53">Velg modus:</div><div class="btn-group btn-group" data-reactid="54"><button class="btn-student-nav active btn btn-default" type="button" data-reactid="55">ELEV</button><button class="btn-teacher-nav btn btn-default" type="button" data-reactid="56">LÆRER</button></div></div></div></div></div></nav></div><div class="row" data-reactid="57"><div class="col-xs-12" data-reactid="58"><div class="ModeIndicator__modeIndicator__gvKNO" data-reactid="59"><!-- react-text: 60 -->Du er i <!-- /react-text --><span class="text-student" data-reactid="61">elevmodus</span></div></div></div></div><div data-reactid="62"><h1 data-reactid="63"><!-- react-text: 64 -->Donkey Kong<!-- /react-text --><!-- react-text: 65 --> - Level <!-- /react-text --><!-- react-text: 66 -->4<!-- /react-text --></h1><p data-reactid="67"><i data-reactid="68"><!-- react-text: 69 -->av <!-- /react-text --><!-- react-text: 70 -->Geir Arne Hjelle<!-- /react-text --></i></p><div data-reactid="71"><section class="intro" id="introduksjon">
+<h1 class="intro" id="introduksjon">Introduksjon</h1>
+<p>Donkey Kong var det første virkelig plattform-spillet da det ble gitt
+ut i 1981. I tillegg til Donkey Kong var det også her vi første gang
+ble kjent med Super Mario (som het Jumpman den gang). I spillet styrer
+vi Super Mario mens han prøver å redde kjæresten sin fra Donkey Kong,
+og må passe seg for tønner og ildkuler mens han hopper mellom
+plattformer.</p>
+<figure><img src="/_/tjesi_oppgaver/src/scratch/donkey_kong/donkey_kong.301e91.png" alt="" /></figure>
+</section>
+<section class="activity" id="oversikt-over-prosjektet">
+<h1 class="activity" id="oversikt-over-prosjektet">Oversikt over prosjektet</h1>
+<p><em>Mesteparten av kodingen av Donkey Kong skal du gjøre selv. Underveis
+vil du lære hvordan du lager et enkelt plattform-spill i Scratch.</em></p>
+<section class="check" id="plan">
+<h2 class="check" id="plan">Plan</h2>
+<ul>
+<li>
+<p>Hvordan styre en plattform-helt som kan hoppe?</p>
+</li>
+<li>
+<p>Plattformer og stiger</p>
+</li>
+<li>
+<p>Donkey Kong og rullende ildkuler</p>
+</li>
+<li>
+<p>.. og andre utfordringer</p>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-1-en-hoppende-helt">
+<h1 class="activity" id="steg-1-en-hoppende-helt">Steg 1: En hoppende helt</h1>
+<p><em>Den viktigste delen av et godt plattform-spill er å ha en helt man
+kan styre rundt og hoppe fra plattform til plattform med.</em></p>
+<p>I denne delen skal vi konsentrere oss om hvordan vi kan styre
+heltefiguren, og spesielt hvordan vi får den til å hoppe og falle på
+en troverdig måte.</p>
+<section class="check" id="sjekkliste">
+<h2 class="check" id="sjekkliste">Sjekkliste</h2>
+<ul>
+<li>
+<p>Start et nytt prosjekt.</p>
+</li>
+<li>
+<p>For å kunne teste at heltefiguren oppfører seg som vi vil trenger vi
+en enkel plattform (vi skal tegne flere plattformer senere). Tegn en
+ny bakgrunn. Velg å tegne med <code>Vektorgrafikk</code>. Tegn en smal, lang
+boks nederst på skjermen. Fyll den med en farge forskjellig fra
+linjefargen.</p>
+<figure><img src="/_/tjesi_oppgaver/src/scratch/donkey_kong/plattform.8ba0bb.png" alt="" /></figure>
+</li>
+<li>
+<p>Velg eller lag deg en figur du ønsker å bruke som den hoppende
+helten du skal styre. Om du ikke bruker Scratch-katten så slett
+denne. Kall figuren <code>Jumpman</code>. Sannsynligvis vil vi gjøre figuren
+mindre slik at vi får plass til flere plattformer på skjermen. Dette
+kan du gjøre med kode som kun kjører i det du starter spillet, for
+eksempel:</p>
+<pre class=blocks>når grønt flagg klikkes
+sett størrelse til (40) %
+begrens rotasjon [vend sideveis v]
+</pre>
+<p>Vi har også lagt til en kloss som passer på at <code>Jumpman</code> bare snur
+seg mot høyre eller venstre.</p>
+</li>
+<li>
+<p>Vi trenger to variabler som vi skal bruke til å kontrollere
+bevegelsen til <code>Jumpman</code>. Lag to variabler, <code class="b">(fartX)</code> og
+<code class="b">(fartY)</code>. Pass på at begge gjelder kun <em>for denne figuren</em>.</p>
+</li>
+<li>
+<p>I hovedløkken som styrer <code>Jumpman</code> vil vi først endre litt på disse
+<code class="blockdata">fart</code>-variablene, og til slutt flytte selve figuren
+basert på dem.</p>
+<p>Dersom ingenting påvirker figuren vår vil vi at <code class="b">(fartX)</code> skal
+gå mot 0 (farten bremses), mens vi vil at <code class="b">(fartY)</code> skal bli et
+stadig større negativt tall (figuren faller). Men om figuren står på
+plattformen skal <code class="b">(fartY)</code> være 0 (figuren står i ro). Dette kan
+vi kode omtrent som følger:</p>
+<pre class=blocks>når jeg mottar [nytt spill v]
+gå til x: (-150) y: (-100)
+for alltid  // hovedløkken
+    sett [fartX v] til ((0.8) * (fartX))  // farten bremses
+    endre [fartY v] med (-0.5)  // gravitasjon, figuren faller
+    hvis &lt;berører fargen [#0000ff]&gt;  // figuren står på plattformen
+        sett [fartY v] til [0]
+    slutt
+    endre x med (fartX)  // flytt selve figuren
+    endre y med (fartY)
+slutt
+</pre>
+</li>
+<li>
+<p>Om du prøver spillet ditt så langt (husk å legge til et skript på
+bakgrunnen som sender en <code>nytt spill</code>-melding når det grønne flagget
+klikkes), vil du se at figuren din faller ned til plattformen. Men
+du kan ikke kontrollere den.</p>
+</li>
+<li>
+<p>For å styre <code>Jumpman</code> legger vi flere <code class="blockcontrol">hvis</code>-tester
+inn i hovedløkken. For eksempel kan du få figuren til å bevege seg
+mot venstre ved å legge til dette rett før <code class="b">endre x med (fartX)</code>:</p>
+<pre class=blocks>hvis &lt;tast [pil venstre v] trykket?&gt;
+    pek i retning (-90 v)
+    sett [fartX v] til [-5]
+    neste drakt
+slutt
+</pre>
+<p>Lag også en tilsvarende blokk for å flytte figuren mot høyre.</p>
+</li>
+<li>
+<p>Vi vil også at <code>Jumpman</code> hopper når vi trykker på <code>pil opp</code>-tasten.
+Her må vi være litt forsiktig, siden vi bare vil at figuren kan
+hoppe hvis den står på en plattform (ikke når den allerede
+hopper). En enkel måte å få til dette på er å legge <code>pil opp</code>-testen
+inne i testen for om figuren står på plattformen:</p>
+<pre class=blocks>hvis &lt;berører fargen [#0000ff]&gt;  // gammel kode: figuren står på plattformen
+    sett [fartY v] til [0]
+    hvis &lt;tast [pil opp v] trykket?&gt;  // ny kode: figuren hopper
+        sett [fartY v] til [5]
+    slutt
+slutt
+</pre>
+</li>
+</ul>
+<p>Vi har nå et bra utgangspunkt for et plattformspill. Nemlig en figur
+som vi kan styre rundt, og som kan hoppe når vi vil det. Lek litt med
+<code>Jumpman</code> og tallene vi har brukt i <code class="b">sett [fartX v] til []</code>- og
+<code class="b">sett [fartY v] til []</code>-klossene slik at du får en bevegelse du
+synes virker naturlig.</p>
+<ul>
+<li>
+<p>Du har kanskje oppdaget at av og til faller <code>Jumpman</code> delvis
+<em>gjennom</em> plattformen? Hvis ikke, prøv å slipp ham fra toppen av
+skjermen. Den følgende testen fikser dette ganske greit:</p>
+<pre class=blocks>hvis &lt;berører fargen [#009900]&gt;
+    endre y med (2)
+slutt
+</pre>
+<figure>Dette var også grunnen til at vi fylte plattformen med en annen
+farge enn linjefargen.</figure>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-2-plattformer-og-stiger">
+<h1 class="activity" id="steg-2-plattformer-og-stiger">Steg 2: Plattformer og stiger</h1>
+<p><em>Nå har vi en figur som kan springe og hoppe rundt på skjermen. La oss
+lage flere plattformer den kan leke seg på.</em></p>
+<p>Mens vi tegner flere plattformer er det viktig at vi bruker
+<code>Vektorgrafikk</code> fordi dette gjør det lett å flytte plattformene rundt
+etter at vi har tegnet dem.</p>
+<section class="activity" id="sjekkliste-2">
+<h2 class="activity" id="sjekkliste-2">Sjekkliste</h2>
+<ul>
+<li>
+<p>Før vi tegner flere plattformer skal vi lage stiger, som vil gjøre
+det enklere for helten vår å klatre opp eller ned. Som for
+plattformer skal vi kjenne igjen stiger ved hjelp av fargen. For å
+gjøre litt enkel testing, tegn først en strek rett opp fra
+plattformen (vi skal tegne en finere stige senere) i en ny farge:</p>
+<figure><img src="/_/tjesi_oppgaver/src/scratch/donkey_kong/stige.6eaaac.png" alt="" /></figure>
+<p>Bruke <strong>linje</strong>-verktøyet og hold inne <code>shift</code>-knappen mens du
+tegner for å få en helt rett linje.</p>
+</li>
+<li>
+<p>Hvordan skal helten vår klatre i en stige? Først og fremst vil han
+ikke falle nedover (på samme måte som når han står på en
+plattform). I tillegg vil vi kunne klatre opp og ned i stigen. Legg
+til denne testen på <code>Jumpman</code>:</p>
+<pre class=blocks>hvis &lt;berører fargen [#ff0000]?&gt;
+    sett [fartY v] til [0]
+    hvis &lt;tast [pil opp v] trykket?&gt;
+        endre y med (3)
+    slutt
+slutt
+</pre>
+<p>Med denne koden kan vi klatre opp stigen. Hvordan kommer vi oss ned
+igjen? Kan du legge til en <code class="b">hvis &lt;tast [pil ned v] trykket?&gt;</code>-test til slik at vi også kan klatre ned stigen?</p>
+</li>
+<li>
+<p>Tegn flere plattformer og stiger. Test underveis at det er mulig for
+<code>Jumpman</code> å klatre eller hoppe mellom plattformene, men samtidig at
+han ikke klarer å hoppe mellom to plattformer når det ikke er
+meningen at det skal gå an.</p>
+</li>
+<li>
+<p>Når du er fornøyd med hvordan brettet ser ut kan du også tegne
+stigene litt finere. Om du vil kan du også vente med dette til etter
+at du har programmert Donkey Kong i neste steg.</p>
+<figure><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAD6CAYAAAB9LTkQAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AMYEBocsJexZgAABUhJREFUeNrt3TFOG0EUgOE38TZUTiTKSG6i1JaSioY9AlWKnAIpF+AIblPScI6lpwg3gBNku1TRS0ERGaUKa7wz+30Sko1kzMxa9q/HSJTMzAAAYDJvbAEAgMACABBYAAACCwAAgQUAILAAAAQWAAACCwBAYAEACCwAAAQWAIDAAgAQWAAAAgsAAIEFACCwAAAEFgAAAgsAQGABAAgsAIBpDUPExUVE3z/dbkDJzHRlAWCG0bHbRYxjxNXVU3y0aruNuL9/ur3ZRDw8CCwAQHS8rEbK/v0G0kRgAW2+X/f2gLrl7X50lPO01kM9/zD9z3QGCwBAYAEACCwAgEXpbAGwCF8/2wPqcrug1/Brr/Xm7uBLMsECABBYAAACCwBAYAEAILAAAAQWAIDAAgBAYAEACCwAAIEFAIDAAgAQWAAAAgsAQGABACCwAAAEFgCAwAIAQGABAAgsAACBBQCAwAIAeGUlM9M2AM29ufX2gLrlbdl/TZ+ntR7q+Yfpf6YJFgCAwAIAEFgAAIviDBYAzPITev9cUrT8cd3gWk2wAAAEFgCAwAIAEFgAAAgsAACBBQAgsAAAEFgAAAILAEBgAQAgsAAADqyzBQBQgef/r49ZM8ECABBYAAACCwBgUZzBAoAaZLa7tgbPl5lgAQAILAAAgQUAILAAABBYAAACCwBAYAEAILAAAAQWAIDAAgBAYAEACCwAAIEFACCwAAAQWAAAAgsAQGABACCwAAAEFgCAwAIAQGABAAgsAACBBQCAwAIAEFgAAAILAEBgAQAgsABgMUpp76vvI4ahzcuVmelVCwAzDKol2GwiHh/3v9dAmphgAQDHM45NLktgAQDHsV43+yfCztUFgAo40VMVEywAAIEFACCwAAAEFgAAAgsAQGABAAgsAAAEFgCAwAIAEFgAAAgsAACBBQAgsAAABBYAAAILAEBgAQAILAAABBYAgMACABBYAAAILAAAgQUAILAAABBYAAACCwBAYAEACCwAAAQWAIDAAgAQWAAACCwAAIEFANCWzhYAQAVKsQcVMcECABBYAAACCwBgUZzBAoAaZLa7tgbPl5lgAQAILAAAgQUAILAAABBYAAACCwBAYAEAILAAAAQWAIDAAgBAYAEACCwAAIEFACCwAAAQWAAAAgsAQGABACCwAAAEFgCAwAIAQGABAAgsAACBBQCAwAIAEFgAAAILAEBgAQAgsAAABBYAwAJ0tgAAKlCKPaiICRYAgMACABBYAACL4gwWANQgs921NXi+zAQLAEBgAQAILAAAgQUAgMACABBYAAACCwAAgQUAILAAAAQWAAACCwBAYAEACCwAAIEFAIDAAgAQWAAAAgsAAIEFACCwAAAEFgAAAgsAQGABAAgsAAAEFgCAwAIAEFgAAAILAIBJdKW3CQAwN/nsfsuf13Ncaw4ve7wJFgDAxAQWAMzQuFr/8zYCCwD4T5cfdjGu1jGu1tFvBxtSmRLfP6VtAACO5eflj3j763dERIwnq3i3277+L3Fzt3fXGSwAoGqXX97HeLKK8WQV/bePTaypc1kBgGO6PjuN67PTptZkggUAILAAAAQWAIDAAgBAYAEACCwAAIEFAIDAAgAQWAAAAgsAAIEFACCwAAAEFgCAwAIAQGABAAgsAACBBQCAwAIAEFgAAAILAACBBQAgsAAA6lbiPNM2AAD8lcPLHm+CBQAwMYEFACCwAADmrWQ6gwUAMCUTLAAAgQUAILAAAAQWAAACCwBAYAEACCwAAAQWAIDAAgAQWAAACCwAAIEFACCwAAAEFgAAAgsAQGABACzFH329f+4czVFJAAAAAElFTkSuQmCC" alt="" /></figure>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-3-donkey-kong-og-rullende-ildkuler">
+<h1 class="activity" id="steg-3-donkey-kong-og-rullende-ildkuler">Steg 3: Donkey Kong og rullende ildkuler</h1>
+<p><em>På tide med litt utfordringer! Nå skal vi programmere Donkey Kong til
+å kaste rullende ildkuler mot oss.</em></p>
+<section class="check" id="sjekkliste-3">
+<h2 class="check" id="sjekkliste-3">Sjekkliste</h2>
+<ul>
+<li>
+<p>Lag en <code>Donkey Kong</code>-figur, og plasser den på en passende
+plattform. Denne vil ikke bevege seg i dette spillet, slik at den
+eneste koden vi egentlig trenger er for å kaste ildkuler. Vi skal
+lage denne koden snart.</p>
+</li>
+<li>
+<p>Lag også en ny <code>Ildkule</code>-figur. Dette kan være en sirkel du farger
+oransje, eller du kan prøve å tegne noe mer avansert. La figuren
+<code class="blocklooks">skjules</code> når det grønne flagget klikkes.</p>
+</li>
+<li>
+<p>Nå skal vi skrive koden på Donkey Kong. Den blir ganske enkel. Etter
+at <code>Donkey Kong</code> mottar <code>nytt spill</code> kan du la han gå inn i en <code class="blockcontrol">for alltid</code>-løkke hvor han <code class="blockcontrol">lager klon av Ildkule</code> og deretter <code class="blockcontrol">venter 3 sekunder</code>.</p>
+</li>
+<li>
+<p>Men nå må vi programmere hvordan ildkulene skal oppføre seg. Vi vil
+holde styr på hvordan de beveger seg ved hjelp av <code class="b">(fartX)</code> og
+<code class="b">(fartY)</code> på samme måte som for <code>Jumpman</code>. Lag derfor disse to
+variablene også på <code>Ildkule</code>. Husk at de skal gjelde kun <em>for denne
+figuren</em>.</p>
+</li>
+<li>
+<p>Først bestemmer vi hvilken fart kula har når <code>Donkey Kong</code> kaster
+den. Dette gjør vi ved å sette <code class="blockdata">fart</code>-variablene, for
+eksempel på denne måten:</p>
+<pre class=blocks>når jeg starter som klon
+gå til [Donkey Kong v]
+sett [fartX v] til [3]
+sett [fartY v] til (tilfeldig tall fra (0) til (5))
+vis
+</pre>
+</li>
+<li>
+<p>Videre bestemmer vi hvordan kulene oppfører seg ved å lage en
+hovedløkke på omtrent samme måte som for <code>Jumpman</code>.</p>
+<p>Legg en <code class="b">gjenta til &lt;(y-posisjon) &lt; [-170]&gt;</code>-kloss nederst i
+<code class="b">når jeg starter som klon</code>-skriptet, og fyll denne med kode som
+lar kulen falle, merker at ildkulen ligger på plattformen, og
+flytter selve figuren.</p>
+</li>
+<li>
+<p>Legg også til kode som gjør at ildkulene snur, <code class="b">sett [fartX v] til ((-1) * (fartX))</code>, når de <code class="blocksensing">berører kant</code>, og kode
+som sender en melding, <code>fanget Jumpman</code>, når de <code class="blocksensing">berører Jumpman</code>.</p>
+</li>
+<li>
+<p>Lag kode på <code>Jumpman</code> som mottar <code>fanget Jumpman</code>, og som kanskje
+<code class="blocksound">spiller en lyd</code>.</p>
+</li>
+<li>
+<p>Til slutt, lag en skatt som Jumpman skal redde. Dette blir en ny
+figur som kan stå i ro til den <code>berører Jumpman</code> og deretter sende
+en melding <code>fant skatten</code>. Skriv kode som svarer på denne meldingen
+på passende måte.</p>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-4-videreutvikling-av-spillet">
+<h1 class="activity" id="steg-4-videreutvikling-av-spillet">Steg 4: Videreutvikling av spillet</h1>
+<p><em>Du har nå laget en enkel variant av Donkey Kong. Men prøv å gjøre
+spillet morsommere ved å videreutvikle det. Du bestemmer selv hvordan
+du vil jobbe videre, men nedenfor er noen ideer som kanskje kan være
+til inspirasjon?</em></p>
+<section class="check" id="ideer-til-videreutvikling">
+<h2 class="check" id="ideer-til-videreutvikling">Ideer til videreutvikling</h2>
+<ul>
+<li>
+<figure>Legg gjerne til flere animasjoner og lyder. For eksempel kan Donkey
+Kong gjøre en kastebevegelse når han kaster ildkuler.</figure>
+</li>
+<li>
+<p>Lag en forside og meny. Om du lager en forside som forteller litt om
+hvordan man spiller spillet ditt blir det enklere for andre å spille
+det også!</p>
+</li>
+<li>
+<p>Vi har laget ett brett, men du kan enkelt tegne flere bakgrunner med
+andre plattformer og hindringer. Prøv å lag flere brett hvor man
+kommer videre til neste nivå etter at man har funnet skatten.</p>
+</li>
+<li>
+<p>For å gi spillerene litt mer motivasjon kan det være lurt å telle
+poeng og liv. Til dette trenger du to nye variabler, <code class="b">(poeng)</code>
+og <code class="b">(liv)</code>. For å telle liv kan du bruke <code>fanget Jumpman</code>-meldingen. Før du teller poeng må du tenke på hva du vil at
+spillerene skal få poeng for?</p>
+</li>
+<li>
+<p>Du kan legge til en tidsbegrensning om du vil gjøre spillet mer
+utfordrende. Til dette bruker du en variabel <code class="b">(tid)</code> som du
+<code class="blockdata">endrer</code> og deretter <code class="blockcontrol">venter 1 sekund</code>.</p>
+</li>
+</ul>
+</section>
+</section>
+</div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="72"><div class="Footer__center__3xqZ_ row" data-reactid="73"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="74">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="75">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="76"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="77"><img class="Footer__img__25Ink" src="/src/assets/graphics/smn.41dee6.jpg" data-reactid="78"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="79"><img class="Footer__img__25Ink" src="/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="80"/></a></div></div></div></div></div>
+<script type="text/javascript" src="/manifest.25bf77659b320cd3a087.js"></script><script type="text/javascript" src="/vendor.a6b03d2258d76438e766.js"></script><script type="text/javascript" src="/main.7f73ab0e0b72746f9c8a.js"></script><script type="text/javascript" src="/vendor2.04c375e06c230a54ba3e.js"></script></body>
+</html>

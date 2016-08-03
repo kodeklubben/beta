@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kodeklubben (server)</title>
+    <style type="text/css">.App__container__vvzpy {
+  margin-top: 125px; }
+.NavBar__flagGroup__3f0i_ {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px; }
+
+.NavBar__flag__3cn9U {
+  width: 30px;
+  height: 20px;
+  float: right;
+  margin-left: 5px; }
+.NavLink__linkBase__1m4Sm {
+  text-decoration: none !important;
+  font-size: 17pt; }
+
+.NavLink__linkStudent__1zq2x {
+  color: #265732; }
+
+.NavLink__linkTeacher__25L85 {
+  color: #215651; }
+.ModeIndicator__modeIndicator__gvKNO {
+  font-size: 1.2em;
+  margin-top: -15px;
+  text-align: right; }
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic);.Footer__container__1SZrv {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 15pt;
+  font-family: "Roboto", "Verdana", sans-serif; }
+  .Footer__container__1SZrv a {
+    text-decoration: none; }
+
+.Footer__containerStudent__3Yr5f {
+  background-color: #b1daae;
+  color: #265732; }
+  .Footer__containerStudent__3Yr5f a {
+    color: #265732; }
+
+.Footer__containerTeacher__36KZb {
+  background-color: #a3cccb;
+  color: #215651; }
+  .Footer__containerTeacher__36KZb a {
+    color: #215651; }
+
+.Footer__center__3xqZ_ {
+  text-align: center; }
+
+.Footer__inline__1Q6ds {
+  display: inline-block;
+  margin: 20px 10px; }
+
+.Footer__svg__29r7H {
+  width: 100px;
+  height: auto;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__img__25Ink {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: auto;
+  height: 50px;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__divider__LJrti {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid;
+  width: 50%; }
+
+.Footer__svg__29r7H:hover,
+.Footer__img__25Ink:hover {
+  transform: scale(1.2); }
+</style>
+<link href="/vendor2.04c375e06c230a54ba3e.css" rel="stylesheet"></head>
+<body>
+    <div id="app"><div><div class="App__container__vvzpy" data-reactroot="" data-reactid="1" data-react-checksum="-1429800831"><div class="container-fluid" data-reactid="2"><div class="row" data-reactid="3"><nav class="navbar navbar-default navbar-fixed-top" data-reactid="4"><div class="container-fluid" data-reactid="5"><div class="btn-language-dropdown pull-right dropdown btn-group" data-reactid="6"><button class="dropdown-toggle btn-language-student btn-language btn btn-default" id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" data-reactid="7"><span data-reactid="8"><!-- react-text: 9 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="10"/></span></button><ul class="dropdown-menu" role="menu" aria-labelledby="language-dropdown" data-reactid="11"><li role="presentation" class="" data-reactid="12"><a role="menuitem" href="" tabindex="-1" data-reactid="13"><span data-reactid="14"><!-- react-text: 15 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="16"/></span></a></li><li role="presentation" class="" data-reactid="17"><a role="menuitem" href="" tabindex="-1" data-reactid="18"><span data-reactid="19"><!-- react-text: 20 -->Norsk nynorsk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="21"/></span></a></li><li role="presentation" class="" data-reactid="22"><a role="menuitem" href="" tabindex="-1" data-reactid="23"><span data-reactid="24"><!-- react-text: 25 -->Svenska<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="26"/></span></a></li><li role="presentation" class="" data-reactid="27"><a role="menuitem" href="" tabindex="-1" data-reactid="28"><span data-reactid="29"><!-- react-text: 30 -->Dansk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="31"/></span></a></li></ul></div><div class="navbar-header" data-reactid="32"><span class="navbar-brand" data-reactid="33"><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/" data-reactid="34"><span class="glyphicon glyphicon-home" data-reactid="35"></span></a><span data-reactid="36"><!-- react-text: 37 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/web" data-reactid="38">web</a></span><span class="hidden-xs" data-reactid="39"><!-- react-text: 40 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm active" href="/web/trykkomania/trykkomania" data-reactid="41">trykkomania</a></span></span><button type="button" class="navbar-toggle collapsed" data-reactid="42"><span class="sr-only" data-reactid="43">Toggle navigation</span><span class="icon-bar" data-reactid="44"></span><span class="icon-bar" data-reactid="45"></span><span class="icon-bar" data-reactid="46"></span></button></div><div class="navbar-collapse collapse" data-reactid="47"><div class="navbar-form navbar-right" data-reactid="48"><div class="form-group" data-reactid="49"><input type="text" placeholder="Søk" class="form-control" data-reactid="50"/></div><!-- react-text: 51 --> <!-- /react-text --><div class="btn-toggle" data-reactid="52"><div data-reactid="53">Velg modus:</div><div class="btn-group btn-group" data-reactid="54"><button class="btn-student-nav active btn btn-default" type="button" data-reactid="55">ELEV</button><button class="btn-teacher-nav btn btn-default" type="button" data-reactid="56">LÆRER</button></div></div></div></div></div></nav></div><div class="row" data-reactid="57"><div class="col-xs-12" data-reactid="58"><div class="ModeIndicator__modeIndicator__gvKNO" data-reactid="59"><!-- react-text: 60 -->Du er i <!-- /react-text --><span class="text-student" data-reactid="61">elevmodus</span></div></div></div></div><div data-reactid="62"><h1 data-reactid="63"><!-- react-text: 64 -->Trykkomania<!-- /react-text --><!-- react-text: 65 --> - Level <!-- /react-text --><!-- react-text: 66 -->2<!-- /react-text --></h1><p data-reactid="67"><i data-reactid="68"><!-- react-text: 69 -->av <!-- /react-text --><!-- react-text: 70 -->Arve Seljebu<!-- /react-text --></i></p><div data-reactid="71"><section class="intro" id="introduksjon">
+<h1 class="intro" id="introduksjon">Introduksjon</h1>
+<p>Denne oppgaven viser deg hvordan du kan lage et spill med JavaScript og dele det med vennene dine. Spillet kalles <em>Trykkomania</em> fordi det handler om å trykke på en ball flest mulig ganger før tiden renner ut.</p>
+<figure><img src="/_/tjesi_oppgaver/src/web/trykkomania/trykkomania.66d448.gif" alt="" /></figure>
+</section>
+<section class="activity" id="steg-1-apne-js-bin">
+<h1 class="activity" id="steg-1-apne-js-bin">Steg 1: Åpne JS Bin</h1>
+<p>Vi skal bruke JS Bin (http://jsbin.com) for å lage spillet. Hvis du aldri har brukt JS Bin før, ta en titt på oppgaven <a href="../hei_js/hei_js.html">Hei JavaScript</a>.</p>
+<section class="check" id="sjekkliste">
+<h2 class="check" id="sjekkliste">Sjekkliste</h2>
+<ul>
+<li>
+<p>Åpne adressen <a href="http://jsbin.com">jsbin.com</a> i ett eget vindu.</p>
+</li>
+<li>
+<p>Velg å vise <strong>JavaScript</strong> og <strong>Output</strong>. Skjul de andre fanene ved å trykke på de.</p>
+<figure><img src="/_/tjesi_oppgaver/src/web/trykkomania/faner.6b8fe3.png" alt="" /></figure>
+</li>
+<li>
+<p>I <strong>JavaScript</strong> skriver vi koden.</p>
+</li>
+<li>
+<p>I <strong>Output</strong> vises websiden.</p>
+</li>
+<li>
+<p>Når du starter er begge fanene tomme.</p>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-2-lage-en-ball">
+<h1 class="activity" id="steg-2-lage-en-ball">Steg 2: Lage en ball</h1>
+<p>Vi skal bruke JavaScript til å lage innholdet på websiden. Dette betyr at vi skal bruke JavaScript til å lage <em>HTML</em>. Du trenger ikke kunne noe spesielt om HTML, men om du ønsker lære om HTML, se <a href="../introduksjon_til_web/introduksjon_til_web.html">oppgaven Introduksjon til web</a>.</p>
+<section class="check" id="sjekkliste-2">
+<h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
+<ul>
+<li>
+<figure>Vi begynner med å lage en funksjon som heter <code>Ball</code>:</figure>
+<pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Ball</span>(<span class="hljs-params"></span>) </span>{
+
+}
+</code></pre>
+</li>
+<li>
+<figure>Inni funksjonen lager vi ett nytt <code>div</code>-element:</figure>
+<pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Ball</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+}
+</code></pre>
+</li>
+<li>
+<p><code>var el</code> betyr at elementet får navn <code>el</code>.</p>
+</li>
+<li>
+<p>Vi kan nå gi elementet en stil:</p>
+<pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Ball</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+  el.style.backgroundColor = <span class="hljs-string">'black'</span>;
+  el.style.width = <span class="hljs-string">'60px'</span>;
+  el.style.height = <span class="hljs-string">'60px'</span>;
+}
+</code></pre>
+</li>
+<li>
+<p><code>el.style.backgroundColor = 'black'</code> gjør ballen svart.</p>
+</li>
+<li>
+<p><code>el.style.width = '60px'</code> gjør ballen 60 <a href="https://no.wikipedia.org/wiki/Piksel">piksler</a> bred.</p>
+</li>
+<li>
+<p><code>el.style.height = '60px'</code> gjør ballen 60 piksler høy.</p>
+</li>
+<li>
+<p>La oss legge ballen til siden:</p>
+<pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Ball</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+  el.style.backgroundColor = <span class="hljs-string">'black'</span>;
+  el.style.width = <span class="hljs-string">'60px'</span>;
+  el.style.height = <span class="hljs-string">'60px'</span>;
+  <span class="hljs-built_in">document</span>.body.appendChild(el);
+}
+</code></pre>
+</li>
+<li>
+<p>For at ballen skal vises, må vi kjøre koden:</p>
+<pre><code class="language-js">Ball();
+</code></pre>
+</li>
+<li>
+<p>Vises en &quot;ball&quot; i <strong>Output</strong>?</p>
+<figure><img src="/_/tjesi_oppgaver/src/web/trykkomania/firkantet_ball.0a77c0.png" alt="" /></figure>
+</li>
+<li>
+<figure>Ok, så den var ikke akkurat rund. Vi kan bruke <code>el.style.borderRadius</code> for å runde av hjørnene.</figure>
+</li>
+<li>
+<p>Siden ballen er <code>60px</code> bred og høy, så avrunder vi kantene med <code>30px</code>, altså halvparten av 60.</p>
+</li>
+<li>
+<figure>Legg koden under de andre <code>el.style</code>-setningene:</figure>
+<pre><code class="language-js">el.style.borderRadius = <span class="hljs-string">'30px'</span>;
+</code></pre>
+</li>
+<li>
+<p>Fikk du en rund ball?</p>
+</li>
+</ul>
+</section>
+<section class="challenge" id="utforsk">
+<h2 class="challenge" id="utforsk">Utforsk</h2>
+<p>Om du ønsker en annen form, prøv andre verdier enn <code>30px</code> for avrundingen. Hvordan ser <code>5px</code> ut?</p>
+</section>
+<section class="protip" id="tips">
+<h2 class="protip" id="tips">Tips</h2>
+<p>Om du sitter fast, kan du se på <a href="http://jsbin.com/pozova/1/edit?js,output">fasiten så langt</a>.</p>
+</section>
+</section>
+<section class="activity" id="steg-3-flytte-ballen">
+<h1 class="activity" id="steg-3-flytte-ballen">Steg 3: Flytte ballen</h1>
+<p>Akkurat nå vises ballen helt øverst til venstre i <strong>Output</strong>. La oss flytte den rundt omkring.</p>
+<p>Vi bruker <code>el.style.position = 'fixed'</code> for å fortelle at vi ønsker plassere ballen i forhold til kantene i vinduet. 50% fra toppen blir da <code>el.style.top = '50%'</code>.</p>
+<section class="check" id="sjekkliste-3">
+<h2 class="check" id="sjekkliste-3">Sjekkliste</h2>
+<ul>
+<li>
+<p>Legg til en posisjon for ballen:</p>
+<pre><code class="language-js">el.style.position = <span class="hljs-string">'fixed'</span>;
+el.style.top = <span class="hljs-string">'80%'</span>;
+</code></pre>
+</li>
+<li>
+<p>Flyttet ballen seg ned?</p>
+</li>
+<li>
+<p>Flytt ballen ut fra venstre kant:</p>
+<pre><code class="language-js">el.style.left = <span class="hljs-string">'30%'</span>;
+</code></pre>
+</li>
+<li>
+<p>Prøv verdier mellom <code>0%</code> og <code>100%</code>.</p>
+</li>
+<li>
+<p>Når forsvinner ballen vekk fra vinduet?</p>
+</li>
+</ul>
+</section>
+<section class="protip" id="tips-2">
+<h2 class="protip" id="tips-2">Tips</h2>
+<p>Om du sitter fast, kan du se på <a href="http://jsbin.com/pozova/2/edit?js,output">fasiten så langt</a>.</p>
+</section>
+</section>
+<section class="activity" id="steg-4-flytte-ballen-med-en-funksjon">
+<h1 class="activity" id="steg-4-flytte-ballen-med-en-funksjon">Steg 4: Flytte ballen med en funksjon</h1>
+<p>Ettersom vi ønsker at ballen skal flytte seg underveis i spillet, skal vi lage en funksjon som flytter ballen.</p>
+<section class="checklist" id="sjekkliste-4">
+<h2 class="checklist" id="sjekkliste-4">Sjekkliste</h2>
+<ul>
+<li>
+<p>Inni <code>Ball</code>, lag en funksjon som heter <code>el.posisjon</code>.</p>
+<pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Ball</span>(<span class="hljs-params"></span>) </span>{
+  ...
+  el.posisjon = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">x, y</span>) </span>{
+
+  };
+}
+</code></pre>
+</li>
+<li>
+<p>Funksjonen skal bestemme <code>el.style.top</code> og <code>el.style.left</code>.</p>
+<pre><code class="language-js">el.posisjon = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">x, y</span>) </span>{
+  el.style.left = x;
+  el.style.top = y;
+};
+</code></pre>
+</li>
+<li>
+<figure>Returner <code>el</code>, slik at vi kan bruke funksjonene til ballen.</figure>
+<pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Ball</span>(<span class="hljs-params"></span>) </span>{
+  ...
+  el.posisjon = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">x, y</span>) </span>{
+    el.style.left = x;
+    el.style.top = y;
+  };
+
+  <span class="hljs-keyword">return</span> el;
+}
+</code></pre>
+</li>
+<li>
+<p>Du kan nå flytte ballen slik som dette:</p>
+<pre><code class="language-js"><span class="hljs-keyword">var</span> ball = Ball();  <span class="hljs-comment">// lager ballen</span>
+ball.posisjon(<span class="hljs-string">'10%'</span>, <span class="hljs-string">'20%'</span>);  <span class="hljs-comment">// flytter til x = 10% og y = 20%</span>
+</code></pre>
+</li>
+</ul>
+</section>
+<section class="protip" id="tips-3">
+<h2 class="protip" id="tips-3">Tips</h2>
+<p>Om du sitter fast, kan du se på <a href="http://jsbin.com/hipepuy/edit?js,output">fasiten så langt</a>.</p>
+</section>
+</section>
+<section class="activity" id="steg-5-velg-en-tilfeldig-plassering">
+<h1 class="activity" id="steg-5-velg-en-tilfeldig-plassering">Steg 5: Velg en tilfeldig plassering</h1>
+<figure>I JavaScript kan vi bruke <code>Math.random()</code> for å få en tilfeldig verdi mellom 0 og 1. La oss bruke denne til å plassere ballen.</figure>
+<section class="check" id="sjekkliste-5">
+<h2 class="check" id="sjekkliste-5">Sjekkliste</h2>
+<ul>
+<li>
+<p>Trykk på fanen <strong>Console</strong>.</p>
+</li>
+<li>
+<figure>Skriv inn <code>Math.random()</code> og trykk enter.</figure>
+<figure><img src="/_/tjesi_oppgaver/src/web/trykkomania/tilfeldig.b1ba11.png" alt="" /></figure>
+</li>
+<li>
+<p>Fikk du et tall mellom 0 og 1?</p>
+</li>
+<li>
+<p>Vi kan gjøre dette tallet om til prosent ved å gange med 100, prøv det ut:</p>
+<figure><img src="/_/tjesi_oppgaver/src/web/trykkomania/prosent1.8cb52d.png" alt="" /></figure>
+</li>
+<li>
+<figure>Vi kan legge til prosenttegnet med <code>+ '%'</code>:</figure>
+<figure><img src="/_/tjesi_oppgaver/src/web/trykkomania/prosent2.f517bf.png" alt="" /></figure>
+</li>
+<li>
+<p>Legg merke til at hver gang kommandoen kjøres, får vi nye tall. Det er dette som kalles <em>tilfeldig</em>.</p>
+</li>
+<li>
+<p>Lukk <strong>Console</strong> ved å trykke på den.</p>
+</li>
+<li>
+<figure>La oss bruke <code>Math.random</code> til å plassere ballen:</figure>
+<pre><code class="language-js"><span class="hljs-keyword">var</span> x = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">100</span> + <span class="hljs-string">'%'</span>;
+<span class="hljs-keyword">var</span> y = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">100</span> + <span class="hljs-string">'%'</span>;
+ball.posisjon(x, y);
+</code></pre>
+</li>
+<li>
+<p>Hvis du trykker på knappen <button>Run with JS</button>, flytter ballen på seg?</p>
+<figure><img src="/_/tjesi_oppgaver/src/web/trykkomania/tilfeldig_plassering.6dfc57.gif" alt="" /></figure>
+</li>
+<li>
+<p>Hvis du har haket av <strong>Auto-run JS</strong> vil også koden kjøres hver gang du endrer koden.</p>
+</li>
+<li>
+<p>Trykker du nok antall ganger, legger du merke til at ballen noen ganger kommer utenfor bunnen og høyre side.</p>
+</li>
+<li>
+<p>For å unngå dette kan vi begrense forflytningen til 80%:</p>
+<pre><code class="language-js"><span class="hljs-keyword">var</span> x = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">80</span> + <span class="hljs-string">'%'</span>;
+<span class="hljs-keyword">var</span> y = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">80</span> + <span class="hljs-string">'%'</span>;
+</code></pre>
+</li>
+<li>
+<figure>Siden <code>Math.random()</code> maksimalt er 1 og vi ganger med 80, vil aldri ballen flytte seg lenger ut fra toppen eller venstre side enn 80%.</figure>
+</li>
+</ul>
+</section>
+<section class="protip" id="tips-4">
+<h2 class="protip" id="tips-4">Tips</h2>
+<p>Om du sitter fast, kan du se på <a href="http://jsbin.com/digiqa/1/edit?js,output">fasiten så langt</a>.</p>
+</section>
+</section>
+<section class="activity" id="steg-6-flytte-ballen-hvert-andre-sekund">
+<h1 class="activity" id="steg-6-flytte-ballen-hvert-andre-sekund">Steg 6: Flytte ballen hvert andre sekund</h1>
+<figure>Vi ønsker at ballen hele tiden skal flytte seg. Nå skal vi bruke <code>setInterval</code> til å flytte ballen hvert andre sekund.</figure>
+<section class="check" id="sjekkliste-6">
+<h2 class="check" id="sjekkliste-6">Sjekkliste</h2>
+<ul>
+<li>
+<figure>Bruk <code>setInterval</code> til å flytte ballen hvert andre sekund:</figure>
+<pre><code class="language-js">setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> x = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">80</span> + <span class="hljs-string">'%'</span>;
+  <span class="hljs-keyword">var</span> y = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">80</span> + <span class="hljs-string">'%'</span>;
+  ball.posisjon(x, y);
+}, <span class="hljs-number">2000</span>);
+</code></pre>
+</li>
+<li>
+<p><code>setInterval(function ..., 2000)</code> betyr kjør <code>function</code> hvert <code>2000</code> millisekund.</p>
+</li>
+<li>
+<p>2000 millisekund er 2 sekunder, altså tegnes ballen på et nytt sted hvert andre sekund.</p>
+</li>
+</ul>
+</section>
+<section class="protip" id="tips-5">
+<h2 class="protip" id="tips-5">Tips</h2>
+<p>Om du sitter fast, kan du se på <a href="http://jsbin.com/lecamej/1/edit?js,output">fasiten så langt</a>.</p>
+</section>
+</section>
+<section class="activity" id="steg-7-poeng">
+<h1 class="activity" id="steg-7-poeng">Steg 7: Poeng</h1>
+<p>Nå har du en ball som spretter rundt. La oss legge til poeng. Vi har laget en poeng-komponent som du kan bruke, så kommer du raskere i gang. <code>Poeng</code> er bygd opp likt som <code>Ball</code>, så du må gjerne lese gjennom og se om du forstår den.</p>
+<section class="check" id="sjekkliste-7">
+<h2 class="check" id="sjekkliste-7">Sjekkliste</h2>
+<ul>
+<li>
+<figure>Legg til koden for komponenten <code>Poeng</code>:</figure>
+<pre><code class="language-js"><span class="hljs-comment">/**
+ * Poeng - viser poengsum nede i venstre hjørne.
+ *
+ * Bruk:
+ *   var poeng = Poeng();  // viser poengsummen
+ *   poeng.øk();  // øker poengsummen med 100
+ *   poeng.nullstill();  // setter poengsummen til 0
+ *
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Poeng</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+  el.style.position = <span class="hljs-string">'fixed'</span>;
+  el.style.bottom = <span class="hljs-string">'5px'</span>;
+  el.style.left = <span class="hljs-string">'8px'</span>;
+  el.style.padding = <span class="hljs-string">'5px'</span>;
+  el.style.backgroundColor = <span class="hljs-string">'black'</span>;
+  el.style.color = <span class="hljs-string">'white'</span>;
+
+  <span class="hljs-keyword">var</span> _poeng = <span class="hljs-number">0</span>;
+  el.innerHTML = _poeng + <span class="hljs-string">' poeng'</span>;
+  <span class="hljs-built_in">document</span>.body.appendChild(el);
+
+  el.øk = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    _poeng += <span class="hljs-number">100</span>;
+    el.innerHTML = _poeng + <span class="hljs-string">' poeng'</span>;
+  };
+  el.nullstill = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    _poeng = <span class="hljs-number">0</span>;
+    el.innerHTML = _poeng + <span class="hljs-string">' poeng'</span>;
+  };
+
+  <span class="hljs-keyword">return</span> el;
+}
+</code></pre>
+</li>
+<li>
+<p>For at poengsummen skal vises, må vi kjøre <code>Poeng()</code> en gang, slik vi også gjorde med <code>Ball()</code>.</p>
+</li>
+<li>
+<figure>Legg denne linjen over <code>Ball()</code>:</figure>
+<pre><code class="language-js"><span class="hljs-keyword">var</span> poeng = Poeng();
+<span class="hljs-keyword">var</span> ball = Ball();
+</code></pre>
+</li>
+<li>
+<p>Vises &quot;<strong>Poeng 0</strong>&quot;?</p>
+</li>
+<li>
+<p>For å holde orden på programmet er det lurt å ha det som skjer i toppen. Funksjoner kan brukes likevel om de ikke står først, så flytt <code>function Ball</code> og <code>function Poeng</code> ned til bunnen.</p>
+<pre><code class="language-js"><span class="hljs-keyword">var</span> poeng = Poeng();
+<span class="hljs-keyword">var</span> ball = Ball();
+setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  ...
+}, <span class="hljs-number">2000</span>);
+
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Ball</span>(<span class="hljs-params"></span>) </span>{
+  ...
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Poeng</span>(<span class="hljs-params"></span>) </span>{
+  ...
+}
+</code></pre>
+</li>
+<li>
+<p>Nå står det som skjer i toppen:</p>
+<ul>
+<li>Vis poengene: <code>var poeng = Poeng()</code></li>
+<li>Vis ballen: <code>var ball = Ball()</code></li>
+<li>Flytt ballen hvert andre sekund: <code>setInterval(..., 2000)</code></li>
+</ul>
+</li>
+<li>
+<figure>Vi velger nå å kjøre funksjonen <code>poeng.øk</code> hver gang ballen trykkes.</figure>
+<pre><code class="language-js">ball.onclick = poeng.øk;
+</code></pre>
+<p><strong>Obs:</strong> Det skal <strong>ikke</strong> være <code>()</code> på slutten av <code>poeng.øk</code>. Dette er fordi funksjonen ikke kjøres her, men hver gang noen klikker på ballen.</p>
+</li>
+<li>
+<p><code>ball.onclick = poeng.øk;</code> betyr at funksjonen <code>poeng.øk()</code> kjøres når noen klikker på ballen.</p>
+</li>
+<li>
+<p>Sjekk at du får poeng når du treffer ballen med et klikk.</p>
+<figure><img src="/_/tjesi_oppgaver/src/web/trykkomania/poeng.8bb15e.gif" alt="" /></figure>
+</li>
+</ul>
+</section>
+<section class="protip" id="tips-6">
+<h2 class="protip" id="tips-6">Tips</h2>
+<p>Om du sitter fast, kan du se på <a href="http://jsbin.com/mewole/1/edit?js,output">fasiten så langt</a>.</p>
+</section>
+<section class="flag" id="teste-spillet">
+<h2 class="flag" id="teste-spillet">Teste spillet</h2>
+<p>Du er nå kommet så langt at det kan være kult å teste spillet. Ettersom spillet handler om å trykke flest mulig ganger på ballen, egner det seg for å prøve på mobiltelefonen.</p>
+</section>
+<section class="check" id="sjekkliste-8">
+<h2 class="check" id="sjekkliste-8">Sjekkliste</h2>
+<ul>
+<li>
+<p>Noen mobiltelefoner zoomer når en dobbeltklikker på skjermen, derfor skal vi slå av zooming.</p>
+</li>
+<li>
+<p>Åpne fanen <strong>HTML</strong> ved å trykke på den.</p>
+</li>
+<li>
+<figure>Finn linjen med <code>&lt;meta name=&quot;viewport&quot; ...</code>.</figure>
+</li>
+<li>
+<p>Endre linjen til:</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"viewport"</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"width=device-width, user-scalable=no"</span>&gt;</span>
+</code></pre>
+</li>
+<li>
+<p>Lukk fanen <strong>HTML</strong> ved å trykke på den.</p>
+</li>
+<li>
+<p>Øverst i nettleseren din står adressen til siden.</p>
+<figure><img src="/_/tjesi_oppgaver/src/web/trykkomania/adresse.62359f.png" alt="" /></figure>
+</li>
+<li>
+<p>Adressen du trenger å taste inn på mobilen er det <em>før</em> <code>/edit?js,output</code>.</p>
+</li>
+<li>
+<figure>I eksempelet over er adressen <code>jsbin.com/dutebe</code>.</figure>
+</li>
+<li>
+<p>Tast <em>din</em> adresse inn på mobiltelefonen.</p>
+</li>
+<li>
+<p>Spill!</p>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-8-begrense-tiden">
+<h1 class="activity" id="steg-8-begrense-tiden">Steg 8: Begrense tiden</h1>
+<p>Akkurat nå er det ubegrenset tid i spillet. La oss legge til en nedtelling av tid, slik at man kan konkurrere om hvem som klarer flest klikk på 10 sekunder.</p>
+<section class="check" id="sjekkliste-9">
+<h2 class="check" id="sjekkliste-9">Sjekkliste</h2>
+<ul>
+<li>
+<p>Legg til koden for nedtelling i bunnen av programmet.</p>
+<pre><code class="language-js"><span class="hljs-comment">/**
+ * Nedtelling - En linje som viser at tiden renner ut.
+ *
+ * Bruk:
+ *   var nedtelling = Nedtelling(slutt);  // funksjonen `slutt` kjøres når tiden er utløpt
+ *   nedtelling.tellNed(10);  // teller ned 10 sekunder
+ *
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Nedtelling</span> (<span class="hljs-params">ferdig</span>) </span>{
+  <span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+  el.style.position = <span class="hljs-string">'fixed'</span>;
+  el.style.left = <span class="hljs-string">'0'</span>;
+  el.style.bottom = <span class="hljs-string">'0'</span>;
+  el.style.height = <span class="hljs-string">'100%'</span>;
+  el.style.width = <span class="hljs-string">'3px'</span>;
+  el.style.backgroundColor = <span class="hljs-string">'red'</span>;
+  <span class="hljs-built_in">document</span>.body.appendChild(el);
+
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">prosent</span> (<span class="hljs-params">slutt, tid</span>) </span>{
+    <span class="hljs-keyword">return</span> (slutt - <span class="hljs-built_in">Date</span>.now()) / tid / <span class="hljs-number">10</span>;
+  }
+  el.tellNed = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">tid</span>) </span>{
+    <span class="hljs-keyword">var</span> slutt = <span class="hljs-built_in">Date</span>.now() + tid * <span class="hljs-number">1000</span>;
+    <span class="hljs-keyword">var</span> intervall = setInterval(tegn, <span class="hljs-number">20</span>);
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">tegn</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">var</span> p = prosent(slutt, tid);
+      <span class="hljs-keyword">if</span> (p &lt; <span class="hljs-number">0</span>) {
+        el.style.height = <span class="hljs-string">'0%'</span>;
+        clearInterval(intervall);
+        ferdig();
+      }
+      el.style.height = p + <span class="hljs-string">'%'</span>;
+    }
+  }
+
+  <span class="hljs-keyword">return</span> el;
+}
+</code></pre>
+</li>
+<li>
+<p>I toppen starter vi nedtellingen.</p>
+<pre><code class="language-js"><span class="hljs-keyword">var</span> nedtelling = Nedtelling();
+nedtelling.tellNed(<span class="hljs-number">10</span>);
+</code></pre>
+</li>
+<li>
+<p>Dette lager en nedtelling på 10 sekunder.</p>
+</li>
+<li>
+<p>Hvis du trykker på <button>Run with JS</button> ser du nedtellingen, men ingenting skjer når tiden er ute.</p>
+</li>
+<li>
+<figure>Lag funksjonen <code>stopp</code> som forteller hva som skal skje når tiden er ute.</figure>
+<pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">stopp</span>(<span class="hljs-params"></span>) </span>{
+  ball.skjul();
+}
+</code></pre>
+</li>
+<li>
+<p>Vi har ikke laget funksjonen <code>ball.skjul</code> enda. Vi trenger <code>ball.vis</code> også.</p>
+</li>
+<li>
+<p>Lag <code>ball.skjul</code> og <code>ball.vis</code> inni <code>function Ball</code>.</p>
+<pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Ball</span>(<span class="hljs-params"></span>) </span>{
+  ...
+  el.skjul = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    el.style.display = <span class="hljs-string">'none'</span>;
+  };
+  el.vis = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    el.style.display = <span class="hljs-string">''</span>;
+  };
+
+  <span class="hljs-keyword">return</span> el;
+}
+</code></pre>
+</li>
+<li>
+<figure>Nå kan vi fortelle nedtellingen at den skal kjøre <code>stopp()</code> når tiden er ute.</figure>
+<pre><code class="language-js"><span class="hljs-keyword">var</span> nedtelling = Nedtelling(stopp);
+</code></pre>
+</li>
+<li>
+<p>Forsvinner ballen når tiden er ute?</p>
+</li>
+<li>
+<p>Hvor mange poeng klarer du på mobiltelefonen innen tiden?</p>
+</li>
+</ul>
+</section>
+<section class="protip" id="tips-7">
+<h2 class="protip" id="tips-7">Tips</h2>
+<p>Om du sitter fast, kan du se på <a href="http://jsbin.com/tukiwu/1/edit?js,output">fasiten så langt</a>.</p>
+</section>
+</section>
+<section class="activity" id="steg-9-omstarte-spillet">
+<h1 class="activity" id="steg-9-omstarte-spillet">Steg 9: Omstarte spillet</h1>
+<p>Så langt kan spillet omstartes ved å oppdatere nettleseren. Er det ikke stiligere med en knapp som starter spillet?</p>
+<section class="check" id="sjekkliste-10">
+<h2 class="check" id="sjekkliste-10">Sjekkliste</h2>
+<ul>
+<li>
+<figure>Lag en funksjon <code>start</code>.</figure>
+<pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">start</span>(<span class="hljs-params"></span>) </span>{
+
+}
+</code></pre>
+</li>
+<li>
+<p>Funksjonen skal bestemme hva som skjer når spillet skal starte. Vi må nullstille poengsummen, vise nedtellingen og vise ballen.</p>
+<pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">start</span>(<span class="hljs-params"></span>) </span>{
+  poeng.nullstill();
+  nedtelling.tellNed(<span class="hljs-number">10</span>);
+  ball.vis();
+}
+</code></pre>
+</li>
+<li>
+<p><code>start</code> skal kjøres hver gang en knapp klikkes, så vi trenger en knapp.</p>
+</li>
+<li>
+<p>Legg til koden for knappen i bunnen av programmet.</p>
+<pre><code class="language-js"><span class="hljs-comment">/**
+ * En knapp som ligger midt på siden.
+ *
+ * Bruk:
+ *   var knapp = Knapp('trykk på meg');  // lager en knapp som ligger midt på siden
+ *   knapp.vis();  // viser knappen
+ *   knapp.skjul();  // skjuler knappen
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Knapp</span>(<span class="hljs-params">tekst</span>) </span>{
+  <span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'button'</span>);
+  el.style.display = <span class="hljs-string">'none'</span>;
+  el.innerText = tekst;
+  el.style.position = <span class="hljs-string">'fixed'</span>;
+  el.style.top = <span class="hljs-string">'50%'</span>;
+  el.style.left = <span class="hljs-string">'50%'</span>;
+  el.style.padding = <span class="hljs-string">'20px'</span>;
+  el.style.border = <span class="hljs-string">'solid 1px'</span>;
+  <span class="hljs-built_in">document</span>.body.appendChild(el);
+
+  el.skjul = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    el.style.display = <span class="hljs-string">'none'</span>;
+  };
+  el.vis = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    el.style.display = <span class="hljs-string">''</span>;
+    <span class="hljs-comment">// plasser akkurat på midten</span>
+    <span class="hljs-comment">// midten av skjermen er 50% minus halvparten av størrelsen til knappen</span>
+    <span class="hljs-keyword">var</span> w = el.offsetWidth / <span class="hljs-number">2</span>;
+    <span class="hljs-keyword">var</span> h = el.offsetHeight / <span class="hljs-number">2</span>;
+    el.style.marginLeft = <span class="hljs-string">'-'</span> + w + <span class="hljs-string">'px'</span>;
+    el.style.marginTop = <span class="hljs-string">'-'</span> + h + <span class="hljs-string">'px'</span>;
+  };
+
+  <span class="hljs-keyword">return</span> el;
+}
+</code></pre>
+</li>
+<li>
+<p>I toppen legger vi til knappen.</p>
+<pre><code class="language-js"><span class="hljs-keyword">var</span> knapp = Knapp(<span class="hljs-string">'Prøv en gang til'</span>);
+knapp.onclick = start;
+</code></pre>
+</li>
+<li>
+<p><code>knapp.onclick</code> bestemmer hva som skal skje når knappen klikkes.</p>
+</li>
+<li>
+<p>Knappen vises ikke, så vi må bestemme at den skal vises når spillet er slutt.</p>
+<pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">stopp</span>(<span class="hljs-params"></span>) </span>{
+  ...
+  knapp.vis();
+}
+</code></pre>
+</li>
+<li>
+<p>Vises knappen når spillet er ferdig?</p>
+</li>
+<li>
+<p>Du legger kanskje merke til at vi har en bug nå? Vi må jo skjule knappen når spillet startes også!</p>
+</li>
+<li>
+<p>Skjul knappen når spillet startes.</p>
+<pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">start</span>(<span class="hljs-params"></span>) </span>{
+  ...
+  knapp.skjul();
+}
+</code></pre>
+</li>
+<li>
+<p>Spillet er nå ferdig! Del adressen med dine venner og se hvem som klarer flest poeng.</p>
+</li>
+</ul>
+</section>
+<section class="protip" id="tips-8">
+<h2 class="protip" id="tips-8">Tips</h2>
+<p>Om du sitter fast, kan du se på <a href="http://jsbin.com/pozova/11/edit?js,output">fasiten</a>.</p>
+</section>
+<section class="challenge" id="utfordringer">
+<h2 class="challenge" id="utfordringer">Utfordringer</h2>
+<p>Her er noen utfordringer:</p>
+<ul>
+<li>Endre størrelsen på ballen, slik at spillet blir vanskeligere.</li>
+<li>Endre hvor lang tid man har på seg.</li>
+<li>Endre fargen på ballen.</li>
+<li>Øk poengsummen med 1000 istedenfor 100.</li>
+</ul>
+</section>
+</section>
+</div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="72"><div class="Footer__center__3xqZ_ row" data-reactid="73"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="74">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="75">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="76"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="77"><img class="Footer__img__25Ink" src="/src/assets/graphics/smn.41dee6.jpg" data-reactid="78"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="79"><img class="Footer__img__25Ink" src="/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="80"/></a></div></div></div></div></div>
+<script type="text/javascript" src="/manifest.25bf77659b320cd3a087.js"></script><script type="text/javascript" src="/vendor.a6b03d2258d76438e766.js"></script><script type="text/javascript" src="/main.7f73ab0e0b72746f9c8a.js"></script><script type="text/javascript" src="/vendor2.04c375e06c230a54ba3e.js"></script></body>
+</html>

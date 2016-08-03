@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kodeklubben (server)</title>
+    <style type="text/css">.App__container__vvzpy {
+  margin-top: 125px; }
+.NavBar__flagGroup__3f0i_ {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px; }
+
+.NavBar__flag__3cn9U {
+  width: 30px;
+  height: 20px;
+  float: right;
+  margin-left: 5px; }
+.NavLink__linkBase__1m4Sm {
+  text-decoration: none !important;
+  font-size: 17pt; }
+
+.NavLink__linkStudent__1zq2x {
+  color: #265732; }
+
+.NavLink__linkTeacher__25L85 {
+  color: #215651; }
+.ModeIndicator__modeIndicator__gvKNO {
+  font-size: 1.2em;
+  margin-top: -15px;
+  text-align: right; }
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic);.Footer__container__1SZrv {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 15pt;
+  font-family: "Roboto", "Verdana", sans-serif; }
+  .Footer__container__1SZrv a {
+    text-decoration: none; }
+
+.Footer__containerStudent__3Yr5f {
+  background-color: #b1daae;
+  color: #265732; }
+  .Footer__containerStudent__3Yr5f a {
+    color: #265732; }
+
+.Footer__containerTeacher__36KZb {
+  background-color: #a3cccb;
+  color: #215651; }
+  .Footer__containerTeacher__36KZb a {
+    color: #215651; }
+
+.Footer__center__3xqZ_ {
+  text-align: center; }
+
+.Footer__inline__1Q6ds {
+  display: inline-block;
+  margin: 20px 10px; }
+
+.Footer__svg__29r7H {
+  width: 100px;
+  height: auto;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__img__25Ink {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: auto;
+  height: 50px;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__divider__LJrti {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid;
+  width: 50%; }
+
+.Footer__svg__29r7H:hover,
+.Footer__img__25Ink:hover {
+  transform: scale(1.2); }
+</style>
+<link href="/vendor2.04c375e06c230a54ba3e.css" rel="stylesheet"></head>
+<body>
+    <div id="app"><div><div class="App__container__vvzpy" data-reactroot="" data-reactid="1" data-react-checksum="-800747098"><div class="container-fluid" data-reactid="2"><div class="row" data-reactid="3"><nav class="navbar navbar-default navbar-fixed-top" data-reactid="4"><div class="container-fluid" data-reactid="5"><div class="btn-language-dropdown pull-right dropdown btn-group" data-reactid="6"><button class="dropdown-toggle btn-language-student btn-language btn btn-default" id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" data-reactid="7"><span data-reactid="8"><!-- react-text: 9 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="10"/></span></button><ul class="dropdown-menu" role="menu" aria-labelledby="language-dropdown" data-reactid="11"><li role="presentation" class="" data-reactid="12"><a role="menuitem" href="" tabindex="-1" data-reactid="13"><span data-reactid="14"><!-- react-text: 15 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="16"/></span></a></li><li role="presentation" class="" data-reactid="17"><a role="menuitem" href="" tabindex="-1" data-reactid="18"><span data-reactid="19"><!-- react-text: 20 -->Norsk nynorsk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="21"/></span></a></li><li role="presentation" class="" data-reactid="22"><a role="menuitem" href="" tabindex="-1" data-reactid="23"><span data-reactid="24"><!-- react-text: 25 -->Svenska<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="26"/></span></a></li><li role="presentation" class="" data-reactid="27"><a role="menuitem" href="" tabindex="-1" data-reactid="28"><span data-reactid="29"><!-- react-text: 30 -->Dansk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="31"/></span></a></li></ul></div><div class="navbar-header" data-reactid="32"><span class="navbar-brand" data-reactid="33"><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/" data-reactid="34"><span class="glyphicon glyphicon-home" data-reactid="35"></span></a><span data-reactid="36"><!-- react-text: 37 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/scratch" data-reactid="38">scratch</a></span><span class="hidden-xs" data-reactid="39"><!-- react-text: 40 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm active" href="/scratch/hoppehelt/hoppehelt" data-reactid="41">hoppehelt</a></span></span><button type="button" class="navbar-toggle collapsed" data-reactid="42"><span class="sr-only" data-reactid="43">Toggle navigation</span><span class="icon-bar" data-reactid="44"></span><span class="icon-bar" data-reactid="45"></span><span class="icon-bar" data-reactid="46"></span></button></div><div class="navbar-collapse collapse" data-reactid="47"><div class="navbar-form navbar-right" data-reactid="48"><div class="form-group" data-reactid="49"><input type="text" placeholder="Søk" class="form-control" data-reactid="50"/></div><!-- react-text: 51 --> <!-- /react-text --><div class="btn-toggle" data-reactid="52"><div data-reactid="53">Velg modus:</div><div class="btn-group btn-group" data-reactid="54"><button class="btn-student-nav active btn btn-default" type="button" data-reactid="55">ELEV</button><button class="btn-teacher-nav btn btn-default" type="button" data-reactid="56">LÆRER</button></div></div></div></div></div></nav></div><div class="row" data-reactid="57"><div class="col-xs-12" data-reactid="58"><div class="ModeIndicator__modeIndicator__gvKNO" data-reactid="59"><!-- react-text: 60 -->Du er i <!-- /react-text --><span class="text-student" data-reactid="61">elevmodus</span></div></div></div></div><div data-reactid="62"><h1 data-reactid="63"><!-- react-text: 64 -->Hoppehelt<!-- /react-text --><!-- react-text: 65 --> - Level <!-- /react-text --><!-- react-text: 66 -->4<!-- /react-text --></h1><p data-reactid="67"><i data-reactid="68"><!-- react-text: 69 -->av <!-- /react-text --><!-- react-text: 70 -->Geir Arne Hjelle<!-- /react-text --></i></p><div data-reactid="71"><section class="intro" id="introduksjon">
+<h1 class="intro" id="introduksjon">Introduksjon</h1>
+<p>Hoppehelt er litt inspirert av musikkspillet Guitar Hero. I Hoppehelt
+skal man kontrollere flere helter samtidig mens de hopper over fargede
+bokser som lager lyd.  Gjennom spillet Hoppehelt vil vi se litt
+nærmere på hvordan kloner brukes når man programmerer i Scratch. Vi
+vil til og med se eksempler på kloner av kloner!</p>
+<figure><img src="data:image/png;base64,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" alt="" /></figure>
+</section>
+<section class="activity" id="steg-1-streken">
+<h1 class="activity" id="steg-1-streken">Steg 1: Streken</h1>
+<figure><em>Vi begynner spillet vårt ved å lage en veldig enkel bakgrunn.</em></figure>
+<section class="check" id="sjekkliste">
+<h2 class="check" id="sjekkliste">Sjekkliste</h2>
+<ul>
+<li>
+<p>Start et nytt prosjekt, og slett kattefiguren.</p>
+</li>
+<li>
+<p>Tegn en ny bakgrunn som består av en ensfarget rett strek ganske
+langt ned på skjermen. Bruk vektorgrafikk. Dette er bakken som vår
+helt skal løpe på.</p>
+</li>
+<li>
+<p>For å enklere legge på en tittel senere lager vi en
+<code>Nytt spill</code>-melding på scenen:</p>
+<pre class=blocks>når grønt flagg klikkes
+send melding [Nytt spill v]
+</pre>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-2-en-hoppende-helt">
+<h1 class="activity" id="steg-2-en-hoppende-helt">Steg 2: En hoppende helt</h1>
+<figure><em>Nå skal vi introdusere hoppehelten.</em></figure>
+<section class="check" id="sjekkliste-2">
+<h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
+<ul>
+<li>
+<p>Tegn en enkel liten strekfigur som ser ut som om han løper mot
+venstre. Gi figuren navnet <code>Helt 1</code>.</p>
+<figure>Du kan senere lage flere drakter slik at spillet ser bedre ut, men
+vi vil ikke bruke tid på det nå.</figure>
+</li>
+<li>
+<p>Lag en ny variabel som du kaller <code class="blockdata">sprett</code>. Det er viktig
+at denne gjelder kun for denne figuren.</p>
+<p>Vi vil bruke <code class="blockdata">sprett</code>-variabelen til å beskrive
+heltens bevegelse når han hopper.</p>
+</li>
+<li>
+<p>I heltens hovedløkke lar vi gravitasjonen virke ved at vi stadig
+prøver å gjøre <code class="blockdata">sprett</code> mindre, samtidig som vi sier
+at dersom helten berører bakken skal han ikke falle.</p>
+<pre class=blocks>når jeg mottar [Nytt spill v]
+gå til x: (210) y: (-120)
+for alltid
+    endre [sprett v] med (-1)
+    hvis &lt;berører fargen [#00cc00] ?&gt;
+        neste drakt
+        sett [sprett v] til [0]
+    slutt
+    endre y med (sprett)
+slutt
+</pre>
+<p>Sett fargen i <code class="blocksensing">berører fargen</code>-klossen til samme
+farge som streken du tegnet på bakgrunnen i Steg 1.</p>
+</li>
+<li>
+<figure>Prøv å endre startposisjonen til helten, spesielt y-koordinaten. Får
+du helten til å falle mot bakken?</figure>
+</li>
+<li>
+<p>Legg til en ny <code class="blockcontrol">hvis</code>-test inne i
+<code class="blockcontrol">hvis</code>-testen du allerede har. Hvis tasten <code>m</code> trykkes
+setter du <code class="blockdata">sprett</code> til et positivt tall. Prøv deg fram
+slik at du finner en verdi som gjør at helten gjør passe store hopp.</p>
+</li>
+</ul>
+</section>
+<section class="flag" id="test-prosjektet">
+<h2 class="flag" id="test-prosjektet">Test prosjektet</h2>
+<figure><strong>Klikk på det grønne flagget.</strong></figure>
+<ul>
+<li>
+<figure>Står eller løper helten på bakken? Figuren skal ikke bevege seg
+sidelengs.</figure>
+</li>
+<li>
+<figure>Hopper helten når du trykker på <code>m</code>-tasten?</figure>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-3-bokser-med-lyd">
+<h1 class="activity" id="steg-3-bokser-med-lyd">Steg 3: Bokser med lyd</h1>
+<figure><em>Vi skal nå lage noen bokser som helten kan hoppe over.</em></figure>
+<section class="check" id="sjekkliste-3">
+<h2 class="check" id="sjekkliste-3">Sjekkliste</h2>
+<ul>
+<li>
+<p>Lag en ny figur ved å tegne en liten fargelagt boks som helten kan
+hoppe over. Kall figuren <code>Boks</code>. Bruk
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAaCAYAAACgoey0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGLSURBVEhLxZbbboJAFEX9Nv//oV6w9QLUxqbekJsggno6m0SDkZ7uoNGHnRCzmDUzjJndiqJIXpFWVbr2PLFtR4bDkViDd3nrdBvHsgblWGFYv7CLOAgCGU9sgTyKYsmyTE6nU+Pg/dnsu1zAdPp1s6sXse24slqv5XA8PjTxdisfZgdd9/NKfhFjW7P9XorDgUq73aY4jJekafnJqp/1SpwXhbCBmGXBqeJ9ngsbiFkWnCrGVrOBmGXBqeKdOYlsIGZZcKo43e2EDcQsC04V4/SxgZhl/z3V2yQRJpCew/Bg1BXjz35OdfCmz9XxVHEUx8KkOhGGB6OKQ3NTsYGcZcGp4iAMhQ3ELAtOFfvmhmIDMcuCU8Ub3xc2ELMsOFXsbTbCBmKWBaeKUQLYQMyy4P4Uj8YT+ZnPyzLABGKGA4NmgzpVex97Zla9viXzxUKWq9VDgrE63V7ZQHw/qBdjNuhGfVPSsPLFcnl3hqNxbd+C66pl4gfHdKN72mX13bqVnrf7Rvysjv0y8S8qKUloDR4MNgAAAABJRU5ErkJggg==" alt="Velg senterpunkt" /> til å sette
+senterpunktet nederst til venstre på boksen.</p>
+</li>
+<li>
+<p>Når boksen mottar meldingen <code>Nytt spill</code> vil vi at den plasserer seg
+på bakken helt til venstre på skjermen. Bruk en
+<code class="blockmotion">gå til</code>-kloss og lag dette skriptet selv. Pass på at boksen
+ikke berører kanten av skjermen.</p>
+</li>
+<li>
+<p>Etter at du har funnet en bra plassering på boksen kan du utvide
+skriptet ved å <code class="blocklooks">skjule</code> figuren, samt lage en løkke
+hvor boksen lager en klone av seg selv hvert andre sekund.</p>
+</li>
+<li>
+<p>Gå til scenen og lag en variabel du kaller
+<code class="blockdata">hastighet</code>. Lag et skript på scenen som setter denne
+variabelen til <code>3</code> når meldingen <code>Nytt spill</code> mottas.</p>
+</li>
+<li>
+<p>Gå tilbake til boksfiguren. Vi vil nå at boksklonene flytter seg mot
+helten. Lag et nytt skript som begynner når boksen starter som
+klon. I dette skriptet må du <code class="blocklooks">vise</code> boksen. Deretter
+kan du starte en løkke som gjentas til boksen berører kanten. Inne i
+løkken vil du endre x med <code class="blockdata">hastighet</code>. Etter løkken
+kan du slette denne klonen.</p>
+</li>
+</ul>
+</section>
+<section class="flag" id="test-prosjektet-2">
+<h2 class="flag" id="test-prosjektet-2">Test prosjektet</h2>
+<figure><strong>Klikk på det grønne flagget.</strong></figure>
+<ul>
+<li>
+<p>Kommer det en jevn strøm av bokser mot helten?</p>
+</li>
+<li>
+<figure>Kan du bruke <code>m</code> til å hoppe over boksene?</figure>
+</li>
+<li>
+<p>Hva skjer om helten springer inn i en boks?</p>
+</li>
+</ul>
+</section>
+<section class="check" id="sjekkliste-4">
+<h2 class="check" id="sjekkliste-4">Sjekkliste</h2>
+<ul>
+<li>
+<p>Vi vil la spillet stoppe når helten springer inn i en boks. Gå til
+<code>Helt 1</code>. Bytt nå ut <code class="blockcontrol">for alltid</code>-løkken med en
+<code class="blockcontrol">gjenta til</code>-løkke som du lar gjenta til helten
+berører <code>Boks</code>.</p>
+</li>
+<li>
+<p>Etter den nye <code class="blockcontrol">gjenta til</code>-løkken kan du sende ut en
+ny melding <code>Spill slutt</code>.</p>
+</li>
+<li>
+<p>Klikk på boks-figuren. Legg til et skript som stopper andre skript i
+figuren, og deretter sletter denne klonen etter at <code>Spill slutt</code>
+mottas.</p>
+<figure>Prøv spillet ditt igjen. Hva skjer nå om helten springer inn i en
+boks?</figure>
+</li>
+<li>
+<figure>Vi kan spille en liten lyd hver gang vi har hoppet over en boks.
+Legg til en</figure>
+<pre class=blocks>spill tone (60) i (0.5) takter
+</pre>
+<p>kloss etter løkken som flytter boksen, men før klonen
+slettes. Bruk gjerne <code class="blocksound">velg instrument</code>-klossen til å
+velge et passende instrument før spillet starter.</p>
+</li>
+<li>
+<p>Om du tester dette vil du se at boksene blir hengende litt mens
+lyden spilles. En enkel måte å unngå dette på er å legge til en
+<code class="blocklooks">skjul</code>-kloss rett før
+<code class="blocksound">spill tone</code>-klossen.</p>
+</li>
+</ul>
+</section>
+<section class="try" id="prov-selv">
+<h2 class="try" id="prov-selv">Prøv selv</h2>
+<p>Før vi går videre skal vi se på et par måter vi kan gjøre hver enkelt
+boks litt spesiell og forskjellig fra de andre på. Prøv å
+eksperimentere med disse og de andre innstillingene i spillet ditt.</p>
+<p>Helt først i skriptet hvor boksen starter som klon, før den vises, kan
+du prøve noe av det følgende. Du kan endre størrelsen på boksen
+tilfeldig, for eksempel med klossen</p>
+<pre class=blocks>sett størrelse til (tilfeldig tall fra (30) til (100)) %
+</pre>
+<p>På samme måte kan du bruke</p>
+<pre class=blocks>sett [farge v] effekt til (tilfeldig tall fra (-100) til (100))
+</pre>
+<figure>til å endre fargen på boksene tilfeldig. Finn også på andre effekter,
+kanskje ved å bruke flere drakter?</figure>
+<p>Vi kan også gjøre lydene som kommer når vi har hoppet over boksene
+inviduelle. Prøv for eksempel å la lengden av tonen være avhengig av
+størrelsen på boksen.</p>
+<figure>Prøv tilslutt å endre på hvor ofte det dukker opp nye bokser. Bruk
+gjerne en</figure>
+<pre class=blocks>tilfeldig tall fra (1.2) til (3.2)
+</pre>
+<p>kloss. Eksperimenter med verdiene i klossen.</p>
+</section>
+</section>
+<section class="activity" id="steg-4-flere-streker-og-bokser">
+<h1 class="activity" id="steg-4-flere-streker-og-bokser">Steg 4: Flere streker og bokser</h1>
+<p><em>Nå skal vi gjøre spillet ganske mye vanskeligere ved å lage tre rader
+med bokser.</em></p>
+<section class="check" id="sjekkliste-5">
+<h2 class="check" id="sjekkliste-5">Sjekkliste</h2>
+<ul>
+<li>
+<p>Se på skriptene til <code>Boks</code>. Ser du at du har en <em>generator-løkke</em>
+som lager nye bokser omtrent hvert annet sekund (du har kanskje lagt
+på en <code class="blockoperators">tilfeldig</code>-kloss i denne løkken). Videre
+har du en <em>flytte-løkke</em> som flytter boksene mot høyre, med
+eventuelle tilfeldige innstillinger på boksene.</p>
+<figure>Riv løs begge disse to løkkene og legg dem til side. Vi skal bruke
+dem igjen straks, så ikke slett noe.</figure>
+</li>
+<li>
+<p>Lag en ny variabel som du kaller <code class="blockdata">er generator</code>. Denne
+må gjelde kun for denne figuren. Vi vil bruke denne variabelen til å
+identifisere generator-løkken.</p>
+</li>
+<li>
+<p>Vi legger nå nemlig på en ny løkke som lager tre uavhengige
+generator-løkker. Endre skriptet som kjøres for <code>Nytt spill</code> til
+dette:</p>
+<pre class=blocks>når jeg mottar [Nytt spill v]
+gå til x: (-239) y: (-161)
+sett [er generator v] til [ja]
+skjul
+gjenta (3) ganger
+    lag klon av [meg v]
+    endre y med (110)
+slutt
+</pre>
+<p>Bruk den samme utgangsposisjonen som tidligere. Dette vil lage tre
+<em>generator-kloner</em> med forskjellige y-verdier.</p>
+</li>
+<li>
+<figure>Vi vil nå bygge opp igjen skriptet som kjører når en boks starter
+som klon. Lag først det følgende</figure>
+<pre class=blocks>når jeg starter som klon
+hvis &lt;(er generator) = [ja]&gt;
+    sett [er generator v] til [nei]
+ellers
+slutt
+</pre>
+</li>
+<li>
+<p>Flytt nå generator-løkken som du la til side tidligere inn i
+<code class="blockcontrol">hvis</code>-testen rett under
+<code class="blockdata">sett er generator</code>-klossen.</p>
+</li>
+<li>
+<p>Tilsvarende legger du flytt-løkken fra tidligere inn i
+<code class="blockcontrol">ellers</code>-testen.</p>
+</li>
+</ul>
+<figure>Prøv spillet ditt. Du skal nå ha tre rader med bokser som flyttes over
+skjermen.</figure>
+<ul>
+<li>Klikk på <code>Scene</code> helt til venstre på skjermen. Gå til
+<code class="blocklightgrey">Bakgrunner</code>. Tegn to nye streker i samme farge som
+den første. Test spillet og flytt strekene slik at boksene flytter
+seg naturlig på toppen av dem.</li>
+</ul>
+</section>
+<section class="flag" id="test-prosjektet-3">
+<h2 class="flag" id="test-prosjektet-3">Test prosjektet</h2>
+<figure><strong>Klikk på det grønne flagget.</strong></figure>
+<ul>
+<li>
+<p>Har du tre rader med bokser som kommer skliende over skjermen?</p>
+</li>
+<li>
+<p>Det er foreløpig bare en hoppehelt på den nederste raden?</p>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-5-hvor-er-alle-heltene">
+<h1 class="activity" id="steg-5-hvor-er-alle-heltene">Steg 5: Hvor er alle heltene?</h1>
+<figure><em>Vi skal nå lage de siste to hoppeheltene!</em></figure>
+<section class="check" id="sjekkliste-6">
+<h2 class="check" id="sjekkliste-6">Sjekkliste</h2>
+<ul>
+<li>
+<p>Lag en kopi av <code>Helt 1</code>-figuren. Kopien blir automatisk hetende
+<code>Helt 2</code>.</p>
+</li>
+<li>
+<p>Klikk på <code>Helt 2</code>. Det eneste vi trenger å endre på er y-posisjonen
+og tasten som brukes til å hoppe.</p>
+<figure>Endre y-posisjonen i <code class="blockmotion">gå til</code>-klossen med 110.</figure>
+<p>Endre <code>m</code> til <code>k</code> i <code class="blocksensing">tast trykket</code>-testen.</p>
+</li>
+</ul>
+<p>Prøv spillet ditt igjen. Har du nå to hoppehelter? Virker de som de skal?</p>
+<ul>
+<li>Lag en ny kopi av <code>Helt 1</code>-figuren. Endre denne kopien slik at den
+har posisjon 110 høyere enn <code>Helt 2</code>, og slik at den hopper når du
+trykker på <code>o</code>.</li>
+</ul>
+</section>
+<section class="flag" id="test-prosjektet-4">
+<h2 class="flag" id="test-prosjektet-4">Test prosjektet</h2>
+<figure><strong>Klikk på det grønne flagget.</strong></figure>
+<ul>
+<li>Du skal nå ha tre hoppehelter som alle må hoppe over boksene som
+kommer! Dette har plutselig blitt et ganske vanskelig spill som
+krever konsentrasjon og koordinasjon!</li>
+</ul>
+</section>
+<section class="try" id="prov-selv-2">
+<h2 class="try" id="prov-selv-2">Prøv selv</h2>
+<figure>Oppgaven slutter her, men det er jo fortsatt mange spennende ting du
+kan gjøre med spillet ditt for å gjøre det enda bedre.</figure>
+<p>Prøv for eksempel å legge til poeng ved å lage en
+<code class="blockdata">Poeng</code>-variabel som du øker hver gang en boks har blitt
+hoppet over. Du kan også øke hastigheten etterhvert som spillet går.</p>
+<p>Prøv å gjøre tonen som spilles avhengig av y-posisjonen til
+boksen. Dette er litt vanskelig, men blir veldig kult da det høres ut
+hoppeheltene spiller en liten sang ved å hoppe over boksene.</p>
+</section>
+</section>
+</div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="72"><div class="Footer__center__3xqZ_ row" data-reactid="73"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="74">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="75">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="76"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="77"><img class="Footer__img__25Ink" src="/src/assets/graphics/smn.41dee6.jpg" data-reactid="78"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="79"><img class="Footer__img__25Ink" src="/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="80"/></a></div></div></div></div></div>
+<script type="text/javascript" src="/manifest.25bf77659b320cd3a087.js"></script><script type="text/javascript" src="/vendor.a6b03d2258d76438e766.js"></script><script type="text/javascript" src="/main.7f73ab0e0b72746f9c8a.js"></script><script type="text/javascript" src="/vendor2.04c375e06c230a54ba3e.js"></script></body>
+</html>

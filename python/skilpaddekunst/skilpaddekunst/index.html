@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kodeklubben (server)</title>
+    <style type="text/css">.App__container__vvzpy {
+  margin-top: 125px; }
+.NavBar__flagGroup__3f0i_ {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px; }
+
+.NavBar__flag__3cn9U {
+  width: 30px;
+  height: 20px;
+  float: right;
+  margin-left: 5px; }
+.NavLink__linkBase__1m4Sm {
+  text-decoration: none !important;
+  font-size: 17pt; }
+
+.NavLink__linkStudent__1zq2x {
+  color: #265732; }
+
+.NavLink__linkTeacher__25L85 {
+  color: #215651; }
+.ModeIndicator__modeIndicator__gvKNO {
+  font-size: 1.2em;
+  margin-top: -15px;
+  text-align: right; }
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic);.Footer__container__1SZrv {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 15pt;
+  font-family: "Roboto", "Verdana", sans-serif; }
+  .Footer__container__1SZrv a {
+    text-decoration: none; }
+
+.Footer__containerStudent__3Yr5f {
+  background-color: #b1daae;
+  color: #265732; }
+  .Footer__containerStudent__3Yr5f a {
+    color: #265732; }
+
+.Footer__containerTeacher__36KZb {
+  background-color: #a3cccb;
+  color: #215651; }
+  .Footer__containerTeacher__36KZb a {
+    color: #215651; }
+
+.Footer__center__3xqZ_ {
+  text-align: center; }
+
+.Footer__inline__1Q6ds {
+  display: inline-block;
+  margin: 20px 10px; }
+
+.Footer__svg__29r7H {
+  width: 100px;
+  height: auto;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__img__25Ink {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: auto;
+  height: 50px;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__divider__LJrti {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid;
+  width: 50%; }
+
+.Footer__svg__29r7H:hover,
+.Footer__img__25Ink:hover {
+  transform: scale(1.2); }
+</style>
+<link href="/vendor2.04c375e06c230a54ba3e.css" rel="stylesheet"></head>
+<body>
+    <div id="app"><div><div class="App__container__vvzpy" data-reactroot="" data-reactid="1" data-react-checksum="-217372665"><div class="container-fluid" data-reactid="2"><div class="row" data-reactid="3"><nav class="navbar navbar-default navbar-fixed-top" data-reactid="4"><div class="container-fluid" data-reactid="5"><div class="btn-language-dropdown pull-right dropdown btn-group" data-reactid="6"><button class="dropdown-toggle btn-language-student btn-language btn btn-default" id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" data-reactid="7"><span data-reactid="8"><!-- react-text: 9 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="10"/></span></button><ul class="dropdown-menu" role="menu" aria-labelledby="language-dropdown" data-reactid="11"><li role="presentation" class="" data-reactid="12"><a role="menuitem" href="" tabindex="-1" data-reactid="13"><span data-reactid="14"><!-- react-text: 15 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="16"/></span></a></li><li role="presentation" class="" data-reactid="17"><a role="menuitem" href="" tabindex="-1" data-reactid="18"><span data-reactid="19"><!-- react-text: 20 -->Norsk nynorsk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="21"/></span></a></li><li role="presentation" class="" data-reactid="22"><a role="menuitem" href="" tabindex="-1" data-reactid="23"><span data-reactid="24"><!-- react-text: 25 -->Svenska<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="26"/></span></a></li><li role="presentation" class="" data-reactid="27"><a role="menuitem" href="" tabindex="-1" data-reactid="28"><span data-reactid="29"><!-- react-text: 30 -->Dansk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="31"/></span></a></li></ul></div><div class="navbar-header" data-reactid="32"><span class="navbar-brand" data-reactid="33"><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/" data-reactid="34"><span class="glyphicon glyphicon-home" data-reactid="35"></span></a><span data-reactid="36"><!-- react-text: 37 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/python" data-reactid="38">python</a></span><span class="hidden-xs" data-reactid="39"><!-- react-text: 40 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm active" href="/python/skilpaddekunst/skilpaddekunst" data-reactid="41">skilpaddekunst</a></span></span><button type="button" class="navbar-toggle collapsed" data-reactid="42"><span class="sr-only" data-reactid="43">Toggle navigation</span><span class="icon-bar" data-reactid="44"></span><span class="icon-bar" data-reactid="45"></span><span class="icon-bar" data-reactid="46"></span></button></div><div class="navbar-collapse collapse" data-reactid="47"><div class="navbar-form navbar-right" data-reactid="48"><div class="form-group" data-reactid="49"><input type="text" placeholder="Søk" class="form-control" data-reactid="50"/></div><!-- react-text: 51 --> <!-- /react-text --><div class="btn-toggle" data-reactid="52"><div data-reactid="53">Velg modus:</div><div class="btn-group btn-group" data-reactid="54"><button class="btn-student-nav active btn btn-default" type="button" data-reactid="55">ELEV</button><button class="btn-teacher-nav btn btn-default" type="button" data-reactid="56">LÆRER</button></div></div></div></div></div></nav></div><div class="row" data-reactid="57"><div class="col-xs-12" data-reactid="58"><div class="ModeIndicator__modeIndicator__gvKNO" data-reactid="59"><!-- react-text: 60 -->Du er i <!-- /react-text --><span class="text-student" data-reactid="61">elevmodus</span></div></div></div></div><div data-reactid="62"><h1 data-reactid="63"><!-- react-text: 64 -->Skilpaddekunst<!-- /react-text --><!-- react-text: 65 --> - Level <!-- /react-text --><!-- react-text: 66 -->2<!-- /react-text --></h1><p data-reactid="67"><i data-reactid="68"><!-- react-text: 69 -->av <!-- /react-text --></i></p><div data-reactid="70"><section class="intro" id="introduksjon">
+<h1 class="intro" id="introduksjon">Introduksjon</h1>
+<p>Skilpadder (turtles på engelsk) er en form for roboter som har vært i
+bruk innen programmering i lang tid. Vi vil bruke
+skilpadde-biblioteket i Python til å utforske flere
+programmeringskonsepter samtidig som vi tegner kule bilder.</p>
+<figure><img src="/_/tjesi_oppgaver/src/python/skilpaddekunst/skilpaddekunst.1d7bd6.png" alt="" /></figure>
+</section>
+<section class="activity" id="steg-1-mot-skilpadden">
+<h1 class="activity" id="steg-1-mot-skilpadden">Steg 1: Møt skilpadden</h1>
+<p>For å bruke skilpadder i Python må vi importere et bibliotek som heter
+<code>turtle</code>. Slike biblioteker kalles <em>modules</em> i Python og brukes mye
+for å organisere og gjenbruke kode som andre har skrevet. Det finnes
+flere måter å importere biblioteker på i Python. Vi vil her bruke den
+enkleste, hvor vi starter alle skilpaddeprogrammene våre med linjen</p>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+</code></pre>
+<p>Her betyr <code>*</code> alt, slik at linjen sier <code>Importer all kode fra turtle-biblioteket</code>.</p>
+<section class="protip" id="turtles">
+<h3 class="protip" id="turtles">Turtles</h3>
+<p>Navnet <strong>Turtle</strong> betyr <em>skilpadde</em> på norsk. Bakgrunnen til dette
+navnet er historisk. For nesten 70 år siden bygde William Grey Walter
+et par roboter som kunne bevege seg rundt. Disse beveget seg ganske
+sakte, og var lave og skallformet. De fikk derfor etterhvert
+kallenavnet skilpadder.</p>
+<p>Senere ble måten disse skilpaddene beveget seg på (vi skal se hvordan
+snart) tatt inn i forskjellige programmeringsspråk, spesielt som en
+måte å tegne på. Språket <em>Logo</em> er nok det som er mest kjent for slik
+skilpaddegrafikk, men nesten alle programmeringsspråk støtter dette i
+dag, inkludert for eksempel <em>Scratch</em>, <em>Lua</em> og <em>Python</em>.</p>
+</section>
+<section class="check" id="sjekkliste">
+<h2 class="check" id="sjekkliste">Sjekkliste</h2>
+<ul>
+<li>
+<p>Det er på tide å lage vår første skilpadde. Start IDLE og åpne et
+nytt programmeringsvindu. I dette nye vinduet kan du skrive inn
+følgende kode:</p>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+
+shape(<span class="hljs-string">'turtle'</span>)
+shapesize(<span class="hljs-number">2</span>)
+bgcolor(<span class="hljs-string">'darkblue'</span>)
+color(<span class="hljs-string">'yellow'</span>)
+</code></pre>
+<p>Lagre programmet med navnet <code>skilpadde.py</code> og kjør det. Du skal nå
+få opp et nytt vindu med en gul skilpadde på en blå bakgrunn. Hvis
+dette ikke skjer kan du se i det opprinnelige <code>Python Shell</code>-vinduet om du har fått en feilmelding.</p>
+</li>
+<li>
+<p>La oss se litt nøyere på hva programmet gjør så langt. Det er en god
+ide å prøve å endre på ting i programmet for å se effekten av
+endringene og bedre forstå hvordan ting virker.</p>
+</li>
+<li>
+<p>Linjen <code>shape('turtle')</code> sier at vi vil bruke en skilpaddefigur. I
+stedet for <code>turtle</code> kan du også prøve <code>arrow</code>, <code>circle</code>, <code>square</code>,
+<code>triangle</code> eller <code>classic</code>.</p>
+</li>
+<li>
+<p>Med <code>shapesize(2)</code> forteller vi programmet hvor stor vi vil at
+skilpaddefiguren skal være. Prøv med andre tall!</p>
+</li>
+<li>
+<p>Kommandoene <code>bgcolor</code> og <code>color</code> bestemmer fargene på henholdsvis
+bakgrunnen og på skilpaddefiguren. Python kjenner til veldig mange
+farger (men bare på engelsk), så prøv om du kan endre fargene til
+noe du liker.</p>
+</li>
+<li>
+<p>I de senere programmene vil vi bruke disse linjene på toppen. Du kan
+gjerne bruke en variant av farger og figur som du liker bedre i
+stedet.</p>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-2-en-kunstnerisk-skilpadde">
+<h1 class="activity" id="steg-2-en-kunstnerisk-skilpadde">Steg 2: En kunstnerisk skilpadde</h1>
+<p>Skilpadden er ikke bare fin å se på. Den kan også tegne! I dette
+steget vil vi bli kjent med noen enkle kommandoer som gjør skilpadden
+om til en kunstner.</p>
+<section class="check" id="sjekkliste-2">
+<h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
+<ul>
+<li>
+<figure>Legg til en linje nederst i programmet ditt, slik at det ser slik
+ut:</figure>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+
+shape(<span class="hljs-string">'turtle'</span>)
+shapesize(<span class="hljs-number">2</span>)
+bgcolor(<span class="hljs-string">'darkblue'</span>)
+color(<span class="hljs-string">'yellow'</span>)
+
+forward(<span class="hljs-number">200</span>)
+</code></pre>
+</li>
+<li>
+<p>Når du kjører programmet vil du se at skilpadden har beveget seg
+forover et lite stykke, og at den har tegnet en strek der den
+beveget seg.</p>
+</li>
+<li>
+<p>I tillegg til <code>forward</code> kan vi også bruke kommandoene <code>backward</code> for
+å gå bakover, <code>left</code> for å svinge mot venstre og <code>right</code> for å
+svinge mot høyre. Prøv for eksempel å endre programmet ditt til det
+følgende:</p>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+
+shape(<span class="hljs-string">'turtle'</span>)
+shapesize(<span class="hljs-number">2</span>)
+bgcolor(<span class="hljs-string">'darkblue'</span>)
+color(<span class="hljs-string">'yellow'</span>)
+
+forward(<span class="hljs-number">200</span>)
+left(<span class="hljs-number">60</span>)
+forward(<span class="hljs-number">50</span>)
+backward(<span class="hljs-number">200</span>)
+right(<span class="hljs-number">90</span>)
+forward(<span class="hljs-number">100</span>)
+</code></pre>
+<p>Ser du at skilpadden utfører alle kommandoene du gir den?</p>
+</li>
+<li>
+<p>Hvis vi setter sammen kommandoene litt systematisk kan vi tegne noen
+grunnleggende geometriske figurer. For eksempel, om vi vil tegne en
+firkant kan vi først gå fremover, deretter svinge 90 grader (mot
+høyre eller venstre), deretter fremover igjen, så svinge, så
+fremover, så svinge og til slutt fremover en gang til. I Python kan
+vi skrive dette som</p>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+
+shape(<span class="hljs-string">'turtle'</span>)
+shapesize(<span class="hljs-number">2</span>)
+bgcolor(<span class="hljs-string">'darkblue'</span>)
+color(<span class="hljs-string">'yellow'</span>)
+
+forward(<span class="hljs-number">100</span>)
+right(<span class="hljs-number">90</span>)
+forward(<span class="hljs-number">100</span>)
+right(<span class="hljs-number">90</span>)
+forward(<span class="hljs-number">100</span>)
+right(<span class="hljs-number">90</span>)
+forward(<span class="hljs-number">100</span>)
+right(<span class="hljs-number">90</span>)
+</code></pre>
+<p>Tegner skilpadden en firkant når du kjører dette programmet?</p>
+</li>
+<li>
+<p>Hva med en trekant? Hvordan må du forandre koden din for at
+skilpadden skal tegne en trekant i stedet for en firkant? Prøv selv
+å endre koden og kjør den, ble resultatet som du trodde?</p>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-3-gjenta-deg-selv">
+<h1 class="activity" id="steg-3-gjenta-deg-selv">Steg 3: Gjenta deg selv</h1>
+<p>Hvis du ser på koden vi har brukt for å tegne trekanter og firkanter
+har vi stadig gjentatt oss selv. I stedet for at vi skriver samme kode
+om og om igjen kan vi be Python gjenta deler av koden. Til dette
+bruker vi <strong>for-løkker</strong>.</p>
+<section class="check" id="sjekkliste-3">
+<h2 class="check" id="sjekkliste-3">Sjekkliste</h2>
+<ul>
+<li>
+<figure>Det følgende programmet tegner også en firkant, akkurat som det
+tidligere programmet vi lagde:</figure>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+
+shape(<span class="hljs-string">'turtle'</span>)
+shapesize(<span class="hljs-number">2</span>)
+bgcolor(<span class="hljs-string">'darkblue'</span>)
+color(<span class="hljs-string">'yellow'</span>)
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">4</span>):
+    forward(<span class="hljs-number">100</span>)
+    right(<span class="hljs-number">90</span>)
+</code></pre>
+<p>Endre koden din som over, og kjør programmet.</p>
+</li>
+<li>
+<p>Legg merke til at linjene som kommer etter <code>for</code> er skjøvet inn til
+høyre. Dette er veldig viktig i Python, fordi det forteller hvor mye
+kode som skal gjentas i løkken. For å skyve koden inn på denne måten
+kan du bruke <code>Tab</code>-tasten i IDLE. For å trekke koden tilbake til
+venstre kan du trykke <code>Shift</code> og <code>Tab</code>.</p>
+</li>
+<li>
+<p>Prøv å trekk linjen <code>right(90)</code> til venstre, slik at for-løkken ser
+slik ut:</p>
+<pre><code class="language-python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">4</span>):
+    forward(<span class="hljs-number">100</span>)
+right(<span class="hljs-number">90</span>)
+</code></pre>
+<figure>Hva tror du programmet ditt vil gjøre nå? Forsøk å kjøre
+programmet for å se om du har rett!</figure>
+<p>Skilpadden vil bare gå fremover fire ganger før den svinger til
+høyre en gang til slutt. Det betyr at den vil tegne en rett linje
+i stedet for en firkant.</p>
+</li>
+<li>
+<p>Nå som vi bruker en for-løkke har det også blitt mye enklere å endre
+koden til å for eksempel tegne en trekant. Vi må endre 4 til 3 i
+for-løkken. I tillegg må vi endre vinkelen skilpadden snur ved hvert
+hjørne. For at skilpadden skal gå en runde rundt trekanten må den
+snu totalt 360 grader. Siden den snur tre ganger må den snu 120
+grader (360 delt på 3) i hvert hjørne. Programmet for å tegne en
+trekant blir dermed seende slik ut:</p>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+
+shape(<span class="hljs-string">'turtle'</span>)
+shapesize(<span class="hljs-number">2</span>)
+bgcolor(<span class="hljs-string">'darkblue'</span>)
+color(<span class="hljs-string">'yellow'</span>)
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+    forward(<span class="hljs-number">100</span>)
+    right(<span class="hljs-number">120</span>)
+</code></pre>
+</li>
+<li>
+<p>Prøv å endre programmet slik at det tegner andre mangekanter.
+Hvordan kan du tegne for eksempel en femkant, åttekant eller kanskje
+en femtenkant.</p>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-4-alle-ting-fortjener-et-navn">
+<h1 class="activity" id="steg-4-alle-ting-fortjener-et-navn">Steg 4: Alle ting fortjener et navn</h1>
+<figure>Vi skal fortsette med å gjøre koden vår enda mer fleksibel ved å gi
+ting navn. Dette vil også gjøre det enklere å forstå hva koden gjør.</figure>
+<section class="check" id="sjekkliste-4">
+<h2 class="check" id="sjekkliste-4">Sjekkliste</h2>
+<ul>
+<li>
+<p>Vi innfører først variabler som sier hvor mange sider vi vil tegne,
+hvor lang hver side skal være og hvor mange grader vi skal snu ved
+hvert hjørne. Endre programmet ditt slik at det ser slik ut:</p>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+
+shape(<span class="hljs-string">'turtle'</span>)
+shapesize(<span class="hljs-number">2</span>)
+bgcolor(<span class="hljs-string">'darkblue'</span>)
+color(<span class="hljs-string">'yellow'</span>)
+
+sides = <span class="hljs-number">4</span>
+length = <span class="hljs-number">100</span>
+angle = <span class="hljs-number">90</span>
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(sides):
+    forward(length)
+    right(angle)
+</code></pre>
+<p>Tegner programmet fortsatt en firkant?</p>
+</li>
+<li>
+<figure>Nå kan du få programmet til å tegne en trekant bare ved å endre
+verdiene på variablene dine. Prøv om du får det til?</figure>
+</li>
+<li>
+<p>Vi kan gjøre programmet enda smartere. I stedet for at du selv må
+regne vinkelen kan programmet gjøre det. Bytt ut linjen <code>angle = 90</code>
+med</p>
+<pre><code class="language-python">angle = <span class="hljs-number">360</span> / sides
+</code></pre>
+<p>Nå kan du prøve å bare endre verdien av <code>sides</code> og kjøre om igjen.
+Tegner programmet de riktige mangekantene?</p>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-5-egne-kommandoer">
+<h1 class="activity" id="steg-5-egne-kommandoer">Steg 5: Egne kommandoer</h1>
+<figure>I Python kan vi også lage våre egne kommandoer ved å definere
+funksjoner.  Dette er en annen måte vi kan unngå å gjenta oss selv på.</figure>
+<section class="check" id="sjekkliste-5">
+<h2 class="check" id="sjekkliste-5">Sjekkliste</h2>
+<ul>
+<li>
+<p>Vi skal nå lage en funksjon som tegner en mangekant. Dette gjør vi
+ved å bruke kommandoen <code>def</code> (def er en forkortelse for <em>define</em> som
+betyr definer). Endre programmet ditt slik at det ser ut som under:</p>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+
+shape(<span class="hljs-string">'turtle'</span>)
+shapesize(<span class="hljs-number">2</span>)
+bgcolor(<span class="hljs-string">'darkblue'</span>)
+color(<span class="hljs-string">'yellow'</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">polygon</span><span class="hljs-params">(sides, length)</span>:</span>
+    angle = <span class="hljs-number">360</span> / sides
+
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(sides):
+        forward(length)
+        right(angle)
+
+polygon(<span class="hljs-number">4</span>, <span class="hljs-number">100</span>)
+</code></pre>
+<p>Kjør programmet. Kjenner du igjen firkanten?</p>
+</li>
+<li>
+<p>Nå som vi har laget <code>polygon</code>-funksjonen er det kjempelett å tegne
+forskjellige mangekanter. Legg for eksempel til de følgende linjene
+nederst i programmet ditt:</p>
+<pre><code class="language-python">polygon(<span class="hljs-number">3</span>, <span class="hljs-number">100</span>)
+polygon(<span class="hljs-number">4</span>, <span class="hljs-number">100</span>)
+polygon(<span class="hljs-number">5</span>, <span class="hljs-number">100</span>)
+forward(<span class="hljs-number">125</span>)
+right(<span class="hljs-number">180</span>)
+polygon(<span class="hljs-number">3</span>, <span class="hljs-number">150</span>)
+polygon(<span class="hljs-number">5</span>, <span class="hljs-number">150</span>)
+polygon(<span class="hljs-number">7</span>, <span class="hljs-number">150</span>)
+</code></pre>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-6-skilpaddekunst">
+<h1 class="activity" id="steg-6-skilpaddekunst">Steg 6: Skilpaddekunst</h1>
+<figure>Vi vil til slutt generalisere funksjonen vår litt slik at den ikke
+bare tegner kjedelige mangekanter.</figure>
+<section class="check" id="sjekkliste-6">
+<h2 class="check" id="sjekkliste-6">Sjekkliste</h2>
+<ul>
+<li>
+<p>Vi lager nå en ny funksjon <code>polylines</code> som ligner veldig mye på
+<code>polygon</code>, men hvor vi også kan endre på vinklene slik at de ikke
+alltid summerer seg til 360. Dette gjør underverker for kunsten vår!
+Endre programmet ditt slik at det ser slik ut:</p>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+
+shape(<span class="hljs-string">'turtle'</span>)
+shapesize(<span class="hljs-number">2</span>)
+bgcolor(<span class="hljs-string">'darkblue'</span>)
+color(<span class="hljs-string">'yellow'</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">polylines</span><span class="hljs-params">(sides, length, angle)</span>:</span>
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(sides):
+        forward(length)
+        right(angle)
+
+polylines(<span class="hljs-number">5</span>, <span class="hljs-number">100</span>, <span class="hljs-number">144</span>)
+</code></pre>
+<p>Kjør programmet. Hva tegner skilpadden nå?</p>
+</li>
+<li>
+<p>En annen variant kan være hvor vi tegner en litt skjev mangekant.
+For eksempel den følgende kommandoen vil tegne firkanter hvor
+vinklene er 91 grader i stedet for 90 grader. Dette blir
+overraskende stilig. Bytt ut <code>polylines</code>-kommandoen med</p>
+<pre><code class="language-python">polylines(<span class="hljs-number">91</span>, <span class="hljs-number">200</span>, <span class="hljs-number">91</span>)
+</code></pre>
+</li>
+<li>
+<p>Vi kan også endre lengden av strekene etterhvert som vi tegner.
+Dette skaper en fin spiraleffekt. Legg merke til hvor mye funksjonen
+<code>spiral</code> ligner på <code>polylines</code>:</p>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+
+shape(<span class="hljs-string">'turtle'</span>)
+shapesize(<span class="hljs-number">2</span>)
+bgcolor(<span class="hljs-string">'darkblue'</span>)
+color(<span class="hljs-string">'yellow'</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">polylines</span><span class="hljs-params">(sides, length, angle)</span>:</span>
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(sides):
+        forward(length)
+        right(angle)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">spiral</span><span class="hljs-params">(sides, length, angle)</span>:</span>
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(sides):
+        forward(length)
+        right(angle)
+        length = length + <span class="hljs-number">5</span>
+
+spiral(<span class="hljs-number">100</span>, <span class="hljs-number">5</span>, <span class="hljs-number">125</span>)
+</code></pre>
+</li>
+<li>
+<p>Prøv forskjellige verdier i stedet for 100, 5 og 125 når du kaller
+<code>spiral</code>. Finner du noen verdier som gir spesielt fine bilder synes
+du?</p>
+</li>
+</ul>
+</section>
+<section class="try" id="prov-selv">
+<h2 class="try" id="prov-selv">Prøv selv</h2>
+<p>Kombiner de forskjellige funksjonene vi har laget, <code>polygon</code>,
+<code>polylines</code> og <code>spiral</code> med de andre skilpadde-kommandoene du har lært
+som for eksempel <code>forward</code> og <code>left</code>. Klarer du å tegne enda mer
+spennende kunstverk? Eller kanskje du kan tegne en by? Et hus kan for
+eksempel lages ved først å tegne en firkant og deretter en trekant på
+toppen for taket.</p>
+<p>Et tips helt på slutten er at funksjonene <code>penup()</code> og <code>pendown()</code>
+styrer om skilpadden tegner mens den flytter på seg. Disse er veldig
+nyttige når man vil tegne flere figurer som ikke henger sammen.</p>
+<p>Et annet tips er funksjonen <code>speed()</code>. Denne justerer hastigheten som
+skilpadden tegner med. For eksempel vil <code>speed(1)</code> tegne veldig sakte,
+mens <code>speed(11)</code> tegner kjempefort.</p>
+</section>
+</section>
+</div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="71"><div class="Footer__center__3xqZ_ row" data-reactid="72"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="73">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="74">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="75"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="76"><img class="Footer__img__25Ink" src="/src/assets/graphics/smn.41dee6.jpg" data-reactid="77"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="78"><img class="Footer__img__25Ink" src="/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="79"/></a></div></div></div></div></div>
+<script type="text/javascript" src="/manifest.25bf77659b320cd3a087.js"></script><script type="text/javascript" src="/vendor.a6b03d2258d76438e766.js"></script><script type="text/javascript" src="/main.7f73ab0e0b72746f9c8a.js"></script><script type="text/javascript" src="/vendor2.04c375e06c230a54ba3e.js"></script></body>
+</html>

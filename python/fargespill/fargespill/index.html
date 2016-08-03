@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kodeklubben (server)</title>
+    <style type="text/css">.App__container__vvzpy {
+  margin-top: 125px; }
+.NavBar__flagGroup__3f0i_ {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px; }
+
+.NavBar__flag__3cn9U {
+  width: 30px;
+  height: 20px;
+  float: right;
+  margin-left: 5px; }
+.NavLink__linkBase__1m4Sm {
+  text-decoration: none !important;
+  font-size: 17pt; }
+
+.NavLink__linkStudent__1zq2x {
+  color: #265732; }
+
+.NavLink__linkTeacher__25L85 {
+  color: #215651; }
+.ModeIndicator__modeIndicator__gvKNO {
+  font-size: 1.2em;
+  margin-top: -15px;
+  text-align: right; }
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic);.Footer__container__1SZrv {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 15pt;
+  font-family: "Roboto", "Verdana", sans-serif; }
+  .Footer__container__1SZrv a {
+    text-decoration: none; }
+
+.Footer__containerStudent__3Yr5f {
+  background-color: #b1daae;
+  color: #265732; }
+  .Footer__containerStudent__3Yr5f a {
+    color: #265732; }
+
+.Footer__containerTeacher__36KZb {
+  background-color: #a3cccb;
+  color: #215651; }
+  .Footer__containerTeacher__36KZb a {
+    color: #215651; }
+
+.Footer__center__3xqZ_ {
+  text-align: center; }
+
+.Footer__inline__1Q6ds {
+  display: inline-block;
+  margin: 20px 10px; }
+
+.Footer__svg__29r7H {
+  width: 100px;
+  height: auto;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__img__25Ink {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: auto;
+  height: 50px;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__divider__LJrti {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid;
+  width: 50%; }
+
+.Footer__svg__29r7H:hover,
+.Footer__img__25Ink:hover {
+  transform: scale(1.2); }
+</style>
+<link href="/vendor2.04c375e06c230a54ba3e.css" rel="stylesheet"></head>
+<body>
+    <div id="app"><div><div class="App__container__vvzpy" data-reactroot="" data-reactid="1" data-react-checksum="-1015643254"><div class="container-fluid" data-reactid="2"><div class="row" data-reactid="3"><nav class="navbar navbar-default navbar-fixed-top" data-reactid="4"><div class="container-fluid" data-reactid="5"><div class="btn-language-dropdown pull-right dropdown btn-group" data-reactid="6"><button class="dropdown-toggle btn-language-student btn-language btn btn-default" id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" data-reactid="7"><span data-reactid="8"><!-- react-text: 9 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="10"/></span></button><ul class="dropdown-menu" role="menu" aria-labelledby="language-dropdown" data-reactid="11"><li role="presentation" class="" data-reactid="12"><a role="menuitem" href="" tabindex="-1" data-reactid="13"><span data-reactid="14"><!-- react-text: 15 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="16"/></span></a></li><li role="presentation" class="" data-reactid="17"><a role="menuitem" href="" tabindex="-1" data-reactid="18"><span data-reactid="19"><!-- react-text: 20 -->Norsk nynorsk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="21"/></span></a></li><li role="presentation" class="" data-reactid="22"><a role="menuitem" href="" tabindex="-1" data-reactid="23"><span data-reactid="24"><!-- react-text: 25 -->Svenska<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="26"/></span></a></li><li role="presentation" class="" data-reactid="27"><a role="menuitem" href="" tabindex="-1" data-reactid="28"><span data-reactid="29"><!-- react-text: 30 -->Dansk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="31"/></span></a></li></ul></div><div class="navbar-header" data-reactid="32"><span class="navbar-brand" data-reactid="33"><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/" data-reactid="34"><span class="glyphicon glyphicon-home" data-reactid="35"></span></a><span data-reactid="36"><!-- react-text: 37 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/python" data-reactid="38">python</a></span><span class="hidden-xs" data-reactid="39"><!-- react-text: 40 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm active" href="/python/fargespill/fargespill" data-reactid="41">fargespill</a></span></span><button type="button" class="navbar-toggle collapsed" data-reactid="42"><span class="sr-only" data-reactid="43">Toggle navigation</span><span class="icon-bar" data-reactid="44"></span><span class="icon-bar" data-reactid="45"></span><span class="icon-bar" data-reactid="46"></span></button></div><div class="navbar-collapse collapse" data-reactid="47"><div class="navbar-form navbar-right" data-reactid="48"><div class="form-group" data-reactid="49"><input type="text" placeholder="Søk" class="form-control" data-reactid="50"/></div><!-- react-text: 51 --> <!-- /react-text --><div class="btn-toggle" data-reactid="52"><div data-reactid="53">Velg modus:</div><div class="btn-group btn-group" data-reactid="54"><button class="btn-student-nav active btn btn-default" type="button" data-reactid="55">ELEV</button><button class="btn-teacher-nav btn btn-default" type="button" data-reactid="56">LÆRER</button></div></div></div></div></div></nav></div><div class="row" data-reactid="57"><div class="col-xs-12" data-reactid="58"><div class="ModeIndicator__modeIndicator__gvKNO" data-reactid="59"><!-- react-text: 60 -->Du er i <!-- /react-text --><span class="text-student" data-reactid="61">elevmodus</span></div></div></div></div><div data-reactid="62"><h1 data-reactid="63"><!-- react-text: 64 -->Fargespill<!-- /react-text --><!-- react-text: 65 --> - Level <!-- /react-text --><!-- react-text: 66 -->3<!-- /react-text --></h1><p data-reactid="67"><i data-reactid="68"><!-- react-text: 69 -->av <!-- /react-text --><!-- react-text: 70 -->Steffen Granberg<!-- /react-text --></i></p><div data-reactid="71"><section id="introduksjon">
+<h1 id="introduksjon">Introduksjon</h1>
+<p>Hjernen vår lar seg lett lure, og det kan av og til være vanskelig for den å tolke forskjellig inntrykk samtidig. I det spillet vi nå skal lage  vil du både få testet hjernen og skrivehastigheten. Vi skal lage et fargespill!</p>
+<figure><img src="/_/tjesi_oppgaver/src/python/fargespill/fargespill.89e86c.png" alt="" /></figure>
+</section>
+<section class="activity" id="steg-1-klargjor-og-importerer-bilioteker">
+<h1 class="activity" id="steg-1-klargjor-og-importerer-bilioteker">Steg 1: Klargjør og importerer bilioteker</h1>
+<figure>I dette spillet skal vi lage et grafisk brukergrensesnitt (et GUI). Til dette bruker vi et bibliotek som heter <code>tkinter</code>. Vi trenger også hjelp for å generere tilfeldige tall.</figure>
+<section class="check" id="sjekkliste">
+<h2 class="check" id="sjekkliste">Sjekkliste</h2>
+<ul>
+<li>
+<p>Åpne IDLE, og lag en ny fil.</p>
+</li>
+<li>
+<p>La oss importere bibliotekene. Skriv inn følgende kode:</p>
+<pre><code class="language-python"><span class="hljs-keyword">import</span> tkinter
+<span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> randint
+</code></pre>
+</li>
+<li>
+<p>Vi vil etterhvert bruke boxtaver som <em>æøå</em>. For å gjøre dette må vi legge til noe øverst i koden vår. Gjør om koden din slik at den ser slik ut:</p>
+<pre><code class="language-python"><span class="hljs-comment">#!/usr/bin/python</span>
+<span class="hljs-comment"># -*- coding: UTF-8 -*-</span>
+
+<span class="hljs-keyword">import</span> tkinter
+<span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> randint
+</code></pre>
+</li>
+</ul>
+</section>
+<section class="protip" id="kommentering-av-kode">
+<h2 class="protip" id="kommentering-av-kode">Kommentering av kode</h2>
+<figure>For å gjøre koden  lettere å forstå kan vi legge inn kommentarer som ikke påvirker programmet. Dette gjør vi ved å skrive inn tegnet <code>#</code>. All tekst som kommer på samme linje etter dette tegnet vil bli ignorert av datamaskinen, men er veldig fint for å hjelpe oss mennesker. Heretter bruker jeg dette for å forklare hva som skjer, du trenger ikke å skrive inn kommentarene hvis du ikke vil!</figure>
+</section>
+</section>
+<section class="activity" id="steg-2-lage-grafisk-brukergrensesnitt">
+<h1 class="activity" id="steg-2-lage-grafisk-brukergrensesnitt">Steg 2: Lage grafisk brukergrensesnitt</h1>
+<p>Nå skal vi begynne på GUI. Les kommentarene for å forstå hva som skjer.</p>
+<section class="check" id="sjekkliste-2">
+<h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
+<ul>
+<li>
+<p>Vi skal begynne med å lage hovedvinduet. Dette kaller vi <code>root</code> Vi tilkaller funksjoner fra <code>tkinter</code> biblioteket for å hjelpe oss med dette. Legg til dette nederst i koden:</p>
+<pre><code class="language-python">root = tkinter.Tk()
+
+root.title(<span class="hljs-string">"Fargespill"</span>)
+root.geometry(<span class="hljs-string">"475x300"</span>)
+
+root.mainloop()
+</code></pre>
+</li>
+<li>
+<p>Nå har vi laget hovedvinduet. La oss legge til noen felter med tekst. Vi kommer tilbake til hva disse skal fylles med etterhvert, nå skal vi bare definere områdene. Gjør om koden din slik at den ser ut som dette:</p>
+<pre><code class="language-python"><span class="hljs-comment">#!/usr/bin/python</span>
+<span class="hljs-comment"># -*- coding: UTF-8 -*-</span>
+
+<span class="hljs-keyword">import</span> tkinter
+<span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> randint
+
+root = tkinter.Tk()
+
+root.title(<span class="hljs-string">"Fargespill"</span>)
+root.geometry(<span class="hljs-string">"475x300"</span>)
+
+<span class="hljs-comment"># Lager en label kalt instructions  med tekst:</span>
+instructions = tkinter.Label(root,
+                             text=<span class="hljs-string">"Skriv inn fargen PÅ ordet, ikke selve ordet!"</span>,
+                             font=(<span class="hljs-string">'Helvetica'</span>, <span class="hljs-number">15</span>))
+instructions.pack()
+
+points_label = tkinter.Label(root,
+                             text=<span class="hljs-string">"Trykk enter for å starte."</span>,
+                             font=(<span class="hljs-string">'Helvetica'</span>, <span class="hljs-number">30</span>))
+points_label.pack()
+
+label = tkinter.Label(root, font=(<span class="hljs-string">'Helvetica'</span>, <span class="hljs-number">100</span>))
+label.pack()
+
+box = tkinter.Entry(root)
+
+root.mainloop()
+</code></pre>
+</li>
+</ul>
+</section>
+<section class="protip" id="i-koden-over-skjer-det-mye-la-oss-se-pa-noen-deler">
+<h2 class="protip" id="i-koden-over-skjer-det-mye-la-oss-se-pa-noen-deler">I koden over skjer det mye, la oss se på noen deler</h2>
+<p><code>tkinter.Label</code> lager et felt i vinduet vårt. I disse feltene kan vi putte blant annet tekst eller tall. <code>.pack</code> forteller programmet vårt at den skal &quot;tegne&quot; disse feltene slik at de synes for oss, og hvor den skal tegne de. <code>tkinter.Entry(root)</code> lager et tekstfelt som spilleren kan skrive i.</p>
+</section>
+<section class="flag" id="test-prosjektet">
+<h2 class="flag" id="test-prosjektet">Test prosjektet</h2>
+<ul>
+<li>Kjør koden</li>
+<li>Viser den et vindu?</li>
+<li>Det er fortsatt ganske lite som skjer, la oss gå videre.</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-3-vi-lager-tidskontroll">
+<h1 class="activity" id="steg-3-vi-lager-tidskontroll">Steg 3: Vi lager tidskontroll</h1>
+<section class="check" id="sjekkliste-3">
+<h2 class="check" id="sjekkliste-3">Sjekkliste</h2>
+<ul>
+<li>
+<figure>Vi skal nå få programmet vårt til å telle 30 sekunder. Vi lager en funksjon <code>countdown()</code> som tar seg av dette. Legg til dette i programmet ditt:</figure>
+<pre><code class="language-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">countdown</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">global</span> time_left
+
+    <span class="hljs-keyword">if</span> time_left &gt; <span class="hljs-number">0</span>:
+        <span class="hljs-comment"># Tell ned ett sekund</span>
+        time_left = time_left - <span class="hljs-number">1</span>
+        time_label.config(text=<span class="hljs-string">"Tid igjen: "</span> + str(time_left))
+
+        <span class="hljs-comment"># Denne kjører automatisk countdown() igjen etter 1 sekund</span>
+        time_label.after(<span class="hljs-number">1000</span>, countdown)
+    <span class="hljs-keyword">else</span>:
+        time_label.pack_forget()
+        label.pack_forget()
+        box.pack_forget()
+</code></pre>
+</li>
+<li>
+<figure>Denne funksjonen jobber på en global variabel <code>time_left</code>, vi må lage den. Programmet ditt skal nå se slik ut:</figure>
+<pre><code class="language-python"><span class="hljs-comment">#!/usr/bin/python</span>
+<span class="hljs-comment"># -*- coding: UTF-8 -*-</span>
+
+<span class="hljs-keyword">import</span> tkinter
+<span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> randint
+
+time_left = <span class="hljs-number">30</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">countdown</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">global</span> time_left
+
+    <span class="hljs-keyword">if</span> time_left &gt; <span class="hljs-number">0</span>:
+        time_left = time_left - <span class="hljs-number">1</span>
+        time_label.config(text=<span class="hljs-string">"Tid igjen: "</span> + str(time_left))
+        time_label.after(<span class="hljs-number">1000</span>, countdown)
+    <span class="hljs-keyword">else</span>:
+        time_label.pack_forget()
+        label.pack_forget()
+        box.pack_forget()
+
+root = tkinter.Tk()
+
+root.title(<span class="hljs-string">"Fargespill"</span>)
+root.geometry(<span class="hljs-string">"475x300"</span>)
+
+<span class="hljs-comment"># Lager en label kalt instructions  med tekst:</span>
+instructions = tkinter.Label(root,
+                             text=<span class="hljs-string">"Skriv inn fargen PÅ ordet, ikke selve ordet!"</span>,
+                             font=(<span class="hljs-string">'Helvetica'</span>, <span class="hljs-number">15</span>))
+instructions.pack()
+
+points_label = tkinter.Label(root,
+                             text=<span class="hljs-string">"Trykk enter for å starte."</span>,
+                             font=(<span class="hljs-string">'Helvetica'</span>, <span class="hljs-number">30</span>))
+points_label.pack()
+
+
+label = tkinter.Label(root, font=(<span class="hljs-string">'Helvetica'</span>, <span class="hljs-number">100</span>))
+label.pack()
+
+box = tkinter.Entry(root)
+
+root.mainloop()
+</code></pre>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-4-definere-fargene">
+<h1 class="activity" id="steg-4-definere-fargene">Steg 4: Definere fargene.</h1>
+<p>Nå må vi definere fargene som programmet skal bruke.</p>
+<section class="check" id="sjekkliste-4">
+<h2 class="check" id="sjekkliste-4">Sjekkliste</h2>
+<ul>
+<li>
+<p>Fargene legger vi til som en liste. Legg til denne koden under <code>from random import randint</code></p>
+<pre><code class="language-python">colours_eng = [<span class="hljs-string">'Red'</span>, <span class="hljs-string">'Blue'</span>, <span class="hljs-string">'Green'</span>, <span class="hljs-string">'Pink'</span>, <span class="hljs-string">'Black'</span>,
+               <span class="hljs-string">'Yellow'</span>, <span class="hljs-string">'Orange'</span>, <span class="hljs-string">'Purple'</span>, <span class="hljs-string">'Brown'</span>]
+</code></pre>
+</li>
+<li>
+<p>Siden vi vil at programmet vårt skal skrive ut de norske ordene, lager vi en liste til, med de norske navnene. Legg til dette rett under den andre listen.</p>
+<pre><code class="language-python">colours = [<span class="hljs-string">'Rød'</span>, <span class="hljs-string">'Blå'</span>, <span class="hljs-string">'Grønn'</span>, <span class="hljs-string">'Rosa'</span>, <span class="hljs-string">'Svart'</span>,
+           <span class="hljs-string">'Gul'</span>, <span class="hljs-string">'Oransje'</span>, <span class="hljs-string">'Lilla'</span>, <span class="hljs-string">'Brun'</span>]
+</code></pre>
+</li>
+<li>
+<figure>Vi må også lage en variabel for å holde orden på hvor mange poeng spilleren har. Samt en variabel for å holde nummeret på  fargene som skal vises. Disse settes til tilfeldig tall etterpå. Legg til disse over <code>time_left</code>-variabelen.</figure>
+<pre><code class="language-python"><span class="hljs-comment"># Brukes til å velge tilfeldig farge</span>
+colour = <span class="hljs-number">0</span>
+points = <span class="hljs-number">0</span>
+
+</code></pre>
+</li>
+<li>
+<figure>Nå må vi lage funksjonen som genererer en tilfeldig farge og viser denne til spilleren. Her er det mye som skjer, så vi skal ta det stegvis. Først definerer vi funksjonen og legger til variablene. Legg denne funksjonen over <code>countdown()</code>:</figure>
+<pre><code class="language-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">next_color</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-comment"># Henter inn globale variabler:</span>
+    <span class="hljs-keyword">global</span> points
+    <span class="hljs-keyword">global</span> colour
+</code></pre>
+</li>
+<li>
+<figure>Så skal vi sette tekstboxen brukeren kan skrive i aktiv hvis det er tid igjen på klokka. Legg til denne inne i <code>next_color()</code>:</figure>
+<pre><code class="language-python"><span class="hljs-keyword">if</span> time_left &gt; <span class="hljs-number">0</span>:
+    box.focus_set()
+</code></pre>
+</li>
+<li>
+<figure>Så vil vi sammenligne det brukeren skriver inn i boxen med den norske fargelisten vår. <code>.lower()</code> gjør om alt til små bokstaver, slik at man ikke får feil om man skriver &quot;Rød&quot; i steden for &quot;rød&quot;. Legg til dette under:</figure>
+<pre><code class="language-python"><span class="hljs-comment"># Hvis det spilleren skrev er riktig farge.</span>
+<span class="hljs-keyword">if</span> box.get().lower() == colours[colour].lower():
+    <span class="hljs-comment"># Pluss på ett points</span>
+    points = points + <span class="hljs-number">1</span>
+</code></pre>
+</li>
+<li>
+<figure>Nå vil vi slette det som brukeren skrev inn. Slik at alt er klart for neste runde. Legg til dette under <code>points = points + 1</code>:</figure>
+<pre><code class="language-python">box.delete(<span class="hljs-number">0</span>, tkinter.END)
+</code></pre>
+</li>
+<li>
+<p>Nå skal vi få tkinter til å displaye farge og tekst. Til dette bruker vi <code>randint()</code> funksjonen. Den lager et tilfeldig tall mellom to ytterpunkter. Lag denne under <code>box.delete(0, tkinter.END)</code></p>
+<pre><code class="language-python"><span class="hljs-comment"># Lager tilfeldig tall mellom 0 og 8</span>
+colour = randint(<span class="hljs-number">0</span>, len(colours)-<span class="hljs-number">1</span>)
+
+<span class="hljs-comment"># Lager tilfeldig tall til teksten.</span>
+text = randint(<span class="hljs-number">0</span>, len(colours)-<span class="hljs-number">1</span>)
+</code></pre>
+</li>
+<li>
+<p>Nå gjenstår det bare å vise teksten og fargen i vinduet. Vi oppdaterer feltene, og legger til en poenglabel.  Funksjonen skal nå se slik ut:</p>
+<pre><code class="language-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">next_color</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">global</span> points
+    <span class="hljs-keyword">global</span> colour
+
+    <span class="hljs-keyword">if</span> time_left &gt; <span class="hljs-number">0</span>:
+        box.focus_set()
+
+    <span class="hljs-keyword">if</span> box.get().lower() == colours[colour].lower():
+        points = points + <span class="hljs-number">1</span>
+
+    box.delete(<span class="hljs-number">0</span>, tkinter.END)
+
+    colour = randint(<span class="hljs-number">0</span>, len(colours)-<span class="hljs-number">1</span>)
+    text = randint(<span class="hljs-number">0</span>, len(colours)-<span class="hljs-number">1</span>)
+
+    <span class="hljs-comment"># Oppdaterer labels</span>
+    label.config(fg=str(colours_eng[colour]), text=str(colours[text]))
+    points_label.config(text=<span class="hljs-string">"Poeng: "</span> + str(points))
+</code></pre>
+</li>
+</ul>
+</section>
+<section class="flag" id="test-prosjektet-2">
+<h2 class="flag" id="test-prosjektet-2">Test prosjektet</h2>
+<ul>
+<li>Kjør koden, får du noen feilmeldinger?</li>
+<li>Hvis du får feilmeldinger prøv å se etter hvor de er og fiks de.</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-5-la-oss-starte-programmet">
+<h1 class="activity" id="steg-5-la-oss-starte-programmet">Steg 5: La oss starte programmet!</h1>
+<p>Det skjer fortsatt lite i spillet vårt, men det er fordi vi ikke har startet selve spilldelen. Det skal vi gjøre nå!</p>
+<section class="check" id="sjekkliste-5">
+<h2 class="check" id="sjekkliste-5">Sjekkliste</h2>
+<ul>
+<li>
+<p>Vi lager en funksjon som starter spillet. Legg til denne funksjonen i programmet:</p>
+<pre><code class="language-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">start_game</span><span class="hljs-params">(event)</span>:</span>
+    <span class="hljs-keyword">if</span> time_left == <span class="hljs-number">30</span>:
+        countdown()
+    next_color()
+</code></pre>
+</li>
+<li>
+<p>Siste steg er å kjøre denne funksjonen når spilleren trykker <em>enter</em>. Legg til dette rett over <code>root.mainloop</code>:</p>
+<pre><code class="language-python"><span class="hljs-comment"># Kjører funksjonen start_game() når enter trykkes</span>
+root.bind(<span class="hljs-string">'&lt;Return&gt;'</span>, start_game)
+box.pack()
+box.focus_set()
+</code></pre>
+</li>
+<li>
+<p>Programmet ditt skal nå se slik ut:</p>
+<pre><code class="language-python"><span class="hljs-comment">#!/usr/bin/python</span>
+<span class="hljs-comment"># -*- coding: UTF-8 -*-</span>
+
+<span class="hljs-keyword">import</span> tkinter
+<span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> randint
+
+
+colours_eng = [<span class="hljs-string">'Red'</span>, <span class="hljs-string">'Blue'</span>, <span class="hljs-string">'Green'</span>, <span class="hljs-string">'Pink'</span>, <span class="hljs-string">'Black'</span>,
+               <span class="hljs-string">'Yellow'</span>, <span class="hljs-string">'Orange'</span>, <span class="hljs-string">'Purple'</span>, <span class="hljs-string">'Brown'</span>]
+colours = [<span class="hljs-string">'Rød'</span>, <span class="hljs-string">'Blå'</span>, <span class="hljs-string">'Grønn'</span>, <span class="hljs-string">'Rosa'</span>, <span class="hljs-string">'Svart'</span>,
+           <span class="hljs-string">'Gul'</span>, <span class="hljs-string">'Oransje'</span>, <span class="hljs-string">'Lilla'</span>, <span class="hljs-string">'Brun'</span>]
+colour = <span class="hljs-number">0</span>
+
+points = <span class="hljs-number">0</span>
+
+time_left = <span class="hljs-number">30</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">start_game</span><span class="hljs-params">(event)</span>:</span>
+    <span class="hljs-keyword">if</span> time_left == <span class="hljs-number">30</span>:
+        countdown()
+    next_color()
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">next_color</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">global</span> points
+    <span class="hljs-keyword">global</span> colour
+
+    <span class="hljs-keyword">if</span> time_left &gt; <span class="hljs-number">0</span>:
+        box.focus_set()
+
+    <span class="hljs-keyword">if</span> box.get().lower() == colours[colour].lower():
+        points = points + <span class="hljs-number">1</span>
+
+    box.delete(<span class="hljs-number">0</span>, tkinter.END)
+
+    colour = randint(<span class="hljs-number">0</span>, len(colours)-<span class="hljs-number">1</span>)
+    text = randint(<span class="hljs-number">0</span>, len(colours)-<span class="hljs-number">1</span>)
+
+    label.config(fg=str(colours_eng[colour]), text=str(colours[text]))
+    points_label.config(text=<span class="hljs-string">"Poeng: "</span> + str(points))
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">countdown</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">global</span> time_left
+
+    <span class="hljs-keyword">if</span> time_left &gt; <span class="hljs-number">0</span>:
+        time_left = time_left - <span class="hljs-number">1</span>
+        time_label.config(text=<span class="hljs-string">"Tid igjen: "</span> + str(time_left))
+        time_label.after(<span class="hljs-number">1000</span>, countdown)
+    <span class="hljs-keyword">else</span>:
+        time_label.pack_forget()
+        label.pack_forget()
+        box.pack_forget()
+
+
+root = tkinter.Tk()
+
+root.title(<span class="hljs-string">"Fargespill"</span>)
+root.geometry(<span class="hljs-string">"475x300"</span>)
+
+instructions = tkinter.Label(root,
+                             text=<span class="hljs-string">"Skriv inn fargen PÅ ordet, ikke selve ordet!"</span>,
+                             font=(<span class="hljs-string">'Helvetica'</span>, <span class="hljs-number">15</span>))
+instructions.pack()
+
+points_label = tkinter.Label(root,
+                             text=<span class="hljs-string">"Trykk enter for å starte."</span>,
+                             font=(<span class="hljs-string">'Helvetica'</span>, <span class="hljs-number">30</span>))
+points_label.pack()
+
+time_label = tkinter.Label(root,
+                           text=<span class="hljs-string">"Tid igjen: "</span> + str(time_left),
+                           font=(<span class="hljs-string">'Helvetica'</span>, <span class="hljs-number">30</span>))
+time_label.pack()
+
+label = tkinter.Label(root, font=(<span class="hljs-string">'Helvetica'</span>, <span class="hljs-number">100</span>))
+label.pack()
+
+box = tkinter.Entry(root)
+
+root.bind(<span class="hljs-string">'&lt;Return&gt;'</span>, start_game)
+box.pack()
+box.focus_set()
+
+root.mainloop()
+</code></pre>
+</li>
+</ul>
+</section>
+<section class="flag" id="test-prosjektet-3">
+<h2 class="flag" id="test-prosjektet-3">Test prosjektet</h2>
+<ul>
+<li>Starter spillet og countdownen når du trykker enter?</li>
+<li>Får du ny farge etter du har skrevet inn svar?</li>
+<li>Får du +1 points når du skriver riktig farge på ordet?</li>
+<li>Slutter programmet etter 30 sek?</li>
+</ul>
+</section>
+</section>
+</div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="72"><div class="Footer__center__3xqZ_ row" data-reactid="73"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="74">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="75">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="76"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="77"><img class="Footer__img__25Ink" src="/src/assets/graphics/smn.41dee6.jpg" data-reactid="78"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="79"><img class="Footer__img__25Ink" src="/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="80"/></a></div></div></div></div></div>
+<script type="text/javascript" src="/manifest.25bf77659b320cd3a087.js"></script><script type="text/javascript" src="/vendor.a6b03d2258d76438e766.js"></script><script type="text/javascript" src="/main.7f73ab0e0b72746f9c8a.js"></script><script type="text/javascript" src="/vendor2.04c375e06c230a54ba3e.js"></script></body>
+</html>
