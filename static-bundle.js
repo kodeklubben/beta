@@ -44,7 +44,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "/beta/";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -48773,7 +48773,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 599 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/appinventor/KlaskEnMuldvarp/spillbrettet.98a0ff.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/appinventor/KlaskEnMuldvarp/spillbrettet.98a0ff.png";
 
 /***/ },
 /* 600 */
@@ -48821,7 +48821,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 607 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/appinventor/KlaskEnMuldvarp/komponenteneinne.f26d86.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/appinventor/KlaskEnMuldvarp/komponenteneinne.f26d86.png";
 
 /***/ },
 /* 608 */
@@ -48833,7 +48833,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 609 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/appinventor/KlaskEnMuldvarp/flyttmuldvarp.da8e55.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/appinventor/KlaskEnMuldvarp/flyttmuldvarp.da8e55.png";
 
 /***/ },
 /* 610 */
@@ -48845,7 +48845,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 611 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/appinventor/KlaskEnMuldvarp/initOppdaterPoeng.ffa2f6.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/appinventor/KlaskEnMuldvarp/initOppdaterPoeng.ffa2f6.png";
 
 /***/ },
 /* 612 */
@@ -48857,13 +48857,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 613 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/appinventor/KlaskEnMuldvarp/event.c61d18.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/appinventor/KlaskEnMuldvarp/event.c61d18.png";
 
 /***/ },
 /* 614 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/appinventor/KlaskEnMuldvarp/restart.15a2ca.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/appinventor/KlaskEnMuldvarp/restart.15a2ca.png";
 
 /***/ },
 /* 615 */
@@ -49203,43 +49203,43 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 660 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/appinventor/ta_ballen/introduksjon.b2a58b.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/appinventor/ta_ballen/introduksjon.b2a58b.png";
 
 /***/ },
 /* 661 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/appinventor/ta_ballen/spill.4879cc.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/appinventor/ta_ballen/spill.4879cc.png";
 
 /***/ },
 /* 662 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/appinventor/ta_ballen/init.fe010e.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/appinventor/ta_ballen/init.fe010e.png";
 
 /***/ },
 /* 663 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/appinventor/ta_ballen/victory.74cf1f.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/appinventor/ta_ballen/victory.74cf1f.png";
 
 /***/ },
 /* 664 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/appinventor/ta_ballen/components.3e3edc.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/appinventor/ta_ballen/components.3e3edc.png";
 
 /***/ },
 /* 665 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/appinventor/ta_ballen/screen.1fe97b.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/appinventor/ta_ballen/screen.1fe97b.png";
 
 /***/ },
 /* 666 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/appinventor/ta_ballen/result.c7e8a1.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/appinventor/ta_ballen/result.c7e8a1.png";
 
 /***/ },
 /* 667 */
@@ -49267,43 +49267,43 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 670 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/arduino/blinkende_lysdiode/brett.37ae98.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/arduino/blinkende_lysdiode/brett.37ae98.png";
 
 /***/ },
 /* 671 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/arduino/blinkende_lysdiode/arduino.ddabb4.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/arduino/blinkende_lysdiode/arduino.ddabb4.png";
 
 /***/ },
 /* 672 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/arduino/blinkende_lysdiode/komp.080799.jpg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/arduino/blinkende_lysdiode/komp.080799.jpg";
 
 /***/ },
 /* 673 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/arduino/blinkende_lysdiode/blinker.ed4f72.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/arduino/blinkende_lysdiode/blinker.ed4f72.png";
 
 /***/ },
 /* 674 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/arduino/blinkende_lysdiode/upload.92a72d.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/arduino/blinkende_lysdiode/upload.92a72d.png";
 
 /***/ },
 /* 675 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/arduino/blinkende_lysdiode/port.d63a0b.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/arduino/blinkende_lysdiode/port.d63a0b.png";
 
 /***/ },
 /* 676 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/arduino/blinkende_lysdiode/bryter.4bc691.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/arduino/blinkende_lysdiode/bryter.4bc691.png";
 
 /***/ },
 /* 677 */
@@ -49815,7 +49815,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 746 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/bli_kjent_med_datamaskinen/bli_kjent_med_datamaskinen.b4e189.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/bli_kjent_med_datamaskinen/bli_kjent_med_datamaskinen.b4e189.png";
 
 /***/ },
 /* 747 */
@@ -49827,7 +49827,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 748 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/bli_kjent_med_datamaskinen/passord.86628b.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/bli_kjent_med_datamaskinen/passord.86628b.png";
 
 /***/ },
 /* 749 */
@@ -49855,19 +49855,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 752 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/bygg_et_hus/bygg_et_hus.749241.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/bygg_et_hus/bygg_et_hus.749241.png";
 
 /***/ },
 /* 753 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/bygg_et_hus/firevegger.1595fc.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/bygg_et_hus/firevegger.1595fc.png";
 
 /***/ },
 /* 754 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/bygg_et_hus/flerefarger.366ab5.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/bygg_et_hus/flerefarger.366ab5.png";
 
 /***/ },
 /* 755 */
@@ -49895,43 +49895,43 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 758 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/fjernstyr_en_robot/fjernstyring.ca6c7e.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/fjernstyr_en_robot/fjernstyring.ca6c7e.png";
 
 /***/ },
 /* 759 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/fjernstyr_en_robot/finder.289e20.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/fjernstyr_en_robot/finder.289e20.png";
 
 /***/ },
 /* 760 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/fjernstyr_en_robot/gaatilmappe.8e939c.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/fjernstyr_en_robot/gaatilmappe.8e939c.png";
 
 /***/ },
 /* 761 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/fjernstyr_en_robot/gaatilmappedialog.356fcc.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/fjernstyr_en_robot/gaatilmappedialog.356fcc.png";
 
 /***/ },
 /* 762 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/fjernstyr_en_robot/ssh_1.1db4e6.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/fjernstyr_en_robot/ssh_1.1db4e6.png";
 
 /***/ },
 /* 763 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/fjernstyr_en_robot/ssh_2.294ddb.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/fjernstyr_en_robot/ssh_2.294ddb.png";
 
 /***/ },
 /* 764 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/fjernstyr_en_robot/ssh_3.f40c03.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/fjernstyr_en_robot/ssh_3.f40c03.png";
 
 /***/ },
 /* 765 */
@@ -49959,25 +49959,25 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 768 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/hendelser/hendelser.27e3aa.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/hendelser/hendelser.27e3aa.png";
 
 /***/ },
 /* 769 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/hendelser/passord.86628b.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/hendelser/passord.86628b.png";
 
 /***/ },
 /* 770 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/hendelser/diskettstasjon.2afed5.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/hendelser/diskettstasjon.2afed5.png";
 
 /***/ },
 /* 771 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/hendelser/tekstprogram.35c41d.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/hendelser/tekstprogram.35c41d.png";
 
 /***/ },
 /* 772 */
@@ -50005,43 +50005,43 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 775 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/introduksjon_til_computercraft/introduksjon_til_computercraft.8636fd.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/introduksjon_til_computercraft/introduksjon_til_computercraft.8636fd.png";
 
 /***/ },
 /* 776 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/installasjon/last_ned_computercraft.d45bd0.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/installasjon/last_ned_computercraft.d45bd0.png";
 
 /***/ },
 /* 777 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/installasjon/minecraft_versjon.b766d0.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/installasjon/minecraft_versjon.b766d0.png";
 
 /***/ },
 /* 778 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/installasjon/minecraft_forge_a.c4f90b.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/installasjon/minecraft_forge_a.c4f90b.png";
 
 /***/ },
 /* 779 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/installasjon/minecraft_forge_b.7e2ad2.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/installasjon/minecraft_forge_b.7e2ad2.png";
 
 /***/ },
 /* 780 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/installasjon/installer_forge.947fa0.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/installasjon/installer_forge.947fa0.png";
 
 /***/ },
 /* 781 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/installasjon/start_forge.4e24ec.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/installasjon/start_forge.4e24ec.png";
 
 /***/ },
 /* 782 */
@@ -50081,31 +50081,31 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 787 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/robotinvasjon/robot_inventory.8ca1f9.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/robotinvasjon/robot_inventory.8ca1f9.png";
 
 /***/ },
 /* 788 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/robotinvasjon/flytt_robot_oppgave.346d4c.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/robotinvasjon/flytt_robot_oppgave.346d4c.png";
 
 /***/ },
 /* 789 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/robotinvasjon/hoyt_tarn.ea44db.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/robotinvasjon/hoyt_tarn.ea44db.png";
 
 /***/ },
 /* 790 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/robotinvasjon/lite_tarn.16c4f3.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/robotinvasjon/lite_tarn.16c4f3.png";
 
 /***/ },
 /* 791 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/robotinvasjon/byggtrapp.18e136.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/robotinvasjon/byggtrapp.18e136.png";
 
 /***/ },
 /* 792 */
@@ -50133,25 +50133,25 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 795 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/nettverk_send_beskjed/build_advanced_wireless_pocket_computer.31386d.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/nettverk_send_beskjed/build_advanced_wireless_pocket_computer.31386d.png";
 
 /***/ },
 /* 796 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/nettverk_send_beskjed/build_advanced_ender_turtle.2a62f0.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/nettverk_send_beskjed/build_advanced_ender_turtle.2a62f0.png";
 
 /***/ },
 /* 797 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/nettverk_send_beskjed/melding_sendulf.888920.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/nettverk_send_beskjed/melding_sendulf.888920.png";
 
 /***/ },
 /* 798 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/nettverk_send_beskjed/melding_maxmottak.56efe6.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/nettverk_send_beskjed/melding_maxmottak.56efe6.png";
 
 /***/ },
 /* 799 */
@@ -50179,7 +50179,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 802 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/robotinvasjon/robotinvasjon.bf5d3e.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/robotinvasjon/robotinvasjon.bf5d3e.png";
 
 /***/ },
 /* 803 */
@@ -50207,37 +50207,37 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 806 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/sprettball/sprettball.8e56fa.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/sprettball/sprettball.8e56fa.png";
 
 /***/ },
 /* 807 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/sprettball/enkelskjerm.dc1087.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/sprettball/enkelskjerm.dc1087.png";
 
 /***/ },
 /* 808 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/sprettball/helloworld_liten.64a6d8.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/sprettball/helloworld_liten.64a6d8.png";
 
 /***/ },
 /* 809 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/sprettball/helloworld_stor.e35fdd.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/sprettball/helloworld_stor.e35fdd.png";
 
 /***/ },
 /* 810 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/sprettball/ku.789816.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/sprettball/ku.789816.png";
 
 /***/ },
 /* 811 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/sprettball/reklame.12cb17.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/sprettball/reklame.12cb17.png";
 
 /***/ },
 /* 812 */
@@ -50276,67 +50276,67 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 817 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/fxmllogo/new-fxml-document.1769ba.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/fxmllogo/new-fxml-document.1769ba.png";
 
 /***/ },
 /* 818 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/fxmllogo/new-fxml-file-wizard.01b114.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/fxmllogo/new-fxml-file-wizard.01b114.png";
 
 /***/ },
 /* 819 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/fxmllogo/initial-FxmlLogoApp.fxml.362a45.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/fxmllogo/initial-FxmlLogoApp.fxml.362a45.png";
 
 /***/ },
 /* 820 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/fxmllogo/fxml-editor-with-preview-pane.8866a4.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/fxmllogo/fxml-editor-with-preview-pane.8866a4.png";
 
 /***/ },
 /* 821 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/fxmllogo/open-with-scenebuilder.b7698e.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/fxmllogo/open-with-scenebuilder.b7698e.png";
 
 /***/ },
 /* 822 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/fxmllogo/scene-builder-FxmlLogoApp-1.bcdffb.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/fxmllogo/scene-builder-FxmlLogoApp-1.bcdffb.png";
 
 /***/ },
 /* 823 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/fxmllogo/scene-builder-FxmlLogoApp-2.fe3539.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/fxmllogo/scene-builder-FxmlLogoApp-2.fe3539.png";
 
 /***/ },
 /* 824 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/fxmllogo/scene-builder-FxmlLogoApp-3.294491.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/fxmllogo/scene-builder-FxmlLogoApp-3.294491.png";
 
 /***/ },
 /* 825 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/fxmllogo/color-picker.ed8b1b.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/fxmllogo/color-picker.ed8b1b.png";
 
 /***/ },
 /* 826 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/fxmllogo/font-picker.6e7624.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/fxmllogo/font-picker.6e7624.png";
 
 /***/ },
 /* 827 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/fxmllogo/layout-properties.436136.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/fxmllogo/layout-properties.436136.png";
 
 /***/ },
 /* 828 */
@@ -50363,61 +50363,61 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 831 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/helloworld/new-java-project.8fd910.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/helloworld/new-java-project.8fd910.png";
 
 /***/ },
 /* 832 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/helloworld/etter-new-java-project.e4f2ce.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/helloworld/etter-new-java-project.e4f2ce.png";
 
 /***/ },
 /* 833 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/helloworld/new-java-package.e873e5.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/helloworld/new-java-package.e873e5.png";
 
 /***/ },
 /* 834 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/helloworld/etter-new-java-package.bebc21.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/helloworld/etter-new-java-package.bebc21.png";
 
 /***/ },
 /* 835 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/helloworld/new-java-class-menuitem.c8150a.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/helloworld/new-java-class-menuitem.c8150a.png";
 
 /***/ },
 /* 836 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/helloworld/new-java-class.1affd1.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/helloworld/new-java-class.1affd1.png";
 
 /***/ },
 /* 837 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/helloworld/etter-new-java-class.c44068.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/helloworld/etter-new-java-class.c44068.png";
 
 /***/ },
 /* 838 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/helloworld/hello-world-app.1f4009.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/helloworld/hello-world-app.1f4009.png";
 
 /***/ },
 /* 839 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/helloworld/code-completion1.7531a8.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/helloworld/code-completion1.7531a8.png";
 
 /***/ },
 /* 840 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/helloworld/code-completion2.be9a0a.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/helloworld/code-completion2.be9a0a.png";
 
 /***/ },
 /* 841 */
@@ -50621,49 +50621,49 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 868 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/1_kom_i_gang/1_learntomod.2f6391.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/1_kom_i_gang/1_learntomod.2f6391.png";
 
 /***/ },
 /* 869 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/1_kom_i_gang/2_login.ac4223.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/1_kom_i_gang/2_login.ac4223.png";
 
 /***/ },
 /* 870 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/1_kom_i_gang/3_konto.ba57db.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/1_kom_i_gang/3_konto.ba57db.png";
 
 /***/ },
 /* 871 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/1_kom_i_gang/image4.a1aed0.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/1_kom_i_gang/image4.a1aed0.jpeg";
 
 /***/ },
 /* 872 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/1_kom_i_gang/image5.7b02d5.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/1_kom_i_gang/image5.7b02d5.jpeg";
 
 /***/ },
 /* 873 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/1_kom_i_gang/image6.8ea869.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/1_kom_i_gang/image6.8ea869.jpeg";
 
 /***/ },
 /* 874 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/1_kom_i_gang/image7.ca4dda.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/1_kom_i_gang/image7.ca4dda.jpeg";
 
 /***/ },
 /* 875 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/1_kom_i_gang/image8.a3f7a3.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/1_kom_i_gang/image8.a3f7a3.jpeg";
 
 /***/ },
 /* 876 */
@@ -50697,19 +50697,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 880 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/intro.838cb2.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/intro.838cb2.png";
 
 /***/ },
 /* 881 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image1.9665ec.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image1.9665ec.png";
 
 /***/ },
 /* 882 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image2.d2052b.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image2.d2052b.jpeg";
 
 /***/ },
 /* 883 */
@@ -50721,19 +50721,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 884 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image4.fb5aab.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image4.fb5aab.jpeg";
 
 /***/ },
 /* 885 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image5.dae2e1.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image5.dae2e1.jpeg";
 
 /***/ },
 /* 886 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image6.44b3a8.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image6.44b3a8.jpeg";
 
 /***/ },
 /* 887 */
@@ -50745,49 +50745,49 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 888 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image8.16b078.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image8.16b078.jpeg";
 
 /***/ },
 /* 889 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image9.5ed541.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image9.5ed541.jpeg";
 
 /***/ },
 /* 890 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image10.07f082.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image10.07f082.jpeg";
 
 /***/ },
 /* 891 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image11.ea392e.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image11.ea392e.jpeg";
 
 /***/ },
 /* 892 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image12.516ca4.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image12.516ca4.jpeg";
 
 /***/ },
 /* 893 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image13.e56ebb.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image13.e56ebb.jpeg";
 
 /***/ },
 /* 894 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image14.9d0b68.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image14.9d0b68.jpeg";
 
 /***/ },
 /* 895 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image15.306167.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image15.306167.jpeg";
 
 /***/ },
 /* 896 */
@@ -50799,61 +50799,61 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 897 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image17.32ed50.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image17.32ed50.jpeg";
 
 /***/ },
 /* 898 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image18.c830a0.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image18.c830a0.jpeg";
 
 /***/ },
 /* 899 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image19.5343c4.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image19.5343c4.jpeg";
 
 /***/ },
 /* 900 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image20.fe60c7.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image20.fe60c7.jpeg";
 
 /***/ },
 /* 901 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image21.484137.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image21.484137.jpeg";
 
 /***/ },
 /* 902 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image22.087dd3.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image22.087dd3.jpeg";
 
 /***/ },
 /* 903 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image23.f68807.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image23.f68807.jpeg";
 
 /***/ },
 /* 904 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image24.83a30a.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image24.83a30a.jpeg";
 
 /***/ },
 /* 905 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image25.c2b0be.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image25.c2b0be.png";
 
 /***/ },
 /* 906 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_kube/image26.58249c.jpeg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_kube/image26.58249c.jpeg";
 
 /***/ },
 /* 907 */
@@ -50881,13 +50881,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 910 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_pyramide/intro.708760.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_pyramide/intro.708760.png";
 
 /***/ },
 /* 911 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_pyramide/image1.87ead8.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_pyramide/image1.87ead8.png";
 
 /***/ },
 /* 912 */
@@ -50905,19 +50905,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 914 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_pyramide/image4.56a6f5.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_pyramide/image4.56a6f5.png";
 
 /***/ },
 /* 915 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_pyramide/image5.b56b9d.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_pyramide/image5.b56b9d.png";
 
 /***/ },
 /* 916 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_pyramide/image6.b225f4.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_pyramide/image6.b225f4.png";
 
 /***/ },
 /* 917 */
@@ -50941,49 +50941,49 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 920 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_pyramide/image10.4a7b0b.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_pyramide/image10.4a7b0b.png";
 
 /***/ },
 /* 921 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_pyramide/image11.aabab2.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_pyramide/image11.aabab2.png";
 
 /***/ },
 /* 922 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_pyramide/image12.029cc7.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_pyramide/image12.029cc7.png";
 
 /***/ },
 /* 923 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_pyramide/image13.c36135.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_pyramide/image13.c36135.png";
 
 /***/ },
 /* 924 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_pyramide/image14.84c6f8.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_pyramide/image14.84c6f8.png";
 
 /***/ },
 /* 925 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_pyramide/image15.fa8e9f.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_pyramide/image15.fa8e9f.png";
 
 /***/ },
 /* 926 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_pyramide/image16.d233e8.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_pyramide/image16.d233e8.png";
 
 /***/ },
 /* 927 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_en_pyramide/image17.a699d3.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_en_pyramide/image17.a699d3.png";
 
 /***/ },
 /* 928 */
@@ -51011,79 +51011,79 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 931 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_et_hus/intro.12c6cc.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_et_hus/intro.12c6cc.png";
 
 /***/ },
 /* 932 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_et_hus/image1.83f24a.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_et_hus/image1.83f24a.png";
 
 /***/ },
 /* 933 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_et_hus/image2.9e0731.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_et_hus/image2.9e0731.png";
 
 /***/ },
 /* 934 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_et_hus/image3.abdb69.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_et_hus/image3.abdb69.png";
 
 /***/ },
 /* 935 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_et_hus/image4.c6ab3b.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_et_hus/image4.c6ab3b.png";
 
 /***/ },
 /* 936 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_et_hus/image5.d21a9d.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_et_hus/image5.d21a9d.png";
 
 /***/ },
 /* 937 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_et_hus/image6.f06998.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_et_hus/image6.f06998.png";
 
 /***/ },
 /* 938 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_et_hus/image7.5d8aa1.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_et_hus/image7.5d8aa1.png";
 
 /***/ },
 /* 939 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_et_hus/image8.c80628.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_et_hus/image8.c80628.png";
 
 /***/ },
 /* 940 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_et_hus/image9.ca383a.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_et_hus/image9.ca383a.png";
 
 /***/ },
 /* 941 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_et_hus/image10.4a1948.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_et_hus/image10.4a1948.png";
 
 /***/ },
 /* 942 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_et_hus/image11.d41212.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_et_hus/image11.d41212.png";
 
 /***/ },
 /* 943 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/bygge_et_hus/image12.4edd48.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/bygge_et_hus/image12.4edd48.png";
 
 /***/ },
 /* 944 */
@@ -51111,37 +51111,37 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 947 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/noen_kule_modder/image1.09af35.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/noen_kule_modder/image1.09af35.png";
 
 /***/ },
 /* 948 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/noen_kule_modder/image2.1ef5c7.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/noen_kule_modder/image2.1ef5c7.png";
 
 /***/ },
 /* 949 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/noen_kule_modder/image3.3afba5.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/noen_kule_modder/image3.3afba5.png";
 
 /***/ },
 /* 950 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/noen_kule_modder/image4.9135d5.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/noen_kule_modder/image4.9135d5.png";
 
 /***/ },
 /* 951 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/noen_kule_modder/image5.2abfff.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/noen_kule_modder/image5.2abfff.png";
 
 /***/ },
 /* 952 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/noen_kule_modder/image6.802bc7.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/noen_kule_modder/image6.802bc7.png";
 
 /***/ },
 /* 953 */
@@ -51719,25 +51719,25 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1031 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/farger/RGB.8a6a5c.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/farger/RGB.8a6a5c.png";
 
 /***/ },
 /* 1032 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/farger/FargehjulRGB.66299d.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/farger/FargehjulRGB.66299d.png";
 
 /***/ },
 /* 1033 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/farger/Fargevelger.97f458.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/farger/Fargevelger.97f458.png";
 
 /***/ },
 /* 1034 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/farger/Fargevelger.e125eb.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/farger/Fargevelger.e125eb.gif";
 
 /***/ },
 /* 1035 */
@@ -51793,37 +51793,37 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1042 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/mangekanter/SprettendeFirkant.70c092.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/mangekanter/SprettendeFirkant.70c092.gif";
 
 /***/ },
 /* 1043 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/mangekanter/SprettendeTrekant1.9a4712.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/mangekanter/SprettendeTrekant1.9a4712.gif";
 
 /***/ },
 /* 1044 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/mangekanter/SprettendeTrekant2.c20a7c.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/mangekanter/SprettendeTrekant2.c20a7c.gif";
 
 /***/ },
 /* 1045 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/mangekanter/SprettendeSekskantetStjerne.7693a6.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/mangekanter/SprettendeSekskantetStjerne.7693a6.gif";
 
 /***/ },
 /* 1046 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/mangekanter/SprettendeTrekantHjorner.50bb3d.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/mangekanter/SprettendeTrekantHjorner.50bb3d.gif";
 
 /***/ },
 /* 1047 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/mangekanter/SprettendePolygon.55ec61.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/mangekanter/SprettendePolygon.55ec61.gif";
 
 /***/ },
 /* 1048 */
@@ -51851,37 +51851,37 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1051 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/pingpong/sprettendeBall.0cade1.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/pingpong/sprettendeBall.0cade1.gif";
 
 /***/ },
 /* 1052 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/pingpong/gjennommaal.c81f36.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/pingpong/gjennommaal.c81f36.gif";
 
 /***/ },
 /* 1053 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/pingpong/ballGjennomRekkert.1a4f7a.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/pingpong/ballGjennomRekkert.1a4f7a.gif";
 
 /***/ },
 /* 1054 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/pingpong/spretterPaRekkert.60edb8.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/pingpong/spretterPaRekkert.60edb8.gif";
 
 /***/ },
 /* 1055 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/pingpong/illustrasjon.192830.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/pingpong/illustrasjon.192830.png";
 
 /***/ },
 /* 1056 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/pingpong/bevegeligRekkert.0628d4.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/pingpong/bevegeligRekkert.0628d4.gif";
 
 /***/ },
 /* 1057 */
@@ -51909,43 +51909,43 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1060 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/sprettende_ball/sprettende_ball.6eda7f.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/sprettende_ball/sprettende_ball.6eda7f.gif";
 
 /***/ },
 /* 1061 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/sprettende_ball/sirkel1.d3603c.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/sprettende_ball/sirkel1.d3603c.png";
 
 /***/ },
 /* 1062 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/sprettende_ball/sirkel2.ea4226.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/sprettende_ball/sirkel2.ea4226.png";
 
 /***/ },
 /* 1063 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/sprettende_ball/sirkel3.f4aeda.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/sprettende_ball/sirkel3.f4aeda.png";
 
 /***/ },
 /* 1064 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/sprettende_ball/variabler1.305150.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/sprettende_ball/variabler1.305150.png";
 
 /***/ },
 /* 1065 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/sprettende_ball/sidelengs_ball.6010c1.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/sprettende_ball/sidelengs_ball.6010c1.gif";
 
 /***/ },
 /* 1066 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/sprettende_ball/rar_ball.e7f8c5.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/sprettende_ball/rar_ball.e7f8c5.gif";
 
 /***/ },
 /* 1067 */
@@ -51973,61 +51973,61 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1070 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/trigonometri/SirkelRadius.8a7605.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/trigonometri/SirkelRadius.8a7605.png";
 
 /***/ },
 /* 1071 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/trigonometri/RettvinkletTrekantSirkel.6dafbb.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/trigonometri/RettvinkletTrekantSirkel.6dafbb.png";
 
 /***/ },
 /* 1072 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/trigonometri/TrekantSiderSirkel.e18848.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/trigonometri/TrekantSiderSirkel.e18848.png";
 
 /***/ },
 /* 1073 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/trigonometri/Femkant.9a0b39.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/trigonometri/Femkant.9a0b39.png";
 
 /***/ },
 /* 1074 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/trigonometri/FemkantRotering.68c5da.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/trigonometri/FemkantRotering.68c5da.png";
 
 /***/ },
 /* 1075 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/trigonometri/FemkantSnurrer.37b801.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/trigonometri/FemkantSnurrer.37b801.gif";
 
 /***/ },
 /* 1076 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/trigonometri/Pentagram.34321a.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/trigonometri/Pentagram.34321a.png";
 
 /***/ },
 /* 1077 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/trigonometri/Oktagram.298a59.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/trigonometri/Oktagram.298a59.png";
 
 /***/ },
 /* 1078 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/trigonometri/FlereStjerner.640536.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/trigonometri/FlereStjerner.640536.png";
 
 /***/ },
 /* 1079 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/processing/trigonometri/FlereStjernerSnurrer.008528.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/processing/trigonometri/FlereStjernerSnurrer.008528.gif";
 
 /***/ },
 /* 1080 */
@@ -52055,7 +52055,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1083 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/bokstaver/stor_k.647b31.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/bokstaver/stor_k.647b31.png";
 
 /***/ },
 /* 1084 */
@@ -52106,7 +52106,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1090 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/fargespill/fargespill.89e86c.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/fargespill/fargespill.89e86c.png";
 
 /***/ },
 /* 1091 */
@@ -52134,7 +52134,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1094 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/gjettelek/python_guessing_game.282d7d.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/gjettelek/python_guessing_game.282d7d.png";
 
 /***/ },
 /* 1095 */
@@ -52187,25 +52187,25 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1101 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/hangman2/hangman_blank_screen.fc2b79.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/hangman2/hangman_blank_screen.fc2b79.png";
 
 /***/ },
 /* 1102 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/hangman2/hangman_initial_screen.422631.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/hangman2/hangman_initial_screen.422631.png";
 
 /***/ },
 /* 1103 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/hangman2/hangman_won_game.2cafef.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/hangman2/hangman_won_game.2cafef.png";
 
 /***/ },
 /* 1104 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/hangman2/hangman_lost_game.6c3c6a.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/hangman2/hangman_lost_game.6c3c6a.png";
 
 /***/ },
 /* 1105 */
@@ -52258,7 +52258,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1111 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/huskespill/memo.78eb2e.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/huskespill/memo.78eb2e.gif";
 
 /***/ },
 /* 1112 */
@@ -52336,13 +52336,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1122 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/kalkulator/python_calculator_zero_division.614fa8.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/kalkulator/python_calculator_zero_division.614fa8.png";
 
 /***/ },
 /* 1123 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/kalkulator/python_calculator_multiple_calculations.adeb72.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/kalkulator/python_calculator_multiple_calculations.adeb72.png";
 
 /***/ },
 /* 1124 */
@@ -52397,13 +52397,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1131 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/kuprat/hei_program.d427c2.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/kuprat/hei_program.d427c2.png";
 
 /***/ },
 /* 1132 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/kuprat/hei_kjor.2ab233.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/kuprat/hei_kjor.2ab233.png";
 
 /***/ },
 /* 1133 */
@@ -52453,7 +52453,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1139 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/lopende_strekmann/animasjon_spill.81d6c4.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/lopende_strekmann/animasjon_spill.81d6c4.gif";
 
 /***/ },
 /* 1140 */
@@ -52465,13 +52465,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1141 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/lopende_strekmann/mappestruktur.567d90.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/lopende_strekmann/mappestruktur.567d90.png";
 
 /***/ },
 /* 1142 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/lopende_strekmann/koord_data2.4a9f71.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/lopende_strekmann/koord_data2.4a9f71.png";
 
 /***/ },
 /* 1143 */
@@ -52498,7 +52498,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1146 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/mattespill/mattespill.486310.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/mattespill/mattespill.486310.png";
 
 /***/ },
 /* 1147 */
@@ -52548,13 +52548,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1153 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/regn_med_lokker/liftoff.b9310f.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/regn_med_lokker/liftoff.b9310f.png";
 
 /***/ },
 /* 1154 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/regn_med_lokker/summer.f48268.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/regn_med_lokker/summer.f48268.png";
 
 /***/ },
 /* 1155 */
@@ -52626,7 +52626,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1164 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/skilpaddefraktaler/skilpaddefraktaler.bb0d80.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/skilpaddefraktaler/skilpaddefraktaler.bb0d80.png";
 
 /***/ },
 /* 1165 */
@@ -52689,7 +52689,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1174 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/skilpaddekunst/skilpaddekunst.1d7bd6.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/skilpaddekunst/skilpaddekunst.1d7bd6.png";
 
 /***/ },
 /* 1175 */
@@ -52798,7 +52798,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1188 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/skilpaddetekst/turtle_box_gif.8f516c.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/skilpaddetekst/turtle_box_gif.8f516c.gif";
 
 /***/ },
 /* 1189 */
@@ -52881,55 +52881,55 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1200 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/stjerner_og_galakser/sky-function.ae59e4.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/stjerner_og_galakser/sky-function.ae59e4.png";
 
 /***/ },
 /* 1201 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/stjerner_og_galakser/sky-parameter-passing.2bdbdc.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/stjerner_og_galakser/sky-parameter-passing.2bdbdc.png";
 
 /***/ },
 /* 1202 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/stjerner_og_galakser/sky-colours.e7ac94.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/stjerner_og_galakser/sky-colours.e7ac94.png";
 
 /***/ },
 /* 1203 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/stjerner_og_galakser/sky-xy.08a2c1.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/stjerner_og_galakser/sky-xy.08a2c1.png";
 
 /***/ },
 /* 1204 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/stjerner_og_galakser/sky-random.d1a9e4.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/stjerner_og_galakser/sky-random.d1a9e4.png";
 
 /***/ },
 /* 1205 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/stjerner_og_galakser/sky-galaxies.c5e0aa.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/stjerner_og_galakser/sky-galaxies.c5e0aa.png";
 
 /***/ },
 /* 1206 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/stjerner_og_galakser/sky-constellations.2a1487.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/stjerner_og_galakser/sky-constellations.2a1487.png";
 
 /***/ },
 /* 1207 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/stjerner_og_galakser/sky-flowers.01dc97.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/stjerner_og_galakser/sky-flowers.01dc97.png";
 
 /***/ },
 /* 1208 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/stjerner_og_galakser/sky-birds.87fd5f.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/stjerner_og_galakser/sky-birds.87fd5f.png";
 
 /***/ },
 /* 1209 */
@@ -53029,7 +53029,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1221 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/3d_flakser/3d_flakser.8b16ef.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/3d_flakser/3d_flakser.8b16ef.png";
 
 /***/ },
 /* 1222 */
@@ -53079,19 +53079,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1228 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/asteroids/asteroids.86442b.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/asteroids/asteroids.86442b.png";
 
 /***/ },
 /* 1229 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/asteroids/ryggsekk.c36383.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/asteroids/ryggsekk.c36383.png";
 
 /***/ },
 /* 1230 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/asteroids/flyttpunkt.3d3406.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/asteroids/flyttpunkt.3d3406.png";
 
 /***/ },
 /* 1231 */
@@ -53119,7 +53119,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1234 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/astrokatt/astrokatt.9b0776.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/astrokatt/astrokatt.9b0776.png";
 
 /***/ },
 /* 1235 */
@@ -53131,7 +53131,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1236 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/astrokatt/katt_oksygentank.cd2356.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/astrokatt/katt_oksygentank.cd2356.png";
 
 /***/ },
 /* 1237 */
@@ -53165,7 +53165,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1241 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/breakout/breakout.a12c3e.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/breakout/breakout.a12c3e.png";
 
 /***/ },
 /* 1242 */
@@ -53193,7 +53193,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1245 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/bursdag_i_antarktis/bursdag_i_antarktis.a0624b.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/bursdag_i_antarktis/bursdag_i_antarktis.a0624b.png";
 
 /***/ },
 /* 1246 */
@@ -53205,7 +53205,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1247 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/bursdag_i_antarktis/roter_pingu.422a79.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/bursdag_i_antarktis/roter_pingu.422a79.png";
 
 /***/ },
 /* 1248 */
@@ -53233,19 +53233,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1251 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/donkey_kong/donkey_kong.301e91.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/donkey_kong/donkey_kong.301e91.png";
 
 /***/ },
 /* 1252 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/donkey_kong/plattform.8ba0bb.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/donkey_kong/plattform.8ba0bb.png";
 
 /***/ },
 /* 1253 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/donkey_kong/stige.6eaaac.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/donkey_kong/stige.6eaaac.png";
 
 /***/ },
 /* 1254 */
@@ -53282,7 +53282,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1258 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/enarmet_banditt/enarmet_banditt.d57558.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/enarmet_banditt/enarmet_banditt.d57558.png";
 
 /***/ },
 /* 1259 */
@@ -53320,7 +53320,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1263 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/felix_og_herbert/felix_i_herbert-hr.9d4f76.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/felix_og_herbert/felix_i_herbert-hr.9d4f76.png";
 
 /***/ },
 /* 1264 */
@@ -53332,7 +53332,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1265 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/felix_og_herbert/nova_varijabla_bodovi.271e0c.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/felix_og_herbert/nova_varijabla_bodovi.271e0c.png";
 
 /***/ },
 /* 1266 */
@@ -53363,13 +53363,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1269 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/felix_og_herbert/felix_og_herbert.204f3e.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/felix_og_herbert/felix_og_herbert.204f3e.png";
 
 /***/ },
 /* 1270 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/felix_og_herbert/ny-variabel-poeng.ef95e3.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/felix_og_herbert/ny-variabel-poeng.ef95e3.png";
 
 /***/ },
 /* 1271 */
@@ -53397,25 +53397,25 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1274 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/flagg/flagg.032705.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/flagg/flagg.032705.png";
 
 /***/ },
 /* 1275 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/lunar_lander/sinus_cosinus.f1cb1b.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/lunar_lander/sinus_cosinus.f1cb1b.png";
 
 /***/ },
 /* 1276 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/flagg/rod_disk.a0ad6c.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/flagg/rod_disk.a0ad6c.png";
 
 /***/ },
 /* 1277 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/flagg/tre_disker.c6a390.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/flagg/tre_disker.c6a390.png";
 
 /***/ },
 /* 1278 */
@@ -53446,7 +53446,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1281 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/flaksefugl/flaksefugl.671944.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/flaksefugl/flaksefugl.671944.png";
 
 /***/ },
 /* 1282 */
@@ -53458,7 +53458,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1283 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/flaksefugl/pipe_design.0dd764.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/flaksefugl/pipe_design.0dd764.png";
 
 /***/ },
 /* 1284 */
@@ -53512,7 +53512,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1290 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/frantic_felix/variabel.523f78.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/frantic_felix/variabel.523f78.png";
 
 /***/ },
 /* 1291 */
@@ -53594,7 +53594,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1300 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/fyrverkeri/fyrverkeri.95324b.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/fyrverkeri/fyrverkeri.95324b.png";
 
 /***/ },
 /* 1301 */
@@ -53628,7 +53628,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1305 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/gangemesteren/gangemesteren.58dfa9.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/gangemesteren/gangemesteren.58dfa9.png";
 
 /***/ },
 /* 1306 */
@@ -53646,13 +53646,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1308 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/gangemesteren/sett_sammen.4bae4b.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/gangemesteren/sett_sammen.4bae4b.png";
 
 /***/ },
 /* 1309 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/gangemesteren/elefanter.621374.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/gangemesteren/elefanter.621374.png";
 
 /***/ },
 /* 1310 */
@@ -53680,7 +53680,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1313 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/halloweenimasjon/halloweenimasjon.21600b.jpg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/halloweenimasjon/halloweenimasjon.21600b.jpg";
 
 /***/ },
 /* 1314 */
@@ -53692,7 +53692,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1315 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/halloweenimasjon/spokelse.3c7237.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/halloweenimasjon/spokelse.3c7237.png";
 
 /***/ },
 /* 1316 */
@@ -53704,7 +53704,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1317 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/halloweenimasjon/demon.bc4c53.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/halloweenimasjon/demon.bc4c53.png";
 
 /***/ },
 /* 1318 */
@@ -53716,13 +53716,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1319 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/halloweenimasjon/gresskar.ce77ae.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/halloweenimasjon/gresskar.ce77ae.png";
 
 /***/ },
 /* 1320 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/halloweenimasjon/kopier_gresskar.1b39fe.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/halloweenimasjon/kopier_gresskar.1b39fe.png";
 
 /***/ },
 /* 1321 */
@@ -53787,7 +53787,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1329 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/hva_er_det/hva_er_det.bb311c.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/hva_er_det/hva_er_det.bb311c.png";
 
 /***/ },
 /* 1330 */
@@ -53815,7 +53815,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1333 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/hvor_i_all_verden/hvor_i_all_verden_1.2a25cc.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/hvor_i_all_verden/hvor_i_all_verden_1.2a25cc.png";
 
 /***/ },
 /* 1334 */
@@ -53827,7 +53827,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1335 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/hvor_i_all_verden/reisemaal.52aec0.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/hvor_i_all_verden/reisemaal.52aec0.png";
 
 /***/ },
 /* 1336 */
@@ -53855,7 +53855,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1339 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/hvor_i_all_verden/hvor_i_all_verden_2.81e646.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/hvor_i_all_verden/hvor_i_all_verden_2.81e646.png";
 
 /***/ },
 /* 1340 */
@@ -53867,7 +53867,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1341 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/hvor_i_all_verden/nykloss.2e31b1.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/hvor_i_all_verden/nykloss.2e31b1.png";
 
 /***/ },
 /* 1342 */
@@ -53895,13 +53895,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1345 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/hvor_i_all_verden/hvor_i_all_verden_3.b27537.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/hvor_i_all_verden/hvor_i_all_verden_3.b27537.png";
 
 /***/ },
 /* 1346 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/hvor_i_all_verden/meny.be4b3b.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/hvor_i_all_verden/meny.be4b3b.png";
 
 /***/ },
 /* 1347 */
@@ -54237,7 +54237,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1390 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/jafsefisk/jafsefisk.889029.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/jafsefisk/jafsefisk.889029.png";
 
 /***/ },
 /* 1391 */
@@ -54265,43 +54265,43 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1394 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/julekort/julekort.6a7b0f.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/julekort/julekort.6a7b0f.png";
 
 /***/ },
 /* 1395 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/julekort/programmering.8f72d0.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/julekort/programmering.8f72d0.png";
 
 /***/ },
 /* 1396 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/julekort/ny_bakgrunn.a57b76.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/julekort/ny_bakgrunn.a57b76.png";
 
 /***/ },
 /* 1397 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/julekort/velg_figurer.f5ac10.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/julekort/velg_figurer.f5ac10.png";
 
 /***/ },
 /* 1398 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/julekort/lyder.7e1834.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/julekort/lyder.7e1834.png";
 
 /***/ },
 /* 1399 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/julekort/lagre.390868.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/julekort/lagre.390868.png";
 
 /***/ },
 /* 1400 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/julekort/leggut.d0cac0.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/julekort/leggut.d0cac0.png";
 
 /***/ },
 /* 1401 */
@@ -54368,25 +54368,25 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1410 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/kingkong/kingkong.abbd0e.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/kingkong/kingkong.abbd0e.png";
 
 /***/ },
 /* 1411 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/kingkong/eksempel.1d47fa.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/kingkong/eksempel.1d47fa.png";
 
 /***/ },
 /* 1412 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/kingkong/tegn_bakgrunn.e4d39b.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/kingkong/tegn_bakgrunn.e4d39b.png";
 
 /***/ },
 /* 1413 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/kingkong/gronn_bakgrunn.d3378b.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/kingkong/gronn_bakgrunn.d3378b.png";
 
 /***/ },
 /* 1414 */
@@ -54398,7 +54398,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1415 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/kingkong/roter_fly.5ebf0a.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/kingkong/roter_fly.5ebf0a.png";
 
 /***/ },
 /* 1416 */
@@ -54426,13 +54426,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1419 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/krabbeangrep_remiks/krabbeangrep_remiks.d5bdd3.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/krabbeangrep_remiks/krabbeangrep_remiks.d5bdd3.png";
 
 /***/ },
 /* 1420 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/krabbeangrep_remiks/spillflyt.66e9ef.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/krabbeangrep_remiks/spillflyt.66e9ef.png";
 
 /***/ },
 /* 1421 */
@@ -54460,7 +54460,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1424 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/labyrint/labyrint.bbb65a.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/labyrint/labyrint.bbb65a.png";
 
 /***/ },
 /* 1425 */
@@ -54726,13 +54726,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1457 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/lunar_lander/lunar_lander.a7c25d.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/lunar_lander/lunar_lander.a7c25d.png";
 
 /***/ },
 /* 1458 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/lunar_lander/animer_romskip.980146.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/lunar_lander/animer_romskip.980146.png";
 
 /***/ },
 /* 1459 */
@@ -54763,7 +54763,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1462 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/lydmaskin/sound-sample.f89d85.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/lydmaskin/sound-sample.f89d85.png";
 
 /***/ },
 /* 1463 */
@@ -54794,13 +54794,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1466 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/lydmaskin/record-costume.8a768a.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/lydmaskin/record-costume.8a768a.png";
 
 /***/ },
 /* 1467 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/lydmaskin/play-costume.29eaf9.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/lydmaskin/play-costume.29eaf9.png";
 
 /***/ },
 /* 1468 */
@@ -54831,13 +54831,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1471 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/lydmaskin/piano-costume-1.753942.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/lydmaskin/piano-costume-1.753942.png";
 
 /***/ },
 /* 1472 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/lydmaskin/piano-costume-3.24cabb.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/lydmaskin/piano-costume-3.24cabb.png";
 
 /***/ },
 /* 1473 */
@@ -54916,7 +54916,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1482 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/norgestur/norgestur.48494a.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/norgestur/norgestur.48494a.png";
 
 /***/ },
 /* 1483 */
@@ -54928,7 +54928,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1484 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/norgestur/reisemaal.0d97db.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/norgestur/reisemaal.0d97db.png";
 
 /***/ },
 /* 1485 */
@@ -54959,7 +54959,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1488 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/orkenlop/orkenlop.241bda.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/orkenlop/orkenlop.241bda.png";
 
 /***/ },
 /* 1489 */
@@ -54987,7 +54987,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1492 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/pong/pong.bcbf5f.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/pong/pong.bcbf5f.png";
 
 /***/ },
 /* 1493 */
@@ -55021,97 +55021,97 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1497 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/reddverden/reddverden.ae11dc.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/reddverden/reddverden.ae11dc.png";
 
 /***/ },
 /* 1498 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/reddverden/ronny.df5c11.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/reddverden/ronny.df5c11.png";
 
 /***/ },
 /* 1499 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/reddverden/bananer.0df8e6.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/reddverden/bananer.0df8e6.png";
 
 /***/ },
 /* 1500 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/reddverden/eple.36a7ef.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/reddverden/eple.36a7ef.png";
 
 /***/ },
 /* 1501 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/reddverden/ballong.a1d93a.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/reddverden/ballong.a1d93a.png";
 
 /***/ },
 /* 1502 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/reddverden/hellikopter.323d01.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/reddverden/hellikopter.323d01.png";
 
 /***/ },
 /* 1503 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/reddverden/melk.c0aa2f.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/reddverden/melk.c0aa2f.png";
 
 /***/ },
 /* 1504 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/reddverden/avis.84aab8.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/reddverden/avis.84aab8.png";
 
 /***/ },
 /* 1505 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/reddverden/kitchen.87c2e5.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/reddverden/kitchen.87c2e5.png";
 
 /***/ },
 /* 1506 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/reddverden/ronny_prater.bff09b.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/reddverden/ronny_prater.bff09b.png";
 
 /***/ },
 /* 1507 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/reddverden/mat.a54831.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/reddverden/mat.a54831.png";
 
 /***/ },
 /* 1508 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/reddverden/plast.df5fda.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/reddverden/plast.df5fda.png";
 
 /***/ },
 /* 1509 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/reddverden/papir.365c84.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/reddverden/papir.365c84.png";
 
 /***/ },
 /* 1510 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/reddverden/ronny_sur.e7869c.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/reddverden/ronny_sur.e7869c.png";
 
 /***/ },
 /* 1511 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/reddverden/finale.0f8479.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/reddverden/finale.0f8479.png";
 
 /***/ },
 /* 1512 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/reddverden/ronny_blid.e40a6c.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/reddverden/ronny_blid.e40a6c.png";
 
 /***/ },
 /* 1513 */
@@ -55195,13 +55195,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1524 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/snake/teller.82f432.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/snake/teller.82f432.png";
 
 /***/ },
 /* 1525 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/snake/boks.a8c0ec.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/snake/boks.a8c0ec.png";
 
 /***/ },
 /* 1526 */
@@ -55229,13 +55229,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1529 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/snoballkrig/snoballkrig.0a78b3.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/snoballkrig/snoballkrig.0a78b3.png";
 
 /***/ },
 /* 1530 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/snoballkrig/bakgrunn.4b9533.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/snoballkrig/bakgrunn.4b9533.png";
 
 /***/ },
 /* 1531 */
@@ -55263,25 +55263,25 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1534 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/soloball/soloball.b64af7.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/soloball/soloball.b64af7.png";
 
 /***/ },
 /* 1535 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/soloball/katt_krymp.421657.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/soloball/katt_krymp.421657.png";
 
 /***/ },
 /* 1536 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/soloball/katt_roter.2c2394.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/soloball/katt_roter.2c2394.png";
 
 /***/ },
 /* 1537 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/soloball/katt_flytt.566ee7.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/soloball/katt_flytt.566ee7.png";
 
 /***/ },
 /* 1538 */
@@ -55299,7 +55299,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1540 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/soloball/sprett_vinkel2.2bf982.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/soloball/sprett_vinkel2.2bf982.png";
 
 /***/ },
 /* 1541 */
@@ -55336,7 +55336,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1545 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/spokelsesjakten/spokelsesjakten.d941e2.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/spokelsesjakten/spokelsesjakten.d941e2.png";
 
 /***/ },
 /* 1546 */
@@ -55376,19 +55376,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1551 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/straffespark/straffespark.954087.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/straffespark/straffespark.954087.png";
 
 /***/ },
 /* 1552 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/straffespark/snu_figur.b3a229.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/straffespark/snu_figur.b3a229.png";
 
 /***/ },
 /* 1553 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/straffespark/koordinater.63b329.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/straffespark/koordinater.63b329.png";
 
 /***/ },
 /* 1554 */
@@ -55419,13 +55419,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1557 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/tegneprogram/tegneprogram.76f0b1.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/tegneprogram/tegneprogram.76f0b1.png";
 
 /***/ },
 /* 1558 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/tegneprogram/senterpunkt.b52599.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/tegneprogram/senterpunkt.b52599.png";
 
 /***/ },
 /* 1559 */
@@ -55452,25 +55452,25 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1562 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/veiledninger/kom_i_gang_med_scratch.42f2ef.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/veiledninger/kom_i_gang_med_scratch.42f2ef.png";
 
 /***/ },
 /* 1563 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/veiledninger/larerveiledning.8089fb.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/veiledninger/larerveiledning.8089fb.png";
 
 /***/ },
 /* 1564 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/veiledninger/last_ned_pdf.268761.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/veiledninger/last_ned_pdf.268761.png";
 
 /***/ },
 /* 1565 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/veiledninger/velg_sprak.0cb769.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/veiledninger/velg_sprak.0cb769.png";
 
 /***/ },
 /* 1566 */
@@ -55497,7 +55497,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1569 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/veiledninger/kurs_avansert_scratch_klassikere.7c17d4.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/veiledninger/kurs_avansert_scratch_klassikere.7c17d4.png";
 
 /***/ },
 /* 1570 */
@@ -55524,7 +55524,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1573 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/veiledninger/kurs_avansert_scratch_plattform.788c58.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/veiledninger/kurs_avansert_scratch_plattform.788c58.png";
 
 /***/ },
 /* 1574 */
@@ -55827,49 +55827,49 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1613 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/swift/hei_verden/hei_verden.00aa23.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/swift/hei_verden/hei_verden.00aa23.png";
 
 /***/ },
 /* 1614 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/swift/hei_verden/intro_skjerm.0f00eb.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/swift/hei_verden/intro_skjerm.0f00eb.png";
 
 /***/ },
 /* 1615 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/swift/hei_verden/lag_prosjekt.8024f9.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/swift/hei_verden/lag_prosjekt.8024f9.png";
 
 /***/ },
 /* 1616 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/swift/hei_verden/app_informasjon.579934.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/swift/hei_verden/app_informasjon.579934.png";
 
 /***/ },
 /* 1617 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/swift/hei_verden/drag_label.3c446f.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/swift/hei_verden/drag_label.3c446f.png";
 
 /***/ },
 /* 1618 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/swift/hei_verden/label_connection.860d8f.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/swift/hei_verden/label_connection.860d8f.png";
 
 /***/ },
 /* 1619 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/swift/hei_verden/change_label.de468c.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/swift/hei_verden/change_label.de468c.png";
 
 /***/ },
 /* 1620 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/swift/hei_verden/textfield_input.da148e.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/swift/hei_verden/textfield_input.da148e.png";
 
 /***/ },
 /* 1621 */
@@ -55899,7 +55899,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1624 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/unity/rull-en-ball/rull-en-ball.4fb5b7.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/unity/rull-en-ball/rull-en-ball.4fb5b7.png";
 
 /***/ },
 /* 1625 */
@@ -55951,55 +55951,55 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1631 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/uten_datamaskin/robotvenner/robotvenner-i-aksjon.079238.jpg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/uten_datamaskin/robotvenner/robotvenner-i-aksjon.079238.jpg";
 
 /***/ },
 /* 1632 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/uten_datamaskin/robotvenner/robotvenner-smaa-bilder.dc7d2f.jpg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/uten_datamaskin/robotvenner/robotvenner-smaa-bilder.dc7d2f.jpg";
 
 /***/ },
 /* 1633 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/uten_datamaskin/robotvenner/eksempel_01.871496.jpg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/uten_datamaskin/robotvenner/eksempel_01.871496.jpg";
 
 /***/ },
 /* 1634 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/uten_datamaskin/robotvenner/eksempel_02.a76d55.jpg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/uten_datamaskin/robotvenner/eksempel_02.a76d55.jpg";
 
 /***/ },
 /* 1635 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/uten_datamaskin/robotvenner/eksempel_03.e627b0.jpg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/uten_datamaskin/robotvenner/eksempel_03.e627b0.jpg";
 
 /***/ },
 /* 1636 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/uten_datamaskin/robotvenner/eksempel_04.020867.jpg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/uten_datamaskin/robotvenner/eksempel_04.020867.jpg";
 
 /***/ },
 /* 1637 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/uten_datamaskin/robotvenner/eksempel_05.5ef19a.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/uten_datamaskin/robotvenner/eksempel_05.5ef19a.png";
 
 /***/ },
 /* 1638 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/uten_datamaskin/robotvenner/eksempel_06.b73d7e.jpg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/uten_datamaskin/robotvenner/eksempel_06.b73d7e.jpg";
 
 /***/ },
 /* 1639 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/uten_datamaskin/robotvenner/eksempel_07.c53c06.jpg";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/uten_datamaskin/robotvenner/eksempel_07.c53c06.jpg";
 
 /***/ },
 /* 1640 */
@@ -56033,31 +56033,31 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1644 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/del_inn_nettsiden/ressurser/html_del_inn_5.68148e.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/del_inn_nettsiden/ressurser/html_del_inn_5.68148e.png";
 
 /***/ },
 /* 1645 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/del_inn_nettsiden/ressurser/html_del_inn_4.b865e5.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/del_inn_nettsiden/ressurser/html_del_inn_4.b865e5.png";
 
 /***/ },
 /* 1646 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/del_inn_nettsiden/ressurser/html_del_inn_1.e9029a.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/del_inn_nettsiden/ressurser/html_del_inn_1.e9029a.png";
 
 /***/ },
 /* 1647 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/del_inn_nettsiden/ressurser/html_del_inn_2.1f8507.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/del_inn_nettsiden/ressurser/html_del_inn_2.1f8507.png";
 
 /***/ },
 /* 1648 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/del_inn_nettsiden/ressurser/html_del_inn_6.73509a.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/del_inn_nettsiden/ressurser/html_del_inn_6.73509a.png";
 
 /***/ },
 /* 1649 */
@@ -56107,13 +56107,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1655 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/forsvunnet_katt/missingcat.4b96bd.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/forsvunnet_katt/missingcat.4b96bd.png";
 
 /***/ },
 /* 1656 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/forsvunnet_katt/screenshot_jsbin.cce320.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/forsvunnet_katt/screenshot_jsbin.cce320.png";
 
 /***/ },
 /* 1657 */
@@ -56141,25 +56141,25 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1660 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/hei_js/jsbin.d6918e.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/hei_js/jsbin.d6918e.png";
 
 /***/ },
 /* 1661 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/hei_js/versjon.ecbf69.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/hei_js/versjon.ecbf69.png";
 
 /***/ },
 /* 1662 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/hei_js/faner.baf89d.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/hei_js/faner.baf89d.png";
 
 /***/ },
 /* 1663 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/hei_js/konsoll.b3b6bf.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/hei_js/konsoll.b3b6bf.png";
 
 /***/ },
 /* 1664 */
@@ -56187,7 +56187,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1667 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/introduksjon_til_web/webdialog.acc430.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/introduksjon_til_web/webdialog.acc430.png";
 
 /***/ },
 /* 1668 */
@@ -56215,19 +56215,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1671 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/lenk_sammen_nettsider/ressurser/hjem.783e50.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/lenk_sammen_nettsider/ressurser/hjem.783e50.png";
 
 /***/ },
 /* 1672 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/lenk_sammen_nettsider/ressurser/mine_hobbyer.c74dcc.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/lenk_sammen_nettsider/ressurser/mine_hobbyer.c74dcc.png";
 
 /***/ },
 /* 1673 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/lenk_sammen_nettsider/ressurser/om_meg.9fffc3.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/lenk_sammen_nettsider/ressurser/om_meg.9fffc3.png";
 
 /***/ },
 /* 1674 */
@@ -56364,7 +56364,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1692 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/skjul_ninjaene/ninjas.921e03.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/skjul_ninjaene/ninjas.921e03.png";
 
 /***/ },
 /* 1693 */
@@ -56413,7 +56413,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1699 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/tekststil/fonts.d3b391.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/tekststil/fonts.d3b391.png";
 
 /***/ },
 /* 1700 */
@@ -56441,55 +56441,55 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1703 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/trykkomania/trykkomania.66d448.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/trykkomania/trykkomania.66d448.gif";
 
 /***/ },
 /* 1704 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/trykkomania/faner.6b8fe3.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/trykkomania/faner.6b8fe3.png";
 
 /***/ },
 /* 1705 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/trykkomania/firkantet_ball.0a77c0.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/trykkomania/firkantet_ball.0a77c0.png";
 
 /***/ },
 /* 1706 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/trykkomania/tilfeldig.b1ba11.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/trykkomania/tilfeldig.b1ba11.png";
 
 /***/ },
 /* 1707 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/trykkomania/prosent1.8cb52d.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/trykkomania/prosent1.8cb52d.png";
 
 /***/ },
 /* 1708 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/trykkomania/prosent2.f517bf.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/trykkomania/prosent2.f517bf.png";
 
 /***/ },
 /* 1709 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/trykkomania/tilfeldig_plassering.6dfc57.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/trykkomania/tilfeldig_plassering.6dfc57.gif";
 
 /***/ },
 /* 1710 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/trykkomania/poeng.8bb15e.gif";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/trykkomania/poeng.8bb15e.gif";
 
 /***/ },
 /* 1711 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/trykkomania/adresse.62359f.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/trykkomania/adresse.62359f.png";
 
 /***/ },
 /* 1712 */
@@ -56871,37 +56871,37 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1727 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/appinventor/logo-black.3695fe.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/appinventor/logo-black.3695fe.png";
 
 /***/ },
 /* 1728 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/arduino/logo-black.db64bb.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/arduino/logo-black.db64bb.png";
 
 /***/ },
 /* 1729 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/codestudio/logo-black.0a118e.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/codestudio/logo-black.0a118e.png";
 
 /***/ },
 /* 1730 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/computercraft/logo-black.9f666d.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/computercraft/logo-black.9f666d.png";
 
 /***/ },
 /* 1731 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/javafx/logo-black.802dc0.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/javafx/logo-black.802dc0.png";
 
 /***/ },
 /* 1732 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/kodu/logo-black.eb7be8.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/kodu/logo-black.eb7be8.png";
 
 /***/ },
 /* 1733 */
@@ -56913,13 +56913,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1734 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/learntomod/logo-black.8bdf4e.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/learntomod/logo-black.8bdf4e.png";
 
 /***/ },
 /* 1735 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/legomindstorms/logo-black.bb32b5.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/legomindstorms/logo-black.bb32b5.png";
 
 /***/ },
 /* 1736 */
@@ -56931,19 +56931,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1737 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/python/logo-black.2bf511.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/python/logo-black.2bf511.png";
 
 /***/ },
 /* 1738 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/rpi/logo-black.0f643a.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/rpi/logo-black.0f643a.png";
 
 /***/ },
 /* 1739 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/scratch/logo-black.8dc8be.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/scratch/logo-black.8dc8be.png";
 
 /***/ },
 /* 1740 */
@@ -56955,19 +56955,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1741 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/unity/logo-black.905c61.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/unity/logo-black.905c61.png";
 
 /***/ },
 /* 1742 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/uten_datamaskin/logo-black.51ad6b.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/uten_datamaskin/logo-black.51ad6b.png";
 
 /***/ },
 /* 1743 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "_/tjesi_oppgaver/src/web/logo-black.ac2d3e.png";
+	module.exports = __webpack_require__.p + "_/oppgaver/src/web/logo-black.ac2d3e.png";
 
 /***/ },
 /* 1744 */
@@ -59596,7 +59596,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 2083 */
 /***/ function(module, exports) {
 
-	module.exports = "<!DOCTYPE html>\n<html>\n<head>\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\n    <title>Kodeklubben (server)</title>\n    <%= appCss %>\n<link href=\"/vendor2.04c375e06c230a54ba3e.css\" rel=\"stylesheet\"></head>\n<body>\n    <div id=\"app\"><%= appHtml %></div>\n<script type=\"text/javascript\" src=\"/manifest.25bf77659b320cd3a087.js\"></script><script type=\"text/javascript\" src=\"/vendor.a6b03d2258d76438e766.js\"></script><script type=\"text/javascript\" src=\"/main.7f73ab0e0b72746f9c8a.js\"></script><script type=\"text/javascript\" src=\"/vendor2.04c375e06c230a54ba3e.js\"></script></body>\n</html>\n"
+	module.exports = "<!DOCTYPE html>\n<html>\n<head>\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\n    <title>Kodeklubben (server)</title>\n    <%= appCss %>\n<link href=\"/beta/vendor2.2ef91518eebdacd7585a.css\" rel=\"stylesheet\"></head>\n<body>\n    <div id=\"app\"><%= appHtml %></div>\n<script type=\"text/javascript\" src=\"/beta/manifest.b058e9b8f878638dfef1.js\"></script><script type=\"text/javascript\" src=\"/beta/vendor.a6b03d2258d76438e766.js\"></script><script type=\"text/javascript\" src=\"/beta/main.fce3d2843ce1f2ebede3.js\"></script><script type=\"text/javascript\" src=\"/beta/vendor2.2ef91518eebdacd7585a.js\"></script></body>\n</html>\n"
 
 /***/ }
 /******/ ])
