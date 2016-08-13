@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kodeklubben (server)</title>
+    <style type="text/css">.App__container__vvzpy {
+  margin-top: 125px; }
+.NavBar__flagGroup__3f0i_ {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px; }
+
+.NavBar__flag__3cn9U {
+  width: 30px;
+  height: 20px;
+  float: right;
+  margin-left: 5px; }
+.NavLink__linkBase__1m4Sm {
+  text-decoration: none !important;
+  font-size: 17pt; }
+
+.NavLink__linkStudent__1zq2x {
+  color: #265732; }
+
+.NavLink__linkTeacher__25L85 {
+  color: #215651; }
+.ModeIndicator__modeIndicator__gvKNO {
+  font-size: 1.2em;
+  margin-top: -15px;
+  text-align: right; }
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic);.Footer__container__1SZrv {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 15pt;
+  font-family: "Roboto", "Verdana", sans-serif; }
+  .Footer__container__1SZrv a {
+    text-decoration: none; }
+
+.Footer__containerStudent__3Yr5f {
+  background-color: #b1daae;
+  color: #265732; }
+  .Footer__containerStudent__3Yr5f a {
+    color: #265732; }
+
+.Footer__containerTeacher__36KZb {
+  background-color: #a3cccb;
+  color: #215651; }
+  .Footer__containerTeacher__36KZb a {
+    color: #215651; }
+
+.Footer__center__3xqZ_ {
+  text-align: center; }
+
+.Footer__inline__1Q6ds {
+  display: inline-block;
+  margin: 20px 10px; }
+
+.Footer__svg__29r7H {
+  width: 100px;
+  height: auto;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__img__25Ink {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: auto;
+  height: 50px;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__divider__LJrti {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid;
+  width: 50%; }
+
+.Footer__svg__29r7H:hover,
+.Footer__img__25Ink:hover {
+  transform: scale(1.2); }
+</style>
+<link href="/beta/vendor2.09f254784762e874f910.css" rel="stylesheet"></head>
+<body>
+    <div id="app"><div><div class="App__container__vvzpy" data-reactroot="" data-reactid="1" data-react-checksum="-631151673"><div class="container-fluid" data-reactid="2"><div class="row" data-reactid="3"><nav class="navbar navbar-default navbar-fixed-top" data-reactid="4"><div class="container-fluid" data-reactid="5"><div class="btn-language-dropdown pull-right dropdown btn-group" data-reactid="6"><button class="dropdown-toggle btn-language-student btn-language btn btn-default" id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" data-reactid="7"><span data-reactid="8"><!-- react-text: 9 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="10"/></span></button><ul class="dropdown-menu" role="menu" aria-labelledby="language-dropdown" data-reactid="11"><li role="presentation" class="" data-reactid="12"><a role="menuitem" href="" tabindex="-1" data-reactid="13"><span data-reactid="14"><!-- react-text: 15 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="16"/></span></a></li><li role="presentation" class="" data-reactid="17"><a role="menuitem" href="" tabindex="-1" data-reactid="18"><span data-reactid="19"><!-- react-text: 20 -->Norsk nynorsk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="21"/></span></a></li><li role="presentation" class="" data-reactid="22"><a role="menuitem" href="" tabindex="-1" data-reactid="23"><span data-reactid="24"><!-- react-text: 25 -->Svenska<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="26"/></span></a></li><li role="presentation" class="" data-reactid="27"><a role="menuitem" href="" tabindex="-1" data-reactid="28"><span data-reactid="29"><!-- react-text: 30 -->Dansk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="31"/></span></a></li></ul></div><div class="navbar-header" data-reactid="32"><span class="navbar-brand" data-reactid="33"><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/" data-reactid="34"><span class="glyphicon glyphicon-home" data-reactid="35"></span></a><span data-reactid="36"><!-- react-text: 37 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/scratch" data-reactid="38">scratch</a></span><span class="hidden-xs" data-reactid="39"><!-- react-text: 40 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm active" href="/scratch/hvor_i_all_verden/hvor_i_all_verden_3" data-reactid="41">hvor i all verden</a></span></span><button type="button" class="navbar-toggle collapsed" data-reactid="42"><span class="sr-only" data-reactid="43">Toggle navigation</span><span class="icon-bar" data-reactid="44"></span><span class="icon-bar" data-reactid="45"></span><span class="icon-bar" data-reactid="46"></span></button></div><div class="navbar-collapse collapse" data-reactid="47"><div class="navbar-form navbar-right" data-reactid="48"><div class="form-group" data-reactid="49"><input type="text" placeholder="Søk" class="form-control" data-reactid="50"/></div><!-- react-text: 51 --> <!-- /react-text --><div class="btn-toggle" data-reactid="52"><div data-reactid="53">Velg modus:</div><div class="btn-group btn-group" data-reactid="54"><button class="btn-student-nav active btn btn-default" type="button" data-reactid="55">ELEV</button><button class="btn-teacher-nav btn btn-default" type="button" data-reactid="56">LÆRER</button></div></div></div></div></div></nav></div><div class="row" data-reactid="57"><div class="col-xs-12" data-reactid="58"><div class="ModeIndicator__modeIndicator__gvKNO" data-reactid="59"><!-- react-text: 60 -->Du er i <!-- /react-text --><span class="text-student" data-reactid="61">elevmodus</span></div></div></div></div><div data-reactid="62"><h1 data-reactid="63"><!-- react-text: 64 -->Hvor i All Verden? Del 3<!-- /react-text --><!-- react-text: 65 --> - Level <!-- /react-text --><!-- react-text: 66 -->3<!-- /react-text --></h1><p data-reactid="67"><i data-reactid="68"><!-- react-text: 69 -->av <!-- /react-text --><!-- react-text: 70 -->Geir Arne Hjelle<!-- /react-text --></i></p><div data-reactid="71"><section class="intro" id="introduksjon">
+<h1 class="intro" id="introduksjon">Introduksjon</h1>
+<p>Hvor i All Verden? er et reise- og geografispill hvor man raskest
+mulig skal fly innom reisemål spredt rundt i Europa. Dette er den
+siste av tre leksjoner. I denne delen skal vi se på lister og hvordan
+vi kan bruke dem til å velge reisemål tilfeldig. Vi vil avslutte med å
+lage en skikkelig intro til spillet.</p>
+<figure><img src="/beta/_/oppgaver/src/scratch/hvor_i_all_verden/hvor_i_all_verden_3.b27537.png" alt="" /></figure>
+</section>
+<section class="activity" id="steg-0-forrige-gang">
+<h1 class="activity" id="steg-0-forrige-gang">Steg 0: Forrige gang</h1>
+<figure><em>Vi fortsetter nå med det programmet vi laget i del 1 og del 2.</em></figure>
+<section class="check" id="sjekkliste">
+<h2 class="check" id="sjekkliste">Sjekkliste</h2>
+<p>Sjekk spesielt at</p>
+<ul>
+<li>
+<figure>du har et helikopter som du kan styre over en rullende bakgrunn med
+piltastene,</figure>
+</li>
+<li>
+<p>du har en stedfigur som kan bli funnet av helikopteret,</p>
+</li>
+<li>
+<figure>du har laget en ny kloss (funksjon) som heter <code class="blockmoreblocks">Reis til</code>.</figure>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-1-lag-lister">
+<h1 class="activity" id="steg-1-lag-lister">Steg 1: Lag lister</h1>
+<p><em>Vi skal nå flytte reisemålene våre over i lister. Dette vil gjøre det
+enklere både å legge til flere reisemål, og å velge reisemål
+tilfeldig.</em></p>
+<section class="check" id="sjekkliste-2">
+<h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
+<ul>
+<li>
+<p>Velg sted-figuren, og klikk på <code class="blockdata">Data</code>-kategorien. Lag
+en liste som du kaller <code>steder</code> og lar gjelde bare for denne
+figuren.</p>
+</li>
+<li>
+<p>Det dukker nå opp en grå boks på scenen som heter <code>Sted: steder</code>. Vi
+kan la denne ligge på scenen inntil videre. Du vil også se at det
+har kommet noen nye klosser som gjør ting med lister. Skjønner du
+hva noen av disse klossene gjør?</p>
+</li>
+<li>
+<figure>La oss fylle opp listen! Vi starter med en ny melding, og
+deretter kan vi legge til ting i listen.</figure>
+<pre class=blocks>når jeg mottar [Lag lister v]
+legg [London] til [steder v]
+legg [Oslo] til [steder v]
+legg [Barcelona] til [steder v]
+</pre>
+<p>Bruk gjerne de samme reisemålene som du allerede har.</p>
+</li>
+<li>
+<p>Klikk på blokken du laget over slik at den kjører. Blir den grå
+boksen på scenen fyllt med steder? Hva skjer om du klikker flere
+ganger?</p>
+</li>
+<li>
+<figure>Vi kan sikre oss at hvert sted bare ligger en gang i listen ved å
+tømme listen før vi fyller den opp. Legg til</figure>
+<pre class=blocks>slett (alle v) i [steder v]
+</pre>
+<p>i koden før du legger til det første reisemålet.</p>
+</li>
+</ul>
+<p>En liten utfordring med lister er at de bare inneholder en type
+verdier. For eksempel stedsnavn i dette tilfellet. Men for reisemålene
+må vi holde styr på tre ting: Stedsnavnet og de to koordinatene som
+sier hvor stedet ligger. En måte å gjøre dette på er å bruke tre lister.</p>
+<ul>
+<li>
+<p>Lag to nye lister, <code>stederX</code> og <code>stederY</code> som også gjelder kun for
+stedfiguren.</p>
+</li>
+<li>
+<p>Vi vil nå utvide <code>Lag lister</code>-blokken slik at vi fyller opp alle tre
+listene. Bruk dine egne reisemål og koordinater her om du vil:</p>
+<pre class=blocks>når jeg mottar [Lag lister v]
+slett (alle v) i [steder v]
+slett (alle v) i [stederX v]
+slett (alle v) i [stederY v]
+legg [London] til [steder v]
+legg [-135] til [stederX v]
+legg [-30] til [stederY v]
+legg [Oslo] til [steder v]
+legg [-30] til [stederX v]
+legg [75] til [stederY v]
+legg [Barcelona] til [steder v]
+legg [-135] til [stederX v]
+legg [-175] til [stederY v]
+</pre>
+<figure>Pass på at de tre listene er samkjørte slik at det er verdier for
+samme reisemål som står for eksempel øverst i hver liste.</figure>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-2-velg-et-reisemal-tilfeldig">
+<h1 class="activity" id="steg-2-velg-et-reisemal-tilfeldig">Steg 2: Velg et reisemål tilfeldig</h1>
+<p><em>La oss begynne å bruke listene våre til å velge steder å reise til
+tilfeldig.</em></p>
+<section class="check" id="sjekkliste-3">
+<h2 class="check" id="sjekkliste-3">Sjekkliste</h2>
+<ul>
+<li>
+<p>Først vil vi lage listene våre når spillet begynner.  Endre på koden
+for <code class="blockevents">Nytt spill</code> slik,</p>
+<pre class=blocks>når jeg mottar [Nytt spill v]
+send melding [Lag lister v]
+vis
+send melding [Nytt sted v] og vent
+</pre>
+</li>
+<li>
+<p>Lag en ny variabel som heter <code class="blockdata">sted</code> og som gjelder kun
+for sted-figuren. Denne variabelen vil være et tall som
+identifiserer hvilken posisjon i listene det gjeldende reisemålet
+har.</p>
+</li>
+<li>
+<p>Koden for <code class="blockevents">Nytt sted</code> blir helt ny. Nå skal vi bruke
+både listene våre og den nye <code class="blockmoreblocks">Reis til</code>-klossen vi
+lagde forrige gang.</p>
+<pre class=blocks>når jeg mottar [Nytt sted v]
+sett [sted v] til (tilfeldig tall fra (1) til (lengden av [steder v]))
+Reis til (element (sted) av [steder v]) (element (sted) av [stederX v]) (element (sted) av [stederY v]) :: custom
+</pre>
+</li>
+<li>
+<figure>Prøv å kjør spillet flere ganger. Virker det som om reisemålet blir
+valgt tilfeldig?</figure>
+</li>
+<li>
+<p>For å få flere reiseoppgaver i hvert spill kan vi bare legge en
+<code class="blockcontrol">gjenta _ ganger</code>-løkke rundt sendingen av meldingen
+<code>Nytt sted</code> i <code class="blockevents">Nytt spill</code>-blokken. Hvor mange ganger
+vil du gjenta meldingen?</p>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-3-fjern-reisemal-fra-listen">
+<h1 class="activity" id="steg-3-fjern-reisemal-fra-listen">Steg 3: Fjern reisemål fra listen</h1>
+<p><em>I spillet vårt hender det at samme reisemål blir tilfeldig valgt
+flere ganger etter hverandre. Dette kan vi enkelt unngå ved å fjerne
+reisemål fra listene etterhvert som vi finner dem.</em></p>
+<section class="check" id="sjekkliste-4">
+<h2 class="check" id="sjekkliste-4">Sjekkliste </h2>
+<ul>
+<li>
+<p>For å unngå å bli spurt om å reise til samme sted flere ganger på
+rad vil vi slette reisemål fra listene etterhvert som vi finner dem.
+Legg til slettekommandoer helt nederst i <code class="blockevents">Nytt sted</code>-blokken,</p>
+<pre class=blocks>slett (sted) i [steder v]
+slett (sted) i [stederX v]
+slett (sted) i [stederY v]
+</pre>
+</li>
+<li>
+<figure>Hva skjer om du prøver å gi flere oppgaver enn det er reisemål? Prøv
+selv!</figure>
+<figure>Den enkleste måten å unngå dette problemet på er å gi færre
+oppgaver eller legge inn flere reisemål i listene!</figure>
+<p>Alternativt kan du øverst i <code>Nytt sted</code>-blokken legge inn en
+<code class="blockcontrol">hvis</code>-test som sjekker om lengden av <code>steder</code>
+er 0. Hvis den er det kan du sende en ny <code>Lag lister</code>-melding for
+å bygge listen på nytt.</p>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-4-en-introduksjon">
+<h1 class="activity" id="steg-4-en-introduksjon">Steg 4: En introduksjon</h1>
+<p><em>Vi er nå nesten ferdige med spillet vårt. Men vi vil forbedre det som
+kalles programflyten slik at vi får en startmeny, og slik at vi kan
+spille flere ganger.</em></p>
+<section class="check" id="sjekkliste-5">
+<h2 class="check" id="sjekkliste-5">Sjekkliste</h2>
+<ul>
+<li>
+<p>Lag en ny bakgrunn som kan brukes på startskjermen. Vi har tegnet en
+ny bakgrunn selv ved å bruke vektorgrafikk, sette sammen to store
+firkanter og fylle dem med fargeoverganger. Deretter skrev vi litt
+tekst på denne bakgrunnen.</p>
+<figure><img src="/beta/_/oppgaver/src/scratch/hvor_i_all_verden/meny.be4b3b.png" alt="" /></figure>
+<figure>Kall denne bakgrunnen for <code>meny</code>.</figure>
+</li>
+</ul>
+<p>Vi skal nå sende flere meldinger som definerer programflyten. Vi vil
+at menyen vises når vi klikker på det grønne flagget. Fra menyen vil
+vi at et nytt spill starter når vi trykker mellomrom-tasten. Når
+spillet er slutt vil vi at menyen skal vises igjen. Vi kan tegne
+programflyten omtrent som dette:</p>
+<figure><img src="data:image/png;base64,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" alt="" /></figure>
+<ul>
+<li>
+<figure>For å lage denne programflyten kan vi stort sett bruke skript på
+scenen. Lag de følgende enkle skriptene:</figure>
+<pre class=blocks>når grønt flagg klikkes
+send melding [Vis meny v]
+
+når jeg mottar [Vis meny v]
+bytt bakgrunn til [meny v]
+
+når [mellomrom v] trykkes
+hvis &lt;(bakgrunnsnavn) = [meny]&gt;
+    send melding [Nytt spill v]
+slutt
+
+når jeg mottar [Nytt spill v]
+bytt bakgrunn til [spill v]
+
+når jeg mottar [Spill slutt v]
+send melding [Vis meny v]
+</pre>
+<figure>Sammenlign disse skriptene med programflyten over. Ser du hvordan
+de henger sammen?</figure>
+</li>
+<li>
+<figure>Vi må sende melding når spillet er slutt. Hvordan vet vi at spillet
+er slutt?</figure>
+<p>Spillet slutter etter at vi har besøkt reisemålene. Det betyr at
+vi må sende en melding <code>Spill slutt</code> etter
+<code class="blockcontrol">gjenta</code>-blokken på sted-figuren.</p>
+<p>Legg til denne meldingen og prøv spillet ditt. Virker
+programflyten? Starter spillet når du trykker mellomrom? Kommer du
+tilbake til menyen når spillet er slutt?</p>
+</li>
+<li>
+<p>Et problem er at helikopteret, stedet og kartet blir liggende over
+menyen når spillet er slutt. Vi må passe på at disse skjules. Legg
+følgende kode på alle de tre figurene:</p>
+<pre class=blocks>når jeg mottar [Spill slutt v]
+skjul
+stopp [andre skript i figuren v] :: control
+</pre>
+<p>Med <code class="blockcontrol">stopp</code>-klossen passer vi på at alle skriptene
+stopper når spillet er slutt.</p>
+</li>
+</ul>
+</section>
+<section class="flag" id="test-prosjektet">
+<h2 class="flag" id="test-prosjektet">Test prosjektet</h2>
+<figure><strong>Klikk på det grønne flagget.</strong></figure>
+<ul>
+<li>
+<p>Fungerer programflyten som den skal? Starter spillet når du trykker
+på mellomrom-tasten? Kommer du tilbake til menyen når spillet er
+slutt?</p>
+</li>
+<li>
+<p>Skjules og vises alle figurene når de skal?</p>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-5-ta-tiden">
+<h1 class="activity" id="steg-5-ta-tiden">Steg 5: Ta tiden</h1>
+<p><em>For å gjøre spillet litt mer spennende avslutter vi med å gi
+spilleren begrenset tid til å finne reisemålene.</em></p>
+<section class="check" id="sjekkliste-6">
+<h2 class="check" id="sjekkliste-6">Sjekkliste</h2>
+<ul>
+<li>
+<p>Lag en ny variabel, <code class="blockdata">Tid</code>, som gjelder for alle
+figurer. Det ser ganske bra ut om du høyreklikker på
+<code class="blockgrey">Tid</code>-boksen på scenen og velger <code>stor</code>.</p>
+</li>
+<li>
+<p>På scenen, sett <code class="blockdata">Tid</code> til for eksempel 30 (sekunder)
+etter <code class="blockevents">Nytt spill</code> mottas. Lag så en løkke som gjentas
+til <code class="blockdata">Tid</code> er 0. Inne i løkken kan du endre
+<code class="blockdata">Tid</code> med -1, og deretter vente 1 sekund. Avslutt med å
+sende ut meldingen <code>Spill slutt</code> etter løkken.</p>
+</li>
+<li>
+<figure>Kanskje du kan gi spilleren litt ekstra tid hver gang han finner et
+sted?</figure>
+</li>
+<li>
+<p>Til slutt må du legge på en <code class="blockcontrol">stopp</code>-kloss også på
+scenen når spillet er slutt for at tiden skal stoppe når spilleren
+har funnet alle reisemålene.</p>
+</li>
+</ul>
+</section>
+<section class="flag" id="test-prosjektet-2">
+<h2 class="flag" id="test-prosjektet-2">Test prosjektet</h2>
+<figure><strong>Klikk på det grønne flagget.</strong></figure>
+<ul>
+<li>
+<p>Fungerer tidtakingen? Telles tiden nedover mot 0?</p>
+</li>
+<li>
+<figure>Avsluttes spillet når du har funnet alle reisemålene? Avsluttes
+spillet når tiden går ut?</figure>
+</li>
+</ul>
+</section>
+<section class="save" id="legg-ut-prosjektet">
+<h2 class="save" id="legg-ut-prosjektet">Legg ut prosjektet</h2>
+<p>Nå er vi ferdige med spillet! Veldig bra! Vi håper du har lært mye
+spennende gjennom disse leksjonene.  Du kan dele spillet med familie
+og venner ved å trykke <code>Legg ut</code> øverst til høyre på skjermen.</p>
+</section>
+<section class="try" id="prov-selv">
+<h2 class="try" id="prov-selv">Prøv selv</h2>
+<ul>
+<li>
+<p>Selv om leksjonene er ferdige betyr ikke det at du ikke kan
+videreutvikle spillet ditt. En enkel utvidelse er å legge på flere
+reisemål. Her er for eksempel to steder du kan legge til,</p>
+<pre class=blocks>legg [Reykjavik] til [steder v]
+legg [-215] til [stederX v]
+legg [210] til [stederY v]
+legg [Roma] til [steder v]
+legg [-30] til [stederX v]
+legg [-180] til [stederY v]
+</pre>
+<p>men det er enda bedre om du finner på dine egne reisemål. Husk det
+trenger ikke bare være byer, det kan også være fjell, sjøer eller
+kanskje land!</p>
+</li>
+<li>
+<p>En måte å gjøre spillet ganske forskjellig på, og samtidig ganske
+likt, er å bytte ut kartet over Europa med et kart over et annet
+område. Det finnes mange kart på nettet. Prøv deg fram!</p>
+</li>
+<li>
+<p>Om spillet kjennes litt vanskelig kan man gi spilleren et hint ved å
+la den sirkelen sakte komme til syne mens han leter etter
+reisemålet. Om du lager en løkke som starter når <code class="blockevents">Nytt spill</code> mottas, og som sakte endrer den gjennomsiktige
+effekten ned mot 0 vil spilleren enklere kunne finne de vanskelige
+reisemålene.</p>
+</li>
+<li>
+<p>Du kan også lage flere nivåer, for eksempel lett og vanskelig, ved å
+lage forskjellige lister avhengig av hvilket nivå spilleren velger
+(for eksempel ved å trykke <code>1</code> eller <code>2</code> i stedet for mellomrom når
+spillet starter).</p>
+</li>
+</ul>
+<figure>Helt til slutt, husk at dette er ditt spill som du har laget! Du
+bestemmer selv hvordan du vil at spillet skal fungere!</figure>
+</section>
+</section>
+</div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="72"><div class="Footer__center__3xqZ_ row" data-reactid="73"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="74">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="75">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="76"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="77"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/smn.41dee6.jpg" data-reactid="78"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="79"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="80"/></a></div></div></div></div></div>
+<script type="text/javascript" src="/beta/manifest.94560fc5e8ab0b309f2f.js"></script><script type="text/javascript" src="/beta/vendor.3951770774da74e23e3f.js"></script><script type="text/javascript" src="/beta/main.4e2a8714a18e05c48464.js"></script><script type="text/javascript" src="/beta/vendor2.09f254784762e874f910.js"></script></body>
+</html>

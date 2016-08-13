@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kodeklubben (server)</title>
+    <style type="text/css">.App__container__vvzpy {
+  margin-top: 125px; }
+.NavBar__flagGroup__3f0i_ {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px; }
+
+.NavBar__flag__3cn9U {
+  width: 30px;
+  height: 20px;
+  float: right;
+  margin-left: 5px; }
+.NavLink__linkBase__1m4Sm {
+  text-decoration: none !important;
+  font-size: 17pt; }
+
+.NavLink__linkStudent__1zq2x {
+  color: #265732; }
+
+.NavLink__linkTeacher__25L85 {
+  color: #215651; }
+.ModeIndicator__modeIndicator__gvKNO {
+  font-size: 1.2em;
+  margin-top: -15px;
+  text-align: right; }
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic);.Footer__container__1SZrv {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 15pt;
+  font-family: "Roboto", "Verdana", sans-serif; }
+  .Footer__container__1SZrv a {
+    text-decoration: none; }
+
+.Footer__containerStudent__3Yr5f {
+  background-color: #b1daae;
+  color: #265732; }
+  .Footer__containerStudent__3Yr5f a {
+    color: #265732; }
+
+.Footer__containerTeacher__36KZb {
+  background-color: #a3cccb;
+  color: #215651; }
+  .Footer__containerTeacher__36KZb a {
+    color: #215651; }
+
+.Footer__center__3xqZ_ {
+  text-align: center; }
+
+.Footer__inline__1Q6ds {
+  display: inline-block;
+  margin: 20px 10px; }
+
+.Footer__svg__29r7H {
+  width: 100px;
+  height: auto;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__img__25Ink {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: auto;
+  height: 50px;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__divider__LJrti {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid;
+  width: 50%; }
+
+.Footer__svg__29r7H:hover,
+.Footer__img__25Ink:hover {
+  transform: scale(1.2); }
+</style>
+<link href="/beta/vendor2.09f254784762e874f910.css" rel="stylesheet"></head>
+<body>
+    <div id="app"><div><div class="App__container__vvzpy" data-reactroot="" data-reactid="1" data-react-checksum="-712748240"><div class="container-fluid" data-reactid="2"><div class="row" data-reactid="3"><nav class="navbar navbar-default navbar-fixed-top" data-reactid="4"><div class="container-fluid" data-reactid="5"><div class="btn-language-dropdown pull-right dropdown btn-group" data-reactid="6"><button class="dropdown-toggle btn-language-student btn-language btn btn-default" id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" data-reactid="7"><span data-reactid="8"><!-- react-text: 9 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="10"/></span></button><ul class="dropdown-menu" role="menu" aria-labelledby="language-dropdown" data-reactid="11"><li role="presentation" class="" data-reactid="12"><a role="menuitem" href="" tabindex="-1" data-reactid="13"><span data-reactid="14"><!-- react-text: 15 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="16"/></span></a></li><li role="presentation" class="" data-reactid="17"><a role="menuitem" href="" tabindex="-1" data-reactid="18"><span data-reactid="19"><!-- react-text: 20 -->Norsk nynorsk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="21"/></span></a></li><li role="presentation" class="" data-reactid="22"><a role="menuitem" href="" tabindex="-1" data-reactid="23"><span data-reactid="24"><!-- react-text: 25 -->Svenska<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="26"/></span></a></li><li role="presentation" class="" data-reactid="27"><a role="menuitem" href="" tabindex="-1" data-reactid="28"><span data-reactid="29"><!-- react-text: 30 -->Dansk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="31"/></span></a></li></ul></div><div class="navbar-header" data-reactid="32"><span class="navbar-brand" data-reactid="33"><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/" data-reactid="34"><span class="glyphicon glyphicon-home" data-reactid="35"></span></a><span data-reactid="36"><!-- react-text: 37 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/python" data-reactid="38">python</a></span><span class="hidden-xs" data-reactid="39"><!-- react-text: 40 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm active" href="/python/hangman/hangman" data-reactid="41">hangman</a></span></span><button type="button" class="navbar-toggle collapsed" data-reactid="42"><span class="sr-only" data-reactid="43">Toggle navigation</span><span class="icon-bar" data-reactid="44"></span><span class="icon-bar" data-reactid="45"></span><span class="icon-bar" data-reactid="46"></span></button></div><div class="navbar-collapse collapse" data-reactid="47"><div class="navbar-form navbar-right" data-reactid="48"><div class="form-group" data-reactid="49"><input type="text" placeholder="Søk" class="form-control" data-reactid="50"/></div><!-- react-text: 51 --> <!-- /react-text --><div class="btn-toggle" data-reactid="52"><div data-reactid="53">Velg modus:</div><div class="btn-group btn-group" data-reactid="54"><button class="btn-student-nav active btn btn-default" type="button" data-reactid="55">ELEV</button><button class="btn-teacher-nav btn btn-default" type="button" data-reactid="56">LÆRER</button></div></div></div></div></div></nav></div><div class="row" data-reactid="57"><div class="col-xs-12" data-reactid="58"><div class="ModeIndicator__modeIndicator__gvKNO" data-reactid="59"><!-- react-text: 60 -->Du er i <!-- /react-text --><span class="text-student" data-reactid="61">elevmodus</span></div></div></div></div><div data-reactid="62"><h1 data-reactid="63"><!-- react-text: 64 -->Hangman<!-- /react-text --><!-- react-text: 65 --> - Level <!-- /react-text --><!-- react-text: 66 -->3<!-- /react-text --></h1><p data-reactid="67"><i data-reactid="68"><!-- react-text: 69 -->av <!-- /react-text --><!-- react-text: 70 -->Oversatt fra [Code Club UK](//codeclub.org.uk)<!-- /react-text --></i></p><div data-reactid="71"><section class="intro" id="introduksjon">
+<h1 class="intro" id="introduksjon">Introduksjon</h1>
+<p>La oss lage et spill: Hangman! Datamaskinen vil velge et ord og du kan
+gjette det bokstav for bokstav. Dersom du gjetter feil for mange
+ganger taper du.</p>
+</section>
+<section class="activity" id="steg-1-velg-et-ord">
+<h1 class="activity" id="steg-1-velg-et-ord">Steg 1: Velg et ord</h1>
+<p>Først må vi få datamaskinen til å velge et tilfeldig ord, så la oss begynne.</p>
+<section class="check" id="sjekkliste">
+<h2 class="check" id="sjekkliste">Sjekkliste</h2>
+<ul>
+<li>
+<p>Åpne IDLE, og åpne et nytt vindu</p>
+</li>
+<li>
+<p>Skriv inn følgende kode:</p>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> choice
+
+word = choice([<span class="hljs-string">"kode"</span>, <span class="hljs-string">"kurs"</span>])
+
+print(word)
+</code></pre>
+</li>
+<li>
+<p>Lagre programmet ditt og kjør det. Hvilket ord skrives ut?</p>
+</li>
+<li>
+<p>Kjør programmet en gang til. Skriver det ut et annet ord?</p>
+</li>
+</ul>
+<p>Hver gang du kjører dette programmet vil det velge et tilfeldig ord fra listen <code>[&quot;kode&quot;, &quot;kurs&quot;]</code> ved hjelp av <code>choice</code>-funksjonen.</p>
+</section>
+</section>
+<section class="activity" id="steg-2-gjett-en-bokstav">
+<h1 class="activity" id="steg-2-gjett-en-bokstav">Steg 2: Gjett en bokstav</h1>
+<p>Nå har vi valgt et ord, la oss finne ut hvordan vi gjetter en bokstav.</p>
+<section class="check" id="sjekkliste-2">
+<h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
+<ul>
+<li>
+<p>I den samme filen, endre koden så den ser ut som følger</p>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> choice
+
+word = choice([<span class="hljs-string">"kode"</span>, <span class="hljs-string">"kurs"</span>])
+
+out = <span class="hljs-string">""</span>
+
+<span class="hljs-keyword">for</span> letter <span class="hljs-keyword">in</span> word:
+    out = out + <span class="hljs-string">"_"</span>
+
+print(<span class="hljs-string">"Gjett en bokstav i ordet:"</span>, out)
+</code></pre>
+</li>
+<li>
+<p>Lagre og kjør programmet.</p>
+</li>
+<li>
+<figure>Du burde se <code>Gjett en bokstav i ordet: ____</code>, i output-vinduet (det andre vinduet, ikke vinduet du har skrevet programmet ditt i).</figure>
+<p>Vi bruker en <code>for</code>-løkke for å bygge en tekst hvor hver bokstav i ordet er byttet med en understrek <code>_</code>. Ordet <code>kode</code> vil da for eksempel skrives som <code>____</code> til skjermen.</p>
+</li>
+<li>
+<p>La oss gjette på en bokstav! Endre koden så den ser ut som dette</p>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> choice
+
+word = choice([<span class="hljs-string">"kode"</span>, <span class="hljs-string">"kurs"</span>])
+
+out = <span class="hljs-string">""</span>
+
+<span class="hljs-keyword">for</span> letter <span class="hljs-keyword">in</span> word:
+    out = out + <span class="hljs-string">"_"</span>
+
+print(<span class="hljs-string">"Gjett en bokstav i ordet, avslutt med enter:"</span>, out)
+
+guess = input()
+
+<span class="hljs-keyword">if</span> guess <span class="hljs-keyword">in</span> word:
+    print(<span class="hljs-string">"Yay"</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">"Nope"</span>)
+</code></pre>
+<p>Vi bruker en ny prosedyre <code>input()</code> for å finne ut hvilken bokstav spilleren skriver. Vi bruker <code>if</code> for å sjekke om bokstaven er i ordet.</p>
+</li>
+</ul>
+<p>Da har vi gjort det viktigste, la oss fortsette videre.</p>
+</section>
+<section class="protip" id="python-2-tips">
+<h2 class="protip" id="python-2-tips">Python 2 tips:</h2>
+<p>Bruk <code>raw_input</code> i stedet for <code>input</code> dersom du bruker en gammel
+version av python.</p>
+</section>
+</section>
+<section class="activity" id="steg-3-husk-bokstavene-som-er-gjettet">
+<h1 class="activity" id="steg-3-husk-bokstavene-som-er-gjettet">Steg 3: Husk bokstavene som er gjettet</h1>
+<figure>Nå skal vi bruke to nye komponenter i python, lister og <code>while</code>-løkker.</figure>
+<section class="check" id="sjekkliste-3">
+<h2 class="check" id="sjekkliste-3">Sjekkliste</h2>
+<ul>
+<li>
+<p>I den samme filen, endre koden så den ser slik ut:</p>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> choice
+
+word = choice([<span class="hljs-string">"kode"</span>, <span class="hljs-string">"kurs"</span>])
+
+guessed = []
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    out = <span class="hljs-string">""</span>
+    <span class="hljs-keyword">for</span> letter <span class="hljs-keyword">in</span> word:
+        <span class="hljs-keyword">if</span> letter <span class="hljs-keyword">in</span> guessed:
+            out = out + letter
+        <span class="hljs-keyword">else</span>:
+            out = out + <span class="hljs-string">"_"</span>
+
+    <span class="hljs-keyword">if</span> out == word:
+        print(<span class="hljs-string">"Du gjettet"</span>, word)
+        <span class="hljs-keyword">break</span>
+
+
+    print(<span class="hljs-string">"Gjett en bokstav i ordet:"</span>, out)
+    guess = input()
+
+    <span class="hljs-keyword">if</span> guess <span class="hljs-keyword">in</span> guessed:
+        print(<span class="hljs-string">"Bokstaven er allerede gjettet på:"</span>, guess)
+    <span class="hljs-keyword">elif</span> guess <span class="hljs-keyword">in</span> word:
+        print(<span class="hljs-string">"Yay"</span>)
+        guessed.append(guess)
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">"Nope"</span>)
+
+    print()
+</code></pre>
+</li>
+<li>
+<p>Kjør koden og prøv å gjette bokstavene.</p>
+<p>Vi har laget en <code>while True</code>-løkke, tilsvarende <code>for alltid</code> i scratch. Denne vil i utgangspunktet fortsette å spørre spilleren om å gjette bokstaver for alltid. For å komme ut av løkken bruker vi kommandoen <code>break</code> når ordet har blitt gjettet.</p>
+<figure>Vi bruker også en liste, <code>guessed</code>, hvor vi legger til bokstavene som er riktige for å huske dem senere.</figure>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-4-tell-feilene">
+<h1 class="activity" id="steg-4-tell-feilene">Steg 4: Tell feilene</h1>
+<figure>For at Hangman skal holde oversikt over alle bokstavene som er gjettet
+på må vi også huske på når spilleren gjetter feil.</figure>
+<section class="check" id="sjekkliste-4">
+<h2 class="check" id="sjekkliste-4">Sjekkliste </h2>
+<ul>
+<li>
+<p>Endre filen du jobber med slik at den blir seende ut som dette:</p>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> choice
+
+word = choice([<span class="hljs-string">"kode"</span>, <span class="hljs-string">"kurs"</span>])
+
+guessed = []
+wrong = []
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    out = <span class="hljs-string">""</span>
+    <span class="hljs-keyword">for</span> letter <span class="hljs-keyword">in</span> word:
+        <span class="hljs-keyword">if</span> letter <span class="hljs-keyword">in</span> guessed:
+            out = out + letter
+        <span class="hljs-keyword">else</span>:
+            out = out + <span class="hljs-string">"_"</span>
+
+    <span class="hljs-keyword">if</span> out == word:
+        print(<span class="hljs-string">"Du gjettet"</span>, word)
+        <span class="hljs-keyword">break</span>
+
+    print(<span class="hljs-string">"Gjett en bokstav i ordet:"</span>, out)
+
+    guess = input()
+
+    <span class="hljs-keyword">if</span> guess <span class="hljs-keyword">in</span> guessed <span class="hljs-keyword">or</span> guess <span class="hljs-keyword">in</span> wrong:
+        print(<span class="hljs-string">"Bokstaven er allerede gjettet på:"</span>, guess)
+    <span class="hljs-keyword">elif</span> guess <span class="hljs-keyword">in</span> word:
+        print(<span class="hljs-string">"Yay"</span>)
+        guessed.append(guess)
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">"Nope"</span>)
+        wrong.append(guess)
+
+    print()
+</code></pre>
+<figure>Vi bruker en ny liste <code>wrong</code> som tar vare på alle bokstavene vi har gjettet som er feil.</figure>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-5-bare-noen-fa-forsok">
+<h1 class="activity" id="steg-5-bare-noen-fa-forsok">Steg 5: Bare noen få forsøk</h1>
+<figure>Bare en ting gjenstår før spillet er ferdig, vi vil begrense hvor
+mange forsøk man har til å gjette.</figure>
+<section class="check" id="sjekkliste-5">
+<h2 class="check" id="sjekkliste-5">Sjekkliste</h2>
+<ul>
+<li>
+<figure>Endre filen for å legge til en ny variabel, <code>tries</code>:</figure>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> choice
+
+word = choice([<span class="hljs-string">"kode"</span>, <span class="hljs-string">"kurs"</span>])
+
+guessed = []
+wrong = []
+
+tries = <span class="hljs-number">7</span>
+
+<span class="hljs-keyword">while</span> tries &gt; <span class="hljs-number">0</span>:
+    out = <span class="hljs-string">""</span>
+    <span class="hljs-keyword">for</span> letter <span class="hljs-keyword">in</span> word:
+        <span class="hljs-keyword">if</span> letter <span class="hljs-keyword">in</span> guessed:
+            out = out + letter
+        <span class="hljs-keyword">else</span>:
+            out = out + <span class="hljs-string">"_"</span>
+
+    <span class="hljs-keyword">if</span> out == word:
+        <span class="hljs-keyword">break</span>
+
+    print(<span class="hljs-string">"Gjett en bokstav i ordet:"</span>, out)
+    print(tries, <span class="hljs-string">"forsøk igjen"</span>)
+
+    guess = input()
+
+    <span class="hljs-keyword">if</span> guess <span class="hljs-keyword">in</span> guessed <span class="hljs-keyword">or</span> guess <span class="hljs-keyword">in</span> wrong:
+        print(<span class="hljs-string">"Bokstaven er allerede gjettet på:"</span>, guess)
+    <span class="hljs-keyword">elif</span> guess <span class="hljs-keyword">in</span> word:
+        print(<span class="hljs-string">"Yay"</span>)
+        guessed.append(guess)
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">"Nope"</span>)
+        tries = tries - <span class="hljs-number">1</span>
+        wrong.append(guess)
+
+    print()
+
+<span class="hljs-keyword">if</span> tries:
+    print(<span class="hljs-string">"Du gjettet"</span>, word)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">"Du klarte ikke å gjette"</span>, word)
+</code></pre>
+</li>
+<li>
+<p>Kjør programmet, og se hva som skjer når du gjetter feil bokstaver.</p>
+<p>Legg merke til at vi endret <code>while</code>-løkken ved å legge inn en forutsetning, <code>while tries &gt; 0</code>. Dette betyr at løkken bare kjøres så lenge variabelen <code>tries</code> er større enn 0. Kikker du litt rundt i koden ser du at <code>tries</code> starter med verdien 7, også blir den 1 mindre for hver feil bokstav som gjettes. Altså vil spilleren kunne gjette opp til 7 bokstaver feil før spillet er slutt.</p>
+</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-6-legg-til-nye-ord">
+<h1 class="activity" id="steg-6-legg-til-nye-ord">Steg 6: Legg til nye ord</h1>
+<section class="check" id="sjekkliste-6">
+<h2 class="check" id="sjekkliste-6">Sjekkliste</h2>
+<ul>
+<li>
+<p>Finn linjen i programkoden som sier:</p>
+<pre><code class="language-python">word = choice([<span class="hljs-string">"kode"</span>, <span class="hljs-string">"kurs"</span>])
+</code></pre>
+</li>
+<li>
+<p>Vi kan endre denne linjen for å legge til flere ord i spillet. Prøv for eksempel</p>
+<pre><code class="language-python">word = choice([<span class="hljs-string">"kode"</span>, <span class="hljs-string">"kurs"</span>, <span class="hljs-string">"robot"</span>, <span class="hljs-string">"klubb"</span>])
+</code></pre>
+<p>Husk at ordene må stå i anførselstegn og at det må være komma mellom ordene for å lage en liste. Legg til flere ord som du finner på selv.</p>
+</li>
+</ul>
+</section>
+</section>
+</div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="72"><div class="Footer__center__3xqZ_ row" data-reactid="73"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="74">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="75">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="76"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="77"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/smn.41dee6.jpg" data-reactid="78"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="79"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="80"/></a></div></div></div></div></div>
+<script type="text/javascript" src="/beta/manifest.94560fc5e8ab0b309f2f.js"></script><script type="text/javascript" src="/beta/vendor.3951770774da74e23e3f.js"></script><script type="text/javascript" src="/beta/main.4e2a8714a18e05c48464.js"></script><script type="text/javascript" src="/beta/vendor2.09f254784762e874f910.js"></script></body>
+</html>
