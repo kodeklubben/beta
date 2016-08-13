@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kodeklubben (server)</title>
+    <style type="text/css">.App__container__vvzpy {
+  margin-top: 125px; }
+.NavBar__flagGroup__3f0i_ {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px; }
+
+.NavBar__flag__3cn9U {
+  width: 30px;
+  height: 20px;
+  float: right;
+  margin-left: 5px; }
+.NavLink__linkBase__1m4Sm {
+  text-decoration: none !important;
+  font-size: 17pt; }
+
+.NavLink__linkStudent__1zq2x {
+  color: #265732; }
+
+.NavLink__linkTeacher__25L85 {
+  color: #215651; }
+.ModeIndicator__modeIndicator__gvKNO {
+  font-size: 1.2em;
+  margin-top: -15px;
+  text-align: right; }
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic);.Footer__container__1SZrv {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 15pt;
+  font-family: "Roboto", "Verdana", sans-serif; }
+  .Footer__container__1SZrv a {
+    text-decoration: none; }
+
+.Footer__containerStudent__3Yr5f {
+  background-color: #b1daae;
+  color: #265732; }
+  .Footer__containerStudent__3Yr5f a {
+    color: #265732; }
+
+.Footer__containerTeacher__36KZb {
+  background-color: #a3cccb;
+  color: #215651; }
+  .Footer__containerTeacher__36KZb a {
+    color: #215651; }
+
+.Footer__center__3xqZ_ {
+  text-align: center; }
+
+.Footer__inline__1Q6ds {
+  display: inline-block;
+  margin: 20px 10px; }
+
+.Footer__svg__29r7H {
+  width: 100px;
+  height: auto;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__img__25Ink {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: auto;
+  height: 50px;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__divider__LJrti {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid;
+  width: 50%; }
+
+.Footer__svg__29r7H:hover,
+.Footer__img__25Ink:hover {
+  transform: scale(1.2); }
+</style>
+<link href="/beta/vendor2.09f254784762e874f910.css" rel="stylesheet"></head>
+<body>
+    <div id="app"><div><div class="App__container__vvzpy" data-reactroot="" data-reactid="1" data-react-checksum="-1875255490"><div class="container-fluid" data-reactid="2"><div class="row" data-reactid="3"><nav class="navbar navbar-default navbar-fixed-top" data-reactid="4"><div class="container-fluid" data-reactid="5"><div class="btn-language-dropdown pull-right dropdown btn-group" data-reactid="6"><button class="dropdown-toggle btn-language-student btn-language btn btn-default" id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" data-reactid="7"><span data-reactid="8"><!-- react-text: 9 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="10"/></span></button><ul class="dropdown-menu" role="menu" aria-labelledby="language-dropdown" data-reactid="11"><li role="presentation" class="" data-reactid="12"><a role="menuitem" href="" tabindex="-1" data-reactid="13"><span data-reactid="14"><!-- react-text: 15 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="16"/></span></a></li><li role="presentation" class="" data-reactid="17"><a role="menuitem" href="" tabindex="-1" data-reactid="18"><span data-reactid="19"><!-- react-text: 20 -->Norsk nynorsk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="21"/></span></a></li><li role="presentation" class="" data-reactid="22"><a role="menuitem" href="" tabindex="-1" data-reactid="23"><span data-reactid="24"><!-- react-text: 25 -->Svenska<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="26"/></span></a></li><li role="presentation" class="" data-reactid="27"><a role="menuitem" href="" tabindex="-1" data-reactid="28"><span data-reactid="29"><!-- react-text: 30 -->Dansk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="31"/></span></a></li></ul></div><div class="navbar-header" data-reactid="32"><span class="navbar-brand" data-reactid="33"><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/" data-reactid="34"><span class="glyphicon glyphicon-home" data-reactid="35"></span></a><span data-reactid="36"><!-- react-text: 37 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/scratch" data-reactid="38">scratch</a></span><span class="hidden-xs" data-reactid="39"><!-- react-text: 40 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm active" href="/scratch/3d_flakser/3d_flakser_1" data-reactid="41">3d flakser</a></span></span><button type="button" class="navbar-toggle collapsed" data-reactid="42"><span class="sr-only" data-reactid="43">Toggle navigation</span><span class="icon-bar" data-reactid="44"></span><span class="icon-bar" data-reactid="45"></span><span class="icon-bar" data-reactid="46"></span></button></div><div class="navbar-collapse collapse" data-reactid="47"><div class="navbar-form navbar-right" data-reactid="48"><div class="form-group" data-reactid="49"><input type="text" placeholder="Søk" class="form-control" data-reactid="50"/></div><!-- react-text: 51 --> <!-- /react-text --><div class="btn-toggle" data-reactid="52"><div data-reactid="53">Velg modus:</div><div class="btn-group btn-group" data-reactid="54"><button class="btn-student-nav active btn btn-default" type="button" data-reactid="55">ELEV</button><button class="btn-teacher-nav btn btn-default" type="button" data-reactid="56">LÆRER</button></div></div></div></div></div></nav></div><div class="row" data-reactid="57"><div class="col-xs-12" data-reactid="58"><div class="ModeIndicator__modeIndicator__gvKNO" data-reactid="59"><!-- react-text: 60 -->Du er i <!-- /react-text --><span class="text-student" data-reactid="61">elevmodus</span></div></div></div></div><div data-reactid="62"><h1 data-reactid="63"><!-- react-text: 64 -->3D-Flakser, Del 1<!-- /react-text --><!-- react-text: 65 --> - Level <!-- /react-text --><!-- react-text: 66 -->4<!-- /react-text --></h1><p data-reactid="67"><i data-reactid="68"><!-- react-text: 69 -->av <!-- /react-text --><!-- react-text: 70 -->Gudbrand Tandberg og Geir Arne Hjelle<!-- /react-text --></i></p><div data-reactid="71"><section class="intro" id="introduksjon">
+<h1 class="intro" id="introduksjon">Introduksjon</h1>
+<p>I dette prosjektet skal vi lage en versjon av Flaksefugl (som er en
+kopi av Flappy Bird) i <em>tre dimensjoner</em>! Spillet går ut på at du
+styrer en flyvende figur gjennom ringer som kommer mot deg. Du må
+styre figuren opp og ned og side til side. Hovedutfordringen i dette
+spillet er å få det til å virke som om ringene faktisk kommer mot
+flakseren, og så forsvinner forbi. Prosjektet er delt inn i to deler
+siden det er ganske mye vi skal igjennom. I denne første delen skal vi
+få ringene til å fungere som de skal. La oss sette i gang!</p>
+<figure><img src="/beta/_/oppgaver/src/scratch/3d_flakser/3d_flakser.8b16ef.png" alt="" /></figure>
+</section>
+<section class="activity" id="steg-1-lag-ringer-og-fa-dem-til-a-komme-mot-deg">
+<h1 class="activity" id="steg-1-lag-ringer-og-fa-dem-til-a-komme-mot-deg">Steg 1: Lag ringer, og få dem til å komme mot deg</h1>
+<p>Spillet skal bestå av tre figurer: <strong>Ring</strong>, <strong>Flakser</strong> og
+<strong>Bakken</strong>.</p>
+<figure>Vi begynner med å lage ringfiguren. Du kan enkelt tegne den selv som
+to sirkler inni hverandre, fylt med en farge imellom.</figure>
+<section class="check" id="sjekkliste">
+<h2 class="check" id="sjekkliste">Sjekkliste</h2>
+<ul>
+<li>
+<p>Tegn figuren <strong>Ring</strong>. Jo enklere jo bedre.</p>
+</li>
+<li>
+<p>Gi ringfiguren disse skriptene:</p>
+<pre class=blocks>når jeg mottar [Nytt spill v]
+skjul
+for alltid
+    lag klon av [meg v]
+    vent (1) sekunder
+slutt
+
+når jeg starter som klon
+gå til x: (0) y: (0)
+vis
+gjenta (10) ganger
+    endre størrelse med (5)
+    vent (0.1) sekunder
+slutt
+slett denne klonen
+</pre>
+</li>
+</ul>
+<p>Du må også lage et skript som sørger for at meldingen <code>Nytt spill</code>
+sendes når det grønne flagget klikkes.</p>
+</section>
+<section class="flag" id="test-prosjektet">
+<h2 class="flag" id="test-prosjektet">Test prosjektet</h2>
+<ul>
+<li>Hva gjør de to skriptene over? Ser det ut som om ringene kommer mot
+deg?</li>
+</ul>
+</section>
+<section class="check" id="sjekkliste-2">
+<h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
+<p>De to skriptene vi har foreløpig er en OK start, men de er ikke gode
+nok til å virkelig kalles 3D! Tenk litt på hvordan det virker som om
+noe vokser i størrelse når det kommer mot deg. Når det er langt unna
+så vokser det ganske sakte, mens når det er nærme så vokser det mye
+fortere. Dette skal vi få til ved hjelp av en <em>variabel</em> som vi kaller
+<code class="blockdata">distanse</code>. Når <code class="blockdata">distanse</code> er stor, så er
+ringen langt borte, og skal vokse sakte. Når <code class="blockdata">distanse</code> er
+liten så betyr det at ringen er nærme, og den skal vokse fort.</p>
+<ul>
+<li>
+<p>Lag en variabel som heter <code class="blockdata">distanse</code>. Pass på at den kun
+gjelder for denne figuren.</p>
+</li>
+<li>
+<p>Endre skriptet over til dette:</p>
+<pre class=blocks>når jeg starter som klon
+gå til x: (0) y: (0)
+vis
+sett [distanse v] til [10]
+gjenta til &lt;(distanse) &lt; [1]&gt;
+    sett størrelse til ((150) / (distanse)) %
+    endre [distanse v] med (-0.5)
+    vent (0.1) sekunder
+slutt
+slett denne klonen
+</pre>
+</li>
+<li>
+<figure>Det kan hende du må endre litt på tallene i skriptet over for at det
+skal se bra ut. Prøv deg frem!</figure>
+</li>
+</ul>
+</section>
+<section class="challenge" id="utfordring-gjennomsiktig-effekt">
+<h2 class="challenge" id="utfordring-gjennomsiktig-effekt">Utfordring: Gjennomsiktig effekt</h2>
+<p>Dette er ikke viktig for å kunne fortsette med spillet, men prøv hvis
+du vil. For at det skal se enda mer ut som at ringene først er langt
+borte og så nærme, så kan du bruke klossen</p>
+<pre class=blocks>sett [gjennomsiktig v] effekt til ((100)-((150)/(distanse))
+</pre>
+<figure>for å gjøre ringene mer gjennomsiktig når de er langt borte. Hvilke
+tall må du putte i denne klossen for at det skal se bra ut?</figure>
+</section>
+</section>
+<section class="activity" id="steg-2-fa-ringene-til-a-dukke-opp-tilfeldige-steder">
+<h1 class="activity" id="steg-2-fa-ringene-til-a-dukke-opp-tilfeldige-steder">Steg 2: Få ringene til å dukke opp tilfeldige steder</h1>
+<p><em>For at spillet skal bli mest mulig utfordrende så burde ringene dukke
+opp på forskjellige steder hver gang.</em></p>
+<figure>Å først få dem til å dukke opp på forskjellige steder er ikke så
+vanskelig, men å få dem til å vokse på riktig måte er litt vrient.</figure>
+<section class="check" id="sjekkliste-3">
+<h2 class="check" id="sjekkliste-3">Sjekkliste</h2>
+<ul>
+<li>
+<p>Prøv først å endre på blokken som plasserer ring-klonene til</p>
+<pre class=blocks>gå til x: (tilfeldig tall fra (-100) til (100)) y: (tilfeldig tall fra (-100) til (100))
+</pre>
+<p>Det ser ganske bra ut, men ikke helt riktig, eller hva? Det er
+fordi <em>midtpunktet</em> til ringen er på samme sted hele tiden mens
+ringen er på vei mot deg. For at det skal se ut som at den suser
+<em>forbi deg</em> så må du hele tiden flytte på ringen mens den er på
+vei mot deg. For å få det til å fungere må ringklonen huske hvor
+den dukket opp til å begynne med.</p>
+</li>
+<li>
+<p>Lag variabler <code class="blockdata">ringX</code> og <code class="blockdata">ringY</code> som <em>kun
+gjelder for ringfiguren</em>.</p>
+</li>
+<li>
+<p>Erstatt blokken som først plasserer ringen med dette:</p>
+<pre class=blocks>sett [ringX v] til (tilfeldig tall fra (-100) til (100)
+sett [ringY v] til (tilfeldig tall fra (-100) til (100)
+gå til x: (ringX) y: (ringY)
+</pre>
+<p>Forhåpentligvis har ikke oppførselen til ringene endret seg
+ennå. For å få midtpunktet til ringene til å flytte på seg mens
+ringene kommer mot deg kan du putte følgende blokk et sted inni
+løkken hvor ringen vokser:</p>
+<pre class=blocks>gå til x: ((ringX) / (distanse)) y: ((ringY) / (distanse))
+</pre>
+</li>
+</ul>
+</section>
+<section class="flag" id="test-prosjektet-2">
+<h2 class="flag" id="test-prosjektet-2">Test prosjektet</h2>
+<p>Trykk på det grønne flagget. Nå burde det se ut som om ringene
+virkelig kommer mot deg! Nå kan du ta et pust i bakken og se over det
+du har skrevet så langt.</p>
+</section>
+</section>
+<section class="activity" id="steg-3-styr-en-flaksefigur-med-piltastene">
+<h1 class="activity" id="steg-3-styr-en-flaksefigur-med-piltastene">Steg 3: Styr en flaksefigur med piltastene</h1>
+<p><em>I neste del av dette kurset skal vi få en figur til å fly gjennom
+ringene. I dette steget skal vi lage den figuren, men ikke kode all
+flyveoppførselen dens.</em></p>
+<section class="check" id="sjekkliste-4">
+<h2 class="check" id="sjekkliste-4">Sjekkliste</h2>
+<ul>
+<li>
+<p>Lag en ny figur. Det er best om den er symmetrisk, slik at det kan
+se ut som om den flyr innover i skjermen uten at det ser teit ut,
+bruk for eksempel flaggermus-figuren. Kall den <strong>Flakse</strong>.</p>
+</li>
+<li>
+<p>Lag to nye variabler, <code class="blockdata">x</code> og <code class="blockdata">y</code>. La dem
+gjelde <em>for alle figurer</em>.</p>
+</li>
+<li>
+<p>Gi Flakse følgende skript:</p>
+<pre class=blocks>når jeg mottar [Nytt spill v]
+sett [x v] til [0]
+sett [y v] til [0]
+for alltid
+    hvis &lt;tast [pil høyre v] trykket&gt;
+        endre [x v] med (10)
+        vent (0.05) sekunder
+    slutt
+    hvis &lt;tast [pil venstre v] trykket&gt;
+        endre [x v] med (-10)
+        vent (0.05) sekunder
+    slutt
+    hvis &lt;tast [pil opp v] trykket&gt;
+        endre [y v] med (10)
+        vent (0.05) sekunder
+    slutt
+    hvis &lt;tast [pil ned v] trykket&gt;
+        endre [y v] med (-10)
+        vent (0.05) sekunder
+    slutt
+slutt
+</pre>
+<p>Nå endres <code class="blockdata">x</code> og <code class="blockdata">y</code> når du styrer med
+piltastene. Vi venter litt inni hver <code class="blockcontrol">hvis</code>-test
+slik at <code class="blockdata">x</code> og <code class="blockdata">y</code> ikke plutselig vokser
+over alle grenser. Test gjerne hva som skjer dersom vi ikke venter.</p>
+</li>
+<li>
+<figure>Nå vil vi at posisjonen til ringene skal endre seg når vi
+styrer. Det kan vi få til ved å endre klossen</figure>
+<pre class=blocks>gå til x: ((ringX) / (distanse)) y: ((ringY) / (distanse))
+</pre>
+<p>til dette:</p>
+<pre class=blocks>gå til x: (((ringX)-(x)) / (distanse)) y: (((ringY) - (y)) / (distanse))
+</pre>
+<p>Ser det riktig ut nå? Nå er vi igrunn ferdig med det som trengs
+for å gå videre til del 2. I del 2 skal vi få det til å virke som
+om Flakse flakser når vi trykker på mellomromstasten, akkurat som
+i Flappy Bird og Flaksefugl. Prøv deg på disse utfordringene hvis
+du har mer tid igjen.</p>
+</li>
+</ul>
+</section>
+<section class="try" id="ting-a-prove">
+<h2 class="try" id="ting-a-prove">Ting å prøve</h2>
+<ul>
+<li>
+<p>Er det mulig å styre figuren gjennom alle ringene? Husk at spillet
+skal være akkurat passe vanskelig, og ihvertfall ikke umulig. Gå
+gjennom alle skriptene og endre på verdiene slik at spillet er gøy å
+spille, og slik at det ser bra ut. Kanskje du må endre på størrelsen
+til ringen, hvor mye ringene skal vokse, hvor mye <code>x</code> og <code>y</code> endrer
+seg når pilene trykkes, hvor lenge vi venter eller noen av de andre
+verdiene.</p>
+</li>
+<li>
+<p>Tegn din egen figur! Flaggermusfiguren er kanskje ikke helt
+perfekt. Prøv å se om du kan finne noen bilder på nettet du kan
+bruke, eller tegn din helt egen figur (den burde være et
+fugleliknende dyr). Husk at det ser mye bedre ut om figuren er
+symmetrisk. Det er lurt å gi figuren to drakter; en med vingene ned
+og en med vingene opp. Da kan vi senere få Flakse til å flakse!</p>
+</li>
+</ul>
+</section>
+</section>
+</div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="72"><div class="Footer__center__3xqZ_ row" data-reactid="73"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="74">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="75">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="76"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="77"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/smn.41dee6.jpg" data-reactid="78"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="79"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="80"/></a></div></div></div></div></div>
+<script type="text/javascript" src="/beta/manifest.94560fc5e8ab0b309f2f.js"></script><script type="text/javascript" src="/beta/vendor.3951770774da74e23e3f.js"></script><script type="text/javascript" src="/beta/main.4e2a8714a18e05c48464.js"></script><script type="text/javascript" src="/beta/vendor2.09f254784762e874f910.js"></script></body>
+</html>
