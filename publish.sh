@@ -20,7 +20,7 @@ echo "Using oppgaver/$oppgaver_branch and codeclub-viewer/$cv_branch"
 echo "Url path prefix: '$url_path_prefix'"
 
 git remote add oppgaver -f git@github.com:kodeklubben/oppgaver.git
-git remote add codeclub-viewer -f git@github.com:NorwegianKiwi/codeclub-viewer.git
+git remote add codeclub-viewer -f git@github.com:kodeklubben/codeclub-viewer.git
 
 git checkout master
 if [ -e oppgaver ]; then
@@ -30,8 +30,8 @@ if [ -e codeclub-viewer ]; then
   git rm -r codeclub-viewer;
 fi
 
-git read-tree --prefix=oppgaver/ -u oppgaver/$oppgaver_branch
-git read-tree --prefix=codeclub-viewer/ -u codeclub-viewer/$cv_branch
+git read-tree --prefix=oppgaver/ -u oppgaver/${oppgaver_branch}
+git read-tree --prefix=codeclub-viewer/ -u codeclub-viewer/${cv_branch}
 
 cd codeclub-viewer
 if [ -n "$url_path_prefix" ]; then
@@ -53,17 +53,17 @@ read -t 1 -n 10000 discard
 read dummy
 
 sed -i.bak '/dist/d' .gitignore
-git commit --all -m "Add the built site from oppgaver/$oppgaver_branch `git log oppgaver/master -n 1 | head -1` and codeclub-viewer/$cv_branch `git log codeclub-viewer/master -n 1 | head -1`"
+git commit --all -m "Add the built site from oppgaver/${oppgaver_branch} `git log oppgaver/master -n 1 | head -1` and codeclub-viewer/${cv_branch} `git log codeclub-viewer/master -n 1 | head -1`"
 
 git checkout gh-pages
 git rm -r *
 git commit -m "Delete old files"
 subfolder=dist
-if [ -n $url_path_prefix ]; then subfolder=$subfolder/$url_path_prefix; fi
-git merge --squash -s recursive -X subtree=codeclub-viewer/$subfolder -X theirs master
+if [ -n ${url_path_prefix} ]; then subfolder=${subfolder}/${url_path_prefix}; fi
+git merge --squash -s recursive -X subtree=codeclub-viewer/${subfolder} -X theirs master
 touch .nojekyll
 git add .nojekyll
-git commit -m "Publish site from oppgaver/$oppgaver_branch `git log oppgaver/$oppgaver_branch -n 1 | head -1` and codeclub-viewer/$cv_branch `git log codeclub-viewer/$cv_branch -n 1 | head -1`"
+git commit -m "Publish site from oppgaver/$oppgaver_branch `git log oppgaver/${oppgaver_branch} -n 1 | head -1` and codeclub-viewer/${cv_branch} `git log codeclub-viewer/${cv_branch} -n 1 | head -1`"
 
 echo "All is now ready. To publish, write"
 echo "   git push"
