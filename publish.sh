@@ -117,7 +117,9 @@ touch .nojekyll
 git add .nojekyll
 git commit --amend -m "Publish site from oppgaver/$oppgaver_branch `git log oppgaver/${oppgaver_branch} -n 1 | head -1` and codeclub-viewer/${cv_branch} `git log codeclub-viewer/${cv_branch} -n 1 | head -1`"
 
-echo "Cleaning up master branch..."
+echo "Cleaning up..."
+git remote remove oppgaver
+git remote remove codeclub-viewer
 git checkout master
 git reset --hard origin/master
 git checkout gh-pages
