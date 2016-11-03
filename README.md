@@ -20,7 +20,10 @@ You must also specify whether you want to add a url path prefix, which is necess
 from the root, e.g. `beta` if you want the site to reside at `kodeklubben.github.io/beta/`.
 
 The script will then delete any previous compiles, check out codeclub-viewer and oppgaver, compile the website,
-and allow you to check the website locally. If you are not satisfied, abort the script (ctrl-C), make your changes
+and allow you to check the website locally. To test it, open up a second terminal, and go into the folder
+'codeclub-viewer'. Make sure you have http-server installed globally (if not, type `npm install -g http-server`),
+and then run `npm run serve`. Go to http://localhost:8080/$url_path_prefix in your browser
+and test until you are satisfied. If you are not satisfied, abort the script (ctrl-C), make your changes
 and try again.
 
 When you are happy with the result, let the script continue. It will then commit (only locally) the compiled website

@@ -1,8 +1,34 @@
 #!/bin/bash
 
-# TODO: Check that we have the correct version of node (compare with .nvmrc)
-echo "Please make sure that you are using the correct version of node and npm,"
-echo "preferrably by typing 'nvm use' before starting."
+function waitForAnyKey {
+  echo #Newline
+  WAITPROMPT="Press any key to continue (or Ctrl-C to abort)..."
+  if [[ -n "$1" ]]; then
+          WAITPROMPT="$1"
+  fi
+  read -d '' -t 1 -n 10000 # Clear stdin of any keypresses, including multiple RETURNs
+  read -n1 -s -p "$WAITPROMPT" # Read 1 character silently with prompt
+  echo  #Newline
+}
+
+echo "WARNING: This will change the current branch to 'master' and delete local branch 'gh-pages'."
+echo "         Any work that has not been committed and PUSHED (tracked and untracked) will be deleted."
+echo -n "         Are you sure you want to continue? [y/N]: "
+read doit
+if [ "${doit}" != "y" ]; then
+  echo "Publish aborted.";
+  exit 0
+fi
+
+echo "Cleaning up and switching to branch master..."
+if ! git branch | grep "* master" > /dev/null; then
+  git checkout -f master
+fi
+git reset --hard origin/master
+git clean -fd .
+if git branch | grep "gh-pages" > /dev/null; then
+  git branch -D gh-pages
+fi
 
 echo -n "Branch of repo 'oppgaver' [default=master]: "
 read oppgaver_branch
@@ -12,34 +38,61 @@ echo -n "Branch of repo 'codeclub-viewer' [default=master]: "
 read cv_branch
 if [ -z "${cv_branch// }" ]; then cv_branch='master'; fi
 
-echo -n "Url path prefix [default is none]: "
-read url_path_prefix
-if [ -z "${url_path_prefix// }" ]; then url_path_prefix=''; fi
-
+url_path_prefix='beta'
+echo -n "An url path prefix is the first part of the url path,"
+echo "e.g. 'beta' in http://kodeklubben.github.io/beta/scratch"
+echo -n "The default is '${url_path_prefix}'. Would you like to change that? [y/N]: "
+read change_url_path_prefix
+if [ "${change_url_path_prefix}" = "y" ]; then
+  echo -n "Url path prefix [press ENTER for none]: ";
+  read url_path_prefix;
+fi
 echo "Using oppgaver/$oppgaver_branch and codeclub-viewer/$cv_branch"
 echo "Url path prefix: '$url_path_prefix'"
+waitForAnyKey
 
-git remote add oppgaver -f git@github.com:kodeklubben/oppgaver.git
-git remote add codeclub-viewer -f git@github.com:kodeklubben/codeclub-viewer.git
-
-git checkout master
-if [ -e oppgaver ]; then
-  git rm -r oppgaver;
+if ! git remote -v | grep oppgaver > /dev/null; then
+  git remote add oppgaver git@github.com:kodeklubben/oppgaver.git
 fi
-if [ -e codeclub-viewer ]; then
-  git rm -r codeclub-viewer;
+if ! git remote -v | grep codeclub-viewer > /dev/null; then
+  git remote add codeclub-viewer git@github.com:kodeklubben/codeclub-viewer.git
 fi
+echo "Fetching 'oppgaver'..."
+git fetch oppgaver
+echo "Fetching 'codeclub-viewer'..."
+git fetch codeclub-viewer
 
 git read-tree --prefix=oppgaver/ -u oppgaver/${oppgaver_branch}
 git read-tree --prefix=codeclub-viewer/ -u codeclub-viewer/${cv_branch}
 
 cd codeclub-viewer
+NODEVERSION=`node -v`
+RECOMMENDEDVERSION=`cat .nvmrc`
+if [ "${NODEVERSION//v}" != "${RECOMMENDEDVERSION}" ]; then
+  echo "Node version is ${NODEVERSION}"
+  echo "Recommended version is ${RECOMMENDEDVERSION}"
+  echo "Are you sure you want to continue?"
+  waitForAnyKey
+else
+  echo "Detected adequate version of node (${NODEVERSION})"
+fi
+
 if [ -n "$url_path_prefix" ]; then
   echo "$url_path_prefix" > url-path-prefix.config;
+  git add url-path-prefix.config
 fi
 #nvm use
-npm install
-npm run build:prod
+echo "Downloading packages..."
+#npm install
+mkdir -p node_modules # temp hack
+echo "Building website..."
+#npm run build:prod
+DDIR=dist/${url_path_prefix}
+mkdir -p ${DDIR}/temp
+touch ${DDIR}/a
+touch ${DDIR}/b.txt
+touch ${DDIR}/temp/c.log
+
 
 echo "Website is now built."
 echo "Feel free to test it before publishing."
@@ -47,25 +100,34 @@ echo "Open up a second terminal, and go to the folder `pwd`"
 echo "Make sure you have http-server installed globally (npm install -g http-server),"
 echo "and then run 'npm run serve'. Go to http://localhost:8080/$url_path_prefix"
 echo "and test until you are satisfied."
-echo ""
-echo "To continue, press ENTER."
-read -t 1 -n 10000 discard
-read dummy
+waitForAnyKey
 
 sed -i.bak '/dist/d' .gitignore
-git commit --all -m "Add the built site from oppgaver/${oppgaver_branch} `git log oppgaver/master -n 1 | head -1` and codeclub-viewer/${cv_branch} `git log codeclub-viewer/master -n 1 | head -1`"
+cd ..
+mv codeclub-viewer/dist .
+git add dist
+git rm -rf codeclub-viewer
+git rm -rf oppgaver
+git clean -fd .
+git commit -m "Add the built site from oppgaver/${oppgaver_branch} `git log oppgaver/master -n 1 | head -1` and codeclub-viewer/${cv_branch} `git log codeclub-viewer/master -n 1 | head -1`"
 
-git checkout gh-pages
-git rm -r *
-git commit -m "Delete old files"
+git checkout -b gh-pages origin/gh-pages
+git rm -r --quiet *
+git commit --quiet -m "Delete old files"
 subfolder=dist
 if [ -n ${url_path_prefix} ]; then subfolder=${subfolder}/${url_path_prefix}; fi
-git merge --squash -s recursive -X subtree=codeclub-viewer/${subfolder} -X theirs master
+echo "Retrieving files from: ${subfolder}"
+git merge --squash -s recursive -X subtree=${subfolder} -X theirs master
 touch .nojekyll
 git add .nojekyll
-git commit -m "Publish site from oppgaver/$oppgaver_branch `git log oppgaver/${oppgaver_branch} -n 1 | head -1` and codeclub-viewer/${cv_branch} `git log codeclub-viewer/${cv_branch} -n 1 | head -1`"
+git commit --amend -m "Publish site from oppgaver/$oppgaver_branch `git log oppgaver/${oppgaver_branch} -n 1 | head -1` and codeclub-viewer/${cv_branch} `git log codeclub-viewer/${cv_branch} -n 1 | head -1`"
 
-echo "All is now ready. To publish, write"
+echo "Cleaning up master branch..."
+git checkout master
+git reset --hard origin/master
+git checkout gh-pages
+
+echo ""
+echo "ALMOST FINISHED!"
+echo "To publish and make the changes public, write:"
 echo "   git push"
-
-
