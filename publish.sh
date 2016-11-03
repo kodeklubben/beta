@@ -76,7 +76,7 @@ if [ "${NODEVERSION//v}" != "${RECOMMENDEDVERSION}" ]; then
 else
   echo "Detected adequate version of node (${NODEVERSION})"
 fi
-if ! command -v foo >/dev/null 2>&1; then
+if ! command -v yarn >/dev/null 2>&1; then
   echo "yarn package manager not installed. Aborting."
   echo "Install yarn (e.g. 'npm install -g yarn') and try again."
   exit 1
