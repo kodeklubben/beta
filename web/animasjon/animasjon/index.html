@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kodeklubben (server)</title>
+    <style type="text/css">.App__container__vvzpy {
+  margin-top: 125px; }
+.NavBar__flagGroup__3f0i_ {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px; }
+
+.NavBar__flag__3cn9U {
+  width: 30px;
+  height: 20px;
+  float: right;
+  margin-left: 5px; }
+.NavLink__linkBase__1m4Sm {
+  text-decoration: none !important;
+  font-size: 17pt; }
+
+.NavLink__linkStudent__1zq2x {
+  color: #265732; }
+
+.NavLink__linkTeacher__25L85 {
+  color: #215651; }
+.ModeIndicator__modeIndicator__gvKNO {
+  font-size: 1.2em;
+  margin-top: -15px;
+  text-align: right; }
+.Lesson__container__133OS {
+  max-width: 770px;
+  margin-left: auto;
+  margin-right: auto; }
+.LevelIcon__small__KNlGu {
+  margin-right: 4px;
+  width: 15px;
+  height: 15px;
+  vertical-align: top; }
+
+.LevelIcon__medium__3A_kn {
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+  vertical-align: top; }
+
+.LevelIcon__large__HKJS3 {
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  vertical-align: top; }
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic);.Footer__container__1SZrv {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 15pt;
+  font-family: "Roboto", "Verdana", sans-serif; }
+  .Footer__container__1SZrv a {
+    text-decoration: none; }
+
+.Footer__containerStudent__3Yr5f {
+  background-color: #b1daae;
+  color: #265732; }
+  .Footer__containerStudent__3Yr5f a {
+    color: #265732; }
+
+.Footer__containerTeacher__36KZb {
+  background-color: #a3cccb;
+  color: #215651; }
+  .Footer__containerTeacher__36KZb a {
+    color: #215651; }
+
+.Footer__center__3xqZ_ {
+  text-align: center; }
+
+.Footer__inline__1Q6ds {
+  display: inline-block;
+  margin: 20px 10px; }
+
+.Footer__svg__29r7H {
+  width: 100px;
+  height: auto;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__img__25Ink {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: auto;
+  height: 50px;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__divider__LJrti {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid;
+  width: 50%; }
+
+.Footer__svg__29r7H:hover,
+.Footer__img__25Ink:hover {
+  transform: scale(1.2); }
+</style>
+<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-16x16.png"><link rel="shortcut icon" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1536x2008.png"><link href="/beta/vendor2.9b2aa725e22ade101290.css" rel="stylesheet"></head>
+<body>
+    <div id="app"><div><div class="App__container__vvzpy" data-reactroot="" data-reactid="1" data-react-checksum="12855701"><div class="container-fluid" data-reactid="2"><div class="row" data-reactid="3"><nav class="navbar navbar-default navbar-fixed-top" data-reactid="4"><div class="container-fluid" data-reactid="5"><div class="btn-language-dropdown pull-right dropdown btn-group" data-reactid="6"><button class="dropdown-toggle btn-language-student btn-language btn btn-default" id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" data-reactid="7"><span data-reactid="8"><!-- react-text: 9 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="10"/></span></button><ul class="dropdown-menu" role="menu" aria-labelledby="language-dropdown" data-reactid="11"><li role="presentation" class="" data-reactid="12"><a role="menuitem" href="" tabindex="-1" data-reactid="13"><span data-reactid="14"><!-- react-text: 15 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="16"/></span></a></li><li role="presentation" class="" data-reactid="17"><a role="menuitem" href="" tabindex="-1" data-reactid="18"><span data-reactid="19"><!-- react-text: 20 -->Norsk nynorsk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="21"/></span></a></li><li role="presentation" class="" data-reactid="22"><a role="menuitem" href="" tabindex="-1" data-reactid="23"><span data-reactid="24"><!-- react-text: 25 -->Svenska<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="26"/></span></a></li><li role="presentation" class="" data-reactid="27"><a role="menuitem" href="" tabindex="-1" data-reactid="28"><span data-reactid="29"><!-- react-text: 30 -->Dansk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="31"/></span></a></li></ul></div><div class="navbar-header" data-reactid="32"><span class="navbar-brand" data-reactid="33"><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/" data-reactid="34"><span class="glyphicon glyphicon-home" data-reactid="35"></span></a><span data-reactid="36"><!-- react-text: 37 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/web" data-reactid="38">web</a></span><span class="hidden-xs" data-reactid="39"><!-- react-text: 40 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm active" href="/web/animasjon/animasjon" data-reactid="41">animasjon</a></span></span><button type="button" class="navbar-toggle collapsed" data-reactid="42"><span class="sr-only" data-reactid="43">Toggle navigation</span><span class="icon-bar" data-reactid="44"></span><span class="icon-bar" data-reactid="45"></span><span class="icon-bar" data-reactid="46"></span></button></div><div class="navbar-collapse collapse" data-reactid="47"><div class="navbar-form navbar-right" data-reactid="48"><div class="form-group" data-reactid="49"><input type="text" placeholder="Søk" class="form-control" data-reactid="50"/></div><!-- react-text: 51 --> <!-- /react-text --><div class="btn-toggle" data-reactid="52"><div data-reactid="53">Velg modus:</div><div class="btn-group btn-group" data-reactid="54"><button class="btn-student-nav active btn btn-default" type="button" data-reactid="55">ELEV</button><button class="btn-teacher-nav btn btn-default" type="button" data-reactid="56">LÆRER</button></div></div></div></div></div></nav></div><div class="row" data-reactid="57"><div class="col-xs-12" data-reactid="58"><div class="ModeIndicator__modeIndicator__gvKNO" data-reactid="59"><!-- react-text: 60 -->Du er i <!-- /react-text --><span class="text-student" data-reactid="61">elevmodus</span></div></div></div></div><div class="Lesson__container__133OS" data-reactid="62"><h1 data-reactid="63"><img class="LevelIcon__large__HKJS3" src="/beta/b1bbe21c6392db68a7ca74587b2668d9.svg" data-reactid="64"/><!-- react-text: 65 -->CSS: Animasjon<!-- /react-text --><!-- react-text: 66 --> - Level <!-- /react-text --><!-- react-text: 67 -->2<!-- /react-text --></h1><p data-reactid="68"><i data-reactid="69"><!-- react-text: 70 -->av <!-- /react-text --></i></p><div data-reactid="71"><section class="intro" id="introduksjon">
+<h1 class="intro" id="introduksjon">Introduksjon</h1>
+<p>I denne oppgaven skal du lære å animerer HTML-objekter ved hjelp av CSS. Under ser du hvordan resultatet vil bli til slutt:</p>
+<figure><img src="/beta/_/oppgaver/src/web/animasjon/ressurser/out.47d412.gif" alt="" /></figure>
+<p>Men før vi starter å lage animasjonen over må vi lære om hvordan animasjon fungerer ved hjelp av CSS. Så la oss starte med det grunnleggende!</p>
+<p><strong>For å lære mest mulig bør du åpne en tom <code>.html</code>-fil og skrive koden for hånd når du leser oppgaven, da kommer du til å bli en racer i CSS-animasjon!</strong></p>
+</section>
+<section class="activity" id="steg-1-animasjons-attributtet">
+<h1 class="activity" id="steg-1-animasjons-attributtet">Steg 1: Animasjons-attributtet</h1>
+<p>Animasjon i CSS er ganske enkelt, i utgangspunktet har animasjonen 2 stadier: <code>start</code> og <code>slutt</code>. Mellom <code>start</code> og <code>slutt</code> kan du legge inn forskjellige faser, som vi skal se på litt senere. Animasjonen vil heller ikke gå i <code>loop</code> (altså gjenta seg selv) med mindre du forteller at den skal gjøre det.</p>
+<figure>Før vi skal se på et enkelt eksempel skal vi se på <code>animation</code>-attributter. Vi skal bruke disse:</figure>
+<pre><code class="language-css"><span class="hljs-id">#id</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">animation-name</span>:<span class="hljs-value"> et-navn</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">animation-duration</span>:<span class="hljs-value"> <span class="hljs-number">1s</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">animation-timing-function</span>:<span class="hljs-value"> linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">animation-delay</span>:<span class="hljs-value"> <span class="hljs-number">1s</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">animation-iteration-count</span>:<span class="hljs-value"> nummer|infinite</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">animation-direction</span>:<span class="hljs-value"> normal|reverse|alternate|alternate-reverse</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">animation-fill-mode</span>:<span class="hljs-value"> none|forwards|backwards|both</span></span>;
+}</span>
+</code></pre>
+<ul>
+<li><code>name</code>: Navnet på animasjonen.</li>
+<li><code>duration</code>: Hvor lenge (i sekunder) skal animasjonen vare.</li>
+<li><code>timing-function</code>: Hvordan mellom-fasene er kalkulert.</li>
+<li><code>delay</code>: Hvor mye forsinkelse det skal være før animasjonen starter. Standard er 0 sekund.</li>
+<li><code>iteration-count</code>: Hvor mange ganger skal animasjonen gjentas.</li>
+<li><code>direction</code>: Bestemmer om animasjonen skal gå baklengs eller ikke.</li>
+<li><code>fill-mode</code>: Hvilke stiler som er lagt til før og etter start av animasjonen.</li>
+</ul>
+<p>Her er et enkelt eksempel på en boks som går fra venstre til høyre:</p>
+<style>
+    #boks {
+        height: 50px;
+        width: 50px;
+        background-color: blue;
+        position: relative;
+        animation-name: frem-og-tilbake;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes frem-og-tilbake {
+        0% { left:0; }
+        100% { left:100px; }
+    }
+</style>
+<div id="boks"></div>
+<br>
+<pre><code class="language-html"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">style</span>&gt;</span><span class="css">
+    <span class="hljs-id">#boks</span> <span class="hljs-rules">{
+        <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">50px</span></span></span>;
+        <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">50px</span></span></span>;
+        <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> blue</span></span>;
+        <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> relative</span></span>;
+        <span class="hljs-rule"><span class="hljs-attribute">animation-name</span>:<span class="hljs-value"> frem-og-tilbake</span></span>;
+        <span class="hljs-rule"><span class="hljs-attribute">animation-duration</span>:<span class="hljs-value"> <span class="hljs-number">2s</span></span></span>;
+        <span class="hljs-rule"><span class="hljs-attribute">animation-iteration-count</span>:<span class="hljs-value"> infinite</span></span>;
+        <span class="hljs-rule"><span class="hljs-attribute">animation-direction</span>:<span class="hljs-value"> alternate</span></span>;
+    }</span>
+    <span class="hljs-at_rule">@<span class="hljs-keyword">keyframes</span> frem-og-tilbake </span>{
+        0% <span class="hljs-rules">{
+            <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">0px</span></span></span>;
+        }</span>
+        100% <span class="hljs-rules">{
+            <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">100px</span></span></span>;
+        }</span>
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"boks"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<figure><strong>La oss se nærmere på koden over:</strong></figure>
+<p>Vi har en <code>&lt;div&gt;</code> med ID <code>boks</code>, den er 50x50px med blå bakgrunnsfarge. Posisjonen er <code>relative</code> som vil si at vi har muligheter for å flytte på den.</p>
+<p><code>animation</code>-attributtene:</p>
+<ul>
+<li><code>name</code>: frem-og-tilbake</li>
+<li><code>duration</code>: 2s (sekunder)</li>
+<li><code>timing-function</code>: Ikke oppgitt, er <code>ease</code> som standard.</li>
+<li><code>delay</code>: Ikke oppgitt, siden vi ønsker at animasjonen skal starte med en gang og standard er <code>0s</code>.</li>
+<li><code>iteration-count</code>: infinite (uendelig, så den vil ikke stoppe).</li>
+<li><code>direction</code>: alternate (for at den skal gå frem og tilbake)</li>
+<li><code>fill-mode</code>: Ikke oppgitt, ettersom animasjonen starter med en gang og aldri slutter trenger vi ikke en <code>fill-mode</code> før eller etter animasjonen.</li>
+</ul>
+<p><code>@keyframes frem-og-tilbake</code> er det vi bruker for å spesifisere hva som skal skje under animasjonen. I dette tilfellet har vi satt navnet til animasjonen med <code>animation-name: frem-og-tilbake</code>, vi bruker derfor <code>@keyframes frem-og-tilbake</code> for å beskrive animasjonen.</p>
+<p>Innen for <code>@keyframes</code> kan vi nå spesifisere hva vi vil at animasjonen skal gjøre, vi har to faser, en start og en slutt. <code>0%</code> er animasjonens start og <code>100%</code> er animasjonens slutt. Derfor vil boksen vår starte til venstre (<code>left: 0px</code>) og slutte lengre til høyre (<code>left: 100px</code>).</p>
+<p><strong>NB!</strong> Verdiene i <code>animation</code>-attributtene kan også skrives som en egen linje, men det er da litt vanskeligere å finne ut hva som er hva:</p>
+<pre><code class="language-css"><span class="hljs-id">#boks</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">animation</span>:<span class="hljs-value"> frem-og-tilbake <span class="hljs-number">2s</span> ...</span></span>;
+}</span>
+</code></pre>
+<section class="challenge" id="utfordring">
+<h2 class="challenge" id="utfordring">Utfordring</h2>
+<ul>
+<li>Skriv koden inn i din favoritt teksteditor, lagre det som en <code>.html</code>-fil og gjør oppgavene under.</li>
+<li>Få animasjonen til å bytte farge fra blå til rød underveis.</li>
+<li>Klarer du å få boksen til å flytte seg nedover og oppover?</li>
+<li>Prøv å få boksen til å bevege seg i en firkant.</li>
+</ul>
+</section>
+</section>
+<section class="activity" id="steg-2-keyframes">
+<h1 class="activity" id="steg-2-keyframes">Steg 2: @keyframes</h1>
+<p>La oss nå se nærmere på <code>@keyframes</code>. <code>@keyframes</code> er CSS som forteller hvilke steg en animasjon består av.</p>
+<p>Her kommer noen eksempler:</p>
+<style>
+    #diagonalt {
+        height: 50px;
+        width: 50px;
+        background-color: green;
+        position: relative;
+        margin-bottom: 100px;
+        animation: diagonalt 2s 0s infinite;
+    }
+    @keyframes diagonalt {
+        0% { top: 0px; left: 0px; }
+        100% { top: 100px; left: 100px; }
+    }
+</style>
+<div id="diagonalt"></div>
+<pre><code class="language-css"><span class="hljs-at_rule">@<span class="hljs-keyword">keyframes</span> diagonalt </span>{
+    0% <span class="hljs-rules">{
+      <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">0px</span></span></span>;
+      <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">0px</span></span></span>;
+    }</span>
+    100% <span class="hljs-rules">{
+      <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">100px</span></span></span>;
+      <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">100px</span></span></span>;
+    }</span>
+}
+</code></pre>
+<p>Dette eksempelet får et objekt til å gå diagonalt siden det starter på <code>top: 0px; left: 0px;</code> og ender på <code>top: 100px; left: 100px;</code>.</p>
+<style>
+    #ned {
+        height: 50px;
+        width: 50px;
+        background-color: red;
+        position: relative;
+        margin-bottom: 100px;
+        animation: ned 2s 0s infinite;
+    }
+    @keyframes ned {
+        0% { top: 0px; }
+        100% { top: 100px; }
+    }
+</style>
+<div id="ned"></div>
+<pre><code class="language-css"><span class="hljs-at_rule">@<span class="hljs-keyword">keyframes</span> ned </span>{
+    0% <span class="hljs-rules">{
+      <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">0px</span></span></span>;
+    }</span>
+    100% <span class="hljs-rules">{
+      <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">100px</span></span></span>;
+    }</span>
+}
+</code></pre>
+<figure>Her går HTML-objektet nedover ved hjelp av <code>top</code>-attributtet.</figure>
+<style>
+    #skifte_farge {
+        height: 50px;
+        width: 50px;
+        background-color: blue;
+        position: relative;
+        animation: skifte_farge 5s 0s infinite;
+    }
+    @keyframes skifte_farge {
+        0% { background-color: blue; }
+        50% { background-color: yellow; }
+        100% { background-color: red; }
+    }
+</style>
+<div id="skifte_farge"></div>
+<br>
+<pre><code class="language-css"><span class="hljs-at_rule">@<span class="hljs-keyword">keyframes</span> skift-farge </span>{
+    0% <span class="hljs-rules">{
+      <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> blue</span></span>;
+    }</span>
+    50% <span class="hljs-rules">{
+      <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> yellow</span></span>;
+    }</span>
+    100% <span class="hljs-rules">{
+      <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> red</span></span>;
+    }</span>
+}
+</code></pre>
+<p>Merk at i dette eksempelet har vi lagt inn <code>50%</code>. Dette er et eksempel på at du kan dele inn animasjonen faser mellom <code>0%</code> og <code>100%</code>. Du kan legge til så mange faser du vil ved å bruke <code>%</code>.</p>
+<p><strong>Merk</strong> at du ikke kan endre animasjonens varighet med <code>@keyframes</code> og <code>%</code>, du må da heller endre på <code>animation-duration</code>.</p>
+</section>
+<section class="activity" id="steg-3-pakke-ut-filene">
+<h1 class="activity" id="steg-3-pakke-ut-filene">Steg 3: Pakke ut filene</h1>
+<p>Nå skal vi animere øksen og Minecraft-logoen:</p>
+<figure><img src="/beta/_/oppgaver/src/web/animasjon/ressurser/out.47d412.gif" alt="" /></figure>
+<ul>
+<li>Last ned og pakk ut <a href="minecraft_animasjon.zip">minecraft_animasjon.zip</a>.</li>
+<li>Åpne <code>index.html</code> i din favoritt teksteditor og i en nettleser.</li>
+</ul>
+<p>Du vil nå ha en nettside som ser noe sånt ut:</p>
+<p><img src="/beta/_/oppgaver/src/web/animasjon/ressurser/minecraft_1.3c54cb.png" alt="minecraft" width="100%" /></p>
+<p>I koden til <code>index.html</code> har vi et bakgrunnsbilde og 3 div-er med følgende ID: <code>pickaxe</code>, <code>minecraft</code> og <code>block</code>. Alle disse ID-ene er et bilde på nettsiden, bakgrunnsbildet ligger i CSS-en under <code>body</code>.</p>
+<figure><strong>Dette skal vi programmere:</strong></figure>
+<ol>
+<li><code>pickaxe</code>-en skal komme flyvende inn og treffe blokkene.</li>
+<li>Når øksen har truffet blokkene skal logoen skal komme inn.</li>
+</ol>
+</section>
+<section class="activity" id="steg-4-flyvende-oks">
+<h1 class="activity" id="steg-4-flyvende-oks">Steg 4: Flyvende øks</h1>
+<p>Nå skal vi få <code>pickaxe</code>-en til å fly. Vi begynner med å beskrive animasjonen med <code>keyframes</code>.</p>
+<section class="check" id="sjekkliste">
+<h2 class="check" id="sjekkliste">Sjekkliste</h2>
+<ul>
+<li>Lag en <code>@keyframes</code> med animasjonsnavnet <code>move-pickaxe</code>.</li>
+<li>La figuren starte utenfor skjermen. <strong>Hint:</strong> bruk en negativ verdi av <code>left</code>.</li>
+<li>La <code>pickaxe</code>-bildet bevege seg bort til blokkene. Klarer du å finne ut hvor langt det er? <strong>Hint:</strong> positiv verdi av <code>left</code>.</li>
+<li>Legg til rotasjon med <code>transform: rotate(antall grader)</code>.</li>
+<li>Kan du tenke deg hvor <code>transform: rotate()</code> bør være? I <code>0%</code> eller <code>100%</code>?</li>
+<li>Prøv deg frem med hvor mange grader du trenger for at den skal bli riktig. <strong>Hint:</strong> 360 grader er én gang og 720 grader er to ganger rundt seg selv.</li>
+</ul>
+<p>Så legger vi animasjonen til øksen.</p>
+</section>
+<section class="check" id="sjekkliste-2">
+<h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
+<ul>
+<li>Finn <code>#pickaxe</code> i CSS-en.</li>
+<li>Legg til animasjonsnavnet fra <code>keyframes</code> med <code>animation-name</code>.</li>
+<li>Legg til <code>animation-duration</code> på <code>2s</code>.</li>
+<li>Legg til et <code>animation-delay</code> på <code>1s</code>.</li>
+<li>Sett <code>animation-timing-function</code> til <code>linear</code>.</li>
+<li>Sett <code>animation-fill-mode</code> til <code>forwards</code>.</li>
+</ul>
+<style>
+    #pickaxe {
+        background-image: url("ressurser/pickaxe.png");
+        z-index: 1;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        animation: move-pickaxe 2s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+     @keyframes move-pickaxe {
+        0% {
+            left:0px;
+        }
+        100% {
+            left: 800px;
+            transform: rotate(720deg);
+        }
+    }
+</style>
+<div id="pickaxe"></div>
+<toggle>
+<strong>Forslag til kode så langt</strong>
+<hide>
+<pre><code class="language-css"><span class="hljs-id">#pickaxe</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">"pickaxe.png"</span>)</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">1</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">150px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">150px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">bottom</span>:<span class="hljs-value"> <span class="hljs-number">150px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> -<span class="hljs-number">150px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">animation</span>:<span class="hljs-value"> move-pickaxe <span class="hljs-number">2s</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">animation-delay</span>:<span class="hljs-value"> <span class="hljs-number">1s</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">animation-timing-function</span>:<span class="hljs-value"> linear</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">animation-fill-mode</span>:<span class="hljs-value"> forwards</span></span>;
+}</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">keyframes</span> move-pickaxe </span>{
+    0% <span class="hljs-rules">{
+        <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value">-<span class="hljs-number">150px</span></span></span>;
+    }</span>
+    100% <span class="hljs-rules">{
+        <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">800px</span></span></span>;
+        <span class="hljs-rule"><span class="hljs-attribute">transform</span>:<span class="hljs-value"> <span class="hljs-function">rotate</span>(<span class="hljs-number">720deg</span>)</span></span>;
+    }</span>
+}
+</code></pre>
+</hide>
+</toggle>
+</section>
+</section>
+<section class="activity" id="steg-5-flyvende-logo">
+<h1 class="activity" id="steg-5-flyvende-logo">Steg 5: Flyvende logo</h1>
+<p>Nå som du har klart å få <code>pickaxe</code> til å fly inn med rotasjon er oppgaven din nå å få <code>#minecraft</code> til komme flyvende inn etter at <code>pickaxe</code> har stoppet.</p>
+<ul>
+<li>Bruk det du har lært i oppgaven til å og prøv få logoen til å komme inn når <code>pickaxe</code> er ferdig med sin animasjon.</li>
+</ul>
+<style>
+    #minecraft {
+        background-image: url("ressurser/minecraft.png");
+        width: 616px;
+        height: 154px;
+        position: relative;
+        left: -900px;
+        animation: move_minecraft 4s; /* Chrome, Safari, Opera */
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+    @keyframes move_minecraft {
+        0% {
+            left: -900px;
+        }
+        100% {
+            left:250px;
+        }
+    }
+</style>
+<div id="minecraft"></div>
+<toggle>
+<strong>Forslag til kode for Minecraft-logo</strong>
+<hide>
+<pre><code class="language-css"><span class="hljs-id">#minecraft</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">"minecraft.png"</span>)</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">1</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">616px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">154px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> -<span class="hljs-number">900px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">animation</span>:<span class="hljs-value"> move_minecraft <span class="hljs-number">4s</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">animation-delay</span>:<span class="hljs-value"> <span class="hljs-number">3s</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">animation-fill-mode</span>:<span class="hljs-value"> forwards</span></span>;
+}</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">keyframes</span> move_minecraft </span>{
+    0% <span class="hljs-rules">{
+        <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> -<span class="hljs-number">900px</span></span></span>;
+    }</span>
+    100% <span class="hljs-rules">{
+        <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"><span class="hljs-number">400px</span></span></span>;
+    }</span>
+}
+</code></pre>
+</hide>
+</toggle>
+<p><strong>Gratulerer!</strong> Du har nå laget din første animasjon!</p>
+</section>
+</div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="72"><div class="Footer__center__3xqZ_ row" data-reactid="73"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="74">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="75">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="76"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="77"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/smn.41dee6.jpg" data-reactid="78"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="79"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="80"/></a></div></div></div></div></div>
+<script type="text/javascript" src="/beta/manifest.cc88f78a0c0bf1a7fe4c.js"></script><script type="text/javascript" src="/beta/vendor.80564a629b906f18bc40.js"></script><script type="text/javascript" src="/beta/main.bd1ff92ac496f5a74eb8.js"></script><script type="text/javascript" src="/beta/vendor2.9b2aa725e22ade101290.js"></script></body>
+</html>

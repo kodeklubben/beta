@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kodeklubben (server)</title>
+    <style type="text/css">.App__container__vvzpy {
+  margin-top: 125px; }
+.NavBar__flagGroup__3f0i_ {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px; }
+
+.NavBar__flag__3cn9U {
+  width: 30px;
+  height: 20px;
+  float: right;
+  margin-left: 5px; }
+.NavLink__linkBase__1m4Sm {
+  text-decoration: none !important;
+  font-size: 17pt; }
+
+.NavLink__linkStudent__1zq2x {
+  color: #265732; }
+
+.NavLink__linkTeacher__25L85 {
+  color: #215651; }
+.ModeIndicator__modeIndicator__gvKNO {
+  font-size: 1.2em;
+  margin-top: -15px;
+  text-align: right; }
+.Lesson__container__133OS {
+  max-width: 770px;
+  margin-left: auto;
+  margin-right: auto; }
+.LevelIcon__small__KNlGu {
+  margin-right: 4px;
+  width: 15px;
+  height: 15px;
+  vertical-align: top; }
+
+.LevelIcon__medium__3A_kn {
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+  vertical-align: top; }
+
+.LevelIcon__large__HKJS3 {
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  vertical-align: top; }
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic);.Footer__container__1SZrv {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 15pt;
+  font-family: "Roboto", "Verdana", sans-serif; }
+  .Footer__container__1SZrv a {
+    text-decoration: none; }
+
+.Footer__containerStudent__3Yr5f {
+  background-color: #b1daae;
+  color: #265732; }
+  .Footer__containerStudent__3Yr5f a {
+    color: #265732; }
+
+.Footer__containerTeacher__36KZb {
+  background-color: #a3cccb;
+  color: #215651; }
+  .Footer__containerTeacher__36KZb a {
+    color: #215651; }
+
+.Footer__center__3xqZ_ {
+  text-align: center; }
+
+.Footer__inline__1Q6ds {
+  display: inline-block;
+  margin: 20px 10px; }
+
+.Footer__svg__29r7H {
+  width: 100px;
+  height: auto;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__img__25Ink {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: auto;
+  height: 50px;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__divider__LJrti {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid;
+  width: 50%; }
+
+.Footer__svg__29r7H:hover,
+.Footer__img__25Ink:hover {
+  transform: scale(1.2); }
+</style>
+<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-16x16.png"><link rel="shortcut icon" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1536x2008.png"><link href="/beta/vendor2.9b2aa725e22ade101290.css" rel="stylesheet"></head>
+<body>
+    <div id="app"><div><div class="App__container__vvzpy" data-reactroot="" data-reactid="1" data-react-checksum="69168455"><div class="container-fluid" data-reactid="2"><div class="row" data-reactid="3"><nav class="navbar navbar-default navbar-fixed-top" data-reactid="4"><div class="container-fluid" data-reactid="5"><div class="btn-language-dropdown pull-right dropdown btn-group" data-reactid="6"><button class="dropdown-toggle btn-language-student btn-language btn btn-default" id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" data-reactid="7"><span data-reactid="8"><!-- react-text: 9 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="10"/></span></button><ul class="dropdown-menu" role="menu" aria-labelledby="language-dropdown" data-reactid="11"><li role="presentation" class="" data-reactid="12"><a role="menuitem" href="" tabindex="-1" data-reactid="13"><span data-reactid="14"><!-- react-text: 15 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="16"/></span></a></li><li role="presentation" class="" data-reactid="17"><a role="menuitem" href="" tabindex="-1" data-reactid="18"><span data-reactid="19"><!-- react-text: 20 -->Norsk nynorsk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="21"/></span></a></li><li role="presentation" class="" data-reactid="22"><a role="menuitem" href="" tabindex="-1" data-reactid="23"><span data-reactid="24"><!-- react-text: 25 -->Svenska<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="26"/></span></a></li><li role="presentation" class="" data-reactid="27"><a role="menuitem" href="" tabindex="-1" data-reactid="28"><span data-reactid="29"><!-- react-text: 30 -->Dansk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="31"/></span></a></li></ul></div><div class="navbar-header" data-reactid="32"><span class="navbar-brand" data-reactid="33"><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/" data-reactid="34"><span class="glyphicon glyphicon-home" data-reactid="35"></span></a><span data-reactid="36"><!-- react-text: 37 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/arduino" data-reactid="38">arduino</a></span><span class="hidden-xs" data-reactid="39"><!-- react-text: 40 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm active" href="/arduino/buzzer/buzzer" data-reactid="41">buzzer</a></span></span><button type="button" class="navbar-toggle collapsed" data-reactid="42"><span class="sr-only" data-reactid="43">Toggle navigation</span><span class="icon-bar" data-reactid="44"></span><span class="icon-bar" data-reactid="45"></span><span class="icon-bar" data-reactid="46"></span></button></div><div class="navbar-collapse collapse" data-reactid="47"><div class="navbar-form navbar-right" data-reactid="48"><div class="form-group" data-reactid="49"><input type="text" placeholder="Søk" class="form-control" data-reactid="50"/></div><!-- react-text: 51 --> <!-- /react-text --><div class="btn-toggle" data-reactid="52"><div data-reactid="53">Velg modus:</div><div class="btn-group btn-group" data-reactid="54"><button class="btn-student-nav active btn btn-default" type="button" data-reactid="55">ELEV</button><button class="btn-teacher-nav btn btn-default" type="button" data-reactid="56">LÆRER</button></div></div></div></div></div></nav></div><div class="row" data-reactid="57"><div class="col-xs-12" data-reactid="58"><div class="ModeIndicator__modeIndicator__gvKNO" data-reactid="59"><!-- react-text: 60 -->Du er i <!-- /react-text --><span class="text-student" data-reactid="61">elevmodus</span></div></div></div></div><div class="Lesson__container__133OS" data-reactid="62"><h1 data-reactid="63"><img class="LevelIcon__large__HKJS3" src="/beta/d6aa434b87e479c5f20f9a47e8aca3db.svg" data-reactid="64"/><!-- react-text: 65 -->Buzzer<!-- /react-text --><!-- react-text: 66 --> - Level <!-- /react-text --><!-- react-text: 67 -->1<!-- /react-text --></h1><p data-reactid="68"><i data-reactid="69"><!-- react-text: 70 -->av <!-- /react-text --><!-- react-text: 71 -->Adrian Helle<!-- /react-text --></i></p><div data-reactid="72"><section class="intro" id="introduksjon">
+<h1 class="intro" id="introduksjon">Introduksjon</h1>
+<figure>Nå som vi har sett litt på hvordan vi kan kontrollere en lysdiode på
+forskjellige måter, kan vi gå over til å lage litt lyd!</figure>
+</section>
+<section class="activity" id="steg-1-finn-frem-utstyr">
+<h1 class="activity" id="steg-1-finn-frem-utstyr">Steg 1: Finn frem utstyr</h1>
+<figure>Før vi kan begynne å lage kretsen og koden, er vi nødt til å finne frem alt vi trenger.
+I denne oppgaven trenger vi i hovedsak en buzzer.</figure>
+<section class="check" id="dette-trenger-du">
+<h2 class="check" id="dette-trenger-du">Dette trenger du</h2>
+<ul>
+<li>1 Arduino Uno</li>
+<li>1 breadboard</li>
+<li>2 ledninger</li>
+<li>1 buzzer</li>
+<li>1 motstand 270 Ohm (rød-lilla-brun-gull)</li>
+</ul>
+<figure><img src="/beta/_/oppgaver/src/arduino/buzzer/buz.af305a.jpg" style="width: 900px"></figure>
+</section>
+</section>
+<section class="activity" id="steg-2-lag-kretsen">
+<h1 class="activity" id="steg-2-lag-kretsen">Steg 2: Lag kretsen</h1>
+<p>Før vi kan begynne med programmeringen, så er vi nødt til å lage en krets.
+Hvis du nå har funnet frem alt du trenger kan du følge instruksjonene og illustrasjonen
+under.</p>
+<figure><img src="/beta/_/oppgaver/src/arduino/buzzer/krets.8af9b6.png" style="width: 900px"></figure>
+<section class="check" id="sjekkliste">
+<h2 class="check" id="sjekkliste">Sjekkliste</h2>
+<ul>
+<li>Ledning fra GND på Arduinoen til den negative lederen på buzzeren</li>
+<li>Ledning fra 11~ på Arduinoen til motstand</li>
+<li>Motstand til den positive lederen på buzzeren</li>
+</ul>
+</section>
+<section class="protip" id="porter-merket-med">
+<h2 class="protip" id="porter-merket-med">Porter merket med ~</h2>
+<p>Husker du hva &quot;~&quot; betyr? Det har seg slik at alle porter merket med &quot;~&quot;
+har en spesiel funksjon kalt PWM. Dette står for &quot;Pulse With Modulation&quot;
+og kan blant annet brukes for å spille lyder.</p>
+</section>
+</section>
+<section class="activity" id="steg-3-lag-en-tone">
+<h1 class="activity" id="steg-3-lag-en-tone">Steg 3: Lag en tone</h1>
+<figure><em>Nå skal vi lage vår første tone med Arduinoen.</em></figure>
+<section class="check" id="sjekkliste-2">
+<h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
+<ul>
+<li>
+<p>Åpne Arduino-programmet om det ikke allerede er åpent.</p>
+</li>
+<li>
+<p>Arduino-programmet starter med denne koden:</p>
+<pre><code class="language-cpp"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span></span>{
+
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span></span>{
+
+}
+</code></pre>
+</li>
+<li>
+<p>Skriv denne koden:</p>
+<pre><code class="language-cpp"><span class="hljs-keyword">int</span> lyd = <span class="hljs-number">11</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span></span>{
+  pinMode(lyd, OUTPUT);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span></span>{
+  tone(lyd, <span class="hljs-number">880</span>);
+}
+</code></pre>
+</li>
+<li>
+<p>Trykk på <img src="/beta/_/oppgaver/src/arduino/buzzer/upload.92a72d.png" alt="" /> for å laste opp koden. Denne sjekker først om koden
+er riktig, og så vil programmet ditt kjøre på arduinoen.</p>
+</li>
+<li>
+<p>Lager den lyd?</p>
+</li>
+</ul>
+<section class="protip" id="virker-det-ikke">
+<h3 class="protip" id="virker-det-ikke">Virker det ikke?</h3>
+<p>Hvis det ikke virker, så kan det hende at Arduino-programmet står på feil <strong>port</strong>
+og/eller <strong>brett</strong>. Da kan du sjekke disse to tingene:</p>
+<ul>
+<li>
+<p>Brett er satt riktig: <strong>Tools -&gt; Board -&gt; Arduino/Genuino Uno</strong></p>
+</li>
+<li>
+<p>Port er satt riktig:</p>
+<ul>
+<li>Windows: <strong>Tools -&gt; Port -&gt; COM1</strong> (kan være et annet tall)
+<img src="/beta/_/oppgaver/src/arduino/buzzer/port.d63a0b.png" alt="" /></li>
+<li>Mac: <strong>Tools -&gt; Port -&gt;/dev/tty.usbmodem262471</strong> (kan være et annet tall)</li>
+</ul>
+</li>
+</ul>
+<p>Hvis dette ikke fungerer, kan du prøve å lukke programmet og åpne det igjen.</p>
+</section>
+<section class="challenge" id="utfordringer">
+<h3 class="challenge" id="utfordringer">Utfordringer</h3>
+<ul>
+<li>Hva skjer hvis du endrer tallet 880 til ett annet?</li>
+</ul>
+</section>
+</section>
+</section>
+<section class="activity" id="steg-4-bruk-en-lysfolsom-motstand-til-a-styre-lyden">
+<h1 class="activity" id="steg-4-bruk-en-lysfolsom-motstand-til-a-styre-lyden">Steg 4: Bruk en lysfølsom motstand til å styre lyden</h1>
+<p>Vi kan bruke en annen input for å styre lyden også. La oss se hvordan vi kan få en
+lysfølsom motstand til å styre lyden. En lysfølsom motstand varierer motstanden etter hvor mye
+lys den får inn. Finn frem alt du trenger og koble opp slik som på diagrammet under
+og følg sjekklisten!</p>
+<figure><img src="/beta/_/oppgaver/src/arduino/buzzer/foto.a59d6d.jpg" style="width: 900px"></figure>
+<figure><img src="/beta/_/oppgaver/src/arduino/buzzer/ldr.f4d655.png" style="width: 900px"></figure>
+<section class="check" id="sjekkliste-3">
+<h2 class="check" id="sjekkliste-3">Sjekkliste</h2>
+<ul>
+<li>La alle de andre komponentene være som før</li>
+<li>Ledning fra en fot på lysfølsom motstanden til A5 på arduinoen</li>
+<li>Ledning fra fot på lysfølsom motstand til GND</li>
+<li>Skriv  koden under:</li>
+</ul>
+<pre><code class="language-cpp"><span class="hljs-keyword">int</span> lyd = <span class="hljs-number">11</span>;
+<span class="hljs-keyword">int</span> lys = A5;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+  pinMode(lys, INPUT_PULLUP);
+  pinMode(lyd, OUTPUT);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">int</span> frekvens = analogRead(lys) * <span class="hljs-number">3.2</span>;
+  tone(lyd, frekvens);
+  delay(<span class="hljs-number">100</span>);
+}
+</code></pre>
+<p>Se der! Nå har du lært å lage litt lyd med Arduino!</p>
+<section class="challenge" id="utfordringer-2">
+<h3 class="challenge" id="utfordringer-2">Utfordringer</h3>
+<p>Her er noen nøtter du kan prøve deg på ved å endre koden.</p>
+<ul>
+<li>Hva skjer hvis du endrer verdien til delay?</li>
+<li>Kan du få en lysdiode til å lyse med forskjellig intensitet gitt forskjellige toner?</li>
+<li>Klarer du å bruke knapper for å spille forksjellige toner?</li>
+</ul>
+</section>
+<section class="protip" id="map">
+<h3 class="protip" id="map">Map</h3>
+<p><code>map</code> tar en verdi, og endrer den fra ett tall i en gitt range til ett tall i en annen.
+F. eks. vil</p>
+<pre><code class="language-cpp"><span class="hljs-keyword">int</span> lysstyrke = analogRead(lys);
+<span class="hljs-keyword">int</span> verdi = <span class="hljs-built_in">map</span>(lysstyrke, <span class="hljs-number">15</span>, <span class="hljs-number">512</span>, <span class="hljs-number">100</span>, <span class="hljs-number">1500</span>);
+</code></pre>
+<p>gi <code>verdi</code> ett tall
+mellom 15 og 512, hvor en lysstyrke på 15 gir 100 og en lysstyrke på 512 gir 1500.</p>
+</section>
+<section class="challenge" id="utfording-vanskelig">
+<h3 class="challenge" id="utfording-vanskelig">Utfording (Vanskelig)</h3>
+<ul>
+<li>Kan du bytte ut <code>analogRead(lys)*3.2</code> til å bruke map?</li>
+</ul>
+</section>
+</section>
+</section>
+</div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="73"><div class="Footer__center__3xqZ_ row" data-reactid="74"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="75">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="76">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="77"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="78"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/smn.41dee6.jpg" data-reactid="79"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="80"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="81"/></a></div></div></div></div></div>
+<script type="text/javascript" src="/beta/manifest.cc88f78a0c0bf1a7fe4c.js"></script><script type="text/javascript" src="/beta/vendor.80564a629b906f18bc40.js"></script><script type="text/javascript" src="/beta/main.bd1ff92ac496f5a74eb8.js"></script><script type="text/javascript" src="/beta/vendor2.9b2aa725e22ade101290.js"></script></body>
+</html>
