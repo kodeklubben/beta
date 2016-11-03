@@ -76,6 +76,13 @@ if [ "${NODEVERSION//v}" != "${RECOMMENDEDVERSION}" ]; then
 else
   echo "Detected adequate version of node (${NODEVERSION})"
 fi
+if ! command -v foo >/dev/null 2>&1; then
+  echo "yarn package manager not installed. Aborting."
+  echo "Install yarn (e.g. 'npm install -g yarn') and try again."
+  exit 1
+else
+  echo "yarn package manager detected."
+fi
 
 if [ -n "$url_path_prefix" ]; then
   echo "$url_path_prefix" > url-path-prefix.config;
@@ -84,16 +91,16 @@ fi
 
 #nvm use
 echo "Downloading packages..."
-npm install
+yarn
 
 echo "Building website..."
-npm run build:prod
+yarn run build:prod
 
 echo "Website is now built."
 echo "Feel free to test it before publishing."
 echo "Open up a second terminal, and go to the folder `pwd`"
-echo "Make sure you have http-server installed globally (npm install -g http-server),"
-echo "and then run 'npm run serve'. Go to http://localhost:8080/$url_path_prefix"
+echo "Make sure you have http-server installed globally (yarn global add http-server),"
+echo "and then run 'yarn run serve'. Go to http://localhost:8080/$url_path_prefix"
 echo "and test until you are satisfied."
 waitForAnyKey
 
