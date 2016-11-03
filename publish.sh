@@ -81,18 +81,13 @@ if [ -n "$url_path_prefix" ]; then
   echo "$url_path_prefix" > url-path-prefix.config;
   git add url-path-prefix.config
 fi
+
 #nvm use
 echo "Downloading packages..."
-#npm install
-mkdir -p node_modules # temp hack
-echo "Building website..."
-#npm run build:prod
-DDIR=dist/${url_path_prefix}
-mkdir -p ${DDIR}/temp
-touch ${DDIR}/a
-touch ${DDIR}/b.txt
-touch ${DDIR}/temp/c.log
+npm install
 
+echo "Building website..."
+npm run build:prod
 
 echo "Website is now built."
 echo "Feel free to test it before publishing."
