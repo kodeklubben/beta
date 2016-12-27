@@ -40,7 +40,7 @@ if [ -z "${cv_branch// }" ]; then cv_branch='master'; fi
 
 url_path_prefix='beta'
 echo -n "An url path prefix is the first part of the url path,"
-echo "e.g. 'beta' in http://kodeklubben.github.io/beta/scratch"
+echo " e.g. 'beta' in http://kodeklubben.github.io/beta/scratch"
 echo -n "The default is '${url_path_prefix}'. Would you like to change that? [y/N]: "
 read change_url_path_prefix
 if [ "${change_url_path_prefix}" = "y" ]; then
@@ -76,6 +76,13 @@ if [ "${NODEVERSION//v}" != "${RECOMMENDEDVERSION}" ]; then
 else
   echo "Detected adequate version of node (${NODEVERSION})"
 fi
+if ! command -v yarn >/dev/null 2>&1; then
+  echo "yarn package manager not installed. Aborting."
+  echo "Install yarn (e.g. 'npm install -g yarn') and try again."
+  exit 1
+else
+  echo "yarn package manager detected."
+fi
 
 if [ -n "$url_path_prefix" ]; then
   echo "$url_path_prefix" > url-path-prefix.config;
@@ -84,16 +91,16 @@ fi
 
 #nvm use
 echo "Downloading packages..."
-npm install
+yarn
 
 echo "Building website..."
-npm run build:prod
+yarn run build:prod
 
 echo "Website is now built."
 echo "Feel free to test it before publishing."
 echo "Open up a second terminal, and go to the folder `pwd`"
-echo "Make sure you have http-server installed globally (npm install -g http-server),"
-echo "and then run 'npm run serve'. Go to http://localhost:8080/$url_path_prefix"
+echo "Make sure you have http-server installed globally (yarn global add http-server),"
+echo "and then run 'yarn run serve'. Go to http://localhost:8080/$url_path_prefix"
 echo "and test until you are satisfied."
 waitForAnyKey
 
@@ -117,7 +124,9 @@ touch .nojekyll
 git add .nojekyll
 git commit --amend -m "Publish site from oppgaver/$oppgaver_branch `git log oppgaver/${oppgaver_branch} -n 1 | head -1` and codeclub-viewer/${cv_branch} `git log codeclub-viewer/${cv_branch} -n 1 | head -1`"
 
-echo "Cleaning up master branch..."
+echo "Cleaning up..."
+git remote remove oppgaver
+git remote remove codeclub-viewer
 git checkout master
 git reset --hard origin/master
 git checkout gh-pages
