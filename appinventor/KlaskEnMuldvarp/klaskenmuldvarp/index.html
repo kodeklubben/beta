@@ -6,55 +6,334 @@
     <title>Kodeklubben (server)</title>
     <style type="text/css">.App__container__vvzpy {
   margin-top: 125px; }
-.NavBar__flagGroup__3f0i_ {
-  display: flex;
-  justify-content: flex-end;
-  padding: 5px; }
+.navbar-brand {
+  font-size: 1.4em; }
+
+.glyphicon-home {
+  line-height: 0;
+  font-size: 0.9em; }
+
+.NavBar__language__1xqOW {
+  margin-right: 40px; }
 
 .NavBar__flag__3cn9U {
   width: 30px;
   height: 20px;
+  float: right; }
+
+.NavBar__gadgetGroup__2VPWF {
+  display: inline;
   float: right;
-  margin-left: 5px; }
+  padding: 3px 0; }
+
+.NavBar__gadgetContainer__28a-C {
+  display: inline-block;
+  padding: 3px 5px; }
 .NavLink__linkBase__1m4Sm {
-  text-decoration: none !important;
-  font-size: 17pt; }
+  text-decoration: none !important; }
 
 .NavLink__linkStudent__1zq2x {
   color: #265732; }
 
 .NavLink__linkTeacher__25L85 {
   color: #215651; }
-.ModeIndicator__modeIndicator__gvKNO {
-  font-size: 1.2em;
-  margin-top: -15px;
-  text-align: right; }
 .Lesson__container__133OS {
-  max-width: 770px;
+  max-width: 800px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto; }
-.LevelIcon__small__KNlGu {
-  margin-right: 4px;
-  width: 15px;
-  height: 15px;
-  vertical-align: top; }
+/*
 
-.LevelIcon__medium__3A_kn {
-  margin-right: 5px;
-  width: 25px;
-  height: 25px;
-  vertical-align: top; }
+Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
 
-.LevelIcon__large__HKJS3 {
-  margin-right: 10px;
-  width: 35px;
-  height: 35px;
-  vertical-align: top; }
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic);.Footer__container__1SZrv {
+*/
+.Content__hljs__3U3C5 {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #000;
+  background: #fff;
+  -webkit-text-size-adjust: none; }
+
+.Content__hljs-subst__2pbFW,
+.Content__hljs-title__1NRbS,
+.Content__json__21Jue .Content__hljs-value__343o4 {
+  font-weight: normal;
+  color: #000; }
+
+.Content__hljs-comment__2_Ezx,
+.Content__diff__QsLYW .Content__hljs-header__1fn5a {
+  color: #808080;
+  font-style: italic; }
+
+.Content__hljs-annotation__21ezL,
+.Content__hljs-decorator__y8Hnz,
+.Content__hljs-preprocessor__SbnY0,
+.Content__hljs-pragma___bqi1,
+.Content__hljs-doctype__-M66r,
+.Content__hljs-pi__2NgN6,
+.Content__hljs-chunk__2xDhN,
+.Content__hljs-shebang__14V3t,
+.Content__apache__3xP74 .Content__hljs-cbracket__fbjQf,
+.Content__hljs-prompt__1NSVh,
+.Content__http__1ZR2f .Content__hljs-title__1NRbS {
+  color: #808000; }
+
+.Content__hljs-tag__3JFP3,
+.Content__hljs-pi__2NgN6 {
+  background: #efefef; }
+
+.Content__hljs-tag__3JFP3 .Content__hljs-title__1NRbS,
+.Content__hljs-id__3GjiP,
+.Content__hljs-attr_selector__3cHPU,
+.Content__hljs-pseudo__xmG62,
+.Content__hljs-literal__7rtGP,
+.Content__hljs-keyword__1gFtb,
+.Content__hljs-hexcolor__2FBf_,
+.Content__css___OD9F .Content__hljs-function__2ly4F,
+.Content__ini__H7bDy .Content__hljs-title__1NRbS,
+.Content__css___OD9F .Content__hljs-class__3SPga,
+.Content__hljs-list__x69Y5 .Content__hljs-keyword__1gFtb,
+.Content__nginx___Y9T- .Content__hljs-title__1NRbS,
+.Content__tex__cVFtD .Content__hljs-command__Ttg93,
+.Content__hljs-request__2L8gj,
+.Content__hljs-status__10G4L {
+  font-weight: bold;
+  color: #000080; }
+
+.Content__hljs-attribute__NlSqs,
+.Content__hljs-rule__KJX0L .Content__hljs-keyword__1gFtb,
+.Content__hljs-number__1Gqqo,
+.Content__hljs-date__6ZK9h,
+.Content__hljs-regexp__lxJZu,
+.Content__tex__cVFtD .Content__hljs-special__1jUrZ {
+  font-weight: bold;
+  color: #0000ff; }
+
+.Content__hljs-number__1Gqqo,
+.Content__hljs-regexp__lxJZu {
+  font-weight: normal; }
+
+.Content__hljs-string__2DCAo,
+.Content__hljs-value__343o4,
+.Content__hljs-filter__FaZco .Content__hljs-argument__1C_kY,
+.Content__css___OD9F .Content__hljs-function__2ly4F .Content__hljs-params__10Fah,
+.Content__apache__3xP74 .Content__hljs-tag__3JFP3 {
+  color: #008000;
+  font-weight: bold; }
+
+.Content__hljs-symbol__3Phin,
+.Content__ruby__2m616 .Content__hljs-symbol__3Phin .Content__hljs-string__2DCAo,
+.Content__hljs-char__2s88f,
+.Content__tex__cVFtD .Content__hljs-formula__1EouS {
+  color: #000;
+  background: #d0eded;
+  font-style: italic; }
+
+.Content__hljs-doctag__1_4v0 {
+  text-decoration: underline; }
+
+.Content__hljs-variable__2B6Js,
+.Content__hljs-envvar__2AHKV,
+.Content__apache__3xP74 .Content__hljs-sqbracket__twdMZ,
+.Content__nginx___Y9T- .Content__hljs-built_in__3G4V1,
+.Content__hljs-name__2Cvim {
+  color: #660e7a; }
+
+.Content__hljs-addition__3aghy {
+  background: #baeeba; }
+
+.Content__hljs-deletion__fahjb {
+  background: #ffc8bd; }
+
+.Content__diff__QsLYW .Content__hljs-change__3JIUJ {
+  background: #bccff9; }
+
+figure > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px; }
+
+.Content__check__sbZVW ul,
+.Content__check__sbZVW ol,
+.Content__activity__12AJC ul, section.Content__activity__12AJC .Content__subsection__3XzlJ h2 ul,
+.Content__activity__12AJC ol, section.Content__activity__12AJC .Content__subsection__3XzlJ h2 ol,
+.Content__save__3P_NU ul,
+.Content__save__3P_NU ol {
+  padding: 0;
+  margin: 0 0 20px; }
+
+.Content__check__sbZVW li,
+.Content__activity__12AJC li, section.Content__activity__12AJC .Content__subsection__3XzlJ h2 li,
+.Content__save__3P_NU li {
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 45px; }
+
+.Content__check__sbZVW li::before,
+.Content__activity__12AJC li::before, section.Content__activity__12AJC .Content__subsection__3XzlJ h2 li::before,
+.Content__save__3P_NU li::before {
+  content: " ";
+  border-radius: 8px;
+  border: 3px solid #abdbea;
+  padding: 10px;
+  float: left;
+  margin-left: -40px; }
+
+pre.Content__blocks__1k922,
+code.Content__b__2nfHe {
+  background-color: inherit;
+  border: 0; }
+
+pre > code {
+  background-color: transparent; }
+
+section.Content__activity__12AJC h1, section.Content__activity__12AJC .Content__subsection__3XzlJ h2 {
+  color: #fff;
+  background: #349946;
+  padding: 10px;
+  border-radius: 5px; }
+
+section.Content__activity__12AJC .Content__subsection__3XzlJ h2 {
+  font-weight: 300; }
+
+section.Content__check__sbZVW h2 {
+  background-image: url(/beta/15ac74fbc78a1df119501938bf49e877.svg);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  padding-top: 4px;
+  padding-bottom: 9px;
+  padding-left: 50px; }
+
+section.Content__try__9Al91 {
+  background: #abdbea;
+  border-radius: 10px;
+  padding: 1px 20px 10px; }
+  section.Content__try__9Al91 code {
+    background-color: #fff;
+    color: #007cc9; }
+  section.Content__try__9Al91 li::before {
+    border: 3px solid #fff; }
+
+section.Content__protip__3oM5h,
+section.Content__tip__2hJcQ {
+  border: 3px solid #ff7f00;
+  background: #fff99d;
+  border-radius: 12px;
+  padding: 0 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+section.Content__flag__1GjEr {
+  border-top: 3px dotted #e6862d;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  section.Content__flag__1GjEr h2 {
+    color: #36a137;
+    background-image: url(/beta/4a58cdc0f6e0e74bb219124bb5bde3b7.svg);
+    background-position: 0 10px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 60px; }
+
+section.Content__save__3P_NU {
+  border-top: 3px solid #245a9a;
+  margin: 20px 0; }
+  section.Content__save__3P_NU h2 {
+    color: #245a9a;
+    background-image: url(/beta/0a8afb9f53ba0352c6ae27f9a35fe08a.svg);
+    background-position: 0 10px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 50px; }
+
+section.Content__challenge__2LUyO {
+  border: 3px solid #00b1da;
+  border-radius: 12px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  section.Content__challenge__2LUyO h2 {
+    color: #fff;
+    background: #00b1da;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0; }
+  section.Content__challenge__2LUyO > * {
+    padding: 0 20px; }
+
+code.Content__blockmotion__2TNTp {
+  background-color: #505fd7; }
+
+code.Content__blocklooks__NJdsX {
+  background-color: #9b33d9; }
+
+code.Content__blocksound__wb8Zz {
+  background-color: #d000c2; }
+
+code.Content__blockpen__1tOwq {
+  background-color: #00a16f; }
+
+code.Content__blockdata__1wt1I {
+  background-color: #ff7500; }
+
+code.Content__blockevents__r08uu {
+  background-color: #d38117; }
+
+code.Content__blockcontrol__3yrIr {
+  background-color: #e9aa00; }
+
+code.Content__blocksensing__2mkm9 {
+  background-color: #00a3e6; }
+
+code.Content__blockoperators__x9p0o {
+  background-color: #00c114; }
+
+code.Content__blockmoreblocks__3YKWS {
+  background-color: #71009a; }
+
+code.Content__blockmotion__2TNTp, code.Content__blocklooks__NJdsX, code.Content__blocksound__wb8Zz, code.Content__blockpen__1tOwq, code.Content__blockdata__1wt1I, code.Content__blockevents__r08uu, code.Content__blockcontrol__3yrIr, code.Content__blocksensing__2mkm9, code.Content__blockoperators__x9p0o, code.Content__blockmoreblocks__3YKWS {
+  color: #fff; }
+
+@media aural, braille, handheld, projection, screen, tty, tv, embossed {
+  pre > code {
+    word-wrap: normal;
+    white-space: pre; } }
+
+.Content__video-container__2gCjN {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 30px 0 60px; }
+  .Content__video-container__2gCjN iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+.LevelIcon__levelIcon__2LO2- {
+  margin-right: 0.3em;
+  width: 0.75em;
+  height: 0.75em;
+  vertical-align: baseline; }
+.Footer__container__1SZrv {
   margin-top: 100px;
   padding-bottom: 20px;
   font-weight: 300;
-  font-size: 15pt;
   font-family: "Roboto", "Verdana", sans-serif; }
   .Footer__container__1SZrv a {
     text-decoration: none; }
@@ -102,9 +381,9 @@
 .Footer__img__25Ink:hover {
   transform: scale(1.2); }
 </style>
-<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-16x16.png"><link rel="shortcut icon" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1536x2008.png"><link href="/beta/vendor2.9b2aa725e22ade101290.css" rel="stylesheet"></head>
+<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-16x16.png"><link rel="shortcut icon" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1536x2008.png"><link href="/beta/vendor2.102a410906fefbbe39e2.css" rel="stylesheet"></head>
 <body>
-    <div id="app"><div><div class="App__container__vvzpy" data-reactroot="" data-reactid="1" data-react-checksum="-1121946832"><div class="container-fluid" data-reactid="2"><div class="row" data-reactid="3"><nav class="navbar navbar-default navbar-fixed-top" data-reactid="4"><div class="container-fluid" data-reactid="5"><div class="btn-language-dropdown pull-right dropdown btn-group" data-reactid="6"><button class="dropdown-toggle btn-language-student btn-language btn btn-default" id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" data-reactid="7"><span data-reactid="8"><!-- react-text: 9 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="10"/></span></button><ul class="dropdown-menu" role="menu" aria-labelledby="language-dropdown" data-reactid="11"><li role="presentation" class="" data-reactid="12"><a role="menuitem" href="" tabindex="-1" data-reactid="13"><span data-reactid="14"><!-- react-text: 15 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="16"/></span></a></li><li role="presentation" class="" data-reactid="17"><a role="menuitem" href="" tabindex="-1" data-reactid="18"><span data-reactid="19"><!-- react-text: 20 -->Norsk nynorsk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="21"/></span></a></li><li role="presentation" class="" data-reactid="22"><a role="menuitem" href="" tabindex="-1" data-reactid="23"><span data-reactid="24"><!-- react-text: 25 -->Svenska<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="26"/></span></a></li><li role="presentation" class="" data-reactid="27"><a role="menuitem" href="" tabindex="-1" data-reactid="28"><span data-reactid="29"><!-- react-text: 30 -->Dansk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="31"/></span></a></li></ul></div><div class="navbar-header" data-reactid="32"><span class="navbar-brand" data-reactid="33"><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/" data-reactid="34"><span class="glyphicon glyphicon-home" data-reactid="35"></span></a><span data-reactid="36"><!-- react-text: 37 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/appinventor" data-reactid="38">appinventor</a></span><span class="hidden-xs" data-reactid="39"><!-- react-text: 40 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm active" href="/appinventor/KlaskEnMuldvarp/klaskenmuldvarp" data-reactid="41">KlaskEnMuldvarp</a></span></span><button type="button" class="navbar-toggle collapsed" data-reactid="42"><span class="sr-only" data-reactid="43">Toggle navigation</span><span class="icon-bar" data-reactid="44"></span><span class="icon-bar" data-reactid="45"></span><span class="icon-bar" data-reactid="46"></span></button></div><div class="navbar-collapse collapse" data-reactid="47"><div class="navbar-form navbar-right" data-reactid="48"><div class="form-group" data-reactid="49"><input type="text" placeholder="Søk" class="form-control" data-reactid="50"/></div><!-- react-text: 51 --> <!-- /react-text --><div class="btn-toggle" data-reactid="52"><div data-reactid="53">Velg modus:</div><div class="btn-group btn-group" data-reactid="54"><button class="btn-student-nav active btn btn-default" type="button" data-reactid="55">ELEV</button><button class="btn-teacher-nav btn btn-default" type="button" data-reactid="56">LÆRER</button></div></div></div></div></div></nav></div><div class="row" data-reactid="57"><div class="col-xs-12" data-reactid="58"><div class="ModeIndicator__modeIndicator__gvKNO" data-reactid="59"><!-- react-text: 60 -->Du er i <!-- /react-text --><span class="text-student" data-reactid="61">elevmodus</span></div></div></div></div><div class="Lesson__container__133OS" data-reactid="62"><h1 data-reactid="63"><img class="LevelIcon__large__HKJS3" src="/beta/d6aa434b87e479c5f20f9a47e8aca3db.svg" data-reactid="64"/><!-- react-text: 65 -->Klask-en-Muldvarp<!-- /react-text --><!-- react-text: 66 --> - Level <!-- /react-text --><!-- react-text: 67 -->1<!-- /react-text --></h1><p data-reactid="68"><i data-reactid="69"><!-- react-text: 70 -->av <!-- /react-text --><!-- react-text: 71 -->Basert på MITs [&quot;MoleMash for App Inventor 2&quot;-guide](http://appinventor.mit.edu/explore/ai2/molemash.html)<!-- /react-text --></i></p><div data-reactid="72"><section class="intro" id="introduksjon">
+    <div id="app"><div><div class="App__container__vvzpy" data-reactroot="" data-reactid="1" data-react-checksum="933143460"><div class="container-fluid" data-reactid="2"><div class="row" data-reactid="3"><nav class="navbar navbar-default navbar-fixed-top" data-reactid="4"><div class="container-fluid" data-reactid="5"><div class="navbar-header" data-reactid="6"><span class="navbar-brand" data-reactid="7"><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/" data-reactid="8"><span class="glyphicon glyphicon-home" data-reactid="9"></span></a><span data-reactid="10"><!-- react-text: 11 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/appinventor" data-reactid="12">appinventor</a></span><span class="hidden-xs" data-reactid="13"><!-- react-text: 14 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm active" href="/appinventor/KlaskEnMuldvarp/klaskenmuldvarp" data-reactid="15">KlaskEnMuldvarp</a></span></span><button type="button" class="navbar-toggle collapsed" data-reactid="16"><span class="sr-only" data-reactid="17">Toggle navigation</span><span class="icon-bar" data-reactid="18"></span><span class="icon-bar" data-reactid="19"></span><span class="icon-bar" data-reactid="20"></span></button></div><div class="navbar-collapse collapse" data-reactid="21"><div class="NavBar__gadgetGroup__2VPWF" data-reactid="22"><div class="NavBar__gadgetContainer__28a-C" data-reactid="23"><div class="dropdown btn-group btn-group-language-student" data-reactid="24"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="25"><div data-reactid="26"><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="27"/><div class="NavBar__language__1xqOW" data-reactid="28">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu" aria-labelledby="language-dropdown" data-reactid="29"><li role="presentation" class="active" data-reactid="30"><a role="menuitem" tabindex="-1" href="#" data-reactid="31"><div data-reactid="32"><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="33"/><div class="NavBar__language__1xqOW" data-reactid="34">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="35"><a role="menuitem" tabindex="-1" href="#" data-reactid="36"><div data-reactid="37"><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="38"/><div class="NavBar__language__1xqOW" data-reactid="39">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="40"><a role="menuitem" tabindex="-1" href="#" data-reactid="41"><div data-reactid="42"><img class="NavBar__flag__3cn9U" src="/beta/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="43"/><div class="NavBar__language__1xqOW" data-reactid="44">Svenska</div></div></a></li><li role="presentation" class="" data-reactid="45"><a role="menuitem" tabindex="-1" href="#" data-reactid="46"><div data-reactid="47"><img class="NavBar__flag__3cn9U" src="/beta/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="48"/><div class="NavBar__language__1xqOW" data-reactid="49">Dansk</div></div></a></li></ul></div></div><div class="NavBar__gadgetContainer__28a-C" data-reactid="50"><div class="dropdown btn-group btn-group-student" data-reactid="51"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="52"><!-- react-text: 53 -->Modus: ELEV<!-- /react-text --></button><ul role="menu" class="dropdown-menu" aria-labelledby="mode-dropdown" data-reactid="54"><li role="presentation" class="active" data-reactid="55"><a role="menuitem" tabindex="-1" href="#" data-reactid="56">ELEV</a></li><li role="presentation" class="" data-reactid="57"><a role="menuitem" tabindex="-1" href="#" data-reactid="58">LÆRER</a></li></ul></div></div><div class="NavBar__gadgetContainer__28a-C" data-reactid="59"><input type="text" placeholder="Søk" class="form-control" data-reactid="60"/></div></div></div></div></nav></div></div><div class="Lesson__container__133OS" data-reactid="61"><h1 data-reactid="62"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/d6aa434b87e479c5f20f9a47e8aca3db.svg" data-reactid="63"/><!-- react-text: 64 -->Klask-en-Muldvarp<!-- /react-text --><!-- react-text: 65 --> - Level <!-- /react-text --><!-- react-text: 66 -->1<!-- /react-text --></h1><p data-reactid="67"><i data-reactid="68"><!-- react-text: 69 -->av <!-- /react-text --><!-- react-text: 70 -->Basert på MITs [&quot;MoleMash for App Inventor 2&quot;-guide](http://appinventor.mit.edu/explore/ai2/molemash.html)<!-- /react-text --></i></p><div data-reactid="71"><section class="intro" id="introduksjon">
 <h1 class="intro" id="introduksjon">Introduksjon</h1>
 <p>I denne oppgaven skal vi lage et veldig enkelt spill med litt animasjon. Det som skal skje er at en muldvarp hopper rundt på spillbrettet mens du prøver å trykke på muldvarpen før den hopper videre. Hvis du klarer å treffe muldvarpen får du poeng og mobilen vil vibrere. Om du trykker på restartknappen, starter spillet på nytt.</p>
 <p>Vi skal nå lære litt om animasjon, hendelser og prosedyrer.</p>
@@ -118,7 +397,7 @@ En canvas er bare en komponent som inneholder grafikk, den synes ikke selv, men 
 <h2 class="check" id="sjekkliste">Sjekkliste</h2>
 <ul>
 <li>
-<figure>Logg inn på App Inventor og lag et nytt prosjekt som heter <code>KlaskEnMuldvarp</code>.</figure>
+<p>Logg inn på App Inventor og lag et nytt prosjekt som heter <code>KlaskEnMuldvarp</code>.</p>
 </li>
 <li>
 <p>Last ned gresset vi vil ha i bakgrunnen fra lenken <a href="gress.png">gress.png</a>.</p>
@@ -184,7 +463,7 @@ En canvas er bare en komponent som inneholder grafikk, den synes ikke selv, men 
 <p>Gå til <strong>Properties</strong> og forandre verdien under <strong>TimerInterval</strong> til <code>500</code>.</p>
 </li>
 <li>
-<figure>Pass på at <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAAmCAIAAADV4ytcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMySURBVGhD7ZXRS9tAHMf3t6mPBZ9SSB8SQQXz0L70oXlQQQQVsVSHKKMi7kGHSkErlZkOzMPSQhEtrANbsdnadK2YyrSM4dt+l6SxuVwdK8URkx9fjsvvfr/f3efuen3z+/HBtfLg3SoP3qrzdQo3PlmBoVbj3hrZk3JrRlHD1vJYQHcpSV5fyV+ddpHCnjl5WGUkpZifVWGanpcaHQG9CSv7L/p/8P2SM+Hh54CuKFQJx+LRYICiAuxMqpTb4hnUDy2eGsHl02iQRa7g0nFBBY+WsjbLBND0JPj8KrXwDq+jiCuaB9URy5rHMvVBSbuGT1S2eR8fKuJiCHkYfmGG6w98IHIgI8/1YYRq9y/fBwPrOeh82ZjgD4vodWgVD/jRrZKZ0tTqQNkO0xcE8KzBfL7OsBsX0KmXpHNZw7uTVthI6sZSR82tjo1tXsJoG54wr5wItZcHu8D2B96sAovu7CP44j5ncOnGH1ctKd1OXts4UOU4YvRvpPj0KDp5ZFqKpc5FHHbkyUmYVxVnqLeSXtaaa6jv8LCmiX1ts5/UC3zzc5Q2TtJMeQ6eMC+Cb5d9GXi4fgw7m7xGzmYlL13e9QbfOJ2ll0R07dXSJm/Ct699XYqx+LUnzfuy1x76RcF4eBh+Q6qDB4e3GKpJgIesT/McTVF0KLq6xDHxr1qd5x4827wac28P3uuXB+9WefBulQfvVnnwNrV+/cxkMqlUKmkzcMIQBGApThQZPpORstlss4vBEARgKU4UGR5OWFXV29vbzvbs7Gx8fBxa6B8dHWEpThQZfm9vT1GUWq1mtldXVzRNDw0NDQ8P5/N5CMBSnCgy/Pb2tizL5XLZbDmOGxwcHBgYWF5eBs/Ozg6W4kR1hQfCQqEwNTUF7dzcHGCDhcNh8INBAJbiRHWFB+aRkREA9vv9OjnLsuB0BTwQTk5O6thgPp9PFEWdHOz1w4OZ/IlEQvfo9prhd3d3DUqNPxaLGR9tgwAsxYkiwwvCiSAIBqjN0uk0BGApThQZvlKVT04+wvF+sBn8w8NQVZGxFCeKDH/fUn80vleUMlG1+jcIwFKcKDK8S+TBu1Uuhn98+AMBRTEbh62fwwAAAABJRU5ErkJggg==" alt="timerenabled" /> er krysset av.</figure>
+<p>Pass på at <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAAmCAIAAADV4ytcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMySURBVGhD7ZXRS9tAHMf3t6mPBZ9SSB8SQQXz0L70oXlQQQQVsVSHKKMi7kGHSkErlZkOzMPSQhEtrANbsdnadK2YyrSM4dt+l6SxuVwdK8URkx9fjsvvfr/f3efuen3z+/HBtfLg3SoP3qrzdQo3PlmBoVbj3hrZk3JrRlHD1vJYQHcpSV5fyV+ddpHCnjl5WGUkpZifVWGanpcaHQG9CSv7L/p/8P2SM+Hh54CuKFQJx+LRYICiAuxMqpTb4hnUDy2eGsHl02iQRa7g0nFBBY+WsjbLBND0JPj8KrXwDq+jiCuaB9URy5rHMvVBSbuGT1S2eR8fKuJiCHkYfmGG6w98IHIgI8/1YYRq9y/fBwPrOeh82ZjgD4vodWgVD/jRrZKZ0tTqQNkO0xcE8KzBfL7OsBsX0KmXpHNZw7uTVthI6sZSR82tjo1tXsJoG54wr5wItZcHu8D2B96sAovu7CP44j5ncOnGH1ctKd1OXts4UOU4YvRvpPj0KDp5ZFqKpc5FHHbkyUmYVxVnqLeSXtaaa6jv8LCmiX1ts5/UC3zzc5Q2TtJMeQ6eMC+Cb5d9GXi4fgw7m7xGzmYlL13e9QbfOJ2ll0R07dXSJm/Ct699XYqx+LUnzfuy1x76RcF4eBh+Q6qDB4e3GKpJgIesT/McTVF0KLq6xDHxr1qd5x4827wac28P3uuXB+9WefBulQfvVnnwNrV+/cxkMqlUKmkzcMIQBGApThQZPpORstlss4vBEARgKU4UGR5OWFXV29vbzvbs7Gx8fBxa6B8dHWEpThQZfm9vT1GUWq1mtldXVzRNDw0NDQ8P5/N5CMBSnCgy/Pb2tizL5XLZbDmOGxwcHBgYWF5eBs/Ozg6W4kR1hQfCQqEwNTUF7dzcHGCDhcNh8INBAJbiRHWFB+aRkREA9vv9OjnLsuB0BTwQTk5O6thgPp9PFEWdHOz1w4OZ/IlEQvfo9prhd3d3DUqNPxaLGR9tgwAsxYkiwwvCiSAIBqjN0uk0BGApThQZvlKVT04+wvF+sBn8w8NQVZGxFCeKDH/fUn80vleUMlG1+jcIwFKcKDK8S+TBu1Uuhn98+AMBRTEbh62fwwAAAABJRU5ErkJggg==" alt="timerenabled" /> er krysset av.</p>
 </li>
 </ul>
 </section>
@@ -213,8 +492,8 @@ En canvas er bare en komponent som inneholder grafikk, den synes ikke selv, men 
 <section class="activity" id="steg-6-fa-ting-til-a-skje">
 <h1 class="activity" id="steg-6-fa-ting-til-a-skje">Steg 6: Få ting til å skje!</h1>
 <p>Vi har nå lagt til alle delene i appen vår. Du kan teste den på mobilen din, men du vil se at ingenting skjer. For å få noe til å skje på skjermen må vi legge til logikk, altså kode.</p>
-<figure>Koden er den magiske biten som gir applikasjonen din liv. Helt enkelt forteller koden spillet hva det skal gjøre med alle tingene vi har puttet på skjermen.
-I AppInventor skriver vi kode ved hjelp av klosser. Disse klossene er kommandoer som settes sammen og ber applikasjonen å gjøre ting, for eksempel tegne et bilde eller vise en tekst.</figure>
+<p>Koden er den magiske biten som gir applikasjonen din liv. Helt enkelt forteller koden spillet hva det skal gjøre med alle tingene vi har puttet på skjermen.
+I AppInventor skriver vi kode ved hjelp av klosser. Disse klossene er kommandoer som settes sammen og ber applikasjonen å gjøre ting, for eksempel tegne et bilde eller vise en tekst.</p>
 <p>Vi skal nå lage prosedyrer til spillet. Dette er en samling av flere kommandoer som har et navn og er satt sammen før de kalles.
 Hvis du har en samling av klosser som trenger å bli kalt flere ganger i et program, kan du definere det som en prosedyre.
 Da trenger du ikke sette sammen de samme klossene flere ganger. I stedet kan du kalle dem ved å legge inn en enkelt kloss.</p>
@@ -238,7 +517,7 @@ Da trenger du ikke sette sammen de samme klossene flere ganger. I stedet kan du 
 <p>Vi vil nå plassere muldvarpen et tilfeldig sted på spillbrettet. Det gjør vi ved å sette muldvarpens X- og Y-posisjon til to forskjellige tilfeldige tall:</p>
 <p>Muldvarpens X-posisjon skal være et tilfeldig tall mellom 0 og bredden på spillbrettet. Vi passer på å trekke fra muldvarpens bredde slik at hele muldvarpen får plass på gresset.</p>
 <p>Muldvarpens Y-posisjon skal på samme måte være et tilfeldig tall mellom 0 og høyden på spillbrettet minus høyden på muldvarpen.</p>
-<figure>Klossen <code>random fraction</code> gir et tilfeldig tall mellom 0 og 1. Vi kan derfor gange denne med spillbrettets størrelse minus muldvarpens størrelse for å sette posisjonen slik vi vil.</figure>
+<p>Klossen <code>random fraction</code> gir et tilfeldig tall mellom 0 og 1. Vi kan derfor gange denne med spillbrettets størrelse minus muldvarpens størrelse for å sette posisjonen slik vi vil.</p>
 </li>
 <li>
 <p>Gå til <strong>Blocks</strong> og se hva du får fram når du trykker på de forskjellige fargene.</p>
@@ -254,14 +533,14 @@ Da trenger du ikke sette sammen de samme klossene flere ganger. I stedet kan du 
 <p>Se hvordan klossene kobler sammen. Den første delen bruker Muldvarp.X til å sette muldvarpens horisontale posisjon. Verdien den får er resultatet av å gange en tilfeldig verdi mellom 0 og 1 med resultatet av spillbrettets bredde minus muldvarpens bredde.</p>
 <ul>
 <li>
-<figure>Lag en variabel som holder styr på hvor mange poeng spilleren har. Denne kan vi kalle <code>Poeng</code>.</figure>
+<p>Lag en variabel som holder styr på hvor mange poeng spilleren har. Denne kan vi kalle <code>Poeng</code>.</p>
 <figure><img src="data:image/png;base64,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" alt="initpoeng" /></figure>
 </li>
 <li>
 <p>Lag en prosedyre som du kaller <code>OppdaterPoeng</code> på samme måte som du lagde <code>FlyttMuldvarp</code>. Velg den lilla <strong>Procedures</strong> og velg en <strong>to procedure do</strong>. Denne prosedyren skal oppdatere tekstfeltet med poengene når poengene endres.</p>
 </li>
 </ul>
-<figure>Det vi vil at skal skje er PoengTeksten blir oppdatert med en tekst satt sammen av <code>Poeng:</code> og hvor mange poeng spilleren har.</figure>
+<p>Det vi vil at skal skje er PoengTeksten blir oppdatert med en tekst satt sammen av <code>Poeng:</code> og hvor mange poeng spilleren har.</p>
 <ul>
 <li>
 <p>Legg til en kloss som setter verdien til PoengTekst sin <strong>Text</strong> verdi. Koble denne til <code>do</code> feltet i prosedyren.</p>
@@ -282,14 +561,14 @@ Da trenger du ikke sette sammen de samme klossene flere ganger. I stedet kan du 
 <section class="activity" id="steg-7-flytt-muldvarpen-etterhvert-som-tiden-gar">
 <h1 class="activity" id="steg-7-flytt-muldvarpen-etterhvert-som-tiden-gar">Steg 7: Flytt muldvarpen etterhvert som tiden går</h1>
 <p>Neste steg er å få muldvarpen til å flytte seg. Dette er hvor vi skal bruke Klokken.</p>
-<figure>Klokken har en timer, denne timeren gir beskjed med jevne mellomrom bestemt av hva vi satte i TimerInterval i klokken.
-Derfor vil den sende en hendelse hvert halvsekund, eller 500 millisekunder. Hendelser er ting som kan skje i appen din som for eksempel et tastetrykk eller at en timer går som her.</figure>
+<p>Klokken har en timer, denne timeren gir beskjed med jevne mellomrom bestemt av hva vi satte i TimerInterval i klokken.
+Derfor vil den sende en hendelse hvert halvsekund, eller 500 millisekunder. Hendelser er ting som kan skje i appen din som for eksempel et tastetrykk eller at en timer går som her.</p>
 <p>For å få noe til å skje når en hendelse sendes bruker vi en <em>event handler</em>. Denne sier hvilke klosser som skal kjøre når en hendelse sendes. Klokken vår har en kloss som er <em>event handleren</em> for timeren: <strong>when Klokken.Timer do</strong>.</p>
 <section class="check" id="sjekkliste-7">
 <h2 class="check" id="sjekkliste-7">Sjekkliste</h2>
 <ul>
 <li>
-<figure>Sett timeren til å kalle <code>FlyttMuldvarp</code>:</figure>
+<p>Sett timeren til å kalle <code>FlyttMuldvarp</code>:</p>
 <figure><img src="data:image/png;base64,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" alt="initOppdater" /></figure>
 </li>
 </ul>
@@ -351,6 +630,6 @@ Knapper har en hendelse som heter <strong>click</strong> som sendes når knappen
 <p>Prøv å sette timeren til en lavere verdi. Hva skjer?</p>
 </section>
 </section>
-</div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="73"><div class="Footer__center__3xqZ_ row" data-reactid="74"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="75">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="76">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="77"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="78"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/smn.41dee6.jpg" data-reactid="79"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="80"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="81"/></a></div></div></div></div></div>
-<script type="text/javascript" src="/beta/manifest.cc88f78a0c0bf1a7fe4c.js"></script><script type="text/javascript" src="/beta/vendor.80564a629b906f18bc40.js"></script><script type="text/javascript" src="/beta/main.bd1ff92ac496f5a74eb8.js"></script><script type="text/javascript" src="/beta/vendor2.9b2aa725e22ade101290.js"></script></body>
+</div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="72"><div class="Footer__center__3xqZ_ row" data-reactid="73"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="74">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="75">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="76"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="77"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/smn.41dee6.jpg" data-reactid="78"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="79"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="80"/></a></div></div></div></div></div>
+<script type="text/javascript" src="/beta/manifest.c8a1375a4b51160873ad.js"></script><script type="text/javascript" src="/beta/vendor.4d33583feb62410dd8bf.js"></script><script type="text/javascript" src="/beta/main.e6904f056f2126e3efe1.js"></script><script type="text/javascript" src="/beta/vendor2.102a410906fefbbe39e2.js"></script></body>
 </html>

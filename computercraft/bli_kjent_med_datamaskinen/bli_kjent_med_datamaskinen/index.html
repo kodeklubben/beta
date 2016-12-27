@@ -6,55 +6,334 @@
     <title>Kodeklubben (server)</title>
     <style type="text/css">.App__container__vvzpy {
   margin-top: 125px; }
-.NavBar__flagGroup__3f0i_ {
-  display: flex;
-  justify-content: flex-end;
-  padding: 5px; }
+.navbar-brand {
+  font-size: 1.4em; }
+
+.glyphicon-home {
+  line-height: 0;
+  font-size: 0.9em; }
+
+.NavBar__language__1xqOW {
+  margin-right: 40px; }
 
 .NavBar__flag__3cn9U {
   width: 30px;
   height: 20px;
+  float: right; }
+
+.NavBar__gadgetGroup__2VPWF {
+  display: inline;
   float: right;
-  margin-left: 5px; }
+  padding: 3px 0; }
+
+.NavBar__gadgetContainer__28a-C {
+  display: inline-block;
+  padding: 3px 5px; }
 .NavLink__linkBase__1m4Sm {
-  text-decoration: none !important;
-  font-size: 17pt; }
+  text-decoration: none !important; }
 
 .NavLink__linkStudent__1zq2x {
   color: #265732; }
 
 .NavLink__linkTeacher__25L85 {
   color: #215651; }
-.ModeIndicator__modeIndicator__gvKNO {
-  font-size: 1.2em;
-  margin-top: -15px;
-  text-align: right; }
 .Lesson__container__133OS {
-  max-width: 770px;
+  max-width: 800px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto; }
-.LevelIcon__small__KNlGu {
-  margin-right: 4px;
-  width: 15px;
-  height: 15px;
-  vertical-align: top; }
+/*
 
-.LevelIcon__medium__3A_kn {
-  margin-right: 5px;
-  width: 25px;
-  height: 25px;
-  vertical-align: top; }
+Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
 
-.LevelIcon__large__HKJS3 {
-  margin-right: 10px;
-  width: 35px;
-  height: 35px;
-  vertical-align: top; }
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic);.Footer__container__1SZrv {
+*/
+.Content__hljs__3U3C5 {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #000;
+  background: #fff;
+  -webkit-text-size-adjust: none; }
+
+.Content__hljs-subst__2pbFW,
+.Content__hljs-title__1NRbS,
+.Content__json__21Jue .Content__hljs-value__343o4 {
+  font-weight: normal;
+  color: #000; }
+
+.Content__hljs-comment__2_Ezx,
+.Content__diff__QsLYW .Content__hljs-header__1fn5a {
+  color: #808080;
+  font-style: italic; }
+
+.Content__hljs-annotation__21ezL,
+.Content__hljs-decorator__y8Hnz,
+.Content__hljs-preprocessor__SbnY0,
+.Content__hljs-pragma___bqi1,
+.Content__hljs-doctype__-M66r,
+.Content__hljs-pi__2NgN6,
+.Content__hljs-chunk__2xDhN,
+.Content__hljs-shebang__14V3t,
+.Content__apache__3xP74 .Content__hljs-cbracket__fbjQf,
+.Content__hljs-prompt__1NSVh,
+.Content__http__1ZR2f .Content__hljs-title__1NRbS {
+  color: #808000; }
+
+.Content__hljs-tag__3JFP3,
+.Content__hljs-pi__2NgN6 {
+  background: #efefef; }
+
+.Content__hljs-tag__3JFP3 .Content__hljs-title__1NRbS,
+.Content__hljs-id__3GjiP,
+.Content__hljs-attr_selector__3cHPU,
+.Content__hljs-pseudo__xmG62,
+.Content__hljs-literal__7rtGP,
+.Content__hljs-keyword__1gFtb,
+.Content__hljs-hexcolor__2FBf_,
+.Content__css___OD9F .Content__hljs-function__2ly4F,
+.Content__ini__H7bDy .Content__hljs-title__1NRbS,
+.Content__css___OD9F .Content__hljs-class__3SPga,
+.Content__hljs-list__x69Y5 .Content__hljs-keyword__1gFtb,
+.Content__nginx___Y9T- .Content__hljs-title__1NRbS,
+.Content__tex__cVFtD .Content__hljs-command__Ttg93,
+.Content__hljs-request__2L8gj,
+.Content__hljs-status__10G4L {
+  font-weight: bold;
+  color: #000080; }
+
+.Content__hljs-attribute__NlSqs,
+.Content__hljs-rule__KJX0L .Content__hljs-keyword__1gFtb,
+.Content__hljs-number__1Gqqo,
+.Content__hljs-date__6ZK9h,
+.Content__hljs-regexp__lxJZu,
+.Content__tex__cVFtD .Content__hljs-special__1jUrZ {
+  font-weight: bold;
+  color: #0000ff; }
+
+.Content__hljs-number__1Gqqo,
+.Content__hljs-regexp__lxJZu {
+  font-weight: normal; }
+
+.Content__hljs-string__2DCAo,
+.Content__hljs-value__343o4,
+.Content__hljs-filter__FaZco .Content__hljs-argument__1C_kY,
+.Content__css___OD9F .Content__hljs-function__2ly4F .Content__hljs-params__10Fah,
+.Content__apache__3xP74 .Content__hljs-tag__3JFP3 {
+  color: #008000;
+  font-weight: bold; }
+
+.Content__hljs-symbol__3Phin,
+.Content__ruby__2m616 .Content__hljs-symbol__3Phin .Content__hljs-string__2DCAo,
+.Content__hljs-char__2s88f,
+.Content__tex__cVFtD .Content__hljs-formula__1EouS {
+  color: #000;
+  background: #d0eded;
+  font-style: italic; }
+
+.Content__hljs-doctag__1_4v0 {
+  text-decoration: underline; }
+
+.Content__hljs-variable__2B6Js,
+.Content__hljs-envvar__2AHKV,
+.Content__apache__3xP74 .Content__hljs-sqbracket__twdMZ,
+.Content__nginx___Y9T- .Content__hljs-built_in__3G4V1,
+.Content__hljs-name__2Cvim {
+  color: #660e7a; }
+
+.Content__hljs-addition__3aghy {
+  background: #baeeba; }
+
+.Content__hljs-deletion__fahjb {
+  background: #ffc8bd; }
+
+.Content__diff__QsLYW .Content__hljs-change__3JIUJ {
+  background: #bccff9; }
+
+figure > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px; }
+
+.Content__check__sbZVW ul,
+.Content__check__sbZVW ol,
+.Content__activity__12AJC ul, section.Content__activity__12AJC .Content__subsection__3XzlJ h2 ul,
+.Content__activity__12AJC ol, section.Content__activity__12AJC .Content__subsection__3XzlJ h2 ol,
+.Content__save__3P_NU ul,
+.Content__save__3P_NU ol {
+  padding: 0;
+  margin: 0 0 20px; }
+
+.Content__check__sbZVW li,
+.Content__activity__12AJC li, section.Content__activity__12AJC .Content__subsection__3XzlJ h2 li,
+.Content__save__3P_NU li {
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 45px; }
+
+.Content__check__sbZVW li::before,
+.Content__activity__12AJC li::before, section.Content__activity__12AJC .Content__subsection__3XzlJ h2 li::before,
+.Content__save__3P_NU li::before {
+  content: " ";
+  border-radius: 8px;
+  border: 3px solid #abdbea;
+  padding: 10px;
+  float: left;
+  margin-left: -40px; }
+
+pre.Content__blocks__1k922,
+code.Content__b__2nfHe {
+  background-color: inherit;
+  border: 0; }
+
+pre > code {
+  background-color: transparent; }
+
+section.Content__activity__12AJC h1, section.Content__activity__12AJC .Content__subsection__3XzlJ h2 {
+  color: #fff;
+  background: #349946;
+  padding: 10px;
+  border-radius: 5px; }
+
+section.Content__activity__12AJC .Content__subsection__3XzlJ h2 {
+  font-weight: 300; }
+
+section.Content__check__sbZVW h2 {
+  background-image: url(/beta/15ac74fbc78a1df119501938bf49e877.svg);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  padding-top: 4px;
+  padding-bottom: 9px;
+  padding-left: 50px; }
+
+section.Content__try__9Al91 {
+  background: #abdbea;
+  border-radius: 10px;
+  padding: 1px 20px 10px; }
+  section.Content__try__9Al91 code {
+    background-color: #fff;
+    color: #007cc9; }
+  section.Content__try__9Al91 li::before {
+    border: 3px solid #fff; }
+
+section.Content__protip__3oM5h,
+section.Content__tip__2hJcQ {
+  border: 3px solid #ff7f00;
+  background: #fff99d;
+  border-radius: 12px;
+  padding: 0 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+section.Content__flag__1GjEr {
+  border-top: 3px dotted #e6862d;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  section.Content__flag__1GjEr h2 {
+    color: #36a137;
+    background-image: url(/beta/4a58cdc0f6e0e74bb219124bb5bde3b7.svg);
+    background-position: 0 10px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 60px; }
+
+section.Content__save__3P_NU {
+  border-top: 3px solid #245a9a;
+  margin: 20px 0; }
+  section.Content__save__3P_NU h2 {
+    color: #245a9a;
+    background-image: url(/beta/0a8afb9f53ba0352c6ae27f9a35fe08a.svg);
+    background-position: 0 10px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 50px; }
+
+section.Content__challenge__2LUyO {
+  border: 3px solid #00b1da;
+  border-radius: 12px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  section.Content__challenge__2LUyO h2 {
+    color: #fff;
+    background: #00b1da;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0; }
+  section.Content__challenge__2LUyO > * {
+    padding: 0 20px; }
+
+code.Content__blockmotion__2TNTp {
+  background-color: #505fd7; }
+
+code.Content__blocklooks__NJdsX {
+  background-color: #9b33d9; }
+
+code.Content__blocksound__wb8Zz {
+  background-color: #d000c2; }
+
+code.Content__blockpen__1tOwq {
+  background-color: #00a16f; }
+
+code.Content__blockdata__1wt1I {
+  background-color: #ff7500; }
+
+code.Content__blockevents__r08uu {
+  background-color: #d38117; }
+
+code.Content__blockcontrol__3yrIr {
+  background-color: #e9aa00; }
+
+code.Content__blocksensing__2mkm9 {
+  background-color: #00a3e6; }
+
+code.Content__blockoperators__x9p0o {
+  background-color: #00c114; }
+
+code.Content__blockmoreblocks__3YKWS {
+  background-color: #71009a; }
+
+code.Content__blockmotion__2TNTp, code.Content__blocklooks__NJdsX, code.Content__blocksound__wb8Zz, code.Content__blockpen__1tOwq, code.Content__blockdata__1wt1I, code.Content__blockevents__r08uu, code.Content__blockcontrol__3yrIr, code.Content__blocksensing__2mkm9, code.Content__blockoperators__x9p0o, code.Content__blockmoreblocks__3YKWS {
+  color: #fff; }
+
+@media aural, braille, handheld, projection, screen, tty, tv, embossed {
+  pre > code {
+    word-wrap: normal;
+    white-space: pre; } }
+
+.Content__video-container__2gCjN {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 30px 0 60px; }
+  .Content__video-container__2gCjN iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+.LevelIcon__levelIcon__2LO2- {
+  margin-right: 0.3em;
+  width: 0.75em;
+  height: 0.75em;
+  vertical-align: baseline; }
+.Footer__container__1SZrv {
   margin-top: 100px;
   padding-bottom: 20px;
   font-weight: 300;
-  font-size: 15pt;
   font-family: "Roboto", "Verdana", sans-serif; }
   .Footer__container__1SZrv a {
     text-decoration: none; }
@@ -102,9 +381,9 @@
 .Footer__img__25Ink:hover {
   transform: scale(1.2); }
 </style>
-<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-16x16.png"><link rel="shortcut icon" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1536x2008.png"><link href="/beta/vendor2.9b2aa725e22ade101290.css" rel="stylesheet"></head>
+<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-16x16.png"><link rel="shortcut icon" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1536x2008.png"><link href="/beta/vendor2.102a410906fefbbe39e2.css" rel="stylesheet"></head>
 <body>
-    <div id="app"><div><div class="App__container__vvzpy" data-reactroot="" data-reactid="1" data-react-checksum="2033844881"><div class="container-fluid" data-reactid="2"><div class="row" data-reactid="3"><nav class="navbar navbar-default navbar-fixed-top" data-reactid="4"><div class="container-fluid" data-reactid="5"><div class="btn-language-dropdown pull-right dropdown btn-group" data-reactid="6"><button class="dropdown-toggle btn-language-student btn-language btn btn-default" id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" data-reactid="7"><span data-reactid="8"><!-- react-text: 9 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="10"/></span></button><ul class="dropdown-menu" role="menu" aria-labelledby="language-dropdown" data-reactid="11"><li role="presentation" class="" data-reactid="12"><a role="menuitem" href="" tabindex="-1" data-reactid="13"><span data-reactid="14"><!-- react-text: 15 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="16"/></span></a></li><li role="presentation" class="" data-reactid="17"><a role="menuitem" href="" tabindex="-1" data-reactid="18"><span data-reactid="19"><!-- react-text: 20 -->Norsk nynorsk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="21"/></span></a></li><li role="presentation" class="" data-reactid="22"><a role="menuitem" href="" tabindex="-1" data-reactid="23"><span data-reactid="24"><!-- react-text: 25 -->Svenska<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="26"/></span></a></li><li role="presentation" class="" data-reactid="27"><a role="menuitem" href="" tabindex="-1" data-reactid="28"><span data-reactid="29"><!-- react-text: 30 -->Dansk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="31"/></span></a></li></ul></div><div class="navbar-header" data-reactid="32"><span class="navbar-brand" data-reactid="33"><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/" data-reactid="34"><span class="glyphicon glyphicon-home" data-reactid="35"></span></a><span data-reactid="36"><!-- react-text: 37 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/computercraft" data-reactid="38">computercraft</a></span><span class="hidden-xs" data-reactid="39"><!-- react-text: 40 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm active" href="/computercraft/bli_kjent_med_datamaskinen/bli_kjent_med_datamaskinen" data-reactid="41">bli kjent med datamaskinen</a></span></span><button type="button" class="navbar-toggle collapsed" data-reactid="42"><span class="sr-only" data-reactid="43">Toggle navigation</span><span class="icon-bar" data-reactid="44"></span><span class="icon-bar" data-reactid="45"></span><span class="icon-bar" data-reactid="46"></span></button></div><div class="navbar-collapse collapse" data-reactid="47"><div class="navbar-form navbar-right" data-reactid="48"><div class="form-group" data-reactid="49"><input type="text" placeholder="Søk" class="form-control" data-reactid="50"/></div><!-- react-text: 51 --> <!-- /react-text --><div class="btn-toggle" data-reactid="52"><div data-reactid="53">Velg modus:</div><div class="btn-group btn-group" data-reactid="54"><button class="btn-student-nav active btn btn-default" type="button" data-reactid="55">ELEV</button><button class="btn-teacher-nav btn btn-default" type="button" data-reactid="56">LÆRER</button></div></div></div></div></div></nav></div><div class="row" data-reactid="57"><div class="col-xs-12" data-reactid="58"><div class="ModeIndicator__modeIndicator__gvKNO" data-reactid="59"><!-- react-text: 60 -->Du er i <!-- /react-text --><span class="text-student" data-reactid="61">elevmodus</span></div></div></div></div><div class="Lesson__container__133OS" data-reactid="62"><h1 data-reactid="63"><img class="LevelIcon__large__HKJS3" src="/beta/d6aa434b87e479c5f20f9a47e8aca3db.svg" data-reactid="64"/><!-- react-text: 65 -->Bli Kjent med Datamaskinen<!-- /react-text --><!-- react-text: 66 --> - Level <!-- /react-text --><!-- react-text: 67 -->1<!-- /react-text --></h1><p data-reactid="68"><i data-reactid="69"><!-- react-text: 70 -->av <!-- /react-text --><!-- react-text: 71 -->Geir Arne Hjelle<!-- /react-text --></i></p><div data-reactid="72"><section class="intro" id="introduksjon">
+    <div id="app"><div><div class="App__container__vvzpy" data-reactroot="" data-reactid="1" data-react-checksum="-941749859"><div class="container-fluid" data-reactid="2"><div class="row" data-reactid="3"><nav class="navbar navbar-default navbar-fixed-top" data-reactid="4"><div class="container-fluid" data-reactid="5"><div class="navbar-header" data-reactid="6"><span class="navbar-brand" data-reactid="7"><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/" data-reactid="8"><span class="glyphicon glyphicon-home" data-reactid="9"></span></a><span data-reactid="10"><!-- react-text: 11 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/computercraft" data-reactid="12">computercraft</a></span><span class="hidden-xs" data-reactid="13"><!-- react-text: 14 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm active" href="/computercraft/bli_kjent_med_datamaskinen/bli_kjent_med_datamaskinen" data-reactid="15">bli kjent med datamaskinen</a></span></span><button type="button" class="navbar-toggle collapsed" data-reactid="16"><span class="sr-only" data-reactid="17">Toggle navigation</span><span class="icon-bar" data-reactid="18"></span><span class="icon-bar" data-reactid="19"></span><span class="icon-bar" data-reactid="20"></span></button></div><div class="navbar-collapse collapse" data-reactid="21"><div class="NavBar__gadgetGroup__2VPWF" data-reactid="22"><div class="NavBar__gadgetContainer__28a-C" data-reactid="23"><div class="dropdown btn-group btn-group-language-student" data-reactid="24"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="25"><div data-reactid="26"><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="27"/><div class="NavBar__language__1xqOW" data-reactid="28">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu" aria-labelledby="language-dropdown" data-reactid="29"><li role="presentation" class="active" data-reactid="30"><a role="menuitem" tabindex="-1" href="#" data-reactid="31"><div data-reactid="32"><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="33"/><div class="NavBar__language__1xqOW" data-reactid="34">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="35"><a role="menuitem" tabindex="-1" href="#" data-reactid="36"><div data-reactid="37"><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="38"/><div class="NavBar__language__1xqOW" data-reactid="39">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="40"><a role="menuitem" tabindex="-1" href="#" data-reactid="41"><div data-reactid="42"><img class="NavBar__flag__3cn9U" src="/beta/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="43"/><div class="NavBar__language__1xqOW" data-reactid="44">Svenska</div></div></a></li><li role="presentation" class="" data-reactid="45"><a role="menuitem" tabindex="-1" href="#" data-reactid="46"><div data-reactid="47"><img class="NavBar__flag__3cn9U" src="/beta/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="48"/><div class="NavBar__language__1xqOW" data-reactid="49">Dansk</div></div></a></li></ul></div></div><div class="NavBar__gadgetContainer__28a-C" data-reactid="50"><div class="dropdown btn-group btn-group-student" data-reactid="51"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="52"><!-- react-text: 53 -->Modus: ELEV<!-- /react-text --></button><ul role="menu" class="dropdown-menu" aria-labelledby="mode-dropdown" data-reactid="54"><li role="presentation" class="active" data-reactid="55"><a role="menuitem" tabindex="-1" href="#" data-reactid="56">ELEV</a></li><li role="presentation" class="" data-reactid="57"><a role="menuitem" tabindex="-1" href="#" data-reactid="58">LÆRER</a></li></ul></div></div><div class="NavBar__gadgetContainer__28a-C" data-reactid="59"><input type="text" placeholder="Søk" class="form-control" data-reactid="60"/></div></div></div></div></nav></div></div><div class="Lesson__container__133OS" data-reactid="61"><h1 data-reactid="62"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/d6aa434b87e479c5f20f9a47e8aca3db.svg" data-reactid="63"/><!-- react-text: 64 -->Bli Kjent med Datamaskinen<!-- /react-text --><!-- react-text: 65 --> - Level <!-- /react-text --><!-- react-text: 66 -->1<!-- /react-text --></h1><p data-reactid="67"><i data-reactid="68"><!-- react-text: 69 -->av <!-- /react-text --><!-- react-text: 70 -->Geir Arne Hjelle<!-- /react-text --></i></p><div data-reactid="71"><section class="intro" id="introduksjon">
 <h1 class="intro" id="introduksjon">Introduksjon</h1>
 <p>Vi begynner med å bygge en enkel datamaskin. Etter å ha brukt litt tid
 på å bli kjent med hvordan datamaskinen virker, bruker vi den til å
@@ -113,14 +392,14 @@ låse opp en dør ved hjelp av passord.</p>
 </section>
 <section class="activity" id="steg-1-var-forste-datamaskin">
 <h1 class="activity" id="steg-1-var-forste-datamaskin">Steg 1: Vår første datamaskin</h1>
-<figure><em>Vi begynner med å lage en datamaskin.</em></figure>
+<p><em>Vi begynner med å lage en datamaskin.</em></p>
 <p>I utgangspunktet er det mye enklere å starte i <em>Creative Mode</em> når vi
 skal lære å bruke datamaskinene, siden vi da slipper å bruke tid på å
 samle materiale og slåss mot monstre. Vi vil derfor i fortsettelsen
 anta at du er i <em>Creative Mode</em>, og kan plukke akkurat det du trenger
 i inventory'et ditt.</p>
-<figure>Men først, for å vise at en datamaskin kan bygges på vanlig måte i
-Minecraft:</figure>
+<p>Men først, for å vise at en datamaskin kan bygges på vanlig måte i
+Minecraft:</p>
 <section class="check" id="sjekkliste">
 <h2 class="check" id="sjekkliste">Sjekkliste</h2>
 <ul>
@@ -133,12 +412,12 @@ Minecraft:</figure>
 <figure><img src="data:image/png;base64,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" alt="" /></figure>
 </li>
 <li>
-<figure>Legg den nye datamaskinen i den nederste raden i inventory'et ditt,
-slik at du kan ta den på hånden. Lukk inventory'et.</figure>
+<p>Legg den nye datamaskinen i den nederste raden i inventory'et ditt,
+slik at du kan ta den på hånden. Lukk inventory'et.</p>
 </li>
 <li>
-<figure>Bruk talltastene til å velge datamaskinen, og høyreklikk for å lage
-en datamaskin.</figure>
+<p>Bruk talltastene til å velge datamaskinen, og høyreklikk for å lage
+en datamaskin.</p>
 </li>
 </ul>
 <p>I <em>Creative Mode</em> kan du også få tak i datamaskiner ved å trykke <code>E</code>,
@@ -156,23 +435,23 @@ datamaskinen med.</p>
 <h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
 <ul>
 <li>
-<figure>Prøv å skriv <code>help</code> og trykk enter.</figure>
+<p>Prøv å skriv <code>help</code> og trykk enter.</p>
 <p>Du får nå se noen tips om hvordan du kan finne ut mer om
 datamaskinen. For eksempel kan du skrive <code>programs</code> for å se en
 liste over hvilke programmer som er på datamaskinen, eller <code>help programming</code> for å få noen tips til hvordan man programmerer
 datamaskinen.</p>
 </li>
 <li>
-<figure>Skriv <code>programs</code> og trykk enter.</figure>
-<figure>Mange av disse programmene er enkle programmer som lar deg undersøke
-datamaskinen nærmere. Vi vil se på noen av dem i en senere leksjon.</figure>
+<p>Skriv <code>programs</code> og trykk enter.</p>
+<p>Mange av disse programmene er enkle programmer som lar deg undersøke
+datamaskinen nærmere. Vi vil se på noen av dem i en senere leksjon.</p>
 </li>
 </ul>
 </section>
 </section>
 <section class="activity" id="steg-2-vart-forste-program">
 <h1 class="activity" id="steg-2-vart-forste-program">Steg 2: Vårt første program</h1>
-<figure><em>Det er nå på tide at vi skriver vårt første program.</em></figure>
+<p><em>Det er nå på tide at vi skriver vårt første program.</em></p>
 <p>Det er en lang tradisjon blant programmerere at det første programmet
 de lager når de lærer et nytt språk skriver en trivelig melding til
 skjermen. Vi følger den tradisjonen og begynner med et program som
@@ -206,8 +485,8 @@ trykker enter.</p>
 </ul>
 <section class="try" id="prov-selv">
 <h3 class="try" id="prov-selv">Prøv selv</h3>
-<figure>Klarer du å endre på programmet slik at det for eksempel sier hei til
-deg, eller kanskje til de som sitter ved siden av deg?</figure>
+<p>Klarer du å endre på programmet slik at det for eksempel sier hei til
+deg, eller kanskje til de som sitter ved siden av deg?</p>
 <p>Prøv å skriv <code>edit heiverden</code> en gang til. Da åpner programmet ditt
 seg igjen, og du kan endre på det slik at det sier noe annet. Som
 tidligere må du bruke <em>Ctrl</em>-tasten for å gå til menyen slik at du kan
@@ -232,8 +511,8 @@ universitetet i Rio de Janeiro brukte de tidligere et språk som het
 </section>
 <section class="check" id="sjekkliste-4">
 <h2 class="check" id="sjekkliste-4">Sjekkliste</h2>
-<figure>Vi skal nå prøve å skrive noen kommandoer direkte i Lua. Dette er en
-fin måte å teste enkle ting på.</figure>
+<p>Vi skal nå prøve å skrive noen kommandoer direkte i Lua. Dette er en
+fin måte å teste enkle ting på.</p>
 <ul>
 <li>
 <p>Skriv <code>lua</code> og trykk enter. Dette starter en <em>Lua-tolker</em> som vil
@@ -251,7 +530,7 @@ eksempel <code>17 - 8</code>, <code>3 * 4</code> eller <code>22 / 7</code>. Kjen
 hver av disse betyr?</p>
 </li>
 <li>
-<figure>Skriv <code>math.random(1, 10)</code> og trykk enter.</figure>
+<p>Skriv <code>math.random(1, 10)</code> og trykk enter.</p>
 <p>Dette skriver ut et tilfeldig tall mellom 1 og 10. Dette er et
 eksempel på å kalle en <em>funksjon</em>, noe vi gjør ofte når vi
 programmerer. I dette tilfellet heter funksjonen <code>random</code> og den
@@ -285,7 +564,7 @@ spill. Underveis vil vi også lære litt om tester og løkker.</em></p>
 <h2 class="check" id="sjekkliste-6">Sjekkliste</h2>
 <ul>
 <li>
-<figure>Start et nytt program ved å skrive <code>edit mattetest</code> og trykk enter.</figure>
+<p>Start et nytt program ved å skrive <code>edit mattetest</code> og trykk enter.</p>
 </li>
 <li>
 <p>Skriv inn følgende program</p>
@@ -297,7 +576,7 @@ spill. Underveis vil vi også lære litt om tester og løkker.</em></p>
 vi setter sammen tekst.</p>
 </li>
 <li>
-<figure>Lagre og avslutt editoren. Kjør programmet ved å skrive <code>mattetest</code>.</figure>
+<p>Lagre og avslutt editoren. Kjør programmet ved å skrive <code>mattetest</code>.</p>
 <p>Blir du spurt om svaret på et gangestykke? Spør den om et annet
 gangestykke om du kjører programmet en gang til? Hva skjer om du
 prøver å svare?</p>
@@ -349,8 +628,8 @@ svar = read()
     <span class="hljs-built_in">print</span>(<span class="hljs-string">'Nei, det riktige svaret er '</span> .. tall1 * tall2)
 <span class="hljs-keyword">end</span>
 </code></pre>
-<figure>Kjør programmet igjen. Hva skjer når du svarer riktig? Hva skjer
-når du svarer feil? Skjønner du hvorfor?</figure>
+<p>Kjør programmet igjen. Hva skjer når du svarer riktig? Hva skjer
+når du svarer feil? Skjønner du hvorfor?</p>
 </li>
 <li>
 <p>Det er kjedelig at vi hele tiden må starte programmet på nytt. Vi
@@ -404,12 +683,12 @@ vil vi endre verdien av variabelen etterhvert som svarer riktig.</p>
 </ul>
 <section class="try" id="prov-selv-2">
 <h3 class="try" id="prov-selv-2">Prøv selv</h3>
-<figure>Kan du endre programmet slik at det spør om andre typer mattestykker?
-For eksempel plusstykker, minusstykker eller delestykker?</figure>
+<p>Kan du endre programmet slik at det spør om andre typer mattestykker?
+For eksempel plusstykker, minusstykker eller delestykker?</p>
 <p>For minusstykker, hvordan kan du lage tilfeldige <code>tall2</code> på en slik
 måte at <code>tall2</code> aldri er større enn <code>tall1</code>?</p>
-<figure>For delestykker, hvordan kan du enkelt lage stykker som du vet går
-opp, det vil si slik at svaret blir et helt tall?</figure>
+<p>For delestykker, hvordan kan du enkelt lage stykker som du vet går
+opp, det vil si slik at svaret blir et helt tall?</p>
 <p>Kan du bruke <code>math.random</code> og passende <code>if</code>-tester for å tilfeldig
 velge hvilken type mattestykke det spørres om?</p>
 </section>
@@ -436,7 +715,7 @@ siden av døren. Det skal se omtrent slik ut:</p>
 <p>Start datamaskinen.</p>
 </li>
 <li>
-<figure>Lag et nytt program som heter <code>passord</code>:</figure>
+<p>Lag et nytt program som heter <code>passord</code>:</p>
 <pre><code class="language-lua"><span class="hljs-keyword">local</span> passord = <span class="hljs-string">'kodeklubben'</span>
 
 <span class="hljs-keyword">while</span> <span class="hljs-keyword">true</span> <span class="hljs-keyword">do</span>
@@ -459,8 +738,8 @@ en <em>evig løkke</em>. Dette programmet vil fortsette å spørre oss om
 passordet for alltid!</p>
 </li>
 <li>
-<figure>Kjør programmet. Oppfører programmet seg slik du hadde trodd? Husker
-du passordet?</figure>
+<p>Kjør programmet. Oppfører programmet seg slik du hadde trodd? Husker
+du passordet?</p>
 </li>
 </ul>
 <section class="protip" id="avslutte-programmer">
@@ -540,6 +819,6 @@ skrevet. Aktiver fellen om tre gale passord skrives på rad.</p>
 </section>
 </section>
 </section>
-</div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="73"><div class="Footer__center__3xqZ_ row" data-reactid="74"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="75">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="76">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="77"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="78"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/smn.41dee6.jpg" data-reactid="79"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="80"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="81"/></a></div></div></div></div></div>
-<script type="text/javascript" src="/beta/manifest.cc88f78a0c0bf1a7fe4c.js"></script><script type="text/javascript" src="/beta/vendor.80564a629b906f18bc40.js"></script><script type="text/javascript" src="/beta/main.bd1ff92ac496f5a74eb8.js"></script><script type="text/javascript" src="/beta/vendor2.9b2aa725e22ade101290.js"></script></body>
+</div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="72"><div class="Footer__center__3xqZ_ row" data-reactid="73"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="74">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="75">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="76"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="77"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/smn.41dee6.jpg" data-reactid="78"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="79"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="80"/></a></div></div></div></div></div>
+<script type="text/javascript" src="/beta/manifest.c8a1375a4b51160873ad.js"></script><script type="text/javascript" src="/beta/vendor.4d33583feb62410dd8bf.js"></script><script type="text/javascript" src="/beta/main.e6904f056f2126e3efe1.js"></script><script type="text/javascript" src="/beta/vendor2.102a410906fefbbe39e2.js"></script></body>
 </html>
