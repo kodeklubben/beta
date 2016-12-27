@@ -6,55 +6,334 @@
     <title>Kodeklubben (server)</title>
     <style type="text/css">.App__container__vvzpy {
   margin-top: 125px; }
-.NavBar__flagGroup__3f0i_ {
-  display: flex;
-  justify-content: flex-end;
-  padding: 5px; }
+.navbar-brand {
+  font-size: 1.4em; }
+
+.glyphicon-home {
+  line-height: 0;
+  font-size: 0.9em; }
+
+.NavBar__language__1xqOW {
+  margin-right: 40px; }
 
 .NavBar__flag__3cn9U {
   width: 30px;
   height: 20px;
+  float: right; }
+
+.NavBar__gadgetGroup__2VPWF {
+  display: inline;
   float: right;
-  margin-left: 5px; }
+  padding: 3px 0; }
+
+.NavBar__gadgetContainer__28a-C {
+  display: inline-block;
+  padding: 3px 5px; }
 .NavLink__linkBase__1m4Sm {
-  text-decoration: none !important;
-  font-size: 17pt; }
+  text-decoration: none !important; }
 
 .NavLink__linkStudent__1zq2x {
   color: #265732; }
 
 .NavLink__linkTeacher__25L85 {
   color: #215651; }
-.ModeIndicator__modeIndicator__gvKNO {
-  font-size: 1.2em;
-  margin-top: -15px;
-  text-align: right; }
 .Lesson__container__133OS {
-  max-width: 770px;
+  max-width: 800px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto; }
-.LevelIcon__small__KNlGu {
-  margin-right: 4px;
-  width: 15px;
-  height: 15px;
-  vertical-align: top; }
+/*
 
-.LevelIcon__medium__3A_kn {
-  margin-right: 5px;
-  width: 25px;
-  height: 25px;
-  vertical-align: top; }
+Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
 
-.LevelIcon__large__HKJS3 {
-  margin-right: 10px;
-  width: 35px;
-  height: 35px;
-  vertical-align: top; }
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic);.Footer__container__1SZrv {
+*/
+.Content__hljs__3U3C5 {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #000;
+  background: #fff;
+  -webkit-text-size-adjust: none; }
+
+.Content__hljs-subst__2pbFW,
+.Content__hljs-title__1NRbS,
+.Content__json__21Jue .Content__hljs-value__343o4 {
+  font-weight: normal;
+  color: #000; }
+
+.Content__hljs-comment__2_Ezx,
+.Content__diff__QsLYW .Content__hljs-header__1fn5a {
+  color: #808080;
+  font-style: italic; }
+
+.Content__hljs-annotation__21ezL,
+.Content__hljs-decorator__y8Hnz,
+.Content__hljs-preprocessor__SbnY0,
+.Content__hljs-pragma___bqi1,
+.Content__hljs-doctype__-M66r,
+.Content__hljs-pi__2NgN6,
+.Content__hljs-chunk__2xDhN,
+.Content__hljs-shebang__14V3t,
+.Content__apache__3xP74 .Content__hljs-cbracket__fbjQf,
+.Content__hljs-prompt__1NSVh,
+.Content__http__1ZR2f .Content__hljs-title__1NRbS {
+  color: #808000; }
+
+.Content__hljs-tag__3JFP3,
+.Content__hljs-pi__2NgN6 {
+  background: #efefef; }
+
+.Content__hljs-tag__3JFP3 .Content__hljs-title__1NRbS,
+.Content__hljs-id__3GjiP,
+.Content__hljs-attr_selector__3cHPU,
+.Content__hljs-pseudo__xmG62,
+.Content__hljs-literal__7rtGP,
+.Content__hljs-keyword__1gFtb,
+.Content__hljs-hexcolor__2FBf_,
+.Content__css___OD9F .Content__hljs-function__2ly4F,
+.Content__ini__H7bDy .Content__hljs-title__1NRbS,
+.Content__css___OD9F .Content__hljs-class__3SPga,
+.Content__hljs-list__x69Y5 .Content__hljs-keyword__1gFtb,
+.Content__nginx___Y9T- .Content__hljs-title__1NRbS,
+.Content__tex__cVFtD .Content__hljs-command__Ttg93,
+.Content__hljs-request__2L8gj,
+.Content__hljs-status__10G4L {
+  font-weight: bold;
+  color: #000080; }
+
+.Content__hljs-attribute__NlSqs,
+.Content__hljs-rule__KJX0L .Content__hljs-keyword__1gFtb,
+.Content__hljs-number__1Gqqo,
+.Content__hljs-date__6ZK9h,
+.Content__hljs-regexp__lxJZu,
+.Content__tex__cVFtD .Content__hljs-special__1jUrZ {
+  font-weight: bold;
+  color: #0000ff; }
+
+.Content__hljs-number__1Gqqo,
+.Content__hljs-regexp__lxJZu {
+  font-weight: normal; }
+
+.Content__hljs-string__2DCAo,
+.Content__hljs-value__343o4,
+.Content__hljs-filter__FaZco .Content__hljs-argument__1C_kY,
+.Content__css___OD9F .Content__hljs-function__2ly4F .Content__hljs-params__10Fah,
+.Content__apache__3xP74 .Content__hljs-tag__3JFP3 {
+  color: #008000;
+  font-weight: bold; }
+
+.Content__hljs-symbol__3Phin,
+.Content__ruby__2m616 .Content__hljs-symbol__3Phin .Content__hljs-string__2DCAo,
+.Content__hljs-char__2s88f,
+.Content__tex__cVFtD .Content__hljs-formula__1EouS {
+  color: #000;
+  background: #d0eded;
+  font-style: italic; }
+
+.Content__hljs-doctag__1_4v0 {
+  text-decoration: underline; }
+
+.Content__hljs-variable__2B6Js,
+.Content__hljs-envvar__2AHKV,
+.Content__apache__3xP74 .Content__hljs-sqbracket__twdMZ,
+.Content__nginx___Y9T- .Content__hljs-built_in__3G4V1,
+.Content__hljs-name__2Cvim {
+  color: #660e7a; }
+
+.Content__hljs-addition__3aghy {
+  background: #baeeba; }
+
+.Content__hljs-deletion__fahjb {
+  background: #ffc8bd; }
+
+.Content__diff__QsLYW .Content__hljs-change__3JIUJ {
+  background: #bccff9; }
+
+figure > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px; }
+
+.Content__check__sbZVW ul,
+.Content__check__sbZVW ol,
+.Content__activity__12AJC ul, section.Content__activity__12AJC .Content__subsection__3XzlJ h2 ul,
+.Content__activity__12AJC ol, section.Content__activity__12AJC .Content__subsection__3XzlJ h2 ol,
+.Content__save__3P_NU ul,
+.Content__save__3P_NU ol {
+  padding: 0;
+  margin: 0 0 20px; }
+
+.Content__check__sbZVW li,
+.Content__activity__12AJC li, section.Content__activity__12AJC .Content__subsection__3XzlJ h2 li,
+.Content__save__3P_NU li {
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 45px; }
+
+.Content__check__sbZVW li::before,
+.Content__activity__12AJC li::before, section.Content__activity__12AJC .Content__subsection__3XzlJ h2 li::before,
+.Content__save__3P_NU li::before {
+  content: " ";
+  border-radius: 8px;
+  border: 3px solid #abdbea;
+  padding: 10px;
+  float: left;
+  margin-left: -40px; }
+
+pre.Content__blocks__1k922,
+code.Content__b__2nfHe {
+  background-color: inherit;
+  border: 0; }
+
+pre > code {
+  background-color: transparent; }
+
+section.Content__activity__12AJC h1, section.Content__activity__12AJC .Content__subsection__3XzlJ h2 {
+  color: #fff;
+  background: #349946;
+  padding: 10px;
+  border-radius: 5px; }
+
+section.Content__activity__12AJC .Content__subsection__3XzlJ h2 {
+  font-weight: 300; }
+
+section.Content__check__sbZVW h2 {
+  background-image: url(/beta/15ac74fbc78a1df119501938bf49e877.svg);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  padding-top: 4px;
+  padding-bottom: 9px;
+  padding-left: 50px; }
+
+section.Content__try__9Al91 {
+  background: #abdbea;
+  border-radius: 10px;
+  padding: 1px 20px 10px; }
+  section.Content__try__9Al91 code {
+    background-color: #fff;
+    color: #007cc9; }
+  section.Content__try__9Al91 li::before {
+    border: 3px solid #fff; }
+
+section.Content__protip__3oM5h,
+section.Content__tip__2hJcQ {
+  border: 3px solid #ff7f00;
+  background: #fff99d;
+  border-radius: 12px;
+  padding: 0 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+section.Content__flag__1GjEr {
+  border-top: 3px dotted #e6862d;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  section.Content__flag__1GjEr h2 {
+    color: #36a137;
+    background-image: url(/beta/4a58cdc0f6e0e74bb219124bb5bde3b7.svg);
+    background-position: 0 10px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 60px; }
+
+section.Content__save__3P_NU {
+  border-top: 3px solid #245a9a;
+  margin: 20px 0; }
+  section.Content__save__3P_NU h2 {
+    color: #245a9a;
+    background-image: url(/beta/0a8afb9f53ba0352c6ae27f9a35fe08a.svg);
+    background-position: 0 10px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 50px; }
+
+section.Content__challenge__2LUyO {
+  border: 3px solid #00b1da;
+  border-radius: 12px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  section.Content__challenge__2LUyO h2 {
+    color: #fff;
+    background: #00b1da;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0; }
+  section.Content__challenge__2LUyO > * {
+    padding: 0 20px; }
+
+code.Content__blockmotion__2TNTp {
+  background-color: #505fd7; }
+
+code.Content__blocklooks__NJdsX {
+  background-color: #9b33d9; }
+
+code.Content__blocksound__wb8Zz {
+  background-color: #d000c2; }
+
+code.Content__blockpen__1tOwq {
+  background-color: #00a16f; }
+
+code.Content__blockdata__1wt1I {
+  background-color: #ff7500; }
+
+code.Content__blockevents__r08uu {
+  background-color: #d38117; }
+
+code.Content__blockcontrol__3yrIr {
+  background-color: #e9aa00; }
+
+code.Content__blocksensing__2mkm9 {
+  background-color: #00a3e6; }
+
+code.Content__blockoperators__x9p0o {
+  background-color: #00c114; }
+
+code.Content__blockmoreblocks__3YKWS {
+  background-color: #71009a; }
+
+code.Content__blockmotion__2TNTp, code.Content__blocklooks__NJdsX, code.Content__blocksound__wb8Zz, code.Content__blockpen__1tOwq, code.Content__blockdata__1wt1I, code.Content__blockevents__r08uu, code.Content__blockcontrol__3yrIr, code.Content__blocksensing__2mkm9, code.Content__blockoperators__x9p0o, code.Content__blockmoreblocks__3YKWS {
+  color: #fff; }
+
+@media aural, braille, handheld, projection, screen, tty, tv, embossed {
+  pre > code {
+    word-wrap: normal;
+    white-space: pre; } }
+
+.Content__video-container__2gCjN {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 30px 0 60px; }
+  .Content__video-container__2gCjN iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+.LevelIcon__levelIcon__2LO2- {
+  margin-right: 0.3em;
+  width: 0.75em;
+  height: 0.75em;
+  vertical-align: baseline; }
+.Footer__container__1SZrv {
   margin-top: 100px;
   padding-bottom: 20px;
   font-weight: 300;
-  font-size: 15pt;
   font-family: "Roboto", "Verdana", sans-serif; }
   .Footer__container__1SZrv a {
     text-decoration: none; }
@@ -102,9 +381,9 @@
 .Footer__img__25Ink:hover {
   transform: scale(1.2); }
 </style>
-<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-16x16.png"><link rel="shortcut icon" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1536x2008.png"><link href="/beta/vendor2.9b2aa725e22ade101290.css" rel="stylesheet"></head>
+<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-16x16.png"><link rel="shortcut icon" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1536x2008.png"><link href="/beta/vendor2.102a410906fefbbe39e2.css" rel="stylesheet"></head>
 <body>
-    <div id="app"><div><div class="App__container__vvzpy" data-reactroot="" data-reactid="1" data-react-checksum="376114222"><div class="container-fluid" data-reactid="2"><div class="row" data-reactid="3"><nav class="navbar navbar-default navbar-fixed-top" data-reactid="4"><div class="container-fluid" data-reactid="5"><div class="btn-language-dropdown pull-right dropdown btn-group" data-reactid="6"><button class="dropdown-toggle btn-language-student btn-language btn btn-default" id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" data-reactid="7"><span data-reactid="8"><!-- react-text: 9 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="10"/></span></button><ul class="dropdown-menu" role="menu" aria-labelledby="language-dropdown" data-reactid="11"><li role="presentation" class="" data-reactid="12"><a role="menuitem" href="" tabindex="-1" data-reactid="13"><span data-reactid="14"><!-- react-text: 15 -->Norsk bokmål<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="16"/></span></a></li><li role="presentation" class="" data-reactid="17"><a role="menuitem" href="" tabindex="-1" data-reactid="18"><span data-reactid="19"><!-- react-text: 20 -->Norsk nynorsk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="21"/></span></a></li><li role="presentation" class="" data-reactid="22"><a role="menuitem" href="" tabindex="-1" data-reactid="23"><span data-reactid="24"><!-- react-text: 25 -->Svenska<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="26"/></span></a></li><li role="presentation" class="" data-reactid="27"><a role="menuitem" href="" tabindex="-1" data-reactid="28"><span data-reactid="29"><!-- react-text: 30 -->Dansk<!-- /react-text --><img class="NavBar__flag__3cn9U" src="/beta/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="31"/></span></a></li></ul></div><div class="navbar-header" data-reactid="32"><span class="navbar-brand" data-reactid="33"><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/" data-reactid="34"><span class="glyphicon glyphicon-home" data-reactid="35"></span></a><span data-reactid="36"><!-- react-text: 37 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/scratch" data-reactid="38">scratch</a></span><span class="hidden-xs" data-reactid="39"><!-- react-text: 40 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm active" href="/scratch/soloball/soloball" data-reactid="41">soloball</a></span></span><button type="button" class="navbar-toggle collapsed" data-reactid="42"><span class="sr-only" data-reactid="43">Toggle navigation</span><span class="icon-bar" data-reactid="44"></span><span class="icon-bar" data-reactid="45"></span><span class="icon-bar" data-reactid="46"></span></button></div><div class="navbar-collapse collapse" data-reactid="47"><div class="navbar-form navbar-right" data-reactid="48"><div class="form-group" data-reactid="49"><input type="text" placeholder="Søk" class="form-control" data-reactid="50"/></div><!-- react-text: 51 --> <!-- /react-text --><div class="btn-toggle" data-reactid="52"><div data-reactid="53">Velg modus:</div><div class="btn-group btn-group" data-reactid="54"><button class="btn-student-nav active btn btn-default" type="button" data-reactid="55">ELEV</button><button class="btn-teacher-nav btn btn-default" type="button" data-reactid="56">LÆRER</button></div></div></div></div></div></nav></div><div class="row" data-reactid="57"><div class="col-xs-12" data-reactid="58"><div class="ModeIndicator__modeIndicator__gvKNO" data-reactid="59"><!-- react-text: 60 -->Du er i <!-- /react-text --><span class="text-student" data-reactid="61">elevmodus</span></div></div></div></div><div class="Lesson__container__133OS" data-reactid="62"><h1 data-reactid="63"><img class="LevelIcon__large__HKJS3" src="/beta/d6aa434b87e479c5f20f9a47e8aca3db.svg" data-reactid="64"/><!-- react-text: 65 -->Soloball<!-- /react-text --><!-- react-text: 66 --> - Level <!-- /react-text --><!-- react-text: 67 -->1<!-- /react-text --></h1><p data-reactid="68"><i data-reactid="69"><!-- react-text: 70 -->av <!-- /react-text --><!-- react-text: 71 -->Geir Arne Hjelle<!-- /react-text --></i></p><div data-reactid="72"><section class="intro" id="introduksjon">
+    <div id="app"><div><div class="App__container__vvzpy" data-reactroot="" data-reactid="1" data-react-checksum="-418654961"><div class="container-fluid" data-reactid="2"><div class="row" data-reactid="3"><nav class="navbar navbar-default navbar-fixed-top" data-reactid="4"><div class="container-fluid" data-reactid="5"><div class="navbar-header" data-reactid="6"><span class="navbar-brand" data-reactid="7"><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/" data-reactid="8"><span class="glyphicon glyphicon-home" data-reactid="9"></span></a><span data-reactid="10"><!-- react-text: 11 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/scratch" data-reactid="12">scratch</a></span><span class="hidden-xs" data-reactid="13"><!-- react-text: 14 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm active" href="/scratch/soloball/soloball" data-reactid="15">soloball</a></span></span><button type="button" class="navbar-toggle collapsed" data-reactid="16"><span class="sr-only" data-reactid="17">Toggle navigation</span><span class="icon-bar" data-reactid="18"></span><span class="icon-bar" data-reactid="19"></span><span class="icon-bar" data-reactid="20"></span></button></div><div class="navbar-collapse collapse" data-reactid="21"><div class="NavBar__gadgetGroup__2VPWF" data-reactid="22"><div class="NavBar__gadgetContainer__28a-C" data-reactid="23"><div class="dropdown btn-group btn-group-language-student" data-reactid="24"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="25"><div data-reactid="26"><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="27"/><div class="NavBar__language__1xqOW" data-reactid="28">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu" aria-labelledby="language-dropdown" data-reactid="29"><li role="presentation" class="active" data-reactid="30"><a role="menuitem" tabindex="-1" href="#" data-reactid="31"><div data-reactid="32"><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="33"/><div class="NavBar__language__1xqOW" data-reactid="34">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="35"><a role="menuitem" tabindex="-1" href="#" data-reactid="36"><div data-reactid="37"><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="38"/><div class="NavBar__language__1xqOW" data-reactid="39">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="40"><a role="menuitem" tabindex="-1" href="#" data-reactid="41"><div data-reactid="42"><img class="NavBar__flag__3cn9U" src="/beta/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="43"/><div class="NavBar__language__1xqOW" data-reactid="44">Svenska</div></div></a></li><li role="presentation" class="" data-reactid="45"><a role="menuitem" tabindex="-1" href="#" data-reactid="46"><div data-reactid="47"><img class="NavBar__flag__3cn9U" src="/beta/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="48"/><div class="NavBar__language__1xqOW" data-reactid="49">Dansk</div></div></a></li></ul></div></div><div class="NavBar__gadgetContainer__28a-C" data-reactid="50"><div class="dropdown btn-group btn-group-student" data-reactid="51"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="52"><!-- react-text: 53 -->Modus: ELEV<!-- /react-text --></button><ul role="menu" class="dropdown-menu" aria-labelledby="mode-dropdown" data-reactid="54"><li role="presentation" class="active" data-reactid="55"><a role="menuitem" tabindex="-1" href="#" data-reactid="56">ELEV</a></li><li role="presentation" class="" data-reactid="57"><a role="menuitem" tabindex="-1" href="#" data-reactid="58">LÆRER</a></li></ul></div></div><div class="NavBar__gadgetContainer__28a-C" data-reactid="59"><input type="text" placeholder="Søk" class="form-control" data-reactid="60"/></div></div></div></div></nav></div></div><div class="Lesson__container__133OS" data-reactid="61"><h1 data-reactid="62"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/d6aa434b87e479c5f20f9a47e8aca3db.svg" data-reactid="63"/><!-- react-text: 64 -->Soloball<!-- /react-text --><!-- react-text: 65 --> - Level <!-- /react-text --><!-- react-text: 66 -->1<!-- /react-text --></h1><p data-reactid="67"><i data-reactid="68"><!-- react-text: 69 -->av <!-- /react-text --><!-- react-text: 70 -->Geir Arne Hjelle<!-- /react-text --></i></p><div data-reactid="71"><section class="intro" id="introduksjon">
 <h1 class="intro" id="introduksjon">Introduksjon</h1>
 <p>Vi skal nå lære hvordan vi kan lage et enkelt ballspill med Scratch. I
 soloball skal du styre katten som kontrollerer ballen, slik at ballen
@@ -113,17 +392,17 @@ ikke går i nettet.</p>
 </section>
 <section class="activity" id="steg-1-en-roterende-katt">
 <h1 class="activity" id="steg-1-en-roterende-katt">Steg 1: En roterende katt</h1>
-<figure><em>Vi begynner med å se på hvordan vi kan få kattefiguren til å rotere.</em></figure>
+<p><em>Vi begynner med å se på hvordan vi kan få kattefiguren til å rotere.</em></p>
 <section class="check" id="sjekkliste">
 <h2 class="check" id="sjekkliste">Sjekkliste</h2>
 <ul>
 <li>
-<figure>Start et nytt Scratch-prosjekt. Du vil se en kattefigur midt på
-scenen.</figure>
+<p>Start et nytt Scratch-prosjekt. Du vil se en kattefigur midt på
+scenen.</p>
 </li>
 <li>
-<figure>Pusle sammen de følgende klossene i skriptområdet til høyre på
-skjermen.</figure>
+<p>Pusle sammen de følgende klossene i skriptområdet til høyre på
+skjermen.</p>
 <pre class=blocks>når grønt flagg klikkes
 gå til x: (0) y: (0)
 for alltid
@@ -138,19 +417,19 @@ midt på skjermen og alltid peke mot, eller se mot, musepekeren.</p>
 </section>
 <section class="flag" id="test-prosjektet">
 <h2 class="flag" id="test-prosjektet">Test prosjektet</h2>
-<figure><strong>Klikk på det grønne flagget.</strong></figure>
+<p><strong>Klikk på det grønne flagget.</strong></p>
 <ul>
 <li>
-<figure>For å starte programmet du nettopp puslet sammen kan du klikke på
-det grønne flagget over scenen.</figure>
+<p>For å starte programmet du nettopp puslet sammen kan du klikke på
+det grønne flagget over scenen.</p>
 </li>
 <li>
-<figure>Begynner katten å rotere rundt slik at den alltid ser mot
-musepekeren?</figure>
+<p>Begynner katten å rotere rundt slik at den alltid ser mot
+musepekeren?</p>
 </li>
 <li>
-<figure>For å stoppe programmet ditt kan du klikke på den røde åttekanten
-ved siden av det grønne flagget.</figure>
+<p>For å stoppe programmet ditt kan du klikke på den røde åttekanten
+ved siden av det grønne flagget.</p>
 </li>
 </ul>
 </section>
@@ -161,8 +440,8 @@ ved siden av det grønne flagget.</figure>
 sirkel på skjermen.</em></p>
 <section class="check" id="sjekkliste-2">
 <h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
-<figure>Vi skal nå gjøre et lite triks hvor vi flytter katten vekk fra sentrum
-slik at det ser ut som om den løper i sirkel i stedet for å rotere.</figure>
+<p>Vi skal nå gjøre et lite triks hvor vi flytter katten vekk fra sentrum
+slik at det ser ut som om den løper i sirkel i stedet for å rotere.</p>
 <ul>
 <li>
 <p>Gi først kattefiguren din navnet <code>Katt</code>. Dette gjør du ved å først
@@ -177,8 +456,8 @@ nå se to kattefigurer. Slett en av dem ved å klikke på den lille
 x-en i hjørnet av figuren.</p>
 </li>
 <li>
-<figure>Gjør katten mindre ved å klikke på den i det store bildet, og
-deretter dra i et av hjørnene.</figure>
+<p>Gjør katten mindre ved å klikke på den i det store bildet, og
+deretter dra i et av hjørnene.</p>
 <figure><img src="/beta/_/oppgaver/src/scratch/soloball/katt_krymp.421657.png" alt="" /></figure>
 </li>
 <li>
@@ -195,11 +474,11 @@ scenen øverst til venstre at du ikke drar den av skjermen.</p>
 </section>
 <section class="flag" id="test-prosjektet-2">
 <h2 class="flag" id="test-prosjektet-2">Test prosjektet</h2>
-<figure><strong>Klikk på det grønne flagget.</strong></figure>
+<p><strong>Klikk på det grønne flagget.</strong></p>
 <ul>
 <li>
-<figure>Start programmet ditt igjen. Flytter katten seg i sirkel når du
-beveger musepekeren?</figure>
+<p>Start programmet ditt igjen. Flytter katten seg i sirkel når du
+beveger musepekeren?</p>
 </li>
 <li>
 <p>Fungerer bevegelsen bra? Ser katten passe stor ut? Husk at du kan gå
@@ -210,8 +489,8 @@ kunne vært bedre.</p>
 </section>
 <section class="try" id="hva-skjedde">
 <h2 class="try" id="hva-skjedde">Hva skjedde?</h2>
-<figure>Selv om ikke endret programmet vårt oppfører katten seg veldig
-annerledes. Skjønner du hvorfor?</figure>
+<p>Selv om ikke endret programmet vårt oppfører katten seg veldig
+annerledes. Skjønner du hvorfor?</p>
 <p>Når vi sier at katten skal <code class="blockmotion">peke mot musepekeren</code> må den
 rotere rundt et punkt. Dette punktet kalles senterpunktet til figuren,
 og du kan se (og endre) senterpunktet til en figur ved å klikke på
@@ -274,7 +553,7 @@ slutt
 </section>
 <section class="flag" id="test-prosjektet-3">
 <h2 class="flag" id="test-prosjektet-3">Test prosjektet</h2>
-<figure><strong>Klikk på det grønne flagget.</strong></figure>
+<p><strong>Klikk på det grønne flagget.</strong></p>
 <ul>
 <li>
 <p>Beveger ballen seg? Snur ballen når katten berører den?</p>
@@ -283,8 +562,8 @@ slutt
 <p>Hva skjer om ballen flyr forbi katten?</p>
 </li>
 <li>
-<figure>Starter ballen midt på skjermen igjen hvis du trykker på det grønne
-flagget en gang til?</figure>
+<p>Starter ballen midt på skjermen igjen hvis du trykker på det grønne
+flagget en gang til?</p>
 </li>
 <li>
 <p>Hvis du synes ballen blir for lett &quot;fanget&quot; av katten kan du prøve å
@@ -307,11 +586,11 @@ klikker du <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAASCAIAA
 <code>Ny figur</code> under scenen.</p>
 </li>
 <li>
-<figure>Klikk på <code>Bytt til vektorgrafikk</code> nederst til høyre på skjermen.</figure>
+<p>Klikk på <code>Bytt til vektorgrafikk</code> nederst til høyre på skjermen.</p>
 </li>
 <li>
-<figure>Velg en godt synlig farge, for eksempel rød, og klikk på
-linje-verktøyet på høyre side av skjermen.</figure>
+<p>Velg en godt synlig farge, for eksempel rød, og klikk på
+linje-verktøyet på høyre side av skjermen.</p>
 </li>
 <li>
 <p>Tegn en liten loddrett strek til høyre på figuren din. Hold gjerne
@@ -319,11 +598,11 @@ inne <code>Skift</code>-knappen, da får du en helt loddrett strek.</p>
 <figure><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAD6CAIAAAAAxYYTAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gsFFggcYJ0fWQAABGtJREFUeNrt3EFq21gAx2ErmK5E8NIGH8BXiG/jO+QYuYNv4GvkCjqAQF6FYLQQXlTdmIAtq+DmKX2P932LUty/O2UGfqM3I17RNM3s2nK5nN1zPB7vfm5vb2//M/unGUAiBAsQLADBAgQLIHZF3/c3H/m/Ffb29nHuPWEBjoQAggUIFoBgAQgWIFgAkZoP33rwPoi9vb3bGgAcCQHBAhAsAMECBAtAsAAe4D4se3v7ZPaesABHQgDBAgQLQLAABAsQLIBIuQ/L3t4+mb0nLMCREECwAMECECwAwQIECyBS7sOyt7dPZu8JC3AkBBAsQLAABAtAsADBAoiU+7Ds7e2T2XvCAhwJAQQLECwAwQIQLECwACLlPix7e/tk9p6wAEdCAMECBAtAsAAECxAsgEi5D8ve3j7A/uNwKN/e2tfX83Y73Z/HExYQwGK3+/X+vtjtHAmB2D2dTl8/ChaAYAGCBSBYgGABRM99WPb29iH2q9XlZ9dJcR8W4EgIIFgAggUIFoBgAQgWkAX3Ydnb2wfYj33RfViAIyGAYAEIFiBYAIIFIFhAFtyHZW9vH2LvPiwAR0JAsAAEC0CwAMECECwgZ+7Dsre3D7Af+6L7sABHQgDBAhAsQLAABAtAsIAsuA/L3t4+xN59WACOhIBgAQgWgGABggUgWEDOfvo+rLquy7LcbDYT/f729vb/ZT/2RfdhAY6EAIIFIFiAYAEIFsB3zKf7reu6Hn54Op26rquqavhLi8XCPw/gb8EavvUQ6n2NsiyHH3Zddz6f27Yd/tLdl7Nm3n+xt09iP/LFsH+eCZ+w7gaoqqq2bdfrtX9XAI/y37AAwQIQLECwAAQLQLCA3BRN09x85H0Te3v7h+/DKorLF6+T4j4swJEQQLAABAsQLADBAhAsIAtF3/c3H3nfxN7e/uH9anX52XVSwv55PGEBjoQAggUIFoBgAQgWIFgAkZoP33rwvom9vf3D92GNfNF9WIAjIYBgAQgWIFgAggUgWEAW3Idlb28fYu8+LABHQkCwAAQLQLAAwQIQLCBn7sOyt7cPsB/7ovuwAEdCAMECECxAsAAEC0CwgCy4D8ve3j7E3n1YAI6EgGABCBaAYAGCBSBYQM7ch2Vvbx9gP/ZF92EBjoQA/+r38/PXj4IFRO1zvz+/vHzu95P+Veb+RgPfd95uPw4HR0IAwQIEC2Ai7sOyt7dPZu8JC3AkBBAsQLAABAtAsADBAoiU+7Ds7e2T2XvCAhwJAQQLECwAwQIQLECwACLlPix7e/tk9p6wAEdCAMECBAtAsAAECxAsgEi5D8ve3j6ZvScswJEQQLAAwQIQLADBAgQLIFLuw7K3t09m7wkLcCQEECxAsAAEC0CwAMECiJT7sOzt7ZPZe8ICHAkBBAsQLADBAhAsQLAAIuU+LHt7+2T2nrAAR0IAwQIEC0CwAAQLECyASLkPy97ePpm9JyzAkRBAsADBAhAsAMECBAsgUu7Dsre3T2bvCQtwJAQQLCBbfwBNQfhMpE3f3gAAAABJRU5ErkJggg==" alt="" /></figure>
 </li>
 <li>
-<figure>Klikk på <code class="blocklightgrey">Skript</code>-fanen.</figure>
+<p>Klikk på <code class="blocklightgrey">Skript</code>-fanen.</p>
 </li>
 <li>
-<figure>Vi skal nå tegne et sirkelformet nett ved å stemple denne figuren på
-bakgrunnen. Lag det følgende skriptet:</figure>
+<p>Vi skal nå tegne et sirkelformet nett ved å stemple denne figuren på
+bakgrunnen. Lag det følgende skriptet:</p>
 <pre class=blocks>når grønt flagg klikkes
 gå til x: (0) y: (0)
 gjenta (36) ganger
@@ -339,7 +618,7 @@ slik at den blir der. Du kan fjerne slike avtrykk ved å bruke
 </section>
 <section class="flag" id="test-prosjektet-4">
 <h2 class="flag" id="test-prosjektet-4">Test prosjektet</h2>
-<figure><strong>Klikk på det grønne flagget.</strong></figure>
+<p><strong>Klikk på det grønne flagget.</strong></p>
 <ul>
 <li>
 <p>Tegnes det en sirkel på bakgrunnen når spillet starter?</p>
@@ -357,15 +636,15 @@ begynnelsen av denne oppgaven.</p>
 </section>
 <section class="activity" id="steg-5-nettet-fanger-ballen">
 <h1 class="activity" id="steg-5-nettet-fanger-ballen">Steg 5: Nettet fanger ballen</h1>
-<figure><em>Vi vil at ballen skal stoppe når den treffer nettet.</em></figure>
+<p><em>Vi vil at ballen skal stoppe når den treffer nettet.</em></p>
 <section class="check" id="sjekkliste-5">
 <h2 class="check" id="sjekkliste-5">Sjekkliste</h2>
-<figure>Foreløpig har vi ikke laget noe kode som forteller ballen at den har
-truffet nettet. Det skal vi gjøre nå.</figure>
+<p>Foreløpig har vi ikke laget noe kode som forteller ballen at den har
+truffet nettet. Det skal vi gjøre nå.</p>
 <ul>
 <li>
-<figure>Klikk på ball-figuren, slik at du ser skriptet vi tidligere lagde
-for denne.</figure>
+<p>Klikk på ball-figuren, slik at du ser skriptet vi tidligere lagde
+for denne.</p>
 </li>
 <li>
 <p>Vi skal nå bruke <code class="blocksensing">berører fargen</code>-klossen for å
@@ -394,7 +673,7 @@ fargen i den lille firkanten. Klikk igjen for å velge denne fargen.</p>
 </section>
 <section class="flag" id="test-prosjektet-5">
 <h2 class="flag" id="test-prosjektet-5">Test prosjektet</h2>
-<figure><strong>Klikk på det grønne flagget.</strong></figure>
+<p><strong>Klikk på det grønne flagget.</strong></p>
 <ul>
 <li>
 <p>Stopper ballen når den kommer til nettet?</p>
@@ -413,18 +692,18 @@ flagget igjen.</p>
 vil at den skal sprette litt mer naturlig når den treffer katten.</em></p>
 <section class="check" id="sjekkliste-6">
 <h2 class="check" id="sjekkliste-6">Sjekkliste</h2>
-<figure>En bra modell for hvordan en ball spretter er at vinkelen ut er den
-samme som vinkelen inn.</figure>
+<p>En bra modell for hvordan en ball spretter er at vinkelen ut er den
+samme som vinkelen inn.</p>
 <figure><img src="data:image/png;base64,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" alt="" /></figure>
-<figure>I spillet er det to retninger vi må tenke på, retningen til ballen og
-retningen kattefiguren står i.</figure>
+<p>I spillet er det to retninger vi må tenke på, retningen til ballen og
+retningen kattefiguren står i.</p>
 <figure><img src="/beta/_/oppgaver/src/scratch/soloball/sprett_vinkel2.2bf982.png" alt="" /></figure>
 <p>I figuren over og i koden videre betyr <code class="blockmotion">retning</code> retningen
 til ballen, siden koden tilhører ballfiguren.  Så langt har vi brukt</p>
 <pre class=blocks>pek i retning ((180) + (retning))
 </pre>
-<figure>for at ballen skal snu. I figuren ser vi at dette betyr at ballen
-spretter tilbake der den kom i fra.</figure>
+<p>for at ballen skal snu. I figuren ser vi at dette betyr at ballen
+spretter tilbake der den kom i fra.</p>
 <p>Vi bør også kompensere for retningen til <code>Katt</code>. Dette kan vi gjøre
 ved å trekke fra to ganger (<code class="blockmotion">retning</code> - <code class="blocksensing">retning av katt</code>). Skjønner du hvorfor av figuren? Da blir den
 nye retningen</p>
@@ -453,21 +732,21 @@ slutt
 </section>
 <section class="flag" id="test-prosjektet-6">
 <h2 class="flag" id="test-prosjektet-6">Test prosjektet</h2>
-<figure><strong>Klikk på det grønne flagget.</strong></figure>
+<p><strong>Klikk på det grønne flagget.</strong></p>
 <ul>
 <li>
 <p>Ser du at ballen spretter litt mer naturlig nå?</p>
 </li>
 <li>
-<figure>Har du noen ideer til hvordan spillet kan bli enda bedre? Prøv dem
-ut!</figure>
+<p>Har du noen ideer til hvordan spillet kan bli enda bedre? Prøv dem
+ut!</p>
 </li>
 </ul>
 </section>
 <section class="save" id="lagre-og-legg-ut-prosjektet">
 <h2 class="save" id="lagre-og-legg-ut-prosjektet">Lagre og legg ut prosjektet</h2>
-<figure>Vi har nå laget et ganske morsomt spill! Hvis du vil kan du gå videre
-med de neste stegene for å gjøre spillet enda litt mer spennende.</figure>
+<p>Vi har nå laget et ganske morsomt spill! Hvis du vil kan du gå videre
+med de neste stegene for å gjøre spillet enda litt mer spennende.</p>
 <p>For å lagre spillet ditt kan du velge <code>Lagre nå</code> i <code>Fil</code>-menyen.
 Spillet blir da lagret på brukerkontoen ditt hos Scratch. Om du ikke
 har laget deg brukerkonto kan du velge <code>Last ned til datamaskinen</code> i
@@ -480,11 +759,11 @@ med venner og familie.</p>
 </section>
 <section class="activity" id="ekstra-1-tell-poeng">
 <h1 class="activity" id="ekstra-1-tell-poeng">Ekstra 1: Tell poeng</h1>
-<figure><em>Alle spill blir morsommere hvis man får poeng!</em></figure>
+<p><em>Alle spill blir morsommere hvis man får poeng!</em></p>
 <section class="check" id="sjekkliste-7">
 <h2 class="check" id="sjekkliste-7">Sjekkliste</h2>
-<figure>For å telle poeng skal vi bruke noe som kalles en variabel. En
-variabel er et navn på en verdi som kan variere.</figure>
+<p>For å telle poeng skal vi bruke noe som kalles en variabel. En
+variabel er et navn på en verdi som kan variere.</p>
 <ul>
 <li>
 <p>Klikk på <code>Data</code>-kategorien og deretter på
@@ -564,7 +843,7 @@ for alltid
     slutt
 slutt
 </pre>
-<figure>Pass på at du også endrer <code class="blockmotion">gå steg</code>-klossen.</figure>
+<p>Pass på at du også endrer <code class="blockmotion">gå steg</code>-klossen.</p>
 </li>
 </ul>
 </section>
@@ -615,8 +894,8 @@ slutt
 </section>
 <section class="try" id="prov-selv">
 <h2 class="try" id="prov-selv">Prøv selv</h2>
-<figure>I disse ekstrastegene har vi sett på noen måter vi kan gjøre spillet
-bedre og mer spennende på. Her er enda flere ideer:</figure>
+<p>I disse ekstrastegene har vi sett på noen måter vi kan gjøre spillet
+bedre og mer spennende på. Her er enda flere ideer:</p>
 <ul>
 <li>
 <p>Du kan bytte kattefiguren med en annen figur. Dette gjør du enklest
@@ -634,6 +913,6 @@ når ballen treffer nettet. Se på de forskjellige klossene i
 <p>Det finnes mange andre ting å prøve også. Du bestemmer!</p>
 </section>
 </section>
-</div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="73"><div class="Footer__center__3xqZ_ row" data-reactid="74"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="75">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="76">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="77"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="78"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/smn.41dee6.jpg" data-reactid="79"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="80"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="81"/></a></div></div></div></div></div>
-<script type="text/javascript" src="/beta/manifest.cc88f78a0c0bf1a7fe4c.js"></script><script type="text/javascript" src="/beta/vendor.80564a629b906f18bc40.js"></script><script type="text/javascript" src="/beta/main.bd1ff92ac496f5a74eb8.js"></script><script type="text/javascript" src="/beta/vendor2.9b2aa725e22ade101290.js"></script></body>
+</div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="72"><div class="Footer__center__3xqZ_ row" data-reactid="73"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="74">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="75">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="76"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="77"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/smn.41dee6.jpg" data-reactid="78"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="79"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="80"/></a></div></div></div></div></div>
+<script type="text/javascript" src="/beta/manifest.c8a1375a4b51160873ad.js"></script><script type="text/javascript" src="/beta/vendor.4d33583feb62410dd8bf.js"></script><script type="text/javascript" src="/beta/main.e6904f056f2126e3efe1.js"></script><script type="text/javascript" src="/beta/vendor2.102a410906fefbbe39e2.js"></script></body>
 </html>
