@@ -40,7 +40,7 @@ if [ -z "${cv_branch// }" ]; then cv_branch='master'; fi
 
 url_path_prefix='beta'
 echo -n "An url path prefix is the first part of the url path,"
-echo "e.g. 'beta' in http://kodeklubben.github.io/beta/scratch"
+echo " e.g. 'beta' in http://kodeklubben.github.io/beta/scratch"
 echo -n "The default is '${url_path_prefix}'. Would you like to change that? [y/N]: "
 read change_url_path_prefix
 if [ "${change_url_path_prefix}" = "y" ]; then
