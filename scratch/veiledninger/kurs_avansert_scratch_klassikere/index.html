@@ -4,14 +4,84 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Kodeklubben (server)</title>
-    <style type="text/css">.App__container__vvzpy {
-  margin-top: 125px; }
+    <style type="text/css">.App__appContainer__3y6aN {
+  overflow-x: hidden; }
+.navbar > .container-fluid {
+  padding: 0; }
+  .navbar > .container-fluid .navbar-header {
+    margin: 0; }
+  .navbar > .container-fluid .navbar-collapse {
+    margin: 0;
+    padding: 0; }
+
+.navbar-nav {
+  margin: 0; }
+
 .navbar-brand {
-  font-size: 1.4em; }
+  padding: 0 10px; }
 
 .glyphicon-home {
-  line-height: 0;
-  font-size: 0.9em; }
+  line-height: 0; }
+
+.navbar-default {
+  background-color: #f2f2f2; }
+  .navbar-default .navbar-nav {
+    background-color: transparent; }
+    .navbar-default .navbar-nav > li > a {
+      color: #444; }
+      .navbar-default .navbar-nav > li > a:focus {
+        color: #0fbe7c;
+        background-color: transparent; }
+      .navbar-default .navbar-nav > li > a:hover {
+        color: #0fbe7c;
+        background-color: transparent; }
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+      color: #0fbe7c;
+      background-color: transparent; }
+
+.navbar-toggle.navbar-toggle {
+  float: none;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 1.2em; }
+  .navbar-toggle.navbar-toggle, .navbar-toggle.navbar-toggle:focus {
+    background-color: #3a3a3a; }
+  .navbar-toggle.navbar-toggle:hover {
+    background-color: #0fbe7c; }
+  .navbar-toggle.navbar-toggle .icon-bar {
+    background-color: #fff; }
+
+@media (max-width: 767px) {
+  .navbar-header {
+    text-align: center; }
+  .navbar-brand {
+    float: none;
+    display: inline-block;
+    padding: 0; }
+  .navbar-default .navbar-nav {
+    background-color: #3a3a3a; }
+    .navbar-default .navbar-nav > li > a {
+      color: #fff; }
+      .navbar-default .navbar-nav > li > a:focus {
+        color: #fff;
+        background-color: #3a3a3a; }
+      .navbar-default .navbar-nav > li > a:hover {
+        color: #fff;
+        background-color: #0fbe7c; }
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+      color: #fff;
+      background-color: #0fbe7c; } }
+
+.NavBar__toggleContent__1tzFa {
+  display: inline-block;
+  padding: 0 5px; }
+
+.NavBar__navContainer__3KRmh {
+  background-color: #3a3a3a;
+  padding: 0 20px; }
 
 .NavBar__language__1xqOW {
   margin-right: 40px; }
@@ -20,6 +90,39 @@
   width: 30px;
   height: 20px;
   float: right; }
+
+.NavBar__logo__6osKq {
+  height: 127px; }
+
+.NavBar__spacing__2FOa3 {
+  width: 100%;
+  height: 77px; }
+  @media (max-width: 767px) {
+    .NavBar__spacing__2FOa3 {
+      height: 0;
+      width: 0; } }
+
+.NavBar__widgets__9B6hC {
+  display: inline-block;
+  width: 100%;
+  min-height: 50px;
+  font-family: "Roboto", "Verdana", sans-serif;
+  font-weight: 300;
+  border-radius: 0;
+  margin-bottom: -5px; }
+
+.NavBar__widgetStudent__2MyCf {
+  color: #265732;
+  background-color: #b1daae; }
+
+.NavBar__widgetTeacher__2mxrU {
+  color: #215651;
+  background-color: #a3cccb; }
+
+.NavBar__breadcrumb__36i9Q {
+  padding-left: 10px;
+  float: left;
+  line-height: 50px; }
 
 .NavBar__gadgetGroup__2VPWF {
   display: inline;
@@ -43,6 +146,24 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto; }
+  .Lesson__container__133OS figure > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px; }
+  @media (max-width: 767px) {
+    .Lesson__container__133OS p,
+    .Lesson__container__133OS li {
+      font-size: 106.25%; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .Lesson__container__133OS p,
+    .Lesson__container__133OS li {
+      font-size: 118.75%; } }
+  @media (min-width: 992px) {
+    .Lesson__container__133OS p,
+    .Lesson__container__133OS li {
+      font-size: 125%; } }
 /*
 
 Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
@@ -149,13 +270,6 @@ Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
 
 .Content__diff__QsLYW .Content__hljs-change__3JIUJ {
   background: #bccff9; }
-
-figure > img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-  padding: 20px; }
 
 .Content__check__sbZVW ul,
 .Content__check__sbZVW ol,
@@ -381,9 +495,9 @@ code.Content__blockmotion__2TNTp, code.Content__blocklooks__NJdsX, code.Content_
 .Footer__img__25Ink:hover {
   transform: scale(1.2); }
 </style>
-<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-16x16.png"><link rel="shortcut icon" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1536x2008.png"><link href="/beta/vendor2.102a410906fefbbe39e2.css" rel="stylesheet"></head>
+<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-16x16.png"><link rel="shortcut icon" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1536x2008.png"><link href="/beta/vendor2.2ef4fd274b87c017f237.css" rel="stylesheet"></head>
 <body>
-    <div id="app"><div><div class="App__container__vvzpy" data-reactroot="" data-reactid="1" data-react-checksum="-1087900117"><div class="container-fluid" data-reactid="2"><div class="row" data-reactid="3"><nav class="navbar navbar-default navbar-fixed-top" data-reactid="4"><div class="container-fluid" data-reactid="5"><div class="navbar-header" data-reactid="6"><span class="navbar-brand" data-reactid="7"><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/" data-reactid="8"><span class="glyphicon glyphicon-home" data-reactid="9"></span></a><span data-reactid="10"><!-- react-text: 11 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/scratch" data-reactid="12">scratch</a></span><span class="hidden-xs" data-reactid="13"><!-- react-text: 14 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm active" href="/scratch/veiledninger/kurs_avansert_scratch_klassikere" data-reactid="15">veiledninger</a></span></span><button type="button" class="navbar-toggle collapsed" data-reactid="16"><span class="sr-only" data-reactid="17">Toggle navigation</span><span class="icon-bar" data-reactid="18"></span><span class="icon-bar" data-reactid="19"></span><span class="icon-bar" data-reactid="20"></span></button></div><div class="navbar-collapse collapse" data-reactid="21"><div class="NavBar__gadgetGroup__2VPWF" data-reactid="22"><div class="NavBar__gadgetContainer__28a-C" data-reactid="23"><div class="dropdown btn-group btn-group-language-student" data-reactid="24"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="25"><div data-reactid="26"><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="27"/><div class="NavBar__language__1xqOW" data-reactid="28">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu" aria-labelledby="language-dropdown" data-reactid="29"><li role="presentation" class="active" data-reactid="30"><a role="menuitem" tabindex="-1" href="#" data-reactid="31"><div data-reactid="32"><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="33"/><div class="NavBar__language__1xqOW" data-reactid="34">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="35"><a role="menuitem" tabindex="-1" href="#" data-reactid="36"><div data-reactid="37"><img class="NavBar__flag__3cn9U" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="38"/><div class="NavBar__language__1xqOW" data-reactid="39">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="40"><a role="menuitem" tabindex="-1" href="#" data-reactid="41"><div data-reactid="42"><img class="NavBar__flag__3cn9U" src="/beta/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="43"/><div class="NavBar__language__1xqOW" data-reactid="44">Svenska</div></div></a></li><li role="presentation" class="" data-reactid="45"><a role="menuitem" tabindex="-1" href="#" data-reactid="46"><div data-reactid="47"><img class="NavBar__flag__3cn9U" src="/beta/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="48"/><div class="NavBar__language__1xqOW" data-reactid="49">Dansk</div></div></a></li></ul></div></div><div class="NavBar__gadgetContainer__28a-C" data-reactid="50"><div class="dropdown btn-group btn-group-student" data-reactid="51"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="52"><!-- react-text: 53 -->Modus: ELEV<!-- /react-text --></button><ul role="menu" class="dropdown-menu" aria-labelledby="mode-dropdown" data-reactid="54"><li role="presentation" class="active" data-reactid="55"><a role="menuitem" tabindex="-1" href="#" data-reactid="56">ELEV</a></li><li role="presentation" class="" data-reactid="57"><a role="menuitem" tabindex="-1" href="#" data-reactid="58">LÆRER</a></li></ul></div></div><div class="NavBar__gadgetContainer__28a-C" data-reactid="59"><input type="text" placeholder="Søk" class="form-control" data-reactid="60"/></div></div></div></div></nav></div></div><div class="Lesson__container__133OS" data-reactid="61"><h1 data-reactid="62"><!-- react-empty: 63 --><!-- react-text: 64 -->Kursveiledning<!-- /react-text --><!-- react-text: 65 --> - Level <!-- /react-text --></h1><p data-reactid="66"><i data-reactid="67"><!-- react-text: 68 -->av <!-- /react-text --><!-- react-text: 69 -->Geir Arne Hjelle<!-- /react-text --></i></p><div data-reactid="70"><section class="intro" id="avansert-scratch-klassikere">
+    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="-1695784612"><nav class="navbar navbar-default navbar-static-top" data-reactid="2"><div class="container-fluid" data-reactid="3"><div class="navbar-header" data-reactid="4"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="5"><img src="/beta/src/assets/graphics/LKK_small.42c715.png" data-reactid="6"/></a><div class="clearfix visible-xs-block" data-reactid="7"></div><button type="button" class="navbar-toggle collapsed" data-reactid="8"><span class="sr-only" data-reactid="9">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="10"><span class="icon-bar" data-reactid="11"></span><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="14">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="15"><div class="NavBar__spacing__2FOa3" data-reactid="16"></div><div class="NavBar__navContainer__3KRmh" data-reactid="17"><ul class="nav navbar-nav" data-reactid="18"><li role="presentation" class="" data-reactid="19"><a href="http://kidsakoder.no/om-lkk/" data-reactid="20">Om LKK</a></li><li role="presentation" class="" data-reactid="21"><a href="http://kidsakoder.no/nyheter/" data-reactid="22">Nyheter</a></li><li role="presentation" class="active" data-reactid="23"><a action="push" href="/" data-reactid="24">Oppgaver</a></li><li role="presentation" class="" data-reactid="25"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="26">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="27"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="28">Kodeklubben</a></li><li role="presentation" class="" data-reactid="29"><a href="http://kidsakoder.no/skole/" data-reactid="30">Skole</a></li><li role="presentation" class="" data-reactid="31"><a href="http://kidsakoder.no/kodetimen/" data-reactid="32">Kodetimen</a></li><li role="presentation" class="" data-reactid="33"><a href="http://kidsakoder.no/bidra/" data-reactid="34">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="35"><div class="NavBar__breadcrumb__36i9Q" data-reactid="36"><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/" data-reactid="37"><span class="glyphicon glyphicon-home" data-reactid="38"></span></a><span data-reactid="39"><!-- react-text: 40 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm" href="/scratch" data-reactid="41">scratch</a></span><span data-reactid="42"><!-- react-text: 43 --> / <!-- /react-text --><a class="NavLink__linkStudent__1zq2x NavLink__linkBase__1m4Sm active" href="/scratch/veiledninger/kurs_avansert_scratch_klassikere" data-reactid="44">veiledninger</a></span></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="45"><div class="NavBar__gadgetContainer__28a-C" data-reactid="46"><div class="dropdown btn-group btn-group-student" data-reactid="47"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="48"><!-- react-text: 49 -->Modus: ELEV<!-- /react-text --></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="50"><li role="presentation" class="active" data-reactid="51"><a role="menuitem" tabindex="-1" href="#" data-reactid="52">ELEV</a></li><li role="presentation" class="" data-reactid="53"><a role="menuitem" tabindex="-1" href="#" data-reactid="54">LÆRER</a></li></ul></div></div></div></div></div></nav><div class="Lesson__container__133OS" data-reactid="55"><h1 data-reactid="56"><!-- react-empty: 57 --><!-- react-text: 58 -->Kursveiledning<!-- /react-text --><!-- react-text: 59 --> - Level <!-- /react-text --></h1><p data-reactid="60"><i data-reactid="61"><!-- react-text: 62 -->av <!-- /react-text --><!-- react-text: 63 -->Geir Arne Hjelle<!-- /react-text --></i></p><div data-reactid="64"><section class="intro" id="avansert-scratch-klassikere">
 <h1 class="intro" id="avansert-scratch-klassikere">Avansert Scratch - Klassikere</h1>
 <p>Kurset <strong>Avansert Scratch - Klassikere</strong> er ment for de som allerede
 har en del erfaring i å programmere Scratch. Oppgavene tar for seg
@@ -491,6 +605,6 @@ simulerer enkel gravitasjon ved hjelp av et par enkle variabler.</p>
 </li>
 </ul>
 </section>
-</div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="71"><div class="Footer__center__3xqZ_ row" data-reactid="72"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="73">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="74">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="75"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="76"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/smn.41dee6.jpg" data-reactid="77"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="78"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="79"/></a></div></div></div></div></div>
-<script type="text/javascript" src="/beta/manifest.c8a1375a4b51160873ad.js"></script><script type="text/javascript" src="/beta/vendor.4d33583feb62410dd8bf.js"></script><script type="text/javascript" src="/beta/main.e6904f056f2126e3efe1.js"></script><script type="text/javascript" src="/beta/vendor2.102a410906fefbbe39e2.js"></script></body>
+</div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="65"><div class="Footer__center__3xqZ_ row" data-reactid="66"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="67">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="68">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="69"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="70"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/smn.41dee6.jpg" data-reactid="71"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" data-reactid="72"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="73"/></a></div></div></div></div></div>
+<script type="text/javascript" src="/beta/manifest.911fceb30118c940a504.js"></script><script type="text/javascript" src="/beta/vendor.f6f62b1bd9e009bcfcd0.js"></script><script type="text/javascript" src="/beta/main.b233849f818b4923c1f0.js"></script><script type="text/javascript" src="/beta/vendor2.2ef4fd274b87c017f237.js"></script></body>
 </html>
