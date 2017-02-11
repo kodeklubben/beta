@@ -27,7 +27,7 @@ from the root, e.g. `beta` if you want the site to reside at `kodeklubben.github
 
 The script will then delete any previous compiles, check out codeclub-viewer and oppgaver, compile the website,
 and allow you to check the website locally. To test it, open up a second terminal, and go into the folder
-'codeclub-viewer'. Make sure you have http-server installed globally (if not, type `yarn global add http-server`),
+'codeclub-viewer'. Make sure you have local-web-server installed globally (if not, type `yarn global add local-web-server`),
 and then run `yarn run serve`. Go to http://localhost:8080/beta (or whatever you chose as your url path prefix)
 in your browser and test until you are satisfied. If you are not satisfied, abort the script (ctrl-C),
 make your changes and try again.
