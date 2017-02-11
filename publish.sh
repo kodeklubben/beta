@@ -99,7 +99,7 @@ yarn run build:prod
 echo "Website is now built."
 echo "Feel free to test it before publishing."
 echo "Open up a second terminal, and go to the folder `pwd`"
-echo "Make sure you have http-server installed globally (yarn global add http-server),"
+echo "Make sure you have local-web-server installed globally (yarn global add local-web-server),"
 echo "and then run 'yarn run serve'. Go to http://localhost:8080/$url_path_prefix"
 echo "and test until you are satisfied."
 waitForAnyKey
