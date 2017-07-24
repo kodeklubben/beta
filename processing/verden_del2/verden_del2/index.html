@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Verden - Del 2 | Kodeklubben</title>
+
+    
+    <link href="/beta/vendor2.726a80575f37fa805851.css" rel="stylesheet">
+    
+
+    <style type="text/css">.App__appContainer__3y6aN {
+  overflow-x: hidden; }
+.NavBar__navbarWrapper__35BW9 .navbar > .container-fluid {
+  padding: 0; }
+  .NavBar__navbarWrapper__35BW9 .navbar > .container-fluid .navbar-header {
+    margin: 0; }
+  .NavBar__navbarWrapper__35BW9 .navbar > .container-fluid .navbar-collapse {
+    margin: 0;
+    padding: 0; }
+
+.NavBar__navbarWrapper__35BW9 .navbar-nav {
+  margin: 0; }
+
+.NavBar__navbarWrapper__35BW9 .navbar-brand {
+  padding: 0 10px; }
+
+.NavBar__navbarWrapper__35BW9 .navbar-default {
+  background-color: #f2f2f2; }
+  .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav {
+    background-color: transparent; }
+    .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a {
+      color: #444; }
+      .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a:focus {
+        color: #0fbe7c;
+        background-color: transparent; }
+      .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a:hover {
+        color: #0fbe7c;
+        background-color: transparent; }
+    .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a, .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a:focus, .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a:hover {
+      color: #0fbe7c;
+      background-color: transparent; }
+
+.NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle {
+  float: none;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  width: 100%;
+  color: white;
+  font-size: 1.2em; }
+  .NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle, .NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle:focus {
+    background-color: #3a3a3a; }
+  .NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle:hover {
+    background-color: #0fbe7c; }
+  .NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle .icon-bar {
+    background-color: white; }
+
+@media (max-width: 767px) {
+  .NavBar__navbarWrapper__35BW9 .navbar-header {
+    text-align: center; }
+  .NavBar__navbarWrapper__35BW9 .navbar-brand {
+    float: none;
+    display: inline-block;
+    padding: 0; }
+  .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav {
+    background-color: #3a3a3a; }
+    .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a {
+      color: white; }
+      .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a:focus {
+        color: white;
+        background-color: #3a3a3a; }
+      .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a:hover {
+        color: white;
+        background-color: #0fbe7c; }
+    .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a, .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a:focus, .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a:hover {
+      color: white;
+      background-color: #0fbe7c; } }
+
+.NavBar__toggleContent__1tzFa {
+  display: inline-block;
+  padding: 0 5px; }
+
+.NavBar__navContainer__3KRmh {
+  background-color: #3a3a3a;
+  padding: 0 20px; }
+
+.NavBar__logo__6osKq {
+  height: 127px; }
+
+.NavBar__spacing__2FOa3 {
+  width: 100%;
+  height: 77px; }
+  @media (max-width: 767px) {
+    .NavBar__spacing__2FOa3 {
+      height: 0;
+      width: 0; } }
+
+.NavBar__widgets__9B6hC {
+  display: inline-block;
+  width: 100%;
+  min-height: 50px;
+  font-family: "Roboto", "Verdana", sans-serif;
+  font-weight: 300;
+  border-radius: 0;
+  margin-bottom: -5px; }
+
+.NavBar__widgetStudent__2MyCf {
+  color: #265732;
+  background-color: #b1daae; }
+
+.NavBar__widgetTeacher__2mxrU {
+  color: #215651;
+  background-color: #a3cccb; }
+
+.NavBar__gadgetGroup__2VPWF {
+  display: inline;
+  float: right;
+  padding: 4px 0; }
+
+.NavBar__gadgetContainer__28a-C {
+  display: inline-block;
+  padding: 3px 5px; }
+.BreadCrumb__breadcrumb__1u8pT {
+  padding-left: 10px;
+  float: left;
+  font-size: 30px; }
+
+.BreadCrumb__homeIcon__1AzmV {
+  line-height: 43px;
+  font-size: 0.8em; }
+
+.BreadCrumb__courseIcon__2aqTu {
+  height: 50px;
+  padding: 10px 0 15px; }
+
+.BreadCrumb__lessonLink__o9_Mz {
+  font-size: 20px;
+  vertical-align: middle; }
+
+@media (max-width: 767px) {
+  .BreadCrumb__lesson__1OSql {
+    display: none; } }
+.NavLink__linkBase__1m4Sm {
+  color: black; }
+  .NavLink__linkBase__1m4Sm:focus, .NavLink__linkBase__1m4Sm:hover {
+    text-decoration: none;
+    color: black; }
+  .NavLink__linkBase__1m4Sm:hover {
+    opacity: 0.5;
+    color: black; }
+.LevelIcon__levelIcon__2LO2- {
+  margin-right: 0.3em;
+  width: 0.75em;
+  height: 0.75em;
+  vertical-align: baseline; }
+.LanguageDropdown__language__1g4QB {
+  margin-right: 40px; }
+
+.LanguageDropdown__flag__14wo3 {
+  width: 30px;
+  height: 20px;
+  float: right; }
+
+.LanguageDropdown__gadgetContainer__LYX2I {
+  display: inline-block;
+  padding: 3px 5px; }
+.Lesson__container__133OS {
+  max-width: 800px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; }
+  .Lesson__container__133OS figure > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px; }
+  @media (max-width: 767px) {
+    .Lesson__container__133OS {
+      font-size: 106.25%; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .Lesson__container__133OS {
+      font-size: 118.75%; } }
+  @media (min-width: 992px) {
+    .Lesson__container__133OS {
+      font-size: 125%; } }
+
+.Lesson__resetButton__312Jx {
+  margin-right: 10px; }
+/*
+
+Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+.Content__hljs__3U3C5 {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #000;
+  background: #fff; }
+
+.Content__hljs-subst__2pbFW,
+.Content__hljs-title__1NRbS {
+  font-weight: normal;
+  color: #000; }
+
+.Content__hljs-comment__2_Ezx,
+.Content__hljs-quote__2OYA5 {
+  color: #808080;
+  font-style: italic; }
+
+.Content__hljs-meta__otMql {
+  color: #808000; }
+
+.Content__hljs-tag__3JFP3 {
+  background: #efefef; }
+
+.Content__hljs-section__1q6Ri,
+.Content__hljs-name__2Cvim,
+.Content__hljs-literal__7rtGP,
+.Content__hljs-keyword__1gFtb,
+.Content__hljs-selector-tag__3DPD7,
+.Content__hljs-type__1tL9w,
+.Content__hljs-selector-id__3RV11,
+.Content__hljs-selector-class__1YokA {
+  font-weight: bold;
+  color: #000080; }
+
+.Content__hljs-attribute__NlSqs,
+.Content__hljs-number__1Gqqo,
+.Content__hljs-regexp__lxJZu,
+.Content__hljs-link__2O7c_ {
+  font-weight: bold;
+  color: #0000ff; }
+
+.Content__hljs-number__1Gqqo,
+.Content__hljs-regexp__lxJZu,
+.Content__hljs-link__2O7c_ {
+  font-weight: normal; }
+
+.Content__hljs-string__2DCAo {
+  color: #008000;
+  font-weight: bold; }
+
+.Content__hljs-symbol__3Phin,
+.Content__hljs-bullet__u6Nvq,
+.Content__hljs-formula__1EouS {
+  color: #000;
+  background: #d0eded;
+  font-style: italic; }
+
+.Content__hljs-doctag__1_4v0 {
+  text-decoration: underline; }
+
+.Content__hljs-variable__2B6Js,
+.Content__hljs-template-variable__1bdN5 {
+  color: #660e7a; }
+
+.Content__hljs-addition__3aghy {
+  background: #baeeba; }
+
+.Content__hljs-deletion__fahjb {
+  background: #ffc8bd; }
+
+.Content__hljs-emphasis__ohx_M {
+  font-style: italic; }
+
+.Content__hljs-strong__3Dxks {
+  font-weight: bold; }
+
+table {
+  background-color: transparent; }
+
+caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #777777;
+  text-align: left; }
+
+th {
+  text-align: left; }
+
+.Content__table__2Gq2x, table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 22px; }
+  .Content__table__2Gq2x > thead > tr > th, table > thead > tr > th,
+  .Content__table__2Gq2x > thead > tr > td, table > thead > tr > td,
+  .Content__table__2Gq2x > tbody > tr > th, table > tbody > tr > th,
+  .Content__table__2Gq2x > tbody > tr > td, table > tbody > tr > td,
+  .Content__table__2Gq2x > tfoot > tr > th, table > tfoot > tr > th,
+  .Content__table__2Gq2x > tfoot > tr > td, table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857;
+    vertical-align: top;
+    border-top: 1px solid #000; }
+  .Content__table__2Gq2x > thead > tr > th, table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #000; }
+  .Content__table__2Gq2x > caption + thead > tr:first-child > th, table > caption + thead > tr:first-child > th,
+  .Content__table__2Gq2x > caption + thead > tr:first-child > td, table > caption + thead > tr:first-child > td,
+  .Content__table__2Gq2x > colgroup + thead > tr:first-child > th, table > colgroup + thead > tr:first-child > th,
+  .Content__table__2Gq2x > colgroup + thead > tr:first-child > td, table > colgroup + thead > tr:first-child > td,
+  .Content__table__2Gq2x > thead:first-child > tr:first-child > th, table > thead:first-child > tr:first-child > th,
+  .Content__table__2Gq2x > thead:first-child > tr:first-child > td, table > thead:first-child > tr:first-child > td {
+    border-top: 0; }
+  .Content__table__2Gq2x > tbody + tbody, table > tbody + tbody {
+    border-top: 2px solid #000; }
+  .Content__table__2Gq2x .Content__table__2Gq2x, table .Content__table__2Gq2x, .Content__table__2Gq2x table, table table {
+    background-color: #fff; }
+
+.Content__table-condensed__2Qjps > thead > tr > th,
+.Content__table-condensed__2Qjps > thead > tr > td,
+.Content__table-condensed__2Qjps > tbody > tr > th,
+.Content__table-condensed__2Qjps > tbody > tr > td,
+.Content__table-condensed__2Qjps > tfoot > tr > th,
+.Content__table-condensed__2Qjps > tfoot > tr > td {
+  padding: 5px; }
+
+.Content__table-bordered__BqOIs {
+  border: 1px solid #000; }
+  .Content__table-bordered__BqOIs > thead > tr > th,
+  .Content__table-bordered__BqOIs > thead > tr > td,
+  .Content__table-bordered__BqOIs > tbody > tr > th,
+  .Content__table-bordered__BqOIs > tbody > tr > td,
+  .Content__table-bordered__BqOIs > tfoot > tr > th,
+  .Content__table-bordered__BqOIs > tfoot > tr > td {
+    border: 1px solid #000; }
+  .Content__table-bordered__BqOIs > thead > tr > th,
+  .Content__table-bordered__BqOIs > thead > tr > td {
+    border-bottom-width: 2px; }
+
+.Content__table-striped__nrYi3 > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9; }
+
+.Content__table-hover__28JMy > tbody > tr:hover {
+  background-color: #f5f5f5; }
+
+table col[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-column; }
+
+table td[class*="col-"],
+table th[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-cell; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__active__3pus6, table > thead > tr > td.Content__active__3pus6,
+.Content__table__2Gq2x > thead > tr > th.Content__active__3pus6, table > thead > tr > th.Content__active__3pus6,
+.Content__table__2Gq2x > thead > tr.Content__active__3pus6 > td, table > thead > tr.Content__active__3pus6 > td,
+.Content__table__2Gq2x > thead > tr.Content__active__3pus6 > th, table > thead > tr.Content__active__3pus6 > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__active__3pus6, table > tbody > tr > td.Content__active__3pus6,
+.Content__table__2Gq2x > tbody > tr > th.Content__active__3pus6, table > tbody > tr > th.Content__active__3pus6,
+.Content__table__2Gq2x > tbody > tr.Content__active__3pus6 > td, table > tbody > tr.Content__active__3pus6 > td,
+.Content__table__2Gq2x > tbody > tr.Content__active__3pus6 > th, table > tbody > tr.Content__active__3pus6 > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__active__3pus6, table > tfoot > tr > td.Content__active__3pus6,
+.Content__table__2Gq2x > tfoot > tr > th.Content__active__3pus6, table > tfoot > tr > th.Content__active__3pus6,
+.Content__table__2Gq2x > tfoot > tr.Content__active__3pus6 > td, table > tfoot > tr.Content__active__3pus6 > td,
+.Content__table__2Gq2x > tfoot > tr.Content__active__3pus6 > th, table > tfoot > tr.Content__active__3pus6 > th {
+  background-color: #f5f5f5; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__active__3pus6:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__active__3pus6:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__active__3pus6:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__active__3pus6,
+.Content__table-hover__28JMy > tbody > tr.Content__active__3pus6:hover > th {
+  background-color: #e8e8e8; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__success__1fKZD, table > thead > tr > td.Content__success__1fKZD,
+.Content__table__2Gq2x > thead > tr > th.Content__success__1fKZD, table > thead > tr > th.Content__success__1fKZD,
+.Content__table__2Gq2x > thead > tr.Content__success__1fKZD > td, table > thead > tr.Content__success__1fKZD > td,
+.Content__table__2Gq2x > thead > tr.Content__success__1fKZD > th, table > thead > tr.Content__success__1fKZD > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__success__1fKZD, table > tbody > tr > td.Content__success__1fKZD,
+.Content__table__2Gq2x > tbody > tr > th.Content__success__1fKZD, table > tbody > tr > th.Content__success__1fKZD,
+.Content__table__2Gq2x > tbody > tr.Content__success__1fKZD > td, table > tbody > tr.Content__success__1fKZD > td,
+.Content__table__2Gq2x > tbody > tr.Content__success__1fKZD > th, table > tbody > tr.Content__success__1fKZD > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__success__1fKZD, table > tfoot > tr > td.Content__success__1fKZD,
+.Content__table__2Gq2x > tfoot > tr > th.Content__success__1fKZD, table > tfoot > tr > th.Content__success__1fKZD,
+.Content__table__2Gq2x > tfoot > tr.Content__success__1fKZD > td, table > tfoot > tr.Content__success__1fKZD > td,
+.Content__table__2Gq2x > tfoot > tr.Content__success__1fKZD > th, table > tfoot > tr.Content__success__1fKZD > th {
+  background-color: #dff0d8; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__success__1fKZD:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__success__1fKZD:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__success__1fKZD:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__success__1fKZD,
+.Content__table-hover__28JMy > tbody > tr.Content__success__1fKZD:hover > th {
+  background-color: #d0e9c6; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__info__3Uyf3, table > thead > tr > td.Content__info__3Uyf3,
+.Content__table__2Gq2x > thead > tr > th.Content__info__3Uyf3, table > thead > tr > th.Content__info__3Uyf3,
+.Content__table__2Gq2x > thead > tr.Content__info__3Uyf3 > td, table > thead > tr.Content__info__3Uyf3 > td,
+.Content__table__2Gq2x > thead > tr.Content__info__3Uyf3 > th, table > thead > tr.Content__info__3Uyf3 > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__info__3Uyf3, table > tbody > tr > td.Content__info__3Uyf3,
+.Content__table__2Gq2x > tbody > tr > th.Content__info__3Uyf3, table > tbody > tr > th.Content__info__3Uyf3,
+.Content__table__2Gq2x > tbody > tr.Content__info__3Uyf3 > td, table > tbody > tr.Content__info__3Uyf3 > td,
+.Content__table__2Gq2x > tbody > tr.Content__info__3Uyf3 > th, table > tbody > tr.Content__info__3Uyf3 > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__info__3Uyf3, table > tfoot > tr > td.Content__info__3Uyf3,
+.Content__table__2Gq2x > tfoot > tr > th.Content__info__3Uyf3, table > tfoot > tr > th.Content__info__3Uyf3,
+.Content__table__2Gq2x > tfoot > tr.Content__info__3Uyf3 > td, table > tfoot > tr.Content__info__3Uyf3 > td,
+.Content__table__2Gq2x > tfoot > tr.Content__info__3Uyf3 > th, table > tfoot > tr.Content__info__3Uyf3 > th {
+  background-color: #d9edf7; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__info__3Uyf3:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__info__3Uyf3:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__info__3Uyf3:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__info__3Uyf3,
+.Content__table-hover__28JMy > tbody > tr.Content__info__3Uyf3:hover > th {
+  background-color: #c4e3f3; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__warning__3vM1b, table > thead > tr > td.Content__warning__3vM1b,
+.Content__table__2Gq2x > thead > tr > th.Content__warning__3vM1b, table > thead > tr > th.Content__warning__3vM1b,
+.Content__table__2Gq2x > thead > tr.Content__warning__3vM1b > td, table > thead > tr.Content__warning__3vM1b > td,
+.Content__table__2Gq2x > thead > tr.Content__warning__3vM1b > th, table > thead > tr.Content__warning__3vM1b > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__warning__3vM1b, table > tbody > tr > td.Content__warning__3vM1b,
+.Content__table__2Gq2x > tbody > tr > th.Content__warning__3vM1b, table > tbody > tr > th.Content__warning__3vM1b,
+.Content__table__2Gq2x > tbody > tr.Content__warning__3vM1b > td, table > tbody > tr.Content__warning__3vM1b > td,
+.Content__table__2Gq2x > tbody > tr.Content__warning__3vM1b > th, table > tbody > tr.Content__warning__3vM1b > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__warning__3vM1b, table > tfoot > tr > td.Content__warning__3vM1b,
+.Content__table__2Gq2x > tfoot > tr > th.Content__warning__3vM1b, table > tfoot > tr > th.Content__warning__3vM1b,
+.Content__table__2Gq2x > tfoot > tr.Content__warning__3vM1b > td, table > tfoot > tr.Content__warning__3vM1b > td,
+.Content__table__2Gq2x > tfoot > tr.Content__warning__3vM1b > th, table > tfoot > tr.Content__warning__3vM1b > th {
+  background-color: #fcf8e3; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__warning__3vM1b:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__warning__3vM1b:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__warning__3vM1b:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__warning__3vM1b,
+.Content__table-hover__28JMy > tbody > tr.Content__warning__3vM1b:hover > th {
+  background-color: #faf2cc; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__danger__DoByx, table > thead > tr > td.Content__danger__DoByx,
+.Content__table__2Gq2x > thead > tr > th.Content__danger__DoByx, table > thead > tr > th.Content__danger__DoByx,
+.Content__table__2Gq2x > thead > tr.Content__danger__DoByx > td, table > thead > tr.Content__danger__DoByx > td,
+.Content__table__2Gq2x > thead > tr.Content__danger__DoByx > th, table > thead > tr.Content__danger__DoByx > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__danger__DoByx, table > tbody > tr > td.Content__danger__DoByx,
+.Content__table__2Gq2x > tbody > tr > th.Content__danger__DoByx, table > tbody > tr > th.Content__danger__DoByx,
+.Content__table__2Gq2x > tbody > tr.Content__danger__DoByx > td, table > tbody > tr.Content__danger__DoByx > td,
+.Content__table__2Gq2x > tbody > tr.Content__danger__DoByx > th, table > tbody > tr.Content__danger__DoByx > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__danger__DoByx, table > tfoot > tr > td.Content__danger__DoByx,
+.Content__table__2Gq2x > tfoot > tr > th.Content__danger__DoByx, table > tfoot > tr > th.Content__danger__DoByx,
+.Content__table__2Gq2x > tfoot > tr.Content__danger__DoByx > td, table > tfoot > tr.Content__danger__DoByx > td,
+.Content__table__2Gq2x > tfoot > tr.Content__danger__DoByx > th, table > tfoot > tr.Content__danger__DoByx > th {
+  background-color: #f2dede; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__danger__DoByx:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__danger__DoByx:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__danger__DoByx:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__danger__DoByx,
+.Content__table-hover__28JMy > tbody > tr.Content__danger__DoByx:hover > th {
+  background-color: #ebcccc; }
+
+.Content__table-responsive__1_Wb8 {
+  overflow-x: auto;
+  min-height: 0.01%; }
+  @media screen and (max-width: 767px) {
+    .Content__table-responsive__1_Wb8 {
+      width: 100%;
+      margin-bottom: 16.5px;
+      overflow-y: hidden;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      border: 1px solid #000; }
+      .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x, .Content__table-responsive__1_Wb8 > table {
+        margin-bottom: 0; }
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > thead > tr > th, .Content__table-responsive__1_Wb8 > table > thead > tr > th,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > thead > tr > td,
+        .Content__table-responsive__1_Wb8 > table > thead > tr > td,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > tbody > tr > th,
+        .Content__table-responsive__1_Wb8 > table > tbody > tr > th,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > tbody > tr > td,
+        .Content__table-responsive__1_Wb8 > table > tbody > tr > td,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > tfoot > tr > th,
+        .Content__table-responsive__1_Wb8 > table > tfoot > tr > th,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > tfoot > tr > td,
+        .Content__table-responsive__1_Wb8 > table > tfoot > tr > td {
+          white-space: nowrap; }
+      .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs {
+        border: 0; }
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > thead > tr > th:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > thead > tr > td:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr > th:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr > td:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr > th:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr > td:first-child {
+          border-left: 0; }
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > thead > tr > th:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > thead > tr > td:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr > th:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr > td:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr > th:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr > td:last-child {
+          border-right: 0; }
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr:last-child > th,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr:last-child > td,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr:last-child > th,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr:last-child > td {
+          border-bottom: 0; } }
+
+.Content__check__sbZVW ul,
+.Content__check__sbZVW ol,
+.Content__activity__12AJC ul,
+.Content__activity__12AJC ol,
+.Content__save__3P_NU ul,
+.Content__save__3P_NU ol {
+  padding: 0;
+  margin: 0 0 20px; }
+
+.Content__check__sbZVW ul.Content__task-list__2CKPB li.Content__task-list-item__2A55S::before,
+.Content__activity__12AJC ul.Content__task-list__2CKPB li.Content__task-list-item__2A55S::before,
+.Content__save__3P_NU ul.Content__task-list__2CKPB li.Content__task-list-item__2A55S::before {
+  display: none; }
+
+.Content__check__sbZVW li,
+.Content__activity__12AJC li,
+.Content__save__3P_NU li {
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 45px; }
+
+.Content__check__sbZVW li::before,
+.Content__activity__12AJC li::before,
+.Content__save__3P_NU li::before {
+  content: " ";
+  border-radius: 20px;
+  border: 3px solid #abdbea;
+  padding: 8px;
+  float: left;
+  margin-left: -40px;
+  margin-top: 2px; }
+
+.Content__check__sbZVW label,
+.Content__activity__12AJC label,
+.Content__save__3P_NU label {
+  font-weight: normal;
+  margin-left: 6px; }
+
+pre.Content__blocks__1k922,
+code.Content__b__2nfHe {
+  background-color: inherit;
+  border: 0; }
+
+pre > code {
+  background-color: transparent; }
+
+section.Content__activity__12AJC h1 {
+  color: #fff;
+  background: #349946;
+  padding: 10px;
+  border-radius: 5px; }
+
+section.Content__activity__12AJC .Content__subsection__3XzlJ h2 {
+  color: #fff;
+  background: #349946;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 300; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 ul,
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 ol {
+    padding: 0;
+    margin: 0 0 20px; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 ul.Content__task-list__2CKPB li.Content__task-list-item__2A55S::before {
+    display: none; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 li {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 45px; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 li::before {
+    content: " ";
+    border-radius: 20px;
+    border: 3px solid #abdbea;
+    padding: 8px;
+    float: left;
+    margin-left: -40px;
+    margin-top: 2px; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 label {
+    font-weight: normal;
+    margin-left: 6px; }
+
+section.Content__check__sbZVW h2 {
+  background-image: url(/beta/15ac74fbc78a1df119501938bf49e877.svg);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  padding-top: 4px;
+  padding-bottom: 9px;
+  padding-left: 50px; }
+
+section.Content__try__9Al91 {
+  background: #abdbea;
+  border-radius: 10px;
+  padding: 1px 20px 10px; }
+  section.Content__try__9Al91 code {
+    background-color: #fff;
+    color: #007cc9; }
+  section.Content__try__9Al91 li::before {
+    border: 3px solid #fff; }
+
+section.Content__protip__3oM5h,
+section.Content__tip__2hJcQ {
+  border: 3px solid #ff7f00;
+  background: #fff99d;
+  border-radius: 12px;
+  padding: 0 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+section.Content__flag__1GjEr {
+  border-top: 3px dotted #e6862d;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  section.Content__flag__1GjEr h2 {
+    color: #36a137;
+    background-image: url(/beta/4a58cdc0f6e0e74bb219124bb5bde3b7.svg);
+    background-position: 0 10px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 60px; }
+
+section.Content__save__3P_NU {
+  border-top: 3px solid #245a9a;
+  margin: 20px 0; }
+  section.Content__save__3P_NU h2 {
+    color: #245a9a;
+    background-image: url(/beta/0a8afb9f53ba0352c6ae27f9a35fe08a.svg);
+    background-position: 0 10px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 50px; }
+
+section.Content__challenge__2LUyO {
+  border: 3px solid #00b1da;
+  border-radius: 12px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  section.Content__challenge__2LUyO h2 {
+    color: #fff;
+    background: #00b1da;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0; }
+  section.Content__challenge__2LUyO > * {
+    padding: 0 20px; }
+
+code.Content__blockmotion__2TNTp {
+  background-color: #505fd7; }
+
+code.Content__blocklooks__NJdsX {
+  background-color: #9b33d9; }
+
+code.Content__blocksound__wb8Zz {
+  background-color: #d000c2; }
+
+code.Content__blockpen__1tOwq {
+  background-color: #00a16f; }
+
+code.Content__blockdata__1wt1I {
+  background-color: #ff7500; }
+
+code.Content__blockevents__r08uu {
+  background-color: #d38117; }
+
+code.Content__blockcontrol__3yrIr {
+  background-color: #e9aa00; }
+
+code.Content__blocksensing__2mkm9 {
+  background-color: #00a3e6; }
+
+code.Content__blockoperators__x9p0o {
+  background-color: #00c114; }
+
+code.Content__blockmoreblocks__3YKWS {
+  background-color: #71009a; }
+
+code.Content__blockmotion__2TNTp, code.Content__blocklooks__NJdsX, code.Content__blocksound__wb8Zz, code.Content__blockpen__1tOwq, code.Content__blockdata__1wt1I, code.Content__blockevents__r08uu, code.Content__blockcontrol__3yrIr, code.Content__blocksensing__2mkm9, code.Content__blockoperators__x9p0o, code.Content__blockmoreblocks__3YKWS {
+  color: #fff; }
+
+@media aural, braille, handheld, projection, screen, tty, tv, embossed {
+  pre > code {
+    word-wrap: normal;
+    white-space: pre; } }
+
+.Content__video-container__2gCjN {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 30px 0 60px; }
+  .Content__video-container__2gCjN iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+input[type="checkbox"] {
+  display: none; }
+
+input[type="checkbox"] + label {
+  position: relative;
+  font-weight: normal;
+  margin-left: 0; }
+
+input[type="checkbox"] + label::before {
+  content: '\A0';
+  display: inline-block;
+  visibility: visible;
+  width: 1.3em;
+  height: 1.3em;
+  margin: 0 0.6em 0 -2.2em;
+  line-height: 1.1em;
+  text-align: center;
+  border: 3px solid #abdbea;
+  border-radius: 3px; }
+
+input[type="checkbox"]:checked + label::before {
+  content: '\2714';
+  line-height: 1.1em;
+  padding-left: 0.1em; }
+.ImprovePage__font__1MdMv {
+  font-family: "Roboto", "Verdana", sans-serif;
+  font-weight: 300;
+  font-size: 1em; }
+
+/* Container for improve box */
+.ImprovePage__container__HeXzk {
+  margin: 10px 30px; }
+
+.ImprovePage__improvePageBox__cyxic {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+  max-width: 650px;
+  border-radius: 10px; }
+
+/* Student / Teacher mode */
+.ImprovePage__student__3q08- {
+  background-color: #b1daae; }
+
+.ImprovePage__teacher__2iOCW {
+  background-color: #a3cccb; }
+
+/* Row containing the text */
+/* Box-shadow works as a <hr/> to differentiate text and links */
+.ImprovePage__textRowStudent__2MdgF {
+  margin: 5px 20px 15px;
+  box-shadow: 0 8px 6px -6px #89c785; }
+
+.ImprovePage__textRowTeacher__2aMXI {
+  margin: 5px 20px 15px;
+  box-shadow: 0 8px 6px -6px #7bb7b6; }
+
+/* Row containing the links */
+.ImprovePage__linkRow__20Z6P {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .ImprovePage__linkRow__20Z6P div {
+    margin: 10px; }
+
+/* Media screen */
+@media only screen and (max-width: 300px) {
+  .ImprovePage__textRowStudent__2MdgF,
+  .ImprovePage__textRowTeacher__2aMXI {
+    max-width: 150px; } }
+.Footer__container__1SZrv {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-family: "Roboto", "Verdana", sans-serif; }
+  .Footer__container__1SZrv a {
+    text-decoration: none; }
+
+.Footer__containerStudent__3Yr5f {
+  background-color: #b1daae;
+  color: #265732; }
+  .Footer__containerStudent__3Yr5f a {
+    color: #265732; }
+
+.Footer__containerTeacher__36KZb {
+  background-color: #a3cccb;
+  color: #215651; }
+  .Footer__containerTeacher__36KZb a {
+    color: #215651; }
+
+.Footer__center__3xqZ_ {
+  text-align: center; }
+
+.Footer__inline__1Q6ds {
+  display: inline-block;
+  margin: 20px 10px; }
+
+.Footer__svg__29r7H {
+  width: 100px;
+  height: auto;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__img__25Ink {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  width: auto;
+  height: 50px;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__divider__LJrti {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid;
+  width: 50%; }
+
+.Footer__svg__29r7H:hover,
+.Footer__img__25Ink:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.5); }
+</style>
+<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-16x16.png"><link rel="shortcut icon" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1536x2008.png"></head>
+<body>
+    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="114435104"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/src/assets/graphics/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm" href="/processing" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="data:image/png;base64,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" data-reactid="42"/></a><span data-reactid="43"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/processing/verden_del2/verden_del2" data-reactid="44"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/b1bbe21c6392db68a7ca74587b2668d9.svg" data-reactid="45"/><span class="BreadCrumb__lesson__1OSql" data-reactid="46">Verden - Del 2</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="47"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="48"><div class="dropdown btn-group btn-group-language-student" data-reactid="49"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="50"><div data-reactid="51"><img class="LanguageDropdown__flag__14wo3" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="52"/><div class="LanguageDropdown__language__1g4QB" data-reactid="53">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="54"><li role="presentation" class="active" data-reactid="55"><a role="menuitem" tabindex="-1" href="#" data-reactid="56"><div data-reactid="57"><img class="LanguageDropdown__flag__14wo3" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="58"/><div class="LanguageDropdown__language__1g4QB" data-reactid="59">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="60"><a role="menuitem" tabindex="-1" href="#" data-reactid="61"><div data-reactid="62"><img class="LanguageDropdown__flag__14wo3" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="63"/><div class="LanguageDropdown__language__1g4QB" data-reactid="64">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="65"><a role="menuitem" tabindex="-1" href="#" data-reactid="66"><div data-reactid="67"><img class="LanguageDropdown__flag__14wo3" src="/beta/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="68"/><div class="LanguageDropdown__language__1g4QB" data-reactid="69">Svenska</div></div></a></li><li role="presentation" class="" data-reactid="70"><a role="menuitem" tabindex="-1" href="#" data-reactid="71"><div data-reactid="72"><img class="LanguageDropdown__flag__14wo3" src="/beta/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="73"/><div class="LanguageDropdown__language__1g4QB" data-reactid="74">Dansk</div></div></a></li><li role="presentation" class="" data-reactid="75"><a role="menuitem" tabindex="-1" href="#" data-reactid="76"><div data-reactid="77"><img class="LanguageDropdown__flag__14wo3" src="/beta/7eea7bf89b693a96506087f96a5d95a3.svg" data-reactid="78"/><div class="LanguageDropdown__language__1g4QB" data-reactid="79">English</div></div></a></li></ul></div></div><div class="NavBar__gadgetContainer__28a-C" data-reactid="80"><div class="dropdown btn-group btn-group-student" data-reactid="81"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="82"><!-- react-text: 83 -->Modus: Elev<!-- /react-text --></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="84"><li role="presentation" class="active" data-reactid="85"><a role="menuitem" tabindex="-1" href="#" data-reactid="86">Elev</a></li><li role="presentation" class="" data-reactid="87"><a role="menuitem" tabindex="-1" href="#" data-reactid="88">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="89"><h1 data-reactid="90"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/b1bbe21c6392db68a7ca74587b2668d9.svg" data-reactid="91"/><!-- react-text: 92 -->Verden - Del 2<!-- /react-text --><!-- react-text: 93 --><!-- /react-text --></h1><p data-reactid="94"><i data-reactid="95"><!-- react-text: 96 -->av<!-- /react-text --><!-- react-text: 97 --> <!-- /react-text --><!-- react-text: 98 -->Kine Gjerstad Eide<!-- /react-text --></i></p><div data-reactid="99"><section class="intro" id="intro">
+<h1 class="intro" id="intro">Intro</h1>
+<p>Denne oppgava bygger på oppgava med samme navn som ligger på introduksjonsnivå her i Processingoppgavene. <a href="../verden_del1/verden_del1" target="_blank">Klikk her for å gå til introduksjonsoppgava av verden</a>.</p>
+<p>I denne oppgava skal vi fortsette med verdenspillet! Nå skal vi komme så langt på spillet at det skal dukke opp navnet på en verdensdel i vinduet, og så er det om å gjøre å trykke på verdensdelen.</p>
+<p>Slik skal oppgava se ut når vi er ferdig å kode alt sammen:</p>
+<figure><img src="/beta/_/oppgaver/src/processing/verden_del2/previewAvSpillet.d9d31f.png" alt=""></figure>
+</section>
+<section class="activity" id="steg-0-oppsummering-fra-intro-oppgava">
+<h1 class="activity" id="steg-0-oppsummering-fra-intro-oppgava">Steg 0: Oppsummering fra intro oppgava</h1>
+<p>Her er koden vi gjorde i introduksjonsoppgava:</p>
+<figure><img src="/beta/_/oppgaver/src/processing/verden_del2/steg0.21c759.png" alt=""></figure>
+<p>Hittil har vi fått det til å dukke opp &quot;EUROPA&quot; på skjermen når datamusa holdes over verdensdelen Europa på kartet.</p>
+<p>Dette ble gjort ved å først si at Europa er firkanta. Deretter ble koordinatene til datamusa vist som tekst i vinduet og så holdt vi datamusa nøyaktig på grensene som var tegna opp, slik at vi kunne se hva koordinatene var og bruke disse for å lage if-setninger til å sjekke med.</p>
+<p>Vi lagde en if-setning for hver side i firkanten som utgjorde grensa til Europa. Disse fant vi ut at måtte skrives inni hverandre slik at man sjekket om man var innenfor alle fire grensene samtidig.</p>
+<p>Under har vi laga ei sjekkliste, dersom du får til alle punktene i lista, så er det ikke noe problem for deg å gjøre resten av denne oppgava. Dersom du synes sjekklista er vanskelig, så anbefaler vi at du forsøker deg på introduksjonsdelen av oppgava før du går videre.</p>
+<section class="check" id="sjekkliste">
+<h2 class="check" id="sjekkliste">Sjekkliste</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_0"><label for="cbx_0"> Skriv inn koden som ble gjort i introduksjonsdelen av oppgava og få det til å kjøre.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_1"><label for="cbx_1"> Flytt teksten som viser koordinatene ned til høyre hjørne av skjermen.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_2"><label for="cbx_2"> Få teksten &quot;EUROPA ER 10 180 000 KVADRATMETER&quot; til å vises på skjermen i stede for bare &quot;EUROPA&quot; når du holder datamusa over Europa.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_3"><label for="cbx_3"> Bytt størrelsen på vinduet, slik at det når fra toppen til bunnen av skjermen din.</label></li>
+</ul>
+<p>Fikk du til alle punktene? Still tilbake alt sammen før du går videre.</p>
+</section>
+</section>
+<section class="activity" id="steg-1-legg-til-asia">
+<h1 class="activity" id="steg-1-legg-til-asia">Steg 1: Legg til Asia</h1>
+<p>Du lærte i introduksjonsdelen hvordan du la til Europa, så nå skal du få legge til Asia på samme måte. Vi har delt opp dette i mindre deler for deg. Under har vi laga ei sjekkliste som du må følge. Dersom noen av punktene er vanskelig, så husk at du kan sjekke med introduksjonsoppgava.</p>
+<section class="check" id="sjekkliste-2">
+<h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_4"><label for="cbx_4"> Last ned dette bilde og få det til å vise i vinduet i stedet for det du har nå:
+<img src="/beta/_/oppgaver/src/processing/verden_del2/mapAsia.74316e.png" alt=""></label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_5"><label for="cbx_5"> Finn ut hvor grensene til Asia er og lagre dem som kommentarer i koden din. Kommentarer lages ved å sette to skråstreker først, slik som dette: <code>//</code>.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_6"><label for="cbx_6"> Skriv if-setningen for den føstre grensa og sjekk at det fungerer.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_7"><label for="cbx_7"> Gjør et metodekall på <code>text();</code> inni if-setningen hvor det første parameteret er &quot;ASIA&quot;. De to neste parameterne kan være det samme som de to siste i metodekallet som får &quot;EUROPA&quot; til å vises på skjermen.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_8"><label for="cbx_8"> Skriv if-setningen for den andre grensa og sjekk at det fungerer. Husk at alle if-setningene må stå inni hverandre.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_9"><label for="cbx_9"> Skriv if-setningen for den tredje grensa og sjekk at det fungerer.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_10"><label for="cbx_10"> Skriv if-setningen for den fjerde grensa og sjekk at det fungerer.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_11"><label for="cbx_11"> Bytt tilbake til bilde av verdenskartet uten firkanta grenser på.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_12"><label for="cbx_12"> Test at alt fungerer, nå skal &quot;ASIA&quot; vises i vinduet når du holder datamusa over Asia, mens &quot;EUROPA&quot; skal vises i vinduet når du holder datamusa over Europa.</label></li>
+</ul>
+<p>Her er koden så langt.</p>
+<figure><img src="/beta/_/oppgaver/src/processing/verden_del2/steg1.fb0a33.png" alt=""></figure>
+</section>
+</section>
+<section class="activity" id="steg-2-sla-sammen-if-setninger">
+<h1 class="activity" id="steg-2-sla-sammen-if-setninger">Steg 2: Slå sammen if-setninger</h1>
+<p>Nå som du har vært gjennom hvordan du setter opp if-setninger inne hverandre, så er det på tide å vise hvordan du kan slå if-setninger sammen. Når du if-setninger settes inni hver andre så kan det leses muntlig som dette:</p>
+<pre><code class="processing">Dersom datamusa er innenfor venstre grense
+    og dersom datamusa er innenfor høyre grense
+        og dersom datamusa er innenfor nedre grense
+            og dersom datamusa er innenfor øvre grense,
+                så skal vi vise <span class="hljs-string">"EUROPA"</span> på skjermen.
+</code></pre>
+<p>Gjør vi dette om til litt mer vanlig tale, så ville vi sagt:</p>
+<pre><code class="processing">Dersom datamusa er innenfor venstre grense og datamusa er innenfor høyre grense og datamusa er innenfor nedre grense og datamusa er innenfor øvre grense,
+    så skal vi vise <span class="hljs-string">"EUROPA"</span> på skjermen.
+</code></pre>
+<p>Dette har vi lov å gjøre når vi koder også. La oss bytte ut det vi har så langt med kode i setningen over, da får vi dette:</p>
+<pre><code class="processing"><span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">365</span> og <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">694</span> og <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">455</span> og <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">33</span>)]{
+    <span class="hljs-built_in">text</span>(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+}
+</code></pre>
+<p>Så langt har vi ikke lagt til noe ny kode. Vi har bare satt alle testene på samme linje med <code>og</code> mellom. Vi har ikke lov å bruke <code>og</code>, men vi har lov å bruke <code>&amp;&amp;</code> som betyr akkurat det samme. La oss sette inn <code>&amp;&amp;</code> der hvor vi har <code>og</code>, da får vi:</p>
+<pre><code class="processing"><span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">365</span> &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">694</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">455</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">33</span>)]{
+    <span class="hljs-built_in">text</span>(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+}
+</code></pre>
+<p>Dette blir en ganske lang if-setning som kanskje er litt vanskelig å lese, men det sparer mye plass i koden.</p>
+<section class="check" id="gjor-dette">
+<h2 class="check" id="gjor-dette">Gjør dette:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_13"><label for="cbx_13"> Dersom du ikke har gjort det allerede, så må du nå slå sammen de fire if-setningene som sjekker grensene til Europa til å være bare en if-setning.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_14"><label for="cbx_14"> Sjekk at koden fungerer.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_15"><label for="cbx_15"> Skriv om if-setningene for Asia, slik at du sjekker alle grensene i en if-setning.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_16"><label for="cbx_16"> Sjekk at koden fungerer.</label></li>
+</ul>
+<p>Her er bilde av koden så langt.</p>
+<figure><img src="/beta/_/oppgaver/src/processing/verden_del2/steg2.a2a36d.png" alt=""></figure>
+</section>
+</section>
+<section class="activity" id="steg-3-sjekk-afrika-med-to-if-setninger">
+<h1 class="activity" id="steg-3-sjekk-afrika-med-to-if-setninger">Steg 3: Sjekk Afrika med to if-setninger</h1>
+<p>Nå skal vi legge til Afrika, dette skal gjøres i en if-setning. Nå kan du velge om du vil følge sjekklista under bilde for å sette opp koden som trengs, eller om du vil forsøke å skrive den alene. Her er bilde av grensa til Afrika:</p>
+<figure><img src="/beta/_/oppgaver/src/processing/verden_del2/mapAfrika1.e46565.png" alt=""></figure>
+<section class="check" id="sjekkliste-3">
+<h2 class="check" id="sjekkliste-3">Sjekkliste:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_17"><label for="cbx_17"> Bytt ut verdenskartbilde med bildet over.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_18"><label for="cbx_18"> Finn koordinatene på de fire grensene til Afrika og skriv dem inn som kommentarer i koden din.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_19"><label for="cbx_19"> Kall på <code>text();</code> og bruk &quot;AFRIKA&quot; som første parameter.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_20"><label for="cbx_20"> Skriv koden til den første grensa.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_21"><label for="cbx_21"> Sjekk at koden fungerer og at if-setningen gjør det den skal.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_22"><label for="cbx_22"> Skriv <code>&amp;&amp;</code> og legg til testen for den andre grensa til Afrika i samme if-setning, muntlig blir dette:</label></li>
+</ul>
+<pre><code class="processing"><span class="hljs-keyword">if</span>(er datamusa innenfor den første grensa &amp;&amp; er datamusa innenfor den andre grensa){
+    vis teksten <span class="hljs-string">"AFRIKA"</span> i vinduet.
+}
+</code></pre>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_23"><label for="cbx_23"> Test at koden fungerer som den skal.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_24"><label for="cbx_24"> Skriv <code>&amp;&amp;</code> og legg til testen for den tredje grensa til Afrika i samme if-setning.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_25"><label for="cbx_25"> Test at dette fungerer som det skal.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_26"><label for="cbx_26"> Skriv <code>&amp;&amp;</code> og legg til testen for den fjerde grensa til Afrika i samme if-setning.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_27"><label for="cbx_27"> Test at koden fungerer og at &quot;AFRIKA&quot; vises i vinduet når du holder datamusa over Afrika.</label></li>
+</ul>
+<p>Nå som Afrika også fungerer, så skal vi legge til en liten rute til, fordi som du ser på kartet, så er ikke Madagaskar, Somalia, halve Ethiopia og Djibouti tatt med i firkanten, så når vi holder datamusa over disse landene, så kommer ikke &quot;AFRIKA&quot; opp på skjermen. Det må vi fikse.</p>
+<p>Vi har laga en ny firkant som bare inkluderer disse landene. Nå har du skrevet så mange if-setninger at denne tror vi du greier uten en sjekkliste. Dersom det er vanskelig, så er det bare å bruke sjekklista over, det er akkurat det samme som skal gjøres, bare med nye koordinater på grensene.</p>
+</section>
+<section class="check" id="gjor-dette-2">
+<h2 class="check" id="gjor-dette-2">Gjør dette:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_28"><label for="cbx_28"> Lag en ny if-setning som sjekker grensene til den nye firkanten. Her er bildet:
+<img src="/beta/_/oppgaver/src/processing/verden_del2/mapAfrika.57d4e5.png" alt=""></label></li>
+</ul>
+<p>Her er koden vår så langt. Nå begynner det å bli en del if-setninger!</p>
+<figure><img src="/beta/_/oppgaver/src/processing/verden_del2/steg3.00ad03.png" alt=""></figure>
+</section>
+</section>
+<section class="activity" id="steg-4-lag-en-metode-i-steden-for-alle-if-setningene">
+<h1 class="activity" id="steg-4-lag-en-metode-i-steden-for-alle-if-setningene">Steg 4: Lag en metode i steden for alle if-setningene</h1>
+<p>Nå skal vi gjøre koden vår enda mindre. Det er fordi vi skal legge til mange flere if-setninger og da vil vi skrive kode som er så enkel som mulig.</p>
+<p>Når du ser etter på if-setningene, så er de nesten helt like. Det er bare selve grenseverdien som er forskjellig. Når vi oppdager at vi kommer til å måtte skrive mye kode som ligner veldig, så kan man ofte putte det som er likt over i en metode og så foreta metodekall i stede for å skrive samme kode på nytt og på nytt.</p>
+<p><code>setup</code> og <code>draw</code> er metoder vi har skrevet, mens <code>text();</code> er en metode vi har kalt på. Når du trykker på play, så gjøres det automatisk et kall på <code>setup</code>, det skjer bare en gang. Deretter kalles <code>draw</code> på nytt og på nytt helt til programmet slås av.</p>
+<p>La oss skrive en ny metode, den plasseres unden <code>draw</code>. Vi har valgt å gi metoden navnet <code>sjekkVerdensdel</code>. Da blir det slik:</p>
+<pre><code class="processing"><span class="hljs-keyword">void</span> sjekkVerdensdel(){
+
+
+}
+</code></pre>
+<p>Inni krøllparentesene skal vi skrive den koden vår som blir gjentatt, altså de lange if-setningene.</p>
+<p>La oss starte med å putte inn en av if-setningene. Vi har valgt å kopiere inn if-setningen som sjekker om datamusa er innenfor Europa sin grense, så nå ser metoden slik ut:</p>
+<pre><code class="processing"><span class="hljs-keyword">void</span> sjekkVerdensdel(){
+    <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">365</span> &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">694</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">455</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">33</span>)]{
+        <span class="hljs-built_in">text</span>(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+    }
+}
+</code></pre>
+<p>Vi har ikke lyst å skriv inn en if-setning for hver verdensdel i den nye metoden. For å bare ha en if-sentning, så bytter vi ut alle de tallene som er forskjellig fra verdensdel til verdensdel med variabler. Vi gir variabelnavn som er logiske, da er det lettere å lese koden senere. En variabel kan endres mens programmet kjører, men tall som er skrevet direkte inn kan ikke endres mens programmet kjører. I den første testen sjekker vi om datamusa er innenfor den første grensa, altså den grensa som er til høyre. Vi har ikke lov å bruke <code>æ</code>, <code>ø</code> eller <code>å</code>, så da skriver vi <code>høyre</code> med <code>o</code>, altså <code>hoyreGrense</code>. Vi putter dette inn i stede for tallet <code>365</code> og får:</p>
+<pre><code class="processing"><span class="hljs-keyword">void</span> sjekkVerdensdel(){
+    <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; hoyreGrense &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">694</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">455</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">33</span>)]{
+        <span class="hljs-built_in">text</span>(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+    }
+}
+</code></pre>
+<p>Vi gjør det samme med de andre tre grensene også.</p>
+<section class="check" id="gjor-dette-3">
+<h2 class="check" id="gjor-dette-3">Gjør dette:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_29"><label for="cbx_29"> Finn passende navn til de andre grensene også og bytt ut tallene i if-setningen med de navna du har funnet.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_30"><label for="cbx_30"> Kjør programmet, hva skjer?</label></li>
+</ul>
+<p>Nå fikk vi en feilmelding som ser slik ut:</p>
+<figure><img src="/beta/_/oppgaver/src/processing/verden_del2/errorVariabel.f7cd0e.png" alt=""></figure>
+<p>Programmet sier at <code>hoyreGrense</code> ikke kan bli en variabel. Det er fordi vi ikke har skrevet kode som forteller programmet at <code>hoyreGrense</code> er en variabel. Forløpig tror programmet at vi har gjort en skrivefeil. Programmet vet at vi skal sammenligne datamusa sin koordinat med et eller annet tall, men akkurat nå er ikke <code>hoyreGrense</code> noe tall, det er bare noen bokstaver.</p>
+<p>Vi må gjøre om <code>hoyreGrense</code> til en variabel av typen <code>int</code>, det betyr heltall. Det heter å deklarere variabelen. Vi kan deklarere variabelen flere steder, inni den nye metoden, utenfor alle metodene, eller inni parentesene til metoden. Hvor vi velger å deklarere variabelen avhenger av hvordan vi skal bruke metoden.</p>
+<p>Ettersom vi ønsker å sjekke forskjellige grenser hver gang vi kaller metoden, så er det lurt å deklarere variabelen <code>hoyreGrense</code> inni parentesene til den nye metoden. Når deklarasjonen er plassert her, så må vi legge ved grenseverdien som parameter hver gang vi kaller på metoden.</p>
+<p>Metoden ser slik ut:</p>
+<pre><code class="processing"><span class="hljs-keyword">void</span> sjekkVerdensdel(<span class="hljs-built_in">int</span> hoyreGrense, <span class="hljs-built_in">int</span> ...., <span class="hljs-built_in">int</span> ...., <span class="hljs-built_in">int</span> .... ){
+    <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; hoyreGrense &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; .... &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; .... &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; ....)]{
+        <span class="hljs-built_in">text</span>(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+    }
+}
+</code></pre>
+<p>I stede for punktum så skal det være de navna du har valgt for de forskjellige grensene.</p>
+</section>
+<section class="check" id="gjor-dette-4">
+<h2 class="check" id="gjor-dette-4">Gjør dette:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_31"><label for="cbx_31"> Deklarer alle de fire variablene dine inni parentesen til den nye metoden din.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_32"><label for="cbx_32"> Sjekk om programmet kjører.</label></li>
+</ul>
+<p>Nå er det en ting som mangler. Det er navnet på verdensdelen. Alle verdensdelene skal ikke hete &quot;EUROPA&quot;. Da må vi gjøre denne om til en <code>String</code>, det betyr en tekst.</p>
+</section>
+<section class="check" id="gjor-dette-5">
+<h2 class="check" id="gjor-dette-5">Gjør dette:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_33"><label for="cbx_33"> Bytt ut det første parameteret inni metodekallet på <code>text();</code> inni if-setningen som er inni den nye metoden og skriv heller <code>verdensdel</code> (du kan velge et annet navn enn <code>verdensdel</code>).</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_34"><label for="cbx_34"> Kjør programmet, hva skjer?</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_35"><label for="cbx_35"> Deklarer <code>verdensdel</code> til å være en <code>String</code> inni parentesene til den nye metoden.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_36"><label for="cbx_36"> Kjør programmet, hva skjer?</label></li>
+</ul>
+<p>Nå har vi laget en ny metode, men vi har ikke kalt på den nye metoden noe sted. Så forløpig så kjører programmet vårt en gang gjennom <code>setup</code> og deretter på nytt og på nytt gjennom <code>draw</code> uten å gå til den nye metoden.</p>
+<p>Her er koden så langt, husk at vi sikkert har valgt litt forskjellige variabelnavn for de forskjellige grensene. Så lenge programmet kjører er ikke det noe problem. Det kan være greit om deklarasjonene på de forskjellige grensene, samt navnet på verdensdelen ligger i samme rekkefølge, men det er bare for å gjøre det lettere å feilsøke i koden seinere.</p>
+<figure><img src="/beta/_/oppgaver/src/processing/verden_del2/steg4.ad122b.png" alt=""></figure>
+</section>
+</section>
+<section class="activity" id="steg-5-bruk-den-nye-metoden">
+<h1 class="activity" id="steg-5-bruk-den-nye-metoden">Steg 5: Bruk den nye metoden</h1>
+<p>For å bruke den nye metoden må vi gjøre et metodekall på den. På samme måte som at vi har gjort et metodekall på <code>text();</code> og <code>size();</code>, så skal vi nå gjøre et metodekall på <code>sjekkVerdensdel();</code>. Dette gjør vi inni <code>draw</code> metoden.</p>
+<section class="check" id="gjor-dette-6">
+<h2 class="check" id="gjor-dette-6">Gjør dette:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_37"><label for="cbx_37"> Gjør et metodekall på <code>sjekkVerdensdel();</code> inni <code>draw</code> metoden.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_38"><label for="cbx_38"> Kjør koden, hva skjer, forstår du hva feilmeldingen betyr?
+<img src="/beta/_/oppgaver/src/processing/verden_del2/errorParameter.8ff55d.png" alt=""></label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_39"><label for="cbx_39"> Gjør metodekallet om til en kommentar ved å sette to skråstreker først på linja.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_40"><label for="cbx_40"> Ta bort parameterne inni ett av metodekallene på <code>text();</code>.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_41"><label for="cbx_41"> Kjør programmet, hva sker, forstår du feilmeldingen?
+<img src="/beta/_/oppgaver/src/processing/verden_del2/errortext.01d101.png" alt=""></label></li>
+</ul>
+<p>Det mangler rett og slett parameter i metodekallene. For metodekallet på <code>text();</code> trengs det først en <code>char</code> og deretter to <code>float</code>. Det betyr først den teksten som skal vises i vinduet, deretter to tall som bestemmer hvor teksten skal vises.</p>
+<p>For metodekallet på <code>sjekkVerdensdel();</code> så trengs det først en <code>String</code>, som sier hvilken verdensdel vi sjekker om datamusa er i, deretter fire <code>int</code>, som forteller hvor de fire grensene til verdensdelen er.</p>
+<p>Da må vi putte inn parameter i metodekallet.</p>
+</section>
+<section class="check" id="gjor-dette-7">
+<h2 class="check" id="gjor-dette-7">Gjør dette:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_42"><label for="cbx_42"> Sett inn igjen parameterne i metodekallet på <code>text();</code></label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_43"><label for="cbx_43"> Start med Europa. Det første parameteret skal da være <code>&quot;EUROPA&quot;</code>, husk fnuttene, ellers vet ikke programmet at det er en tekst. Skill hver av parameterne med komma. Det neste parameteret er den første grensa, altså 365. Så kommer den andre grensa, altså den på venstre side av firkanten vi har brukt, som er 694. Nå er det den nedre grensa sin tur, den fant vi ut var 455 og til slutt må vi ha den øvre grensa til Europa, som vi fant ut at var 33.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_44"><label for="cbx_44"> Kjør programmet, hva skjer?</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_45"><label for="cbx_45"> Nå vil &quot;EUROPA&quot; vises på skjermen dobbelt opp, fordi nå sjekker vi om datamusa er over Europa først i if-setningen inni <code>draw</code> metoden og deretter i det nye metodekallet vårt. Ta derfor bort if-setningen som er skrevet inni <code>draw</code> og som sjekker Europa.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_46"><label for="cbx_46"> Kjør programmet på nytt, fungerer det fremdeles som det skal?</label></li>
+</ul>
+<p>Her er bilde av koden, vi har bare tatt med metodene <code>draw</code> og <code>sjekkVerdensdel</code>, ettersom det bare er der det er gjort endringer. Det er viktig at du har fjernet riktig if-setning og at du har brukt riktige parametre inni metodekallet på <code>sjekkVerdensdel();</code>.</p>
+<figure><img src="/beta/_/oppgaver/src/processing/verden_del2/drawOgSjekk.a9b670.png" alt=""></figure>
+</section>
+</section>
+<section class="activity" id="steg-6-bruk-metoden-til-alle-verdensdelene">
+<h1 class="activity" id="steg-6-bruk-metoden-til-alle-verdensdelene">Steg 6: Bruk <code>sjekkVerdensdel</code> metoden til alle verdensdelene</h1>
+<p>Nå skal du få bruke metoden <code>sjekkVerdensdel();</code> til å sjekke Asia og Afrika. Siden du allerede har funnet ut hva koordinatene er akkurat på grensa, så trenger du ikke å gjøre det på nytt.</p>
+<section class="check" id="gjor-dette-8">
+<h2 class="check" id="gjor-dette-8">Gjør dette:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_47"><label for="cbx_47"> Gjør et metodekall på <code>sjekkVerdensdel();</code> hvor de forskjellige parameterne er de du har funnet for Asia.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_48"><label for="cbx_48"> Fjern if-setningen som sjekker om datamusa holder over Asia.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_49"><label for="cbx_49"> Kjør koden og sjekk at &quot;ASIA&quot; kommer opp når du holder datamusa innen for grensene til Asia.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_50"><label for="cbx_50"> Gjør to metodekall på <code>sjekkVerdensdel();</code> og få den til å sjekke om datamusa er innenfor Afrika.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_51"><label for="cbx_51"> Fjern de to if-setningene som sjekker om datamusa er innenfor Afrika.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_52"><label for="cbx_52"> Sjekk at koden fungerer.</label></li>
+</ul>
+<p>Her er koden vår så langt.</p>
+<figure><img src="/beta/_/oppgaver/src/processing/verden_del2/alleVerdensdelene.30a916.png" alt=""></figure>
+<p>Nå må vi legge til de siste verdensdelene. Her har vi et kart hvor vi har vist alle sammen. Nå skal vi gjøre metodekall på <code>sjekkVerdensdel();</code> og legge til grenseverdiene til Nord-Amerika, Sør-Amerika og Oseania. Kartet vårt mangler verdensdelen Antartika, men det får vi ta en annen gang.</p>
+</section>
+<section class="check" id="gjor-dette-9">
+<h2 class="check" id="gjor-dette-9">Gjør dette:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_53"><label for="cbx_53"> Bytt ut slik at dette bilde vises:
+<img src="/beta/_/oppgaver/src/processing/verden_del2/heleVerden.b28cc1.png" alt=""></label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_54"><label for="cbx_54"> Gjør et metodekall på <code>sjekkVerdensdel();</code>.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_55"><label for="cbx_55"> Sett inn det første parameteret til metoden som er <code>&quot;OSEANIA&quot;</code>.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_56"><label for="cbx_56"> Finn grenseverdiene til Oseania og skriv disse rett inn som parameter i metodekallet i stede for å skrive dem som kommentarer i koden først. Start med den venstre grensa, så den høyre, deretter den nedre grensa og til slutt den øvre.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_57"><label for="cbx_57"> Sjekk at koden fungerer. Nå skal &quot;OSEANIA&quot; vises på skjermen når du holder datamusa over Oseania. Dersom det ikke fungerte som det skulle, så forsøk å skrive grensene til Oseania som kommentarer først, slik at du er helt sikker på hva som er hva av tallene. Sjekk også at rekkefølgen på parameterne er riktig.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_58"><label for="cbx_58"> Gjør et nytt metodekall på <code>sjekkVerdensdel();</code> og putt inn parameterne for Nord-Amerika. Siden du akkurat har gjort det for Oseania, så er det bare å gjøre det samme her.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_59"><label for="cbx_59"> Test at koden fungerer, nå skal alle verdensdelene bortsett fra Sør-Amerika dukke opp på skjermen når du holder datamusa over dem.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_60"><label for="cbx_60"> Skriv kode slik at Sør-Amerika også vises på skjermen når du holder datamuda over verdensdelen.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_61"><label for="cbx_61"> Test at koden fungerer.</label></li>
+</ul>
+<p>Her er koden vår så langt.</p>
+<figure><img src="/beta/_/oppgaver/src/processing/verden_del2/steg6.c822d1.png" alt=""></figure>
+</section>
+</section>
+<section class="activity" id="steg-7-trekk-en-tilfeldig-verdensdel">
+<h1 class="activity" id="steg-7-trekk-en-tilfeldig-verdensdel">Steg 7: Trekk en tilfeldig verdensdel</h1>
+<p>Nå har vi fått alle verdensdelene til å vises når vi holder datamusa over dem, da er det på tide å få dette til å bli mer som et spill. Vi ønsker at det skal dukke opp navnet på en tilfeldig verdensdel på skjermen og så skal vi få poeng dersom vi greier å trykke på riktig verdensdel.</p>
+<p>Det vi trenger for å få dette til å skje, er en liste med alle verdensdelene og deretter noe kode for å trekke tilfeldig fra lista.</p>
+<p>Vi starter med lista. Denne skal inneholde ordene &quot;AFRIKA&quot;, &quot;ASIA&quot;, &quot;EUROPA&quot;, &quot;SØR-AMERIKA&quot;, &quot;NORD-AMERIKA&quot; og &quot;OSEANIA&quot;. Dette er tekst, så da bruker vi en liste for å lage tekst. Da vi oppretta metoden <code>sjekkVerdensdel</code>, så brukte vi <code>String</code> inni parentesen for å ta i mot en tekst, men dette var bare ett ord, eller en tekst. Nå trenger vi noe som kan inneholde mange separate tekster. Det er ganske enkelt, alt vi trenger å gjøre er å sette <code>[]</code> bak <code>String</code> og så vet programmet at det er en liste med tekster vi skal ha. Vi vet nøyaktig hva lista skal inneholde, så vi fyller den opp samtidig som vi deklarerer den.</p>
+<p>Vi deklarerer lista vår helt i toppen av programmet, utenfor alle metodene. Vi kan gi lista hvilket navn vi vil. Her har vi valgt <code>alleVerdensdelene</code>, så kodelinja ser slik ut:</p>
+<pre><code class="processing"> <span class="hljs-keyword">String</span>[] alleVerdensdelene = {<span class="hljs-string">"ASIA"</span>, <span class="hljs-string">"EUROPA"</span>, <span class="hljs-string">"NORD-AMERIKA"</span>, <span class="hljs-string">"SØR-AMERIKA"</span>, <span class="hljs-string">"OSEANIA"</span>, <span class="hljs-string">"AFRIKA"</span>};
+</code></pre>
+<p>Dette er alt vi trenger for å lage lista, denne typen liste heter <code>String array</code>.</p>
+<section class="check" id="gjor-dette-10">
+<h2 class="check" id="gjor-dette-10">Gjør dette:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_62"><label for="cbx_62"> Deklarer et <code>String array</code>. Du kan gi det hvilket navn du vil, men vi anbefaler <code>alleVerdensdelene</code>, slik at det er lettere å sammenligne din kode med vår.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_63"><label for="cbx_63"> Kjør programmet og se at det kjører som det skal.</label></li>
+</ul>
+<p><code>random();</code> er en metode som vi kan kalle på for å få et tilfeldig tall. Til forskjell fra <code>text();</code> og <code>size();</code>, så gjør ikke <code>random();</code> noe med vinduet vårt, det som skjer når vi bruker random er at vi får tibake ett tall og det tallet må vi putte i en variabel, slik at vi kan bruke det.</p>
+<p>La oss derfor først deklarere en variabel. <code>random();</code> gir oss et tall av typen <code>float</code>, derfor skulle egentlig variabelen vært av typen <code>float</code>, men når vi skal bruke tallet senere må det være av typen <code>int</code>. Derfor skal vi gjøre noe som heter å <code>caste</code> til <code>int</code>. Det betyr rett og slett bare at vi gjør verdien fra <code>random();</code> om til en <code>int</code>. Navnet til variabelen kan vi bestemme selv, her har vi valg at den skal hete <code>tilfeldigTall</code>. Denne deklarasjonen skal skje øverst i koden, enten rett over eller rett under deklarasjonen av lista. Kodelinja blir slik:</p>
+<pre><code class="processing"><span class="hljs-built_in">int</span> tilfeldigTall;
+</code></pre>
+<p>Nå må vi få <code>tilfeldigTall</code> til å inneholde et tilfeldig tall, det gjør vi inni <code>setup</code> metoden. Vi starter med muntlig kode:</p>
+<pre><code class="processing">    variabelen tilfeldigTall skal være ett tilfeldig tall;
+</code></pre>
+<p>Nå bruker vi <code>random();</code> med casting til <code>int</code>, da blir det:</p>
+<pre><code class="processing">    tilfeldigTall = (<span class="hljs-built_in">int</span>)<span class="hljs-built_in">random</span>(<span class="hljs-number">6</span>);
+</code></pre>
+<p>Parameteret til <code>random();</code> forteller hvor hvilke tall det skal velges tilfeldig mellom. Siden vi har 6 forskjellige verdensdeler med i lista, så vil vi at <code>random();</code> skal gi oss ett tall mellom 0 og 6. Derfor skriver vi 6 som parameter.</p>
+</section>
+<section class="check" id="gjor-dette-11">
+<h2 class="check" id="gjor-dette-11">Gjør dette:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_64"><label for="cbx_64"> Deklarer en variabel av typen <code>int</code>, gi variabelen et passende navn, vi anbefaler <code>tilfeldigTall</code>.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_65"><label for="cbx_65"> Sjekk at koden kjører.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_66"><label for="cbx_66"> Sett variabelen til å bli et tilfeldig tall mellom 0 og 6, ved å gjøre et metodekall på <code>random();</code> og cast <code>int</code>.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_67"><label for="cbx_67"> Sjekk at koden kjører.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_68"><label for="cbx_68"> Gjør et metodekall på <code>text();</code> der første parameter er: <code>&quot;Variabelen tilfeldigTall er: &quot; + tilfeldigTall</code>. De to neste parameterne bestemmer du selv. Nå skal vi bare sjekke hvilke tall <code>tilfeldigTall</code> er blitt til.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_69"><label for="cbx_69"> Kjør programmet noen ganger og sjekk at det variabelen <code>tilfeldigTall</code> blir forskjellige tall.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_70"><label for="cbx_70"> Gjør et nytt metodekall på <code>text();</code> der det første parameteret er: <code>&quot;Trykk på: &quot; + alleVerdensdelene[tilfeldigTall]</code>. De to neste parameterne bestemmer du selv. <code>alleVerdensdelene</code> er lista med verdensdeler, så det vi gjør her er å si at vi skal vise verdensdelen som er på plassen til det tallet som variabelen <code>tilfeldigTall</code> inneholder.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_71"><label for="cbx_71"> Sjekk at koden kjører. Start programmet flere ganger og sjekka at forskjellige verdensdeler blir valgt.</label></li>
+</ul>
+<p>Når vi skal velge noe fra et String array, så må vi skrive navnet på arrayet, så <code>[]</code>. Alt som ligger i lista er nummerert i den rekkefølgen vi har skrevet lista. Inni <code>[]</code> skriver vi nummeret på den tingen i lista vi vil ha, dette nummeret må være av typen <code>int</code>. Dette er grunnen til at vi caster til <code>int</code> når vi gjør metodekall på <code>random();</code>. Sjekk at tallene stemmer ved å sammenligne tallet som <code>tilfeldigTall</code> er med hvilken plass i lista verdensdelen som vises på skjermen er.</p>
+<p>Før vi går videre er det på tide å fjerne litt kode unødvendig kode.</p>
+</section>
+<section class="check" id="gjor-dette-12">
+<h2 class="check" id="gjor-dette-12">Gjør dette:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_72"><label for="cbx_72"> Fjern de to metodekallene på <code>text();</code> som viser oss hva datamusas X og Y koordinat er.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_73"><label for="cbx_73"> Fjern metodekallet på <code>text();</code> som vi har skrevet inni if-setningen inni <code>sjekkVerdensdeler</code> metoden. I neste steg putter vi inn en helt annen kode her.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_74"><label for="cbx_74"> Fjern metodekallet på <code>text()</code> som viser hvilket tall <code>tilfeldigTall</code> er.</label></li>
+</ul>
+<p>Her er koden så langt.</p>
+<figure><img src="/beta/_/oppgaver/src/processing/verden_del2/steg7.e38a1f.png" alt=""></figure>
+</section>
+</section>
+<section class="activity" id="steg-8-sjekk-om-man-trykker-pa-riktig-verdensdel">
+<h1 class="activity" id="steg-8-sjekk-om-man-trykker-pa-riktig-verdensdel">Steg 8: Sjekk om man trykker på riktig verdensdel</h1>
+<p>Nå skal vi sjekke om den som spiller trykker på riktig verdensdel. Da starter vi med å sjekke om spilleren trykker på knappen på datamusa.</p>
+<p>På samme måte som at vi kan bruke <code>mouseX</code> og <code>mousY</code>, så kan vi også bruke <code>mousePressed</code>. Forskjellen er at mens <code>mouseX</code> og <code>mousY</code> hele tiden oppdateres med tall som forteller oss hvor i vinduet datamusa er, så er mousePressed en bolsk variabel, det betyr at den enten er <code>true</code> eller <code>false</code>, derfor kan vi bruke den direkte i en if-setning.</p>
+<p>Muntlig skal vi gjøre dette:</p>
+<pre><code class="processing"> Dersom datamusa er klikka på,
+    så skal vi sjekke om datamusa er over en og en verdensdel
+</code></pre>
+<p>Det å sjekke om datamusa er over en og en av verdensdelene har vi allerede gjort inni <code>draw</code> metoden ved å kalle på <code>sjekkVerdensdel();</code> mange ganger. Da gjenstår bare å putte alle disse inni en if-setning.</p>
+<section class="check" id="gjor-dette-13">
+<h2 class="check" id="gjor-dette-13">Gjør dette:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_75"><label for="cbx_75"> Skriv en if-setning hvor du sjekker om datamusa er trykka på. Nå skal bare <code>mousePressed</code> stå inni parentesen til if-setningen.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_76"><label for="cbx_76"> Putt alle metodekallene <code>sjekkVerdensdel();</code> inn i if-setningen.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_77"><label for="cbx_77"> Sjekk at koden kjører. Ingenting nytt skal skje.</label></li>
+</ul>
+<p>Neste steg nå er å sjekke om spilleren har trykke på riktig verdensdel. Dette gjør vi inni if-setningen som er inni metoden <code>sjekkVerdensdel</code>. Nå skal vi sjekke om verdensdelen fra Stringen som blir sendt inn til metoden er lik som den verdensdelen som er trekt tilfeldig. Muntlig blir dette:</p>
+<pre><code class="processing">Dersom verdensdelen som er trekt tilfeldig er lik verdelsdelen fra Stringen,
+    så viser vi teksten <span class="hljs-string">"RIKTIG"</span> i vinduet.
+</code></pre>
+<p>Vi putter inn de tingene vi har, da blir if-setningen slik:</p>
+<pre><code class="processing"><span class="hljs-keyword">if</span>(alleVerdensdelene[tilfeldigTall] er lik verdensdel){
+    <span class="hljs-built_in">text</span>(<span class="hljs-string">"RIKTIG"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+}
+</code></pre>
+<p>Nå skal vi sjekke om en tekst er lik en annen tekst. Da må vi bruke en metode som hører til klassen <code>String</code>, metoden heter <code>equals();</code> og som parameter tar den det ordet vi skal sjekke. Når vi skal bruke en metode som hører til en klasse trenger vi bare sette punktum i mellom. Koden blir slik:</p>
+<pre><code class="processing"><span class="hljs-keyword">if</span>(alleVerdensdelene[tilfeldigTall].equals(verdensdel)){
+    <span class="hljs-built_in">text</span>(<span class="hljs-string">"RIKTIG"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+}
+</code></pre>
+</section>
+<section class="check" id="gjor-dette-14">
+<h2 class="check" id="gjor-dette-14">Gjør dette:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_78"><label for="cbx_78"> Skriv inn if-setningen som nettopp ble forklart.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_79"><label for="cbx_79"> Sjekk at koden fungerer. Nå skal teksten &quot;RIKTIG&quot; vises på skjermen når du trykker på riktig verdensdel.</label></li>
+</ul>
+<p>Her er koden så langt.</p>
+<figure><img src="/beta/_/oppgaver/src/processing/verden_del2/steg8.25a261.png" alt=""></figure>
+</section>
+</section>
+<section class="activity" id="steg-9-fa-ny-verdensdel-a-trykke-pa">
+<h1 class="activity" id="steg-9-fa-ny-verdensdel-a-trykke-pa">Steg 9: Få ny verdensdel å trykke på</h1>
+<p>Det er kjipt å starte programmet på nytt hver gang spilleren har trykka på riktig verdensdel. Derfor må vi velge ett nytt tilfeldig tall inni if-setningen som sjekker om riktig verdensdel er trykka på.</p>
+<p>Da gjør vi akkurat det samme som vi gjorde i <code>setup</code> metoden da vi satt <code>tilfeldigTall</code>  til å være ett tilfeldig tall.</p>
+<section class="check" id="gjor-dette-15">
+<h2 class="check" id="gjor-dette-15">Gjør dette:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_80"><label for="cbx_80"> Sett <code>tilfeldigTall</code> til å bli et nytt tilfeldig tall inni if-setningen som sjekker om spilleren har trykka på riktig verdensdel.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_81"><label for="cbx_81"> Kjør koden og se at det fungerer. Nå skal du få opp en ny verdensdel hver gang du trykker på riktig verdensdel.</label></li>
+</ul>
+<p>Her er koden så langt. Siden vi bare har lagt til en kodelinje inni metoden <code>sjekkVerdensdel</code> så viser vi bare den metoden:</p>
+<figure><img src="/beta/_/oppgaver/src/processing/verden_del2/steg9.36d773.png" alt=""></figure>
+</section>
+</section>
+<section class="activity" id="steg-10-fa-poeng">
+<h1 class="activity" id="steg-10-fa-poeng">Steg 10: Få poeng</h1>
+<p>Til sist skal vi gi spilleren poeng hver gang riktig verdensdel blir trykka på. Siden vi hele tiden ønsker å få mer og mer poeng, så må vi lage en variabel som vi kan oppdatere når riktig verdensdel blir trykka på.</p>
+<p>Variabelen skal være av typen <code>int</code> og kan for eksempel hete <code>poeng</code>.</p>
+<section class="check" id="gjor-dette-16">
+<h2 class="check" id="gjor-dette-16">Gjør dette:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_82"><label for="cbx_82"> Deklarer en variabel av typen <code>int</code> med navnet <code>poeng</code> sammen med de andre deklarasjonene du har skrevet i toppen av koden. Husk at du også her kan gi variabelen et annet navn dersom du vil.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_83"><label for="cbx_83"> Sett variabelen til å være <code>0</code>. Det gjør du ved å skrive denne kodelinja inni <code>setup</code> metoden:</label></li>
+</ul>
+<pre><code class="processing">    poeng = <span class="hljs-number">0</span>;
+</code></pre>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_84"><label for="cbx_84"> Få poengene til å vises i vinduet ved å gjøre et metodekall på <code>text();</code>. Det første parameteret skal være først en passende tekst inni fnuttene og deretter <code>+ poeng</code>. De to neste bestemmer du selv.</label></li>
+<li>[] ] Test at koden fungerer så langt. Nå skal poengene vises på skjermen, men du vil forløpig ikke få mer poeng selv om du trykker på riktig verdensdel.</li>
+<li class="task-list-item"><input type="checkbox" id="cbx_85"><label for="cbx_85"> Forsøk å skrive den neste kodelinja der du tror den skal være. Den gjør at hver gang programmet leser den, så bli verdien til <code>poeng</code> en større. Her er kodelinja:</label></li>
+</ul>
+<pre><code class="processing">    poeng = poeng + <span class="hljs-number">1</span>;
+</code></pre>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_86"><label for="cbx_86"> Test om koden fungerer, dersom du har skrevet kodelinja på riktig plass, så skal du nå få poeng hver gang du trykker på riktig verdensdel.</label></li>
+</ul>
+<p>Nå gjenstår bare å få minuspoeng når man trykker på feil verdensdel. Muntlig blir koden slik:</p>
+<pre><code class="processing">Dersom verdensdelen som er trekt tilfeldig er lik verdelsdelen fra stringen,
+    Så viser vi teksten <span class="hljs-string">"RIKTIG"</span> i vinduet.
+    trekk et nytt tilfeldig tall
+    få et poeng
+ellers
+    så skal vi få minus ett poeng
+</code></pre>
+<p>Vi har allerede de if-setningen som utfører sjekken, og vi har alt som skjer dersom vi trykker på riktig verdensdel. Det eneste som mangler er hva som skjer fra <code>ellers</code> og nedover.</p>
+<p>Når vi skriver en if-setning, så kan vi alltid legge til en <code>ellers</code>, på engelsk <code>else</code>. Dersom vi legger til en <code>else</code> etter en if-setning, så vil koden inni <code>else</code> skje dersom testen i if-setningen er usann. Så dersom man trykker på riktig verdensdel, så får man poeng, ellers får man minuspoeng.</p>
+<p>En <code>else</code> åpnes og stenges på samme måte som en if-setning, altså med krøllparenteser <code>{</code> og <code>}</code>.</p>
+</section>
+<section class="check" id="gjor-dette-17">
+<h2 class="check" id="gjor-dette-17">Gjør dette:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_87"><label for="cbx_87"> Legg til en <code>else</code> rett etter at if-setningen som sjekker om verdensdelene er like er avslutta.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_88"><label for="cbx_88"> Kodelinja som du brukte for å legge til ett poeng, skal du nå bruke for å trekke fra ett poeng. Alt du trenger å gjøre er å skrive <code>-</code> i steden for <code>+</code>. Skriv denne kodelinja inni <code>else</code>.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_89"><label for="cbx_89"> Sjekk at koden kjører. Hva skjer? Får du ett minuspoeng hver gang du trykker på feil verdensdel? Hva skjer når du trykker på riktig verdensdel, får du riktig poeng?</label></li>
+</ul>
+<p>Grunnen til at du får for mange minuspoeng er at du ikke rekker å slippe knappen på datamusa før programmet har endre hvilken verdensdel du skal trykke på. Programmet kjører gjennom all koden din ca. 30 eller ca. 60 ganger i sekundet. Det betyr at du må trykke veldig raskt for å ikke få minuspoeng for hver gang du trykker, selv om du trykker på riktig verdensdel. Du kan sjekke hvor raskt koden blir kjørt ved å gjøre et metodekall på <code>text();</code> og så sette det første parameteret til å være <code>frameRate</code>, tallet som vises på skjermen er antall ganger koden blir kjørt i sekundet.</p>
+<p>Vi kan fikse alle minuspoengene ved å gjøre et metodekall på <code>delay();</code>, denne tar som parameter antall millisekunder koden skal ta pause. Et sekund er det samme som 1000 millisekunder. Du må være veldig forsiktig med å bruke <code>delay();</code> i andre sammenhenger, fordi den pauser hele programmet, det betyr at absolutt ingenting blir sjekker så lenge programmet står og har pause.</p>
+</section>
+<section class="check" id="gjor-dette-18">
+<h2 class="check" id="gjor-dette-18">Gjør dette:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_90"><label for="cbx_90"> Gjør et metodekall på <code>delay();</code> rett etter at du har avslutta <code>else</code>. La den ta 50 millisekunder som parameter.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_91"><label for="cbx_91"> Test at koden kjører.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_92"><label for="cbx_92"> Bytt til 5000 millisekunder og test programmet igjen. Hva skjer?</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_93"><label for="cbx_93"> Forsøk med litt forskjellige millisekunder og finn ut hva du synes er best.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_94"><label for="cbx_94"> Dersom du ikke har gjort det allerede, så må du bytte bilde av verdenskartet tilbake til bilde uten firkanta grenser på.</label></li>
+</ul>
+<p>Det var det! Nå har du et lite spill. Utvid spillet som du selv ønsker. Det er mange muligheter. Under finner du noen ekstra oppgaver som du kan gjøre dersom du har lyst.</p>
+<p>Her er koden så langt. Husk at vår kode og din kode kan være forskjellig  dersom du har valgt andre variabelnavn eller andre verdier enn det vi har. Det viktigste er at den fungerer!</p>
+<figure><img src="/beta/_/oppgaver/src/processing/verden_del2/steg10.2894f4.png" alt=""></figure>
+</section>
+</section>
+<section class="activity" id="steg-11-ekstra">
+<h1 class="activity" id="steg-11-ekstra">Steg 11: Ekstra</h1>
+<p>Dette er ekstraoppgaver som du kan gjøre dersom du vil.</p>
+<section class="check" id="prov-dette">
+<h2 class="check" id="prov-dette">Prøv dette:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_95"><label for="cbx_95"> Legg inn igjen tekst som viser hva koordinatene på datamusa er.</label></li>
+</ul>
+</section>
+<section class="check" id="forbedre-verdenskartet">
+<h2 class="check" id="forbedre-verdenskartet">Forbedre verdenskartet:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_96"><label for="cbx_96"> Finn koordinatene for tuppen av India og Sri Lanka og skriv kode som gjør at dette også blir rekna med som Asia.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_97"><label for="cbx_97"> Finn ut nøyaktig hvilke av øyene mellom Oseania og Asia som høyrer til hvor og fiks grensen mellom de to verdensdelene slik at den blir mer riktig.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_98"><label for="cbx_98"> Skriv kode som gjør at Nord-Amerika ikke inkluderer den vestlige biten av Grønland, men fremdeles inkluderer alt av Nord-Amerika.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_99"><label for="cbx_99"> Fiks koden slik at hele Grønland hører til Europa.</label></li>
+</ul>
+</section>
+<section class="check" id="fylker-i-norge">
+<h2 class="check" id="fylker-i-norge">Fylker i Norge:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_100"><label for="cbx_100"> Bytt ut kartet over verden med et kart over Norge.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_101"><label for="cbx_101"> Lag firkanter som du bruker til å skille fylkene i Norge.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_102"><label for="cbx_102"> Skriv kode som sjekker om datamusa er innenfor fylkene i Norge.</label></li>
+</ul>
+</section>
+<section class="check" id="helg-andre-oppgaver">
+<h2 class="check" id="helg-andre-oppgaver">Helg andre oppgaver:</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_103"><label for="cbx_103"> Finn et kartet for Game of Thrones og lag spill hvor folk kan gjette hvor de forskjellige folka hører hjemme.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_104"><label for="cbx_104"> Finn et bilde av forskjellige dyr, lag en liste med navna på dyrene på engelsk, eller et helt annet språk. Lag grenser rundt dyrene og la folk gjette hva de forskjellige dyrene heter på forskjellige språk.</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_105"><label for="cbx_105"> Finn et bilde av en menneskekropp som er laga for undervisning, slik at man kan se hva som er inni, slik som hjertet, lungene, nyrene, ribbein, og lignende. Lag grenser rundt de forskjellige tingene og la folk gjette hvor de er.</label></li>
+</ul>
+<p>Du har kanskje andre ideer som er bedre. I så fall er det bare å sende dem inn til oss så skal vi ta en vurdering på om de passer inn i oppgava.</p>
+</section>
+</section>
+</div><div class="row" data-reactid="100"><div class="ImprovePage__container__HeXzk" data-reactid="101"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="102"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="103"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="104"><h2 data-reactid="105">Forbedre denne siden</h2><p data-reactid="106"><!-- react-text: 107 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 108 --> <!-- /react-text --><br data-reactid="109"/><!-- react-text: 110 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="111"><div data-reactid="112"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Processing: Verden del2&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/processing/verden_del2/verden_del2%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/processing/verden_del2%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="113">Rapporter et problem</a></div><div data-reactid="114"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="115">Gå til forumet</a></div><div data-reactid="116"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/processing/verden_del2" target="_blank" class="btn btn-orange" data-reactid="117">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="118"><div class="Footer__center__3xqZ_ row" data-reactid="119"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="120">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="121">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="122"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="123"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/smn.41dee6.jpg" data-reactid="124"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="125"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="126"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="127"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/teknograd.7eb17c.png" data-reactid="128"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="129"><img class="Footer__img__25Ink" src="data:image/png;base64,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" data-reactid="130"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="131"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/excITEd.ce9ee2.png" data-reactid="132"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="133"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/uio_ifi.eebbdf.png" data-reactid="134"/></a></div></div></div></div></div>
+
+    
+    <script src="/beta/manifest.b88a3a28cf7926297a3e.js" type="text/javascript"></script>
+    
+    <script src="/beta/vendor.bddbcaeb0036572aac0a.js" type="text/javascript"></script>
+    
+    <script src="/beta/main.4c283a7e82b4b8a6da22.js" type="text/javascript"></script>
+    
+    <script src="/beta/vendor2.726a80575f37fa805851.js" type="text/javascript"></script>
+    
+</body>
+</html>
