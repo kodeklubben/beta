@@ -2,14 +2,33 @@
 
 This text explains how to publish the kodeklubben/codeclub-viewer webpages.
 
-Before publishing the website to the branch `gh-pages` of this repo (`beta`),
-make sure you have installed node and yarn. The easiest way is probably to install [nvm](https://github.com/creationix/nvm#installation) first, then go to the
-`codeclub-viewer` folder and type `nvm install`. This will install the version
-specified by the file `.nvmrc`. Finally, type `npm install -g yarn`.
+## TL;DR (summary)
+First, fork the `beta` repository, and clone it locally.
 
-On OSX, if you have [brew](http://brew.sh/) installed, you could just do
-`brew install yarn` (it might be smart to do a `brew update` first).
-This will also install node.
+In the cloned `beta` folder, type
+```
+./publish.sh
+```
+
+To test before pushing, open another terminal window,
+go to the subfolder `beta/codeclub-viewer/`, and type `yarn serve`.
+
+If satisfied, type
+```
+git push
+```
+
+To publish this "for real", make a PR from the pushed gh-pages to
+the "official" gh-pages.
+
+
+## Long explanation XXX: FIX THIS
+Before publishing the website to the branch `gh-pages` of this repo (`beta`),
+make sure you have installed node and yarn. The easiest way is probably to install
+[nvm](https://github.com/creationix/nvm#installation) first, then go to the
+`codeclub-viewer` folder and type `nvm install`. This will install the version
+specified by the file `.nvmrc`. Finally, install yarn as recommended on
+[the yarn website](https://yarnpkg.com/lang/en/docs/install/).
 
 If you just want to check that you have the correct version of node,
 type `node -v` and compare it to the content of `.nvmrc`.
