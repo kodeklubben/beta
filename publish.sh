@@ -122,6 +122,8 @@ echo "Retrieving files from: ${subfolder}"
 git merge --squash -s recursive -X subtree=${subfolder} -X theirs master
 touch .nojekyll
 git add .nojekyll
+git checkout master google91a144a83c954edb.html # Verification file for Google Search Console (for Lance Olav Eastgate)
+git add google91a144a83c954edb.html
 git commit --amend -m "Publish site from oppgaver/$oppgaver_branch `git log oppgaver/${oppgaver_branch} -n 1 | head -1` and codeclub-viewer/${cv_branch} `git log codeclub-viewer/${cv_branch} -n 1 | head -1`"
 
 echo "Cleaning up..."
