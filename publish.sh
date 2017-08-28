@@ -78,7 +78,7 @@ else
 fi
 if ! command -v yarn >/dev/null 2>&1; then
   echo "yarn package manager not installed. Aborting."
-  echo "Install yarn (e.g. 'npm install -g yarn') and try again."
+  echo "Install yarn (see e.g. https://yarnpkg.com/lang/en/docs/install/) and try again."
   exit 1
 else
   echo "yarn package manager detected."
@@ -94,13 +94,13 @@ echo "Downloading packages..."
 yarn
 
 echo "Building website..."
-yarn run build:prod
+yarn build:prod
 
 echo "Website is now built."
 echo "Feel free to test it before publishing."
 echo "Open up a second terminal, and go to the folder `pwd`"
-echo "Make sure you have local-web-server installed globally (yarn global add local-web-server),"
-echo "and then run 'yarn run serve'. Go to http://localhost:8080/$url_path_prefix"
+echo "Run 'yarn serve'."
+echo "Go to http://localhost:8080/$url_path_prefix"
 echo "and test until you are satisfied."
 waitForAnyKey
 
