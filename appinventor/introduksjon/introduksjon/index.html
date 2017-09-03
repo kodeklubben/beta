@@ -6,7 +6,7 @@
     <title>Komme igang med App Inventor | Kodeklubben</title>
 
     
-    <link href="/beta/vendor2.54ccf9.css" rel="stylesheet">
+    <link href="/beta/vendor2.459a38.css" rel="stylesheet">
     
 
     <style type="text/css">.App__appContainer__3y6aN {
@@ -117,10 +117,6 @@
   display: inline;
   float: right;
   padding: 4px 0; }
-
-.NavBar__gadgetContainer__28a-C {
-  display: inline-block;
-  padding: 3px 5px; }
 .BreadCrumb__breadcrumb__1u8pT {
   padding-left: 10px;
   float: left;
@@ -171,6 +167,13 @@
 .LanguageDropdown__gadgetContainer__LYX2I {
   display: inline-block;
   padding: 3px 5px; }
+.ModeDropdown__gadgetContainer__2HE97 {
+  display: inline-block;
+  padding: 3px 5px; }
+
+@media (max-width: 767px) {
+  .ModeDropdown__onlyMode__1fZJE {
+    display: none; } }
 .Lesson__container__133OS {
   max-width: 800px;
   padding-left: 15px;
@@ -193,8 +196,13 @@
     .Lesson__container__133OS {
       font-size: 125%; } }
 
-.Lesson__resetButton__312Jx {
-  margin-right: 10px; }
+.Lesson__box__2CtND {
+  display: none;
+  font-style: italic;
+  font-size: 0.75em; }
+  @media print {
+    .Lesson__box__2CtND {
+      display: block; } }
 /*
 
 Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
@@ -589,12 +597,12 @@ section.Content__activity__12AJC .Content__subsection__3XzlJ h2 {
     margin-left: 6px; }
 
 section.Content__check__sbZVW h2 {
-  background-image: url(/beta/CCV-assets/check.15ac74.svg);
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
   padding-top: 4px;
-  padding-bottom: 9px;
-  padding-left: 50px; }
+  padding-bottom: 9px; }
+  section.Content__check__sbZVW h2 img {
+    height: 40px;
+    vertical-align: text-bottom;
+    padding-right: 10px; }
 
 section.Content__try__9Al91 {
   background: #abdbea;
@@ -622,29 +630,27 @@ section.Content__flag__1GjEr {
   margin-bottom: 20px; }
   section.Content__flag__1GjEr h2 {
     color: #36a137;
-    background-image: url(/beta/CCV-assets/flag.4a58cd.svg);
-    background-position: 0 10px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 15px;
-    padding-bottom: 10px;
-    padding-left: 60px; }
+    padding-bottom: 10px; }
+    section.Content__flag__1GjEr h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
 
 section.Content__save__3P_NU {
   border-top: 3px solid #245a9a;
   margin: 20px 0; }
   section.Content__save__3P_NU h2 {
     color: #245a9a;
-    background-image: url(/beta/CCV-assets/save.0a8afb.svg);
-    background-position: 0 10px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
     margin: 0;
     padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 50px; }
+    padding-bottom: 20px; }
+    section.Content__save__3P_NU h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
 
 section.Content__challenge__2LUyO {
   border: 3px solid #00b1da;
@@ -659,6 +665,9 @@ section.Content__challenge__2LUyO {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 0; }
+    @media print {
+      section.Content__challenge__2LUyO h2 {
+        border-bottom: 2px #00b1da solid; } }
   section.Content__challenge__2LUyO > * {
     padding: 0 20px; }
 
@@ -737,6 +746,11 @@ input[type="checkbox"]:checked + label::before {
   content: '\2714';
   line-height: 1.1em;
   padding-left: 0.1em; }
+.PrintButton__container__KmVN4 {
+  margin: 10px 10px 0 0; }
+  @media print {
+    .PrintButton__container__KmVN4 {
+      display: none; } }
 .ImprovePage__font__1MdMv {
   font-family: "Roboto", "Verdana", sans-serif;
   font-weight: 300;
@@ -745,6 +759,9 @@ input[type="checkbox"]:checked + label::before {
 /* Container for improve box */
 .ImprovePage__container__HeXzk {
   margin: 10px 30px; }
+  @media print {
+    .ImprovePage__container__HeXzk {
+      display: none; } }
 
 .ImprovePage__improvePageBox__cyxic {
   display: flex;
@@ -792,6 +809,9 @@ input[type="checkbox"]:checked + label::before {
   font-family: "Roboto", "Verdana", sans-serif; }
   .Footer__container__1SZrv a {
     text-decoration: none; }
+  @media print {
+    .Footer__container__1SZrv {
+      display: none; } }
 
 .Footer__containerStudent__3Yr5f {
   background-color: #b1daae;
@@ -839,252 +859,16 @@ input[type="checkbox"]:checked + label::before {
 </style>
 <meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/CCV-icons-4d5e7c/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/CCV-icons-4d5e7c/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/CCV-icons-4d5e7c/favicon-16x16.png"><link rel="shortcut icon" href="/beta/CCV-icons-4d5e7c/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1536x2008.png"></head>
 <body>
-    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="1208379265"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/CCV-assets/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/appinventor" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/appinventor/logo-black.3695fe.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Appinventor</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/appinventor/introduksjon/introduksjon" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Komme igang med App Inventor</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nn.fa23ab.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_en.7eea7b.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">English</div></div></a></li></ul></div></div><div class="NavBar__gadgetContainer__28a-C" data-reactid="71"><div class="dropdown btn-group btn-group-student" data-reactid="72"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="73"><!-- react-text: 74 -->Modus: Elev<!-- /react-text --></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="75"><li role="presentation" class="active" data-reactid="76"><a role="menuitem" tabindex="-1" href="#" data-reactid="77">Elev</a></li><li role="presentation" class="" data-reactid="78"><a role="menuitem" tabindex="-1" href="#" data-reactid="79">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="80"><h1 data-reactid="81"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="82"/><!-- react-text: 83 -->Komme igang med App Inventor<!-- /react-text --><!-- react-text: 84 --><!-- /react-text --></h1><p data-reactid="85"><i data-reactid="86"><!-- react-text: 87 -->Skrevet av:<!-- /react-text --><!-- react-text: 88 --> <!-- /react-text --><span data-reactid="89">Basert på MITs <a href="http://appinventor.mit.edu/explore/get-started.html">&quot;Getting Started&quot;-guide</a></span></i></p><p data-reactid="90"><i data-reactid="91"><!-- react-text: 92 -->Oversatt av:<!-- /react-text --><!-- react-text: 93 --> <!-- /react-text --><span data-reactid="94">Tjerand Silde</span></i></p><div data-reactid="95"><section class="intro" id="introduksjon">
-<h1 class="intro" id="introduksjon">Introduksjon</h1>
-<p>Dette er en introduksjon til <em>MIT App Inventor</em>, hvor du skal lære å lage applikasjoner til Android. Å lage apps i App Inventor er ganske enkelt, men vi anbefaler at du er godt kjent med programmering i Scratch, samt kan litt engelsk. Før du kan lage egne apps, må du sette opp App Inventor og bli kjent med hvordan det fungerer.</p>
-</section>
-<section class="activity" id="steg-1-logge-inn-pa-app-inventor">
-<h1 class="activity" id="steg-1-logge-inn-pa-app-inventor">Steg 1: Logge inn på App Inventor</h1>
-<section class="check" id="sjekkliste">
-<h2 class="check" id="sjekkliste">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_0"><label for="cbx_0"> Gå til <a href="http://ai2.appinventor.mit.edu/">ai2.appinventor.mit.edu</a>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_1"><label for="cbx_1"> Logg inn med en Google-konto, for eksempel en gmail-adresse. Dersom du lurer på om epost-adressen din er en Google-konto, <a href="https://support.google.com/accounts/answer/40560?hl=no">kan du sjekke det her</a>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_2"><label for="cbx_2"> Når du har logget inn vil App Inventor be om tillatelse til å åpne kontoen din.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_3"><label for="cbx_3"> Trykk <strong>Tillat</strong> for å gi App Inventor tilgang.</label></li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-2-starte-et-nytt-prosjekt">
-<h1 class="activity" id="steg-2-starte-et-nytt-prosjekt">Steg 2: Starte et nytt prosjekt</h1>
-<section class="check" id="sjekkliste-2">
-<h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_4"><label for="cbx_4"> Etter innlogging blir du videresendt til prosjekt-siden.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_5"><label for="cbx_5"> Trykk på <strong>Start new project</strong> for å komme igang.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_6"><label for="cbx_6"> Navngi prosjektet slik du ønsker selv, for eksempel <code>HelloWorld</code>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_7"><label for="cbx_7"> Du blir nå videresendt til programmeringen.</label></li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-3-bli-kjent-med-menyene">
-<h1 class="activity" id="steg-3-bli-kjent-med-menyene">Steg 3: Bli kjent med menyene</h1>
-<section id="palette">
-<h4 id="palette">Palette</h4>
-<p>Til venstre har du en meny som heter <strong>Palette</strong>. Her finner du alle de ulike komponentene du kan bruke til å
-lage en app. Du vil se at det er 9 forskjellige kategorier som du kan trykke på for å få tilgang til komponentene.</p>
-</section>
-<section id="viewer">
-<h4 id="viewer">Viewer</h4>
-<p>I midten har du en mobil-skjerm med navn <strong>Viewer</strong> som viser deg hvordan appen din ser ut til en hver tid.</p>
-</section>
-<section id="components">
-<h4 id="components">Components</h4>
-<p>Den tredje menyen heter <strong>Components</strong>. I denne menyen kan du velge hvilken komponent du vil endre.</p>
-</section>
-<section id="properties">
-<h4 id="properties">Properties</h4>
-<p>Til høyre har du en meny ved navn <strong>Properties</strong>. I denne menyen kan du gjøre endringer på komponentene, for eksempel kan
-du endre navnet dens og posisjonen dens på skjermen.</p>
-</section>
-</section>
-<section class="activity" id="steg-4-legge-til-og-koble-sammen-komponenter">
-<h1 class="activity" id="steg-4-legge-til-og-koble-sammen-komponenter">Steg 4: Legge til og koble sammen komponenter</h1>
-<p>For de som allerede er kjent med programmering i Scratch, vil en del allerede være kjent. Både Scratch og MIT App Inventor er <em>Drag-and-drop</em>. Det vil si at du drar komponenter og kodeblokker fra menyen og til hvor de skal være for å lage et program. Her er et eksempel:</p>
-<section class="check" id="sjekkliste-3">
-<h2 class="check" id="sjekkliste-3">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_8"><label for="cbx_8"> Trykk på knappen i høyre hjørne med navnet <strong>Blocks</strong>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_9"><label for="cbx_9"> En programmeringsskjerm vises.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_10"><label for="cbx_10"> Trykk på kategorien <strong>Logic</strong>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_11"><label for="cbx_11"> Her ser du hvilke funksjoner du kan bruke fra <strong>Logic</strong> kategorien.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_12"><label for="cbx_12"> Velg en funksjon og dra den over til kode-feltet.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_13"><label for="cbx_13"> Klikk på funksjonen din og dra den over til søppelbøtta nede til høyre for å fjerne den igjen.</label></li>
-</ul>
-<p>Samme framgangsmåte brukes for å legge til og fjerne komponenter i appen. Trykk <a href="http://appinventor.mit.edu/explore/designer-blocks.html">her</a> for å se hvordan det ser ut.</p>
-</section>
-</section>
-<section class="activity" id="steg-5-lage-en-test-app">
-<h1 class="activity" id="steg-5-lage-en-test-app">Steg 5: Lage en test-app</h1>
-<p>For å se litt på hvordan dette fungerer, skal du lage en test-app. Du har alleredet opprettet prosjektet og gitt det navn. Da kan du gå rett på programmeringen. Appen skal ha en knapp med teksten <code>Hello world</code>. Når knappen trykkes så skal appen si <code>Hello world</code>. Dette kan du få til ved å gjøre følgende:</p>
-<section class="check" id="sjekkliste-4">
-<h2 class="check" id="sjekkliste-4">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_14"><label for="cbx_14"> Det første du gjør er å legge inn en knapp på skjermen. Det gjør du ved å gå til <strong>Palette</strong> og <strong>User Interface</strong>.
-Der velger du <strong>Button</strong>, og drar den over til skjermem i <strong>Viewer</strong>. Legg merke til at knappen vises på skjermen.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_15"><label for="cbx_15"> Neste steg er å legge inn lyd. Dette gjør du ved å gå til <strong>Palette</strong> og <strong>Media</strong>. Der velger du <strong>TextToSpeech</strong>,
-og drar den over til skjermer vår i <strong>Viewer</strong>. Legg merke til at den ikke vises på skjermen, men legger seg
-under <strong>Non-visible components</strong>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_16"><label for="cbx_16"> Så vil du endre litt på designet. Det første du gjør da er å trykke på <strong>Screen1</strong> på <strong>Components</strong>,
-hvor du går til <strong>AlignHorizontal</strong> og velger <strong>Center</strong>. Du kan også gå til <strong>AlignVertical</strong> og velge <strong>Center</strong>.
-Til slutt kan du gå til <strong>Title</strong> og skrive inn <code>Hello world</code>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_17"><label for="cbx_17"> Vi vil også endre litt på knappen. Dette gjør vi ved å trykke på <strong>Button1</strong> under <strong>Components</strong>. Der endrer vi <strong>FrontSize</strong> til <code>60</code>,
-<strong>Height</strong> til <code>100 pixels</code>, <strong>Width</strong> til <code>Fill parent</code> og <strong>Text</strong> til <code>Hello world</code>.</label></li>
-</ul>
-<p>I neste steg får du se hvordan appen ser ut, selv om den ikke er ferdig.</p>
-</section>
-</section>
-<section class="activity" id="steg-6-teste-appen-mens-du-programmerer">
-<h1 class="activity" id="steg-6-teste-appen-mens-du-programmerer">Steg 6: Teste appen mens du programmerer</h1>
-<p>Det kan være veldig nyttig å teste appen din mens du lager den, for å sjekke at alt fungerer som det skal. I App Inventor kan du teste appen din på to forskjellige måter. Den ene måten å teste appen din på er ved å koble telefonen din til App Inventor. Dette krever at operativsystemtet på mobiltelefonen din er Android. Den andre måten å teste appen din på er ved å laste ned en Android-emulator og laste inn appen din der. Begge disse to metodene er beskrevet under. Dersom du har en Android-telefon, så er det den letteste måten å teste på. <strong>Det er ikke nødvendig å teste både på telefonen og i en emulator, velg en av delene.</strong></p>
-<section class="tip" id="problemer">
-<h2 class="tip" id="problemer">Problemer</h2>
-<p>Legg merke til at når du tester appen din live, så vil ikke alltid alt fungere optimalt. Eksempler på ting som ikke
-alltid fungerer som det skal er berøring, tid og lyd. Det første som kan være lurt å gjøre er å opprette en ny kobling
-mellom telefonen og MIT App Inventor. Dette kan du gjøre ved å trykke <strong>Connect</strong>, også <strong>Reset Connection</strong>,
-før du så oppretter koblingen på nytt slik som du pleier. Dersom du mener at du har programmert appen slik som den skal
-være, men at den fremdeles ikke fungerer som den skal, så kan det være lurt å bygge appen som en .apt-fil.
-Da kan du teste appen på telefonen din som et fullverdig program istedetfor. Dette er beskrevet lengre nede.</p>
-</section>
-<section id="steg-61-teste-appen-pa-mobiltelefonen">
-<h2 id="steg-61-teste-appen-pa-mobiltelefonen">Steg 6.1: Teste appen på mobiltelefonen</h2>
-<p>For å kunne teste appen din på en telefon mens du programmerer så trenger du tre ting:</p>
-</section>
-<section class="check" id="sjekkliste-5">
-<h2 class="check" id="sjekkliste-5">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_18"><label for="cbx_18"> En datamaskin til å bygge appen.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_19"><label for="cbx_19"> En Android-telefon.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_20"><label for="cbx_20"> Tilgang til WIFI.</label></li>
-</ul>
-<p>For å kunne teste appen må du gjøre følgende:</p>
-</section>
-<section class="check" id="sjekkliste-6">
-<h2 class="check" id="sjekkliste-6">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_21"><label for="cbx_21"> Last ned <em>MIT AI2 Companion App</em> til telefonen din. Den finner du på Google Play.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_22"><label for="cbx_22"> Koble telefonen din og datamaskinen din til det samme WIFI-nettverket.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_23"><label for="cbx_23"> Når du er i App Inventor er det en meny helt øverst, hvor det blant annet er mulig å trykke på <strong>Connect</strong>.
-Trykk på <strong>Connect</strong>, og velg <strong>AI Companion</strong>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_24"><label for="cbx_24"> I ruten som dukker opp på skjermen så står det to ting; en QR-kode og en bokstav-kode. Åpne MIT AI2 Companion App
-på telefonen din. Der kan du velge om du vil scanne QR-koden eller skrive inn bokstav-koden manuelt. Begge deler fungerer
-helt fint, så du kan velge hva du ønsker å gjøre.</label></li>
-</ul>
-<p>Nå kan du teste appen på telefonen din.</p>
-</section>
-<section class="tip" id="problemer-2">
-<h2 class="tip" id="problemer-2">Problemer</h2>
-<p><a href="http://appinventor.mit.edu/explore/ai2/setup-device-wifi.html">Dersom du har problemer, så kan du sjekke ut en mer detaljert veiledning på engelsk her</a>.</p>
-</section>
-<section id="steg-62-teste-appen-pa-en-emulator">
-<h2 id="steg-62-teste-appen-pa-en-emulator">Steg 6.2: Teste appen på en emulator</h2>
-<p>For å kunne teste appen din på en emulator mens du programmerer så trenger du en datamaskin med tilgang til Internett. Første steg er å installere <em>App Inventor Setup Software</em>, hvor det finnes en guide for hvert av operativsystemene her:</p>
-</section>
-<section class="check" id="sjekkliste-7">
-<h2 class="check" id="sjekkliste-7">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_25"><label for="cbx_25"> <a href="http://appinventor.mit.edu/explore/ai2/windows.html">Windows</a>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_26"><label for="cbx_26"> <a href="http://appinventor.mit.edu/explore/ai2/mac.html">Mac OS X</a>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_27"><label for="cbx_27"> <a href="http://appinventor.mit.edu/explore/ai2/linux.html">GNU/Linux</a>.</label></li>
-</ul>
-<p>Når &quot;App Inventor Setup Software&quot; er installert gjør du følgende:</p>
-</section>
-<section class="check" id="sjekkliste-8">
-<h2 class="check" id="sjekkliste-8">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_28"><label for="cbx_28"> Åpne &quot;aiStarter&quot;, det er viktig at dette kjører i bakgrunnen. Dette vil skje automatisk på Mac ved installasjon,
-og i noen tilfeller på Windows også. Dersom du har Linux må du skrive inn følgende i kommandolinjen.</label></p>
-<pre><code class="sh">/usr/google/appinventor/commands-for-appinventor/aiStarter &amp;
-</code></pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_29"><label for="cbx_29"> Når du er i MIT App Inventor er det en meny helt øverst, hvor det blant annet er mulig å trykke på &quot;Connect&quot;.
-Trykk på &quot;Connect&quot;, og velg &quot;Emulator&quot;. Da vil du se at &quot;aiStarter&quot; begynner å arbeide. Dette kan ta en stund.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_30"><label for="cbx_30"> Etterhvert vil emulatoren bli klar, ved å først vise en svart skjerm. Så vil en mobil-bakgrunn dukke opp, før du
-til slutt får opp appen du har laget.</label></p>
-</li>
-</ul>
-<p>Nå kan du teste appen på emulatoren din.</p>
-</section>
-<section class="tip" id="problemer-3">
-<h2 class="tip" id="problemer-3">Problemer</h2>
-<p><a href="http://appinventor.mit.edu/explore/ai2/setup-emulator.html">Dersom du har problemer, så kan du sjekke ut en mer detaljert veiledning på engelsk her</a>.</p>
-</section>
-</section>
-<section class="activity" id="steg-7-fullfore-test-appen">
-<h1 class="activity" id="steg-7-fullfore-test-appen">Steg 7: Fullføre test-appen</h1>
-<p>Nå ser du at du har en knapp på skjermen din som du kan trykke på. Det vil ikkje skje noe når du trykker på den, rett og slett fordi du ikke har skrevet noe kode for det enda. Det kommer du snart til, men aller først må du teste litt hva som skjer når du legger til ting samtidig som du er koblet til appen.</p>
-<section class="flag" id="test-prosjektet">
-<h2 class="flag" id="test-prosjektet">Test prosjektet</h2>
-<ul>
-<li>Dersom du trykker på &quot;Screen1&quot; under &quot;Components&quot;, da kan du skifte &quot;BackgroundColor&quot; under &quot;Properties&quot;.
-Hva skjer med appen din på telefonen eller i emulatoren din da?</li>
-<li>Hva skjer om du skifter &quot;Title&quot;?</li>
-<li>Hva skjer om du endrer på &quot;AlignHorizontal&quot;?</li>
-<li>Hva skjer om du endrer &quot;AlignVertical&quot;?</li>
-</ul>
-<p>Nå er du klar for å programmere komponentene i appen vår. Det kan du gjøre på følgende måte:</p>
-</section>
-<section class="check" id="sjekkliste-9">
-<h2 class="check" id="sjekkliste-9">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_31"><label for="cbx_31"> Trykk på &quot;Blocks&quot; i høyre hjørne. Da kommer du til programmeringsskjermen.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_32"><label for="cbx_32"> Trykk på &quot;Button1&quot; under &quot;Blocks&quot; i menyen til venstre. Da kommer en ny meny opp. Velg øverste blokk som heter &quot;when Button1.Click - do&quot;,
-og dra den over i &quot;Viewer&quot;.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_33"><label for="cbx_33"> Trykk så på &quot;TextToSpeech1&quot; under &quot;Blocks&quot;, og velg &quot;call TextToSpeech1.Speak - message&quot;. Dra denne inn i blokken som allerede er der.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_34"><label for="cbx_34"> Til slutt kan du trykke på &quot;Text&quot; under &quot;Blocks&quot;. Velg den øverste blokken, som er en tom streng, og koble den til &quot;message&quot; i kodeblokken din.
-Klikk inni den tomme strengen og skriv &quot;Hello world!&quot;.</label></li>
-</ul>
-<p>Nå er appen din kodet ferdig, men det er lurt å sjekke at den fungerer som den skal.</p>
-</section>
-<section class="flag" id="test-prosjektet-2">
-<h2 class="flag" id="test-prosjektet-2">Test prosjektet</h2>
-<ul>
-<li>Dersom du sjekker appen på telefonen eller emulatoren din, sier den &quot;Hello world!&quot; når du trykker på knappen?</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-8-bygge-en-app">
-<h1 class="activity" id="steg-8-bygge-en-app">Steg 8: Bygge en app</h1>
-<p>Når appen din er ferdig, så kan du bygge den. Det vil si at koden din blir pakket sammen til en .apk-fil som du kan installere på en Android-telefon. Du kan også laste filen ned og kjøre den i en emulator. For å bygge appen må du gjøre følgende:</p>
-<section class="check" id="sjekkliste-10">
-<h2 class="check" id="sjekkliste-10">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_35"><label for="cbx_35"> For å laste appen inn på en Android-telefon så må du trykke på &quot;Build&quot; i hovedmenyen øverst, også trykke på &quot;App (provide QR code for .apk)&quot;.
-Da vil den bygge appen, også vise deg en QR-kode på skjermen som du kan scanne med telefonene din, for eksempel via &quot;MIT AI2 Companion App&quot;.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_36"><label for="cbx_36"> For å laste appen ned til datamaskinen din trykker du på &quot;Build&quot;, også på &quot;App (save .apk to my computer)&quot;. Da vil du laste ned appen,
-slik at du kan åpne den i en Android-emulator eller sende filen til noen andre.</label></li>
-</ul>
-</section>
-<section class="tip" id="problemer-4">
-<h2 class="tip" id="problemer-4">Problemer</h2>
-<p><a href="http://appinventor.mit.edu/explore/ai2/share.html">Dersom du ønsker en mer detaljert veiledning for å laste ned og dele appen din så kan du klikke her</a>.</p>
-</section>
-</section>
-<section class="activity" id="steg-9-laere-mer">
-<h1 class="activity" id="steg-9-laere-mer">Steg 9: Lære mer</h1>
-<p>For å lære mer om App Inventor så kan det være lurt å sjekke ut følgende lenker:</p>
-<section class="check" id="sjekkliste-11">
-<h2 class="check" id="sjekkliste-11">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_37"><label for="cbx_37"> <a href="https://www.youtube.com/results?search_query=app+inventor">App Inventor på Youtube</a>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_38"><label for="cbx_38"> <a href="http://appinventor.mit.edu/explore/ai2/tutorials.html">Veiledninger for å lage apps</a>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_39"><label for="cbx_39"> <a href="http://appinventor.mit.edu/explore/ai2/support/blocks.html">Sjekke ut hvordan alle blokkene fungerer</a>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_40"><label for="cbx_40"> <a href="http://appinventor.mit.edu/explore/library.html">Sjekke ut App Inventor sitt bibliotek</a>.</label></p>
-</li>
-</ul>
-</section>
-</section>
-</div><div class="row" data-reactid="96"><div class="ImprovePage__container__HeXzk" data-reactid="97"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="98"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="99"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="100"><h2 data-reactid="101">Forbedre denne siden</h2><p data-reactid="102"><!-- react-text: 103 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 104 --> <!-- /react-text --><br data-reactid="105"/><!-- react-text: 106 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="107"><div data-reactid="108"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Appinventor: Introduksjon&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/appinventor/introduksjon/introduksjon%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/appinventor/introduksjon%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="109">Rapporter et problem</a></div><div data-reactid="110"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="111">Gå til forumet</a></div><div data-reactid="112"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/appinventor/introduksjon" target="_blank" class="btn btn-orange" data-reactid="113">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="114"><div class="Footer__center__3xqZ_ row" data-reactid="115"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="116">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="117">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="118"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="119"><img class="Footer__img__25Ink" src="/beta/CCV-assets/smn.41dee6.jpg" data-reactid="120"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="121"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ibok.7f1adf.jpg" data-reactid="122"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="123"><img class="Footer__img__25Ink" src="/beta/CCV-assets/teknograd.7eb17c.png" data-reactid="124"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="125"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ntnu_idi.7bbd05.png" data-reactid="126"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="127"><img class="Footer__img__25Ink" src="/beta/CCV-assets/excITEd.ce9ee2.png" data-reactid="128"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="129"><img class="Footer__img__25Ink" src="/beta/CCV-assets/uio_ifi.eebbdf.png" data-reactid="130"/></a></div></div></div></div></div>
+    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="408956019"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/CCV-assets/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/appinventor" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/appinventor/logo-black.3695fe.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Appinventor</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/appinventor/introduksjon/introduksjon" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Komme igang med App Inventor</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nn.fa23ab.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_en.7eea7b.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">English</div></div></a></li></ul></div></div><div class="ModeDropdown__gadgetContainer__2HE97" data-reactid="71"><div class="dropdown btn-group btn-group-student" data-reactid="72"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="73"><div data-reactid="74"><span class="ModeDropdown__onlyMode__1fZJE" data-reactid="75">Modus: </span><span data-reactid="76">Elev</span></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="77"><li role="presentation" class="active" data-reactid="78"><a role="menuitem" tabindex="-1" href="#" data-reactid="79">Elev</a></li><li role="presentation" class="" data-reactid="80"><a role="menuitem" tabindex="-1" href="#" data-reactid="81">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="82"><h1 data-reactid="83"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="84"/><!-- react-text: 85 -->Komme igang med App Inventor<!-- /react-text --></h1><p data-reactid="86"><i data-reactid="87"><!-- react-text: 88 -->Skrevet av:<!-- /react-text --><!-- react-text: 89 --> <!-- /react-text --><span data-reactid="90">Basert på MITs <a href="http://appinventor.mit.edu/explore/get-started.html">&quot;Getting Started&quot;-guide</a></span></i></p><p data-reactid="91"><i data-reactid="92"><!-- react-text: 93 -->Oversatt av:<!-- /react-text --><!-- react-text: 94 --> <!-- /react-text --><!-- react-text: 95 -->Tjerand Silde<!-- /react-text --></i></p><div class="Lesson__box__2CtND" data-reactid="96"><div data-reactid="97"><!-- react-text: 98 -->Kurs:<!-- /react-text --><!-- react-text: 99 --> <!-- /react-text --><!-- react-text: 100 -->Appinventor<!-- /react-text --></div><div data-reactid="101">Tema: Blokkbasert, App</div><div data-reactid="102">Fag: Teknologi, Programmering</div><div data-reactid="103">Klassetrinn: 5.-7. klasse, 8.-10. klasse</div><div data-reactid="104">Språk: Norsk bokmål</div></div><button type="button" class="PrintButton__container__KmVN4 btn btn-sm btn-danger" data-reactid="105">Skriv ut</button><div data-reactid="106"></div><div class="row" data-reactid="107"><div class="ImprovePage__container__HeXzk" data-reactid="108"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="109"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="110"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="111"><h2 data-reactid="112">Forbedre denne siden</h2><p data-reactid="113"><!-- react-text: 114 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 115 --> <!-- /react-text --><br data-reactid="116"/><!-- react-text: 117 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="118"><div data-reactid="119"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Appinventor: Introduksjon&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/appinventor/introduksjon/introduksjon%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/appinventor/introduksjon%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="120">Rapporter et problem</a></div><div data-reactid="121"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="122">Gå til forumet</a></div><div data-reactid="123"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/appinventor/introduksjon" target="_blank" class="btn btn-orange" data-reactid="124">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div data-reactid="125"><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="126"><div class="Footer__center__3xqZ_ row" data-reactid="127"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="128">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="129">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="130"><a href="https://www.sparebank1.no" target="_blank" data-reactid="131"><img class="Footer__img__25Ink" src="/beta/CCV-assets/smn.41dee6.jpg" data-reactid="132"/></a><a href="https://ibok.no/" target="_blank" data-reactid="133"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ibok.7f1adf.jpg" data-reactid="134"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="135"><img class="Footer__img__25Ink" src="/beta/CCV-assets/teknograd.6d3bfb.png" data-reactid="136"/></a><a target="_blank" data-reactid="137"><img class="Footer__img__25Ink" src="/beta/CCV-assets/tekna.04ca97.jpg" data-reactid="138"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="139"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ntnu_idi.7bbd05.png" data-reactid="140"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="141"><img class="Footer__img__25Ink" src="/beta/CCV-assets/excITEd.ce9ee2.png" data-reactid="142"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="143"><img class="Footer__img__25Ink" src="/beta/CCV-assets/uio_ifi.eebbdf.png" data-reactid="144"/></a></div></div></div></div></div></div>
 
     
-    <script src="/beta/manifest.bf49b8.js" type="text/javascript"></script>
+    <script src="/beta/manifest.1fc824.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor.ee22ec.js" type="text/javascript"></script>
+    <script src="/beta/vendor.621822.js" type="text/javascript"></script>
     
-    <script src="/beta/main.c1af53.js" type="text/javascript"></script>
+    <script src="/beta/main.c8648d.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor2.54ccf9.js" type="text/javascript"></script>
+    <script src="/beta/vendor2.459a38.js" type="text/javascript"></script>
     
 </body>
 </html>

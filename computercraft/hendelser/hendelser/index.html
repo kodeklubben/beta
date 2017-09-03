@@ -6,7 +6,7 @@
     <title>Hendelser | Kodeklubben</title>
 
     
-    <link href="/beta/vendor2.54ccf9.css" rel="stylesheet">
+    <link href="/beta/vendor2.459a38.css" rel="stylesheet">
     
 
     <style type="text/css">.App__appContainer__3y6aN {
@@ -117,10 +117,6 @@
   display: inline;
   float: right;
   padding: 4px 0; }
-
-.NavBar__gadgetContainer__28a-C {
-  display: inline-block;
-  padding: 3px 5px; }
 .BreadCrumb__breadcrumb__1u8pT {
   padding-left: 10px;
   float: left;
@@ -171,6 +167,13 @@
 .LanguageDropdown__gadgetContainer__LYX2I {
   display: inline-block;
   padding: 3px 5px; }
+.ModeDropdown__gadgetContainer__2HE97 {
+  display: inline-block;
+  padding: 3px 5px; }
+
+@media (max-width: 767px) {
+  .ModeDropdown__onlyMode__1fZJE {
+    display: none; } }
 .Lesson__container__133OS {
   max-width: 800px;
   padding-left: 15px;
@@ -193,8 +196,13 @@
     .Lesson__container__133OS {
       font-size: 125%; } }
 
-.Lesson__resetButton__312Jx {
-  margin-right: 10px; }
+.Lesson__box__2CtND {
+  display: none;
+  font-style: italic;
+  font-size: 0.75em; }
+  @media print {
+    .Lesson__box__2CtND {
+      display: block; } }
 /*
 
 Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
@@ -589,12 +597,12 @@ section.Content__activity__12AJC .Content__subsection__3XzlJ h2 {
     margin-left: 6px; }
 
 section.Content__check__sbZVW h2 {
-  background-image: url(/beta/CCV-assets/check.15ac74.svg);
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
   padding-top: 4px;
-  padding-bottom: 9px;
-  padding-left: 50px; }
+  padding-bottom: 9px; }
+  section.Content__check__sbZVW h2 img {
+    height: 40px;
+    vertical-align: text-bottom;
+    padding-right: 10px; }
 
 section.Content__try__9Al91 {
   background: #abdbea;
@@ -622,29 +630,27 @@ section.Content__flag__1GjEr {
   margin-bottom: 20px; }
   section.Content__flag__1GjEr h2 {
     color: #36a137;
-    background-image: url(/beta/CCV-assets/flag.4a58cd.svg);
-    background-position: 0 10px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 15px;
-    padding-bottom: 10px;
-    padding-left: 60px; }
+    padding-bottom: 10px; }
+    section.Content__flag__1GjEr h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
 
 section.Content__save__3P_NU {
   border-top: 3px solid #245a9a;
   margin: 20px 0; }
   section.Content__save__3P_NU h2 {
     color: #245a9a;
-    background-image: url(/beta/CCV-assets/save.0a8afb.svg);
-    background-position: 0 10px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
     margin: 0;
     padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 50px; }
+    padding-bottom: 20px; }
+    section.Content__save__3P_NU h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
 
 section.Content__challenge__2LUyO {
   border: 3px solid #00b1da;
@@ -659,6 +665,9 @@ section.Content__challenge__2LUyO {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 0; }
+    @media print {
+      section.Content__challenge__2LUyO h2 {
+        border-bottom: 2px #00b1da solid; } }
   section.Content__challenge__2LUyO > * {
     padding: 0 20px; }
 
@@ -737,6 +746,11 @@ input[type="checkbox"]:checked + label::before {
   content: '\2714';
   line-height: 1.1em;
   padding-left: 0.1em; }
+.PrintButton__container__KmVN4 {
+  margin: 10px 10px 0 0; }
+  @media print {
+    .PrintButton__container__KmVN4 {
+      display: none; } }
 .ImprovePage__font__1MdMv {
   font-family: "Roboto", "Verdana", sans-serif;
   font-weight: 300;
@@ -745,6 +759,9 @@ input[type="checkbox"]:checked + label::before {
 /* Container for improve box */
 .ImprovePage__container__HeXzk {
   margin: 10px 30px; }
+  @media print {
+    .ImprovePage__container__HeXzk {
+      display: none; } }
 
 .ImprovePage__improvePageBox__cyxic {
   display: flex;
@@ -792,6 +809,9 @@ input[type="checkbox"]:checked + label::before {
   font-family: "Roboto", "Verdana", sans-serif; }
   .Footer__container__1SZrv a {
     text-decoration: none; }
+  @media print {
+    .Footer__container__1SZrv {
+      display: none; } }
 
 .Footer__containerStudent__3Yr5f {
   background-color: #b1daae;
@@ -839,637 +859,16 @@ input[type="checkbox"]:checked + label::before {
 </style>
 <meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/CCV-icons-4d5e7c/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/CCV-icons-4d5e7c/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/CCV-icons-4d5e7c/favicon-16x16.png"><link rel="shortcut icon" href="/beta/CCV-icons-4d5e7c/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1536x2008.png"></head>
 <body>
-    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="-1389505435"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/CCV-assets/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/computercraft" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/computercraft/logo-black.9f666d.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Computercraft</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/computercraft/hendelser/hendelser" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-2.b1bbe2.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Hendelser</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nn.fa23ab.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_en.7eea7b.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">English</div></div></a></li></ul></div></div><div class="NavBar__gadgetContainer__28a-C" data-reactid="71"><div class="dropdown btn-group btn-group-student" data-reactid="72"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="73"><!-- react-text: 74 -->Modus: Elev<!-- /react-text --></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="75"><li role="presentation" class="active" data-reactid="76"><a role="menuitem" tabindex="-1" href="#" data-reactid="77">Elev</a></li><li role="presentation" class="" data-reactid="78"><a role="menuitem" tabindex="-1" href="#" data-reactid="79">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="80"><h1 data-reactid="81"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-2.b1bbe2.svg" data-reactid="82"/><!-- react-text: 83 -->Hendelser<!-- /react-text --><!-- react-text: 84 --><!-- /react-text --></h1><p data-reactid="85"><i data-reactid="86"><!-- react-text: 87 -->Skrevet av:<!-- /react-text --><!-- react-text: 88 --> <!-- /react-text --><span data-reactid="89">Geir Arne Hjelle</span></i></p><div data-reactid="90"><section class="intro" id="introduksjon">
-<h1 class="intro" id="introduksjon">Introduksjon</h1>
-<p>I denne leksjonen skal vi se nærmere på hvordan datamaskinene bruker
-såkalte hendelser for å reagere på ting som tastetrykk, museklikk og
-så videre. Etterhvert vil vi bli enda bedre kjent med datamaskinene,
-og lære hvordan vi flytter filer og programmer rundt omkring på en
-datamaskin eller mellom forskjellige datamaskiner.</p>
-<figure><img src="hendelser.png" alt=""></figure>
-</section>
-<section class="activity" id="steg-1-skattejakt">
-<h1 class="activity" id="steg-1-skattejakt">Steg 1: Skattejakt</h1>
-<p>Datamaskiner bruker noe som kalles hendelser for å registrere
-tastetrykk, museklikk og så videre. Vi vil først se på hvordan vi kan
-lage et enkelt spill hvor vi styrer en figur med piltastene.</p>
-<section class="check" id="sjekkliste">
-<h2 class="check" id="sjekkliste">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Start et nytt program ved å skrive <code>edit skattejakt</code>, skriv inn
-det følgende:</label></p>
-<pre><code class="lua"><span class="hljs-keyword">local</span> x = <span class="hljs-number">20</span>
-<span class="hljs-keyword">local</span> y = <span class="hljs-number">10</span>
-
-term.clear()
-term.setCursorPos(x, y)
-<span class="hljs-built_in">print</span>(<span class="hljs-string">'O'</span>)
-</code></pre>
-<p>Lagre og kjør programmet. Skjønner du hva det gjør? Prøv å
-forandre verdiene av <code>x</code> og <code>y</code> og kjør igjen.</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Så langt skriver programmet bare ut en <code>O</code> på en gitt posisjon. Nå
-vil vi bruke hendelser for å kunne flytte denne figuren rundt på
-skjermen.</label></p>
-<p>For å vente på hendelser bruker vi <code>os.pullEvent()</code>. Vi vil
-spesielt vente på taste-hendelser. Disse hendelsene kalles <code>key</code> i
-ComputerCraft. Forandre programmet ditt som under:</p>
-<pre><code class="lua"><span class="hljs-keyword">local</span> x = <span class="hljs-number">20</span>
-<span class="hljs-keyword">local</span> y = <span class="hljs-number">10</span>
-
-term.clear()
-term.setCursorPos(x, y)
-<span class="hljs-built_in">print</span>(<span class="hljs-string">'O'</span>)
-
-<span class="hljs-keyword">local</span> hendelse, tast = <span class="hljs-built_in">os</span>.pullEvent(<span class="hljs-string">'key'</span>)    <span class="hljs-comment">-- ny linje</span>
-<span class="hljs-built_in">print</span>(hendelse)                               <span class="hljs-comment">-- ny linje</span>
-<span class="hljs-built_in">print</span>(tast)                                   <span class="hljs-comment">-- ny linje</span>
-</code></pre>
-<p>Når du kjører programmet ditt nå blir programmet stående og vente
-til du trykker en tast. Deretter skrives teksten <strong>key</strong> samt et
-tall til skjermen. Teksten <strong>key</strong> betyr bare at det var en
-taste-hendelse som skjedde. Dette er ikke så veldig interessant
-for oss nå, men kan være nyttig i andre programmet om man lytter
-på flere forskjellige hendelser.</p>
-<p>Tallet vi fikk er derimot veldig viktig. Hver tast på tastaturet
-har sin egen tastekode. Prøv å kjøre programmet flere ganger, ser
-du at om du trykker samme tast får du samme tall tilbake. For
-eksempel er <code>A</code> alltid 30, mens <code>pil opp</code> alltid er 200.</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_2"><label for="cbx_2"> Vi trenger heldigvis ikke huske disse kodene. Biblioteket <code>keys</code>
-kjenner alle disse, og gjør at vi kan skrive for eksempel <code>keys.q</code>
-for å representere <code>Q</code>-tasten. Endre programmet ditt igjen:</label></p>
-<pre><code class="lua"><span class="hljs-keyword">local</span> x = <span class="hljs-number">20</span>
-<span class="hljs-keyword">local</span> y = <span class="hljs-number">10</span>
-
-term.clear()
-term.setCursorPos(x, y)
-<span class="hljs-built_in">print</span>(<span class="hljs-string">'O'</span>)
-
-<span class="hljs-keyword">local</span> hendelse, tast = <span class="hljs-built_in">os</span>.pullEvent(<span class="hljs-string">'key'</span>)
-<span class="hljs-keyword">if</span> tast == keys.q <span class="hljs-keyword">then</span>                        <span class="hljs-comment">-- ny linje</span>
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Du trykket Q'</span>)                     <span class="hljs-comment">-- ny linje</span>
-<span class="hljs-keyword">else</span>                                          <span class="hljs-comment">-- ny linje</span>
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Du trykket ikke Q'</span>)                <span class="hljs-comment">-- ny linje</span>
-<span class="hljs-keyword">end</span>                                           <span class="hljs-comment">-- ny linje</span>
-</code></pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_3"><label for="cbx_3"> Vi kan nå lage en løkke hvor vi alltid sjekker hvilken tast som er
-trykket. Dersom tasten <code>Q</code> trykkes avslutter vi løkken med <code>break</code>.</label></p>
-<pre><code class="lua"><span class="hljs-keyword">local</span> x = <span class="hljs-number">20</span>
-<span class="hljs-keyword">local</span> y = <span class="hljs-number">10</span>
-
-<span class="hljs-keyword">while</span> <span class="hljs-literal">true</span> <span class="hljs-keyword">do</span>                                 <span class="hljs-comment">-- ny linje</span>
-    term.clear()
-    term.setCursorPos(x, y)
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">'O'</span>)
-
-    <span class="hljs-keyword">local</span> hendelse, tast = <span class="hljs-built_in">os</span>.pullEvent(<span class="hljs-string">'key'</span>)
-    <span class="hljs-keyword">if</span> tast == keys.q <span class="hljs-keyword">then</span>
-        <span class="hljs-keyword">break</span>                                 <span class="hljs-comment">-- endret linje</span>
-    <span class="hljs-keyword">end</span>
-<span class="hljs-keyword">end</span>                                           <span class="hljs-comment">-- ny linje</span>
-</code></pre>
-<p>Når du kjører dette programmet vil det tilsynelatende ikke skje
-noe før du trykker <code>Q</code>, siden det er den eneste hendelsen vi
-har kode som reagerer på.</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Vi er nå klare til å sjekke om piltastene trykkes, og flytte figuren
-rundt på skjermen. For å gjøre dette trenger vi bare å endre
-verdiene av <code>x</code> og <code>y</code> avhengig av hvilken piltast som trykkes.</label></p>
-<pre><code class="lua"><span class="hljs-keyword">local</span> x = <span class="hljs-number">20</span>
-<span class="hljs-keyword">local</span> y = <span class="hljs-number">10</span>
-
-<span class="hljs-keyword">while</span> <span class="hljs-literal">true</span> <span class="hljs-keyword">do</span>
-    term.clear()
-    term.setCursorPos(x, y)
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">'O'</span>)
-
-    <span class="hljs-keyword">local</span> hendelse, tast = <span class="hljs-built_in">os</span>.pullEvent(<span class="hljs-string">'key'</span>)
-    <span class="hljs-keyword">if</span> tast == keys.q <span class="hljs-keyword">then</span>
-        <span class="hljs-keyword">break</span>
-    <span class="hljs-keyword">end</span>
-
-    <span class="hljs-keyword">if</span> tast == keys.right <span class="hljs-keyword">then</span>                <span class="hljs-comment">-- ny linje</span>
-        x = x + <span class="hljs-number">1</span>                             <span class="hljs-comment">-- ny linje</span>
-    <span class="hljs-keyword">end</span>                                       <span class="hljs-comment">-- ny linje</span>
-<span class="hljs-keyword">end</span>
-</code></pre>
-<p>Når du kjører dette programmet vil du se at du kan bruke <code>pil høyre</code> til å bevege figuren mot høyre.</p>
-</li>
-</ul>
-<section class="challenge" id="prov-selv">
-<h3 class="challenge" id="prov-selv">Prøv selv</h3>
-<p>De andre piltastene kan du programmere selv på samme måte. Du trenger
-da å sammenligne med kodene <code>keys.left</code>, <code>keys.down</code> og
-<code>keys.up</code>. Hvordan må du endre verdiene av <code>x</code> og <code>y</code>? Prøv deg frem!</p>
-</section>
-</section>
-<section class="check" id="sjekkliste-2">
-<h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Til slutt vil vi legge til en skatt som figuren vår skal lete
-etter. Vi bruker tilfeldige tall for å bestemme hvor skatten skal
-ligge. Endre begynnelsen av programmet ditt som følger:</label></p>
-<pre><code class="lua"><span class="hljs-keyword">local</span> x = <span class="hljs-number">20</span>
-<span class="hljs-keyword">local</span> y = <span class="hljs-number">10</span>
-<span class="hljs-keyword">local</span> skattX = <span class="hljs-built_in">math</span>.<span class="hljs-built_in">random</span>(<span class="hljs-number">1</span>, <span class="hljs-number">50</span>)             <span class="hljs-comment">-- ny linje</span>
-<span class="hljs-keyword">local</span> skattY = <span class="hljs-built_in">math</span>.<span class="hljs-built_in">random</span>(<span class="hljs-number">1</span>, <span class="hljs-number">18</span>)             <span class="hljs-comment">-- ny linje</span>
-
-<span class="hljs-keyword">while</span> <span class="hljs-literal">true</span> <span class="hljs-keyword">do</span>
-    term.clear()
-    term.setCursorPos(skattX, skattY)         <span class="hljs-comment">-- ny linje</span>
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">'X'</span>)                                <span class="hljs-comment">-- ny linje</span>
-    term.setCursorPos(x, y)
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">'O'</span>)
-
-    <span class="hljs-keyword">if</span> x == skattX <span class="hljs-keyword">and</span> y == skattY <span class="hljs-keyword">then</span>       <span class="hljs-comment">-- ny linje</span>
-        term.setCursorPos(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>)               <span class="hljs-comment">-- ny linje</span>
-        <span class="hljs-built_in">print</span>(<span class="hljs-string">'Du fant skatten!'</span>)             <span class="hljs-comment">-- ny linje</span>
-        <span class="hljs-keyword">break</span>                                 <span class="hljs-comment">-- ny linje</span>
-    <span class="hljs-keyword">end</span>                                       <span class="hljs-comment">-- ny linje</span>
-
-    <span class="hljs-keyword">local</span> hendelse, tast = <span class="hljs-built_in">os</span>.pullEvent(<span class="hljs-string">'key'</span>)
-    <span class="hljs-comment">-- resten av programmet er som tidligere</span>
-</code></pre>
-<p>Prøv spillet! Fungerer det som du hadde trodd? Klarer du å kanskje
-legge til flere skatter?</p>
-</li>
-</ul>
-<section class="challenge" id="prov-selv-2">
-<h3 class="challenge" id="prov-selv-2">Prøv selv</h3>
-<p>Ved hjelp av <code>local maxX, maxY = term.getSize()</code> kan du finne
-størrelsen på skjermen. Kan du bruke dette til å begrense figuren din
-slik at den ikke kan gå av skjermen?</p>
-<p>En litt utfordrende oppgave: Prøv å skriv et tilsvarende program til
-en robot, men i stedet for at piltastene bare flytter en figur på
-skjermen skal piltastene flytte roboten!</p>
-</section>
-</section>
-</section>
-<section class="activity" id="steg-2-hvordan-bevege-seg-rundt-i-filsystemet">
-<h1 class="activity" id="steg-2-hvordan-bevege-seg-rundt-i-filsystemet">Steg 2: Hvordan bevege seg rundt i filsystemet</h1>
-<p>Datamaskiner organiserer informasjon i filer, og disse filene legges i
-et filsystem. Dette filsystemet har du kanskje sett på en vanlig
-datamaskin i programmene Windows Utforsker eller Finder på Mac. I
-ComputerCraft bruker vi kommandolinjen for å se på filene. Vi skal her
-se på noen enkle kommandoer for å kopiere og flytte filer.</p>
-<section class="check" id="sjekkliste-3">
-<h2 class="check" id="sjekkliste-3">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Lag en ny <strong>Computer</strong>, sett den ut og start den ved å høyre-klikke
-på den.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Kommandoen <code>dir</code> brukes for å se på innholdet i en katalog (dir er
-en forkortelse for <em>directory</em> som betyr <em>katalog</em>). Prøv den nå!
-Skriv <code>dir</code> og trykk enter.</label></p>
-<p>Datamaskinen svarer <strong>rom</strong> og <strong>skattejakt</strong>. Den første er en
-katalog som inneholder alle de innebygde programmene på
-datamaskinen (rom er en forkortelse for <em>Read Only Memory</em> som
-betyr <em>kun-lese-minne</em> eller <em>skrivebeskyttet minne</em>). Vi skal se
-mer på denne katalogen senere.</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Når du bruker <code>dir</code> er det vanskelig å se forskjell på filer og
-kataloger. Til dette kan du bruke <code>type</code>. Prøv for eksempel å skriv
-<code>type skattejakt</code>. Datamaskinen vil da fortelle deg at
-<strong>skattejakt</strong> er en fil. Tilsvarende vil <code>type rom</code> fortelle deg at
-<strong>rom</strong> er en katalog.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Du kan lage egne kataloger om du vil, for å organisere filene dine
-bedre. Skriv <code>mkdir mine_programmer</code>. Kommandoen <code>mkdir</code> lager nye
-kataloger (mkdir er en forkortelse for <em>make directory</em> som betyr
-<em>lag katalog</em>). Du kan bekrefte at katalogen <strong>mine_programmer</strong> ble
-laget ved å skrive <code>dir</code> og <code>type mine_programmer</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_10"><label for="cbx_10"> Kommandoen <code>move</code> flytter filer. Skriv <code>move skattejakt mine_programmer</code>.  Dette flytter filen <strong>skattejakt</strong> inn i
-katalogen <strong>mine_programmer</strong>. Hvis du nå skriver <code>dir</code> vil du se at
-<strong>skattejakt</strong> har blitt borte. For å sjekke at den ble flyttet
-riktig kan du skrive <code>dir mine_programmer</code>. Dette viser alle filene
-og katalogene som finnes inne i katalogen <strong>mine_programmer</strong>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Vi kan også flytte oss rundt i filsystemet. Dette vil si at vi
-endrer hvilken katalog som er utgangspunktet vårt (for eksempel når
-vi skriver <code>dir</code>). Til dette bruker vi <code>cd</code> (cd er en forkortelse
-for <em>change directory</em> som betyr <em>endre katalog</em>). Skriv
-<code>cd mine_programmer</code>. Du vil se at det som står foran <code>&gt;</code> endrer seg
-for å vise deg hvilken katalog du er i. Prøv også å skriv <code>dir</code> for å
-bekrefte at du er i samme katalogen som <strong>skattejakt</strong>.</label></p>
-<p>For å gå tilbake en katalog bruker du det spesielle navnet
-<strong>..</strong>. Skriv <code>cd ..</code>. Du vil nå komme tilbake til utgangspunktet.</p>
-</li>
-</ul>
-<section class="challenge" id="prov-selv-3">
-<h3 class="challenge" id="prov-selv-3">Prøv selv</h3>
-<p>Du har nå sett ganske mange kommandoer: <code>dir</code>, <code>edit</code>, <code>type</code>,
-<code>mkdir</code>, <code>move</code> og <code>cd</code>. I tillegg finnes også <code>delete</code> som kan brukes
-til å slette filer og kataloger, og <code>copy</code> som brukes på samme måte
-som <code>move</code>, men som kopierer filer i stedet for å flytte dem.</p>
-<p>Prøv å bruke disse kommandoene til å flytte deg litt rundt i
-filsystemet, lag nye filer og kataloger, flytt dem rundt og så videre
-inntil du er ganske komfortabel med hvordan filsystemet fungerer.</p>
-</section>
-</section>
-</section>
-<section class="activity" id="steg-3-et-bedre-passord-program">
-<h1 class="activity" id="steg-3-et-bedre-passord-program">Steg 3: Et bedre passord-program</h1>
-<p>Vi har tidligere laget et passord-program. Dette passord-programmet
-har et par svakheter.</p>
-<ol>
-<li>
-<p>Programmet må startes manuelt ved å skrive <code>passord</code> etter at
-datamaskinen er skrudd på.</p>
-</li>
-<li>
-<p>I stedet for å skrive passordet kan man bare trykke <code>Ctrl-T</code> for å
-stoppe programmet, og se inni programmet for å finne det hemmelige
-passordet.</p>
-</li>
-</ol>
-<p>Vi skal her se på et par triks for å gjøre passord-programmet litt
-tryggere.</p>
-<figure><img src="passord.png" alt=""></figure>
-<section class="check" id="sjekkliste-4">
-<h2 class="check" id="sjekkliste-4">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_12"><label for="cbx_12"> Om du ikke allerede har gjort det: Sett opp en datamaskin ved siden
-av en dør og legg inn passord-programmet datamaskinen, det vil si
-skriv <code>edit passord</code> og skriv inn følgende:</label></p>
-<pre><code class="lua"><span class="hljs-keyword">local</span> passord = <span class="hljs-string">'kodeklubben'</span>
-
-<span class="hljs-keyword">while</span> <span class="hljs-literal">true</span> <span class="hljs-keyword">do</span>
-    term.clear()
-    term.setCursorPos(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>)
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Hva er passordet?'</span>)
-    svar = <span class="hljs-built_in">read</span>(<span class="hljs-string">'*'</span>)
-
-    <span class="hljs-keyword">if</span> svar == passord <span class="hljs-keyword">then</span>
-        redstone.setOutput(<span class="hljs-string">'left'</span>, <span class="hljs-literal">true</span>)
-        sleep(<span class="hljs-number">5</span>)
-        redstone.setOutput(<span class="hljs-string">'left'</span>, <span class="hljs-literal">false</span>)
-    <span class="hljs-keyword">end</span>
-<span class="hljs-keyword">end</span>
-</code></pre>
-<p>Kjør programmet, og sjekk at det virker som det skal.</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_13"><label for="cbx_13"> Når en datamaskin starter sjekker den først om det finnes et program
-som heter <code>startup</code> (<em>startup</em> betyr <em>oppstart</em>). Om den finner
-dette programmet kjøres dette før noe annet skjer. Det betyr at om
-vi kaller passord-programmet vårt for <strong>startup</strong> så vil det kjøre
-automatisk.</label></p>
-<p>Skriv <code>move passord startup</code>. Dette endre navnet på
-passord-programmet vårt. Vi kan nå starte datamaskinen på nytt ved
-å skrive <code>reboot</code>. Datamaskinen vil nå direkte spørre deg om
-passordet.</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_14"><label for="cbx_14"> Trykk <code>Ctrl-T</code> for å stanse passord-programmet. At vi kan bruke
-<code>Ctrl-T</code> til å avslutte programmer er noe <code>os.pullEvent</code> gjør for
-oss automatisk uten at vi trenger å gjøre noe. Dersom vi ikke vil at
-dette skal være mulig kan vi bytte ut <code>os.pullEvent</code> med noe som
-heter <code>os.pullEventRaw</code>. Disse fungerer omtrent på samme måte, men
-den siste bryr seg ikke om <code>Ctrl-T</code>.</label></p>
-<p>Skriv <code>edit startup</code> og legg til en linje øverst i koden din:</p>
-<pre><code class="lua"><span class="hljs-built_in">os</span>.pullEvent = <span class="hljs-built_in">os</span>.pullEventRaw                <span class="hljs-comment">-- ny linje</span>
-<span class="hljs-keyword">local</span> passord = <span class="hljs-string">'kodeklubben'</span>
-
-<span class="hljs-keyword">while</span> <span class="hljs-literal">true</span> <span class="hljs-keyword">do</span>
-    term.clear()
-    term.setCursorPos(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>)
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Hva er passordet?'</span>)
-    svar = <span class="hljs-built_in">read</span>(<span class="hljs-string">'*'</span>)
-
-    <span class="hljs-keyword">if</span> svar == passord <span class="hljs-keyword">then</span>
-        redstone.setOutput(<span class="hljs-string">'left'</span>, <span class="hljs-literal">true</span>)
-        sleep(<span class="hljs-number">5</span>)
-        redstone.setOutput(<span class="hljs-string">'left'</span>, <span class="hljs-literal">false</span>)
-    <span class="hljs-keyword">end</span>
-<span class="hljs-keyword">end</span>
-</code></pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_15"><label for="cbx_15"> Du kan nå starte datamaskinen på nytt igjen med <code>reboot</code>. Nå har du
-en datamaskin som bare spør om passord hele tiden!</label></p>
-<p>Vær litt forsiktig med dette siden det ikke er noen enkel måte å
-få datamaskinen til å gjøre noe annet enn å spørre om passord! Men
-det du lærer i de to neste stegene kan være nyttig.</p>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-4-bruk-av-diskettstasjoner">
-<h1 class="activity" id="steg-4-bruk-av-diskettstasjoner">Steg 4: Bruk av diskettstasjoner</h1>
-<p>Vi skal nå se hvordan vi kan bruke disketter og diskettstasjoner til å
-flytte filer mellom forskjellige datamaskiner.</p>
-<figure><img src="diskettstasjon.png" alt=""></figure>
-<section class="check" id="sjekkliste-5">
-<h2 class="check" id="sjekkliste-5">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_16"><label for="cbx_16"> Lag en <strong>Disk Drive</strong> (diskettstasjon) og plasser den inntil
-datamaskinen din. Hent også en <strong>Floppy Disk</strong> (diskett) fra
-inventory'et ditt (du kan velge hvilken farge som helst).</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_17"><label for="cbx_17"> Åpne diskettstasjonen ved å høyre-klikke på den. Sett inn disketten
-ved å flytte den opp til den ledige slot'en øverst.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_18"><label for="cbx_18"> Start datamaskinen din ved å høyre-klikke på den. Skriv <code>dir</code>. Du
-vil se at det nå finnes en ny katalog som heter <strong>disk</strong>. Dette er
-disketten vi nettopp satte inn.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_19"><label for="cbx_19"> La oss lage et enkelt program. Skriv <code>edit navn</code> og skriv inn
-følgende:</label></p>
-<pre><code class="lua"><span class="hljs-built_in">print</span>(<span class="hljs-string">'Hva heter du?'</span>)
-navn = <span class="hljs-built_in">read</span>()
-<span class="hljs-built_in">print</span>(<span class="hljs-string">'Hei, '</span> .. navn)
-</code></pre>
-<p>Test at programmet virker ved å skrive <code>navn</code>.</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_20"><label for="cbx_20"> Vi kan nå kopiere dette programmet over til disketten ved å skrive
-<code>copy navn disk</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_21"><label for="cbx_21"> Vi kan nå ta med oss dette programmet til en annen datamaskin:</label></p>
-<p><strong>1</strong>: Steng datamaskinen.</p>
-<p><strong>2</strong>: Åpne diskettstasjonen, og flytt disketten til inventory'et
-ditt.</p>
-<p><strong>3</strong>: Lag en ny datamaskin, også denne med en diskettstasjon
-inntil seg.</p>
-<p><strong>4</strong>: Sett disketten inn i den nye diskettstasjonen.</p>
-<p><strong>5</strong>: Åpne den nye datamaskinen. Skriv <code>dir</code> og <code>dir disk</code> slik
-at du ser at programmet ditt er flyttet til den nye datamaskinen
-ved hjelp av disketten.</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_22"><label for="cbx_22"> Vi kan nå kopiere programmet fra disketten til denne nye
-datamaskinen slik at vi kan ta med disketten videre og likevel bruke
-programmet. For å kopiere filen kan du skrive <code>copy disk/navn .</code>.
-Legg merke til at det skal være et <code>.</code> på slutten. Dette er et
-spesielt katalognavn som alltid betyr <em>denne katalogen</em>. Skriv
-tilslutt <code>dir</code> og <code>navn</code> for å bekrefte at programmet har blitt
-kopiert.</label></p>
-</li>
-</ul>
-<section class="protip" id="hva-er-en-diskett">
-<h3 class="protip" id="hva-er-en-diskett">Hva er en diskett?</h3>
-<p>Disketter var en vanlig måte å lagre programmer og filer på fra de ble
-introdusert på 1970-tallet og fram til tidlig 2000-tall. Disketter var
-også den vanligste måten å overføre filer mellom forskjellige
-datamaskiner på. I nyere tid har internett, samt USB minnepenner og
-eksterne harddisker overtatt for diskettenes bruksområder.</p>
-<p>Morsomt nok, lever likevel diskettene videre som det mest vanlige
-symbolet for å lagre filer i forskjellige programmer.</p>
-</section>
-</section>
-</section>
-<section class="activity" id="steg-5-skrive-kode-utenfor-computercraft">
-<h1 class="activity" id="steg-5-skrive-kode-utenfor-computercraft">Steg 5: Skrive kode utenfor ComputerCraft</h1>
-<p>Vi kan også se på og endre programmene våre utenfor Minecraft og
-ComputerCraft. Dette kan være nyttig på flere måter.</p>
-<p><strong>1</strong>: Om vi ved et uhell ødelegger en datamaskin kan vi hente tilbake
-programmene på den datamaskinen, og kopiere de til en annen
-datamaskin.</p>
-<p><strong>2</strong>: Vi kan raskere kopiere filer mellom datamaskiner enn om vi
-bruker disketter som vi lærte i forrige steg.</p>
-<p><strong>3</strong>: Programmet <code>edit</code> som vi bruker til å skrive programmer er ikke
-så lett å skrive i. Det er enklere å bruke for eksempel Notepad eller
-andre tekstprogrammer vi har installert.</p>
-<p>Som du kanskje vet blir omtrent alle data i Minecraft lagret i en
-<em>Minecraft</em>-katalog på datamaskinen din. For å finne denne kan du
-gjøre følgende (utenfor Minecraft):</p>
-<p><strong>Windows</strong>: Under Windows finner du <em>Minecraft</em>-katalogen under
-<code>%appdata%\.minecraft</code>. Søk etter <code>%appdata%</code> i en utforsker eller i
-kjør-feltet etter å ha klikket start-knappen.</p>
-<p><strong>Mac OS X</strong>: Under Mac ligger <em>Minecraft</em>-katalogen i
-<code>Library/Application Support/minecraft/</code> under hjemmekatalogen din. På
-norsk heter <code>Library</code> <code>Bibliotek</code>.</p>
-<p><strong>Linux</strong>: På Linux finner du <em>Minecraft</em>-katalogen som en skjult
-katalog <code>.minecraft</code> rett under hjemmekatalogen din.</p>
-<p>Finn <em>Minecraft</em>-katalogen din i en filutforsker. Gå videre til
-katalogen <code>saves</code>, deretter velger du navnet på den verden du spiller
-nå, og til slutt katalogen <code>computer</code>. Denne katalogen inneholder
-flere kataloger som bare har et tall som navn. Disse katalogene
-representerer de forskjellige datamaskinene i spillet ditt. Du vil
-også se en katalog som heter disk, som også har nummererte kataloger
-inne i seg. Disse representerer diskettene i spillet ditt.</p>
-<figure><img src="tekstprogram.png" alt=""></figure>
-<section class="check" id="sjekkliste-6">
-<h2 class="check" id="sjekkliste-6">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_23"><label for="cbx_23"> Gå tilbake til Minecraft-spillet ditt. Åpne en datamaskin hvor du
-har lagret et program. Skriv <code>id</code> og trykk enter. Dette vil fortelle
-deg hvilket nummer denne datamaskinen er.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_24"><label for="cbx_24"> I filutforskeren kan du nå finne katalogen som representerer denne
-datamaskinen (se over). Åpne et av programmene i et tekstprogram som
-for eksempel Notepad. Gjør en liten endring i programmet ditt.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_25"><label for="cbx_25"> Gå tilbake til Minecraft igjen. Åpne det samme programmet med
-<code>edit</code>-kommandoen. Ser du endringen du nettopp gjorde?</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_26"><label for="cbx_26"> I filutforskeren kan du også kopiere filer mellom forskjellige
-datamaskiner. Prøv å kopiere programmet du nettopp endret til en
-annen datamaskin. Finner du igjen dette programmet inne i Minecraft
-også?</label></p>
-</li>
-</ul>
-<section class="protip" id="flytt-en-datamaskin">
-<h3 class="protip" id="flytt-en-datamaskin">Flytt en datamaskin</h3>
-<p>Om du oppdager at du må flytte en datamaskin må du være litt
-forsiktig, siden om du bare ødelegger en datamaskin og setter ut en ny
-er alle programmene borte. Du kan da bruke metoden i denne seksjonen
-for å kopiere programmene tilbake, men det finnes en bedre måte.</p>
-<p>Med kommandoen <code>label</code> kan vi gi en datamaskin navn. Prøv for eksempel
-å skriv <code>label set snakker</code>. Dette gir denne datamaskinen navnet
-<strong>snakker</strong>, du kan gi maskinen akkurat det navnet du vil. Om du nå
-ødelegger maskinen vil du se at du kan plukke den opp igjen, og at den
-da legger seg i inventory'et ditt med navnet <strong>snakker</strong>. Om du nå
-setter ut maskinen igjen vil du se at alle programmene du har skrevet
-fortsatt finnes på maskinen.</p>
-</section>
-</section>
-</section>
-<section class="activity" id="steg-6-de-innebygde-programmene">
-<h1 class="activity" id="steg-6-de-innebygde-programmene">Steg 6: De innebygde programmene</h1>
-<p>Vi skal nå kikke raskt på katalogen <strong>rom</strong>. Dette er som nevnt
-katalogen som inneholder de innebygde programmene på datamaskinen. Ved
-hjelp av kommandoene vi har lært kan vi nå se hvordan disse
-programmene er programmert, og til og med lage våre egne versjoner av
-dem.</p>
-<section class="check" id="sjekkliste-7">
-<h2 class="check" id="sjekkliste-7">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_27"><label for="cbx_27"> Bruk <code>cd</code> kommandoen til å gå først til <strong>rom</strong>, deretter
-<strong>programs</strong> og til slutt til <strong>fun</strong>-katalogen. Bruk gjerne <code>dir</code>
-underveis for å se på hvilke andre filer og kataloger som finnes.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_28"><label for="cbx_28"> Denne <strong>fun</strong>-katalogen inneholder flere spill og programmer. La oss
-se på <strong>hello</strong> som er det enkleste programmet. Dette er en variant
-av <strong>heisann</strong> som vi skrev tidligere.</label></p>
-<p>Prøv først å kjøre programmet ved å skrive <code>hello</code>. Teksten
-<strong>Hello World!</strong> skrives til skjermen, ett tegn om gangen.</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_29"><label for="cbx_29"> La oss se på koden til <strong>hello</strong>. Skriv <code>edit hello</code>. Du vil se det
-følgende:</label></p>
-<pre><code class="lua"><span class="hljs-keyword">if</span> term.isColour() <span class="hljs-keyword">then</span>
-    term.setTextColour( <span class="hljs-number">2</span>^<span class="hljs-built_in">math</span>.<span class="hljs-built_in">random</span>(<span class="hljs-number">0</span>,<span class="hljs-number">15</span>) )
-<span class="hljs-keyword">end</span>
-textutils.slowPrint( <span class="hljs-string">"Hello World!"</span> )
-term.setTextColour( colours.white )
-</code></pre>
-<p>Ser du hvilken kodelinje det er som har ansvaret for å skrive
-teksten til skjermen?</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_30"><label for="cbx_30"> Nå vil vi endre teksten <strong>Hello World!</strong> til noe annet. Men om du
-prøver å bare endre på teksten vil du oppdage at det ikke går
-an. Videre, om du trykker <code>Ctrl</code> vil du se at valget <code>Save</code> er
-borte. Dette er fordi vi ser på en fil som ligger i <strong>rom</strong>, det
-skrivebeskyttede minnet.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_31"><label for="cbx_31"> Hvis vi vil lage vår egen versjon av <strong>hello</strong> må vi først kopiere
-filen ut av <strong>rom</strong>. Skriv <code>copy hello ../../../</code>. Den litt mystiske
-rekken av <code>..</code> og <code>/</code> betyr at vi kopierer filen tre nivåer
-opp. Husk at <code>..</code> betydde at man går en katalog opp.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_32"><label for="cbx_32"> Nå vil vi flytte oss tilbake til utgangspunktet eller roten av
-filsystemet. Skriv <code>cd ..</code> tre ganger. Om du nå skriver <code>dir</code> skal
-du se filen <strong>hello</strong> i tillegg til <strong>rom</strong>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_33"><label for="cbx_33"> Nå kan du skrive <code>edit hello</code> og endre teksten <strong>Hello World!</strong> til
-noe annet, kanskje den kan si <strong>Hei</strong> og deretter navnet ditt? Lagre
-og lukk filen, og skriv deretter <code>hello</code> for å se om du fikk det
-til.</label></p>
-</li>
-</ul>
-<section class="protip" id="resten-av-programmet">
-<h3 class="protip" id="resten-av-programmet">Resten av programmet</h3>
-<p>Vi har så langt bare brydd oss om linje 4 i <strong>hello</strong>-programmet.
-Skjønner du hva de andre linjene gjør?</p>
-<p>Ut fra kommandoene <code>term.isColour()</code> og <code>term.setTextColour()</code> kan vi
-kanskje gjette på at de har noe med tekstfargen å gjøre? Faktisk sier
-de første tre linjene at dersom programmet kjøres på datamaskin som
-har farger så skal tekstfargen settes til en tilfeldig farge. Den
-siste linjen setter tekstfargen tilbake til hvit.</p>
-<p>Om du vil se hvordan dette virker kan du prøve å lage en <strong>Advanced
-Computer</strong>, og kjøre programmet <code>hello</code> på den.</p>
-</section>
-<section class="challenge" id="prov-selv-4">
-<h3 class="challenge" id="prov-selv-4">Prøv selv</h3>
-<p>Prøv å se på noen av de andre programmene du kjenner til, som for
-eksempel <code>cd</code>, <code>go</code> eller <code>refuel</code>. Du må kanskje lete litt i
-katalogstrukturen for å finne dem. Disse programmene er litt mer
-kompliserte enn de vi har laget så langt. Prøv likevel å se om du
-skjønner hva deler av koden gjør. Finner du for eksempel kodelinjen
-som bytter katalog i <code>cd</code> eller linjen som rapporterer fuelnivået i
-<code>refuel</code>?</p>
-</section>
-</section>
-</section>
-<section class="activity" id="steg-7-andre-typer-datamaskiner">
-<h1 class="activity" id="steg-7-andre-typer-datamaskiner">Steg 7: Andre typer datamaskiner</h1>
-<p>Vi har så langt stort sett bare brukt vanlige datamaskiner,
-<strong>Computer</strong>. Men om du ser i inventory'et ditt ser du at det finnes
-flere andre typer datamaskiner, inkludert <strong>Advanced Computer</strong> og
-<strong>Pocket Computer</strong>. Disse virker typisk ganske likt en vanlig
-datamaskin, men har noen ekstra muligheter.</p>
-<section class="check" id="sjekkliste-8">
-<h2 class="check" id="sjekkliste-8">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_34"><label for="cbx_34"> Lag og start en <strong>Advanced Computer</strong>. De viktigste ekstra
-mulighetene på denne typen datamaskin er at den kan vise farger og
-du kan bruke musen.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_35"><label for="cbx_35"> La oss lage et enkelt tegneprogram. Skriv <code>edit tegne</code>, og skriv</label></p>
-<pre><code class="lua">term.clear()
-
-<span class="hljs-keyword">while</span> <span class="hljs-literal">true</span> <span class="hljs-keyword">do</span>
-    <span class="hljs-keyword">local</span> hendelse, knapp, x, y = <span class="hljs-built_in">os</span>.pullEvent(<span class="hljs-string">'mouse_click'</span>)
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Du klikket '</span> .. knapp)
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Posisjon: x = '</span> .. x .. <span class="hljs-string">', y = '</span> .. y)
-<span class="hljs-keyword">end</span>
-</code></pre>
-<p>Kjør programmet og prøv å klikk litt rundt omkring på skjermen.
-Bruk både venstre og høyre museknapp. Skjønner du hvordan
-museklikk-hendelser fungerer? Bruk <code>Ctrl-T</code> for å avslutte
-programmet.</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_36"><label for="cbx_36"> La oss legge til litt kode som tegner på skjermen når du
-venstre-klikker. Vi kan også bruke høyre-klikk til å viske vekk det
-som er tegnet. Endre koden til</label></p>
-<pre><code class="lua">term.clear()
-
-<span class="hljs-keyword">while</span> <span class="hljs-literal">true</span> <span class="hljs-keyword">do</span>
-    <span class="hljs-keyword">local</span> hendelse, knapp, x, y = <span class="hljs-built_in">os</span>.pullEvent(<span class="hljs-string">'mouse_click'</span>)
-    term.setCursorPos(x, y)                   <span class="hljs-comment">-- ny linje</span>
-
-    <span class="hljs-keyword">if</span> knapp == <span class="hljs-number">1</span> <span class="hljs-keyword">then</span>                        <span class="hljs-comment">-- ny linje</span>
-        <span class="hljs-built_in">print</span>(<span class="hljs-string">'#'</span>)                            <span class="hljs-comment">-- ny linje</span>
-    <span class="hljs-keyword">end</span>                                       <span class="hljs-comment">-- ny linje</span>
-
-    <span class="hljs-keyword">if</span> knapp == <span class="hljs-number">2</span> <span class="hljs-keyword">then</span>                        <span class="hljs-comment">-- ny linje</span>
-        <span class="hljs-built_in">print</span>(<span class="hljs-string">' '</span>)                            <span class="hljs-comment">-- ny linje</span>
-    <span class="hljs-keyword">end</span>                                       <span class="hljs-comment">-- ny linje</span>
-<span class="hljs-keyword">end</span>
-</code></pre>
-</li>
-</ul>
-<section class="challenge" id="prov-selv-5">
-<h3 class="challenge" id="prov-selv-5">Prøv selv</h3>
-<p>Kan du legge til farger i tegneprogrammet? Se tilbake på
-<code>hello</code>-programmet hvordan du kan bruke <code>term.setTextColour()</code> til å
-endre farge. Kanskje du kan bruke talltastene til å endre farge?</p>
-<p>Når du vil sjekke forskjellige typer hendelser, for eksempel både
-museklikk og tastetrykk, er det best å bruke <code>os.pullEvent()</code> uten
-navnet på en hendelse i parantes. Deretter kan du sjekke variabelen
-<code>hendelse</code> for hvilken hendelse som faktisk skjedde.</p>
-<p>Etterhvert som du tegner merker du at du må klikke hver gang du vil
-tegne et punkt. Det ville vært bedre om man kunne bare klikket en
-gang, og deretter dra musen rundt. Se på hendelsen <code>mouse_drag</code> og
-prøv å forbedre programmet ditt.</p>
-</section>
-</section>
-</section>
-</div><div class="row" data-reactid="91"><div class="ImprovePage__container__HeXzk" data-reactid="92"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="93"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="94"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="95"><h2 data-reactid="96">Forbedre denne siden</h2><p data-reactid="97"><!-- react-text: 98 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 99 --> <!-- /react-text --><br data-reactid="100"/><!-- react-text: 101 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="102"><div data-reactid="103"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Computercraft: Hendelser&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/computercraft/hendelser/hendelser%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/computercraft/hendelser%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="104">Rapporter et problem</a></div><div data-reactid="105"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="106">Gå til forumet</a></div><div data-reactid="107"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/computercraft/hendelser" target="_blank" class="btn btn-orange" data-reactid="108">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="109"><div class="Footer__center__3xqZ_ row" data-reactid="110"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="111">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="112">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="113"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="114"><img class="Footer__img__25Ink" src="/beta/CCV-assets/smn.41dee6.jpg" data-reactid="115"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="116"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ibok.7f1adf.jpg" data-reactid="117"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="118"><img class="Footer__img__25Ink" src="/beta/CCV-assets/teknograd.7eb17c.png" data-reactid="119"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="120"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ntnu_idi.7bbd05.png" data-reactid="121"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="122"><img class="Footer__img__25Ink" src="/beta/CCV-assets/excITEd.ce9ee2.png" data-reactid="123"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="124"><img class="Footer__img__25Ink" src="/beta/CCV-assets/uio_ifi.eebbdf.png" data-reactid="125"/></a></div></div></div></div></div>
+    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="-667826316"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/CCV-assets/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/computercraft" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/computercraft/logo-black.9f666d.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Computercraft</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/computercraft/hendelser/hendelser" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-2.b1bbe2.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Hendelser</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nn.fa23ab.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_en.7eea7b.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">English</div></div></a></li></ul></div></div><div class="ModeDropdown__gadgetContainer__2HE97" data-reactid="71"><div class="dropdown btn-group btn-group-student" data-reactid="72"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="73"><div data-reactid="74"><span class="ModeDropdown__onlyMode__1fZJE" data-reactid="75">Modus: </span><span data-reactid="76">Elev</span></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="77"><li role="presentation" class="active" data-reactid="78"><a role="menuitem" tabindex="-1" href="#" data-reactid="79">Elev</a></li><li role="presentation" class="" data-reactid="80"><a role="menuitem" tabindex="-1" href="#" data-reactid="81">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="82"><h1 data-reactid="83"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-2.b1bbe2.svg" data-reactid="84"/><!-- react-text: 85 -->Hendelser<!-- /react-text --></h1><p data-reactid="86"><i data-reactid="87"><!-- react-text: 88 -->Skrevet av:<!-- /react-text --><!-- react-text: 89 --> <!-- /react-text --><span data-reactid="90">Geir Arne Hjelle</span></i></p><div class="Lesson__box__2CtND" data-reactid="91"><div data-reactid="92"><!-- react-text: 93 -->Kurs:<!-- /react-text --><!-- react-text: 94 --> <!-- /react-text --><!-- react-text: 95 -->Computercraft<!-- /react-text --></div><div data-reactid="96">Tema: Tekstbasert, Minecraft, Spill</div><div data-reactid="97">Fag: Teknologi, Programmering</div><div data-reactid="98">Klassetrinn: 5.-7. klasse, 8.-10. klasse, Videregående skole</div><div data-reactid="99">Språk: Norsk bokmål</div></div><button type="button" class="PrintButton__container__KmVN4 btn btn-sm btn-danger" data-reactid="100">Skriv ut</button><div data-reactid="101"></div><div class="row" data-reactid="102"><div class="ImprovePage__container__HeXzk" data-reactid="103"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="104"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="105"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="106"><h2 data-reactid="107">Forbedre denne siden</h2><p data-reactid="108"><!-- react-text: 109 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 110 --> <!-- /react-text --><br data-reactid="111"/><!-- react-text: 112 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="113"><div data-reactid="114"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Computercraft: Hendelser&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/computercraft/hendelser/hendelser%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/computercraft/hendelser%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="115">Rapporter et problem</a></div><div data-reactid="116"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="117">Gå til forumet</a></div><div data-reactid="118"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/computercraft/hendelser" target="_blank" class="btn btn-orange" data-reactid="119">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div data-reactid="120"><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="121"><div class="Footer__center__3xqZ_ row" data-reactid="122"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="123">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="124">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="125"><a href="https://www.sparebank1.no" target="_blank" data-reactid="126"><img class="Footer__img__25Ink" src="/beta/CCV-assets/smn.41dee6.jpg" data-reactid="127"/></a><a href="https://ibok.no/" target="_blank" data-reactid="128"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ibok.7f1adf.jpg" data-reactid="129"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="130"><img class="Footer__img__25Ink" src="/beta/CCV-assets/teknograd.6d3bfb.png" data-reactid="131"/></a><a target="_blank" data-reactid="132"><img class="Footer__img__25Ink" src="/beta/CCV-assets/tekna.04ca97.jpg" data-reactid="133"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="134"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ntnu_idi.7bbd05.png" data-reactid="135"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="136"><img class="Footer__img__25Ink" src="/beta/CCV-assets/excITEd.ce9ee2.png" data-reactid="137"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="138"><img class="Footer__img__25Ink" src="/beta/CCV-assets/uio_ifi.eebbdf.png" data-reactid="139"/></a></div></div></div></div></div></div>
 
     
-    <script src="/beta/manifest.bf49b8.js" type="text/javascript"></script>
+    <script src="/beta/manifest.1fc824.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor.ee22ec.js" type="text/javascript"></script>
+    <script src="/beta/vendor.621822.js" type="text/javascript"></script>
     
-    <script src="/beta/main.c1af53.js" type="text/javascript"></script>
+    <script src="/beta/main.c8648d.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor2.54ccf9.js" type="text/javascript"></script>
+    <script src="/beta/vendor2.459a38.js" type="text/javascript"></script>
     
 </body>
 </html>

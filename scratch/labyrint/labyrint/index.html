@@ -6,7 +6,7 @@
     <title>Labyrint | Kodeklubben</title>
 
     
-    <link href="/beta/vendor2.54ccf9.css" rel="stylesheet">
+    <link href="/beta/vendor2.459a38.css" rel="stylesheet">
     
 
     <style type="text/css">.App__appContainer__3y6aN {
@@ -117,10 +117,6 @@
   display: inline;
   float: right;
   padding: 4px 0; }
-
-.NavBar__gadgetContainer__28a-C {
-  display: inline-block;
-  padding: 3px 5px; }
 .BreadCrumb__breadcrumb__1u8pT {
   padding-left: 10px;
   float: left;
@@ -171,6 +167,13 @@
 .LanguageDropdown__gadgetContainer__LYX2I {
   display: inline-block;
   padding: 3px 5px; }
+.ModeDropdown__gadgetContainer__2HE97 {
+  display: inline-block;
+  padding: 3px 5px; }
+
+@media (max-width: 767px) {
+  .ModeDropdown__onlyMode__1fZJE {
+    display: none; } }
 .Lesson__container__133OS {
   max-width: 800px;
   padding-left: 15px;
@@ -193,8 +196,13 @@
     .Lesson__container__133OS {
       font-size: 125%; } }
 
-.Lesson__resetButton__312Jx {
-  margin-right: 10px; }
+.Lesson__box__2CtND {
+  display: none;
+  font-style: italic;
+  font-size: 0.75em; }
+  @media print {
+    .Lesson__box__2CtND {
+      display: block; } }
 /*
 
 Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
@@ -589,12 +597,12 @@ section.Content__activity__12AJC .Content__subsection__3XzlJ h2 {
     margin-left: 6px; }
 
 section.Content__check__sbZVW h2 {
-  background-image: url(/beta/CCV-assets/check.15ac74.svg);
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
   padding-top: 4px;
-  padding-bottom: 9px;
-  padding-left: 50px; }
+  padding-bottom: 9px; }
+  section.Content__check__sbZVW h2 img {
+    height: 40px;
+    vertical-align: text-bottom;
+    padding-right: 10px; }
 
 section.Content__try__9Al91 {
   background: #abdbea;
@@ -622,29 +630,27 @@ section.Content__flag__1GjEr {
   margin-bottom: 20px; }
   section.Content__flag__1GjEr h2 {
     color: #36a137;
-    background-image: url(/beta/CCV-assets/flag.4a58cd.svg);
-    background-position: 0 10px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 15px;
-    padding-bottom: 10px;
-    padding-left: 60px; }
+    padding-bottom: 10px; }
+    section.Content__flag__1GjEr h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
 
 section.Content__save__3P_NU {
   border-top: 3px solid #245a9a;
   margin: 20px 0; }
   section.Content__save__3P_NU h2 {
     color: #245a9a;
-    background-image: url(/beta/CCV-assets/save.0a8afb.svg);
-    background-position: 0 10px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
     margin: 0;
     padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 50px; }
+    padding-bottom: 20px; }
+    section.Content__save__3P_NU h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
 
 section.Content__challenge__2LUyO {
   border: 3px solid #00b1da;
@@ -659,6 +665,9 @@ section.Content__challenge__2LUyO {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 0; }
+    @media print {
+      section.Content__challenge__2LUyO h2 {
+        border-bottom: 2px #00b1da solid; } }
   section.Content__challenge__2LUyO > * {
     padding: 0 20px; }
 
@@ -737,6 +746,11 @@ input[type="checkbox"]:checked + label::before {
   content: '\2714';
   line-height: 1.1em;
   padding-left: 0.1em; }
+.PrintButton__container__KmVN4 {
+  margin: 10px 10px 0 0; }
+  @media print {
+    .PrintButton__container__KmVN4 {
+      display: none; } }
 .ImprovePage__font__1MdMv {
   font-family: "Roboto", "Verdana", sans-serif;
   font-weight: 300;
@@ -745,6 +759,9 @@ input[type="checkbox"]:checked + label::before {
 /* Container for improve box */
 .ImprovePage__container__HeXzk {
   margin: 10px 30px; }
+  @media print {
+    .ImprovePage__container__HeXzk {
+      display: none; } }
 
 .ImprovePage__improvePageBox__cyxic {
   display: flex;
@@ -792,6 +809,9 @@ input[type="checkbox"]:checked + label::before {
   font-family: "Roboto", "Verdana", sans-serif; }
   .Footer__container__1SZrv a {
     text-decoration: none; }
+  @media print {
+    .Footer__container__1SZrv {
+      display: none; } }
 
 .Footer__containerStudent__3Yr5f {
   background-color: #b1daae;
@@ -839,559 +859,16 @@ input[type="checkbox"]:checked + label::before {
 </style>
 <meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/CCV-icons-4d5e7c/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/CCV-icons-4d5e7c/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/CCV-icons-4d5e7c/favicon-16x16.png"><link rel="shortcut icon" href="/beta/CCV-icons-4d5e7c/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1536x2008.png"></head>
 <body>
-    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="1334543370"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/CCV-assets/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/scratch" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/scratch/logo-black.8dc8be.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Scratch</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/scratch/labyrint/labyrint" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Labyrint</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nn.fa23ab.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_en.7eea7b.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">English</div></div></a></li></ul></div></div><div class="NavBar__gadgetContainer__28a-C" data-reactid="71"><div class="dropdown btn-group btn-group-student" data-reactid="72"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="73"><!-- react-text: 74 -->Modus: Elev<!-- /react-text --></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="75"><li role="presentation" class="active" data-reactid="76"><a role="menuitem" tabindex="-1" href="#" data-reactid="77">Elev</a></li><li role="presentation" class="" data-reactid="78"><a role="menuitem" tabindex="-1" href="#" data-reactid="79">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="80"><h1 data-reactid="81"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="82"/><!-- react-text: 83 -->Labyrint<!-- /react-text --><!-- react-text: 84 --><!-- /react-text --></h1><p data-reactid="85"><i data-reactid="86"><!-- react-text: 87 -->Skrevet av:<!-- /react-text --><!-- react-text: 88 --> <!-- /react-text --><span data-reactid="89">Geir Arne Hjelle</span></i></p><div data-reactid="90"><section class="intro" id="introduksjon">
-<h1 class="intro" id="introduksjon">Introduksjon</h1>
-<p>I dette spillet vil vi kontrollere en liten utforsker mens hun leter
-etter skatten gjemt inne i labyrinten. Dessverre er skatten beskyttet
-av den skumle froskekongen. Vi vil lære hvordan vi kontrollerer
-figurer, og hvordan vi kan programmere figurer til å bevege seg selv.</p>
-<figure><img src="labyrint.png" alt=""></figure>
-</section>
-<section class="activity" id="steg-1-hvordan-styre-figurer-med-piltastene">
-<h1 class="activity" id="steg-1-hvordan-styre-figurer-med-piltastene">Steg 1: Hvordan styre figurer med piltastene</h1>
-<p><em>Vi begynner med å se på hvordan vi kan styre figurer med
-piltastene. For å få til dette vil vi bruke
-<code class="blockevents">Hendelser</code>-klosser som merker når man trykker på
-tastaturet.</em></p>
-<section class="check" id="sjekkliste">
-<h2 class="check" id="sjekkliste">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Start et nytt prosjekt.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Slett kattefiguren ved å høyreklikke på den og velge <code>slett</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_2"><label for="cbx_2"> Legg til en ny figur. Klikk på
-<img src="../bilder/hent-fra-bibliotek.png" alt="Velg figur fra biblioteket">-knappen
-og velg en figur du har lyst til å styre rundt. Vi har brukt
-<code>Dyr/Beetle</code>-figuren.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_3"><label for="cbx_3"> Gi den nye figuren navnet <code>Utforsker</code> ved å klikke på <code class="blockmotion">i</code>.</label></p>
-</li>
-</ul>
-<p>Vi begynner med å la figuren bevege seg oppover skjermen når vi
-trykker på <code>pil opp</code>-tasten.</p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Legg til følgende skript på <code>Utforsker</code>-figuren din.</label></p>
-<pre class=blocks>når [pil opp v] trykkes
-pek i retning (0 v)
-gå (5) steg
-</pre>
-<p>Prøv å trykk på <code>pil opp</code>-tasten. Beveger utforskeren din seg
-oppover skjermen? Nå må vi lage lignende skript for de andre
-tastene.</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Legg også til disse skriptene, slik at <code>Utforsker</code> har totalt fire
-skript, ett for hver tast.</label></p>
-<pre class=blocks>når [pil ned v] trykkes
-pek i retning (180 v)
-gå (5) steg
-
-når [pil høyre v] trykkes
-pek i retning (90 v)
-gå (5) steg
-
-når [pil venstre v] trykkes
-pek i retning (-90 v)
-gå (5) steg
-</pre>
-</li>
-</ul>
-</section>
-<section class="flag" id="test-prosjektet">
-<h2 class="flag" id="test-prosjektet">Test prosjektet</h2>
-<p><strong>Klikk på det grønne flagget.</strong></p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Beveger utforskeren din seg rundt slik du hadde forventet?</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Kan du forandre hvor raskt utforskeren flytter seg?</label></p>
-</li>
-</ul>
-<p>Tallet <code>5</code> i <code class="b">gå (5) steg</code>-klossene bestemmer hvor raskt
-utforskeren flytter seg rundt. Vi vil gjerne eksperimentere litt for å
-se hvilken fart som passer best i spillet vårt, men for å endre farten
-må vi bytte tallet i fire forskjellige skript. Det blir for mye jobb!</p>
-</section>
-<section class="check" id="sjekkliste-2">
-<h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
-<p>Vi vil i stedet bruke en <strong>variabel</strong> som kan styre farten til
-<code>Utforsker</code>-figuren.</p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Lag en ny variabel ved å gå til <code class="blockdata">Data</code>-kategorien og
-klikk <code>Lag en Variabel</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Kall variabelen <code>hastighet</code>, og velg at den bare skal gjelde <code>For denne figuren</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_10"><label for="cbx_10"> Til slutt, fjern avhukingen ved siden av den nye
-<code class="b">(hastighet)</code>-klossen for at variabelen ikke skal vises på
-scenen.</label></p>
-</li>
-</ul>
-<p>Nå må vi endre i skriptene våre slik at bruker
-<code class="b">(hastighet)</code>-variabelen.</p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Lag først et nytt skript som setter verdien av <code class="b">(hastighet)</code> til
-<code>10</code>.</label></p>
-<pre class=blocks>når grønt flagg klikkes
-sett [hastighet v] til [10]
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_12"><label for="cbx_12"> Deretter endrer vi de fire skriptene vi allerede har laget slik at
-de bruker <code class="b">(hastighet)</code>.</label></p>
-<pre class=blocks>når [pil opp v] trykkes
-pek i retning (0 v)
-gå (hastighet) steg
-
-når [pil ned v] trykkes
-pek i retning (180 v)
-gå (hastighet) steg
-
-når [pil høyre v] trykkes
-pek i retning (90 v)
-gå (hastighet) steg
-
-når [pil venstre v] trykkes
-pek i retning (-90 v)
-gå (hastighet) steg
-</pre>
-</li>
-</ul>
-</section>
-<section class="flag" id="test-prosjektet-2">
-<h2 class="flag" id="test-prosjektet-2">Test prosjektet</h2>
-<p><strong>Klikk på det grønne flagget.</strong></p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_13"><label for="cbx_13"> Beveger utforskeren din seg fortsatt rundt slik den gjorde
-tidligere?</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_14"><label for="cbx_14"> Forandrer hastigheten til utforskeren seg hvis du endrer verdien av
-<code class="b">(hastighet)</code> og klikker på det grønne flagget igjen?</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_15"><label for="cbx_15"> Velg en hastighet du synes passer.</label></p>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-2-vi-tegner-var-egen-labyrint">
-<h1 class="activity" id="steg-2-vi-tegner-var-egen-labyrint">Steg 2: Vi tegner vår egen labyrint</h1>
-<p><em>Nå som vi kan bevege utforskeren vår rundt omkring på skjermen, skal
-vi gi henne en utfordring! Vi vil tegne en labyrint som hun kan
-bevege seg rundt inni.</em></p>
-<section class="check" id="sjekkliste-3">
-<h2 class="check" id="sjekkliste-3">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_16"><label for="cbx_16"> Velg <img src="../bilder/tegn-ny.png" alt="Tegn ny bakgrunn"> nederst til
-venstre på skjermen for å tegne en ny bakgrunn. Pass på at du
-faktisk tegner en ny <strong>bakgrunn</strong>, og ikke en ny figur.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_17"><label for="cbx_17"> Gi den nye bakgrunnen navnet <code>Labyrint</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_18"><label for="cbx_18"> Velg en farge du liker og tegn en liten labyrint. Det er viktig at
-alle veggene i labyrinten har samme farge (vi oppdager hvorfor
-snart). Du kan velge selv hvordan labyrinten skal se ut, den trenger
-ikke en gang å ha rette vegger!</label></p>
-<figure><img src="liten-labyrint.png" alt=""></figure>
-<p>Dette er et eksempel på en liten og enkel labyrint. Du kan selv
-velge hvordan din labyrint skal se ut! Men ikke bruk for lang tid
-på å tegne labyrinten nå, for vi vil jo fortsette å
-programmere. Du kan i stedet komme tilbake og tegne en mer
-avansert labyrint etter at du er ferdig med spillet!</p>
-</li>
-</ul>
-</section>
-<section class="protip" id="tips">
-<h2 class="protip" id="tips">Tips</h2>
-<p>Dersom du vil tegne rette vegger er det enklest å bruke
-linjeverktøyet, <img src="../bilder/tegn-linje.png" alt="Linjeverktøy">. Du kan i
-tillegg holde inne <code>shift</code>-knappen for at linjene skal bli helt rette.</p>
-</section>
-<section class="flag" id="test-prosjektet-3">
-<h2 class="flag" id="test-prosjektet-3">Test prosjektet</h2>
-<p><strong>Klikk på det grønne flagget.</strong></p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_19"><label for="cbx_19"> Kan du bevege utforskerfiguren din rundt inne i labyrinten?</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_20"><label for="cbx_20"> Dersom figuren din er for stor kan du gjøre den mindre ved å trykke
-på <img src="../bilder/krymp.png" alt="krymp">-knappen på toppen av skjermen.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_21"><label for="cbx_21"> Hva skjer dersom figuren din går på veggen i labyrinten?</label></p>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-3-utforskeren-kan-ikke-ga-gjennom-veggen">
-<h1 class="activity" id="steg-3-utforskeren-kan-ikke-ga-gjennom-veggen">Steg 3: Utforskeren kan ikke gå gjennom veggen</h1>
-<p><em>Selv om vi har tegnet en flott labyrint bryr ikke utforskeren seg noe
-om den. Hun kan bare gå gjennom veggene. Det skal vi gjøre noe med
-nå</em></p>
-<section class="check" id="sjekkliste-4">
-<h2 class="check" id="sjekkliste-4">Sjekkliste</h2>
-<p>For å oppdage når <code>Utforsker</code>-figuren vår går gjennom veggen på
-labyrinten vil vi bruke en <code class="b">&lt;berører fargen [#ffffff]&gt;</code>-kloss.
-Denne klossen merker om en figur kommer borti en spesiell farge.  Her
-er det viktig at vi har tegnet alle veggene i labyrinten i samme
-farge.</p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_22"><label for="cbx_22"> Vi legger <code class="b">&lt;berører fargen [#ffffff]&gt;</code>-klossen inn i skriptet vi
-allerede har laget som setter <code class="b">(hastighet)</code>-variabelen.</label></p>
-<pre class=blocks>når grønt flagg klikkes
-sett [hastighet v] til [10]
-for alltid
-    hvis &lt;berører fargen [#cc0000]?&gt;
-        vend høyre (180) grader
-        gå (hastighet) steg
-        vend høyre (180) grader
-    slutt
-slutt
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_23"><label for="cbx_23"> For å få riktig farge i <code class="b">berører fargen [#cc0000]</code>-klossen klikker du
-først på den lille firkanten hvor fargen vises. Deretter flytter du
-musepekeren slik at den peker på en vegg i labyrinten din. Da forandres fargen
-i den lille firkanten. Klikk igjen for å velge denne fargen.</label></p>
-</li>
-</ul>
-</section>
-<section class="flag" id="test-prosjektet-4">
-<h2 class="flag" id="test-prosjektet-4">Test prosjektet</h2>
-<p><strong>Klikk på det grønne flagget.</strong></p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_24"><label for="cbx_24"> Blir utforskeren stoppet når hun prøver å gå gjennom veggen?</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_25"><label for="cbx_25"> Skjønner du hvordan skriptet sier at utforskeren ikke kan gå gjennom
-veggen?</label></p>
-</li>
-</ul>
-</section>
-<section class="protip" id="tips-2">
-<h2 class="protip" id="tips-2">Tips</h2>
-<p>En måte vi kan bruke for å begrense hvor en figur kan gå, er å tvinge
-den til å ta et skritt tilbake når den gjør noe feil. I koden</p>
-<pre class=blocks>  vend høyre (180) grader
-  gå (hastighet) steg
-  vend høyre (180) grader
-</pre>
-<p>vil figuren først snu seg helt rundt (180 grader), deretter ta et
-skritt, og til slutt snu seg rundt igjen slik at den peker i samme
-retning som da den startet.</p>
-</section>
-</section>
-<section class="activity" id="steg-4-pa-leting-etter-skatten">
-<h1 class="activity" id="steg-4-pa-leting-etter-skatten">Steg 4: På leting etter skatten</h1>
-<p><em>Nå kan vi bevege oss rundt i labyrinten. Men det blir jo fort
-kjedelig om vi ikke har noe å gjøre inne i labyrinten. La oss se om
-vi kanskje finner en skatt!</em></p>
-<section class="check" id="sjekkliste-5">
-<h2 class="check" id="sjekkliste-5">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_26"><label for="cbx_26"> Legg til en ny figur. Du kan velge en figur fra biblioteket ved å
-trykke
-<img src="../bilder/hent-fra-bibliotek.png" alt="Velg figur fra biblioteket">
-eller tegne en figur selv ved å trykke
-<img src="../bilder/tegn-ny.png" alt="Tegn ny figur">. Vi brukte figuren
-<code>Ting/Star1</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_27"><label for="cbx_27"> Gi den nye figuren navnet <code>Skatt</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_28"><label for="cbx_28"> Dra skatten rundt inne i labyrinten din, og gjem den et sted den er
-vanskelig å komme til.</label></p>
-</li>
-</ul>
-<p>Vi skal nå lage litt kode som oppdager når utforskeren finner
-skatten. Her har vi faktisk et valg: Vi kan lage et skript på
-<code>Utforsker</code> som sjekker om hun berører <code>Skatt</code>, eller vi kan gjøre det
-omvendt, vi kan lage et skript på <code>Skatt</code> som sjekker om den berører
-<code>Utforsker</code>.</p>
-<p>I dette tilfellet spiller det liten rolle hva vi velger, men om vi
-tenker oss at vi kanskje vil lage flere skatter senere kan det være
-litt enklere å lage skriptet på <code>Skatt</code>.</p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_29"><label for="cbx_29"> Pass på at figuren <code>Skatt</code> er markert, og skriv følgende kode:</label></p>
-<pre class=blocks>når grønt flagg klikkes
-for alltid
-    hvis &lt;berører [Utforsker v]?&gt;
-        skjul
-    slutt
-slutt
-</pre>
-</li>
-</ul>
-</section>
-<section class="flag" id="test-prosjektet-5">
-<h2 class="flag" id="test-prosjektet-5">Test prosjektet</h2>
-<p><strong>Klikk på det grønne flagget.</strong></p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_30"><label for="cbx_30"> Forsvinner skatten når utforskeren finner fram til den?</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_31"><label for="cbx_31"> Hva skjer når du prøver å starte spillet på nytt etter å ha funnet
-skatten? Hvor har skatten blitt av?</label></p>
-</li>
-</ul>
-</section>
-<section class="check" id="sjekkliste-6">
-<h2 class="check" id="sjekkliste-6">Sjekkliste</h2>
-<p>Det er et problem i spillet vårt. Etter at utforskeren har funnet
-skatten en gang, forblir skatten borte.</p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_32"><label for="cbx_32"> Vi må passe på at skatten vises på begynnelsen av spillet. Endre
-skriptet på <code>Skatt</code> ved å legge til <code class="b">vis</code> helt i begynnelsen.</label></p>
-<pre class=blocks>når grønt flagg klikkes
-vis
-for alltid
-    hvis &lt;berører [Utforsker v]?&gt;
-        skjul
-    slutt
-slutt
-</pre>
-</li>
-</ul>
-<p>Vi har enda et problem: Når vi starter spillet på nytt står
-utforskeren fortsatt der den fant skatten sist. Det blir ikke veldig
-spennende.</p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_33"><label for="cbx_33"> Klikk på <code>Utforsker</code>-figuren.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_34"><label for="cbx_34"> Legg til en <code class="b">gå til x: () y: ()</code>-kloss rett etter <code class="b">sett [hastighet v] til (10)</code>-klossen.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_35"><label for="cbx_35"> For å finne ut hvilke tall vi vil bruke for <code>x</code> og <code>y</code> kan vi gjøre
-følgende. Dra utforskeren til et sted det er fint å starte fra. Se
-øverst i høyre hjørne. Sammen med <code>Utforsker</code>-figuren står det <code>x</code>
-og <code>y</code> og to tall. Dette er posisjonen til figuren akkurat nå. Skriv
-disse to tallene inn i <code class="b">gå til x: () y: ()</code>-klossen.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_36"><label for="cbx_36"> Hele skriptet vil nå se slik ut (dine tall for <code>x</code> og <code>y</code> vil være
-forskjellige):</label></p>
-<pre class=blocks>når grønt flagg klikkes
-sett [hastighet v] til [10]
-gå til x: (-200) y: (0)
-for alltid
-    hvis &lt;berører fargen [#cc0000]?&gt;
-        vend høyre (180) grader
-        gå (hastighet) steg
-        vend høyre (180) grader
-    slutt
-slutt
-</pre>
-</li>
-</ul>
-</section>
-<section class="flag" id="test-prosjektet-6">
-<h2 class="flag" id="test-prosjektet-6">Test prosjektet</h2>
-<p><strong>Klikk på det grønne flagget.</strong></p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_37"><label for="cbx_37"> Forsvinner fortsatt skatten når utforskeren finner fram til den?</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_38"><label for="cbx_38"> Virker spillet slik det skal når du starter det på nytt etter å ha
-funnet skatten?</label></p>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-5-froskekongen-vokter-i-gangene">
-<h1 class="activity" id="steg-5-froskekongen-vokter-i-gangene">Steg 5: Froskekongen vokter i gangene</h1>
-<p><em>Nå skal vi gjøre spillet vanskeligere. Froskekongen vandrer rundt i
-labyrinten og passer på skatten.</em></p>
-<section class="check" id="sjekkliste-7">
-<h2 class="check" id="sjekkliste-7">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_39"><label for="cbx_39"> Legg til en ny figur. Vi brukte <code>Dyr/Frog</code>. Gi den navnet
-<code>Froskekonge</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_40"><label for="cbx_40"> Plasser den nye figuren et sted i labyrinten. Gjør den mindre eller
-større om nødvendig.</label></p>
-</li>
-</ul>
-<p>Vi begynner med å la <code>Froskekonge</code> merke at den fanger utforskeren.
-Dette blir veldig likt hvordan <code>Skatt</code> merket at den ble funnet.</p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_41"><label for="cbx_41"> Legg til følgende kode:</label></p>
-<pre class=blocks>når grønt flagg klikkes
-for alltid
-    hvis &lt;berører [Utforsker v]?&gt;
-        si [Tok deg!] i (1) sekunder
-        stopp [alle v] :: control
-    slutt
-slutt
-</pre>
-</li>
-</ul>
-<p>Linjen <code class="b">stopp [alle v] :: control</code> gjør at skriptet på <code>Skatt</code>
-slutter å kjøre. Det betyr at vi klarer ikke å få tak i skatten etter
-at vi har blitt tatt av <code>Froskekonge</code>.</p>
-</section>
-<section class="flag" id="test-prosjektet-7">
-<h2 class="flag" id="test-prosjektet-7">Test prosjektet</h2>
-<p><strong>Klikk på det grønne flagget.</strong></p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_42"><label for="cbx_42"> Hva skjer om utforskeren kommer borti froskekongen?</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_43"><label for="cbx_43"> Hva skjer når du finner skatten etter å ha blitt tatt av
-froskekongen?</label></p>
-</li>
-</ul>
-</section>
-<section class="check" id="sjekkliste-8">
-<h2 class="check" id="sjekkliste-8">Sjekkliste</h2>
-<p>Til sist skal vi få froskekongen til å bevege seg rundt i labyrinten.</p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_44"><label for="cbx_44"> Start et nytt skript på <code>Froskekonge</code>-figuren. Igjen kan du bytte ut
-tallene for <code>x</code> og <code>y</code> med noe som passer for din labyrint.</label></p>
-<pre class=blocks>når grønt flagg klikkes
-gå til x: (50) y: (100)
-pek i retning (-90 v)
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_45"><label for="cbx_45"> Før vi lar <code>Froskekonge</code> begynne å bevege seg lager vi en
-<code class="b">(hastighet)</code>-variabel også for ham. Klikk på
-<code class="blockdata">Data</code>, og deretter <code>Lag en Variabel</code>. Kall variabelen
-<code>hastighet</code> og la den gjelde kun <code>For denne figuren</code>. Tilslutt,
-fjern avhukingen på variabelen.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_46"><label for="cbx_46"> Vi kan nå utvide skriptet slik at froskekongen går fram og
-tilbake. Vi får ham til å snu når han treffer veggen på nesten samme
-måte som vi hindrer utforskeren i å gå gjennom veggen.</label></p>
-<pre class=blocks>når grønt flagg klikkes
-gå til x: (50) y: (100)
-pek i retning (-90 v)
-sett [hastighet v] til [5]
-for alltid
-    gå (hastighet) steg
-    hvis &lt;berører fargen [#cc0000]?&gt;
-        vend høyre (180) grader
-        gå (hastighet) steg
-    slutt
-slutt
-</pre>
-</li>
-</ul>
-<p>Helt tilslutt kan vi gjøre det enda vanskeligere ved å la froskekongen
-av og til endre retning.</p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_47"><label for="cbx_47"> Legg til kode som lar <code>Froskekonge</code> snu seg tilfeldig rundt i labyrinten:</label></p>
-<pre class=blocks>når grønt flagg klikkes
-gå til x: (50) y: (100)
-pek i retning (-90 v)
-sett [hastighet v] til [5]
-for alltid
-    gå (hastighet) steg
-    hvis &lt;berører fargen [#cc0000]?&gt;
-        vend høyre (180) grader
-        gå (hastighet) steg
-    slutt
-    hvis &lt;(tilfeldig tall fra (1) til (25)) = [1]&gt;
-        vend høyre ((tilfeldig tall fra (-1) til (1)) * (90)) grader
-    slutt
-slutt
-</pre>
-</li>
-</ul>
-<p>Disse to siste klossene ser litt kompliserte ut. La oss se litt nøyere på dem.</p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_48"><label for="cbx_48"> Klossen <code class="b">hvis &lt;(tilfeldig tall fra (1) til (25)) = [1]&gt;</code> sier at
-vi skal gjøre <em>noe</em> cirka èn av 25 ganger.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_49"><label for="cbx_49"> Dette <em>noe</em> er <code class="b">vend høyre ((tilfeldig tall fra (-1) til (1)) * (90)) grader</code>. Tegnet <code>*</code> betyr gange, slik at om vi velger
-tilfeldig mellom tallene -1, 0 og 1, betyr det at froskekongen vil
-vende -90, 0 eller 90 grader. Det vil si at den svinger mot venstre,
-fortsetter rett frem eller svinger mot høyre.</label></p>
-</li>
-</ul>
-</section>
-<section class="protip" id="tips-3">
-<h2 class="protip" id="tips-3">Tips</h2>
-<p>Du kan av og til oppleve at <code>Froskekonge</code> setter seg fast i
-veggen. Dette er fordi <code>Froskekonge</code> fortsatt berører labyrintveggen
-etter at den har snudd seg. Et par ting du kan prøve for å forbedre
-dette er å gjøre <code>Froskekonge</code>-figuren mindre, legge en <code class="b">begrens rotasjon [ikke roter v]</code>-kloss øverst i <code>Froskekonge</code>-skriptet,
-eller velge en figur som er <em>rundere</em> (prøv også å viske bort tunga
-til <code>Froskekonge</code> om du bruker <code>Dyr/Frog</code>-figuren).</p>
-</section>
-<section class="flag" id="test-prosjektet-8">
-<h2 class="flag" id="test-prosjektet-8">Test prosjektet</h2>
-<p><strong>Klikk på det grønne flagget.</strong></p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_50"><label for="cbx_50"> Klarer du å få tak i skatten?</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_51"><label for="cbx_51"> Om du synes spillet er for lett eller vanskelig er det mange måter
-du kan endre dette på! Prøv å lag froskekongen større eller
-mindre. Prøv å endre hastigheten på både utforskeren og
-froskekongen. Om du endrer tallet 25 i det siste skriptet vi laget
-for <code>Froskekonge</code> vil han endre retning oftere eller sjednere.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_52"><label for="cbx_52"> Du kan også prøve å lage flere skatter. Prøv å høyreklikk på
-<code>Skatt</code>-figuren og velg <code>Lag en kopi</code>.</label></p>
-</li>
-</ul>
-</section>
-<section class="save" id="lagre-prosjektet">
-<h2 class="save" id="lagre-prosjektet">Lagre prosjektet</h2>
-<p><em>Da var vi ferdig med labyrint-spillet!</em></p>
-<p>Nå kan du gå på skattejakt! Hvis du vil kan du dele spillet med
-familie og venner ved å trykke <code>Legg ut</code>.</p>
-</section>
-</section>
-</div><div class="row" data-reactid="91"><div class="ImprovePage__container__HeXzk" data-reactid="92"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="93"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="94"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="95"><h2 data-reactid="96">Forbedre denne siden</h2><p data-reactid="97"><!-- react-text: 98 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 99 --> <!-- /react-text --><br data-reactid="100"/><!-- react-text: 101 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="102"><div data-reactid="103"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Scratch: Labyrint&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/scratch/labyrint/labyrint%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/labyrint%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="104">Rapporter et problem</a></div><div data-reactid="105"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="106">Gå til forumet</a></div><div data-reactid="107"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/labyrint" target="_blank" class="btn btn-orange" data-reactid="108">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="109"><div class="Footer__center__3xqZ_ row" data-reactid="110"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="111">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="112">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="113"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="114"><img class="Footer__img__25Ink" src="/beta/CCV-assets/smn.41dee6.jpg" data-reactid="115"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="116"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ibok.7f1adf.jpg" data-reactid="117"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="118"><img class="Footer__img__25Ink" src="/beta/CCV-assets/teknograd.7eb17c.png" data-reactid="119"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="120"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ntnu_idi.7bbd05.png" data-reactid="121"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="122"><img class="Footer__img__25Ink" src="/beta/CCV-assets/excITEd.ce9ee2.png" data-reactid="123"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="124"><img class="Footer__img__25Ink" src="/beta/CCV-assets/uio_ifi.eebbdf.png" data-reactid="125"/></a></div></div></div></div></div>
+    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="1048551744"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/CCV-assets/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/scratch" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/scratch/logo-black.8dc8be.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Scratch</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/scratch/labyrint/labyrint" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Labyrint</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nn.fa23ab.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_en.7eea7b.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">English</div></div></a></li></ul></div></div><div class="ModeDropdown__gadgetContainer__2HE97" data-reactid="71"><div class="dropdown btn-group btn-group-student" data-reactid="72"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="73"><div data-reactid="74"><span class="ModeDropdown__onlyMode__1fZJE" data-reactid="75">Modus: </span><span data-reactid="76">Elev</span></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="77"><li role="presentation" class="active" data-reactid="78"><a role="menuitem" tabindex="-1" href="#" data-reactid="79">Elev</a></li><li role="presentation" class="" data-reactid="80"><a role="menuitem" tabindex="-1" href="#" data-reactid="81">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="82"><h1 data-reactid="83"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="84"/><!-- react-text: 85 -->Labyrint<!-- /react-text --></h1><p data-reactid="86"><i data-reactid="87"><!-- react-text: 88 -->Skrevet av:<!-- /react-text --><!-- react-text: 89 --> <!-- /react-text --><span data-reactid="90">Geir Arne Hjelle</span></i></p><div class="Lesson__box__2CtND" data-reactid="91"><div data-reactid="92"><!-- react-text: 93 -->Kurs:<!-- /react-text --><!-- react-text: 94 --> <!-- /react-text --><!-- react-text: 95 -->Scratch<!-- /react-text --></div><div data-reactid="96">Tema: Blokkbasert, Spill</div><div data-reactid="97">Fag: Programmering</div><div data-reactid="98">Klassetrinn: 1.-4. klasse, 5.-7. klasse, 8.-10. klasse</div><div data-reactid="99">Språk: Norsk bokmål</div></div><button type="button" class="PrintButton__container__KmVN4 btn btn-sm btn-danger" data-reactid="100">Skriv ut</button><div data-reactid="101"></div><div class="row" data-reactid="102"><div class="ImprovePage__container__HeXzk" data-reactid="103"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="104"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="105"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="106"><h2 data-reactid="107">Forbedre denne siden</h2><p data-reactid="108"><!-- react-text: 109 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 110 --> <!-- /react-text --><br data-reactid="111"/><!-- react-text: 112 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="113"><div data-reactid="114"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Scratch: Labyrint&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/scratch/labyrint/labyrint%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/labyrint%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="115">Rapporter et problem</a></div><div data-reactid="116"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="117">Gå til forumet</a></div><div data-reactid="118"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/labyrint" target="_blank" class="btn btn-orange" data-reactid="119">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div data-reactid="120"><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="121"><div class="Footer__center__3xqZ_ row" data-reactid="122"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="123">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="124">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="125"><a href="https://www.sparebank1.no" target="_blank" data-reactid="126"><img class="Footer__img__25Ink" src="/beta/CCV-assets/smn.41dee6.jpg" data-reactid="127"/></a><a href="https://ibok.no/" target="_blank" data-reactid="128"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ibok.7f1adf.jpg" data-reactid="129"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="130"><img class="Footer__img__25Ink" src="/beta/CCV-assets/teknograd.6d3bfb.png" data-reactid="131"/></a><a target="_blank" data-reactid="132"><img class="Footer__img__25Ink" src="/beta/CCV-assets/tekna.04ca97.jpg" data-reactid="133"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="134"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ntnu_idi.7bbd05.png" data-reactid="135"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="136"><img class="Footer__img__25Ink" src="/beta/CCV-assets/excITEd.ce9ee2.png" data-reactid="137"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="138"><img class="Footer__img__25Ink" src="/beta/CCV-assets/uio_ifi.eebbdf.png" data-reactid="139"/></a></div></div></div></div></div></div>
 
     
-    <script src="/beta/manifest.bf49b8.js" type="text/javascript"></script>
+    <script src="/beta/manifest.1fc824.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor.ee22ec.js" type="text/javascript"></script>
+    <script src="/beta/vendor.621822.js" type="text/javascript"></script>
     
-    <script src="/beta/main.c1af53.js" type="text/javascript"></script>
+    <script src="/beta/main.c8648d.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor2.54ccf9.js" type="text/javascript"></script>
+    <script src="/beta/vendor2.459a38.js" type="text/javascript"></script>
     
 </body>
 </html>

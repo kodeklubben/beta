@@ -6,7 +6,7 @@
     <title>Rull-en-ball | Kodeklubben</title>
 
     
-    <link href="/beta/vendor2.54ccf9.css" rel="stylesheet">
+    <link href="/beta/vendor2.459a38.css" rel="stylesheet">
     
 
     <style type="text/css">.App__appContainer__3y6aN {
@@ -117,10 +117,6 @@
   display: inline;
   float: right;
   padding: 4px 0; }
-
-.NavBar__gadgetContainer__28a-C {
-  display: inline-block;
-  padding: 3px 5px; }
 .BreadCrumb__breadcrumb__1u8pT {
   padding-left: 10px;
   float: left;
@@ -171,6 +167,13 @@
 .LanguageDropdown__gadgetContainer__LYX2I {
   display: inline-block;
   padding: 3px 5px; }
+.ModeDropdown__gadgetContainer__2HE97 {
+  display: inline-block;
+  padding: 3px 5px; }
+
+@media (max-width: 767px) {
+  .ModeDropdown__onlyMode__1fZJE {
+    display: none; } }
 .Lesson__container__133OS {
   max-width: 800px;
   padding-left: 15px;
@@ -193,8 +196,13 @@
     .Lesson__container__133OS {
       font-size: 125%; } }
 
-.Lesson__resetButton__312Jx {
-  margin-right: 10px; }
+.Lesson__box__2CtND {
+  display: none;
+  font-style: italic;
+  font-size: 0.75em; }
+  @media print {
+    .Lesson__box__2CtND {
+      display: block; } }
 /*
 
 Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
@@ -589,12 +597,12 @@ section.Content__activity__12AJC .Content__subsection__3XzlJ h2 {
     margin-left: 6px; }
 
 section.Content__check__sbZVW h2 {
-  background-image: url(/beta/CCV-assets/check.15ac74.svg);
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
   padding-top: 4px;
-  padding-bottom: 9px;
-  padding-left: 50px; }
+  padding-bottom: 9px; }
+  section.Content__check__sbZVW h2 img {
+    height: 40px;
+    vertical-align: text-bottom;
+    padding-right: 10px; }
 
 section.Content__try__9Al91 {
   background: #abdbea;
@@ -622,29 +630,27 @@ section.Content__flag__1GjEr {
   margin-bottom: 20px; }
   section.Content__flag__1GjEr h2 {
     color: #36a137;
-    background-image: url(/beta/CCV-assets/flag.4a58cd.svg);
-    background-position: 0 10px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 15px;
-    padding-bottom: 10px;
-    padding-left: 60px; }
+    padding-bottom: 10px; }
+    section.Content__flag__1GjEr h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
 
 section.Content__save__3P_NU {
   border-top: 3px solid #245a9a;
   margin: 20px 0; }
   section.Content__save__3P_NU h2 {
     color: #245a9a;
-    background-image: url(/beta/CCV-assets/save.0a8afb.svg);
-    background-position: 0 10px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
     margin: 0;
     padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 50px; }
+    padding-bottom: 20px; }
+    section.Content__save__3P_NU h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
 
 section.Content__challenge__2LUyO {
   border: 3px solid #00b1da;
@@ -659,6 +665,9 @@ section.Content__challenge__2LUyO {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 0; }
+    @media print {
+      section.Content__challenge__2LUyO h2 {
+        border-bottom: 2px #00b1da solid; } }
   section.Content__challenge__2LUyO > * {
     padding: 0 20px; }
 
@@ -737,6 +746,11 @@ input[type="checkbox"]:checked + label::before {
   content: '\2714';
   line-height: 1.1em;
   padding-left: 0.1em; }
+.PrintButton__container__KmVN4 {
+  margin: 10px 10px 0 0; }
+  @media print {
+    .PrintButton__container__KmVN4 {
+      display: none; } }
 .ImprovePage__font__1MdMv {
   font-family: "Roboto", "Verdana", sans-serif;
   font-weight: 300;
@@ -745,6 +759,9 @@ input[type="checkbox"]:checked + label::before {
 /* Container for improve box */
 .ImprovePage__container__HeXzk {
   margin: 10px 30px; }
+  @media print {
+    .ImprovePage__container__HeXzk {
+      display: none; } }
 
 .ImprovePage__improvePageBox__cyxic {
   display: flex;
@@ -792,6 +809,9 @@ input[type="checkbox"]:checked + label::before {
   font-family: "Roboto", "Verdana", sans-serif; }
   .Footer__container__1SZrv a {
     text-decoration: none; }
+  @media print {
+    .Footer__container__1SZrv {
+      display: none; } }
 
 .Footer__containerStudent__3Yr5f {
   background-color: #b1daae;
@@ -839,527 +859,16 @@ input[type="checkbox"]:checked + label::before {
 </style>
 <meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/CCV-icons-4d5e7c/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/CCV-icons-4d5e7c/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/CCV-icons-4d5e7c/favicon-16x16.png"><link rel="shortcut icon" href="/beta/CCV-icons-4d5e7c/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1536x2008.png"></head>
 <body>
-    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="-1124562567"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/CCV-assets/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/unity" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/unity/logo-black.905c61.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Unity</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/unity/rull-en-ball/rull-en-ball" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Rull-en-ball</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nn.fa23ab.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_en.7eea7b.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">English</div></div></a></li></ul></div></div><div class="NavBar__gadgetContainer__28a-C" data-reactid="71"><div class="dropdown btn-group btn-group-student" data-reactid="72"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="73"><!-- react-text: 74 -->Modus: Elev<!-- /react-text --></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="75"><li role="presentation" class="active" data-reactid="76"><a role="menuitem" tabindex="-1" href="#" data-reactid="77">Elev</a></li><li role="presentation" class="" data-reactid="78"><a role="menuitem" tabindex="-1" href="#" data-reactid="79">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="80"><h1 data-reactid="81"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="82"/><!-- react-text: 83 -->Rull-en-ball<!-- /react-text --><!-- react-text: 84 --><!-- /react-text --></h1><p data-reactid="85"><i data-reactid="86"><!-- react-text: 87 -->Skrevet av:<!-- /react-text --><!-- react-text: 88 --> <!-- /react-text --><span data-reactid="89">Transkribert og oversatt fra <a href="http://unity3d.com">Unity3D</a></span></i></p><p data-reactid="90"><i data-reactid="91"><!-- react-text: 92 -->Oversatt av:<!-- /react-text --><!-- react-text: 93 --> <!-- /react-text --><span data-reactid="94">Bjørn Fjukstad</span></i></p><div data-reactid="95"><section class="intro" id="rull-en-ball">
-<h1 class="intro" id="rull-en-ball">Rull-en-ball</h1>
-<p>Denne uka skal vi lage vårt første spill! Spillet går ut på å være en ball og
-samle inn kuber for å få poeng. Spillet er over når man har samlet inn alle
-kubene.</p>
-<p>Denne oppgaven tar utgangspunkt i <a href="http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial">Roll-a-Ball på Unity sine sider</a>.
-Titlene i denne oppgaven er lenket direkte til videoene på Unity sine sider
-der det er aktuelt. Du finner også lenker til alle videoene på <a href="http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial">unity3d.com/learn/tutorials/projects/roll-ball-tutorial</a>.</p>
-</section>
-<section class="activity" id="steg-1-omgivelser-og-spilleren">
-<h1 class="activity" id="steg-1-omgivelser-og-spilleren">Steg 1: Omgivelser og spilleren</h1>
-<section id="introduksjon">
-<h2 id="introduksjon"><a href="http://unity3d.com/learn/tutorials/projects/roll-a-ball/introduction?playlist=17141">Introduksjon</a></h2>
-<p>Bildet nedenfor viser hvordan spillet ser ut når man er ferdig! I
-denne oppgaven lærer vi litt enkel fysikk, hvordan vi kan flytte
-spillobjekter med tastaturet, og kollisjon mellom objekter.</p>
-<figure><img src="rull-en-ball.png" alt=""></figure>
-</section>
-<section class="check" id="oppsett-av-spillet">
-<h2 class="check" id="oppsett-av-spillet"><a href="http://unity3d.com/learn/tutorials/projects/roll-a-ball/set-up?playlist=17141">Oppsett av spillet</a></h2>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_0"><label for="cbx_0"> Start med å lage et nytt 3D-prosjekt.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_1"><label for="cbx_1"> Lagre Scenen, <strong>File &gt; Save Scene</strong>, legg den i en ny mappe <code>Assets/_Scenes</code> og
-kall den <code>Minigame</code>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_2"><label for="cbx_2"> Lag brettet vi skal spille på. Dette er et 3D-plan. Du finner den i hierarkiet under <strong>Create &gt; 3D Objekt &gt; Plane</strong>. Kall dette objektet <code>Ground</code>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_3"><label for="cbx_3"> Flytt brettet til origo, <code>(0, 0, 0)</code>, ved å trykke på tannhjulet i
-Transform-komponenten og velge <strong>Reset</strong>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_4"><label for="cbx_4"> Skru av Grid-lines på Scenen. Dette finner du under <strong>Gizmos &gt; Show Grid</strong>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_5"><label for="cbx_5"> Lag bakken litt større. Dette kan du gjøre med å dra på pilene eller skrive
-det manuelt inn på høyresida. Vi setter Scale til <code>2</code> på <code>x</code>, <code>1</code> på <code>y</code> og
-<code>2</code> på <code>z</code>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_6"><label for="cbx_6"> Lag en spiller! Fra hierarkiet <strong>Create &gt; 3D Object &gt; Sphere</strong> og gi den
-navnet <code>Player</code>. Tilbakestill posisjonen på samme måte som vi gjorde med planet.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_7"><label for="cbx_7"> Flytt ballen opp <code>0.5</code> enhet slik at vi får den til å ligge på planet. Husk at
-ballen er 1 høy og 1 bred. Husk at det er y-posisjonen vi endrer med <code>0.5</code>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_8"><label for="cbx_8"> La oss bytte farge på brettet. Vi lager en ny mappe i Assets-mappa vår og gir
-den navnet <code>Materials</code>. Velg denne mappa og lag et nytt material og kall den
-<code>Background</code>. Endre farge ved å trykke på den hvite boksen til høyre for
-<code>Albedo</code>-feltet og velg en fin blåfarge. Du kan bruke RGB-verdien <code>(0, 32, 64)</code>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_9"><label for="cbx_9"> Lag brettet blått ved å dra <code>Background</code>-materialet til brettet i Scenen.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_10"><label for="cbx_10"> For å få bedre lys i spillet kan vi endre rotasjonen på lyset i
-hierarkiet vårt. Endre rotasjon på y-aksen til <code>60</code>.</label></li>
-</ul>
-</section>
-<section class="check" id="bevege-spilleren">
-<h2 class="check" id="bevege-spilleren"><a href="http://unity3d.com/learn/tutorials/projects/roll-a-ball/moving-the-player?playlist=17141">Bevege spilleren</a></h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Siden vi vil at ballen skal rulle rundt på brettet, kollidere i vegger og treffe
-forskjellige objekter for å samle poeng trenger vi litt fysikk. Dette får vi
-ved å legge til en Rigidbody-komponent på <code>Player</code>-objektet. Trykk på <strong>Add
-Component</strong> når du har valgt spilleren og velg <strong>Physics &gt; Rigidbody</strong>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_12"><label for="cbx_12"> Lag en ny mappe <code>Assets/Scripts</code> og et nytt C#-script som vi kaller
-<code>PlayerController</code>. Koden vi skal legge inn der er det best å skrive selv.</label></p>
-<p>Siden noen av dere jobber hjemmefra legger vi inn hele kodesnutten under. Ikke
-kopier den, men skriv inn alle linjene!</p>
-<p><strong>PlayerController.cs</strong></p>
-<pre><code class="csharp"><span class="hljs-keyword">using</span> UnityEngine;
-<span class="hljs-keyword">using</span> System.Collections;
-
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">PlayerController</span> : <span class="hljs-title">MonoBehaviour</span> {
-
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">float</span> speed = <span class="hljs-number">10.0</span>f;
-
-    <span class="hljs-keyword">private</span> Rigidbody rb;
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Start</span> (<span class="hljs-params"></span>)
-    </span>{
-        rb = GetComponent&lt;Rigidbody&gt;();
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">FixedUpdate</span> (<span class="hljs-params"></span>)
-    </span>{
-        <span class="hljs-keyword">float</span> moveHorizontal = Input.GetAxis (<span class="hljs-string">"Horizontal"</span>);
-        <span class="hljs-keyword">float</span> moveVertical = Input.GetAxis (<span class="hljs-string">"Vertical"</span>);
-
-        Vector3 movement = <span class="hljs-keyword">new</span> Vector3 (moveHorizontal, <span class="hljs-number">0.0</span>f, moveVertical);
-
-        rb.AddForce (movement * speed);
-    }
-}
-
-</code></pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_13"><label for="cbx_13"> Siden vi vil at scriptet skal styre ballen må vi dra det inn på <code>Player</code>-objektet.</label></p>
-</li>
-</ul>
-</section>
-<section class="flag" id="test-spillet">
-<h2 class="flag" id="test-spillet">Test spillet</h2>
-<p><strong>Klikk på Play-knappen øverst i Unity-editoren.</strong></p>
-<ul>
-<li>Trykk på piltastene, flytter ballen seg?</li>
-<li>Hva skjer hvis du prøver å styre med tastene WASD?</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-2-kamera-og-spilleomrade">
-<h1 class="activity" id="steg-2-kamera-og-spilleomrade">Steg 2: Kamera og spilleområde</h1>
-<section class="check" id="flytte-kameraet">
-<h2 class="check" id="flytte-kameraet"><a href="http://unity3d.com/learn/tutorials/projects/roll-a-ball/moving-the-camera?playlist=17141"> Flytte kameraet</a></h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_14"><label for="cbx_14"> Flytt først kameraet opp 10 enheter (på y-aksen) og vipp det ned med 45
-grader (x-aksen).</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_15"><label for="cbx_15"> Flytt kameraet til et <em>barn</em> av <code>Player</code>-objektet, dette vil gjøre at kameraet
-følger etter spilleren. Et <em>barn</em> er et programmeringsbegrep som betyr at noe
-er <em>under</em> noe annet, f.eks. en undermappe. Du gjør kameraet til et <em>barn</em> av
-<code>Player</code>-objektet ved å dra det og slippe det på <code>Player</code>-objektet i hierarkiet.
-Se at kameraet (nesten) flytter seg med spilleren.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_16"><label for="cbx_16"> Test spillet og se hva som skjer.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_17"><label for="cbx_17"> Siden ikke alt gikk etter planen må vi lage et script for å flytte kameraet.
-Flytt kameraet tilbake ut av <code>Player</code>-objektet slik at det ikke snurrer rundt
-lengre.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_18"><label for="cbx_18"> Lag et nytt C#-script som du kaller <code>CameraController</code> og legg til koden:</label></p>
-<p><strong>CameraController.cs</strong></p>
-<pre><code class="csharp"><span class="hljs-keyword">using</span> UnityEngine;
-<span class="hljs-keyword">using</span> System.Collections;
-
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">CameraController</span> : <span class="hljs-title">MonoBehaviour</span> {
-
-    <span class="hljs-keyword">public</span> GameObject player;
-
-    <span class="hljs-keyword">private</span> Vector3 offset;
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Start</span> (<span class="hljs-params"></span>)
-    </span>{
-        offset = transform.position - player.transform.position;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">LateUpdate</span> (<span class="hljs-params"></span>)
-    </span>{
-        transform.position = player.transform.position + offset;
-    }
-}
-
-</code></pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_19"><label for="cbx_19"> Dra scriptet over til kameraet og med kameraet valgt dra <code>Player</code>-objektet til
-Player-referansen på høyresida.</label></p>
-</li>
-</ul>
-</section>
-<section class="flag" id="test-spillet-2">
-<h2 class="flag" id="test-spillet-2">Test spillet</h2>
-<p><strong>Klikk på Play-knappen øverst i Unity-editoren.</strong></p>
-<ul>
-<li>Flytt ballen og se at kameraet følger etter den.</li>
-</ul>
-</section>
-<section class="check" id="sette-opp-spilleomradet">
-<h2 class="check" id="sette-opp-spilleomradet"><a href="http://unity3d.com/learn/tutorials/projects/roll-a-ball/setting-up-the-play-area?playlist=17141">Sette opp spilleområdet</a></h2>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_20"><label for="cbx_20"> La oss lage noen vegger! Lag et nytt tomt objekt som du kaller <code>Walls</code>.
-<strong>Create &gt; Create Empty</strong>. Dette blir en mappe for alle veggene. Tilbakestill
-posisjonen til Walls til <code>(0, 0, 0)</code>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_21"><label for="cbx_21"> Lag første vegg. <strong>Create &gt; 3D Object &gt; Cube</strong> og tilbakestill posisjonen til
-denne. Sjekk at ballen havner oppi denne kuben. Legg denne som et barn av
-Walls og kall den <code>West Wall</code>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_22"><label for="cbx_22"> Lag veggen lang og tynn. Under Scale setter vi <code>0.5</code>, <code>2</code> og <code>20.5</code>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_23"><label for="cbx_23"> Flytt veggen til siden ved å sette <code>x</code> til <code>-10</code>.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_24"><label for="cbx_24"> Dupliser veggen vi har og kall den <code>East Wall</code>. Endre x-posisjon til <code>10</code> og
-se at den kommer på plass.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_25"><label for="cbx_25"> Dupliser <code>East Wall</code> og kall den <code>North Wall</code>. Tilbakestill posisjonen og sett
-scale til <code>20.5</code>, <code>2</code>, <code>0.5</code>. Sett posisjon på z-aksen til <code>10</code> for å se at
-den kommer på riktig plass.</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_26"><label for="cbx_26"> Dipliser <code>North Wall</code> og kall den <code>South Wall</code>. Sett posisjon på z-aksen til
-<code>-10</code>.</label></li>
-</ul>
-</section>
-<section class="flag" id="test-spillet-3">
-<h2 class="flag" id="test-spillet-3">Test spillet</h2>
-<p><strong>Klikk på Play-knappen øverst i Unity-editoren.</strong></p>
-<ul>
-<li>Prøv spillet og se at veggene er på plass.</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-3-samle-objekter-og-poeng">
-<h1 class="activity" id="steg-3-samle-objekter-og-poeng">Steg 3: Samle objekter og poeng</h1>
-<section class="check" id="lag-objekter-vi-kan-samle-inn">
-<h2 class="check" id="lag-objekter-vi-kan-samle-inn"><a href="http://unity3d.com/learn/tutorials/projects/roll-a-ball/creating-collectables?playlist=17141">Lag objekter vi kan samle inn</a></h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_27"><label for="cbx_27"> Lag en kube vi kan samle inn. <strong>Create &gt; 3D Object &gt; Cube</strong> og kall den
-<code>Pick Up</code>.  Tilbakestill posisjonen og se at ballen havner inni denne kuben.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_28"><label for="cbx_28"> Deaktiver <code>Player</code>-objektet.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_29"><label for="cbx_29"> Flytt opp kuben med 0.5 enheter og sett scale til 0.5 i alle aksene. La oss
-tippe den litt over. Endre rotasjon til 45 på alle aksene.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_30"><label for="cbx_30"> La oss få kuben til å snurre litt for å tiltrekke oppmerksomhet.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_31"><label for="cbx_31"> Lag et nytt C#-script og kall det <code>Rotator</code>. Legg til koden:</label></p>
-<p><strong>Rotator.cs</strong></p>
-<pre><code class="csharp">
-<span class="hljs-keyword">using</span> UnityEngine;
-<span class="hljs-keyword">using</span> System.Collections;
-
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Rotator</span> : <span class="hljs-title">MonoBehaviour</span> {
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Update</span> (<span class="hljs-params"></span>)
-    </span>{
-        transform.Rotate (<span class="hljs-keyword">new</span> Vector3 (<span class="hljs-number">15</span>, <span class="hljs-number">30</span>, <span class="hljs-number">45</span>) * Time.deltaTime);
-    }
-}
-
-</code></pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_32"><label for="cbx_32"> Start spillet og se at kuben snurrer rundt. Husk å legge til scriptet i
-<code>Pick Up</code>-objektet.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_33"><label for="cbx_33"> Siden vi trenger mange kuber må vi gjøre <code>Pick Up</code>-objektet om til en <em>Prefab</em>.
-En Prefab er en slags skisse for hvordan et spillobjekt skal se ut og oppføre
-seg.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_34"><label for="cbx_34"> Lag en ny mappe og kall den <code>Prefabs</code>. Dra <code>Pick Up</code>-objektet inn i denne mappa.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_35"><label for="cbx_35"> Lag en nytt tomt objekt for å organisere objektene våre. Kall dette <code>Pick Ups</code>
-og legg <code>Pick Up</code> til her.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_36"><label for="cbx_36"> Endre synsvinkel til rett over spillebrettet og lag 10 nye kuber ved å
-duplisere <code>Pick Up</code>-objektet vi har. Legg kubene rundt omkring på brettet.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_37"><label for="cbx_37"> Start spillet og se at alle kubene snurrer.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_38"><label for="cbx_38"> La oss endre fargen på kubene! Dupliser <code>Background</code>-materialet og kall det
-<code>Pick Up</code>. velg en fin gulfarge under Albedo og dra den ned på <code>Pick Up</code>-prefaben.</label></p>
-</li>
-</ul>
-</section>
-<section class="flag" id="test-spillet-4">
-<h2 class="flag" id="test-spillet-4">Test spillet</h2>
-<p><strong>Klikk på Play-knappen øverst i Unity-editoren.</strong></p>
-<ul>
-<li>Start spillet og se at alle kubene er gule og snurrer rundt!</li>
-</ul>
-</section>
-<section class="check" id="samle-inn-objekter">
-<h2 class="check" id="samle-inn-objekter"><a href="http://unity3d.com/learn/tutorials/projects/roll-a-ball/collecting-pick-up-objects?playlist=17141">Samle inn objekter</a></h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_39"><label for="cbx_39"> Vis spilleren igjen.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_40"><label for="cbx_40"> Legg merke til at <code>Player</code>-objektet har en Sphere Collider-komponent. Denne skal vi bruke
-til å sjekke kollisjon mot <code>Pick Up</code>-objektene.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_41"><label for="cbx_41"> Åpne <code>PlayerController</code>-scriptet igjen og legg til funksjonen under i
-PlayerController-klassen:</label></p>
-<pre><code class="csharp"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">OnTriggerEnter</span>(<span class="hljs-params">Collider other</span>)
-</span>{
-    <span class="hljs-keyword">if</span> (other.gameObject.CompareTag (<span class="hljs-string">"Pick Up"</span>))
-    {
-        other.gameObject.SetActive (<span class="hljs-literal">false</span>);
-    }
-}
-</code></pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_42"><label for="cbx_42"> Velg <code>Pick Up</code>-prefaben og legg til en ny <strong>Tag</strong> vi kaller <code>Pick Up</code>. Det er
-veldig viktig at den heter <code>Pick Up</code>. <strong>Husk store bokstaver på P og U!</strong></label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_43"><label for="cbx_43"> Prøv spillet og se hva som skjer.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_44"><label for="cbx_44"> For å hindre at Unity lager en kollisjon mellom ballen og kubene må vi krysse
-for <strong>Is trigger?</strong> på <code>Box Collider</code>-komponenten til <code>Pick Up</code>-prefaben.
-Dette gjør at Unity registrerer at de to objektene har kollidert, men den
-flytter ikke på noen av objektene.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_45"><label for="cbx_45"> Test spillet og se at alt er som det skal!</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_46"><label for="cbx_46"> (BONUS) For å gjøre en liten optimisering kan vi legge til en Rigidbody-komponent
-til kubene. Prøv å spille spillet nå. Se at alle kubene faller gjennom gulvet.
-Dette er fordi vi har satt en <code>Trigger-collider</code> til kubene. Sett <strong>Is Kinematic</strong>
-for å fikse dette. Les mer om dette på <a href="http://unity3d.com/learn/tutorials/projects/roll-a-ball/collecting-pick-up-objects?playlist=17141">tutorialen</a>.</label></p>
-</li>
-</ul>
-</section>
-<section class="check" id="vis-poengscore">
-<h2 class="check" id="vis-poengscore"><a href="http://unity3d.com/learn/tutorials/projects/roll-a-ball/displaying-text?playlist=17141">Vis poengscore</a> </h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_47"><label for="cbx_47"> Vi trenger noen variabler for å holde styr på hvor mange objekter vi har
-samlet inn.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_48"><label for="cbx_48"> Åpne <code>PlayerController</code> og endre det til å være som følger:</label></p>
-<p><strong>PlayerController.cs</strong></p>
-<pre><code class="csharp"><span class="hljs-keyword">using</span> UnityEngine;
-<span class="hljs-keyword">using</span> System.Collections;
-
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">PlayerController</span> : <span class="hljs-title">MonoBehaviour</span> {
-
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">float</span> speed;
-
-    <span class="hljs-keyword">private</span> Rigidbody rb;
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> count;                                   <span class="hljs-comment">// Ny linje</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Start</span> (<span class="hljs-params"></span>)
-    </span>{
-        rb = GetComponent&lt;Rigidbody&gt;();
-        count = <span class="hljs-number">0</span>;                                      <span class="hljs-comment">// Ny linje</span>
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">FixedUpdate</span> (<span class="hljs-params"></span>)
-    </span>{
-        <span class="hljs-keyword">float</span> moveHorizontal = Input.GetAxis (<span class="hljs-string">"Horizontal"</span>);
-        <span class="hljs-keyword">float</span> moveVertical = Input.GetAxis (<span class="hljs-string">"Vertical"</span>);
-
-        Vector3 movement = <span class="hljs-keyword">new</span> Vector3 (moveHorizontal, <span class="hljs-number">0.0</span>f, moveVertical);
-
-        rb.AddForce (movement * speed);
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">OnTriggerEnter</span>(<span class="hljs-params">Collider other</span>)
-    </span>{
-        <span class="hljs-keyword">if</span> (other.gameObject.CompareTag(<span class="hljs-string">"Pick Up"</span>))
-        {
-            other.gameObject.SetActive (<span class="hljs-literal">false</span>);
-            count = count + <span class="hljs-number">1</span>;                          <span class="hljs-comment">// Ny linje</span>
-        }
-    }
-
-}
-</code></pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_49"><label for="cbx_49"> Sjekk at <code>count</code> endres når vi treffer kubene.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_50"><label for="cbx_50"> Vi trenger noe på skjermen som viser poengene våre. Under hierarkiet, lag et
-nytt <code>Text</code>-objekt (<strong>Create &gt; UI &gt; Text</strong>). Gi objektet navnet <code>CountText</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_51"><label for="cbx_51"> Endre farge på teksten til hvit og endre posisjon til <code>(0, 0, 0)</code>. Størrelsen til
-CountText skal være 160 bred og 30 høy. Endre teksten som står der til <code>Count Text</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_52"><label for="cbx_52"> Flytt teksten øverst til venstre. Trykk på firkanten inne i Rect Transform og
-velg <strong>top left</strong> mens du holder inne <strong>shift</strong> og <strong>alt</strong>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_53"><label for="cbx_53"> Endre Pos X og Pos Y til <code>10</code> og <code>-10</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_54"><label for="cbx_54"> Nå vil vi endre denne teksten med <code>PlayerController</code>-scriptet. Åpne det opp og
-endre det til:</label></p>
-<p><strong>PlayerController.cs</strong></p>
-<pre><code class="csharp"><span class="hljs-keyword">using</span> UnityEngine;
-<span class="hljs-keyword">using</span> UnityEngine.UI;                                   <span class="hljs-comment">// Ny linje</span>
-<span class="hljs-keyword">using</span> System.Collections;
-
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">PlayerController</span> : <span class="hljs-title">MonoBehaviour</span> {
-
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">float</span> speed;
-    <span class="hljs-keyword">public</span> Text countText;                              <span class="hljs-comment">// Ny linje</span>
-
-    <span class="hljs-keyword">private</span> Rigidbody rb;
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> count;
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Start</span> (<span class="hljs-params"></span>)
-    </span>{
-        rb = GetComponent&lt;Rigidbody&gt;();
-        count = <span class="hljs-number">0</span>;
-        SetCountText ();                                <span class="hljs-comment">// Ny linje</span>
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">FixedUpdate</span> (<span class="hljs-params"></span>)
-    </span>{
-        <span class="hljs-keyword">float</span> moveHorizontal = Input.GetAxis (<span class="hljs-string">"Horizontal"</span>);
-        <span class="hljs-keyword">float</span> moveVertical = Input.GetAxis (<span class="hljs-string">"Vertical"</span>);
-
-        Vector3 movement = <span class="hljs-keyword">new</span> Vector3 (moveHorizontal, <span class="hljs-number">0.0</span>f, moveVertical);
-
-        rb.AddForce (movement * speed);
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">OnTriggerEnter</span>(<span class="hljs-params">Collider other</span>)
-    </span>{
-        <span class="hljs-keyword">if</span> (other.gameObject.CompareTag(<span class="hljs-string">"Pick Up"</span>))
-        {
-            other.gameObject.SetActive (<span class="hljs-literal">false</span>);
-            count = count + <span class="hljs-number">1</span>;
-            SetCountText ();                            <span class="hljs-comment">// Ny linje</span>
-        }
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">SetCountText</span> (<span class="hljs-params"></span>)                                <span class="hljs-comment">// Ny linje</span>
-    </span>{                                                   <span class="hljs-comment">// Ny linje</span>
-        countText.text = <span class="hljs-string">"Count: "</span> + count.ToString (); <span class="hljs-comment">// Ny linje</span>
-    }                                                   <span class="hljs-comment">// Ny linje</span>
-}
-</code></pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_55"><label for="cbx_55"> Dra CountText inn i Count Text-referansen til <code>Player</code>-objektet.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_56"><label for="cbx_56"> Lagre og test spillet!</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_57"><label for="cbx_57"> Lag et nytt UI Text-ojekt og kall det Win Text. Lag teksten hvit, sett
-skriftstørrelse til 24 og sett den sentrert i midten. Sett teksten til å være
-<code>Win Text</code> og flytt den litt opp. Pos X skal være 0 og pos Y skal være 10.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_58"><label for="cbx_58"> Lagre og gå tilbake til <code>PlayerController</code>-scriptet.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_59"><label for="cbx_59"> Lag en ny variabel <code>winText</code>, initialiser den i <code>Start</code> og endre den i <code>SetCountText</code>.
-Når du har kodet ferdig skal det se slik ut:</label></p>
-<p><strong>PlayerController.cs</strong></p>
-<pre><code class="csharp"><span class="hljs-keyword">using</span> UnityEngine;
-<span class="hljs-keyword">using</span> UnityEngine.UI;
-<span class="hljs-keyword">using</span> System.Collections;
-
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">PlayerController</span> : <span class="hljs-title">MonoBehaviour</span> {
-
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">float</span> speed;
-    <span class="hljs-keyword">public</span> Text countText;
-    <span class="hljs-keyword">public</span> Text winText;                                <span class="hljs-comment">// Ny linje</span>
-
-    <span class="hljs-keyword">private</span> Rigidbody rb;
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> count;
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Start</span> (<span class="hljs-params"></span>)
-    </span>{
-        rb = GetComponent&lt;Rigidbody&gt;();
-        count = <span class="hljs-number">0</span>;
-        SetCountText ();
-        winText.text = <span class="hljs-string">""</span>;                              <span class="hljs-comment">// Ny linje</span>
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">FixedUpdate</span> (<span class="hljs-params"></span>)
-    </span>{
-        <span class="hljs-keyword">float</span> moveHorizontal = Input.GetAxis (<span class="hljs-string">"Horizontal"</span>);
-        <span class="hljs-keyword">float</span> moveVertical = Input.GetAxis (<span class="hljs-string">"Vertical"</span>);
-
-        Vector3 movement = <span class="hljs-keyword">new</span> Vector3 (moveHorizontal, <span class="hljs-number">0.0</span>f, moveVertical);
-
-        rb.AddForce (movement * speed);
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">OnTriggerEnter</span>(<span class="hljs-params">Collider other</span>)
-    </span>{
-        <span class="hljs-keyword">if</span> (other.gameObject.CompareTag(<span class="hljs-string">"Pick Up"</span>))
-        {
-            other.gameObject.SetActive (<span class="hljs-literal">false</span>);
-            count = count + <span class="hljs-number">1</span>;
-            SetCountText ();
-        }
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">SetCountText</span> (<span class="hljs-params"></span>)
-    </span>{
-        countText.text = <span class="hljs-string">"Count: "</span> + count.ToString ();
-        <span class="hljs-keyword">if</span> (count &gt;= <span class="hljs-number">12</span>)                                <span class="hljs-comment">// Ny linje</span>
-        {                                               <span class="hljs-comment">// Ny linje</span>
-            winText.text = <span class="hljs-string">"You Win!"</span>;                  <span class="hljs-comment">// Ny linje</span>
-        }                                               <span class="hljs-comment">// Ny linje</span>
-    }
-}
-</code></pre>
-</li>
-</ul>
-</section>
-<section class="flag" id="test-spillet-5">
-<h2 class="flag" id="test-spillet-5">Test spillet</h2>
-<p><strong>Klikk på Play-knappen øverst i Unity-editoren.</strong></p>
-<ul>
-<li>Prøv spillet og se hvor fort du klarer å samle inn alle kubene!</li>
-</ul>
-</section>
-<section class="challenge" id="utfordring-1-bygg-spillet-slik-at-du-kan-dele-det-med-vennene-dine">
-<h2 class="challenge" id="utfordring-1-bygg-spillet-slik-at-du-kan-dele-det-med-vennene-dine">Utfordring 1: Bygg spillet slik at du kan dele det med vennene dine</h2>
-<p>Akkurat nå er det jo kun du som kan spille spillet ditt. I <a href="http://unity3d.com/learn/tutorials/projects/roll-a-ball/building?playlist=17141">denne videoen</a>
-vises det hvordan man kan bygge spillet til forskjellige platformer, for eksempel
-Windows eller Mac. Se om du klarer å bygge det slik at du kan dele det med
-vennene dine!</p>
-</section>
-</section>
-</div><div class="row" data-reactid="96"><div class="ImprovePage__container__HeXzk" data-reactid="97"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="98"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="99"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="100"><h2 data-reactid="101">Forbedre denne siden</h2><p data-reactid="102"><!-- react-text: 103 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 104 --> <!-- /react-text --><br data-reactid="105"/><!-- react-text: 106 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="107"><div data-reactid="108"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Unity: Rull-en-ball&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/unity/rull-en-ball/rull-en-ball%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/unity/rull-en-ball%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="109">Rapporter et problem</a></div><div data-reactid="110"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="111">Gå til forumet</a></div><div data-reactid="112"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/unity/rull-en-ball" target="_blank" class="btn btn-orange" data-reactid="113">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="114"><div class="Footer__center__3xqZ_ row" data-reactid="115"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="116">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="117">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="118"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="119"><img class="Footer__img__25Ink" src="/beta/CCV-assets/smn.41dee6.jpg" data-reactid="120"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="121"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ibok.7f1adf.jpg" data-reactid="122"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="123"><img class="Footer__img__25Ink" src="/beta/CCV-assets/teknograd.7eb17c.png" data-reactid="124"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="125"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ntnu_idi.7bbd05.png" data-reactid="126"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="127"><img class="Footer__img__25Ink" src="/beta/CCV-assets/excITEd.ce9ee2.png" data-reactid="128"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="129"><img class="Footer__img__25Ink" src="/beta/CCV-assets/uio_ifi.eebbdf.png" data-reactid="130"/></a></div></div></div></div></div>
+    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="1978186233"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/CCV-assets/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/unity" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/unity/logo-black.905c61.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Unity</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/unity/rull-en-ball/rull-en-ball" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Rull-en-ball</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nn.fa23ab.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_en.7eea7b.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">English</div></div></a></li></ul></div></div><div class="ModeDropdown__gadgetContainer__2HE97" data-reactid="71"><div class="dropdown btn-group btn-group-student" data-reactid="72"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="73"><div data-reactid="74"><span class="ModeDropdown__onlyMode__1fZJE" data-reactid="75">Modus: </span><span data-reactid="76">Elev</span></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="77"><li role="presentation" class="active" data-reactid="78"><a role="menuitem" tabindex="-1" href="#" data-reactid="79">Elev</a></li><li role="presentation" class="" data-reactid="80"><a role="menuitem" tabindex="-1" href="#" data-reactid="81">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="82"><h1 data-reactid="83"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="84"/><!-- react-text: 85 -->Rull-en-ball<!-- /react-text --></h1><p data-reactid="86"><i data-reactid="87"><!-- react-text: 88 -->Skrevet av:<!-- /react-text --><!-- react-text: 89 --> <!-- /react-text --><span data-reactid="90">Transkribert og oversatt fra <a href="http://unity3d.com">Unity3D</a></span></i></p><p data-reactid="91"><i data-reactid="92"><!-- react-text: 93 -->Oversatt av:<!-- /react-text --><!-- react-text: 94 --> <!-- /react-text --><!-- react-text: 95 -->Bjørn Fjukstad<!-- /react-text --></i></p><div class="Lesson__box__2CtND" data-reactid="96"><div data-reactid="97"><!-- react-text: 98 -->Kurs:<!-- /react-text --><!-- react-text: 99 --> <!-- /react-text --><!-- react-text: 100 -->Unity<!-- /react-text --></div><div data-reactid="101">Språk: Norsk bokmål</div></div><button type="button" class="PrintButton__container__KmVN4 btn btn-sm btn-danger" data-reactid="102">Skriv ut</button><div data-reactid="103"></div><div class="row" data-reactid="104"><div class="ImprovePage__container__HeXzk" data-reactid="105"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="106"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="107"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="108"><h2 data-reactid="109">Forbedre denne siden</h2><p data-reactid="110"><!-- react-text: 111 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 112 --> <!-- /react-text --><br data-reactid="113"/><!-- react-text: 114 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="115"><div data-reactid="116"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Unity: Rull-en-ball&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/unity/rull-en-ball/rull-en-ball%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/unity/rull-en-ball%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="117">Rapporter et problem</a></div><div data-reactid="118"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="119">Gå til forumet</a></div><div data-reactid="120"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/unity/rull-en-ball" target="_blank" class="btn btn-orange" data-reactid="121">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div data-reactid="122"><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="123"><div class="Footer__center__3xqZ_ row" data-reactid="124"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="125">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="126">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="127"><a href="https://www.sparebank1.no" target="_blank" data-reactid="128"><img class="Footer__img__25Ink" src="/beta/CCV-assets/smn.41dee6.jpg" data-reactid="129"/></a><a href="https://ibok.no/" target="_blank" data-reactid="130"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ibok.7f1adf.jpg" data-reactid="131"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="132"><img class="Footer__img__25Ink" src="/beta/CCV-assets/teknograd.6d3bfb.png" data-reactid="133"/></a><a target="_blank" data-reactid="134"><img class="Footer__img__25Ink" src="/beta/CCV-assets/tekna.04ca97.jpg" data-reactid="135"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="136"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ntnu_idi.7bbd05.png" data-reactid="137"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="138"><img class="Footer__img__25Ink" src="/beta/CCV-assets/excITEd.ce9ee2.png" data-reactid="139"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="140"><img class="Footer__img__25Ink" src="/beta/CCV-assets/uio_ifi.eebbdf.png" data-reactid="141"/></a></div></div></div></div></div></div>
 
     
-    <script src="/beta/manifest.bf49b8.js" type="text/javascript"></script>
+    <script src="/beta/manifest.1fc824.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor.ee22ec.js" type="text/javascript"></script>
+    <script src="/beta/vendor.621822.js" type="text/javascript"></script>
     
-    <script src="/beta/main.c1af53.js" type="text/javascript"></script>
+    <script src="/beta/main.c8648d.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor2.54ccf9.js" type="text/javascript"></script>
+    <script src="/beta/vendor2.459a38.js" type="text/javascript"></script>
     
 </body>
 </html>
