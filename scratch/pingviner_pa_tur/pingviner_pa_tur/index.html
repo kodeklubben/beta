@@ -6,7 +6,7 @@
     <title>Pingviner på tur | Kodeklubben</title>
 
     
-    <link href="/beta/vendor2.43d77d0b373ad56cd5d2.css" rel="stylesheet">
+    <link href="/beta/vendor2.961fdb.css" rel="stylesheet">
     
 
     <style type="text/css">.App__appContainer__3y6aN {
@@ -117,10 +117,6 @@
   display: inline;
   float: right;
   padding: 4px 0; }
-
-.NavBar__gadgetContainer__28a-C {
-  display: inline-block;
-  padding: 3px 5px; }
 .BreadCrumb__breadcrumb__1u8pT {
   padding-left: 10px;
   float: left;
@@ -171,6 +167,13 @@
 .LanguageDropdown__gadgetContainer__LYX2I {
   display: inline-block;
   padding: 3px 5px; }
+.ModeDropdown__gadgetContainer__2HE97 {
+  display: inline-block;
+  padding: 3px 5px; }
+
+@media (max-width: 767px) {
+  .ModeDropdown__onlyMode__1fZJE {
+    display: none; } }
 .Lesson__container__133OS {
   max-width: 800px;
   padding-left: 15px;
@@ -193,8 +196,13 @@
     .Lesson__container__133OS {
       font-size: 125%; } }
 
-.Lesson__resetButton__312Jx {
-  margin-right: 10px; }
+.Lesson__box__2CtND {
+  display: none;
+  font-style: italic;
+  font-size: 0.75em; }
+  @media print {
+    .Lesson__box__2CtND {
+      display: block; } }
 /*
 
 Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
@@ -589,12 +597,12 @@ section.Content__activity__12AJC .Content__subsection__3XzlJ h2 {
     margin-left: 6px; }
 
 section.Content__check__sbZVW h2 {
-  background-image: url(/beta/15ac74fbc78a1df119501938bf49e877.svg);
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
   padding-top: 4px;
-  padding-bottom: 9px;
-  padding-left: 50px; }
+  padding-bottom: 9px; }
+  section.Content__check__sbZVW h2 img {
+    height: 40px;
+    vertical-align: text-bottom;
+    padding-right: 10px; }
 
 section.Content__try__9Al91 {
   background: #abdbea;
@@ -622,29 +630,27 @@ section.Content__flag__1GjEr {
   margin-bottom: 20px; }
   section.Content__flag__1GjEr h2 {
     color: #36a137;
-    background-image: url(/beta/4a58cdc0f6e0e74bb219124bb5bde3b7.svg);
-    background-position: 0 10px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 15px;
-    padding-bottom: 10px;
-    padding-left: 60px; }
+    padding-bottom: 10px; }
+    section.Content__flag__1GjEr h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
 
 section.Content__save__3P_NU {
   border-top: 3px solid #245a9a;
   margin: 20px 0; }
   section.Content__save__3P_NU h2 {
     color: #245a9a;
-    background-image: url(/beta/0a8afb9f53ba0352c6ae27f9a35fe08a.svg);
-    background-position: 0 10px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
     margin: 0;
     padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 50px; }
+    padding-bottom: 20px; }
+    section.Content__save__3P_NU h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
 
 section.Content__challenge__2LUyO {
   border: 3px solid #00b1da;
@@ -659,6 +665,9 @@ section.Content__challenge__2LUyO {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 0; }
+    @media print {
+      section.Content__challenge__2LUyO h2 {
+        border-bottom: 2px #00b1da solid; } }
   section.Content__challenge__2LUyO > * {
     padding: 0 20px; }
 
@@ -737,6 +746,11 @@ input[type="checkbox"]:checked + label::before {
   content: '\2714';
   line-height: 1.1em;
   padding-left: 0.1em; }
+.PrintButton__container__KmVN4 {
+  margin: 10px 10px 0 0; }
+  @media print {
+    .PrintButton__container__KmVN4 {
+      display: none; } }
 .ImprovePage__font__1MdMv {
   font-family: "Roboto", "Verdana", sans-serif;
   font-weight: 300;
@@ -745,6 +759,9 @@ input[type="checkbox"]:checked + label::before {
 /* Container for improve box */
 .ImprovePage__container__HeXzk {
   margin: 10px 30px; }
+  @media print {
+    .ImprovePage__container__HeXzk {
+      display: none; } }
 
 .ImprovePage__improvePageBox__cyxic {
   display: flex;
@@ -792,6 +809,9 @@ input[type="checkbox"]:checked + label::before {
   font-family: "Roboto", "Verdana", sans-serif; }
   .Footer__container__1SZrv a {
     text-decoration: none; }
+  @media print {
+    .Footer__container__1SZrv {
+      display: none; } }
 
 .Footer__containerStudent__3Yr5f {
   background-color: #b1daae;
@@ -837,323 +857,18 @@ input[type="checkbox"]:checked + label::before {
   transform: scale(1.1);
   box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.5); }
 </style>
-<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-16x16.png"><link rel="shortcut icon" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1536x2008.png"></head>
+<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/CCV-icons-4d5e7c/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/CCV-icons-4d5e7c/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/CCV-icons-4d5e7c/favicon-16x16.png"><link rel="shortcut icon" href="/beta/CCV-icons-4d5e7c/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1536x2008.png"></head>
 <body>
-    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="-232875752"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/src/assets/graphics/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/scratch" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/_/oppgaver/src/scratch/logo-black.8dc8be.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Scratch</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/scratch/pingviner_pa_tur/pingviner_pa_tur" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/d6aa434b87e479c5f20f9a47e8aca3db.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Pingviner på tur</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">Svenska</div></div></a></li><li role="presentation" class="" data-reactid="71"><a role="menuitem" tabindex="-1" href="#" data-reactid="72"><div data-reactid="73"><img class="LanguageDropdown__flag__14wo3" src="/beta/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="74"/><div class="LanguageDropdown__language__1g4QB" data-reactid="75">Dansk</div></div></a></li><li role="presentation" class="" data-reactid="76"><a role="menuitem" tabindex="-1" href="#" data-reactid="77"><div data-reactid="78"><img class="LanguageDropdown__flag__14wo3" src="/beta/7eea7bf89b693a96506087f96a5d95a3.svg" data-reactid="79"/><div class="LanguageDropdown__language__1g4QB" data-reactid="80">English</div></div></a></li></ul></div></div><div class="NavBar__gadgetContainer__28a-C" data-reactid="81"><div class="dropdown btn-group btn-group-student" data-reactid="82"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="83"><!-- react-text: 84 -->Modus: Elev<!-- /react-text --></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="85"><li role="presentation" class="active" data-reactid="86"><a role="menuitem" tabindex="-1" href="#" data-reactid="87">Elev</a></li><li role="presentation" class="" data-reactid="88"><a role="menuitem" tabindex="-1" href="#" data-reactid="89">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="90"><h1 data-reactid="91"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/d6aa434b87e479c5f20f9a47e8aca3db.svg" data-reactid="92"/><!-- react-text: 93 -->Pingviner på tur<!-- /react-text --><!-- react-text: 94 --><!-- /react-text --></h1><p data-reactid="95"><i data-reactid="96"><!-- react-text: 97 -->av<!-- /react-text --><!-- react-text: 98 --> <!-- /react-text --><!-- react-text: 99 -->Geir Arne Hjelle<!-- /react-text --></i></p><div data-reactid="100"><section class="intro" id="introduksjon">
-<h1 class="intro" id="introduksjon">Introduksjon</h1>
-<p>Velkommen til Scratch. Vi skal sammen lage et enkelt spill hvor pingvinene har
-rømt fra akvariet i Bergen, og det er din jobb å hjelpe dem hjem igjen.</p>
-<figure><img src="/beta/_/oppgaver/src/scratch/pingviner_pa_tur/pingviner_pa_tur.d46f81.png" alt=""></figure>
-</section>
-<section class="activity" id="velkommen-til-scratch">
-<h1 class="activity" id="velkommen-til-scratch">Velkommen til Scratch</h1>
-<p><em>Om du allerede kjenner Scratch og har en Scratchbruker kan du gå videre til
-<a href="#steg-1-en-pingvin-pa-tur">Steg 1</a>.</em></p>
-<p><a href="https://scratch.mit.edu/">Scratch</a> er et programeringsspråk laget spesielt for
-at det skal være raskt å komme i gang med, og for at man raskt skal kunne lage
-sine egne spill og animasjoner. Scratch kjører i nettleseren og er helt gratis å
-bruke. Før du begynner å programmere er det lurt å lage seg en Scratchbruker
-fordi dette gjør det enklere å lagre spillene dine og dele dem med andre.</p>
-<section class="check" id="lag-en-scratchbruker">
-<h2 class="check" id="lag-en-scratchbruker">Lag en Scratchbruker</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Gå til nettsiden <a href="https://scratch.mit.edu/">scratch.mit.edu</a> i en nettleser.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Om siden er på engelsk kan du endre språk til norsk (bokmål eller nynorsk) i
-nedtrekksmenyen nederst på siden.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_2"><label for="cbx_2"> Klikk <strong>Bli Scratch-bruker</strong> øverst til høyre, og fyll ut skjemaet som dukker
-opp.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_3"><label for="cbx_3"> Etter at du har blitt Scratchbruker kan du klikke <strong>Programmering</strong> øverst til
-venstre for å begynne å programmere.</label></p>
-<p>Videre gir vi deg en oppskrift på hvordan du kan lage et enkelt spill hvor
-du skal hjelpe pingvinene å finne veien tilbake til akvariet i Bergen.</p>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-1-en-pingvin-pa-tur">
-<h1 class="activity" id="steg-1-en-pingvin-pa-tur">Steg 1: En pingvin på tur</h1>
-<p><em>Vi begynner med å se på hvordan vi kan lage en figur og få denne til å bevege seg.</em></p>
-<section class="check" id="sjekkliste">
-<h2 class="check" id="sjekkliste">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Når du starter et nytt Scratch-prosjekt ser du en kattefigur. I dette spillet
-skal vi ikke bruke denne. Vi begynner derfor med å slette kattefiguren:</label></p>
-<p>Klikk på <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goZCCIQN1fQtwAAAWNJREFUOMvFk79PwlAQxw9jnkOPoe1AGdoalcFojCYiBAOYGEkUB/3/jIP/gw5u8sPgj0BIQIxFk9cOlAEXXpfr4tCECGKwLN74ffncu/veXeTi8grmigWYNxanqihJicQqEb1Z777vhyCLJ4Wh8BhjqqKUKvchqkVEy+pybmMUw1XLuZNOJQGg3mjOdsgw9J3tLUWWAeCuXCWieqPZfnmdQSbWVvLZTDyunZ+dGobu+/5QeH/yFhGJqFZ7yuX2jw4PAjGKEmOs5/Zdt/+TjASboGmx4nEBAIjo+uaWLbF8NoOI3zvvuS7njvC8MTKYIUZxMPgMBpja293cWG+1O1FE09RHKUrlqtX9GPNWeN4oX/A5AAghHh6fA/+WDd009XQqOUlORM/tA0Bc0wJ7bduxbQcqoGmxGXsrhgIAVFWe0Edu/U56HhEhIkpS6Fvh3AEARVVCk612h4hURZ76GvmHy/4CxZeV3bf4tZsAAAAASUVORK5CYII=" alt="Slett"> øverst i menyen, og klikk deretter på
-kattefiguren for å slette denne.</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Vi skal nå legge til en pingvinfigur. Klikk på
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAATCAYAAAB2pebxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAZNJREFUOE+dk0lPwkAUx/tBcTmw6QELmojWBTFuKILKIkuECiZqtAh6QTyBQkgwMRzkKmfOnJ99ozOZsW1KnORlZtr3fv2/pRIASHamqiXdxdrPFoDBjqkZ6HS7liBbSPQ4BgiR/YH/QdLpDAFQw7tZWqZK2p0OuNxeAUBBqdS5AWSAFIuXpsG8otrjkwASIG/tti0AYaiST0t61QPpg+CqMhEEQdc3tySu0XgBqVqtkcBCQZ0YQNWgIjSSDp8vnt2eOfgcDECrPICytgGO6Vlwe+fJ/tc3mUz/QCJHUeFlqXyFUtkajUaA1my1QA4sCb4YzwrLtxQhaDu7ewykaRXIZHMQi58ySL3+TOoidAelKso6sa/hkKQ0Ho8JqNd7J3smm9endxESiRRriAAJhbdJPWgAgqgqPOPCu0/2W88JSqvoxXTqFY/FT6DZbBE1aAhWS2U44xTQ0bD8AX0LsqEToa2wYeQNNeGn8CByyCDLwRXTYFslufwFOF0eZnjnP8KfLdO5u9dg81f+vq7qo9+3hHwDiSt9l+qqTUcAAAAASUVORK5CYII=" alt="Velg figur fra biblioteket"> ved siden av
-<strong>Ny figur:</strong> omtrent midt på skjermen. Skroll nedover skjermen til du finner
-en pingvinfigur (det er flere å velge mellom). Klikk en av dem, og deretter
-<strong>OK</strong>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Du har nå fått en pingvin inn i spillet ditt. La oss programmere den!</label></p>
-<p>Midt på skjermen ser du mange fargede klosser, for eksempel <code class="b">gå (10) steg</code>. Disse er kommandoer vi kan gi til figurene våre. For å skrive et
-program pusler vi sammen flere klosser ved å dra dem over til høyre delen av
-skjermen.</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Pusle sammen denne koden for pingvinen din:</label></p>
-<pre class=blocks>når grønt flagg klikkes
-for alltid
-    gå (10) steg
-    sprett tilbake ved kanten
-slutt
-</pre>
-<p>Legg merke til at fargene på klossene samsvarer med kategoriene øverst på
-siden. For eksempel finner du <code class="b">når grønt flagg klikkes</code> i
-<code class="blockevents">Hendelser</code>-kategorien.</p>
-</li>
-</ul>
-</section>
-<section class="flag" id="test-prosjektet">
-<h2 class="flag" id="test-prosjektet">Test prosjektet</h2>
-<p><strong>Klikk på det grønne flagget øverst midt på skjermen for å prøve spillet ditt.</strong></p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Pingvinen skal nå begynne å flytte seg frem og tilbake over skjermen.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Du merker kanskje at pingvinen snur seg på hodet når den går mot venstre? Det
-er fordi scratchfigurer i utgangspunktet roterer når de skifter retning. Vi
-kan forbedre dette ved å legge til klossen <code class="b">begrens rotasjon [vend sideveis v]</code> rett under <code class="b">når grønt flagg klikkes</code>-klossen i
-programmet vårt.</label></p>
-</li>
-</ul>
-<p>Du kan bruke den røde knappen ved siden av det grønne flagget om du ønsker at
-pingvinen skal slutte å bevege seg. Etterhvert som du lager mer kode bør du
-klikke på det grønne flagget for å se hva som skjer.</p>
-</section>
-<section class="save" id="lagre-prosjektet">
-<h2 class="save" id="lagre-prosjektet">Lagre prosjektet</h2>
-<p>Du har nå laget et lite program! Scratch lagrer alt du gjør automatisk med jevne
-mellomrom. Det kan likevel være lurt å lagre selv også innimellom.</p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_10"><label for="cbx_10"> Over scenen er det et tekstfelt hvor du kan gi navn til prosjektet ditt. Kall
-det for eksempel <code>Pingviner på tur</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_11"><label for="cbx_11"> I menyen <strong>Fil</strong> kan du velge <strong>Lagre nå</strong> for å lagre prosjektet.</label></p>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-2-pa-kryss-og-tvers">
-<h1 class="activity" id="steg-2-pa-kryss-og-tvers">Steg 2: På kryss og tvers</h1>
-<p><em>La oss se hvordan vi kan kontrollere hvordan pingvinen beveger seg.</em></p>
-<section class="check" id="sjekkliste-2">
-<h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_12"><label for="cbx_12"> Se nærmere på koden du har laget. Vi har fortalt pingvinen at den <em>for alltid</em>
-skal <em>gå</em> og <em>sprette tilbake ved kanten</em>. Ser du hvordan pingvinen gjør
-akkurat som den har blitt fortalt?</label></p>
-<p>Vi kan gjøre forandringer i koden vår. For eksempel sier tallet <code>10</code> i <code class="b">gå (10) steg</code>-klossen noe om hvor fort pingvinen skal bevege seg. Prøv å
-forandre dette tallet!</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_13"><label for="cbx_13"> Vi kan også endre størrelsen på pingvinen. Endre koden din slik at den nå ser
-slik ut:</label></p>
-<pre class=blocks>når grønt flagg klikkes
-sett størrelse til (40) %
-begrens rotasjon [vend sideveis v]
-for alltid
-    gå (4) steg
-    sprett tilbake ved kanten
-slutt
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_14"><label for="cbx_14"> Til slutt skal vi la pingvinen gå <em>tilfeldig</em> på kryss og tvers på
-skjermen. Legg til flere klosser slik at koden nå ser slik ut:</label></p>
-<pre class=blocks>når grønt flagg klikkes
-sett størrelse til (40) %
-begrens rotasjon [vend sideveis v]
-gå til [tilfeldig sted v]
-pek i retning (tilfeldig tall fra (1) til (360))
-for alltid
-    gå (4) steg
-    sprett tilbake ved kanten
-slutt
-</pre>
-<p>For å lage <code class="b">pek i retning (tilfeldig tall fra (1) til (360))</code> må du
-først legge til <code class="b">pek i retning (90 v)</code>-klossen og deretter pusle
-<code class="b">tilfeldig tall fra (1) til (10)</code>-klossen inn i denne og forandre <code>10</code>
-til <code>360</code>.</p>
-</li>
-</ul>
-</section>
-<section class="flag" id="test-prosjektet-2">
-<h2 class="flag" id="test-prosjektet-2">Test prosjektet</h2>
-<p><strong>Klikk på det grønne flagget.</strong></p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_15"><label for="cbx_15"> Går pingvinen mer på kryss og tvers?</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_16"><label for="cbx_16"> Starter pingvinen forskjellige steder på skjermen om du klikker på det grønne
-flagget flere ganger?</label></p>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-3-bergen">
-<h1 class="activity" id="steg-3-bergen">Steg 3: Bergen</h1>
-<p><em>Pingvinen har rømt fra akvariet i Bergen, så da burde den jo springe rundt i Bergens gater.</em></p>
-<section class="check" id="sjekkliste-3">
-<h2 class="check" id="sjekkliste-3">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_17"><label for="cbx_17"> Vi skal nå legge til en bakgrunn på spillet vårt som viser et kart over
-Bergen. Last ned filen <a href="bergen.png">bergen.png</a> til datamaskinen din.</label></p>
-<p>Alternativt kan du <a href="../kart/kart">lage ditt eget kart</a> ved å gå til
-<a href="../kart/kart">denne siden</a>.</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_18"><label for="cbx_18"> For å legge til en ny bakgrunn klikker du på
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAYCAIAAABx3JocAAAAA3NCSVQICAjb4U/gAAAAGXRFWHRTb2Z0d2FyZQBnbm9tZS1zY3JlZW5zaG907wO/PgAAAbtJREFUOI2llD1PG0EQhl9bbnzubl2uu7utgP8ATZCwqROSPqFBCLkOokYWiBJFFl2MUSLnP9hxiiC59S2VPxo7S+WzKSxNisXL4s8DXq1ONzuzz+xIMxsbj8d4m+K0Sn9vb78enwwGg0UBcQKWrF6/XyxetVqt76Xyopg4iJasYvFqOBwCqNVq1Wp1bsyyQiqVX81m09RcKpV7vd68QhYLgBDCcRwAmUyGc66Umg2LjR4eTJ4wDDudjjEZY+l0+vS0EARBPn/EObe9nPNUKgUgobNpla9vftfrxsxld3K7Of1PRO12u1A4M14hRD5/NI34pxSAbHZHm77wjZeIGGPGVa//0ZsAErAQJvmTQeQkkwCcZDLNmHEFgdReAAkbQNbX6Mv+Z8zs25HPCtFUmrnXHFmRCSIKw7Db7QIYjUYA7F6YlRDC4kwQl5ffpJTGcX5+sQTh+/7h4YGNiBPRxvra6ptPJKVsNBqPA6K7E8Dm1qbLWHTKj58V23xs8E8fP0RH3Ct1JyWmZsTzPM/zolO0psdsb+/9axGTl8NlbHv7XfTzruvqg7G+Ui9NPqU5M/JiRKR2XoF4IwD4D7d2uYgWAGssAAAAAElFTkSuQmCC" alt="Last opp bakgrunn fra fil"> under <strong>Ny bakgrunn</strong>
-helt til venstre på siden. Velg deretter filen du nettopp lastet ned.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_19"><label for="cbx_19"> La oss nå markere Akvariet i Bergen på kartet. Hent en ny figur ved å klikke
-på <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAATCAYAAAB2pebxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAZNJREFUOE+dk0lPwkAUx/tBcTmw6QELmojWBTFuKILKIkuECiZqtAh6QTyBQkgwMRzkKmfOnJ99ozOZsW1KnORlZtr3fv2/pRIASHamqiXdxdrPFoDBjqkZ6HS7liBbSPQ4BgiR/YH/QdLpDAFQw7tZWqZK2p0OuNxeAUBBqdS5AWSAFIuXpsG8otrjkwASIG/tti0AYaiST0t61QPpg+CqMhEEQdc3tySu0XgBqVqtkcBCQZ0YQNWgIjSSDp8vnt2eOfgcDECrPICytgGO6Vlwe+fJ/tc3mUz/QCJHUeFlqXyFUtkajUaA1my1QA4sCb4YzwrLtxQhaDu7ewykaRXIZHMQi58ySL3+TOoidAelKso6sa/hkKQ0Ho8JqNd7J3smm9endxESiRRriAAJhbdJPWgAgqgqPOPCu0/2W88JSqvoxXTqFY/FT6DZbBE1aAhWS2U44xTQ0bD8AX0LsqEToa2wYeQNNeGn8CByyCDLwRXTYFslufwFOF0eZnjnP8KfLdO5u9dg81f+vq7qo9+3hHwDiSt9l+qqTUcAAAAASUVORK5CYII=" alt="Velg figur fra biblioteket">. Velg
-figuren <code>Button5</code>, og plasser denne ytterst på Nordnes for å vise hvor
-Akvariet er.</label></p>
-<figure><img src="/beta/_/oppgaver/src/scratch/pingviner_pa_tur/nordnes.0dccfd.png" alt=""></figure>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_20"><label for="cbx_20"> Vi vil nå endre navn på akvariefiguren slik at vi enklere husker hva den
-er. Klikk på <code class="blockmotion">i</code> øverst til venstre på akvariefiguren i
-figurlisten. Endre navnet fra <code>Button5</code> til <code>Akvariet</code>.</label></p>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-4-hjelp-pingvinen-hjem">
-<h1 class="activity" id="steg-4-hjelp-pingvinen-hjem">Steg 4: Hjelp pingvinen hjem</h1>
-<p><em>Vi skal prøve å kontrollere pingvinen slik at vi kan hjelpe den tilbake til
-Akvariet.</em></p>
-<section class="check" id="sjekkliste-4">
-<h2 class="check" id="sjekkliste-4">Sjekkliste</h2>
-<p>I dette spillet skal vi kontrollere pingvinen ved å klikke på kartet. Pingvinen
-skal da snu seg vekk fra der vi holder musepekeren før den går videre.</p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_21"><label for="cbx_21"> Klikk på <strong>Scene</strong> nede til venstre på skjermen. Dette gir oss muligheten til
-å skrive kode som gjelder for bakgrunnen og ikke for pingvinen.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_22"><label for="cbx_22"> Lag den følgende nye koden på Scenen:</label></p>
-<pre class=blocks>når scenen klikkes :: hat events
-send melding [snu retning v]
-trommeslag (1 v) som varer (0.25) takter
-</pre>
-<p>En slik <em>melding</em> er en beskjed programmet ditt sender til alle figurene. Du
-vil ikke se disse meldingene, men figurene dine kan reagere på dem. Her vil
-vi fortelle pingvinen at den skal snu når vi klikker på kartet (scenen).</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_23"><label for="cbx_23"> Klikk på pingvinen. Vi skal nå skrive et nytt skript. Lag denne koden ved
-siden av koden du skrev tidligere:</label></p>
-<pre class=blocks>når jeg mottar [snu retning v]
-pek mot [musepeker v]
-vend venstre (180) grader
-</pre>
-</li>
-</ul>
-</section>
-<section class="flag" id="test-prosjektet-3">
-<h2 class="flag" id="test-prosjektet-3">Test prosjektet</h2>
-<p><strong>Klikk på det grønne flagget.</strong></p>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_24"><label for="cbx_24"> Snur pingvinen seg vekk fra musepekeren om du klikker på kartet?</label></li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-5-pingvinen-kommer-hjem">
-<h1 class="activity" id="steg-5-pingvinen-kommer-hjem">Steg 5: Pingvinen kommer hjem!</h1>
-<p><em>Vi skal til slutt se hvordan pingvinen kan oppdage at den har kommet hjem!</em></p>
-<section class="check" id="sjekkliste-5">
-<h2 class="check" id="sjekkliste-5">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_25"><label for="cbx_25"> Klossen <code class="b">berører [ v]</code> kan brukes for å oppdage om to figurer berører
-hverandre. Legg til en <code class="blockcontrol">hvis</code>-test i koden som flytter
-pingvinen:</label></p>
-<pre class=blocks>når grønt flagg klikkes
-sett størrelse til (40) %
-begrens rotasjon [vend sideveis v]
-gå til [tilfeldig sted v]
-pek i retning (tilfeldig tall fra (1) til (360))
-for alltid
-    gå (4) steg
-    sprett tilbake ved kanten
-    hvis &lt;berører [Akvariet v] ?&gt;
-        si [Hurra!] i (7) sekunder
-        gå til [tilfeldig sted v]
-    slutt
-slutt
-</pre>
-</li>
-</ul>
-</section>
-<section class="flag" id="test-prosjektet-4">
-<h2 class="flag" id="test-prosjektet-4">Test prosjektet</h2>
-<p><strong>Klikk på det grønne flagget.</strong></p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_26"><label for="cbx_26"> Hva skjer når pingvinen kommer til Akvariet?</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_27"><label for="cbx_27"> Etter at pingvinen har vært hjemme i 7 sekunder tar den seg en ny tur. Dukker
-den opp på et nytt tilfeldig sted?</label></p>
-</li>
-</ul>
-</section>
-<section class="challenge" id="prov-selv">
-<h2 class="challenge" id="prov-selv">Prøv selv</h2>
-<p>Vi har nå laget et lite spill sammen, men prøv gjerne å utvikle det videre. Her
-er noen ideer:</p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_28"><label for="cbx_28"> Legg til flere pingviner! Dette er ganske enkelt. Klikk
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goZCCEBdsqjhgAAANVJREFUOMtjnDNvEQNZgImBXMCCS0JCQlxSQpyBgeHhw8fv3r8nVqecnKyrswOEbWSov3X7rhcvXhLlWh1tTRSuliaZ/mRjZyNW59u375C5z5+/IFbnufMXv3z5AmE/fPj4/IVLxOr8/fv35y9fofa/e0fl+KRGSjA3MxEWFoJzhYUEIQw1VWVJSQm4+MOHj65eu4HQycPNjRaHcMDDw8PDwwPnSkqIQ3RCXcvGxkamP9+9f//23XtiNDx8+Bjdnxs2bpGQEPf2dMOjDTkBkx+2jAOQswFoWEUExnhSwAAAAABJRU5ErkJggg==" alt="Lag en kopi"> og deretter på pingvinfiguren for å
-lage en kopi av den.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_29"><label for="cbx_29"> Kan du lage en test for om alle pingvinene har kommet hjem? Denne lager du
-enklest på akvariefiguren. Du bør bruke en <code class="blockcontrol">for alltid</code>-løkke,
-en <code class="blockcontrol">hvis</code>-test samt <code class="b">&lt; &gt; og &lt; &gt;</code>- og <code class="b">berører [ v]</code>-klosser.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_30"><label for="cbx_30"> Kanskje vi kan telle poeng hver gang en pingvin finner veien til Akvariet? Til
-dette trenger du noe som heter variabler. Disse finner du under
-<code class="blockdata">Data</code>. Prøv selv om du får til noe!</label></p>
-</li>
-</ul>
-</section>
-</section>
-</div><div class="row" data-reactid="101"><div class="ImprovePage__container__HeXzk" data-reactid="102"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="103"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="104"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="105"><h2 data-reactid="106">Forbedre denne siden</h2><p data-reactid="107"><!-- react-text: 108 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 109 --> <!-- /react-text --><br data-reactid="110"/><!-- react-text: 111 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="112"><div data-reactid="113"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Scratch: Pingviner pa tur&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/scratch/pingviner_pa_tur/pingviner_pa_tur%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/pingviner_pa_tur%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="114">Rapporter et problem</a></div><div data-reactid="115"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="116">Gå til forumet</a></div><div data-reactid="117"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/pingviner_pa_tur" target="_blank" class="btn btn-orange" data-reactid="118">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="119"><div class="Footer__center__3xqZ_ row" data-reactid="120"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="121">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="122">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="123"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="124"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/smn.41dee6.jpg" data-reactid="125"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="126"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="127"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="128"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/teknograd.7eb17c.png" data-reactid="129"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="130"><img class="Footer__img__25Ink" src="data:image/png;base64,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" data-reactid="131"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="132"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/excITEd.ce9ee2.png" data-reactid="133"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="134"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/uio_ifi.eebbdf.png" data-reactid="135"/></a></div></div></div></div></div>
+    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="1799077597"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/CCV-assets/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/scratch" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/scratch/logo-black.8dc8be.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Scratch</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/scratch/pingviner_pa_tur/pingviner_pa_tur" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Pingviner på tur</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nn.fa23ab.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_en.7eea7b.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">English</div></div></a></li></ul></div></div><div class="ModeDropdown__gadgetContainer__2HE97" data-reactid="71"><div class="dropdown btn-group btn-group-student" data-reactid="72"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="73"><div data-reactid="74"><span class="ModeDropdown__onlyMode__1fZJE" data-reactid="75">Modus: </span><span data-reactid="76">Elev</span></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="77"><li role="presentation" class="active" data-reactid="78"><a role="menuitem" tabindex="-1" href="#" data-reactid="79">Elev</a></li><li role="presentation" class="" data-reactid="80"><a role="menuitem" tabindex="-1" href="#" data-reactid="81">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="82"><h1 data-reactid="83"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="84"/><!-- react-text: 85 -->Pingviner på tur<!-- /react-text --></h1><p data-reactid="86"><i data-reactid="87"><!-- react-text: 88 -->Skrevet av:<!-- /react-text --><!-- react-text: 89 --> <!-- /react-text --><span data-reactid="90">Geir Arne Hjelle</span></i></p><div class="Lesson__box__2CtND" data-reactid="91"><div data-reactid="92"><!-- react-text: 93 -->Kurs:<!-- /react-text --><!-- react-text: 94 --> <!-- /react-text --><!-- react-text: 95 -->Scratch<!-- /react-text --></div><div data-reactid="96">Tema: Blokkbasert, Spill</div><div data-reactid="97">Fag: Programmering</div><div data-reactid="98">Klassetrinn: 1.-4. klasse, 5.-7. klasse, 8.-10. klasse</div><div data-reactid="99">Språk: Norsk bokmål</div></div><button type="button" class="PrintButton__container__KmVN4 btn btn-sm btn-danger" data-reactid="100">Skriv ut</button><div data-reactid="101"></div><div class="row" data-reactid="102"><div class="ImprovePage__container__HeXzk" data-reactid="103"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="104"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="105"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="106"><h2 data-reactid="107">Forbedre denne siden</h2><p data-reactid="108"><!-- react-text: 109 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 110 --> <!-- /react-text --><br data-reactid="111"/><!-- react-text: 112 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="113"><div data-reactid="114"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Scratch: Pingviner pa tur&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/scratch/pingviner_pa_tur/pingviner_pa_tur%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/pingviner_pa_tur%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="115">Rapporter et problem</a></div><div data-reactid="116"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="117">Gå til forumet</a></div><div data-reactid="118"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/pingviner_pa_tur" target="_blank" class="btn btn-orange" data-reactid="119">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div data-reactid="120"><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="121"><div class="Footer__center__3xqZ_ row" data-reactid="122"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="123">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="124">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="125"><a href="https://www.sparebank1.no" target="_blank" data-reactid="126"><img class="Footer__img__25Ink" src="/beta/CCV-assets/smn.41dee6.jpg" data-reactid="127"/></a><a href="https://ibok.no/" target="_blank" data-reactid="128"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ibok.7f1adf.jpg" data-reactid="129"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="130"><img class="Footer__img__25Ink" src="/beta/CCV-assets/teknograd.6d3bfb.png" data-reactid="131"/></a><a target="_blank" data-reactid="132"><img class="Footer__img__25Ink" src="/beta/CCV-assets/tekna.04ca97.jpg" data-reactid="133"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="134"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ntnu_idi.7bbd05.png" data-reactid="135"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="136"><img class="Footer__img__25Ink" src="/beta/CCV-assets/excITEd.ce9ee2.png" data-reactid="137"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="138"><img class="Footer__img__25Ink" src="/beta/CCV-assets/uio_ifi.eebbdf.png" data-reactid="139"/></a></div></div></div></div></div></div>
 
     
-    <script src="/beta/manifest.23c1399067193edc21b2.js" type="text/javascript"></script>
+    <script src="/beta/manifest.f206b7.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor.38d2c63d7a69e033ce29.js" type="text/javascript"></script>
+    <script src="/beta/vendor.27fe3c.js" type="text/javascript"></script>
     
-    <script src="/beta/main.6e4e7c0881475d602bac.js" type="text/javascript"></script>
+    <script src="/beta/main.c8ba3c.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor2.43d77d0b373ad56cd5d2.js" type="text/javascript"></script>
+    <script src="/beta/vendor2.961fdb.js" type="text/javascript"></script>
     
 </body>
 </html>

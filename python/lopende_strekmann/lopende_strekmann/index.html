@@ -6,7 +6,7 @@
     <title>PGZ - Løpende strekmann | Kodeklubben</title>
 
     
-    <link href="/beta/vendor2.43d77d0b373ad56cd5d2.css" rel="stylesheet">
+    <link href="/beta/vendor2.961fdb.css" rel="stylesheet">
     
 
     <style type="text/css">.App__appContainer__3y6aN {
@@ -117,10 +117,6 @@
   display: inline;
   float: right;
   padding: 4px 0; }
-
-.NavBar__gadgetContainer__28a-C {
-  display: inline-block;
-  padding: 3px 5px; }
 .BreadCrumb__breadcrumb__1u8pT {
   padding-left: 10px;
   float: left;
@@ -171,6 +167,13 @@
 .LanguageDropdown__gadgetContainer__LYX2I {
   display: inline-block;
   padding: 3px 5px; }
+.ModeDropdown__gadgetContainer__2HE97 {
+  display: inline-block;
+  padding: 3px 5px; }
+
+@media (max-width: 767px) {
+  .ModeDropdown__onlyMode__1fZJE {
+    display: none; } }
 .Lesson__container__133OS {
   max-width: 800px;
   padding-left: 15px;
@@ -193,8 +196,13 @@
     .Lesson__container__133OS {
       font-size: 125%; } }
 
-.Lesson__resetButton__312Jx {
-  margin-right: 10px; }
+.Lesson__box__2CtND {
+  display: none;
+  font-style: italic;
+  font-size: 0.75em; }
+  @media print {
+    .Lesson__box__2CtND {
+      display: block; } }
 /*
 
 Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
@@ -589,12 +597,12 @@ section.Content__activity__12AJC .Content__subsection__3XzlJ h2 {
     margin-left: 6px; }
 
 section.Content__check__sbZVW h2 {
-  background-image: url(/beta/15ac74fbc78a1df119501938bf49e877.svg);
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
   padding-top: 4px;
-  padding-bottom: 9px;
-  padding-left: 50px; }
+  padding-bottom: 9px; }
+  section.Content__check__sbZVW h2 img {
+    height: 40px;
+    vertical-align: text-bottom;
+    padding-right: 10px; }
 
 section.Content__try__9Al91 {
   background: #abdbea;
@@ -622,29 +630,27 @@ section.Content__flag__1GjEr {
   margin-bottom: 20px; }
   section.Content__flag__1GjEr h2 {
     color: #36a137;
-    background-image: url(/beta/4a58cdc0f6e0e74bb219124bb5bde3b7.svg);
-    background-position: 0 10px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 15px;
-    padding-bottom: 10px;
-    padding-left: 60px; }
+    padding-bottom: 10px; }
+    section.Content__flag__1GjEr h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
 
 section.Content__save__3P_NU {
   border-top: 3px solid #245a9a;
   margin: 20px 0; }
   section.Content__save__3P_NU h2 {
     color: #245a9a;
-    background-image: url(/beta/0a8afb9f53ba0352c6ae27f9a35fe08a.svg);
-    background-position: 0 10px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
     margin: 0;
     padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 50px; }
+    padding-bottom: 20px; }
+    section.Content__save__3P_NU h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
 
 section.Content__challenge__2LUyO {
   border: 3px solid #00b1da;
@@ -659,6 +665,9 @@ section.Content__challenge__2LUyO {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 0; }
+    @media print {
+      section.Content__challenge__2LUyO h2 {
+        border-bottom: 2px #00b1da solid; } }
   section.Content__challenge__2LUyO > * {
     padding: 0 20px; }
 
@@ -737,6 +746,11 @@ input[type="checkbox"]:checked + label::before {
   content: '\2714';
   line-height: 1.1em;
   padding-left: 0.1em; }
+.PrintButton__container__KmVN4 {
+  margin: 10px 10px 0 0; }
+  @media print {
+    .PrintButton__container__KmVN4 {
+      display: none; } }
 .ImprovePage__font__1MdMv {
   font-family: "Roboto", "Verdana", sans-serif;
   font-weight: 300;
@@ -745,6 +759,9 @@ input[type="checkbox"]:checked + label::before {
 /* Container for improve box */
 .ImprovePage__container__HeXzk {
   margin: 10px 30px; }
+  @media print {
+    .ImprovePage__container__HeXzk {
+      display: none; } }
 
 .ImprovePage__improvePageBox__cyxic {
   display: flex;
@@ -792,6 +809,9 @@ input[type="checkbox"]:checked + label::before {
   font-family: "Roboto", "Verdana", sans-serif; }
   .Footer__container__1SZrv a {
     text-decoration: none; }
+  @media print {
+    .Footer__container__1SZrv {
+      display: none; } }
 
 .Footer__containerStudent__3Yr5f {
   background-color: #b1daae;
@@ -837,328 +857,18 @@ input[type="checkbox"]:checked + label::before {
   transform: scale(1.1);
   box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.5); }
 </style>
-<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-16x16.png"><link rel="shortcut icon" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1536x2008.png"></head>
+<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/CCV-icons-4d5e7c/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/CCV-icons-4d5e7c/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/CCV-icons-4d5e7c/favicon-16x16.png"><link rel="shortcut icon" href="/beta/CCV-icons-4d5e7c/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1536x2008.png"></head>
 <body>
-    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="-2111940870"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/src/assets/graphics/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/python" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/_/oppgaver/src/python/logo-black.2bf511.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Python</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/python/lopende_strekmann/lopende_strekmann" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/cac5f0e8fbd4fd42c7e76f66686d78e8.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">PGZ - Løpende strekmann</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">Svenska</div></div></a></li><li role="presentation" class="" data-reactid="71"><a role="menuitem" tabindex="-1" href="#" data-reactid="72"><div data-reactid="73"><img class="LanguageDropdown__flag__14wo3" src="/beta/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="74"/><div class="LanguageDropdown__language__1g4QB" data-reactid="75">Dansk</div></div></a></li><li role="presentation" class="" data-reactid="76"><a role="menuitem" tabindex="-1" href="#" data-reactid="77"><div data-reactid="78"><img class="LanguageDropdown__flag__14wo3" src="/beta/7eea7bf89b693a96506087f96a5d95a3.svg" data-reactid="79"/><div class="LanguageDropdown__language__1g4QB" data-reactid="80">English</div></div></a></li></ul></div></div><div class="NavBar__gadgetContainer__28a-C" data-reactid="81"><div class="dropdown btn-group btn-group-student" data-reactid="82"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="83"><!-- react-text: 84 -->Modus: Elev<!-- /react-text --></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="85"><li role="presentation" class="active" data-reactid="86"><a role="menuitem" tabindex="-1" href="#" data-reactid="87">Elev</a></li><li role="presentation" class="" data-reactid="88"><a role="menuitem" tabindex="-1" href="#" data-reactid="89">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="90"><h1 data-reactid="91"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/cac5f0e8fbd4fd42c7e76f66686d78e8.svg" data-reactid="92"/><!-- react-text: 93 -->PGZ - Løpende strekmann<!-- /react-text --><!-- react-text: 94 --><!-- /react-text --></h1><p data-reactid="95"><i data-reactid="96"><!-- react-text: 97 -->av<!-- /react-text --><!-- react-text: 98 --> <!-- /react-text --><!-- react-text: 99 -->Ole Andreas Ramsdal, Kodeklubben Trondheim<!-- /react-text --></i></p><div data-reactid="100"><section class="intro" id="introduksjon">
-<h1 class="intro" id="introduksjon">Introduksjon</h1>
-<p>I denne oppgaven skal du lage et spill der du styrer en strekmann som hopper over hindringer.</p>
-<figure><img src="/beta/_/oppgaver/src/python/lopende_strekmann/animasjon_spill.81d6c4.gif" alt="" title="Slik ser spillet ut"></figure>
-</section>
-<section class="activity" id="steg-1-ny-fil">
-<h1 class="activity" id="steg-1-ny-fil">Steg 1: Ny fil</h1>
-<p>Begynn med å lage en fil som kan kjøres med Pygame Zero.</p>
-<section class="check" id="sjekkliste">
-<h2 class="check" id="sjekkliste">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Lag en ny fil <code>run_stickman.py</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Du starter med å bestemme hvor stort vindu vi skal bruke:</label></p>
-<pre><code class="python">WIDTH = <span class="hljs-number">550</span>
-HEIGHT = <span class="hljs-number">250</span>
-</code></pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_2"><label for="cbx_2"> Lagre og kjør programmet med <code>pgzrun run_stickman.py</code>. Se til at du får opp et vindu.</label></p>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-2-hindringer">
-<h1 class="activity" id="steg-2-hindringer">Steg 2: Hindringer</h1>
-<p>Du skal nå lage boksene som strekmannen løper mot. Dette skal gjøres ved hjelp av en klasse.</p>
-<section class="check" id="sjekkliste-2">
-<h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_3"><label for="cbx_3"> Klassen skal hete Box og skal ha egenskapene: <code>height</code>, <code>width</code>, <code>color</code>,
-<code>x</code>, <code>y</code> og en funkson som heter <code>draw()</code>:</label></p>
-<pre><code class="python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span>:</span>
-    <span class="hljs-comment"># Skriv egenskaper her</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">draw</span><span class="hljs-params">(self)</span>:</span>
-        <span class="hljs-comment"># Skriv koden som tegner boksen her</span>
-</code></pre>
-<p><strong>Tips:</strong>
-Bruk kommandoen <code>screen.draw.filled_rect()</code> for å tegne rektangler. En rød
-boks som er 50 piksler bred og høy tegnes i venstre topp med:</p>
-<pre><code class="python">screen.draw.filled_rect( Rect(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>) , (<span class="hljs-number">255</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>) )
-</code></pre>
-<p>En blå boks i høyre bunn blir:</p>
-<pre><code class="python">screen.draw.filled_rect( Rect(WIDTH<span class="hljs-number">-50</span>, HEIGHT<span class="hljs-number">-50</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>) , (<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">255</span>) )
-</code></pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Opprett en boks ved å legge til denne linjen i koden:</label></p>
-<pre><code class="python">box = Box()
-</code></pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Lagre og kjør programmet for å sjekke at du ikke får noen feilmeldinger.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Hvis du vil se boksen i vinduet må du tegne den med:</label></p>
-<pre><code class="python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">draw</span><span class="hljs-params">()</span>:</span>
-    box.draw()
-</code></pre>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-3-strekmann">
-<h1 class="activity" id="steg-3-strekmann">Steg 3: Strekmann</h1>
-<p>Du skal nå lage en strekmann som vi skal kalle <code>stick_man</code>.</p>
-<section class="check" id="sjekkliste-3">
-<h2 class="check" id="sjekkliste-3">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Lag en strekmann (<code>stick_man</code>) fra klassen <a href="https://pygame-zero.readthedocs.org/en/latest/builtins.html?highlight=actor#actor"><code>Actor</code></a> som bruker bildet
-<code>running_man</code>.</label></p>
-<pre><code class="python">stick_man = Actor(<span class="hljs-string">'running_man'</span>)
-</code></pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Sett posisjonen til strekmannens venstre bunn til å være <code>50, HEIGHT</code>.</label></p>
-<pre><code class="python">stick_man.bottomleft = <span class="hljs-number">50</span>, HEIGHT
-</code></pre>
-</li>
-</ul>
-<ul>
-<li>For at koden skal kjøre må du lagre bildet av strekmannen under som <code>running_man.png</code> i mappen <code>images</code> der du har lagret <code>run_stickman.py</code>.</li>
-</ul>
-<figure><img src="data:image/png;base64,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" alt="" title="Strekmann"></figure>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Mappen din skal nå se ut som dette:</label></p>
-<figure><img src="/beta/_/oppgaver/src/python/lopende_strekmann/mappestruktur.567d90.png" alt="" title="Mappestruktur"></figure>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-4-funksjonene-draw-og-update">
-<h1 class="activity" id="steg-4-funksjonene-draw-og-update">Steg 4: Funksjonene draw() og update()</h1>
-<p>De fleste spill i <a href="https://pygame-zero.readthedocs.org/">Pygame Zero</a> har funksjonene <a href="https://pygame-zero.readthedocs.org/en/latest/hooks.html?highlight=draw#draw"><code>draw()</code></a> og <a href="https://pygame-zero.readthedocs.org/en/latest/hooks.html?highlight=update#update"><code>update()</code></a>.
-Draw-funksjonen sørger for at spillvinduet blir tegnet og update-funksjonen
-gjør endringer i spillet før de tegnes med <code>draw()</code>.</p>
-<section class="check" id="sjekkliste-4">
-<h2 class="check" id="sjekkliste-4">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_10"><label for="cbx_10"> Lag <code>draw()</code> med koden i blokken under. Forstår du hva koden gjør?</label></p>
-<pre><code class="python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">draw</span><span class="hljs-params">()</span>:</span>
-        screen.clear()
-        screen.fill((<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>))
-        stick_man.draw()
-        box.draw()
-</code></pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Du må nå lage <code>update()</code>. Du trenger følgende:</label></p>
-<ul>
-<li>Få boksen til å flytte seg mot venstre.</li>
-<li>Hvis boksen er ute av bildet på venstre side, flytt den til høyre side av
-vinduet.</li>
-<li>Hvis strekmannen er truffet, skriv &quot;Du ble truffet!&quot; til terminalen.</li>
-</ul>
-<pre><code class="python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-comment"># Flytt boksen mot venstre</span>
-
-    <span class="hljs-keyword">if</span> <span class="hljs-string">"boksen er ute av bildet"</span>:
-        <span class="hljs-comment"># Flytt boksen til høyre side av bildet</span>
-
-    <span class="hljs-keyword">if</span> <span class="hljs-string">"strekmannen er truffet"</span>:
-        print(<span class="hljs-string">"Du ble truffet!"</span>)
-</code></pre>
-</li>
-</ul>
-</section>
-<section class="protip" id="tips">
-<h2 class="protip" id="tips">Tips</h2>
-<p><strong>Flytt boksen</strong></p>
-<p>For å få boksen til å flytte seg kan du endre x-posisjonen til boksen.</p>
-<p><strong>Sjekk om strekmannen blir truffet</strong></p>
-<p>Legg merke til at y-aksen til spillvinduet er positiv nedover, motsatt av det
-som er vanlig i matematikk. Boksens x- og y-posisjon er hvor boksens øverste
-venstre hjørne er plassert, som er merket i bildet som <strong>(x, y)</strong>.</p>
-<figure><img src="/beta/_/oppgaver/src/python/lopende_strekmann/koord_data2.4a9f71.png" alt="" title="Koordinatsystem med figurer"></figure>
-<p>Den røde firkanten illustrerer hvor stort bildet til strekmannen er. I
-tilfellet merket <strong>1</strong> ser du at boksens øverste venstre hjørne er
-inni bildet til strekmannen. Dette må du sjekke i if-setningen.</p>
-<p>I tilfelle <strong>2</strong> er boksens øvre høyre hjørne inne den røde firkanten, dette må
-du også sjekke i if-setningen.</p>
-<p><strong>Hvordan finne posisjonen til strekmannen?</strong></p>
-<ul>
-<li>
-<p><code>stick_man.bottom</code> gir posisjonen til bunnen av <code>stick_man</code>.</p>
-</li>
-<li>
-<p><code>stick_man.left</code> gir posisjonen til venstre side av <code>stick_man</code>.</p>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-5-animasjoner">
-<h1 class="activity" id="steg-5-animasjoner">Steg 5: Animasjoner</h1>
-<p>Du skal nå gjøre det mulig for strekmannen å hoppe med &quot;space&quot; tasten.</p>
-<section class="check" id="sjekkliste-5">
-<h2 class="check" id="sjekkliste-5">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_12"><label for="cbx_12"> Lag funksjonen <code>on_key_down(key)</code>.</label></p>
-<pre><code class="python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">on_key_down</span><span class="hljs-params">(key)</span>:</span>
-    <span class="hljs-comment">#(Din kode)</span>
-</code></pre>
-<p><a href="https://pygame-zero.readthedocs.org/en/latest/hooks.html?highlight=on_key_down#on_key_down"><code>on_key_down()</code></a> kjøres hver gang spilleren trykker på en tast. Hvilken
-tast som trykkes sendes til funksjonen som <code>key</code>.</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_13"><label for="cbx_13"> Lag en <code>if</code>-setning som sjekker at det er tasten &quot;space&quot; (<code>keys.SPACE</code>) som
-trykkes.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_14"><label for="cbx_14"> Sjekk i samme <code>if</code>-setning om strekmannen er på bakken, det skal kun være lov
-å hoppe da.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_15"><label for="cbx_15"> For å få strekmannen til å hoppe, bruk <a href="https://pygame-zero.readthedocs.org/en/latest/builtins.html?highlight=rect#animations"><code>animate()</code></a>:</label></p>
-<pre><code class="python">jump_up = animate(stick_man, <span class="hljs-string">'decelerate'</span>, duration=<span class="hljs-number">0.4</span>, bottom=(HEIGHT - box.height*<span class="hljs-number">1.5</span>))
-</code></pre>
-<p>Koden forteller at:</p>
-<ul>
-<li>Vi skal lage en animasjon med <code>stick_man</code>.</li>
-<li>Bevegelsen skal være av type <code>decelerate</code>, som er høy hastighet i begynnelsen,
-deretter saktere og saktere.</li>
-<li>Animasjonen skal vare i 0.4 sekunder.</li>
-<li><code>bottom</code> av <code>stick_man</code> skal flyttes til <code>HEIGHT - box.height*1.5</code>, altså
-1,5 gang av høyden til boksen.</li>
-<li>Animasjonen gis navnet <code>jump_up</code>.</li>
-</ul>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_16"><label for="cbx_16"> Prøv programmet. Hopper strekmannen?</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_17"><label for="cbx_17"> Vi trenger nå en animasjon som gjør at strekmannen kommer ned til bakken
-igjen. Lag funksjonen <code>back_down()</code>:</label></p>
-<pre><code class="python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">back_down</span><span class="hljs-params">()</span>:</span>
-    animate(stick_man, <span class="hljs-string">'accelerate'</span>, duration=<span class="hljs-number">0.4</span>, bottom=HEIGHT)
-</code></pre>
-<p>Forstår du hva koden skal animere?</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_18"><label for="cbx_18"> Sett verdien <code>jump_up.on_finished</code> til <code>back_down</code>. <code>back_down()</code> vil da kjøres
-når opp-animasjonen er ferdig:</label></p>
-<pre><code class="python">jump_up.on_finished = back_down
-</code></pre>
-</li>
-</ul>
-</section>
-<section class="protip" id="tips-2">
-<h2 class="protip" id="tips-2">Tips</h2>
-<p>Dette er en skisse på hvordan koden din skal se ut:</p>
-<pre><code class="python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">on_key_up</span><span class="hljs-params">(key)</span>:</span>
-    <span class="hljs-keyword">if</span> (<span class="hljs-string">"key er space"</span> <span class="hljs-keyword">and</span>
-        <span class="hljs-string">"strekmannen er på bakken"</span>):
-        <span class="hljs-comment"># Animasjon oppover</span>
-        <span class="hljs-comment"># Når animasjon oppover er ferdig, animer ned</span>
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">back_down</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-comment"># Animasjon ned</span>
-</code></pre>
-</section>
-</section>
-<section class="activity" id="steg-6-poeng">
-<h1 class="activity" id="steg-6-poeng">Steg 6: Poeng</h1>
-<p>Vi skal nå gi poeng ettersom hvor mange bokser vi klarer å hoppe over. Vi
-trenger to variabler, en for poeng og en for å huske om strekmannen har blitt
-truffet av boksen.</p>
-<section class="check" id="sjekkliste-6">
-<h2 class="check" id="sjekkliste-6">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_19"><label for="cbx_19"> Lag en variabel som heter <code>SCORE</code> og gi den verdien <code>0</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_20"><label for="cbx_20"> Lag variabelen <code>stick_man.hit</code> og gi den verdien <code>False</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_21"><label for="cbx_21"> Inne i <code>update()</code>, bestem at av du skal bruke den globale variablen <code>SCORE</code>:</label></p>
-<pre><code class="python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-keyword">global</span> SCORE
-    <span class="hljs-comment"># resten av din kode</span>
-</code></pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_22"><label for="cbx_22"> Hvis strekmannen blir truffet, sett <code>SCORE = 0</code> og <code>stick_man.hit = True</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_23"><label for="cbx_23"> Øk poengsummen med 10 poeng hvis boksen er ute av bildet og strekmannen ikke
-er truffet.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_24"><label for="cbx_24"> Før boksen flyttes til høyre side, nullstill <code>stick_man.hit</code> til <code>False</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_25"><label for="cbx_25"> Tegn poengsummen på skjermen inni <code>draw()</code>:</label></p>
-<pre><code class="python">screen.draw.text(<span class="hljs-string">"Poeng: "</span> + str(SCORE), (<span class="hljs-number">400</span>, <span class="hljs-number">30</span>), color = (<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>))
-</code></pre>
-</li>
-</ul>
-</section>
-<section class="flag" id="test-spillet-ditt">
-<h2 class="flag" id="test-spillet-ditt">Test spillet ditt</h2>
-</section>
-<section class="challenge" id="utfordringer">
-<h2 class="challenge" id="utfordringer">Utfordringer:</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_26"><label for="cbx_26"> Endre hastigheten på boksen.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_27"><label for="cbx_27"> Endre høyden på hoppet.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_28"><label for="cbx_28"> Endre hvor lang tid et hopp tar.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_29"><label for="cbx_29"> Finn en kombinasjon av boksens hastighet og strekmannens hopp slik at spillet
-er akkurat passe vanskelig.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_30"><label for="cbx_30"> Øk hastigheten på boksen når man har fått 100 poeng.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_31"><label for="cbx_31"> Øk poengsummen med 20 når man har fått 100 poeng.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_32"><label for="cbx_32"> Gi boksen forskjellig høyde for hver gang.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_33"><label for="cbx_33"> Gi boksen forskjellig bredde for hver gang.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_34"><label for="cbx_34"> Send flere bokser inn på skjermen samtidig.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_35"><label for="cbx_35"> Send flere bokser med ulik hastighet inn på skjermen samtidig.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_36"><label for="cbx_36"> Dine egne ideer?</label></p>
-</li>
-</ul>
-</section>
-</section>
-</div><div class="row" data-reactid="101"><div class="ImprovePage__container__HeXzk" data-reactid="102"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="103"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="104"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="105"><h2 data-reactid="106">Forbedre denne siden</h2><p data-reactid="107"><!-- react-text: 108 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 109 --> <!-- /react-text --><br data-reactid="110"/><!-- react-text: 111 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="112"><div data-reactid="113"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Python: Lopende strekmann&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/python/lopende_strekmann/lopende_strekmann%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/python/lopende_strekmann%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="114">Rapporter et problem</a></div><div data-reactid="115"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="116">Gå til forumet</a></div><div data-reactid="117"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/python/lopende_strekmann" target="_blank" class="btn btn-orange" data-reactid="118">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="119"><div class="Footer__center__3xqZ_ row" data-reactid="120"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="121">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="122">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="123"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="124"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/smn.41dee6.jpg" data-reactid="125"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="126"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="127"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="128"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/teknograd.7eb17c.png" data-reactid="129"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="130"><img class="Footer__img__25Ink" src="data:image/png;base64,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" data-reactid="131"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="132"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/excITEd.ce9ee2.png" data-reactid="133"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="134"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/uio_ifi.eebbdf.png" data-reactid="135"/></a></div></div></div></div></div>
+    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="1182913753"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/CCV-assets/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/python" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/python/logo-black.2bf511.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Python</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/python/lopende_strekmann/lopende_strekmann" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-3.cac5f0.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">PGZ - Løpende strekmann</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nn.fa23ab.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_en.7eea7b.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">English</div></div></a></li></ul></div></div><div class="ModeDropdown__gadgetContainer__2HE97" data-reactid="71"><div class="dropdown btn-group btn-group-student" data-reactid="72"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="73"><div data-reactid="74"><span class="ModeDropdown__onlyMode__1fZJE" data-reactid="75">Modus: </span><span data-reactid="76">Elev</span></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="77"><li role="presentation" class="active" data-reactid="78"><a role="menuitem" tabindex="-1" href="#" data-reactid="79">Elev</a></li><li role="presentation" class="" data-reactid="80"><a role="menuitem" tabindex="-1" href="#" data-reactid="81">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="82"><h1 data-reactid="83"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-3.cac5f0.svg" data-reactid="84"/><!-- react-text: 85 -->PGZ - Løpende strekmann<!-- /react-text --></h1><p data-reactid="86"><i data-reactid="87"><!-- react-text: 88 -->Skrevet av:<!-- /react-text --><!-- react-text: 89 --> <!-- /react-text --><span data-reactid="90">Ole Andreas Ramsdal, Kodeklubben Trondheim</span></i></p><div class="Lesson__box__2CtND" data-reactid="91"><div data-reactid="92"><!-- react-text: 93 -->Kurs:<!-- /react-text --><!-- react-text: 94 --> <!-- /react-text --><!-- react-text: 95 -->Python<!-- /react-text --></div><div data-reactid="96">Tema: Tekstbasert, Spill, Animasjon</div><div data-reactid="97">Fag: Programmering</div><div data-reactid="98">Klassetrinn: 5.-7. klasse, 8.-10. klasse, Videregående skole</div><div data-reactid="99">Språk: Norsk bokmål</div></div><button type="button" class="PrintButton__container__KmVN4 btn btn-sm btn-danger" data-reactid="100">Skriv ut</button><div data-reactid="101"></div><div class="row" data-reactid="102"><div class="ImprovePage__container__HeXzk" data-reactid="103"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="104"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="105"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="106"><h2 data-reactid="107">Forbedre denne siden</h2><p data-reactid="108"><!-- react-text: 109 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 110 --> <!-- /react-text --><br data-reactid="111"/><!-- react-text: 112 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="113"><div data-reactid="114"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Python: Lopende strekmann&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/python/lopende_strekmann/lopende_strekmann%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/python/lopende_strekmann%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="115">Rapporter et problem</a></div><div data-reactid="116"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="117">Gå til forumet</a></div><div data-reactid="118"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/python/lopende_strekmann" target="_blank" class="btn btn-orange" data-reactid="119">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div data-reactid="120"><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="121"><div class="Footer__center__3xqZ_ row" data-reactid="122"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="123">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="124">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="125"><a href="https://www.sparebank1.no" target="_blank" data-reactid="126"><img class="Footer__img__25Ink" src="/beta/CCV-assets/smn.41dee6.jpg" data-reactid="127"/></a><a href="https://ibok.no/" target="_blank" data-reactid="128"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ibok.7f1adf.jpg" data-reactid="129"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="130"><img class="Footer__img__25Ink" src="/beta/CCV-assets/teknograd.6d3bfb.png" data-reactid="131"/></a><a target="_blank" data-reactid="132"><img class="Footer__img__25Ink" src="/beta/CCV-assets/tekna.04ca97.jpg" data-reactid="133"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="134"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ntnu_idi.7bbd05.png" data-reactid="135"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="136"><img class="Footer__img__25Ink" src="/beta/CCV-assets/excITEd.ce9ee2.png" data-reactid="137"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="138"><img class="Footer__img__25Ink" src="/beta/CCV-assets/uio_ifi.eebbdf.png" data-reactid="139"/></a></div></div></div></div></div></div>
 
     
-    <script src="/beta/manifest.23c1399067193edc21b2.js" type="text/javascript"></script>
+    <script src="/beta/manifest.f206b7.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor.38d2c63d7a69e033ce29.js" type="text/javascript"></script>
+    <script src="/beta/vendor.27fe3c.js" type="text/javascript"></script>
     
-    <script src="/beta/main.6e4e7c0881475d602bac.js" type="text/javascript"></script>
+    <script src="/beta/main.c8ba3c.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor2.43d77d0b373ad56cd5d2.js" type="text/javascript"></script>
+    <script src="/beta/vendor2.961fdb.js" type="text/javascript"></script>
     
 </body>
 </html>
