@@ -6,7 +6,7 @@
     <title>Kom i gang med Learn To Mod | Kodeklubben</title>
 
     
-    <link href="/beta/vendor2.43d77d0b373ad56cd5d2.css" rel="stylesheet">
+    <link href="/beta/vendor2.961fdb.css" rel="stylesheet">
     
 
     <style type="text/css">.App__appContainer__3y6aN {
@@ -117,10 +117,6 @@
   display: inline;
   float: right;
   padding: 4px 0; }
-
-.NavBar__gadgetContainer__28a-C {
-  display: inline-block;
-  padding: 3px 5px; }
 .BreadCrumb__breadcrumb__1u8pT {
   padding-left: 10px;
   float: left;
@@ -171,6 +167,13 @@
 .LanguageDropdown__gadgetContainer__LYX2I {
   display: inline-block;
   padding: 3px 5px; }
+.ModeDropdown__gadgetContainer__2HE97 {
+  display: inline-block;
+  padding: 3px 5px; }
+
+@media (max-width: 767px) {
+  .ModeDropdown__onlyMode__1fZJE {
+    display: none; } }
 .Lesson__container__133OS {
   max-width: 800px;
   padding-left: 15px;
@@ -193,8 +196,13 @@
     .Lesson__container__133OS {
       font-size: 125%; } }
 
-.Lesson__resetButton__312Jx {
-  margin-right: 10px; }
+.Lesson__box__2CtND {
+  display: none;
+  font-style: italic;
+  font-size: 0.75em; }
+  @media print {
+    .Lesson__box__2CtND {
+      display: block; } }
 /*
 
 Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
@@ -589,12 +597,12 @@ section.Content__activity__12AJC .Content__subsection__3XzlJ h2 {
     margin-left: 6px; }
 
 section.Content__check__sbZVW h2 {
-  background-image: url(/beta/15ac74fbc78a1df119501938bf49e877.svg);
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
   padding-top: 4px;
-  padding-bottom: 9px;
-  padding-left: 50px; }
+  padding-bottom: 9px; }
+  section.Content__check__sbZVW h2 img {
+    height: 40px;
+    vertical-align: text-bottom;
+    padding-right: 10px; }
 
 section.Content__try__9Al91 {
   background: #abdbea;
@@ -622,29 +630,27 @@ section.Content__flag__1GjEr {
   margin-bottom: 20px; }
   section.Content__flag__1GjEr h2 {
     color: #36a137;
-    background-image: url(/beta/4a58cdc0f6e0e74bb219124bb5bde3b7.svg);
-    background-position: 0 10px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 15px;
-    padding-bottom: 10px;
-    padding-left: 60px; }
+    padding-bottom: 10px; }
+    section.Content__flag__1GjEr h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
 
 section.Content__save__3P_NU {
   border-top: 3px solid #245a9a;
   margin: 20px 0; }
   section.Content__save__3P_NU h2 {
     color: #245a9a;
-    background-image: url(/beta/0a8afb9f53ba0352c6ae27f9a35fe08a.svg);
-    background-position: 0 10px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
     margin: 0;
     padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 50px; }
+    padding-bottom: 20px; }
+    section.Content__save__3P_NU h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
 
 section.Content__challenge__2LUyO {
   border: 3px solid #00b1da;
@@ -659,6 +665,9 @@ section.Content__challenge__2LUyO {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 0; }
+    @media print {
+      section.Content__challenge__2LUyO h2 {
+        border-bottom: 2px #00b1da solid; } }
   section.Content__challenge__2LUyO > * {
     padding: 0 20px; }
 
@@ -737,6 +746,11 @@ input[type="checkbox"]:checked + label::before {
   content: '\2714';
   line-height: 1.1em;
   padding-left: 0.1em; }
+.PrintButton__container__KmVN4 {
+  margin: 10px 10px 0 0; }
+  @media print {
+    .PrintButton__container__KmVN4 {
+      display: none; } }
 .ImprovePage__font__1MdMv {
   font-family: "Roboto", "Verdana", sans-serif;
   font-weight: 300;
@@ -745,6 +759,9 @@ input[type="checkbox"]:checked + label::before {
 /* Container for improve box */
 .ImprovePage__container__HeXzk {
   margin: 10px 30px; }
+  @media print {
+    .ImprovePage__container__HeXzk {
+      display: none; } }
 
 .ImprovePage__improvePageBox__cyxic {
   display: flex;
@@ -792,6 +809,9 @@ input[type="checkbox"]:checked + label::before {
   font-family: "Roboto", "Verdana", sans-serif; }
   .Footer__container__1SZrv a {
     text-decoration: none; }
+  @media print {
+    .Footer__container__1SZrv {
+      display: none; } }
 
 .Footer__containerStudent__3Yr5f {
   background-color: #b1daae;
@@ -837,211 +857,18 @@ input[type="checkbox"]:checked + label::before {
   transform: scale(1.1);
   box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.5); }
 </style>
-<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-16x16.png"><link rel="shortcut icon" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1536x2008.png"></head>
+<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/CCV-icons-4d5e7c/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/CCV-icons-4d5e7c/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/CCV-icons-4d5e7c/favicon-16x16.png"><link rel="shortcut icon" href="/beta/CCV-icons-4d5e7c/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1536x2008.png"></head>
 <body>
-    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="67477236"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/src/assets/graphics/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/learntomod" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/_/oppgaver/src/learntomod/logo-black.8bdf4e.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Learntomod</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/learntomod/1_kom_i_gang/kom_i_gang" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/d6aa434b87e479c5f20f9a47e8aca3db.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Kom i gang med Learn To Mod</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">Svenska</div></div></a></li><li role="presentation" class="" data-reactid="71"><a role="menuitem" tabindex="-1" href="#" data-reactid="72"><div data-reactid="73"><img class="LanguageDropdown__flag__14wo3" src="/beta/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="74"/><div class="LanguageDropdown__language__1g4QB" data-reactid="75">Dansk</div></div></a></li><li role="presentation" class="" data-reactid="76"><a role="menuitem" tabindex="-1" href="#" data-reactid="77"><div data-reactid="78"><img class="LanguageDropdown__flag__14wo3" src="/beta/7eea7bf89b693a96506087f96a5d95a3.svg" data-reactid="79"/><div class="LanguageDropdown__language__1g4QB" data-reactid="80">English</div></div></a></li></ul></div></div><div class="NavBar__gadgetContainer__28a-C" data-reactid="81"><div class="dropdown btn-group btn-group-student" data-reactid="82"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="83"><!-- react-text: 84 -->Modus: Elev<!-- /react-text --></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="85"><li role="presentation" class="active" data-reactid="86"><a role="menuitem" tabindex="-1" href="#" data-reactid="87">Elev</a></li><li role="presentation" class="" data-reactid="88"><a role="menuitem" tabindex="-1" href="#" data-reactid="89">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="90"><h1 data-reactid="91"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/d6aa434b87e479c5f20f9a47e8aca3db.svg" data-reactid="92"/><!-- react-text: 93 -->Kom i gang med Learn To Mod<!-- /react-text --><!-- react-text: 94 --><!-- /react-text --></h1><p data-reactid="95"><i data-reactid="96"><!-- react-text: 97 -->av<!-- /react-text --><!-- react-text: 98 --> <!-- /react-text --><!-- react-text: 99 -->Pål G. Solheim<!-- /react-text --></i></p><div data-reactid="100"><section class="intro" id="introduksjon">
-<h1 class="intro" id="introduksjon">Introduksjon</h1>
-<p>I denne veiledningen skal du lage en konto på Learn To Mod (LTM) og koble den til din Minecraft-konto.</p>
-</section>
-<section class="activity" id="lage-en-ltm-konto">
-<h1 class="activity" id="lage-en-ltm-konto">Lage en LTM-konto</h1>
-<section class="check" id="sjekkliste">
-<h2 class="check" id="sjekkliste">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Åpne nettleseren din (Chrome, Internett Explorer, Firefox eller Safari).</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Gå til adressen <em><a href="http://www.learntomod.com">learntomod.com</a></em>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_2"><label for="cbx_2"> Du skal komme til en side som ser sånn ut:</label></p>
-<figure><img src="/beta/_/oppgaver/src/learntomod/1_kom_i_gang/1_learntomod.2f6391.png" alt=""></figure>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_3"><label for="cbx_3"> Trykk på knappen øverst til høyre som heter <strong>Login</strong>, ikke klikk på <strong>Sign Up</strong> enda.</label></p>
-<figure><img src="/beta/_/oppgaver/src/learntomod/1_kom_i_gang/2_login.ac4223.png" alt=""></figure>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Trykk på <strong>Create an account!</strong> for å registrere en konto.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Fyll inn epost og passord.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Klikk på <strong>Submit</strong>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Det er smart å velge et passord som du husker. Lagre gjerne passordet om du får beskjed om det.</label></p>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="logge-inn-pa-ltm">
-<h1 class="activity" id="logge-inn-pa-ltm">Logge inn på LTM</h1>
-<section class="check" id="sjekkliste-2">
-<h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Logg deg inn ved å fylle ut epost og passord:</label></p>
-<figure><img src="/beta/_/oppgaver/src/learntomod/1_kom_i_gang/3_konto.ba57db.png" alt=""></figure>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Første gang du er med på kurs må du angi en klassekode.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_10"><label for="cbx_10"> Klassekoden får du av den som holder kurset.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Fyll klassekoden i det feltet som heter <strong>Class Key</strong>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_12"><label for="cbx_12"> Du får spørsmål om hva som skal være ditt <strong>Nickname</strong>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_13"><label for="cbx_13"> Du kan bruke det navnet du vil, for eksempel det samme som du kaller deg i minecraft, men ikke start navnet med tall.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_14"><label for="cbx_14"> Fyll ut navnet og trykk på knappen.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_15"><label for="cbx_15"> Du skal nå få opp hjemmesiden:</label></p>
-<figure><img src="/beta/_/oppgaver/src/learntomod/1_kom_i_gang/image4.a1aed0.jpeg" alt=""></figure>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="koble-til-minecraft-kontoen-din">
-<h1 class="activity" id="koble-til-minecraft-kontoen-din">Koble til Minecraft-kontoen din</h1>
-<p>Hvis det er første gang du er med på kurset vil du se et grønt felt som sier <strong>Server status: Offline</strong>. Altså må du koble til Minecraft kontoen din.</p>
-<section class="check" id="sjekkliste-3">
-<h2 class="check" id="sjekkliste-3">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_16"><label for="cbx_16"> Klikk på det grønne feltet hvor det står <strong>Server status: Offline</strong>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_17"><label for="cbx_17"> Du kommer til en side som dette:</label></p>
-<figure><img src="/beta/_/oppgaver/src/learntomod/1_kom_i_gang/image5.7b02d5.jpeg" alt=""></figure>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_18"><label for="cbx_18"> Gå nedover på siden til du kommer til <strong>Step 3</strong>:</label></p>
-<figure><img src="/beta/_/oppgaver/src/learntomod/1_kom_i_gang/image6.8ea869.jpeg" alt=""></figure>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_19"><label for="cbx_19"> Skriv brukernavnet ditt i Minecraft inn i feltet.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_20"><label for="cbx_20"> Trykk på knappen <strong>Connect</strong>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_21"><label for="cbx_21"> Det vil komme opp et vindu som sier at du har fått en badge.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_22"><label for="cbx_22"> Knappen som heter <strong>Back to badges</strong> fungerer ikke enda, så du må må lukke vinduet.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_23"><label for="cbx_23"> Trykk på bakoverknappen i nettleseren for å komme til hjemmesiden.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_24"><label for="cbx_24"> Oppfrisk siden eller trykk på <strong>Home</strong> øverst til venstre for å friske opp siden.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_25"><label for="cbx_25"> Hjemmesiden skal nå vise <strong>Server status: Online</strong> i det grønne feltet til venstre:</label></p>
-<figure><img src="/beta/_/oppgaver/src/learntomod/1_kom_i_gang/image7.ca4dda.jpeg" alt=""></figure>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="logge-pa-ltms-server-i-minecraft">
-<h1 class="activity" id="logge-pa-ltms-server-i-minecraft">Logge på LTMs server i Minecraft</h1>
-<p>Til slutt må du logge på Learn To Mod sin Minecraft-server, slik at du
-kan kjøre moddene dine i Minecraft.</p>
-<section class="check" id="sjekkliste-4">
-<h2 class="check" id="sjekkliste-4">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_26"><label for="cbx_26"> Åpne Minecraft.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_27"><label for="cbx_27"> Trykk på knappen <strong>Play</strong>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_28"><label for="cbx_28"> Velg <strong>Multiplayer</strong>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_29"><label for="cbx_29"> Velg <strong>Add Server</strong>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_30"><label for="cbx_30"> Fyll inn navnet <code>Learntomod</code> og adresse <code>play.learntomod.com</code>:</label></p>
-<figure><img src="/beta/_/oppgaver/src/learntomod/1_kom_i_gang/image8.a3f7a3.jpeg" alt=""></figure>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_31"><label for="cbx_31"> Trykk på knappen <strong>Done</strong>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_32"><label for="cbx_32"> Serveren blir nå lagt til i serverlisten din.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_33"><label for="cbx_33"> Koble deg til ved å dobbeltklikke på serveren i listen.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_34"><label for="cbx_34"> Når du er tilkoblet skal du komme til din egen verden. Det vil stå <strong>Loading your private server</strong> i noen sekunder før verdenen din starter i <strong>creative mode</strong>.</label></p>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="ved-neste-kurs">
-<h1 class="activity" id="ved-neste-kurs">Ved neste kurs</h1>
-<p>Når du kommer på kurset neste gang trenger du ikke gjøre alt på nytt. Da holder det å logge inn på siden <a href="http://www.learntomod.com">learntomod.com</a> og logge på serveren til Learn To Mod i Minecraft.</p>
-<p>Nå er du klar til å begynne å kode!</p>
-<section class="protip" id="tips-hvis-du-far-trobbel">
-<h3 class="protip" id="tips-hvis-du-far-trobbel">Tips hvis du får trøbbel</h3>
-<p>Hvis du ikke kommer til din egen server i Minecraft så er de vanligste grunnene:</p>
-<ol>
-<li>
-<p>Du prøver å koble deg til serveren når klassen din ikke er aktivert.
-Det vanligste er at klassen bare er aktivert når dere har undervisning.
-Hvis du har undervisning kan du spørre læreren om serveren er åpnet.</p>
-</li>
-<li>
-<p>Minecraft kontoen din ikke er koblet riktig opp mot Learntomod.
-Gå til <a href="http://www.learntomod.com">learntomod.com</a> og følg anvisningene i <a href="#koble-til-minecraft-kontoen-din">Koble til Minecraft-kontoen din</a>.
-Du må huske å skrive Minecraft-brukernavnet nøyaktig slik det
-er i Minecraft, husk at det er forskjell på store og små bokstaver.
-Den enkleste måten å finne brukernavnet ditt i Minecraft er å
-starte opp Minecraft. Da står brukernavnet helt nede til høyre ved
-<strong>Play</strong>-knappen.</p>
-<p>Her kan du se at mitt brukernavn er <code>makerbee</code>:</p>
-<figure><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAA/Ak8DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDsriSRPKSLbvkfaC3QcEk+/ApPLu/+fiD/AL8H/wCLouP+Pi0/66n/ANFvU9AEHl3f/PxB/wB+D/8AF0eXd/8APxB/34P/AMXU9FAEHl3f/PxB/wB+D/8AF0eXd/8APxB/34P/AMXU9FAEHl3f/PxB/wB+D/8AF0eXd/8APxB/34P/AMXU9FAEHl3f/PxB/wB+D/8AF0eXd/8APxB/34P/AMXU9FAEHl3f/PxB/wB+D/8AF0eXd/8APxB/34P/AMXU9FAEHl3f/PxB/wB+D/8AF0eXd/8APxB/34P/AMXU9FAEHl3f/PxB/wB+D/8AF0eXd/8APxB/34P/AMXU9FAEHl3f/PxB/wB+D/8AF0eXd/8APxB/34P/AMXU9FAEHl3f/PxB/wB+D/8AF0eXd/8APxB/34P/AMXU9FAEHl3f/PxB/wB+D/8AF0eXd/8APxB/34P/AMXU9FAEHl3f/PxB/wB+D/8AF0eXd/8APxB/34P/AMXU9FAEHl3f/PxB/wB+D/8AF0eXd/8APxB/34P/AMXU9FAEHl3f/PxB/wB+D/8AF0eXd/8APxB/34P/AMXU9FAEHl3f/PxB/wB+D/8AF0eXd/8APxB/34P/AMXU9FAEHl3f/PxB/wB+D/8AF0eXd/8APxB/34P/AMXU9FAEHl3f/PxB/wB+D/8AF0eXd/8APxB/34P/AMXU9FAEHl3f/PxB/wB+D/8AF0eXd/8APxB/34P/AMXU9FAFbfcRTRLK8UiSMVyqFSDgn1OehqzUFz/rbT/rsf8A0B6noAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqqdStFgimaYCOWTykJUjL5IxjHqDVqueewmlu720EbLCgkmhfaQu9wMYPqDv/MUAbqTxyTyQq2ZIgC4weM9Oaa9yiXcVsQ2+VGdSOmFxnP/AH0K52eC7udOW6eAqLi7824hlgaQhAu1QYwQW6KcfjzilWzvBbwraeZv+z3QibyGhCFiu0BSSVHXGT2oBHT0VzLW9l5Nt9m0udLVZE+1xG1Zd42sBlcZfDEE4B7HnFOtdN+0TWaXVozWoFyUjlTIRC67AQenHQHpj2oA6SiuWh0+6isrZrOB4ryWwkWSQghjJhNu4nv1xnpUulPHpkVxcmNli2Rr5MVi1vl84GA7fMxzjI9uaYHSUVieMIJrrw/LFBFJK5eM7I1JP3hnpXOXel3MV7etbWMyhL+F4CkRwq4O4rx04GSPQZpLX+vT/MHod9VPTdRh1JJnhV1EMzQtvAGSvXGD0rkrmK6l1GGeHSzazR6iCfLtH3lMnczS9CDk8elJYWN/Dqnmz2kz25u7jygYm/dSHG2Qjuvv0FC/r8Af9fid1VTVdRh0qwkvLhXaOPGQgBPJx3I9a5TR9PuYp7J7jzYL2KVvOKWLlpck53zbtrDvmqqaHKPBc0hsrk35YoEKvuCeYDwn4ZzigaPQAcgH1orhrvTr6VtWfR7aaC0ljiUxmNojKRjdhTg9M56Z565pbnTrxrS+GmGVfOjTfbxWL2yEAjOAzcsR1A6igSO4ornvD9r5Go3EkRdIpYxmFLB7aJWHcBictj0roaACiiigCvcf6+0/66n/ANFvU+agujia1P8A01P/AKLen+YPegCTNGaj8we9HmD3oAkzRmo/MHvR5g96AJM0ZqPzB70eYPegCTNGaj8we9HmD3oAkzRmo/MHvR5g96AJM0ZqPzB70eYPegCTNGaj8we9HmD3oAkzRmsXxTcyQ+HbySCR4pFUbXRtpHI7isOyvpTqejrpt5Pc+ZDm+Vp2mVRgcnJO05z6frQgeiudtmjNcd4YvXsvD0siJCw+1uHaabykQepOD3wOnerP/CX/AOh3kyWaytZyKJBFPuQof4lbHP0wKAOozRmsaPXln1mOwtoPMRoBM82/GwHoMY5zx371q+YPegCTNGaj8we9HmD3oAkzRmo/MHvR5g96AJM0ZqPzB70eYPegCTNGaj8we9HmD3oAkzRmo/MHvR5g96AJM0ZqPzB70eYPegCTNGaj8we9HmD3oAZcf661/wCux/8AQHqxVWZg01rj/nt/7I9WqACiiigAooooAKKKKACiiigAooooAKKKKACiiigCtd39vZvHHN5peQEqscLyEgYzwoPqKktriK6gWaBw8bdD0+oI7H2rO1S1ubjU7Q2s8tuywzDzkRWCk7MA5BH8jxWXc28zx2kctpsghMizRy2r3KmUkHeFBBYH5iG5xnHBoGdVUN3cpaQebIGK71T5euWYKP1NctqVnLJaxpLFO8kVmPs8yWYaSSTnhmKsUxx3B5POasXsDPdStPZyzXZngaCYQFtkYKZw2MLg78jINPqI6eoxPGblrcN+9VA5XB4BJAP6GsbTbdxq0luVxb2DMYjnqZOQP+AgsPxFR6rZltTu5ILUm5ms9sE6xciQb8/Pj5TggZJFIZ0NFY2ixRpezPZ2slrZmFBseIxZkycnaQOcYye/viqF1DHPq18sdvI96LqExSiNsRgKhY78YXgHIzk/lR1sI6K1uUukd4wwCSNGd3qpIP8AKpHRHADqrAEEZGcEdDXMXNmZVSK7tX8g3FwxkW0Ezgl/lABVsAjnOOw5FJDbXOzT7Z0cG/gRbnfwy+XgnI9Sp2/lQgfU6K8vraxWJrqURiWQRISCcseg46UkmoW0V39laQm48oy+WqljtHfgfp1qrrdp9tFnC0bPG05Em0fdUxuM+3UVk3Gn3ojeS4RprmWzuFdkUkZ2oqgY9QM49SaB21SOpByM0VzcunsZLq5+ysbhbm3MT7CWCgRhivt1zj056Uy1tLkawXl+S5FxIxkWzcl0OdoM2du3GOMcEDjNAulzp6K5RLOJtMWEWFwuoZjFzL5LKXPmqWO/+LuQQTgelO17T03vFDZGJYrYm2NrZq5aTLHG7admDg8Y5YnNA0bkmpwxXMkTJJsjKq8oA2qzYwvXOTkdBjnrVqaWOCJpZpEjjUZZ3OAPqa5q70qOSPUppNOWSQzwvnyAWZQIy+OMn+LIHXmuhEkMNkrxxukKoNqJE2QOwCAZ/DFD0Qh9vPFdW8c8Db4pFDK2MZBqBNTtJLv7Ksp83JUfIwUsOoDYwSPQHPB9Kp6NcGHRbBGtrneNkLKYWUocdSDj5R61StIbgatGfLuAy3UskkTRnyUUhgHVsdTxwCeWbgU+odDbvL+2sQpuHYbskBEZzgdThQTgetTo6yRq8bBkYZVgcgj1rFv5JJfs1/bJcQ3JR4liktGkyCRwwBAU5AwSQK0dKtns9LtbaQgvFEqtjpkDmkgHXf8ArLb/AK6N/wCi3ptOvP8AWW3/AF0b/wBFvUeaAHUU3NGaAHUU3NGaAHUU3NGaAHUU3NGaAHUU3NGaAHUU3NGaAHUU3NGaAK2rWP8AaWmz2fmeV5oxv25xznpUtpB9ms4bfdu8qNU3YxnAxmpM0ZoA58eFgthFbi8y8N0blWaLKk+hXPP51Zg0b7MdUuLqb7T9tT94iQ4xgHIAyc9eK180Zo6WA57wVpktlp8k90jpPO2MSAhlReAOen/6q6Om5ozTbuA6im5ozSAdRTc0ZoAdRTc0ZoAdRTc0ZoAdRTc0ZoAdRTc0ZoAdRTc0ZoAG/wBdbf8AXb/2R6u1RP8Arrb/AK7f+yPV6gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCq6C2bFsiiS5myzOSRnbyfyXGKf5d3/wA/EH/fg/8AxdJcnE9qf+mp/wDRb1L5i+tAEfl3f/PxB/34P/xdRx2k8UksiTQB5mDOfJbkgAf3/QCodVuJo7dDbmUKZAJXhQO6L6qpBzzjseM8VXtdUSLy1a6kuY3kdWkmTy3iIXdtZdo9Ceg7daANLy7v/n4g/wC/B/8Ai6jNpMblbgzQmVUKBvJbgEgnjfjsPyrPl13dYeYsLpIYZZGXcN0e0Z9CMnI6jv3pi6zcwy37SxpJDHIiQASYYsyrtX7uOS2Sc8e9HUDX8u7/AOfiD/vwf/i6PLu/+fiD/vwf/i6yZ77UV1G1X7PGJDHL+6FwfLYDZgk7c9yPu/pzVmbUjJ4fkvoCY3NsZUyMlTtyPajpcaVy75d3/wA/EH/fg/8AxdHl3f8Az8Qf9+D/APF1Qu9Skt7i3I3yRm2lkeNFyXK7cY/M1W/4SVRbCV/sOXdURkvAY8kEnc20bcAeh6igRseXd/8APxB/34P/AMXR5d3/AM/EH/fg/wDxdZcOvPdC3W1t4pZJhJk+f8ilCAfmCnIOeCB6cemv5i+tAEM7XUELzGWGQRqWKiMqSByedx/lVqqt84NhcgH/AJYv/wCgmrVABRRRQAUUUUAVbz/WW3/XQ/8Aot6izVyaGOdNsi5AORzgg+oI6VF9ji/vz/8Af9/8aAIM0Zqf7HF/fn/7/v8A40fY4v78/wD3/f8AxoAgzRmp/scX9+f/AL/v/jR9ji/vz/8Af9/8aAIM0Zqf7HF/fn/7/v8A40fY4v78/wD3/f8AxoAgzRmp/scX9+f/AL/v/jR9ji/vz/8Af9/8aAIM0Zqf7HF/fn/7/v8A40fY4v78/wD3/f8AxoAgzRmp/scX9+f/AL/v/jR9ji/vz/8Af9/8aAIM0Zqf7HF/fn/7/v8A40fY4v78/wD3/f8AxoAgzRmp/scX9+f/AL/v/jR9ji/vz/8Af9/8aAIM0Zqf7HF/fn/7/v8A40fY4v78/wD3/f8AxoAgzRmp/scX9+f/AL/v/jR9ji/vz/8Af9/8aAIM0Zqf7HF/fn/7/v8A40fY4v78/wD3/f8AxoAgzRmp/scX9+f/AL/v/jR9ji/vz/8Af9/8aAIM0Zqf7HF/fn/7/v8A40fY4v78/wD3/f8AxoAgzRmp/scX9+f/AL/v/jR9ji/vz/8Af9/8aAIM0Zqf7HF/fn/7/v8A40fY4v78/wD3/f8AxoAgzRmp/scX9+f/AL/v/jR9ji/vz/8Af9/8aAIM0Zqf7HF/fn/7/v8A40fY4v78/wD3/f8AxoAgH+utv+u3/sj1fqGO1ijkEgDs4GAXkZsfTJOKmoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooArXn+stv8Arof/AEW9RbqtzQxzptkXIByOcEH1BHSovscX9+f/AL/v/jQBUuY2nRQlxLAynIaPGfoQQQfyqrJpcE1q8M0kshkcSPISAzHpzgYxjjgdK1fscX9+f/v+/wDjR9ji/vz/APf9/wDGgDNl06CV7pyXBuo/LfB4AxjI98Y/IUyTTIZGn/fTBZgu5QRgMuMODjIIwO+PatX7HF/fn/7/AL/40fY4v78//f8Af/GgDOisgk6TyXM88iBgGkK9G254AA/hH60+G1hisFssF4RH5ZDHkrjHNXvscX9+f/v+/wDjR9ji/vz/APf9/wDGgDLj05UJZrq4kcRmKN2KgxKf7uAOeByc9KadLjZjK9zO9zlStwdgdcZwBhcfxN1B61rfY4v78/8A3/f/ABo+xxf35/8Av+/+NAFCO0VJoZXmllkiV1DORzuIJzgD0HTFWd1TfY4v78//AH/f/Gj7HF/fn/7/AL/40AVbls2dx/1xf/0E1pVXNjAfvea4zna8rsD+BOKsUAFFFFABRRRQB//Z" alt=""></figure>
-</li>
-<li>
-<p>Noe er feil med verdenen din eller med en modd som du har laget. Som
-regel er det en feil i den siste modden din. Gå over til nettleseren
-og sjekk om det er noe feil med den siste modden. Hvis du finner en
-feil og retter den må du:</p>
-<ul>
-<li>Trykk på <strong>mod</strong>-knappen for å oppdatere modden på serveren.</li>
-<li>Velg <strong>disconnect</strong> i Minecraft.</li>
-<li>Koble deg til serveren på nytt.</li>
-</ul>
-<p>Hvis det ikke fungerer så er det best å
-spørre læreren din om hjelp. Noen ganger må du velge en ny verden og
-legge den inn på serveren.</p>
-</li>
-</ol>
-</section>
-</section>
-</div><div class="row" data-reactid="101"><div class="ImprovePage__container__HeXzk" data-reactid="102"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="103"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="104"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="105"><h2 data-reactid="106">Forbedre denne siden</h2><p data-reactid="107"><!-- react-text: 108 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 109 --> <!-- /react-text --><br data-reactid="110"/><!-- react-text: 111 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="112"><div data-reactid="113"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Learntomod: 1 kom i gang&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/learntomod/1_kom_i_gang/1_kom_i_gang%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/learntomod/1_kom_i_gang%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="114">Rapporter et problem</a></div><div data-reactid="115"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="116">Gå til forumet</a></div><div data-reactid="117"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/learntomod/1_kom_i_gang" target="_blank" class="btn btn-orange" data-reactid="118">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="119"><div class="Footer__center__3xqZ_ row" data-reactid="120"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="121">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="122">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="123"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="124"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/smn.41dee6.jpg" data-reactid="125"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="126"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="127"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="128"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/teknograd.7eb17c.png" data-reactid="129"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="130"><img class="Footer__img__25Ink" src="data:image/png;base64,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" data-reactid="131"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="132"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/excITEd.ce9ee2.png" data-reactid="133"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="134"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/uio_ifi.eebbdf.png" data-reactid="135"/></a></div></div></div></div></div>
+    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="-1571044166"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/CCV-assets/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/learntomod" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/learntomod/logo-black.8bdf4e.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Learntomod</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/learntomod/1_kom_i_gang/kom_i_gang" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Kom i gang med Learn To Mod</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nn.fa23ab.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_en.7eea7b.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">English</div></div></a></li></ul></div></div><div class="ModeDropdown__gadgetContainer__2HE97" data-reactid="71"><div class="dropdown btn-group btn-group-student" data-reactid="72"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="73"><div data-reactid="74"><span class="ModeDropdown__onlyMode__1fZJE" data-reactid="75">Modus: </span><span data-reactid="76">Elev</span></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="77"><li role="presentation" class="active" data-reactid="78"><a role="menuitem" tabindex="-1" href="#" data-reactid="79">Elev</a></li><li role="presentation" class="" data-reactid="80"><a role="menuitem" tabindex="-1" href="#" data-reactid="81">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="82"><h1 data-reactid="83"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="84"/><!-- react-text: 85 -->Kom i gang med Learn To Mod<!-- /react-text --></h1><p data-reactid="86"><i data-reactid="87"><!-- react-text: 88 -->Skrevet av:<!-- /react-text --><!-- react-text: 89 --> <!-- /react-text --><span data-reactid="90">Pål G. Solheim</span></i></p><div class="Lesson__box__2CtND" data-reactid="91"><div data-reactid="92"><!-- react-text: 93 -->Kurs:<!-- /react-text --><!-- react-text: 94 --> <!-- /react-text --><!-- react-text: 95 -->Learntomod<!-- /react-text --></div><div data-reactid="96">Tema: Blokkbasert, Minecraft</div><div data-reactid="97">Fag: Teknologi, Programmering</div><div data-reactid="98">Klassetrinn: 1.-4. klasse, 5.-7. klasse, 8.-10. klasse</div><div data-reactid="99">Språk: Norsk bokmål</div></div><button type="button" class="PrintButton__container__KmVN4 btn btn-sm btn-danger" data-reactid="100">Skriv ut</button><div data-reactid="101"></div><div class="row" data-reactid="102"><div class="ImprovePage__container__HeXzk" data-reactid="103"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="104"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="105"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="106"><h2 data-reactid="107">Forbedre denne siden</h2><p data-reactid="108"><!-- react-text: 109 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 110 --> <!-- /react-text --><br data-reactid="111"/><!-- react-text: 112 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="113"><div data-reactid="114"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Learntomod: 1 kom i gang&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/learntomod/1_kom_i_gang/1_kom_i_gang%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/learntomod/1_kom_i_gang%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="115">Rapporter et problem</a></div><div data-reactid="116"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="117">Gå til forumet</a></div><div data-reactid="118"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/learntomod/1_kom_i_gang" target="_blank" class="btn btn-orange" data-reactid="119">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div data-reactid="120"><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="121"><div class="Footer__center__3xqZ_ row" data-reactid="122"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="123">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="124">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="125"><a href="https://www.sparebank1.no" target="_blank" data-reactid="126"><img class="Footer__img__25Ink" src="/beta/CCV-assets/smn.41dee6.jpg" data-reactid="127"/></a><a href="https://ibok.no/" target="_blank" data-reactid="128"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ibok.7f1adf.jpg" data-reactid="129"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="130"><img class="Footer__img__25Ink" src="/beta/CCV-assets/teknograd.6d3bfb.png" data-reactid="131"/></a><a target="_blank" data-reactid="132"><img class="Footer__img__25Ink" src="/beta/CCV-assets/tekna.04ca97.jpg" data-reactid="133"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="134"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ntnu_idi.7bbd05.png" data-reactid="135"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="136"><img class="Footer__img__25Ink" src="/beta/CCV-assets/excITEd.ce9ee2.png" data-reactid="137"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="138"><img class="Footer__img__25Ink" src="/beta/CCV-assets/uio_ifi.eebbdf.png" data-reactid="139"/></a></div></div></div></div></div></div>
 
     
-    <script src="/beta/manifest.23c1399067193edc21b2.js" type="text/javascript"></script>
+    <script src="/beta/manifest.f206b7.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor.38d2c63d7a69e033ce29.js" type="text/javascript"></script>
+    <script src="/beta/vendor.27fe3c.js" type="text/javascript"></script>
     
-    <script src="/beta/main.6e4e7c0881475d602bac.js" type="text/javascript"></script>
+    <script src="/beta/main.c8ba3c.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor2.43d77d0b373ad56cd5d2.js" type="text/javascript"></script>
+    <script src="/beta/vendor2.961fdb.js" type="text/javascript"></script>
     
 </body>
 </html>

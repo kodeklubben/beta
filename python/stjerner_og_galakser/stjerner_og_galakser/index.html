@@ -6,7 +6,7 @@
     <title>Stjerner og galakser | Kodeklubben</title>
 
     
-    <link href="/beta/vendor2.43d77d0b373ad56cd5d2.css" rel="stylesheet">
+    <link href="/beta/vendor2.961fdb.css" rel="stylesheet">
     
 
     <style type="text/css">.App__appContainer__3y6aN {
@@ -117,10 +117,6 @@
   display: inline;
   float: right;
   padding: 4px 0; }
-
-.NavBar__gadgetContainer__28a-C {
-  display: inline-block;
-  padding: 3px 5px; }
 .BreadCrumb__breadcrumb__1u8pT {
   padding-left: 10px;
   float: left;
@@ -171,6 +167,13 @@
 .LanguageDropdown__gadgetContainer__LYX2I {
   display: inline-block;
   padding: 3px 5px; }
+.ModeDropdown__gadgetContainer__2HE97 {
+  display: inline-block;
+  padding: 3px 5px; }
+
+@media (max-width: 767px) {
+  .ModeDropdown__onlyMode__1fZJE {
+    display: none; } }
 .Lesson__container__133OS {
   max-width: 800px;
   padding-left: 15px;
@@ -193,8 +196,13 @@
     .Lesson__container__133OS {
       font-size: 125%; } }
 
-.Lesson__resetButton__312Jx {
-  margin-right: 10px; }
+.Lesson__box__2CtND {
+  display: none;
+  font-style: italic;
+  font-size: 0.75em; }
+  @media print {
+    .Lesson__box__2CtND {
+      display: block; } }
 /*
 
 Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
@@ -589,12 +597,12 @@ section.Content__activity__12AJC .Content__subsection__3XzlJ h2 {
     margin-left: 6px; }
 
 section.Content__check__sbZVW h2 {
-  background-image: url(/beta/15ac74fbc78a1df119501938bf49e877.svg);
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
   padding-top: 4px;
-  padding-bottom: 9px;
-  padding-left: 50px; }
+  padding-bottom: 9px; }
+  section.Content__check__sbZVW h2 img {
+    height: 40px;
+    vertical-align: text-bottom;
+    padding-right: 10px; }
 
 section.Content__try__9Al91 {
   background: #abdbea;
@@ -622,29 +630,27 @@ section.Content__flag__1GjEr {
   margin-bottom: 20px; }
   section.Content__flag__1GjEr h2 {
     color: #36a137;
-    background-image: url(/beta/4a58cdc0f6e0e74bb219124bb5bde3b7.svg);
-    background-position: 0 10px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 15px;
-    padding-bottom: 10px;
-    padding-left: 60px; }
+    padding-bottom: 10px; }
+    section.Content__flag__1GjEr h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
 
 section.Content__save__3P_NU {
   border-top: 3px solid #245a9a;
   margin: 20px 0; }
   section.Content__save__3P_NU h2 {
     color: #245a9a;
-    background-image: url(/beta/0a8afb9f53ba0352c6ae27f9a35fe08a.svg);
-    background-position: 0 10px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
     margin: 0;
     padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 50px; }
+    padding-bottom: 20px; }
+    section.Content__save__3P_NU h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
 
 section.Content__challenge__2LUyO {
   border: 3px solid #00b1da;
@@ -659,6 +665,9 @@ section.Content__challenge__2LUyO {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 0; }
+    @media print {
+      section.Content__challenge__2LUyO h2 {
+        border-bottom: 2px #00b1da solid; } }
   section.Content__challenge__2LUyO > * {
     padding: 0 20px; }
 
@@ -737,6 +746,11 @@ input[type="checkbox"]:checked + label::before {
   content: '\2714';
   line-height: 1.1em;
   padding-left: 0.1em; }
+.PrintButton__container__KmVN4 {
+  margin: 10px 10px 0 0; }
+  @media print {
+    .PrintButton__container__KmVN4 {
+      display: none; } }
 .ImprovePage__font__1MdMv {
   font-family: "Roboto", "Verdana", sans-serif;
   font-weight: 300;
@@ -745,6 +759,9 @@ input[type="checkbox"]:checked + label::before {
 /* Container for improve box */
 .ImprovePage__container__HeXzk {
   margin: 10px 30px; }
+  @media print {
+    .ImprovePage__container__HeXzk {
+      display: none; } }
 
 .ImprovePage__improvePageBox__cyxic {
   display: flex;
@@ -792,6 +809,9 @@ input[type="checkbox"]:checked + label::before {
   font-family: "Roboto", "Verdana", sans-serif; }
   .Footer__container__1SZrv a {
     text-decoration: none; }
+  @media print {
+    .Footer__container__1SZrv {
+      display: none; } }
 
 .Footer__containerStudent__3Yr5f {
   background-color: #b1daae;
@@ -837,398 +857,18 @@ input[type="checkbox"]:checked + label::before {
   transform: scale(1.1);
   box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.5); }
 </style>
-<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-16x16.png"><link rel="shortcut icon" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1536x2008.png"></head>
+<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/CCV-icons-4d5e7c/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/CCV-icons-4d5e7c/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/CCV-icons-4d5e7c/favicon-16x16.png"><link rel="shortcut icon" href="/beta/CCV-icons-4d5e7c/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1536x2008.png"></head>
 <body>
-    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="280437274"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/src/assets/graphics/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/python" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/_/oppgaver/src/python/logo-black.2bf511.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Python</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/python/stjerner_og_galakser/stjerner_og_galakser" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/b1bbe21c6392db68a7ca74587b2668d9.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Stjerner og galakser</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">Svenska</div></div></a></li><li role="presentation" class="" data-reactid="71"><a role="menuitem" tabindex="-1" href="#" data-reactid="72"><div data-reactid="73"><img class="LanguageDropdown__flag__14wo3" src="/beta/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="74"/><div class="LanguageDropdown__language__1g4QB" data-reactid="75">Dansk</div></div></a></li><li role="presentation" class="" data-reactid="76"><a role="menuitem" tabindex="-1" href="#" data-reactid="77"><div data-reactid="78"><img class="LanguageDropdown__flag__14wo3" src="/beta/7eea7bf89b693a96506087f96a5d95a3.svg" data-reactid="79"/><div class="LanguageDropdown__language__1g4QB" data-reactid="80">English</div></div></a></li></ul></div></div><div class="NavBar__gadgetContainer__28a-C" data-reactid="81"><div class="dropdown btn-group btn-group-student" data-reactid="82"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="83"><!-- react-text: 84 -->Modus: Elev<!-- /react-text --></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="85"><li role="presentation" class="active" data-reactid="86"><a role="menuitem" tabindex="-1" href="#" data-reactid="87">Elev</a></li><li role="presentation" class="" data-reactid="88"><a role="menuitem" tabindex="-1" href="#" data-reactid="89">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="90"><h1 data-reactid="91"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/b1bbe21c6392db68a7ca74587b2668d9.svg" data-reactid="92"/><!-- react-text: 93 -->Stjerner og galakser<!-- /react-text --><!-- react-text: 94 --><!-- /react-text --></h1><p data-reactid="95"><i data-reactid="96"><!-- react-text: 97 -->av<!-- /react-text --><!-- react-text: 98 --> <!-- /react-text --><!-- react-text: 99 -->Oversatt fra [Code Club UK](//codeclub.org.uk)<!-- /react-text --></i></p><div data-reactid="100"><section class="intro" id="introduksjon">
-<h1 class="intro" id="introduksjon">Introduksjon</h1>
-<p>I denne oppgaven skal vi bruke funksjoner for å gjøre programmene vi skriver enklere og mer oversiktlige.</p>
-</section>
-<section class="activity" id="steg-1-tegne-stjerner">
-<h1 class="activity" id="steg-1-tegne-stjerner">Steg 1: Tegne stjerner</h1>
-<section class="check" id="sjekkliste">
-<h2 class="check" id="sjekkliste">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Vi begynner med å bruke det du allerede kan om tegning med skilpadden. Kjør dette programmet:</label></p>
-<pre><code class="python"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
-
-<span class="hljs-comment"># Denne koden tegner en liten grå stjerne på en mørkeblå bakgrunn</span>
-color(<span class="hljs-string">"WhiteSmoke"</span>)
-bgcolor(<span class="hljs-string">"MidnightBlue"</span>)
-
-pendown()
-begin_fill()
-
-<span class="hljs-comment"># Tegn stjernen</span>
-<span class="hljs-keyword">for</span> side <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
-    left(<span class="hljs-number">144</span>)
-    forward(<span class="hljs-number">50</span>)
-
-end_fill()
-penup()
-
-forward(<span class="hljs-number">100</span>)
-done()
-</code></pre>
-<figure><img src="data:image/png;base64,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" alt="" title="Sky med en stjerne og skilpadde"></figure>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Kan du alle komandoene? <code>bgcolor(color)</code> setter fargen på bakgrunnen.
-Sørg for å forstå alle før du går videre.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_2"><label for="cbx_2"> Nå skal vi tegne tre stjerner på forskjellige posisjoner på skjermen. Vi lager en funksjon som heter <code>drawStar()</code> og kaller denne tre ganger for å tegne tre stjerner.</label></p>
-<pre><code class="python"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
-
-<span class="hljs-comment"># En funksjon for å tegne stjerner</span>
-<span class="hljs-comment"># 'def' er kort for 'define' på engelsk</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drawStar</span><span class="hljs-params">()</span>:</span>
-    pendown()
-    begin_fill()
-    <span class="hljs-keyword">for</span> side <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
-        left(<span class="hljs-number">144</span>)
-        forward(<span class="hljs-number">50</span>)
-    end_fill()
-    penup()
-
-<span class="hljs-comment"># Denne koden tegner en liten grå stjerne på en mørkeblå bakgrunn</span>
-color(<span class="hljs-string">"WhiteSmoke"</span>)
-bgcolor(<span class="hljs-string">"MidnightBlue"</span>)
-
-<span class="hljs-comment"># Bruk funksjonen til å tegne stjerner!</span>
-drawStar()
-forward(<span class="hljs-number">100</span>)
-drawStar()
-left(<span class="hljs-number">120</span>)
-forward(<span class="hljs-number">150</span>)
-drawStar()
-
-hideturtle()
-done()
-</code></pre>
-<figure><img src="/beta/_/oppgaver/src/python/stjerner_og_galakser/sky-function.ae59e4.png" alt="" title="Sky med tre stjerner"></figure>
-<p><code>hideturtle()</code> gjemmer skilpadden.</p>
-<p>Du har sett og brukt funksjoner før. For eksempel, <code>penup()</code>og <code>pendown()</code> er funksjoner. Din nye <code>drawStar()</code>funksjon virker på samme måte. Nå som du har en funksjon for å tegne en stjerne trenger du ikke tenke på hvilke komandoer du må skrive for å tegne dem, du kan bare kalle funksjonen og den vil tegne stjernen for deg!</p>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-2-sende-verdier-inn-i-funksjoner">
-<h1 class="activity" id="steg-2-sende-verdier-inn-i-funksjoner">Steg 2: Sende verdier inn i funksjoner</h1>
-<p>Funksjonen du lagde i forrige steg tegner en like stor stjerne hver gang. Hva om du vil tegne stjerner med forskjellige størrelser? En måte du kan gjøre det på er å lage forskjellige funksjoner som <code>drawBigStar()</code> , <code>drawMediumStar()</code> eller <code>drawSmallStar()</code></p>
-<p>En bedre måte å gjøre det på er å sende inn verdier til funksjonen <code>drawStar()</code> for å fortelle hvilken størrelse du vil ha. Du har allerede brukt flere funksjoner som mottar verdier på denne måten. For eksempel: <code>forward(100)</code> Her sender du 100 inn funksjonen og det gjør at skilpadden går 100 piksler frem.</p>
-<section class="check" id="sjekkliste-2">
-<h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_3"><label for="cbx_3"> Her er et program med en &quot;stjernetegne-funksjon&quot; som kan tegne stjerner i forskjellige størrelser ut i fra hvilket tall du sender inn i funksjonen.</label></p>
-<pre><code class="python"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
-
-<span class="hljs-comment"># En funksjon for å tegne en stjerne med bestemt størrelse</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drawStar</span><span class="hljs-params">(starSize)</span>:</span>
-    pendown()
-    begin_fill()
-    <span class="hljs-keyword">for</span> side <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
-        left(<span class="hljs-number">144</span>)
-        forward(starSize)
-    end_fill()
-    penup()
-
-<span class="hljs-comment"># Denne koden tegner en liten grå stjerne på en mørkeblå bakgrunn</span>
-color(<span class="hljs-string">"WhiteSmoke"</span>)
-bgcolor(<span class="hljs-string">"MidnightBlue"</span>)
-
-<span class="hljs-comment"># Bruk funksjonen til å tegne stjerner i ulike størrelse!</span>
-drawStar(<span class="hljs-number">50</span>)
-forward(<span class="hljs-number">100</span>)
-drawStar(<span class="hljs-number">30</span>)
-left(<span class="hljs-number">120</span>)
-forward(<span class="hljs-number">150</span>)
-drawStar(<span class="hljs-number">70</span>)
-
-hideturtle()
-done()
-</code></pre>
-<figure><img src="/beta/_/oppgaver/src/python/stjerner_og_galakser/sky-function.ae59e4.png" alt="" title="Sky med tre stjerner"></figure>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Når programmet ditt kjører <code>drawStar(50)</code> er altså verdien til starSize lik 50. Dette gjør at kommandoen <code>forward(starSize)</code> inne i løkken tegner en linje som er 50 piksler lang.</label></p>
-<figure><img src="/beta/_/oppgaver/src/python/stjerner_og_galakser/sky-parameter-passing.2bdbdc.png" alt=""></figure>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Det er mulig å sende inn flere verdier inn i funksjonen. For eksempel kan vi sende inn hvilken farge vi vil at stjernen skal ha.</label></p>
-<pre><code class="python"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
-
-<span class="hljs-comment"># En funksjon for å tegne en stjerne med bestemt størrelse og farge</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drawStar</span><span class="hljs-params">(starSize, starColour)</span>:</span>
-    color(starColour)
-    pendown()
-    begin_fill()
-    <span class="hljs-keyword">for</span> side <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
-        left(<span class="hljs-number">144</span>)
-        forward(starSize)
-    end_fill()
-    penup()
-
-color(<span class="hljs-string">"WhiteSmoke"</span>)
-bgcolor(<span class="hljs-string">"MidnightBlue"</span>)
-
-<span class="hljs-comment"># Bruk funksjonen til å tegne stjerner i ulike størrelse!</span>
-drawStar(<span class="hljs-number">50</span>, <span class="hljs-string">"Red"</span>)
-forward(<span class="hljs-number">100</span>)
-drawStar(<span class="hljs-number">30</span>, <span class="hljs-string">"White"</span>)
-left(<span class="hljs-number">120</span>)
-forward(<span class="hljs-number">150</span>)
-drawStar(<span class="hljs-number">70</span>, <span class="hljs-string">"Green"</span>)
-
-hideturtle()
-done()
-</code></pre>
-<p>Ser du hvilke endringer som er gjort i koden?</p>
-<figure><img src="/beta/_/oppgaver/src/python/stjerner_og_galakser/sky-colours.e7ac94.png" alt="" title="Tre stjerner med forskjellige farger"></figure>
-</li>
-</ul>
-</section>
-<section class="challenge" id="utfordring">
-<h2 class="challenge" id="utfordring">Utfordring</h2>
-<p>Lag en funksjon for å tegne planeter og kall den <code>drawPlanet()</code> Send verdier inn i funksjonen slik at du kan bestemme hvor stor og hvilken farge den skal ha.</p>
-</section>
-</section>
-<section class="activity" id="steg-3-tilfeldige-stjerner">
-<h1 class="activity" id="steg-3-tilfeldige-stjerner">Steg 3: Tilfeldige stjerner</h1>
-<p>Vi skal nå bruke <code>drawStar()</code> til å tegne stjerner på tilfeldige steder rundt på skjermen.</p>
-<section class="check" id="sjekkliste-3">
-<h2 class="check" id="sjekkliste-3">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Kjør dette programmet. Skilpadden flyttes til en ny posisjon og tegner en hvit stjerne der.</label></p>
-<pre><code class="python"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
-
-<span class="hljs-comment"># En funksjon for å tegne en stjerne med bestemt størrelse og farge</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drawStar</span><span class="hljs-params">(starSize, starColour)</span>:</span>
-    color(starColour)
-    pendown()
-    begin_fill()
-    <span class="hljs-keyword">for</span> side <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
-        left(<span class="hljs-number">144</span>)
-        forward(starSize)
-    end_fill()
-    penup()
-
-<span class="hljs-comment"># Setter bakgrunnsfargen</span>
-bgcolor(<span class="hljs-string">"MidnightBlue"</span>)
-
-<span class="hljs-comment"># Flytt til en bestemt posisjon (x=200,y=200)</span>
-penup()
-setpos(<span class="hljs-number">200</span>, <span class="hljs-number">200</span>)
-pendown()
-
-drawStar(<span class="hljs-number">50</span>, <span class="hljs-string">"White"</span>)
-
-hideturtle()
-done()
-
-</code></pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Vi bruker funksjonen <code>setpos(x, y)</code> til å flytte skilpadden til posisjonen (x,y) på skjermen. <code>setpos(200, 200)</code> flytter altså skilpadden til posisjonen (200, 200). Prøv å endre på tallene i denne funksjonen!</label></p>
-<figure><img src="/beta/_/oppgaver/src/python/stjerner_og_galakser/sky-xy.08a2c1.png" alt=""></figure>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Vi skal nå flytte til en tilfeldig posisjon. Vi lager en ny funksjon som heter <code>moveToRandomLocation()</code>, denne flytter altså skilpadden til en tilfeldig posisjon.</label></p>
-<pre><code class="python"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
-<span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> *
-
-<span class="hljs-comment"># Flytter skilpadden til tilfeldig posisjon</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moveToRandomLocation</span><span class="hljs-params">()</span>:</span>
-    penup()
-    setpos(randint(<span class="hljs-number">-400</span>, <span class="hljs-number">400</span>), randint(<span class="hljs-number">-400</span>, <span class="hljs-number">400</span>))
-    pendown()
-
-<span class="hljs-comment"># Tegner en stjerne</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drawStar</span><span class="hljs-params">(starSize, starColour)</span>:</span>
-    color(starColour)
-    pendown()
-    begin_fill()
-    <span class="hljs-keyword">for</span> side <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
-        left(<span class="hljs-number">144</span>)
-        forward(starSize)
-    end_fill()
-    penup()
-
-<span class="hljs-comment"># mørkeblå bakgrunn</span>
-bgcolor(<span class="hljs-string">"MidnightBlue"</span>)
-
-<span class="hljs-comment"># Tegner 30 stjerner med tilfeldig størrelse og posisjon</span>
-<span class="hljs-keyword">for</span> star <span class="hljs-keyword">in</span> range(<span class="hljs-number">30</span>):
-    moveToRandomLocation()
-    drawStar(randint(<span class="hljs-number">5</span>, <span class="hljs-number">25</span>) , <span class="hljs-string">"White"</span>)
-
-hideturtle()
-done()
-</code></pre>
-<figure><img src="/beta/_/oppgaver/src/python/stjerner_og_galakser/sky-random.d1a9e4.png" alt="" title="Stjernehimmel"></figure>
-<p>Kjør koden flere ganger. Ser du at den tegner stjernene forskjellige plasser hver gang?
-Prøv å tegne flere stjerner i flere forskjellige størrelser og farger.</p>
-<p><code>from random import *</code> gjør at vi får tilgang på funksjonen <code>randint(a,b)</code> . Hvis vi skriver <code>randint(5, 25)</code> gir denne funksjonen oss et tilfeldig tall som er større eller lik 5 og mindre enn eller lik 25.</p>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-4-funksjoner-inne-i-funksjoner">
-<h1 class="activity" id="steg-4-funksjoner-inne-i-funksjoner">Steg 4: Funksjoner inne i funksjoner</h1>
-<p>Du kan skrive funksjoner som kjører andre funksjoner. Dette gjør det lettere å ha oversikt når man lager store programmer.</p>
-<section class="check" id="sjekkliste-4">
-<h2 class="check" id="sjekkliste-4">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Det ville vært kult hvis vi kunne lage en galakse med små flerfargede stjerner i tegningen vår. Vi lager defor en funksjon som heter <code>drawGalaxy()</code> som bruker funksjonen <code>drawStar()</code> som vi laget tidligere.</label></p>
-<pre><code class="python"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
-<span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> *
-
-<span class="hljs-comment"># a function for moving the turtle to a random location</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moveToRandomLocation</span><span class="hljs-params">()</span>:</span>
-    penup()
-    setpos(randint(<span class="hljs-number">-400</span>, <span class="hljs-number">400</span>), randint(<span class="hljs-number">-400</span>, <span class="hljs-number">400</span>))
-    pendown()
-
-<span class="hljs-comment"># a function for drawing a star of a particular size</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drawStar</span><span class="hljs-params">(starSize, starColour)</span>:</span>
-    color(starColour)
-    pendown()
-    begin_fill()
-    <span class="hljs-keyword">for</span> side <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
-        left(<span class="hljs-number">144</span>)
-        forward(starSize)
-    end_fill()
-    penup()
-
-<span class="hljs-comment"># a function for drawing a small galaxy of stars</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drawGalaxy</span><span class="hljs-params">(numberOfStars)</span>:</span>
-    starColours = [<span class="hljs-string">"#058396"</span>,<span class="hljs-string">"#0275A6"</span>,<span class="hljs-string">"#827E01"</span>]
-    moveToRandomLocation()
-    <span class="hljs-comment"># draw lots of small coloured stars</span>
-    <span class="hljs-keyword">for</span> star <span class="hljs-keyword">in</span> range(numberOfStars):
-        penup()
-        left(randint(<span class="hljs-number">-180</span>, <span class="hljs-number">180</span>) )
-        forward(randint(<span class="hljs-number">5</span>, <span class="hljs-number">20</span>) )
-        pendown()
-        <span class="hljs-comment"># draw a small star in a random colour</span>
-        drawStar( <span class="hljs-number">2</span>, choice(starColours) )
-
-speed(<span class="hljs-number">11</span>)
-
-<span class="hljs-comment"># this will draw a dark blue background</span>
-bgcolor(<span class="hljs-string">"MidnightBlue"</span>)
-
-<span class="hljs-comment"># draw 30 white stars (random sizes/locations)</span>
-<span class="hljs-keyword">for</span> star <span class="hljs-keyword">in</span> range(<span class="hljs-number">30</span>):
-    moveToRandomLocation()
-    drawStar(randint(<span class="hljs-number">5</span>, <span class="hljs-number">25</span>) , <span class="hljs-string">"White"</span>)
-
-<span class="hljs-comment"># draw 3 small galaxies of 40 stars</span>
-<span class="hljs-keyword">for</span> galaxy <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
-    drawGalaxy(<span class="hljs-number">40</span>)
-
-hideturtle()
-done()
-</code></pre>
-<figure><img src="/beta/_/oppgaver/src/python/stjerner_og_galakser/sky-galaxies.c5e0aa.png" alt="" title="Stjernehimmel med galakser"></figure>
-<p>Ved å kjøre <code>drawGalaxy(40)</code> 3 ganger for vi 3 nye galakser som hver inneholder 40 stjerner. For hver galakse kjøres <code>drawStar()</code> 40 ganger, mellom hver gang flyttes posisjonen til den neste stjernen litt. Ser du hvor i koden dette skjer?</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_10"><label for="cbx_10"> Du kan også tegne stjernebilder satt sammen av stjerner. Dette er ikke så vanskelig siden vi allerede har mange av funksjonene vi trenger.</label></p>
-<pre><code class="python"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
-<span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> *
-
-<span class="hljs-comment"># a function for moving the turtle to a random location</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moveToRandomLocation</span><span class="hljs-params">()</span>:</span>
-    penup()
-    setpos(randint(<span class="hljs-number">-400</span>, <span class="hljs-number">400</span>), randint(<span class="hljs-number">-400</span>, <span class="hljs-number">400</span>))
-    pendown()
-
-<span class="hljs-comment"># a function for drawing a star of a particular size</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drawStar</span><span class="hljs-params">(starSize, starColour)</span>:</span>
-    color(starColour)
-    pendown()
-    begin_fill()
-    <span class="hljs-keyword">for</span> side <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
-        left(<span class="hljs-number">144</span>)
-        forward(starSize)
-    end_fill()
-    penup()
-
-<span class="hljs-comment"># a function for drawing a small galaxy of stars</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drawGalaxy</span><span class="hljs-params">(numberOfStars)</span>:</span>
-    starColours = [<span class="hljs-string">"#058396"</span>,<span class="hljs-string">"#0275A6"</span>,<span class="hljs-string">"#827E01"</span>]
-    moveToRandomLocation()
-    <span class="hljs-comment"># draw lots of small coloured stars</span>
-    <span class="hljs-keyword">for</span> star <span class="hljs-keyword">in</span> range(numberOfStars):
-        penup()
-        left(randint(<span class="hljs-number">-180</span>, <span class="hljs-number">180</span>) )
-        forward(randint(<span class="hljs-number">5</span>, <span class="hljs-number">20</span>) )
-        pendown()
-        <span class="hljs-comment"># draw a small star in a random colour</span>
-        drawStar( <span class="hljs-number">2</span>, choice(starColours) )
-
-<span class="hljs-comment"># a function for drawing a joined constellation of stars</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drawConstellation</span><span class="hljs-params">(numberOfStars)</span>:</span>
-    moveToRandomLocation()
-    <span class="hljs-comment"># first draw all stars except the last one,</span>
-    <span class="hljs-comment"># joined by lines, like this: *--*--*--</span>
-    <span class="hljs-keyword">for</span> star <span class="hljs-keyword">in</span> range(numberOfStars<span class="hljs-number">-1</span>):
-        drawStar(randint(<span class="hljs-number">7</span>, <span class="hljs-number">15</span>) , <span class="hljs-string">"white"</span>)
-        pendown()
-        left(randint(<span class="hljs-number">-90</span>, <span class="hljs-number">90</span>) )
-        forward(randint(<span class="hljs-number">30</span>, <span class="hljs-number">70</span>) )
-    <span class="hljs-comment"># now draw the last star</span>
-    drawStar(randint(<span class="hljs-number">7</span>, <span class="hljs-number">15</span>) , <span class="hljs-string">"White"</span>)
-
-speed(<span class="hljs-number">11</span>)
-
-<span class="hljs-comment"># this will draw a dark blue background</span>
-bgcolor(<span class="hljs-string">"MidnightBlue"</span>)
-
-<span class="hljs-comment"># draw 30 white stars (random sizes/locations)</span>
-<span class="hljs-keyword">for</span> star <span class="hljs-keyword">in</span> range(<span class="hljs-number">30</span>):
-    moveToRandomLocation()
-    drawStar(randint(<span class="hljs-number">5</span>, <span class="hljs-number">25</span>) , <span class="hljs-string">"White"</span>)
-
-<span class="hljs-comment"># draw 3 small galaxies of 40 stars</span>
-<span class="hljs-keyword">for</span> galaxy <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
-    drawGalaxy(<span class="hljs-number">40</span>)
-
-<span class="hljs-comment"># draw 2 constellations, each with a random number of stars</span>
-<span class="hljs-keyword">for</span> constellation <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
-    drawConstellation(randint(<span class="hljs-number">4</span>, <span class="hljs-number">7</span>))
-
-hideturtle()
-done()
-</code></pre>
-<figure><img src="/beta/_/oppgaver/src/python/stjerner_og_galakser/sky-constellations.2a1487.png" alt="" title="Stjernehimmel med stjernekonstellasjoner"></figure>
-</li>
-</ul>
-</section>
-<section class="challenge" id="utfordring-2">
-<h2 class="challenge" id="utfordring-2">Utfordring</h2>
-<p>Programmér skilpadden til å tegne ditt eget bilde. Bruk funksjoner der du kan, spesielt til ting du skal gjøre flere ganger. Prøv også å bruke funksjoner som du kan sende inn verdier i.</p>
-</section>
-</section>
-<section class="activity" id="eksempler">
-<h1 class="activity" id="eksempler">Eksempler</h1>
-<figure><img src="/beta/_/oppgaver/src/python/stjerner_og_galakser/sky-flowers.01dc97.png" alt="" title="Blomstereng"></figure>
-<figure><img src="/beta/_/oppgaver/src/python/stjerner_og_galakser/sky-birds.87fd5f.png" alt="" title="Himmel med fugler og skyer"></figure>
-</section>
-</div><div class="row" data-reactid="101"><div class="ImprovePage__container__HeXzk" data-reactid="102"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="103"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="104"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="105"><h2 data-reactid="106">Forbedre denne siden</h2><p data-reactid="107"><!-- react-text: 108 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 109 --> <!-- /react-text --><br data-reactid="110"/><!-- react-text: 111 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="112"><div data-reactid="113"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Python: Stjerner og galakser&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/python/stjerner_og_galakser/stjerner_og_galakser%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/python/stjerner_og_galakser%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="114">Rapporter et problem</a></div><div data-reactid="115"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="116">Gå til forumet</a></div><div data-reactid="117"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/python/stjerner_og_galakser" target="_blank" class="btn btn-orange" data-reactid="118">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="119"><div class="Footer__center__3xqZ_ row" data-reactid="120"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="121">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="122">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="123"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="124"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/smn.41dee6.jpg" data-reactid="125"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="126"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="127"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="128"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/teknograd.7eb17c.png" data-reactid="129"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="130"><img class="Footer__img__25Ink" src="data:image/png;base64,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" data-reactid="131"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="132"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/excITEd.ce9ee2.png" data-reactid="133"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="134"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/uio_ifi.eebbdf.png" data-reactid="135"/></a></div></div></div></div></div>
+    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="-1921313779"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/CCV-assets/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/python" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/python/logo-black.2bf511.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Python</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/python/stjerner_og_galakser/stjerner_og_galakser" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-2.b1bbe2.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Stjerner og galakser</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nn.fa23ab.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_en.7eea7b.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">English</div></div></a></li></ul></div></div><div class="ModeDropdown__gadgetContainer__2HE97" data-reactid="71"><div class="dropdown btn-group btn-group-student" data-reactid="72"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="73"><div data-reactid="74"><span class="ModeDropdown__onlyMode__1fZJE" data-reactid="75">Modus: </span><span data-reactid="76">Elev</span></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="77"><li role="presentation" class="active" data-reactid="78"><a role="menuitem" tabindex="-1" href="#" data-reactid="79">Elev</a></li><li role="presentation" class="" data-reactid="80"><a role="menuitem" tabindex="-1" href="#" data-reactid="81">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="82"><h1 data-reactid="83"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-2.b1bbe2.svg" data-reactid="84"/><!-- react-text: 85 -->Stjerner og galakser<!-- /react-text --></h1><p data-reactid="86"><i data-reactid="87"><!-- react-text: 88 -->Skrevet av:<!-- /react-text --><!-- react-text: 89 --> <!-- /react-text --><span data-reactid="90">Oversatt fra <a href="//codeclub.org.uk">Code Club UK</a></span></i></p><p data-reactid="91"><i data-reactid="92"><!-- react-text: 93 -->Oversatt av:<!-- /react-text --><!-- react-text: 94 --> <!-- /react-text --><!-- react-text: 95 -->Ole Andreas Ramsdal<!-- /react-text --></i></p><div class="Lesson__box__2CtND" data-reactid="96"><div data-reactid="97"><!-- react-text: 98 -->Kurs:<!-- /react-text --><!-- react-text: 99 --> <!-- /react-text --><!-- react-text: 100 -->Python<!-- /react-text --></div><div data-reactid="101">Tema: Tekstbasert</div><div data-reactid="102">Fag: Programmering, Kunst og håndverk</div><div data-reactid="103">Klassetrinn: 8.-10. klasse</div><div data-reactid="104">Språk: Norsk bokmål</div></div><button type="button" class="PrintButton__container__KmVN4 btn btn-sm btn-danger" data-reactid="105">Skriv ut</button><div data-reactid="106"></div><div class="row" data-reactid="107"><div class="ImprovePage__container__HeXzk" data-reactid="108"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="109"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="110"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="111"><h2 data-reactid="112">Forbedre denne siden</h2><p data-reactid="113"><!-- react-text: 114 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 115 --> <!-- /react-text --><br data-reactid="116"/><!-- react-text: 117 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="118"><div data-reactid="119"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Python: Stjerner og galakser&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/python/stjerner_og_galakser/stjerner_og_galakser%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/python/stjerner_og_galakser%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="120">Rapporter et problem</a></div><div data-reactid="121"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="122">Gå til forumet</a></div><div data-reactid="123"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/python/stjerner_og_galakser" target="_blank" class="btn btn-orange" data-reactid="124">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div data-reactid="125"><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="126"><div class="Footer__center__3xqZ_ row" data-reactid="127"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="128">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="129">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="130"><a href="https://www.sparebank1.no" target="_blank" data-reactid="131"><img class="Footer__img__25Ink" src="/beta/CCV-assets/smn.41dee6.jpg" data-reactid="132"/></a><a href="https://ibok.no/" target="_blank" data-reactid="133"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ibok.7f1adf.jpg" data-reactid="134"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="135"><img class="Footer__img__25Ink" src="/beta/CCV-assets/teknograd.6d3bfb.png" data-reactid="136"/></a><a target="_blank" data-reactid="137"><img class="Footer__img__25Ink" src="/beta/CCV-assets/tekna.04ca97.jpg" data-reactid="138"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="139"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ntnu_idi.7bbd05.png" data-reactid="140"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="141"><img class="Footer__img__25Ink" src="/beta/CCV-assets/excITEd.ce9ee2.png" data-reactid="142"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="143"><img class="Footer__img__25Ink" src="/beta/CCV-assets/uio_ifi.eebbdf.png" data-reactid="144"/></a></div></div></div></div></div></div>
 
     
-    <script src="/beta/manifest.23c1399067193edc21b2.js" type="text/javascript"></script>
+    <script src="/beta/manifest.f206b7.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor.38d2c63d7a69e033ce29.js" type="text/javascript"></script>
+    <script src="/beta/vendor.27fe3c.js" type="text/javascript"></script>
     
-    <script src="/beta/main.6e4e7c0881475d602bac.js" type="text/javascript"></script>
+    <script src="/beta/main.c8ba3c.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor2.43d77d0b373ad56cd5d2.js" type="text/javascript"></script>
+    <script src="/beta/vendor2.961fdb.js" type="text/javascript"></script>
     
 </body>
 </html>

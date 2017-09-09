@@ -6,7 +6,7 @@
     <title>Halloweenimasjon | Kodeklubben</title>
 
     
-    <link href="/beta/vendor2.43d77d0b373ad56cd5d2.css" rel="stylesheet">
+    <link href="/beta/vendor2.961fdb.css" rel="stylesheet">
     
 
     <style type="text/css">.App__appContainer__3y6aN {
@@ -117,10 +117,6 @@
   display: inline;
   float: right;
   padding: 4px 0; }
-
-.NavBar__gadgetContainer__28a-C {
-  display: inline-block;
-  padding: 3px 5px; }
 .BreadCrumb__breadcrumb__1u8pT {
   padding-left: 10px;
   float: left;
@@ -171,6 +167,13 @@
 .LanguageDropdown__gadgetContainer__LYX2I {
   display: inline-block;
   padding: 3px 5px; }
+.ModeDropdown__gadgetContainer__2HE97 {
+  display: inline-block;
+  padding: 3px 5px; }
+
+@media (max-width: 767px) {
+  .ModeDropdown__onlyMode__1fZJE {
+    display: none; } }
 .Lesson__container__133OS {
   max-width: 800px;
   padding-left: 15px;
@@ -193,8 +196,13 @@
     .Lesson__container__133OS {
       font-size: 125%; } }
 
-.Lesson__resetButton__312Jx {
-  margin-right: 10px; }
+.Lesson__box__2CtND {
+  display: none;
+  font-style: italic;
+  font-size: 0.75em; }
+  @media print {
+    .Lesson__box__2CtND {
+      display: block; } }
 /*
 
 Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
@@ -589,12 +597,12 @@ section.Content__activity__12AJC .Content__subsection__3XzlJ h2 {
     margin-left: 6px; }
 
 section.Content__check__sbZVW h2 {
-  background-image: url(/beta/15ac74fbc78a1df119501938bf49e877.svg);
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
   padding-top: 4px;
-  padding-bottom: 9px;
-  padding-left: 50px; }
+  padding-bottom: 9px; }
+  section.Content__check__sbZVW h2 img {
+    height: 40px;
+    vertical-align: text-bottom;
+    padding-right: 10px; }
 
 section.Content__try__9Al91 {
   background: #abdbea;
@@ -622,29 +630,27 @@ section.Content__flag__1GjEr {
   margin-bottom: 20px; }
   section.Content__flag__1GjEr h2 {
     color: #36a137;
-    background-image: url(/beta/4a58cdc0f6e0e74bb219124bb5bde3b7.svg);
-    background-position: 0 10px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 15px;
-    padding-bottom: 10px;
-    padding-left: 60px; }
+    padding-bottom: 10px; }
+    section.Content__flag__1GjEr h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
 
 section.Content__save__3P_NU {
   border-top: 3px solid #245a9a;
   margin: 20px 0; }
   section.Content__save__3P_NU h2 {
     color: #245a9a;
-    background-image: url(/beta/0a8afb9f53ba0352c6ae27f9a35fe08a.svg);
-    background-position: 0 10px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
     margin: 0;
     padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 50px; }
+    padding-bottom: 20px; }
+    section.Content__save__3P_NU h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
 
 section.Content__challenge__2LUyO {
   border: 3px solid #00b1da;
@@ -659,6 +665,9 @@ section.Content__challenge__2LUyO {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 0; }
+    @media print {
+      section.Content__challenge__2LUyO h2 {
+        border-bottom: 2px #00b1da solid; } }
   section.Content__challenge__2LUyO > * {
     padding: 0 20px; }
 
@@ -737,6 +746,11 @@ input[type="checkbox"]:checked + label::before {
   content: '\2714';
   line-height: 1.1em;
   padding-left: 0.1em; }
+.PrintButton__container__KmVN4 {
+  margin: 10px 10px 0 0; }
+  @media print {
+    .PrintButton__container__KmVN4 {
+      display: none; } }
 .ImprovePage__font__1MdMv {
   font-family: "Roboto", "Verdana", sans-serif;
   font-weight: 300;
@@ -745,6 +759,9 @@ input[type="checkbox"]:checked + label::before {
 /* Container for improve box */
 .ImprovePage__container__HeXzk {
   margin: 10px 30px; }
+  @media print {
+    .ImprovePage__container__HeXzk {
+      display: none; } }
 
 .ImprovePage__improvePageBox__cyxic {
   display: flex;
@@ -792,6 +809,9 @@ input[type="checkbox"]:checked + label::before {
   font-family: "Roboto", "Verdana", sans-serif; }
   .Footer__container__1SZrv a {
     text-decoration: none; }
+  @media print {
+    .Footer__container__1SZrv {
+      display: none; } }
 
 .Footer__containerStudent__3Yr5f {
   background-color: #b1daae;
@@ -837,483 +857,18 @@ input[type="checkbox"]:checked + label::before {
   transform: scale(1.1);
   box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.5); }
 </style>
-<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon-16x16.png"><link rel="shortcut icon" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/icons-4d5e7ca061cb4e52c7ddfe82070782f8/apple-touch-startup-image-1536x2008.png"></head>
+<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/CCV-icons-4d5e7c/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/CCV-icons-4d5e7c/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/CCV-icons-4d5e7c/favicon-16x16.png"><link rel="shortcut icon" href="/beta/CCV-icons-4d5e7c/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1536x2008.png"></head>
 <body>
-    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="1558807810"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/src/assets/graphics/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/scratch" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/_/oppgaver/src/scratch/logo-black.8dc8be.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Scratch</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/scratch/halloweenimasjon/halloweenimasjon" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/d6aa434b87e479c5f20f9a47e8aca3db.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Halloweenimasjon</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/fa23ab63ff34db5c8c13b39f6e33821c.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/1d1e495a49bf241ea4fa9bc056c0bffa.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">Svenska</div></div></a></li><li role="presentation" class="" data-reactid="71"><a role="menuitem" tabindex="-1" href="#" data-reactid="72"><div data-reactid="73"><img class="LanguageDropdown__flag__14wo3" src="/beta/4492aedc274ad1e87620f7f5a3cc3d71.svg" data-reactid="74"/><div class="LanguageDropdown__language__1g4QB" data-reactid="75">Dansk</div></div></a></li><li role="presentation" class="" data-reactid="76"><a role="menuitem" tabindex="-1" href="#" data-reactid="77"><div data-reactid="78"><img class="LanguageDropdown__flag__14wo3" src="/beta/7eea7bf89b693a96506087f96a5d95a3.svg" data-reactid="79"/><div class="LanguageDropdown__language__1g4QB" data-reactid="80">English</div></div></a></li></ul></div></div><div class="NavBar__gadgetContainer__28a-C" data-reactid="81"><div class="dropdown btn-group btn-group-student" data-reactid="82"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="83"><!-- react-text: 84 -->Modus: Elev<!-- /react-text --></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="85"><li role="presentation" class="active" data-reactid="86"><a role="menuitem" tabindex="-1" href="#" data-reactid="87">Elev</a></li><li role="presentation" class="" data-reactid="88"><a role="menuitem" tabindex="-1" href="#" data-reactid="89">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="90"><h1 data-reactid="91"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/d6aa434b87e479c5f20f9a47e8aca3db.svg" data-reactid="92"/><!-- react-text: 93 -->Halloweenimasjon<!-- /react-text --><!-- react-text: 94 --><!-- /react-text --></h1><p data-reactid="95"><i data-reactid="96"><!-- react-text: 97 -->av<!-- /react-text --><!-- react-text: 98 --> <!-- /react-text --><!-- react-text: 99 -->Torbjørn Skauli og Geir Arne Hjelle<!-- /react-text --></i></p><div data-reactid="100"><section class="intro" id="introduksjon">
-<h1 class="intro" id="introduksjon">Introduksjon</h1>
-<p>Vi vil her se på hvordan vi kan lage forskjellige animasjoner med et
-Halloween-tema. Disse kan vi enten dele med vennene våre gjennom
-Scratch, eller kanskje enda morsommere: Vi kan projisere dem på en
-gardin, et laken eller en vegg under Halloween.</p>
-<figure><img src="/beta/_/oppgaver/src/scratch/halloweenimasjon/halloweenimasjon.21600b.jpg" alt=""></figure>
-</section>
-<section class="activity" id="steg-1-en-forste-animasjon">
-<h1 class="activity" id="steg-1-en-forste-animasjon">Steg 1: En første animasjon</h1>
-<p><em>Vi begynner med å la et skummelt spøkelse fly fram og tilbake over
-skjermen.</em></p>
-<section class="check" id="sjekkliste">
-<h2 class="check" id="sjekkliste">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Start et nytt prosjekt. Slett kattefiguren, ved for eksempel å
-klikke på <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goZCCIQN1fQtwAAAWNJREFUOMvFk79PwlAQxw9jnkOPoe1AGdoalcFojCYiBAOYGEkUB/3/jIP/gw5u8sPgj0BIQIxFk9cOlAEXXpfr4tCECGKwLN74ffncu/veXeTi8grmigWYNxanqihJicQqEb1Z777vhyCLJ4Wh8BhjqqKUKvchqkVEy+pybmMUw1XLuZNOJQGg3mjOdsgw9J3tLUWWAeCuXCWieqPZfnmdQSbWVvLZTDyunZ+dGobu+/5QeH/yFhGJqFZ7yuX2jw4PAjGKEmOs5/Zdt/+TjASboGmx4nEBAIjo+uaWLbF8NoOI3zvvuS7njvC8MTKYIUZxMPgMBpja293cWG+1O1FE09RHKUrlqtX9GPNWeN4oX/A5AAghHh6fA/+WDd009XQqOUlORM/tA0Bc0wJ7bduxbQcqoGmxGXsrhgIAVFWe0Edu/U56HhEhIkpS6Fvh3AEARVVCk612h4hURZ76GvmHy/4CxZeV3bf4tZsAAAAASUVORK5CYII=" alt="Slett"> i menylinjen øverst på
-skjermen, og deretter på katten.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Velg en ny figur ved å klikke
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAATCAYAAAB2pebxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAZNJREFUOE+dk0lPwkAUx/tBcTmw6QELmojWBTFuKILKIkuECiZqtAh6QTyBQkgwMRzkKmfOnJ99ozOZsW1KnORlZtr3fv2/pRIASHamqiXdxdrPFoDBjqkZ6HS7liBbSPQ4BgiR/YH/QdLpDAFQw7tZWqZK2p0OuNxeAUBBqdS5AWSAFIuXpsG8otrjkwASIG/tti0AYaiST0t61QPpg+CqMhEEQdc3tySu0XgBqVqtkcBCQZ0YQNWgIjSSDp8vnt2eOfgcDECrPICytgGO6Vlwe+fJ/tc3mUz/QCJHUeFlqXyFUtkajUaA1my1QA4sCb4YzwrLtxQhaDu7ewykaRXIZHMQi58ySL3+TOoidAelKso6sa/hkKQ0Ho8JqNd7J3smm9endxESiRRriAAJhbdJPWgAgqgqPOPCu0/2W88JSqvoxXTqFY/FT6DZbBE1aAhWS2U44xTQ0bD8AX0LsqEToa2wYeQNNeGn8CByyCDLwRXTYFslufwFOF0eZnjnP8KfLdO5u9dg81f+vq7qo9+3hHwDiSt9l+qqTUcAAAAASUVORK5CYII=" alt="Velg figur fra biblioteket">. Finn
-et skummelt spøkelse! Vi har brukt <code>Fantasi/Ghost2</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_2"><label for="cbx_2"> Trykk på <code class="blockmotion">i</code> øverst til venstre på den nye
-spøkelsesfiguren din. Gi den navnet <code>Spøkelse</code>.</label></p>
-<figure><img src="/beta/_/oppgaver/src/scratch/halloweenimasjon/spokelse.3c7237.png" alt=""></figure>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_3"><label for="cbx_3"> Nå skal vi lage et enkelt skript som får spøkelset til å fly over
-skjermen. Bygg sammen en <code class="blockcontrol">gjenta</code>- og en
-<code class="blockmotion">gå</code>-kloss på denne måten:</label></p>
-<pre class=blocks>gjenta (200) ganger
-    gå (5) steg
-slutt
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Klikk på skriptet ditt for å starte animasjonen. Flytter spøkelset
-ditt på seg? Ser du et problem?</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Spøkelset ser ut som om det setter seg fast når det kommer til
-kanten! Dette kan vi fikse med en
-<code class="blockmotion">sprett tilbake</code>-kloss:</label></p>
-<pre class=blocks>gjenta (200) ganger
-    gå (5) steg
-    sprett tilbake ved kanten
-slutt
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Klikk på skriptet ditt igjen. Virker det bedre nå?</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Hmm ... Spøkelset flyr opp-ned ... Det ser litt rart ut. Vi kan si
-at spøkelset bare skal snu seg sidelengs med en
-<code class="blockmotion">begrens rotasjon</code>-kloss. Denne legger vi helt først i
-skriptet på denne måten:</label></p>
-<pre class=blocks>begrens rotasjon [vend sideveis v]
-gjenta (200) ganger
-    gå (5) steg
-    sprett tilbake ved kanten
-slutt
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Til slutt, det ser skumlere ut med en svart bakgrunn! Klikk på
-<code>Scene</code> helt til venstre på skjermen, og deretter på
-<code class="blocklightgrey">Bakgrunner</code>-fanen nesten øverst på skjermen.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Klikk på malingsspannet,
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAiCAIAAAC8zjzvAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goZCDsBxudZXQAAAsxJREFUSMfFlr9P20AUx18S2xi7IXaTmAWqhLlZQcmGB/6CQgQrQ4HEKiMZikp28kNiAMqKGKnEFnDIBGvbmbhUkELdtCGOLaQk5Do4apFQYjuKw1c3vOH8Pr579+6+DkVR6o1G9a7abDabDw+NRgP6LRzDSJL0+XwOBwAA1mq1KpU7lmUInCAInCCIviPr9Xq5/Pu6VHpB0yzLOIrSN8+Im2VZsFn39/fXpR9DBOGs1WputxvZL5IkX42PVRUFAwCny4VgEMIJAgAwAAA0GGJbGACgZ0Canr2yvCxJEk3Tb5eWZmZmbF/l2dmZJEnv19fPz89Tm5s0TUcikR6RJmspFYsTExORcDgSDmuqurO9HQmHe0A69Y01OVRV1YPXoZAsy7njY2Tlc/QfaU6hUEiWZYRQLpf7uLsLALs7OxcXF5a60xqS4zgASKVSmXRa3yJN0xJra0Ur1DYSEDIzRjmOpmnx5ORxYTRNSyQSnw4Pf97emspjqZbpdFrTtKfHQdO0vb29xcXF/f19M7U02yTZTEYUxe5zDg4OZFl+t7rah77MZrN5I54uURT9fv/8woJBk/SLp+vo6EhVVaO+7KxsJmOJp5dWFMXemySfz5uHRaPRNlVVjZCdxzTPm+TFBSE6P6/H0zxvcGK73LGCIABCp6enhjye5//l4TiuS07jExsXBADoRKUoKi4IU1NTepLJyUn9UuyS0PH5y9fx8THDfdva2io8oVIUtZFMBoNB8/W+uro2+0TH4nEAeEylKOpDMhkIBpF972UsFgOECoVCm7exEQwEevBN1rzPSizm8/u/X16+mZ0NBAK9mSZr3gcAZufm9KBni/ZMDm/QPpaiqGbzwYW5BgBTqsowSWLel2zp5sbr9TqdTvtgrVar/KtMDg2NjnIYjuMe90jlT4VhGfuoNaXGeDwsy7RrybKM/hf2rXKYJD2eET3+C1U6GECQWMloAAAAAElFTkSuQmCC" alt="Fyll med farge">, og deretter på
-den hvite bakgrunnen for å male denne svart.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_10"><label for="cbx_10"> Gi bakgrunnen navnet <code>Svart</code>.</label></p>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-2-enda-en-animasjon">
-<h1 class="activity" id="steg-2-enda-en-animasjon">Steg 2: Enda en animasjon</h1>
-<p><em>For vår andre animasjon vil en demon komme flyvende mot oss.</em></p>
-<figure><img src="/beta/_/oppgaver/src/scratch/halloweenimasjon/demon.bc4c53.png" alt=""></figure>
-<section class="check" id="sjekkliste-2">
-<h2 class="check" id="sjekkliste-2">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Lag en ny figur ved å klikke
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAATCAYAAAB2pebxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAZNJREFUOE+dk0lPwkAUx/tBcTmw6QELmojWBTFuKILKIkuECiZqtAh6QTyBQkgwMRzkKmfOnJ99ozOZsW1KnORlZtr3fv2/pRIASHamqiXdxdrPFoDBjqkZ6HS7liBbSPQ4BgiR/YH/QdLpDAFQw7tZWqZK2p0OuNxeAUBBqdS5AWSAFIuXpsG8otrjkwASIG/tti0AYaiST0t61QPpg+CqMhEEQdc3tySu0XgBqVqtkcBCQZ0YQNWgIjSSDp8vnt2eOfgcDECrPICytgGO6Vlwe+fJ/tc3mUz/QCJHUeFlqXyFUtkajUaA1my1QA4sCb4YzwrLtxQhaDu7ewykaRXIZHMQi58ySL3+TOoidAelKso6sa/hkKQ0Ho8JqNd7J3smm9endxESiRRriAAJhbdJPWgAgqgqPOPCu0/2W88JSqvoxXTqFY/FT6DZbBE1aAhWS2U44xTQ0bD8AX0LsqEToa2wYeQNNeGn8CByyCDLwRXTYFslufwFOF0eZnjnP8KfLdO5u9dg81f+vq7qo9+3hHwDiSt9l+qqTUcAAAAASUVORK5CYII=" alt="Velg figur fra biblioteket">. Vi
-har brukt <code>Fantasi/Ghoul</code>. Endre navnet på figuren til <code>Demon</code>.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_12"><label for="cbx_12"> For at det skal se ut som demonen kommer flyvende mot oss, vil vi at
-den skal starte veldig liten, og deretter bli større. Lag dette
-skriptet.</label></p>
-<pre class=blocks>sett størrelse til (0) %
-gjenta (100) ganger
-    endre størrelse med (4)
-slutt
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_13"><label for="cbx_13"> Trykk på skriptet for å se om det virker.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_14"><label for="cbx_14"> Et lite problem er at spøkelset også ligger på skjermen. Det vil
-være bedre å skjule spøkelset når det ikke animeres. Klikk på
-spøkelsesfiguren, og legg til en <code class="blocklooks">vis</code>- og en
-<code class="blocklooks">skjul</code>-kloss i skriptet:</label></p>
-<pre class=blocks>begrens rotasjon [vend sideveis v]
-vis
-gjenta (200) ganger
-    gå (5) steg
-    sprett tilbake ved kanten
-slutt
-skjul
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_15"><label for="cbx_15"> Klikk på spøkelset sitt skript. Skjules spøkelset etter at det er
-ferdig med å fly frem og tilbake?</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_16"><label for="cbx_16"> Vi kan også gjøre det samme med demonen sitt skript. Klikk på
-demon-figuren, og endre skriptet til</label></p>
-<pre class=blocks>sett størrelse til (0) %
-vis
-gjenta (100) ganger
-    endre størrelse med (4)
-slutt
-skjul
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_17"><label for="cbx_17"> For å få litt variasjon vil vi at demonen skal animeres over en
-skummel skog-bakgrunn. Klikk på
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAIAAAC63aDhAAAAA3NCSVQICAjb4U/gAAAAGXRFWHRTb2Z0d2FyZQBnbm9tZS1zY3JlZW5zaG907wO/PgAAASNJREFUOI3llK9uwzAQxt1pwDeWspnmFQI7uLKU1X2DFa6oe41mrGMpq8fisYbV0GbzoNmsog6aDnjKouVPF6mVKvVDJ+u7n+/OOvfsboeOpKtjgc6YdV1EabrSWnfNJ4TMZo9/Wc656fQhDMNOrPn8qaauqj6tzTc5YByPYgA4yG2bV77JtdZSKSVV+QLnXGdWIQzYB1LKZJGk6arW1tYjpePt9vYGIIoiD2LsFSFkjGFrRif0MOtrvw/6fYQQAAyH9/6QrZlUv51KpQghg7tBGyvLuBBiFMeFzznHM14G/Tg5L3qvYWn9IYTwvnetJ3SMAZbLF2tt7RA4f2tkeZCXMWaRPAdB0ATyJTeyqtam56/Vue72aVj/2biqylm9C/ijvwFjEHjPhVu+swAAAABJRU5ErkJggg==" alt="Velg en ferdig bakgrunn">
-helt til venstre på skjermen, og velg bakgrunnen
-<code>Utendørs/forest</code>. Gi bakgrunnen navnet <code>Skog</code>.</label></p>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-3-bytte-bakgrunner">
-<h1 class="activity" id="steg-3-bytte-bakgrunner">Steg 3: Bytte bakgrunner</h1>
-<p><em>Vi vil nå se på hvordan vi lett kan bytte bakgrunn når vi starter en
-animasjon.</em></p>
-<section class="check" id="sjekkliste-3">
-<h2 class="check" id="sjekkliste-3">Sjekkliste</h2>
-<p>Hvis vi for eksempel vil vise spøkelsesanimasjonen på svart bakgrunn
-må vi først klikke <code>Scene</code>, deretter <code>Bakgrunner</code>-fanen og den svarte
-bakgrunnen. Videre må vi klikke på spøkelsesfiguren, <code>Skript</code>-fanen og
-til slutt på selve skriptet. Dette er veldig tungvint! Vi vil nå se
-hvordan vi kan bruke meldinger for å gjøre dette mye enklere.</p>
-<p>Meldinger gjør det lett å få flere ting til å skje samtidig. Vi skal
-nå først lage en melding, <code>Animer spøkelse</code>. Vi vil at denne meldingen
-skal både bytte bakgrunnen og starte spøkelsesanimasjonen.</p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_18"><label for="cbx_18"> Klikk på <code>Scene</code> og lag dette skriptet:</label></p>
-<pre class=blocks>når jeg mottar [Animer spøkelse v]
-bytt bakgrunn til [Svart v]
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_19"><label for="cbx_19"> Klikk på spøkelsesfiguren og endre skriptet ved å legge til en kloss
-på toppen:</label></p>
-<pre class=blocks>når jeg mottar [Animer spøkelse v]
-begrens rotasjon [vend sideveis v]
-vis
-gjenta (200) ganger
-    gå (5) steg
-    sprett tilbake ved kanten
-slutt
-skjul
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_20"><label for="cbx_20"> Nå venter skriptene våre på meldingen. For å teste kan vi dra
-klossen</label></p>
-<pre class=blocks>send melding [Animer spøkelse v]
-</pre>
-<p>ut ved siden av det store skriptet til spøkelset.</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_21"><label for="cbx_21"> Send meldingen ved å klikke på <code class="blockevents">send melding</code>-klossen.
-Animeres spøkelset over en svart bakgrunn?</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_22"><label for="cbx_22"> Vi vil nå gjøre det samme for demonen. Legg til et nytt skript på
-scenen:</label></p>
-<pre class=blocks>når jeg mottar [Animer demon v]
-bytt bakgrunn til [Skog v]
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_23"><label for="cbx_23"> Klikk på demonfiguren og endre skriptet slik</label></p>
-<pre class=blocks>når jeg mottar [Animer demon v]
-sett størrelse til (0) %
-vis
-gjenta (100) ganger
-    endre størrelse med (4)
-slutt
-skjul
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_24"><label for="cbx_24"> Legg også til klossen</label></p>
-<pre class=blocks>send melding [Animer demon v]
-</pre>
-<p>for å teste at animasjonen fungerer.</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_25"><label for="cbx_25"> Send meldingene som animerer spøkelset og demonen. Starter
-animasjonene når du klikker på meldingene? Byttes bakgrunnene
-riktig?</label></p>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-4-koble-sammen-animasjonene">
-<h1 class="activity" id="steg-4-koble-sammen-animasjonene">Steg 4: Koble sammen animasjonene</h1>
-<p><em>Nå skal vi se hvordan vi kan koble sammen animasjonene slik at de
-vises i sekvens etter hverandre.</em></p>
-<section class="check" id="sjekkliste-4">
-<h2 class="check" id="sjekkliste-4">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_26"><label for="cbx_26"> Vi begynner med å lage en <code class="blockcontrol">for alltid</code>-løkke på
-scenen, som sender meldinger:</label></p>
-<pre class=blocks>for alltid
-    send melding [Animer spøkelse v] og vent
-    send melding [Animer demon v] og vent
-slutt
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_27"><label for="cbx_27"> Klikk på skriptet for å teste det. Trykk den røde stopp-sirkelen for
-å stoppe animasjonen. Vises animasjonene etter hverandre i en evig løkke?</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_28"><label for="cbx_28"> Det vil se litt bedre ut med en kort pause mellom animasjonene. Legg
-til et par <code class="blockcontrol">vent</code>-klosser i skriptet.</label></p>
-<pre class=blocks>for alltid
-    send melding [Animer spøkelse v] og vent
-    vent (1) sekunder
-    send melding [Animer demon v] og vent
-    vent (1) sekunder
-slutt
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_29"><label for="cbx_29"> For å gjøre det enklere å starte animasjonen legger vi til en kloss
-som gjør at animasjonen starter når det grønne flagget øverst på
-skjermen klikkes.</label></p>
-<pre class=blocks>når grønt flagg klikkes
-for alltid
-    send melding [Animer spøkelse v] og vent
-    vent (1) sekunder
-    send melding [Animer demon v] og vent
-    vent (1) sekunder
-slutt
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_30"><label for="cbx_30"> Vi kan også bruke grønt flagg-klosser på figurene for å være sikre
-på at de starter animasjonen på riktig måte. Legg dette skriptet på
-spøkelset:</label></p>
-<pre class=blocks>når grønt flagg klikkes
-skjul
-gå til x: (0) y:(0)
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_31"><label for="cbx_31"> Legg et tilsvarende skript på demonen:</label></p>
-<pre class=blocks>når grønt flagg klikkes
-skjul
-gå til x: (0) y:(0)
-</pre>
-</li>
-</ul>
-</section>
-<section class="flag" id="test-prosjektet">
-<h2 class="flag" id="test-prosjektet">Test prosjektet</h2>
-<p><strong>Klikk på det grønne flagget.</strong></p>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_32"><label for="cbx_32"> Kjøres begge animasjonene etter hverandre? Dukker figurene opp når de skal?</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_33"><label for="cbx_33"> Endre gjerne i animasjonene slik at du synes de ser bedre
-ut. Kanskje du vil ha litt andre figurer? Hvordan kan du få figurene
-til å bevege seg raskere? Kanskje litt mer tilfeldig? Prøv deg frem!</label></p>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-5-tegn-egne-figurer">
-<h1 class="activity" id="steg-5-tegn-egne-figurer">Steg 5: Tegn egne figurer</h1>
-<p><em>Vi vil nå lage en tredje animasjon hvor vi tegner en figur på egen hånd</em></p>
-<section class="check" id="sjekkliste-5">
-<h2 class="check" id="sjekkliste-5">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_34"><label for="cbx_34"> Lag en ny figur ved å trykke på
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAASCAIAAAAL/BNYAAAAA3NCSVQICAjb4U/gAAAAGXRFWHRTb2Z0d2FyZQBnbm9tZS1zY3JlZW5zaG907wO/PgAAAWhJREFUKJGV001LAmEQB/CZTSQRF1JEyIMHk67b+gFs6ZCH6mLUat+m+iC9UDft4kU7lUJpkVHdTExccy3yYC2G4jMdNjZbXannOj9m/jPw4LOqwp8fZ1UgIiICgEKxuLO9+1StTtIAgIi1Wm1/78Ax7Zj1+y01ESHie6dzdHg86PfFsGC328drnRJRMnmiNBS3Z0YQBL1ks4qRO8/l8/kpjlsQw26PZ/yWjDFEVBQlk8nYbDae5yVpUR9o1kTEcRwAnJ3l2m9txgbSkuT1eg1g1gBQr9dvrq8AMTgXjEQixia/tNH4/u6h2/10uXhZlp1Op0HNGgDUZjObPWVEm/GNQCAwTH+00TidTmvaRzwhh0Vx9FDfF0TEXq+n1BuNhhqNLutxGWN6C7PWNC2VTJVKt2FRjK3HhqeN0ZVK5eKygADl8uNoAHPul9YrMca7+NW1FSObZe5mSw3Nh7YSCZ/PN6E3/us3fAGf6qiB37u5YAAAAABJRU5ErkJggg==" alt="Tegn ny figur"> ved siden av <code>Ny figur</code>. Du kan tegne hva du vil. Her har vi tegnet et
-Jack-O'-Lantern-gresskar.</label></p>
-<figure><img src="/beta/_/oppgaver/src/scratch/halloweenimasjon/gresskar.ce77ae.png" alt=""></figure>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_35"><label for="cbx_35"> Lag en kopi av drakten du nettopp tegnet ved å høyreklikke på
-miniatyren under <code>Ny drakt</code>-overskriften og velg <code>lag en kopi</code>.</label></p>
-<figure><img src="/beta/_/oppgaver/src/scratch/halloweenimasjon/kopier_gresskar.1b39fe.png" alt=""></figure>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_36"><label for="cbx_36"> Endre litt på den kopierte drakten, slik at du får to drakter som er
-ganske, men ikke helt, like. Vi vil nå animere figuren ved å bytte
-mellom de to draktene.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_37"><label for="cbx_37"> Klikk på <code class="blocklightgrey">Skript</code>-fanen og legg på dette skriptet:</label></p>
-<pre class=blocks>når jeg mottar [Animer gresskar v]
-vis
-gjenta (50) ganger
-    neste drakt
-    vent (tilfeldig tall fra (0.1) til (0.3)) sekunder
-slutt
-skjul
-</pre>
-<p>Bytt gjerne ut meldingsnavnet <code>Animer gresskar</code> med noe som passer
-for din figur. Klikk på skriptet (eller send en melding) for å
-teste animasjonen. Ser det bra ut?</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_38"><label for="cbx_38"> Legg også til startposisjonen for den figuren:</label></p>
-<pre class=blocks>når grønt flagg klikkes
-skjul
-gå til x: (0) y: (0)
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_39"><label for="cbx_39"> Gå så til scenen og legg på et skript som bytter til riktig bakgrunn
-for den siste animasjonen. Her har vi brukt den svarte bakgrunnen.</label></p>
-<pre class=blocks>når jeg mottar [Animer gresskar v]
-bytt bakgrunn til [Svart v]
-</pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_40"><label for="cbx_40"> Til slutt legger vi denne siste animasjonen til i hovedløkken som
-viser animasjonene:</label></p>
-<pre class=blocks>når grønt flagg klikkes
-for alltid
-    send melding [Animer spøkelse v] og vent
-    vent (1) sekunder
-    send melding [Animer demon v] og vent
-    vent (1) sekunder
-    send melding [Animer gresskar v] og vent
-    vent (1) sekunder
-slutt
-</pre>
-</li>
-</ul>
-</section>
-</section>
-<section class="activity" id="steg-6-enda-flere-animasjoner">
-<h1 class="activity" id="steg-6-enda-flere-animasjoner">Steg 6: Enda flere animasjoner?</h1>
-<section class="challenge" id="prov-selv">
-<h3 class="challenge" id="prov-selv">Prøv selv</h3>
-<p>Vi har nå sett noen eksempler på hvordan vi kan lage skumle
-halloween-animasjoner. Prøv å bruk lignende teknikker for å lage dine
-egne animasjoner!</p>
-</section>
-<section class="save" id="legg-ut-prosjektet">
-<h2 class="save" id="legg-ut-prosjektet">Legg ut prosjektet</h2>
-<p>Når du er fornøyd med animasjonene dine kan du dele det med familie og
-venner, ved å trykke <code>Legg ut</code>.</p>
-</section>
-</section>
-<section class="activity" id="projiser-animasjonene">
-<h1 class="activity" id="projiser-animasjonene">Projiser animasjonene</h1>
-<p><em>Vi avslutter med å se på hvordan du kan skremme nabolaget med de
-skumle animasjonene dine slik at alle kan se dem.</em></p>
-<p>Det enkleste er å sette skjermen i vinduet, og klikke på firkanten for
-fullskjermvisning øverst til venstre under Scratch-logoen. Men hvis du
-kan låne en prosjektør til Halloween kan du vise animasjonen utendørs,
-på en vegg eller på et gardin eller laken, slik bildet i begynnelsen
-viser. I begge tilfeller er det litt dumt at Scratch viser animasjonen
-med en hvit ramme på skjermen. For å få en bedre visning kan du følge
-tipsene nedenfor.</p>
-<section class="check" id="sjekkliste-6">
-<h2 class="check" id="sjekkliste-6">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_41"><label for="cbx_41"> Først lager vi en fil som viser animasjonen din i et større vindu
-med svart bakgrunn. Dette gjør vi med litt HTML-kode. HTML er det
-språket som brukes til å lage nettsider.</label></p>
-<p>Last ned filen <a href="projiser.html">projiser.html</a>.  Etter at du har
-gått til denne adressen kan du velge <code>Fil &gt; lagre som</code>, eller noe
-som ligner, i menyen til nettleseren din. Legg filen et sted du
-finner den igjen.</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_42"><label for="cbx_42"> Åpne filen i Notepad eller et tilsvarende program. Du vil se en
-tekst som ser slik ut:</label></p>
-<pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Halloweenimasjon<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">bgcolor</span>=<span class="hljs-string">"#000000"</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"overflow-y: hidden; height: 890px; margin-left: auto; margin-right: auto; width: 1180px;"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"applet"</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">iframe</span>
-  <span class="hljs-attr">style</span>=<span class="hljs-string">"margin-top:-56px; margin-left: -10px"</span>
-  <span class="hljs-attr">allowtransparency</span>=<span class="hljs-string">"true"</span>
-  <span class="hljs-attr">width</span>=<span class="hljs-string">"1200"</span>
-  <span class="hljs-attr">height</span>=<span class="hljs-string">"960"</span>
-  <span class="hljs-attr">src</span>=<span class="hljs-string">"http://scratch.mit.edu/projects/embed/30923784/?autostart=true"</span>
-  <span class="hljs-attr">frameborder</span>=<span class="hljs-string">"0"</span>
-  <span class="hljs-attr">scrolling</span>=<span class="hljs-string">"no"</span>
-  <span class="hljs-attr">seamless</span>=<span class="hljs-string">"seamless"</span>
-  <span class="hljs-attr">allowfullscreen</span>=<span class="hljs-string">""</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
-</code></pre>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_43"><label for="cbx_43"> Gjemt inne i denne teksten står det et Scratch-prosjektnummer. I
-dette tilfelle er nummeret <code>30923784</code>. Du må bytte dette nummeret
-med prosjektnummeret ditt.</label></p>
-</li>
-</ul>
-<section class="protip" id="prosjektnummer">
-<h3 class="protip" id="prosjektnummer">Prosjektnummer</h3>
-<p>For å finne prosjektnummeret ditt kan du se i adressefeltet i
-nettleseren din mens du jobber med prosjektet. Som en del av adressen
-finner du et 8-sifret tall. Dette er ditt prosjektnummer.</p>
-</section>
-</section>
-<section class="check" id="sjekkliste-7">
-<h2 class="check" id="sjekkliste-7">Sjekkliste</h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_44"><label for="cbx_44"> Bytt <code>30923784</code> med ditt prosjektnummer og lagre filen.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_45"><label for="cbx_45"> I nettleseren din kan du nå åpne filen du nettopp endret. Velg
-<code>Fil &gt; åpne fil</code>, eller noe som ligner, i nettleseren din. Velg den
-riktige filen.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_46"><label for="cbx_46"> Du skal nå se animasjonen din på svart bakgrunn.</label></p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_47"><label for="cbx_47"> Koble datamaskinen din til en prosjektør, og vis animasjonen
-din på et hvitt laken, en gardin eller kanskje en vegg!</label></p>
-</li>
-</ul>
-</section>
-</section>
-</div><div class="row" data-reactid="101"><div class="ImprovePage__container__HeXzk" data-reactid="102"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="103"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="104"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="105"><h2 data-reactid="106">Forbedre denne siden</h2><p data-reactid="107"><!-- react-text: 108 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 109 --> <!-- /react-text --><br data-reactid="110"/><!-- react-text: 111 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="112"><div data-reactid="113"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Scratch: Halloweenimasjon&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/scratch/halloweenimasjon/halloweenimasjon%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/halloweenimasjon%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="114">Rapporter et problem</a></div><div data-reactid="115"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="116">Gå til forumet</a></div><div data-reactid="117"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/halloweenimasjon" target="_blank" class="btn btn-orange" data-reactid="118">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="119"><div class="Footer__center__3xqZ_ row" data-reactid="120"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="121">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="122">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="123"><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="124"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/smn.41dee6.jpg" data-reactid="125"/></a><a href="http://kidsakoder.no/2015/07/03/kodeklubben-trondheim-utvikler-materiell-i-sommer/" target="_blank" data-reactid="126"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/ibok.7f1adf.jpg" data-reactid="127"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="128"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/teknograd.7eb17c.png" data-reactid="129"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="130"><img class="Footer__img__25Ink" src="data:image/png;base64,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" data-reactid="131"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="132"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/excITEd.ce9ee2.png" data-reactid="133"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="134"><img class="Footer__img__25Ink" src="/beta/src/assets/graphics/uio_ifi.eebbdf.png" data-reactid="135"/></a></div></div></div></div></div>
+    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="243520090"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/CCV-assets/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/scratch" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/scratch/logo-black.8dc8be.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Scratch</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/scratch/halloweenimasjon/halloweenimasjon" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Halloweenimasjon</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nn.fa23ab.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_en.7eea7b.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">English</div></div></a></li></ul></div></div><div class="ModeDropdown__gadgetContainer__2HE97" data-reactid="71"><div class="dropdown btn-group btn-group-student" data-reactid="72"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="73"><div data-reactid="74"><span class="ModeDropdown__onlyMode__1fZJE" data-reactid="75">Modus: </span><span data-reactid="76">Elev</span></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="77"><li role="presentation" class="active" data-reactid="78"><a role="menuitem" tabindex="-1" href="#" data-reactid="79">Elev</a></li><li role="presentation" class="" data-reactid="80"><a role="menuitem" tabindex="-1" href="#" data-reactid="81">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="82"><h1 data-reactid="83"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="84"/><!-- react-text: 85 -->Halloweenimasjon<!-- /react-text --></h1><p data-reactid="86"><i data-reactid="87"><!-- react-text: 88 -->Skrevet av:<!-- /react-text --><!-- react-text: 89 --> <!-- /react-text --><span data-reactid="90">Torbjørn Skauli og Geir Arne Hjelle</span></i></p><div class="Lesson__box__2CtND" data-reactid="91"><div data-reactid="92"><!-- react-text: 93 -->Kurs:<!-- /react-text --><!-- react-text: 94 --> <!-- /react-text --><!-- react-text: 95 -->Scratch<!-- /react-text --></div><div data-reactid="96">Tema: Blokkbasert, Animasjon</div><div data-reactid="97">Fag: Engelsk, Kunst og håndverk, Programmering</div><div data-reactid="98">Klassetrinn: 1.-4. klasse, 5.-7. klasse, 8.-10. klasse</div><div data-reactid="99">Språk: Norsk bokmål</div></div><button type="button" class="PrintButton__container__KmVN4 btn btn-sm btn-danger" data-reactid="100">Skriv ut</button><div data-reactid="101"></div><div class="row" data-reactid="102"><div class="ImprovePage__container__HeXzk" data-reactid="103"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="104"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="105"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="106"><h2 data-reactid="107">Forbedre denne siden</h2><p data-reactid="108"><!-- react-text: 109 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 110 --> <!-- /react-text --><br data-reactid="111"/><!-- react-text: 112 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="113"><div data-reactid="114"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Scratch: Halloweenimasjon&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/scratch/halloweenimasjon/halloweenimasjon%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/halloweenimasjon%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="115">Rapporter et problem</a></div><div data-reactid="116"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="117">Gå til forumet</a></div><div data-reactid="118"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/halloweenimasjon" target="_blank" class="btn btn-orange" data-reactid="119">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div data-reactid="120"><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="121"><div class="Footer__center__3xqZ_ row" data-reactid="122"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="123">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="124">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="125"><a href="https://www.sparebank1.no" target="_blank" data-reactid="126"><img class="Footer__img__25Ink" src="/beta/CCV-assets/smn.41dee6.jpg" data-reactid="127"/></a><a href="https://ibok.no/" target="_blank" data-reactid="128"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ibok.7f1adf.jpg" data-reactid="129"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="130"><img class="Footer__img__25Ink" src="/beta/CCV-assets/teknograd.6d3bfb.png" data-reactid="131"/></a><a target="_blank" data-reactid="132"><img class="Footer__img__25Ink" src="/beta/CCV-assets/tekna.04ca97.jpg" data-reactid="133"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="134"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ntnu_idi.7bbd05.png" data-reactid="135"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="136"><img class="Footer__img__25Ink" src="/beta/CCV-assets/excITEd.ce9ee2.png" data-reactid="137"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="138"><img class="Footer__img__25Ink" src="/beta/CCV-assets/uio_ifi.eebbdf.png" data-reactid="139"/></a></div></div></div></div></div></div>
 
     
-    <script src="/beta/manifest.23c1399067193edc21b2.js" type="text/javascript"></script>
+    <script src="/beta/manifest.f206b7.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor.38d2c63d7a69e033ce29.js" type="text/javascript"></script>
+    <script src="/beta/vendor.27fe3c.js" type="text/javascript"></script>
     
-    <script src="/beta/main.6e4e7c0881475d602bac.js" type="text/javascript"></script>
+    <script src="/beta/main.c8ba3c.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor2.43d77d0b373ad56cd5d2.js" type="text/javascript"></script>
+    <script src="/beta/vendor2.961fdb.js" type="text/javascript"></script>
     
 </body>
 </html>
