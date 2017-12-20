@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bli Kjent med Datamaskinen | Kodeklubben</title>
+
+    
+    <link href="/beta/vendor2.c7170b.css" rel="stylesheet">
+    
+
+    <style type="text/css">.App__appContainer__3y6aN {
+  overflow-x: hidden; }
+.NavBar__navbarWrapper__35BW9 .navbar > .container-fluid {
+  padding: 0; }
+  .NavBar__navbarWrapper__35BW9 .navbar > .container-fluid .navbar-header {
+    margin: 0; }
+  .NavBar__navbarWrapper__35BW9 .navbar > .container-fluid .navbar-collapse {
+    margin: 0;
+    padding: 0; }
+
+.NavBar__navbarWrapper__35BW9 .navbar-nav {
+  margin: 0; }
+
+.NavBar__navbarWrapper__35BW9 .navbar-brand {
+  padding: 0 10px; }
+
+.NavBar__navbarWrapper__35BW9 .navbar-default {
+  background-color: #f2f2f2; }
+  .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav {
+    background-color: transparent; }
+    .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a {
+      color: #444; }
+      .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a:focus {
+        color: #0fbe7c;
+        background-color: transparent; }
+      .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a:hover {
+        color: #0fbe7c;
+        background-color: transparent; }
+    .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a, .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a:focus, .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a:hover {
+      color: #0fbe7c;
+      background-color: transparent; }
+
+.NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle {
+  float: none;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  width: 100%;
+  color: white;
+  font-size: 1.2em; }
+  .NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle, .NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle:focus {
+    background-color: #3a3a3a; }
+  .NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle:hover {
+    background-color: #0fbe7c; }
+  .NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle .icon-bar {
+    background-color: white; }
+
+@media (max-width: 767px) {
+  .NavBar__navbarWrapper__35BW9 .navbar-header {
+    text-align: center; }
+  .NavBar__navbarWrapper__35BW9 .navbar-brand {
+    float: none;
+    display: inline-block;
+    padding: 0; }
+  .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav {
+    background-color: #3a3a3a; }
+    .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a {
+      color: white; }
+      .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a:focus {
+        color: white;
+        background-color: #3a3a3a; }
+      .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a:hover {
+        color: white;
+        background-color: #0fbe7c; }
+    .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a, .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a:focus, .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a:hover {
+      color: white;
+      background-color: #0fbe7c; } }
+
+.NavBar__toggleContent__1tzFa {
+  display: inline-block;
+  padding: 0 5px; }
+
+.NavBar__navContainer__3KRmh {
+  background-color: #3a3a3a;
+  padding: 0 20px; }
+
+.NavBar__logo__6osKq {
+  height: 127px; }
+
+.NavBar__spacing__2FOa3 {
+  width: 100%;
+  height: 77px; }
+  @media (max-width: 767px) {
+    .NavBar__spacing__2FOa3 {
+      height: 0;
+      width: 0; } }
+
+.NavBar__widgets__9B6hC {
+  display: inline-block;
+  width: 100%;
+  min-height: 50px;
+  font-family: "Roboto", "Verdana", sans-serif;
+  font-weight: 300;
+  border-radius: 0;
+  margin-bottom: -5px; }
+
+.NavBar__widgetStudent__2MyCf {
+  color: #265732;
+  background-color: #b1daae; }
+
+.NavBar__widgetTeacher__2mxrU {
+  color: #215651;
+  background-color: #a3cccb; }
+
+.NavBar__gadgetGroup__2VPWF {
+  display: inline;
+  float: right;
+  padding: 4px 0; }
+.BreadCrumb__breadcrumb__1u8pT {
+  padding-left: 10px;
+  float: left;
+  font-size: 30px; }
+
+.BreadCrumb__homeIcon__1AzmV {
+  line-height: 43px;
+  font-size: 0.8em; }
+
+.BreadCrumb__courseIcon__2aqTu {
+  height: 50px;
+  padding: 10px 0 15px; }
+
+.BreadCrumb__lessonLink__o9_Mz {
+  font-size: 20px;
+  vertical-align: middle; }
+
+.BreadCrumb__lesson__1OSql {
+  margin-left: 7px; }
+  @media (max-width: 767px) {
+    .BreadCrumb__lesson__1OSql {
+      display: none; } }
+.NavLink__linkBase__1m4Sm {
+  color: black; }
+  .NavLink__linkBase__1m4Sm:focus, .NavLink__linkBase__1m4Sm:hover {
+    text-decoration: none;
+    color: black; }
+  .NavLink__linkBase__1m4Sm:hover {
+    opacity: 0.5;
+    color: black; }
+.LevelIcon__levelIcon__2LO2- {
+  margin-right: 0.3em;
+  width: 0.75em;
+  height: 0.75em;
+  vertical-align: baseline; }
+.LanguageDropdown__language__1g4QB {
+  margin-left: 10px; }
+
+@media (max-width: 767px) {
+  .LanguageDropdown__onlyFlag__UCJAY {
+    display: none; } }
+
+.LanguageDropdown__flag__14wo3 {
+  margin: 1px 0;
+  width: 30px;
+  height: 20px; }
+
+.LanguageDropdown__gadgetContainer__LYX2I {
+  display: inline-block;
+  padding: 3px 5px; }
+.ModeDropdown__gadgetContainer__2HE97 {
+  display: inline-block;
+  padding: 3px 5px; }
+
+@media (max-width: 767px) {
+  .ModeDropdown__onlyMode__1fZJE {
+    display: none; } }
+
+.ModeDropdown__icon__3I03J {
+  margin-top: 2px;
+  margin-right: 10px; }
+.Lesson__container__133OS {
+  max-width: 800px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; }
+  .Lesson__container__133OS figure > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px; }
+  @media (max-width: 767px) {
+    .Lesson__container__133OS {
+      font-size: 106.25%; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .Lesson__container__133OS {
+      font-size: 118.75%; } }
+  @media (min-width: 992px) {
+    .Lesson__container__133OS {
+      font-size: 125%; } }
+
+.Lesson__box__2CtND {
+  display: none;
+  font-style: italic;
+  font-size: 0.75em; }
+  @media print {
+    .Lesson__box__2CtND {
+      display: block; } }
+/*
+
+Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+.Content__hljs__3U3C5 {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #000;
+  background: #fff; }
+
+.Content__hljs-subst__2pbFW,
+.Content__hljs-title__1NRbS {
+  font-weight: normal;
+  color: #000; }
+
+.Content__hljs-comment__2_Ezx,
+.Content__hljs-quote__2OYA5 {
+  color: #808080;
+  font-style: italic; }
+
+.Content__hljs-meta__otMql {
+  color: #808000; }
+
+.Content__hljs-tag__3JFP3 {
+  background: #efefef; }
+
+.Content__hljs-section__1q6Ri,
+.Content__hljs-name__2Cvim,
+.Content__hljs-literal__7rtGP,
+.Content__hljs-keyword__1gFtb,
+.Content__hljs-selector-tag__3DPD7,
+.Content__hljs-type__1tL9w,
+.Content__hljs-selector-id__3RV11,
+.Content__hljs-selector-class__1YokA {
+  font-weight: bold;
+  color: #000080; }
+
+.Content__hljs-attribute__NlSqs,
+.Content__hljs-number__1Gqqo,
+.Content__hljs-regexp__lxJZu,
+.Content__hljs-link__2O7c_ {
+  font-weight: bold;
+  color: #0000ff; }
+
+.Content__hljs-number__1Gqqo,
+.Content__hljs-regexp__lxJZu,
+.Content__hljs-link__2O7c_ {
+  font-weight: normal; }
+
+.Content__hljs-string__2DCAo {
+  color: #008000;
+  font-weight: bold; }
+
+.Content__hljs-symbol__3Phin,
+.Content__hljs-bullet__u6Nvq,
+.Content__hljs-formula__1EouS {
+  color: #000;
+  background: #d0eded;
+  font-style: italic; }
+
+.Content__hljs-doctag__1_4v0 {
+  text-decoration: underline; }
+
+.Content__hljs-variable__2B6Js,
+.Content__hljs-template-variable__1bdN5 {
+  color: #660e7a; }
+
+.Content__hljs-addition__3aghy {
+  background: #baeeba; }
+
+.Content__hljs-deletion__fahjb {
+  background: #ffc8bd; }
+
+.Content__hljs-emphasis__ohx_M {
+  font-style: italic; }
+
+.Content__hljs-strong__3Dxks {
+  font-weight: bold; }
+
+table {
+  background-color: transparent; }
+
+caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #777777;
+  text-align: left; }
+
+th {
+  text-align: left; }
+
+.Content__table__2Gq2x, table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 22px; }
+  .Content__table__2Gq2x > thead > tr > th, table > thead > tr > th,
+  .Content__table__2Gq2x > thead > tr > td, table > thead > tr > td,
+  .Content__table__2Gq2x > tbody > tr > th, table > tbody > tr > th,
+  .Content__table__2Gq2x > tbody > tr > td, table > tbody > tr > td,
+  .Content__table__2Gq2x > tfoot > tr > th, table > tfoot > tr > th,
+  .Content__table__2Gq2x > tfoot > tr > td, table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857;
+    vertical-align: top;
+    border-top: 1px solid #000; }
+  .Content__table__2Gq2x > thead > tr > th, table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #000; }
+  .Content__table__2Gq2x > caption + thead > tr:first-child > th, table > caption + thead > tr:first-child > th,
+  .Content__table__2Gq2x > caption + thead > tr:first-child > td, table > caption + thead > tr:first-child > td,
+  .Content__table__2Gq2x > colgroup + thead > tr:first-child > th, table > colgroup + thead > tr:first-child > th,
+  .Content__table__2Gq2x > colgroup + thead > tr:first-child > td, table > colgroup + thead > tr:first-child > td,
+  .Content__table__2Gq2x > thead:first-child > tr:first-child > th, table > thead:first-child > tr:first-child > th,
+  .Content__table__2Gq2x > thead:first-child > tr:first-child > td, table > thead:first-child > tr:first-child > td {
+    border-top: 0; }
+  .Content__table__2Gq2x > tbody + tbody, table > tbody + tbody {
+    border-top: 2px solid #000; }
+  .Content__table__2Gq2x .Content__table__2Gq2x, table .Content__table__2Gq2x, .Content__table__2Gq2x table, table table {
+    background-color: #fff; }
+
+.Content__table-condensed__2Qjps > thead > tr > th,
+.Content__table-condensed__2Qjps > thead > tr > td,
+.Content__table-condensed__2Qjps > tbody > tr > th,
+.Content__table-condensed__2Qjps > tbody > tr > td,
+.Content__table-condensed__2Qjps > tfoot > tr > th,
+.Content__table-condensed__2Qjps > tfoot > tr > td {
+  padding: 5px; }
+
+.Content__table-bordered__BqOIs {
+  border: 1px solid #000; }
+  .Content__table-bordered__BqOIs > thead > tr > th,
+  .Content__table-bordered__BqOIs > thead > tr > td,
+  .Content__table-bordered__BqOIs > tbody > tr > th,
+  .Content__table-bordered__BqOIs > tbody > tr > td,
+  .Content__table-bordered__BqOIs > tfoot > tr > th,
+  .Content__table-bordered__BqOIs > tfoot > tr > td {
+    border: 1px solid #000; }
+  .Content__table-bordered__BqOIs > thead > tr > th,
+  .Content__table-bordered__BqOIs > thead > tr > td {
+    border-bottom-width: 2px; }
+
+.Content__table-striped__nrYi3 > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9; }
+
+.Content__table-hover__28JMy > tbody > tr:hover {
+  background-color: #f5f5f5; }
+
+table col[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-column; }
+
+table td[class*="col-"],
+table th[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-cell; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__active__3pus6, table > thead > tr > td.Content__active__3pus6,
+.Content__table__2Gq2x > thead > tr > th.Content__active__3pus6, table > thead > tr > th.Content__active__3pus6,
+.Content__table__2Gq2x > thead > tr.Content__active__3pus6 > td, table > thead > tr.Content__active__3pus6 > td,
+.Content__table__2Gq2x > thead > tr.Content__active__3pus6 > th, table > thead > tr.Content__active__3pus6 > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__active__3pus6, table > tbody > tr > td.Content__active__3pus6,
+.Content__table__2Gq2x > tbody > tr > th.Content__active__3pus6, table > tbody > tr > th.Content__active__3pus6,
+.Content__table__2Gq2x > tbody > tr.Content__active__3pus6 > td, table > tbody > tr.Content__active__3pus6 > td,
+.Content__table__2Gq2x > tbody > tr.Content__active__3pus6 > th, table > tbody > tr.Content__active__3pus6 > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__active__3pus6, table > tfoot > tr > td.Content__active__3pus6,
+.Content__table__2Gq2x > tfoot > tr > th.Content__active__3pus6, table > tfoot > tr > th.Content__active__3pus6,
+.Content__table__2Gq2x > tfoot > tr.Content__active__3pus6 > td, table > tfoot > tr.Content__active__3pus6 > td,
+.Content__table__2Gq2x > tfoot > tr.Content__active__3pus6 > th, table > tfoot > tr.Content__active__3pus6 > th {
+  background-color: #f5f5f5; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__active__3pus6:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__active__3pus6:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__active__3pus6:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__active__3pus6,
+.Content__table-hover__28JMy > tbody > tr.Content__active__3pus6:hover > th {
+  background-color: #e8e8e8; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__success__1fKZD, table > thead > tr > td.Content__success__1fKZD,
+.Content__table__2Gq2x > thead > tr > th.Content__success__1fKZD, table > thead > tr > th.Content__success__1fKZD,
+.Content__table__2Gq2x > thead > tr.Content__success__1fKZD > td, table > thead > tr.Content__success__1fKZD > td,
+.Content__table__2Gq2x > thead > tr.Content__success__1fKZD > th, table > thead > tr.Content__success__1fKZD > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__success__1fKZD, table > tbody > tr > td.Content__success__1fKZD,
+.Content__table__2Gq2x > tbody > tr > th.Content__success__1fKZD, table > tbody > tr > th.Content__success__1fKZD,
+.Content__table__2Gq2x > tbody > tr.Content__success__1fKZD > td, table > tbody > tr.Content__success__1fKZD > td,
+.Content__table__2Gq2x > tbody > tr.Content__success__1fKZD > th, table > tbody > tr.Content__success__1fKZD > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__success__1fKZD, table > tfoot > tr > td.Content__success__1fKZD,
+.Content__table__2Gq2x > tfoot > tr > th.Content__success__1fKZD, table > tfoot > tr > th.Content__success__1fKZD,
+.Content__table__2Gq2x > tfoot > tr.Content__success__1fKZD > td, table > tfoot > tr.Content__success__1fKZD > td,
+.Content__table__2Gq2x > tfoot > tr.Content__success__1fKZD > th, table > tfoot > tr.Content__success__1fKZD > th {
+  background-color: #dff0d8; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__success__1fKZD:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__success__1fKZD:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__success__1fKZD:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__success__1fKZD,
+.Content__table-hover__28JMy > tbody > tr.Content__success__1fKZD:hover > th {
+  background-color: #d0e9c6; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__info__3Uyf3, table > thead > tr > td.Content__info__3Uyf3,
+.Content__table__2Gq2x > thead > tr > th.Content__info__3Uyf3, table > thead > tr > th.Content__info__3Uyf3,
+.Content__table__2Gq2x > thead > tr.Content__info__3Uyf3 > td, table > thead > tr.Content__info__3Uyf3 > td,
+.Content__table__2Gq2x > thead > tr.Content__info__3Uyf3 > th, table > thead > tr.Content__info__3Uyf3 > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__info__3Uyf3, table > tbody > tr > td.Content__info__3Uyf3,
+.Content__table__2Gq2x > tbody > tr > th.Content__info__3Uyf3, table > tbody > tr > th.Content__info__3Uyf3,
+.Content__table__2Gq2x > tbody > tr.Content__info__3Uyf3 > td, table > tbody > tr.Content__info__3Uyf3 > td,
+.Content__table__2Gq2x > tbody > tr.Content__info__3Uyf3 > th, table > tbody > tr.Content__info__3Uyf3 > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__info__3Uyf3, table > tfoot > tr > td.Content__info__3Uyf3,
+.Content__table__2Gq2x > tfoot > tr > th.Content__info__3Uyf3, table > tfoot > tr > th.Content__info__3Uyf3,
+.Content__table__2Gq2x > tfoot > tr.Content__info__3Uyf3 > td, table > tfoot > tr.Content__info__3Uyf3 > td,
+.Content__table__2Gq2x > tfoot > tr.Content__info__3Uyf3 > th, table > tfoot > tr.Content__info__3Uyf3 > th {
+  background-color: #d9edf7; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__info__3Uyf3:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__info__3Uyf3:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__info__3Uyf3:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__info__3Uyf3,
+.Content__table-hover__28JMy > tbody > tr.Content__info__3Uyf3:hover > th {
+  background-color: #c4e3f3; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__warning__3vM1b, table > thead > tr > td.Content__warning__3vM1b,
+.Content__table__2Gq2x > thead > tr > th.Content__warning__3vM1b, table > thead > tr > th.Content__warning__3vM1b,
+.Content__table__2Gq2x > thead > tr.Content__warning__3vM1b > td, table > thead > tr.Content__warning__3vM1b > td,
+.Content__table__2Gq2x > thead > tr.Content__warning__3vM1b > th, table > thead > tr.Content__warning__3vM1b > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__warning__3vM1b, table > tbody > tr > td.Content__warning__3vM1b,
+.Content__table__2Gq2x > tbody > tr > th.Content__warning__3vM1b, table > tbody > tr > th.Content__warning__3vM1b,
+.Content__table__2Gq2x > tbody > tr.Content__warning__3vM1b > td, table > tbody > tr.Content__warning__3vM1b > td,
+.Content__table__2Gq2x > tbody > tr.Content__warning__3vM1b > th, table > tbody > tr.Content__warning__3vM1b > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__warning__3vM1b, table > tfoot > tr > td.Content__warning__3vM1b,
+.Content__table__2Gq2x > tfoot > tr > th.Content__warning__3vM1b, table > tfoot > tr > th.Content__warning__3vM1b,
+.Content__table__2Gq2x > tfoot > tr.Content__warning__3vM1b > td, table > tfoot > tr.Content__warning__3vM1b > td,
+.Content__table__2Gq2x > tfoot > tr.Content__warning__3vM1b > th, table > tfoot > tr.Content__warning__3vM1b > th {
+  background-color: #fcf8e3; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__warning__3vM1b:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__warning__3vM1b:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__warning__3vM1b:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__warning__3vM1b,
+.Content__table-hover__28JMy > tbody > tr.Content__warning__3vM1b:hover > th {
+  background-color: #faf2cc; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__danger__DoByx, table > thead > tr > td.Content__danger__DoByx,
+.Content__table__2Gq2x > thead > tr > th.Content__danger__DoByx, table > thead > tr > th.Content__danger__DoByx,
+.Content__table__2Gq2x > thead > tr.Content__danger__DoByx > td, table > thead > tr.Content__danger__DoByx > td,
+.Content__table__2Gq2x > thead > tr.Content__danger__DoByx > th, table > thead > tr.Content__danger__DoByx > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__danger__DoByx, table > tbody > tr > td.Content__danger__DoByx,
+.Content__table__2Gq2x > tbody > tr > th.Content__danger__DoByx, table > tbody > tr > th.Content__danger__DoByx,
+.Content__table__2Gq2x > tbody > tr.Content__danger__DoByx > td, table > tbody > tr.Content__danger__DoByx > td,
+.Content__table__2Gq2x > tbody > tr.Content__danger__DoByx > th, table > tbody > tr.Content__danger__DoByx > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__danger__DoByx, table > tfoot > tr > td.Content__danger__DoByx,
+.Content__table__2Gq2x > tfoot > tr > th.Content__danger__DoByx, table > tfoot > tr > th.Content__danger__DoByx,
+.Content__table__2Gq2x > tfoot > tr.Content__danger__DoByx > td, table > tfoot > tr.Content__danger__DoByx > td,
+.Content__table__2Gq2x > tfoot > tr.Content__danger__DoByx > th, table > tfoot > tr.Content__danger__DoByx > th {
+  background-color: #f2dede; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__danger__DoByx:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__danger__DoByx:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__danger__DoByx:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__danger__DoByx,
+.Content__table-hover__28JMy > tbody > tr.Content__danger__DoByx:hover > th {
+  background-color: #ebcccc; }
+
+.Content__table-responsive__1_Wb8 {
+  overflow-x: auto;
+  min-height: 0.01%; }
+  @media screen and (max-width: 767px) {
+    .Content__table-responsive__1_Wb8 {
+      width: 100%;
+      margin-bottom: 16.5px;
+      overflow-y: hidden;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      border: 1px solid #000; }
+      .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x, .Content__table-responsive__1_Wb8 > table {
+        margin-bottom: 0; }
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > thead > tr > th, .Content__table-responsive__1_Wb8 > table > thead > tr > th,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > thead > tr > td,
+        .Content__table-responsive__1_Wb8 > table > thead > tr > td,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > tbody > tr > th,
+        .Content__table-responsive__1_Wb8 > table > tbody > tr > th,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > tbody > tr > td,
+        .Content__table-responsive__1_Wb8 > table > tbody > tr > td,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > tfoot > tr > th,
+        .Content__table-responsive__1_Wb8 > table > tfoot > tr > th,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > tfoot > tr > td,
+        .Content__table-responsive__1_Wb8 > table > tfoot > tr > td {
+          white-space: nowrap; }
+      .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs {
+        border: 0; }
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > thead > tr > th:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > thead > tr > td:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr > th:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr > td:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr > th:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr > td:first-child {
+          border-left: 0; }
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > thead > tr > th:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > thead > tr > td:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr > th:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr > td:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr > th:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr > td:last-child {
+          border-right: 0; }
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr:last-child > th,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr:last-child > td,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr:last-child > th,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr:last-child > td {
+          border-bottom: 0; } }
+
+.Content__check__sbZVW ul,
+.Content__check__sbZVW ol,
+.Content__activity__12AJC ul,
+.Content__activity__12AJC ol,
+.Content__save__3P_NU ul,
+.Content__save__3P_NU ol {
+  padding: 0;
+  margin: 0 0 20px; }
+
+.Content__check__sbZVW ul.Content__task-list__2CKPB li.Content__task-list-item__2A55S::before,
+.Content__activity__12AJC ul.Content__task-list__2CKPB li.Content__task-list-item__2A55S::before,
+.Content__save__3P_NU ul.Content__task-list__2CKPB li.Content__task-list-item__2A55S::before {
+  display: none; }
+
+.Content__check__sbZVW li,
+.Content__activity__12AJC li,
+.Content__save__3P_NU li {
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 45px; }
+
+.Content__check__sbZVW li::before,
+.Content__activity__12AJC li::before,
+.Content__save__3P_NU li::before {
+  content: " ";
+  border-radius: 20px;
+  border: 3px solid #abdbea;
+  padding: 8px;
+  float: left;
+  margin-left: -40px;
+  margin-top: 2px; }
+
+.Content__check__sbZVW label,
+.Content__activity__12AJC label,
+.Content__save__3P_NU label {
+  font-weight: normal;
+  margin-left: 6px; }
+
+pre.Content__blocks__1k922,
+code.Content__b__2nfHe {
+  background-color: inherit;
+  border: 0; }
+
+pre > code {
+  background-color: transparent; }
+
+section.Content__activity__12AJC h1 {
+  color: #fff;
+  background: #349946;
+  padding: 10px;
+  border-radius: 5px; }
+
+section.Content__activity__12AJC .Content__subsection__3XzlJ h2 {
+  color: #fff;
+  background: #349946;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 300; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 ul,
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 ol {
+    padding: 0;
+    margin: 0 0 20px; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 ul.Content__task-list__2CKPB li.Content__task-list-item__2A55S::before {
+    display: none; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 li {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 45px; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 li::before {
+    content: " ";
+    border-radius: 20px;
+    border: 3px solid #abdbea;
+    padding: 8px;
+    float: left;
+    margin-left: -40px;
+    margin-top: 2px; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 label {
+    font-weight: normal;
+    margin-left: 6px; }
+
+section.Content__check__sbZVW h2 {
+  padding-top: 4px;
+  padding-bottom: 9px; }
+  section.Content__check__sbZVW h2 img {
+    height: 40px;
+    vertical-align: text-bottom;
+    padding-right: 10px; }
+
+section.Content__try__9Al91 {
+  background: #abdbea;
+  border-radius: 10px;
+  padding: 1px 20px 10px; }
+  section.Content__try__9Al91 code {
+    background-color: #fff;
+    color: #007cc9; }
+  section.Content__try__9Al91 li::before {
+    border: 3px solid #fff; }
+
+section.Content__protip__3oM5h,
+section.Content__tip__2hJcQ {
+  border: 3px solid #ff7f00;
+  background: #fff99d;
+  border-radius: 12px;
+  padding: 0 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+section.Content__flag__1GjEr {
+  border-top: 3px dotted #e6862d;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  section.Content__flag__1GjEr h2 {
+    color: #36a137;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px; }
+    section.Content__flag__1GjEr h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
+
+section.Content__save__3P_NU {
+  border-top: 3px solid #245a9a;
+  margin: 20px 0; }
+  section.Content__save__3P_NU h2 {
+    color: #245a9a;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px; }
+    section.Content__save__3P_NU h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
+
+section.Content__challenge__2LUyO {
+  border: 3px solid #00b1da;
+  border-radius: 12px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  section.Content__challenge__2LUyO h2 {
+    color: #fff;
+    background: #00b1da;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0; }
+    @media print {
+      section.Content__challenge__2LUyO h2 {
+        border-bottom: 2px #00b1da solid; } }
+  section.Content__challenge__2LUyO > * {
+    padding: 0 20px; }
+
+code.Content__blockmotion__2TNTp {
+  background-color: #505fd7; }
+
+code.Content__blocklooks__NJdsX {
+  background-color: #9b33d9; }
+
+code.Content__blocksound__wb8Zz {
+  background-color: #d000c2; }
+
+code.Content__blockpen__1tOwq {
+  background-color: #00a16f; }
+
+code.Content__blockdata__1wt1I {
+  background-color: #ff7500; }
+
+code.Content__blockevents__r08uu {
+  background-color: #d38117; }
+
+code.Content__blockcontrol__3yrIr {
+  background-color: #e9aa00; }
+
+code.Content__blocksensing__2mkm9 {
+  background-color: #00a3e6; }
+
+code.Content__blockoperators__x9p0o {
+  background-color: #00c114; }
+
+code.Content__blockmoreblocks__3YKWS {
+  background-color: #71009a; }
+
+code.Content__blockmotion__2TNTp, code.Content__blocklooks__NJdsX, code.Content__blocksound__wb8Zz, code.Content__blockpen__1tOwq, code.Content__blockdata__1wt1I, code.Content__blockevents__r08uu, code.Content__blockcontrol__3yrIr, code.Content__blocksensing__2mkm9, code.Content__blockoperators__x9p0o, code.Content__blockmoreblocks__3YKWS {
+  color: #fff; }
+
+@media aural, braille, handheld, projection, screen, tty, tv, embossed {
+  pre > code {
+    word-wrap: normal;
+    white-space: pre; } }
+
+.Content__video-container__2gCjN {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 30px 0 60px; }
+  .Content__video-container__2gCjN iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+input[type="checkbox"] {
+  display: none; }
+
+input[type="checkbox"] + label {
+  position: relative;
+  font-weight: normal;
+  margin-left: 0; }
+
+input[type="checkbox"] + label::before {
+  content: '\A0';
+  display: inline-block;
+  visibility: visible;
+  width: 1.3em;
+  height: 1.3em;
+  margin: 0 0.6em 0 -2.2em;
+  line-height: 1.1em;
+  text-align: center;
+  border: 3px solid #abdbea;
+  border-radius: 3px; }
+
+input[type="checkbox"]:checked + label::before {
+  content: '\2714';
+  line-height: 1.1em;
+  padding-left: 0.1em; }
+.MainLanguageButton__textMargin__-3bsu {
+  margin-left: 10px; }
+  @media (max-width: 767px) {
+    .MainLanguageButton__textMargin__-3bsu {
+      display: none; } }
+
+.MainLanguageButton__container__3anRY {
+  margin: 10px 10px 0 0; }
+  @media print {
+    .MainLanguageButton__container__3anRY {
+      display: none; } }
+
+.MainLanguageButton__flag__2kKnQ {
+  width: 30px;
+  height: 20px; }
+.PdfButton__container__cTzho {
+  margin: 10px 10px 0 0; }
+  @media print {
+    .PdfButton__container__cTzho {
+      display: none; } }
+
+.PdfButton__textMargin__3ywqP {
+  margin-left: 10px; }
+  @media (max-width: 767px) {
+    .PdfButton__textMargin__3ywqP {
+      display: none; } }
+
+.PdfButton__icon__m5ajZ {
+  margin-top: 2px; }
+.ImprovePage__font__1MdMv {
+  font-family: "Roboto", "Verdana", sans-serif;
+  font-weight: 300;
+  font-size: 1em; }
+
+/* Container for improve box */
+.ImprovePage__container__HeXzk {
+  margin: 10px 30px; }
+  @media print {
+    .ImprovePage__container__HeXzk {
+      display: none; } }
+
+.ImprovePage__improvePageBox__cyxic {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+  max-width: 650px;
+  border-radius: 10px; }
+
+/* Student / Teacher mode */
+.ImprovePage__student__3q08- {
+  background-color: #b1daae; }
+
+.ImprovePage__teacher__2iOCW {
+  background-color: #a3cccb; }
+
+/* Row containing the text */
+/* Box-shadow works as a <hr/> to differentiate text and links */
+.ImprovePage__textRowStudent__2MdgF {
+  margin: 5px 20px 15px;
+  box-shadow: 0 8px 6px -6px #89c785; }
+
+.ImprovePage__textRowTeacher__2aMXI {
+  margin: 5px 20px 15px;
+  box-shadow: 0 8px 6px -6px #7bb7b6; }
+
+/* Row containing the links */
+.ImprovePage__linkRow__20Z6P {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .ImprovePage__linkRow__20Z6P div {
+    margin: 10px; }
+
+/* Media screen */
+@media only screen and (max-width: 300px) {
+  .ImprovePage__textRowStudent__2MdgF,
+  .ImprovePage__textRowTeacher__2aMXI {
+    max-width: 150px; } }
+.Footer__container__1SZrv {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-family: "Roboto", "Verdana", sans-serif; }
+  .Footer__container__1SZrv a {
+    text-decoration: none; }
+  @media print {
+    .Footer__container__1SZrv {
+      display: none; } }
+
+.Footer__containerStudent__3Yr5f {
+  background-color: #b1daae;
+  color: #265732; }
+  .Footer__containerStudent__3Yr5f a {
+    color: #265732; }
+
+.Footer__containerTeacher__36KZb {
+  background-color: #a3cccb;
+  color: #215651; }
+  .Footer__containerTeacher__36KZb a {
+    color: #215651; }
+
+.Footer__center__3xqZ_ {
+  text-align: center; }
+
+.Footer__inline__1Q6ds {
+  display: inline-block;
+  margin: 20px 10px; }
+
+.Footer__svg__29r7H {
+  width: 100px;
+  height: auto;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__img__25Ink {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  width: auto;
+  height: 50px;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__divider__LJrti {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid;
+  width: 50%; }
+
+.Footer__svg__29r7H:hover,
+.Footer__img__25Ink:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.5); }
+</style>
+<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/CCV-icons-4d5e7c/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/CCV-icons-4d5e7c/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/CCV-icons-4d5e7c/favicon-16x16.png"><link rel="shortcut icon" href="/beta/CCV-icons-4d5e7c/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1536x2008.png"></head>
+<body>
+    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="421205027"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/CCV-assets/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/computercraft" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/computercraft/logo-black.9f666d.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Computercraft</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/computercraft/bli_kjent_med_datamaskinen/bli_kjent_med_datamaskinen" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Bli Kjent med Datamaskinen</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="53"/><span class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</span></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="59"/><span class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</span></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nn.fa23ab.svg" data-reactid="64"/><span class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</span></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_en.7eea7b.svg" data-reactid="69"/><span class="LanguageDropdown__language__1g4QB" data-reactid="70">English</span></div></a></li></ul></div></div><div class="ModeDropdown__gadgetContainer__2HE97" data-reactid="71"><div class="dropdown btn-group btn-group-student" data-reactid="72"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="73"><div data-reactid="74"><span class="ModeDropdown__icon__3I03J glyphicon glyphicon-pencil" data-reactid="75"></span><span data-reactid="76"><span class="ModeDropdown__onlyMode__1fZJE" data-reactid="77">Modus: </span><!-- react-text: 78 -->Elev<!-- /react-text --></span></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="79"><li role="presentation" class="active" data-reactid="80"><a role="menuitem" tabindex="-1" href="#" data-reactid="81"><span class="ModeDropdown__icon__3I03J glyphicon glyphicon-pencil" data-reactid="82"></span><!-- react-text: 83 -->Elev<!-- /react-text --></a></li><li role="presentation" class="" data-reactid="84"><a role="menuitem" tabindex="-1" href="#" data-reactid="85"><span class="ModeDropdown__icon__3I03J glyphicon glyphicon-education" data-reactid="86"></span><!-- react-text: 87 -->Lærer<!-- /react-text --></a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="88"><h1 data-reactid="89"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="90"/><!-- react-text: 91 -->Bli Kjent med Datamaskinen<!-- /react-text --></h1><p data-reactid="92"><i data-reactid="93"><!-- react-text: 94 -->Skrevet av:<!-- /react-text --><!-- react-text: 95 --> <!-- /react-text --><span data-reactid="96">Geir Arne Hjelle</span></i></p><div class="Lesson__box__2CtND" data-reactid="97"><div data-reactid="98"><!-- react-text: 99 -->Kurs:<!-- /react-text --><!-- react-text: 100 --> <!-- /react-text --><!-- react-text: 101 -->Computercraft<!-- /react-text --></div><div data-reactid="102">Tema: Tekstbasert, Minecraft</div><div data-reactid="103">Fag: Teknologi, Programmering</div><div data-reactid="104">Klassetrinn: 5.-7. klasse, 8.-10. klasse, Videregående skole</div><div data-reactid="105">Språk: Norsk bokmål</div></div><!-- react-empty: 106 --><a href="bli_kjent_med_datamaskinen.pdf" download="" class="PdfButton__container__cTzho btn btn-sm btn-pdf" data-reactid="107"><span class="PdfButton__icon__m5ajZ glyphicon glyphicon-cloud-download" data-reactid="108"></span><span class="PdfButton__textMargin__3ywqP" data-reactid="109">Last ned PDF</span></a><div data-reactid="110"><section class="intro" id="introduksjon">
+<h1 class="intro" id="introduksjon">Introduksjon</h1>
+<p>Vi begynner med å bygge en enkel datamaskin. Etter å ha brukt litt tid
+på å bli kjent med hvordan datamaskinen virker, bruker vi den til å
+låse opp en dør ved hjelp av passord.</p>
+<figure><img src="bli_kjent_med_datamaskinen.png" alt=""></figure>
+</section>
+<section class="Content__activity__12AJC" id="steg-1-var-forste-datamaskin">
+<h1 class="Content__activity__12AJC" id="steg-1-var-forste-datamaskin">Steg 1: Vår første datamaskin</h1>
+<p><em>Vi begynner med å lage en datamaskin.</em></p>
+<p>I utgangspunktet er det mye enklere å starte i <em>Creative Mode</em> når vi
+skal lære å bruke datamaskinene, siden vi da slipper å bruke tid på å
+samle materiale og slåss mot monstre. Vi vil derfor i fortsettelsen
+anta at du er i <em>Creative Mode</em>, og kan plukke akkurat det du trenger
+i inventory'et ditt.</p>
+<p>Men først, for å vise at en datamaskin kan bygges på vanlig måte i
+Minecraft:</p>
+<section class="Content__check__sbZVW" id="sjekkliste">
+<h2 class="Content__check__sbZVW" id="sjekkliste"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Trykk <code>E</code> for å åpne inventory'et ditt. Finn frem 7 <strong>Stone</strong>, 1
+<strong>Redstone</strong> og 1 <strong>Glass pane</strong>.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Åpne et <strong>Crafting table</strong>, og legg ut materialet slik:</label></p>
+<figure><img src="craft_computer.png" alt=""></figure>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_2"><label for="cbx_2"> Legg den nye datamaskinen i den nederste raden i inventory'et ditt,
+slik at du kan ta den på hånden. Lukk inventory'et.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_3"><label for="cbx_3"> Bruk talltastene til å velge datamaskinen, og høyreklikk for å lage
+en datamaskin.</label></p>
+</li>
+</ul>
+<p>I <em>Creative Mode</em> kan du også få tak i datamaskiner ved å trykke <code>E</code>,
+deretter klikke <code>&gt;</code> for å gå til neste side, og til slutt velge fanen
+med datamaskinsymbolet.</p>
+<section class="Content__protip__3oM5h" id="computercraft-datamaskiner">
+<h3 class="Content__protip__3oM5h" id="computercraft-datamaskiner">ComputerCraft datamaskiner</h3>
+<p>Høyreklikk en datamaskin for å starte den opp. Den vil åpne en svart
+skjerm med teksten <code>CraftOS</code> på toppen. Dette er
+datamaskinens <em>kommandolinje</em>, og vi vil bruke den til å styre
+datamaskinen med.</p>
+</section>
+</section>
+<section class="Content__check__sbZVW" id="sjekkliste-2">
+<h2 class="Content__check__sbZVW" id="sjekkliste-2"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Prøv å skriv <code>help</code> og trykk enter.</label></p>
+<p>Du får nå se noen tips om hvordan du kan finne ut mer om
+datamaskinen. For eksempel kan du skrive <code>programs</code> for å se en
+liste over hvilke programmer som er på datamaskinen, eller <code>help programming</code> for å få noen tips til hvordan man programmerer
+datamaskinen.</p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Skriv <code>programs</code> og trykk enter.</label></p>
+<p>Mange av disse programmene er enkle programmer som lar deg undersøke
+datamaskinen nærmere. Vi vil se på noen av dem i en senere leksjon.</p>
+</li>
+</ul>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="steg-2-vart-forste-program">
+<h1 class="Content__activity__12AJC" id="steg-2-vart-forste-program">Steg 2: Vårt første program</h1>
+<p><em>Det er nå på tide at vi skriver vårt første program.</em></p>
+<p>Det er en lang tradisjon blant programmerere at det første programmet
+de lager når de lærer et nytt språk skriver en trivelig melding til
+skjermen. Vi følger den tradisjonen og begynner med et program som
+heter <code>heiverden</code>.</p>
+<section class="Content__check__sbZVW" id="sjekkliste-3">
+<h2 class="Content__check__sbZVW" id="sjekkliste-3"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Start en datamaskin.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Skriv <code>edit heiverden</code> for å begynne å skrive på et nytt program som
+heter <code>heiverden</code>.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_8"><label for="cbx_8"> I det nye vinduet, skriv</label></p>
+<pre><code class="lua"><span class="hljs-built_in">print</span>(<span class="Content__hljs-string__2DCAo">'Hei verden!'</span>)
+</code></pre>
+<p>Etter at du har skrevet dette så trykker du på <em>Ctrl</em>-tasten og
+velger <code>Save</code>. Deretter trykker du <em>Ctrl</em> en gang til og velger
+<code>Exit</code>.</p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Vi har nå laget vårt første program. Prøv å skriv <code>programs</code> og du
+vil se at <code>heiverden</code> er på listen over programmer.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_10"><label for="cbx_10"> For å kjøre programmet vi har laget, skriver vi <code>heiverden</code> og
+trykker enter.</label></p>
+</li>
+</ul>
+<section class="Content__challenge__2LUyO" id="prov-selv">
+<h3 class="Content__challenge__2LUyO" id="prov-selv">Prøv selv</h3>
+<p>Klarer du å endre på programmet slik at det for eksempel sier hei til
+deg, eller kanskje til de som sitter ved siden av deg?</p>
+<p>Prøv å skriv <code>edit heiverden</code> en gang til. Da åpner programmet ditt
+seg igjen, og du kan endre på det slik at det sier noe annet. Som
+tidligere må du bruke <em>Ctrl</em>-tasten for å gå til menyen slik at du kan
+lagre og avslutte endringene.</p>
+</section>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="steg-3-litt-enkel-matematikk">
+<h1 class="Content__activity__12AJC" id="steg-3-litt-enkel-matematikk">Steg 3: Litt enkel matematikk</h1>
+<p><em>Vi skal nå bruke datamaskinen til å regne litt matematikk for oss, og
+kanskje til og med få den til å se hvor flinke vi er til å regne.</em></p>
+<p>Datamaskinene i ComputerCraft bruker et programmeringsspråk som heter
+<strong>Lua</strong>. Dette er et ganske enkelt og fleksibelt språk som ofte brukes
+inne i andre programmer. For eksempel kan også deler av Photoshop,
+Wikipedia og World of Warcraft programmeres med Lua.</p>
+<section class="Content__protip__3oM5h" id="lua">
+<h3 class="Content__protip__3oM5h" id="lua">Lua</h3>
+<p>Lua ble opprinnelig laget i Brasil på begynnelsen av 1990-tallet. På
+universitetet i Rio de Janeiro brukte de tidligere et språk som het
+<em>Simple Object Language</em> (SOL). Ordet <em>lua</em> er portugisisk og betyr
+<em>måne</em>, noe de syntes var et fint navn som passet sammen med SOL.</p>
+</section>
+<section class="Content__check__sbZVW" id="sjekkliste-4">
+<h2 class="Content__check__sbZVW" id="sjekkliste-4"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<p>Vi skal nå prøve å skrive noen kommandoer direkte i Lua. Dette er en
+fin måte å teste enkle ting på.</p>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Skriv <code>lua</code> og trykk enter. Dette starter en <em>Lua-tolker</em> som vil
+utføre hver enkelt kommando du skriver med en gang.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_12"><label for="cbx_12"> Vi begynner med kommandoen fra det første programmet vårt. Skriv
+<code>print('Hei verden!')</code> og trykk enter. Skjer det samme som tidligere?</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_13"><label for="cbx_13"> Som de aller fleste programmeringsspråk er Lua glad i å regne. Skriv
+<code>1 + 1</code> og trykk enter.</label></p>
+<p>Lua kjenner alle de vanlige matematikk-operasjonene. Prøv for
+eksempel <code>17 - 8</code>, <code>3 * 4</code> eller <code>22 / 7</code>. Kjenner du igjen hva
+hver av disse betyr?</p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_14"><label for="cbx_14"> Skriv <code>math.random(1, 10)</code> og trykk enter.</label></p>
+<p>Dette skriver ut et tilfeldig tall mellom 1 og 10. Dette er et
+eksempel på å kalle en <em>funksjon</em>, noe vi gjør ofte når vi
+programmerer. I dette tilfellet heter funksjonen <code>random</code> og den
+hører hjemme i <code>math</code>-<em>biblioteket</em>.</p>
+</li>
+</ul>
+<section class="Content__protip__3oM5h" id="funksjoner">
+<h3 class="Content__protip__3oM5h" id="funksjoner">Funksjoner</h3>
+<p>Alle programmeringsspråk lar deg lage noe som kalles <em>funksjoner</em>.
+Dette er en samling instruksjoner som utføres sammen slik at det blir
+enklere å gjøre vanskelige ting. Lua kommer med innebygde funksjoner.
+Vi har så langt sett <code>print</code> og <code>math.random</code> som eksempler på dette.
+Senere vil vi også lære hvordan vi lager egne funksjoner.</p>
+</section>
+</section>
+<section class="Content__check__sbZVW" id="sjekkliste-5">
+<h2 class="Content__check__sbZVW" id="sjekkliste-5"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_15"><label for="cbx_15"> Trykk pil opp-tasten slik at du kan kjøre <code>math.random(1, 10)</code> en
+gang til. Trykk enter. Gjør dette flere ganger. Får du forskjellige
+tall tilbake?</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_16"><label for="cbx_16"> Avslutt Lua-tolkeren ved å skrive <code>exit()</code> og trykk enter.</label></li>
+</ul>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="steg-4-en-liten-matteprove">
+<h1 class="Content__activity__12AJC" id="steg-4-en-liten-matteprove">Steg 4: En liten matteprøve</h1>
+<p><em>Vi skal nå bruke de tilfeldige tallene til å lage et enkelt
+spill. Underveis vil vi også lære litt om tester og løkker.</em></p>
+<section class="Content__check__sbZVW" id="sjekkliste-6">
+<h2 class="Content__check__sbZVW" id="sjekkliste-6"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_17"><label for="cbx_17"> Start et nytt program ved å skrive <code>edit mattetest</code> og trykk enter.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_18"><label for="cbx_18"> Skriv inn følgende program</label></p>
+<pre><code class="lua"><span class="Content__hljs-keyword__1gFtb">local</span> tall1 = <span class="hljs-built_in">math</span>.<span class="hljs-built_in">random</span>(<span class="Content__hljs-number__1Gqqo">2</span>, <span class="Content__hljs-number__1Gqqo">12</span>)
+<span class="Content__hljs-keyword__1gFtb">local</span> tall2 = <span class="hljs-built_in">math</span>.<span class="hljs-built_in">random</span>(<span class="Content__hljs-number__1Gqqo">2</span>, <span class="Content__hljs-number__1Gqqo">12</span>)
+<span class="hljs-built_in">print</span>(<span class="Content__hljs-string__2DCAo">'Hva er '</span> .. tall1 .. <span class="Content__hljs-string__2DCAo">' ganger '</span> .. tall2 .. <span class="Content__hljs-string__2DCAo">'?'</span>)
+</code></pre>
+<p>Pass på at du skriver de to punktumene <code>..</code> riktig. Disse betyr at
+vi setter sammen tekst.</p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_19"><label for="cbx_19"> Lagre og avslutt editoren. Kjør programmet ved å skrive <code>mattetest</code>.</label></p>
+<p>Blir du spurt om svaret på et gangestykke? Spør den om et annet
+gangestykke om du kjører programmet en gang til? Hva skjer om du
+prøver å svare?</p>
+</li>
+</ul>
+<section class="Content__protip__3oM5h" id="variabler">
+<h3 class="Content__protip__3oM5h" id="variabler">Variabler</h3>
+<p>Vi har sett det meste i programmet vårt tidligere. <code>math.random</code> lager
+tilfeldige tall, og <code>print</code> skriver en melding til skjermen. Det nye
+er at vi bruker <em>variabler</em> til å huske verdiene av de tilfeldige
+tallene. Den første linjen sier at vi vil ha et tilfeldig tall mellom
+2 og 12. Dette tilfeldige tallet husker vi så med en variabel som
+heter <code>tall1</code>. Ordet <code>local</code> foran variabelen sier at vi bare skal
+huske variabelen i dette programmet (lokalt).</p>
+</section>
+</section>
+<section class="Content__check__sbZVW" id="sjekkliste-7">
+<h2 class="Content__check__sbZVW" id="sjekkliste-7"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_20"><label for="cbx_20"> Vi skal nå jobbe videre med programmet. Skriv <code>edit mattetest</code>
+igjen, og legg til en linje nederst i programmet.</label></p>
+<pre><code class="lua"><span class="Content__hljs-keyword__1gFtb">local</span> tall1 = <span class="hljs-built_in">math</span>.<span class="hljs-built_in">random</span>(<span class="Content__hljs-number__1Gqqo">2</span>, <span class="Content__hljs-number__1Gqqo">12</span>)
+<span class="Content__hljs-keyword__1gFtb">local</span> tall2 = <span class="hljs-built_in">math</span>.<span class="hljs-built_in">random</span>(<span class="Content__hljs-number__1Gqqo">2</span>, <span class="Content__hljs-number__1Gqqo">12</span>)
+<span class="hljs-built_in">print</span>(<span class="Content__hljs-string__2DCAo">'Hva er '</span> .. tall1 .. <span class="Content__hljs-string__2DCAo">' ganger '</span> .. tall2 .. <span class="Content__hljs-string__2DCAo">'?'</span>)
+
+svar = <span class="hljs-built_in">read</span>()                                 <span class="Content__hljs-comment__2_Ezx">-- ny linje</span>
+</code></pre>
+<p>Lagre, avslutt, og kjør programmet på nytt. Får du lov til å svare
+nå? Funksjonen <code>read</code> brukes for å lese ting du skriver på
+tastaturet.</p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_21"><label for="cbx_21"> Det neste vi vil er at programmet skal sjekke om vi svarer
+riktig. For å gjøre dette vil vi bruke noe som heter
+<code>if</code>-tester. Disse kan teste om noe er sant, og vi vil bruke dem for å
+sjekke om det er sant at svaret ditt er likt med det faktiske
+svaret. Legg til en <code>if</code>-test nederst i programmet ditt slik som
+dette:</label></p>
+<pre><code class="lua"><span class="Content__hljs-keyword__1gFtb">local</span> tall1 = <span class="hljs-built_in">math</span>.<span class="hljs-built_in">random</span>(<span class="Content__hljs-number__1Gqqo">2</span>, <span class="Content__hljs-number__1Gqqo">12</span>)
+<span class="Content__hljs-keyword__1gFtb">local</span> tall2 = <span class="hljs-built_in">math</span>.<span class="hljs-built_in">random</span>(<span class="Content__hljs-number__1Gqqo">2</span>, <span class="Content__hljs-number__1Gqqo">12</span>)
+<span class="hljs-built_in">print</span>(<span class="Content__hljs-string__2DCAo">'Hva er '</span> .. tall1 .. <span class="Content__hljs-string__2DCAo">' ganger '</span> .. tall2 .. <span class="Content__hljs-string__2DCAo">'?'</span>)
+
+svar = <span class="hljs-built_in">read</span>()
+
+<span class="Content__hljs-keyword__1gFtb">if</span> <span class="hljs-built_in">tonumber</span>(svar) == tall1 * tall2 <span class="Content__hljs-keyword__1gFtb">then</span>  <span class="Content__hljs-comment__2_Ezx">-- alle linjer herifra</span>
+    <span class="hljs-built_in">print</span>(<span class="Content__hljs-string__2DCAo">'Ja, svaret er '</span> .. svar)      <span class="Content__hljs-comment__2_Ezx">-- og ned er nye</span>
+<span class="Content__hljs-keyword__1gFtb">else</span>
+    <span class="hljs-built_in">print</span>(<span class="Content__hljs-string__2DCAo">'Nei, det riktige svaret er '</span> .. tall1 * tall2)
+<span class="Content__hljs-keyword__1gFtb">end</span>
+</code></pre>
+<p>Kjør programmet igjen. Hva skjer når du svarer riktig? Hva skjer
+når du svarer feil? Skjønner du hvorfor?</p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_22"><label for="cbx_22"> Det er kjedelig at vi hele tiden må starte programmet på nytt. Vi
+lager derfor en løkke som kan spørre oss flere spørsmål hver gang vi
+spiller. Her bruker vi en <code>for</code>-løkke som bare teller fra 1 til 5 for
+å stille oss fem spørsmål.</label></p>
+<pre><code class="lua"><span class="Content__hljs-keyword__1gFtb">for</span> i = <span class="Content__hljs-number__1Gqqo">1</span>, <span class="Content__hljs-number__1Gqqo">5</span> <span class="Content__hljs-keyword__1gFtb">do</span>                               <span class="Content__hljs-comment__2_Ezx">-- ny linje</span>
+    <span class="Content__hljs-keyword__1gFtb">local</span> tall1 = <span class="hljs-built_in">math</span>.<span class="hljs-built_in">random</span>(<span class="Content__hljs-number__1Gqqo">2</span>, <span class="Content__hljs-number__1Gqqo">12</span>)
+    <span class="Content__hljs-keyword__1gFtb">local</span> tall2 = <span class="hljs-built_in">math</span>.<span class="hljs-built_in">random</span>(<span class="Content__hljs-number__1Gqqo">2</span>, <span class="Content__hljs-number__1Gqqo">12</span>)
+    <span class="hljs-built_in">print</span>(<span class="Content__hljs-string__2DCAo">'Hva er '</span> .. tall1 .. <span class="Content__hljs-string__2DCAo">' ganger '</span> .. tall2 .. <span class="Content__hljs-string__2DCAo">'?'</span>)
+
+    svar = <span class="hljs-built_in">read</span>()
+
+    <span class="Content__hljs-keyword__1gFtb">if</span> <span class="hljs-built_in">tonumber</span>(svar) == tall1 * tall2 <span class="Content__hljs-keyword__1gFtb">then</span>
+        <span class="hljs-built_in">print</span>(<span class="Content__hljs-string__2DCAo">'Ja, svaret er '</span> .. svar)
+    <span class="Content__hljs-keyword__1gFtb">else</span>
+        <span class="hljs-built_in">print</span>(<span class="Content__hljs-string__2DCAo">'Nei, det riktige svaret er '</span> .. tall1 * tall2)
+    <span class="Content__hljs-keyword__1gFtb">end</span>
+<span class="Content__hljs-keyword__1gFtb">end</span>                                           <span class="Content__hljs-comment__2_Ezx">-- ny linje</span>
+</code></pre>
+<p>Test programmet ditt igjen. Blir du spurt om fem gangestykker? Kan
+du forandre programmet slik at det spør om et annet antall
+gangestykker? Kan du bruke en variabel som sier hvor mange
+gangestykker programmet skal bruke?</p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_23"><label for="cbx_23"> Til slutt vil vi at programmet skal telle hvor mange riktige svar vi
+klarer. For å gjøre dette bruker vi en ny variabel. Men denne gangen
+vil vi endre verdien av variabelen etterhvert som svarer riktig.</label></p>
+<pre><code class="lua"><span class="Content__hljs-keyword__1gFtb">local</span> ant_stykker = <span class="Content__hljs-number__1Gqqo">5</span>                         <span class="Content__hljs-comment__2_Ezx">-- ny linje</span>
+<span class="Content__hljs-keyword__1gFtb">local</span> ant_riktig  = <span class="Content__hljs-number__1Gqqo">0</span>                         <span class="Content__hljs-comment__2_Ezx">-- ny linje</span>
+
+<span class="Content__hljs-keyword__1gFtb">for</span> i = <span class="Content__hljs-number__1Gqqo">1</span>, ant_stykker <span class="Content__hljs-keyword__1gFtb">do</span>                     <span class="Content__hljs-comment__2_Ezx">-- endret linje</span>
+    <span class="Content__hljs-keyword__1gFtb">local</span> tall1 = <span class="hljs-built_in">math</span>.<span class="hljs-built_in">random</span>(<span class="Content__hljs-number__1Gqqo">2</span>, <span class="Content__hljs-number__1Gqqo">12</span>)
+    <span class="Content__hljs-keyword__1gFtb">local</span> tall2 = <span class="hljs-built_in">math</span>.<span class="hljs-built_in">random</span>(<span class="Content__hljs-number__1Gqqo">2</span>, <span class="Content__hljs-number__1Gqqo">12</span>)
+    <span class="hljs-built_in">print</span>(<span class="Content__hljs-string__2DCAo">'Hva er '</span> .. tall1 .. <span class="Content__hljs-string__2DCAo">' ganger '</span> .. tall2 .. <span class="Content__hljs-string__2DCAo">'?'</span>)
+
+    svar = <span class="hljs-built_in">read</span>()
+
+    <span class="Content__hljs-keyword__1gFtb">if</span> <span class="hljs-built_in">tonumber</span>(svar) == tall1 * tall2 <span class="Content__hljs-keyword__1gFtb">then</span>
+        <span class="hljs-built_in">print</span>(<span class="Content__hljs-string__2DCAo">'Ja, svaret er '</span> .. svar)
+        ant_riktig = ant_riktig + <span class="Content__hljs-number__1Gqqo">1</span>           <span class="Content__hljs-comment__2_Ezx">-- ny linje</span>
+    <span class="Content__hljs-keyword__1gFtb">else</span>
+        <span class="hljs-built_in">print</span>(<span class="Content__hljs-string__2DCAo">'Nei, det riktige svaret er '</span> .. tall1 * tall2)
+    <span class="Content__hljs-keyword__1gFtb">end</span>
+<span class="Content__hljs-keyword__1gFtb">end</span>
+                                         <span class="Content__hljs-comment__2_Ezx">-- ny linje nedenfor</span>
+<span class="hljs-built_in">print</span>(<span class="Content__hljs-string__2DCAo">'Du klarte '</span> .. ant_riktig .. <span class="Content__hljs-string__2DCAo">' av '</span> .. ant_stykker)
+</code></pre>
+</li>
+</ul>
+<section class="Content__challenge__2LUyO" id="prov-selv-2">
+<h3 class="Content__challenge__2LUyO" id="prov-selv-2">Prøv selv</h3>
+<p>Kan du endre programmet slik at det spør om andre typer mattestykker?
+For eksempel plusstykker, minusstykker eller delestykker?</p>
+<p>For minusstykker, hvordan kan du lage tilfeldige <code>tall2</code> på en slik
+måte at <code>tall2</code> aldri er større enn <code>tall1</code>?</p>
+<p>For delestykker, hvordan kan du enkelt lage stykker som du vet går
+opp, det vil si slik at svaret blir et helt tall?</p>
+<p>Kan du bruke <code>math.random</code> og passende <code>if</code>-tester for å tilfeldig
+velge hvilken type mattestykke det spørres om?</p>
+</section>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="steg-5-passordlas-pa-en-dor">
+<h1 class="Content__activity__12AJC" id="steg-5-passordlas-pa-en-dor">Steg 5: Passordlås på en dør</h1>
+<p><em>Datamaskinene våre er jo en del av Minecraft. Vi skal nå se et enkelt
+eksempel på hvordan vi kan koble dem sammen med resten av
+Minecraft-verdenen rundt oss.</em></p>
+<section class="Content__check__sbZVW" id="sjekkliste-8">
+<h2 class="Content__check__sbZVW" id="sjekkliste-8"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_24"><label for="cbx_24"> Gå ut av datamaskinen ved å trykke <em>Esc</em>-knappen.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_25"><label for="cbx_25"> Samle sammen litt <strong>Stone</strong>, en <strong>Iron door</strong> og en <strong>Computer</strong>, og
+lag en vegg hvor du setter inn en dør og med datamaskinen rett ved
+siden av døren. Det skal se omtrent slik ut:</label></p>
+<figure><img src="passord.png" alt=""></figure>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_26"><label for="cbx_26"> Start datamaskinen.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_27"><label for="cbx_27"> Lag et nytt program som heter <code>passord</code>:</label></p>
+<pre><code class="lua"><span class="Content__hljs-keyword__1gFtb">local</span> passord = <span class="Content__hljs-string__2DCAo">'kodeklubben'</span>
+
+<span class="Content__hljs-keyword__1gFtb">while</span> <span class="Content__hljs-literal__7rtGP">true</span> <span class="Content__hljs-keyword__1gFtb">do</span>
+    <span class="hljs-built_in">print</span>(<span class="Content__hljs-string__2DCAo">'Hva er passordet?'</span>)
+    svar = <span class="hljs-built_in">read</span>()
+
+    <span class="Content__hljs-keyword__1gFtb">if</span> svar == passord <span class="Content__hljs-keyword__1gFtb">then</span>
+        <span class="hljs-built_in">print</span> <span class="Content__hljs-string__2DCAo">'Riktig'</span>
+    <span class="Content__hljs-keyword__1gFtb">else</span>
+        <span class="hljs-built_in">print</span> <span class="Content__hljs-string__2DCAo">'Feil'</span>
+    <span class="Content__hljs-keyword__1gFtb">end</span>
+<span class="Content__hljs-keyword__1gFtb">end</span>
+</code></pre>
+<p>Dette programmet ligner ganske mye på <code>mattetest</code>-programmet vi
+laget tidligere. Det er bare èn ny ting her som vi ikke har sett
+tidligere, nemlig en <code>while</code>-løkke. Slike løkker vil fortsette å
+gjøre ting om igjen så lenge noe er sant. I vårt tilfelle er dette
+<em>noe</em> verdien <code>true</code> som alltid er sann. Det betyr at vi har laget
+en <em>evig løkke</em>. Dette programmet vil fortsette å spørre oss om
+passordet for alltid!</p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_28"><label for="cbx_28"> Kjør programmet. Oppfører programmet seg slik du hadde trodd? Husker
+du passordet?</label></p>
+</li>
+</ul>
+<section class="Content__protip__3oM5h" id="avslutte-programmer">
+<h3 class="Content__protip__3oM5h" id="avslutte-programmer">Avslutte programmer</h3>
+<p>For å avslutte dette programmet holder du inne <em>Ctrl</em> og <em>T</em> samtidig
+i cirka ett sekund. Da avbrytes programmet, og teksten <code>Terminated</code>
+skrives på skjermen. Dette fungerer både her og i andre programmer.</p>
+</section>
+</section>
+<section class="Content__check__sbZVW" id="sjekkliste-9">
+<h2 class="Content__check__sbZVW" id="sjekkliste-9"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_29"><label for="cbx_29"> Vi vil at døren skal åpne seg når vi skriver riktig passord. Dette
+kan vi gjøre ved å bruke <strong>redstone</strong> som brukes for å overføre energi
+i Minecraft. Endre programmet <code>passord</code> som følger:</label></p>
+<pre><code class="lua"><span class="Content__hljs-keyword__1gFtb">local</span> passord = <span class="Content__hljs-string__2DCAo">'kodeklubben'</span>
+
+<span class="Content__hljs-keyword__1gFtb">while</span> <span class="Content__hljs-literal__7rtGP">true</span> <span class="Content__hljs-keyword__1gFtb">do</span>
+    <span class="hljs-built_in">print</span>(<span class="Content__hljs-string__2DCAo">'Hva er passordet?'</span>)
+    svar = <span class="hljs-built_in">read</span>()
+
+    <span class="Content__hljs-keyword__1gFtb">if</span> svar == passord <span class="Content__hljs-keyword__1gFtb">then</span>
+        redstone.setOutput(<span class="Content__hljs-string__2DCAo">'left'</span>, <span class="Content__hljs-literal__7rtGP">true</span>)      <span class="Content__hljs-comment__2_Ezx">-- endret linje</span>
+        sleep(<span class="Content__hljs-number__1Gqqo">5</span>)                              <span class="Content__hljs-comment__2_Ezx">-- endret linje</span>
+        redstone.setOutput(<span class="Content__hljs-string__2DCAo">'left'</span>, <span class="Content__hljs-literal__7rtGP">false</span>)     <span class="Content__hljs-comment__2_Ezx">-- endret linje</span>
+    <span class="Content__hljs-keyword__1gFtb">end</span>
+<span class="Content__hljs-keyword__1gFtb">end</span>
+</code></pre>
+<p>Kjør programmet. Hva skjer nå når du skriver riktig passord?</p>
+<p>Funksjonen <code>setOutput</code> i <code>redstone</code>-biblioteket skrur av eller på
+litt <em>redstone</em>-energi som åpner døren. Her forteller <code>left</code>
+hvilken side av datamaskinen døren står på. Du kan også bruke for
+eksempel <code>right</code>, <code>top</code> eller <code>bottom</code>. Funksjonen <code>sleep</code> gjør at
+datamaskinen sover, det vil si gjør ingenting. I dette tilfellet
+sover datamaskinen i 5 sekunder, før energien skrus av igjen og
+døren lukker seg.</p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_30"><label for="cbx_30"> Før vi er helt fornøyde med dette programmet vil vi gjøre noen små
+forbedringer. Først kaller vi to funksjoner fra <code>term</code>-biblioteket.
+Den ene vil rense skjermen, mens den andre setter posisjonen hvor vi
+skriver teksten til <code>(1, 1)</code> som betyr øverst til venstre. I tillegg
+forteller vi <code>read</code> at vi ikke vil at passordet vi skriver inn skal
+synes på skjermen, i stedet vil vi at <code>*</code>-tegn skal vises. Programmet
+ser da slik ut:</label></p>
+<pre><code class="lua"><span class="Content__hljs-keyword__1gFtb">local</span> passord = <span class="Content__hljs-string__2DCAo">'kodeklubben'</span>
+
+<span class="Content__hljs-keyword__1gFtb">while</span> <span class="Content__hljs-literal__7rtGP">true</span> <span class="Content__hljs-keyword__1gFtb">do</span>
+    term.clear()                              <span class="Content__hljs-comment__2_Ezx">-- ny linje</span>
+    term.setCursorPos(<span class="Content__hljs-number__1Gqqo">1</span>, <span class="Content__hljs-number__1Gqqo">1</span>)                   <span class="Content__hljs-comment__2_Ezx">-- ny linje</span>
+    <span class="hljs-built_in">print</span>(<span class="Content__hljs-string__2DCAo">'Hva er passordet?'</span>)
+    svar = <span class="hljs-built_in">read</span>(<span class="Content__hljs-string__2DCAo">'*'</span>)                          <span class="Content__hljs-comment__2_Ezx">-- endret linje</span>
+
+    <span class="Content__hljs-keyword__1gFtb">if</span> svar == passord <span class="Content__hljs-keyword__1gFtb">then</span>
+        redstone.setOutput(<span class="Content__hljs-string__2DCAo">'left'</span>, <span class="Content__hljs-literal__7rtGP">true</span>)
+        sleep(<span class="Content__hljs-number__1Gqqo">5</span>)
+        redstone.setOutput(<span class="Content__hljs-string__2DCAo">'left'</span>, <span class="Content__hljs-literal__7rtGP">false</span>)
+    <span class="Content__hljs-keyword__1gFtb">end</span>
+<span class="Content__hljs-keyword__1gFtb">end</span>
+</code></pre>
+</li>
+</ul>
+<p>Gratulerer, du har nå lært ganske mye om hvordan man programmerer
+datamaskiner med ComputerCraft i Minecraft! Prøv gjerne å forandre
+noen av programmene vi har laget. Kan du lage dem enda bedre?</p>
+<section class="Content__challenge__2LUyO" id="prov-selv-3">
+<h3 class="Content__challenge__2LUyO" id="prov-selv-3">Prøv selv</h3>
+<p>Datamaskinene kan sende ut <em>redstone</em>-energi i alle retninger. Prøv å
+koble en <strong>Trap door</strong> til høyre side av datamaskinen ved hjelp av
+litt <em>redstone wire</em>. Aktiver denne fellen hvis det skrives feil
+passord!</p>
+<p>Alle kan vi skrive feil passord innimellom. Det er kanskje bedre å
+ikke aktivere fellen før noen svarer galt passord tre ganger på rad?
+Innfør en variabel som teller hvor mange feil passord som er
+skrevet. Aktiver fellen om tre gale passord skrives på rad.</p>
+</section>
+</section>
+</section>
+</div><div class="row" data-reactid="111"><div class="ImprovePage__container__HeXzk" data-reactid="112"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="113"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="114"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="115"><h2 data-reactid="116">Forbedre denne siden</h2><p data-reactid="117"><!-- react-text: 118 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 119 --> <!-- /react-text --><br data-reactid="120"/><!-- react-text: 121 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="122"><div data-reactid="123"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Computercraft: Bli kjent med datamaskinen&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/computercraft/bli_kjent_med_datamaskinen/bli_kjent_med_datamaskinen%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/computercraft/bli_kjent_med_datamaskinen%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="124">Rapporter et problem</a></div><div data-reactid="125"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="126">Gå til forumet</a></div><div data-reactid="127"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/computercraft/bli_kjent_med_datamaskinen" target="_blank" class="btn btn-orange" data-reactid="128">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div data-reactid="129"><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="130"><div class="Footer__center__3xqZ_ row" data-reactid="131"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="132">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="133">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="134"><a href="https://www.sparebank1.no" target="_blank" data-reactid="135"><img class="Footer__img__25Ink" src="/beta/CCV-assets/smn.41dee6.jpg" data-reactid="136"/></a><a href="https://ibok.no/" target="_blank" data-reactid="137"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ibok.7f1adf.jpg" data-reactid="138"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="139"><img class="Footer__img__25Ink" src="/beta/CCV-assets/teknograd.6d3bfb.png" data-reactid="140"/></a><a target="_blank" data-reactid="141"><img class="Footer__img__25Ink" src="/beta/CCV-assets/tekna.04ca97.jpg" data-reactid="142"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="143"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ntnu_idi.7bbd05.png" data-reactid="144"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="145"><img class="Footer__img__25Ink" src="/beta/CCV-assets/excITEd.ce9ee2.png" data-reactid="146"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="147"><img class="Footer__img__25Ink" src="/beta/CCV-assets/uio_ifi.eebbdf.png" data-reactid="148"/></a></div></div></div></div></div></div>
+
+    
+    <script src="/beta/manifest.0b1f01.js" type="text/javascript"></script>
+    
+    <script src="/beta/vendor.87e099.js" type="text/javascript"></script>
+    
+    <script src="/beta/main.aae969.js" type="text/javascript"></script>
+    
+    <script src="/beta/vendor2.c7170b.js" type="text/javascript"></script>
+    
+</body>
+</html>
