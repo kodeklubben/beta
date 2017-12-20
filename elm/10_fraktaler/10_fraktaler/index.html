@@ -6,7 +6,7 @@
     <title>Fraktaler og datastrukturer | Kodeklubben</title>
 
     
-    <link href="/beta/vendor2.961fdb.css" rel="stylesheet">
+    <link href="/beta/vendor2.27943c.css" rel="stylesheet">
     
 
     <style type="text/css">.App__appContainer__3y6aN {
@@ -553,11 +553,6 @@ table th[class*="col-"] {
   font-weight: normal;
   margin-left: 6px; }
 
-pre.Content__blocks__1k922,
-code.Content__b__2nfHe {
-  background-color: inherit;
-  border: 0; }
-
 pre > code {
   background-color: transparent; }
 
@@ -746,10 +741,10 @@ input[type="checkbox"]:checked + label::before {
   content: '\2714';
   line-height: 1.1em;
   padding-left: 0.1em; }
-.PrintButton__container__KmVN4 {
+.PdfButton__container__cTzho {
   margin: 10px 10px 0 0; }
   @media print {
-    .PrintButton__container__KmVN4 {
+    .PdfButton__container__cTzho {
       display: none; } }
 .ImprovePage__font__1MdMv {
   font-family: "Roboto", "Verdana", sans-serif;
@@ -859,16 +854,645 @@ input[type="checkbox"]:checked + label::before {
 </style>
 <meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/CCV-icons-4d5e7c/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/CCV-icons-4d5e7c/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/CCV-icons-4d5e7c/favicon-16x16.png"><link rel="shortcut icon" href="/beta/CCV-icons-4d5e7c/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1536x2008.png"></head>
 <body>
-    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="1984475829"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/CCV-assets/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/elm" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/elm/logo-black.3c0dc9.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Elm</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/elm/10_fraktaler/10_fraktaler" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-4.2eb68b.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Fraktaler og datastrukturer</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nn.fa23ab.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_en.7eea7b.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">English</div></div></a></li></ul></div></div><div class="ModeDropdown__gadgetContainer__2HE97" data-reactid="71"><div class="dropdown btn-group btn-group-student" data-reactid="72"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="73"><div data-reactid="74"><span class="ModeDropdown__onlyMode__1fZJE" data-reactid="75">Modus: </span><span data-reactid="76">Elev</span></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="77"><li role="presentation" class="active" data-reactid="78"><a role="menuitem" tabindex="-1" href="#" data-reactid="79">Elev</a></li><li role="presentation" class="" data-reactid="80"><a role="menuitem" tabindex="-1" href="#" data-reactid="81">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="82"><h1 data-reactid="83"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-4.2eb68b.svg" data-reactid="84"/><!-- react-text: 85 -->Fraktaler og datastrukturer<!-- /react-text --></h1><p data-reactid="86"><i data-reactid="87"><!-- react-text: 88 -->Skrevet av:<!-- /react-text --><!-- react-text: 89 --> <!-- /react-text --><span data-reactid="90">Teodor Heggelund</span></i></p><div class="Lesson__box__2CtND" data-reactid="91"><div data-reactid="92"><!-- react-text: 93 -->Kurs:<!-- /react-text --><!-- react-text: 94 --> <!-- /react-text --><!-- react-text: 95 -->Elm<!-- /react-text --></div><div data-reactid="96">Tema: Tekstbasert, Nettside</div><div data-reactid="97">Fag: Teknologi, Programmering, Matematikk</div><div data-reactid="98">Klassetrinn: 8.-10. klasse, Videregående skole</div><div data-reactid="99">Språk: Norsk bokmål</div></div><button type="button" class="PrintButton__container__KmVN4 btn btn-sm btn-danger" data-reactid="100">Skriv ut</button><div data-reactid="101"></div><div class="row" data-reactid="102"><div class="ImprovePage__container__HeXzk" data-reactid="103"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="104"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="105"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="106"><h2 data-reactid="107">Forbedre denne siden</h2><p data-reactid="108"><!-- react-text: 109 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 110 --> <!-- /react-text --><br data-reactid="111"/><!-- react-text: 112 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="113"><div data-reactid="114"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Elm: 10 fraktaler&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/elm/10_fraktaler/10_fraktaler%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/elm/10_fraktaler%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="115">Rapporter et problem</a></div><div data-reactid="116"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="117">Gå til forumet</a></div><div data-reactid="118"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/elm/10_fraktaler" target="_blank" class="btn btn-orange" data-reactid="119">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div data-reactid="120"><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="121"><div class="Footer__center__3xqZ_ row" data-reactid="122"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="123">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="124">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="125"><a href="https://www.sparebank1.no" target="_blank" data-reactid="126"><img class="Footer__img__25Ink" src="/beta/CCV-assets/smn.41dee6.jpg" data-reactid="127"/></a><a href="https://ibok.no/" target="_blank" data-reactid="128"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ibok.7f1adf.jpg" data-reactid="129"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="130"><img class="Footer__img__25Ink" src="/beta/CCV-assets/teknograd.6d3bfb.png" data-reactid="131"/></a><a target="_blank" data-reactid="132"><img class="Footer__img__25Ink" src="/beta/CCV-assets/tekna.04ca97.jpg" data-reactid="133"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="134"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ntnu_idi.7bbd05.png" data-reactid="135"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="136"><img class="Footer__img__25Ink" src="/beta/CCV-assets/excITEd.ce9ee2.png" data-reactid="137"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="138"><img class="Footer__img__25Ink" src="/beta/CCV-assets/uio_ifi.eebbdf.png" data-reactid="139"/></a></div></div></div></div></div></div>
+    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="-62073449"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/CCV-assets/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/elm" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/elm/logo-black.3c0dc9.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Elm</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/elm/10_fraktaler/10_fraktaler" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-4.2eb68b.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Fraktaler og datastrukturer</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="53"/><div class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</div></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="59"/><div class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</div></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nn.fa23ab.svg" data-reactid="64"/><div class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</div></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_en.7eea7b.svg" data-reactid="69"/><div class="LanguageDropdown__language__1g4QB" data-reactid="70">English</div></div></a></li></ul></div></div><div class="ModeDropdown__gadgetContainer__2HE97" data-reactid="71"><div class="dropdown btn-group btn-group-student" data-reactid="72"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="73"><div data-reactid="74"><span class="ModeDropdown__onlyMode__1fZJE" data-reactid="75">Modus: </span><span data-reactid="76">Elev</span></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="77"><li role="presentation" class="active" data-reactid="78"><a role="menuitem" tabindex="-1" href="#" data-reactid="79">Elev</a></li><li role="presentation" class="" data-reactid="80"><a role="menuitem" tabindex="-1" href="#" data-reactid="81">Lærer</a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="82"><h1 data-reactid="83"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-4.2eb68b.svg" data-reactid="84"/><!-- react-text: 85 -->Fraktaler og datastrukturer<!-- /react-text --></h1><p data-reactid="86"><i data-reactid="87"><!-- react-text: 88 -->Skrevet av:<!-- /react-text --><!-- react-text: 89 --> <!-- /react-text --><span data-reactid="90">Teodor Heggelund</span></i></p><div class="Lesson__box__2CtND" data-reactid="91"><div data-reactid="92"><!-- react-text: 93 -->Kurs:<!-- /react-text --><!-- react-text: 94 --> <!-- /react-text --><!-- react-text: 95 -->Elm<!-- /react-text --></div><div data-reactid="96">Tema: Tekstbasert, Nettside</div><div data-reactid="97">Fag: Teknologi, Programmering, Matematikk</div><div data-reactid="98">Klassetrinn: 8.-10. klasse, Videregående skole</div><div data-reactid="99">Språk: Norsk bokmål</div></div><a href="10_fraktaler.pdf" download="" class="PdfButton__container__cTzho btn btn-sm btn-pdf" data-reactid="100">Last ned PDF</a><div data-reactid="101"><section class="intro" id="introduksjon">
+<h1 class="intro" id="introduksjon">Introduksjon</h1>
+<p>En fraktal er en geometri med et mønster som gjentar seg selv inne i seg selv.
+Høres ikke det rart ut? I denne oppgaven skal vi lage våre egne.</p>
+<p>Her er Sierpinski-teppet, som er en fraktal:</p>
+<figure><img src="sierpinski.png" alt=""></figure>
+</section>
+<section class="Content__activity__12AJC" id="steg-1-hvordan-fungerer-sierpinski">
+<h1 class="Content__activity__12AJC" id="steg-1-hvordan-fungerer-sierpinski">Steg 1: Hvordan fungerer Sierpinski?</h1>
+<p>Fraktaler følger tre regler:</p>
+<ul>
+<li><strong>Startregelen</strong> gir hvor vi skal starte. Med en firkant? En trekant? En
+strek?</li>
+<li><strong>Tegneregelen</strong> gir hvordan vi skal tegne på nivået vi er. Fargelegge en bit
+av firkanten? Splitte en strek i to?</li>
+<li><strong>Rekursjonsregelen</strong> deler opp figuren vår i mindre biter, som vi kjører på
+nytt i. Lager firkanten vi tegnet nye firkanter? Lager streken vi tegnet nye
+streker? Gjenta for hver strek.</li>
+</ul>
+<section class="Content__check__sbZVW" id="sjekkliste">
+<h2 class="Content__check__sbZVW" id="sjekkliste"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<p>Gå til <a href="https://en.wikipedia.org/wiki/Sierpinski_carpet">Wikipedia-artikkelen</a>
+til Sierpinski-teppet. Se på animasjonen.</p>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_0"><label for="cbx_0"> Hvordan er teppet før det begynner å bli fargelagt? Dette er <strong>startregelen</strong>.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_1"><label for="cbx_1"> Hva tegner vi i hver firkant? Dette er <strong>tegneregelen</strong>.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_2"><label for="cbx_2"> Hvordan gjentas regelen? Dette er <strong>rekursjonsregelen</strong>.</label></li>
+</ul>
+<p>Se på figurene under avsnittet <strong>Process</strong>. Ser du at noe gjentar seg?</p>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="steg-2-tegne-kvadrater-med-svg">
+<h1 class="Content__activity__12AJC" id="steg-2-tegne-kvadrater-med-svg">Steg 2: Tegne kvadrater med SVG</h1>
+<p>Nå skal vi begynne å tegne kvadratene teppet:</p>
+<p><svg width="500" height="500" viewbox="0 0 27 27"><rect x="0" y="0" width="27" height="27" fill="blue"></rect><rect x="9" y="9" width="9" height="9" fill="green"></rect><rect x="3" y="3" width="3" height="3" fill="green"></rect><rect x="12" y="3" width="3" height="3" fill="green"></rect><rect x="21" y="3" width="3" height="3" fill="green"></rect><rect x="3" y="12" width="3" height="3" fill="green"></rect><rect x="21" y="12" width="3" height="3" fill="green"></rect><rect x="3" y="21" width="3" height="3" fill="green"></rect><rect x="12" y="21" width="3" height="3" fill="green"></rect><rect x="21" y="21" width="3" height="3" fill="green"></rect></svg></p>
+<p>Ett kvadrat kan vi tegne slik:</p>
+<pre><code class="elm"><span class="Content__hljs-keyword__1gFtb">import</span> Svg <span class="Content__hljs-keyword__1gFtb">exposing</span> (svg, rect)
+<span class="Content__hljs-keyword__1gFtb">import</span> Svg.Attributes <span class="Content__hljs-keyword__1gFtb">exposing</span> (width, height, viewBox, fill, x, y, width, height)
+
+
+<span class="Content__hljs-title__1NRbS">main</span> =
+    svg
+      [ width <span class="Content__hljs-string__2DCAo">"500"</span>, height <span class="Content__hljs-string__2DCAo">"500"</span>, viewBox <span class="Content__hljs-string__2DCAo">"0 0 27 27"</span> ]
+      [ rect [ x <span class="Content__hljs-string__2DCAo">"0"</span>, y <span class="Content__hljs-string__2DCAo">"0"</span>, width <span class="Content__hljs-string__2DCAo">"27"</span>, height <span class="Content__hljs-string__2DCAo">"27"</span>, fill <span class="Content__hljs-string__2DCAo">"blue"</span> ] - [ ]
+      , rect [ x <span class="Content__hljs-string__2DCAo">"9"</span>, y <span class="Content__hljs-string__2DCAo">"9"</span>, width <span class="Content__hljs-string__2DCAo">"9"</span>, height <span class="Content__hljs-string__2DCAo">"9"</span>, fill <span class="Content__hljs-string__2DCAo">"green"</span> ] - [ ]
+      ]
+</code></pre>
+<p><svg width="500" height="500" viewbox="0 0 27 27"><rect x="0" y="0" width="27" height="27" fill="blue"></rect><rect x="9" y="9" width="9" height="9" fill="green"></rect></svg></p>
+<section class="Content__check__sbZVW" id="sjekkliste-2">
+<h2 class="Content__check__sbZVW" id="sjekkliste-2"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_3"><label for="cbx_3"> Hvordan kan vi da tegne mange kvadrater?</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_4"><label for="cbx_4"> Hva bestemmer posisjonen til tallene?</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_5"><label for="cbx_5"> Hvor mange store grønne kvadrater har du tegnet?</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_6"><label for="cbx_6"> Hvor mange små grønne kvadrater har du tegnet?</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_7"><label for="cbx_7"> <strong>Utvid koden til å tegne mange kvadrater</strong>.</label></li>
+</ul>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="steg-3-datastrukturer">
+<h1 class="Content__activity__12AJC" id="steg-3-datastrukturer">Steg 3: Datastrukturer</h1>
+<p>Kan du telle hvor mange kvadrater det finnes i Sierpinski-teppet? Ikke jeg
+heller. Hmm, gidder vi da å skrive de maaaange linjene SVG for hånd? Nei, vi
+programmerer!</p>
+<p>Vi skal nå representere kvadrater med Records i Elm. Records lar oss lage <em>våre
+egne typer</em>. Vi kommer til å lage en type for punkter og en type for kvadrater.</p>
+<section class="Content__check__sbZVW" id="sjekkliste-3">
+<h2 class="Content__check__sbZVW" id="sjekkliste-3"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<p>Nå skal du få prøve å lese Elm sine egne læreressurser.</p>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_8"><label for="cbx_8"> Gå til <a href="http://elm-lang.org/docs/records">Elm-dokumentasjonen for records</a>.
+Finner du eksempelet for et punkt?</label></li>
+</ul>
+<p>Vi legger til en liten snutt i programmet vårt:</p>
+<pre><code class="elm"><span class="Content__hljs-keyword__1gFtb">import</span> Html <span class="Content__hljs-keyword__1gFtb">exposing</span> (div, text, h1)
+
+<span class="Content__hljs-keyword__1gFtb">import</span> Svg <span class="Content__hljs-keyword__1gFtb">exposing</span> (svg, rect)
+<span class="Content__hljs-keyword__1gFtb">import</span> Svg.Attributes <span class="Content__hljs-keyword__1gFtb">exposing</span> (width, height, viewBox, fill, x, y, width, height)
+
+<span class="Content__hljs-title__1NRbS">myPoint</span> =
+    { x = <span class="Content__hljs-number__1Gqqo">9</span>
+    , y = <span class="Content__hljs-number__1Gqqo">3</span>
+    }
+
+<span class="Content__hljs-title__1NRbS">main</span> =
+    div []
+      [ h1 [] [ text (toString myPoint) ]
+      , svg
+        [ width <span class="Content__hljs-string__2DCAo">"500"</span>, height <span class="Content__hljs-string__2DCAo">"500"</span>, viewBox <span class="Content__hljs-string__2DCAo">"0 0 27 27"</span> ]
+        [ rect [ x <span class="Content__hljs-string__2DCAo">"0"</span>, y <span class="Content__hljs-string__2DCAo">"0"</span>, width <span class="Content__hljs-string__2DCAo">"27"</span>, height <span class="Content__hljs-string__2DCAo">"27"</span>, fill <span class="Content__hljs-string__2DCAo">"blue"</span> ] - [ ]
+        , rect [ x <span class="Content__hljs-string__2DCAo">"3"</span>, y <span class="Content__hljs-string__2DCAo">"3"</span>, width <span class="Content__hljs-string__2DCAo">"3"</span>, height <span class="Content__hljs-string__2DCAo">"3"</span>, fill <span class="Content__hljs-string__2DCAo">"green"</span> ] - [ ]
+        ]
+      ]
+</code></pre>
+<p>Nå kan du endre <code>toString myPoint</code> for å skrive ut noe annet.</p>
+</section>
+<section class="Content__check__sbZVW" id="sjekkliste-4">
+<h2 class="Content__check__sbZVW" id="sjekkliste-4"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_9"><label for="cbx_9"> Skriv ut kun <code>x</code>-attributten til <code>myPoint</code></label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_10"><label for="cbx_10"> Lag et annet punkt, <code>yourPoint</code>. Velg koordinater og skriv ut dette i stedet.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_11"><label for="cbx_11"> Lag et tredje punkt, <code>theirPoint</code>. Dette skal du lage <em>ut ifra <code>myPoint</code></em>, men
+du skal bytte ut x-verdien med <code>0</code>. Se avsnittet <strong>Updating Records</strong> i guiden.</label></li>
+</ul>
+<p>Nå skal vi ta steget videre og lage våre egne punkter.</p>
+<p><strong>Husk!</strong> Du kan bruke linjen <code>[ h1 [] [ text (toString yz) ]</code> til å teste
+verdier.</p>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_12"><label for="cbx_12"> Les de to første eksemplene i avsnittet <strong>Record types</strong>.</label></li>
+</ul>
+<p>Her finnes det allerede en <code>Point</code>-type vi kan bruke. Har du definert <code>myPoint</code>
+og <code>yourPoint</code> på samme måte som det gjøres i guiden?</p>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_13"><label for="cbx_13"> Skriv inn <code>Point</code>-typen i programmet ditt</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_14"><label for="cbx_14"> Spesifiser at punktene dine skal være av typen <code>Point</code>:</label></p>
+<pre><code class="elm"><span class="Content__hljs-comment__2_Ezx">-- myPoint : Point betyr at myPoint skal være av type Point</span>
+<span class="Content__hljs-title__1NRbS">myPoint</span> : <span class="Content__hljs-type__1tL9w">Point</span>
+<span class="Content__hljs-title__1NRbS">myPoint</span> = <span class="Content__hljs-comment__2_Ezx">-- din tidligere løsning</span>
+
+<span class="Content__hljs-comment__2_Ezx">-- yourPoint : Point betyr at yourPoint skal være av type Point</span>
+<span class="Content__hljs-title__1NRbS">yourPoint</span> : <span class="Content__hljs-type__1tL9w">Point</span>
+<span class="Content__hljs-title__1NRbS">yourPoint</span> = <span class="Content__hljs-comment__2_Ezx">-- din tidligere løsning</span>
+</code></pre>
+</li>
+</ul>
+<p>Klager kompilatoren? Hvorfor/hvorfor ikke? Om den klager betyr det ikke at du
+har gjort noe feil. Det bare at du og guiden lagde punkter på forskjellig måte.</p>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_15"><label for="cbx_15"> Utvid punktene dine med en z-verdi. Hva skjer når du kopilerer? Klarer du tyde
+feilmeldingen?</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_16"><label for="cbx_16"> Lag en ny type: <code>Point3D</code> som også har Z-verdi, og spesifiser at punktene dine
+skal være av denne typen:</label><pre><code class="elm"><span class="Content__hljs-title__1NRbS">myPoint</span> : <span class="Content__hljs-type__1tL9w">Point3D</span>
+<span class="Content__hljs-comment__2_Ezx">-- ...</span>
+</code></pre>
+</li>
+</ul>
+<p>Dette får vi bruk for!</p>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="steg-4-datastrukturer-i-datastrukturer">
+<h1 class="Content__activity__12AJC" id="steg-4-datastrukturer-i-datastrukturer">Steg 4: Datastrukturer i datastrukturer</h1>
+<p>I steg 3 bygget vi opp datastruktren <code>Point</code> fra to tall av typen <code>Float</code>.</p>
+<p>Nå skal vi bruke får egen type, <code>Point</code>, til å bygge opp ett kvadrat.</p>
+<section class="Content__protip__3oM5h" id="desimaltall">
+<h2 class="Content__protip__3oM5h" id="desimaltall">Desimaltall</h2>
+<p>Obs! Her kommer det matte. Viktig for oss nå:</p>
+<p>Kommatall i Elm har typen <code>Float</code>.</p>
+<p>Dette har en forklaring:</p>
+<p>Desimaltall i Elm har typen <code>Float</code>. Float er kort for <em>Floating point number</em>,
+som på norsk er <em>flyttall</em>. Disse kalles flyttall fordi de har <em>flytende
+presisjon</em>. Det betyr at vi kan ha et fast antall <em>siffer</em> med nøyaktighet. Vi
+kan også lage veldig store tall, som 1000 * 1000 * 1000 * 1000 * 10000</p>
+</section>
+<section class="Content__check__sbZVW" id="sjekkliste-5">
+<h2 class="Content__check__sbZVW" id="sjekkliste-5"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_17"><label for="cbx_17"> Hva må vi vite om et kvadrat for at vi skal kunne tegne det?</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_18"><label for="cbx_18"> Lag typen kvadrat: <code>type alias Square = -- ...</code></label></li>
+</ul>
+<p>Nå skal vi tegne kvadratet!</p>
+<pre><code class="elm"><span class="Content__hljs-title__1NRbS">viewSquare</span> square = <span class="Content__hljs-comment__2_Ezx">-- ...</span>
+</code></pre>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_19"><label for="cbx_19"> Lag funksjonen <code>viewSquare</code>. Bruk <code>rect</code> fra SVG som du har brukt tidligere.</label></li>
+</ul>
+<p><strong>Obs!</strong> Når vi tegner kvadrater må vi bruke en farge. En måte å løse det på er
+å ha en <code>color : String</code>-attributt på <code>Square</code>.</p>
+<p>Her er hvordan jeg bruker min <code>viewSquare</code>:</p>
+<pre><code class="elm"><span class="Content__hljs-title__1NRbS">start</span> =
+  { corner = { x = <span class="Content__hljs-number__1Gqqo">0.0</span>
+             , y = <span class="Content__hljs-number__1Gqqo">0.0</span>
+             }
+  , width = <span class="Content__hljs-number__1Gqqo">27.0</span>
+  , color = <span class="Content__hljs-string__2DCAo">"blue"</span>
+  }
+
+<span class="Content__hljs-title__1NRbS">center</span> =
+  { corner = { x = <span class="Content__hljs-number__1Gqqo">9.0</span>
+             , y = <span class="Content__hljs-number__1Gqqo">9.0</span>
+             }
+  , width = <span class="Content__hljs-number__1Gqqo">9.0</span>
+  , color = <span class="Content__hljs-string__2DCAo">"green"</span>
+  }
+
+
+<span class="Content__hljs-title__1NRbS">main</span> =
+    div []
+      [ h1 [] [ text (toString start)
+              , text (toString center)
+              ]
+      , svg
+        [ width <span class="Content__hljs-string__2DCAo">"500"</span>, height <span class="Content__hljs-string__2DCAo">"500"</span>, viewBox <span class="Content__hljs-string__2DCAo">"0 0 27 27"</span> ]
+        [ viewSquare start
+        , viewSquare center
+        ]
+      ]
+</code></pre>
+<p>Dette blir seende slik ut på min PC:</p>
+<div>{ corner = { x = 0, y = 0 }, width = 27, color = "blue" }{ corner = { x = 9, y = 9 }, width = 9, color = "green" }<svg width="500" height="500" viewbox="0 0 27 27"><rect x="0" y="0" width="27" height="27" fill="blue"></rect><rect x="9" y="9" width="9" height="9" fill="green"></rect></svg></div>
+<p>Nå har vi <strong>startregelen</strong> i boks! Den er kvadratet <code>start</code>!</p>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="steg-5-senterkvadrat-og">
+<h1 class="Content__activity__12AJC" id="steg-5-senterkvadrat-og">Steg 5: Senterkvadrat og <code>let</code></h1>
+<p>Vi kan sette binde navn med <code>let</code>. Her binder vi <code>age</code> til alderen vi regner ut:</p>
+<pre><code class="elm"><span class="Content__hljs-title__1NRbS">describeAge</span> yearNow yearBorn =
+  <span class="Content__hljs-keyword__1gFtb">let</span> age = yearNow - yearBorn
+  <span class="Content__hljs-keyword__1gFtb">in</span> <span class="Content__hljs-string__2DCAo">"The age is "</span> ++ (toString age)
+</code></pre>
+<p>Vi kan binde flere navn som kan være avhengig av hverandre:</p>
+<pre><code class="elm"><span class="Content__hljs-title__1NRbS">describeHalfAge</span> yearNow yearBorn =
+  <span class="Content__hljs-keyword__1gFtb">let</span> age = yearNow - yearBorn
+      halfAge = age / <span class="Content__hljs-number__1Gqqo">2</span>
+  <span class="Content__hljs-keyword__1gFtb">in</span> <span class="Content__hljs-string__2DCAo">"Half the age is "</span> ++ (toString halfAge)
+</code></pre>
+<section class="Content__check__sbZVW" id="sjekkliste-6">
+<h2 class="Content__check__sbZVW" id="sjekkliste-6"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_20"><label for="cbx_20"> Lag funksjonen <code>describeDoubleAge</code>. Hva skal denne gjøre?</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_21"><label for="cbx_21"> Les overskriften <strong>Let expressions</strong>
+i <a href="http://elm-lang.org/docs/syntax">syntaxguiden</a>. Her er det noen eksempler.
+Prøv selv!</label></li>
+</ul>
+<p>Nå skal vi tilbake til fraktalene våre, vi skal lage den grønne firkanten i
+sentrum. Denne gangen med kode!</p>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_22"><label for="cbx_22"> Lag funksjonen <code>centerSquare</code>. Denne skal ta inn et kvadrat og returnere
+kvadratet i sentrum av det forrige. Hvilken farge skal det ha?</label></li>
+</ul>
+<p>Her er en start:</p>
+<pre><code class="elm"><span class="Content__hljs-title__1NRbS">centerSquare</span> : <span class="Content__hljs-type__1tL9w">Square</span> -&gt; <span class="Content__hljs-type__1tL9w">Square</span>
+<span class="Content__hljs-title__1NRbS">centerSquare</span> old =
+    <span class="Content__hljs-keyword__1gFtb">let</span> x =
+</code></pre>
+<p>Du skal kunne bruke den slik:</p>
+<pre><code>&gt; centerSquare
+&lt;function&gt; : Utils.Square -&gt; Utils.Square
+&gt; centerSquare start
+{ <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"blue"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">9</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">9</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">9</span> } } : Utils.Square
+</code></pre>
+<p>... hva må x-verdien være om det nye kvadratet skal være i sentrum av det forrige?</p>
+<p><svg width="500" height="500" viewbox="0 0 27 27"><rect x="0" y="0" width="27" height="27" fill="blue"></rect><rect x="9" y="9" width="9" height="9" fill="green"></rect></svg></p>
+<p>Får du til? Prøv selv først.</p>
+<p>Slik ser min ut:</p>
+<pre><code class="elm"><span class="Content__hljs-title__1NRbS">mkSquare</span> color width corner =
+    { color = color
+    , width = width
+    , corner = corner
+    }
+
+<span class="Content__hljs-title__1NRbS">blueSquare</span> = mkSquare <span class="Content__hljs-string__2DCAo">"blue"</span>
+
+<span class="Content__hljs-title__1NRbS">centerSquare</span> : <span class="Content__hljs-type__1tL9w">Square</span> -&gt; <span class="Content__hljs-type__1tL9w">Square</span>
+<span class="Content__hljs-title__1NRbS">centerSquare</span> old =
+    <span class="Content__hljs-keyword__1gFtb">let</span> x = old.corner.x + old.width/<span class="Content__hljs-number__1Gqqo">3</span>
+        y = old.corner.y + old.width/<span class="Content__hljs-number__1Gqqo">3</span>
+        w = old.width / <span class="Content__hljs-number__1Gqqo">3</span>
+    <span class="Content__hljs-keyword__1gFtb">in</span> blueSquare w (mkPoint x y)
+</code></pre>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="steg-6-funksjoner-fra-og">
+<h1 class="Content__activity__12AJC" id="steg-6-funksjoner-fra-og">Steg 6: Funksjoner fra <code>List</code> og <code>String</code></h1>
+<p><code>List.map</code> kjører en funksjon på hvert element i en liste. Eksempel:</p>
+<pre><code>&gt; add1 x = x + <span class="Content__hljs-number__1Gqqo">1</span>
+&lt;<span class="hljs-function"><span class="Content__hljs-keyword__1gFtb">function</span></span>&gt; : <span class="Content__hljs-keyword__1gFtb">number</span> -&gt; <span class="Content__hljs-keyword__1gFtb">number</span>
+&gt; List.map add1 [<span class="Content__hljs-number__1Gqqo">10</span>, <span class="Content__hljs-number__1Gqqo">20</span>, <span class="Content__hljs-number__1Gqqo">30</span>]
+[<span class="Content__hljs-number__1Gqqo">11</span>,<span class="Content__hljs-number__1Gqqo">21</span>,<span class="Content__hljs-number__1Gqqo">31</span>] : List <span class="Content__hljs-keyword__1gFtb">number</span>
+&gt; times2 x = x * <span class="Content__hljs-number__1Gqqo">2</span>
+&lt;<span class="hljs-function"><span class="Content__hljs-keyword__1gFtb">function</span></span>&gt; : <span class="Content__hljs-keyword__1gFtb">number</span> -&gt; <span class="Content__hljs-keyword__1gFtb">number</span>
+&gt; List.map times2 [<span class="Content__hljs-number__1Gqqo">10</span>, <span class="Content__hljs-number__1Gqqo">20</span>, <span class="Content__hljs-number__1Gqqo">30</span>]
+[<span class="Content__hljs-number__1Gqqo">20</span>,<span class="Content__hljs-number__1Gqqo">40</span>,<span class="Content__hljs-number__1Gqqo">60</span>] : List <span class="Content__hljs-keyword__1gFtb">number</span>
+</code></pre>
+<section class="Content__check__sbZVW" id="sjekkliste-7">
+<h2 class="Content__check__sbZVW" id="sjekkliste-7"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_23"><label for="cbx_23"> Les avnsitet om <code>List.map</code> i <a href="http://package.elm-lang.org/packages/elm-lang/core/latest/List#map">dokumentasjonen til List</a>.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_24"><label for="cbx_24"> Bruk <code>List.map</code> til å lage listen <code>[&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;]</code></label></li>
+</ul>
+<p><code>List.range</code> kan lage en liste med tall. Eksempel:</p>
+<pre><code>&gt; <span class="Content__hljs-keyword__1gFtb">List</span>.map <span class="Content__hljs-keyword__1gFtb">toString</span> (<span class="Content__hljs-keyword__1gFtb">List</span>.<span class="Content__hljs-keyword__1gFtb">range</span> 1 4)
+[<span class="Content__hljs-string__2DCAo">"1"</span>,<span class="Content__hljs-string__2DCAo">"2"</span>,<span class="Content__hljs-string__2DCAo">"3"</span>,<span class="Content__hljs-string__2DCAo">"4"</span>] : <span class="Content__hljs-keyword__1gFtb">List</span> <span class="hljs-built_in">String</span>
+&gt; <span class="Content__hljs-keyword__1gFtb">List</span>.<span class="Content__hljs-keyword__1gFtb">range</span> 5 10
+[5,6,7,8,9,10] : <span class="Content__hljs-keyword__1gFtb">List</span> Int
+&gt; <span class="Content__hljs-keyword__1gFtb">List</span>.<span class="Content__hljs-keyword__1gFtb">range</span> 0 3
+[0,1,2,3] : <span class="Content__hljs-keyword__1gFtb">List</span> Int
+</code></pre>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_25"><label for="cbx_25"> Les avsnittet om <code>List.range</code> i <a href="http://package.elm-lang.org/packages/elm-lang/core/latest/List#range">dokumentasjonen til List</a></label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_26"><label for="cbx_26"> Bruk <code>List.map</code> og <code>List.range</code> til å lage denne store listen:</label></li>
+</ul>
+<pre><code class="elm">[<span class="Content__hljs-string__2DCAo">"0"</span>,<span class="Content__hljs-string__2DCAo">"1"</span>,<span class="Content__hljs-string__2DCAo">"2"</span>,<span class="Content__hljs-string__2DCAo">"3"</span>,<span class="Content__hljs-string__2DCAo">"4"</span>,<span class="Content__hljs-string__2DCAo">"5"</span>,<span class="Content__hljs-string__2DCAo">"6"</span>,<span class="Content__hljs-string__2DCAo">"7"</span>,<span class="Content__hljs-string__2DCAo">"8"</span>,<span class="Content__hljs-string__2DCAo">"9"</span>,<span class="Content__hljs-string__2DCAo">"10"</span>,<span class="Content__hljs-string__2DCAo">"11"</span>,<span class="Content__hljs-string__2DCAo">"12"</span>,<span class="Content__hljs-string__2DCAo">"13"</span>,<span class="Content__hljs-string__2DCAo">"14"</span>
+,<span class="Content__hljs-string__2DCAo">"15"</span>,<span class="Content__hljs-string__2DCAo">"16"</span>,<span class="Content__hljs-string__2DCAo">"17"</span>,<span class="Content__hljs-string__2DCAo">"18"</span>,<span class="Content__hljs-string__2DCAo">"19"</span>,<span class="Content__hljs-string__2DCAo">"20"</span>,<span class="Content__hljs-string__2DCAo">"21"</span>,<span class="Content__hljs-string__2DCAo">"22"</span>,<span class="Content__hljs-string__2DCAo">"23"</span>,<span class="Content__hljs-string__2DCAo">"24"</span>,<span class="Content__hljs-string__2DCAo">"25"</span>,<span class="Content__hljs-string__2DCAo">"26"</span>,<span class="Content__hljs-string__2DCAo">"27"</span>
+,<span class="Content__hljs-string__2DCAo">"28"</span>,<span class="Content__hljs-string__2DCAo">"29"</span>,<span class="Content__hljs-string__2DCAo">"30"</span>]
+</code></pre>
+<p>Vi innfører enda en nyttig funksjon: <code>String.join</code>. Denne bygger opp tekst fra
+en liste.</p>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_27"><label for="cbx_27"> Les dokumentasjonen til <code>String.join</code> i <a href="http://package.elm-lang.org/packages/elm-lang/core/latest/String#join">dokumentasjonen til String</a></label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_28"><label for="cbx_28"> Lag funksjonen <code>sayTo</code>. Den skal kunne brukes slik:</label></li>
+</ul>
+<pre><code>&gt; sayTo 10
+"1 og<span class="Content__hljs-number__1Gqqo"> 2 </span>og<span class="Content__hljs-number__1Gqqo"> 3 </span>og<span class="Content__hljs-number__1Gqqo"> 4 </span>og<span class="Content__hljs-number__1Gqqo"> 5 </span>og<span class="Content__hljs-number__1Gqqo"> 6 </span>og<span class="Content__hljs-number__1Gqqo"> 7 </span>og<span class="Content__hljs-number__1Gqqo"> 8 </span>og<span class="Content__hljs-number__1Gqqo"> 9 </span>og 10" : String
+&gt; sayTo 3
+"1 og<span class="Content__hljs-number__1Gqqo"> 2 </span>og 3" : String
+</code></pre>
+<p>Bra! Gi deg selv en klapp på skulderen.</p>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="steg-7-kvadrater-langs-kanten">
+<h1 class="Content__activity__12AJC" id="steg-7-kvadrater-langs-kanten">Steg 7: Kvadrater langs kanten</h1>
+<p>Nå skal vi finne kvadratene langs kanten. Hvor mange blir det? Tell de røde:</p>
+<p><svg width="500" height="500" viewbox="0 0 27 27"><rect x="0" y="0" width="27" height="27" fill="blue"></rect><rect x="9" y="9" width="9" height="9" fill="green"></rect><rect x="3" y="3" width="3" height="3" fill="red"></rect><rect x="12" y="3" width="3" height="3" fill="red"></rect><rect x="21" y="3" width="3" height="3" fill="red"></rect><rect x="3" y="12" width="3" height="3" fill="red"></rect><rect x="21" y="12" width="3" height="3" fill="red"></rect><rect x="3" y="21" width="3" height="3" fill="red"></rect><rect x="12" y="21" width="3" height="3" fill="red"></rect><rect x="21" y="21" width="3" height="3" fill="red"></rect></svg></p>
+<p><strong>Obs!</strong> Denne er en utfording. Ta deg god tid.</p>
+<section class="Content__check__sbZVW" id="sjekkliste-8">
+<h2 class="Content__check__sbZVW" id="sjekkliste-8"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_29"><label for="cbx_29"> Lag funksjonen <code>borderSquares</code>. Denne skal vi kunne bruke slik:</label></li>
+</ul>
+<pre><code>&gt; start
+{ <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"green"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">729</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">0</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">0</span> } } : Utils.Square
+&gt; borderSquares start
+[{ <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"blue"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">243</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">0</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">0</span> } }
+,{ <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"blue"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">243</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">243</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">0</span> } }
+,{ <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"blue"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">243</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">486</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">0</span> } }
+,{ <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"blue"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">243</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">0</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">243</span> } }
+,{ <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"blue"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">243</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">486</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">243</span> } }
+,{ <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"blue"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">243</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">0</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">486</span> } }
+,{ <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"blue"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">243</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">243</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">486</span> } }
+,{ <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"blue"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">243</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">486</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">486</span> } }]
+    : List Utils.Square
+</code></pre>
+<p>Får du til? Prøv selv først.</p>
+<p>Slik ser min ut:</p>
+<pre><code class="elm"><span class="Content__hljs-title__1NRbS">borderSquares</span> : <span class="Content__hljs-type__1tL9w">Square</span> -&gt; <span class="Content__hljs-type__1tL9w">List</span> <span class="Content__hljs-type__1tL9w">Square</span>
+<span class="Content__hljs-title__1NRbS">borderSquares</span> old =
+    <span class="Content__hljs-keyword__1gFtb">let</span> additions = [ (<span class="Content__hljs-number__1Gqqo">0</span>,<span class="Content__hljs-number__1Gqqo">0</span>) <span class="Content__hljs-comment__2_Ezx">-- First row</span>
+                    , (<span class="Content__hljs-number__1Gqqo">1</span>,<span class="Content__hljs-number__1Gqqo">0</span>)
+                    , (<span class="Content__hljs-number__1Gqqo">2</span>,<span class="Content__hljs-number__1Gqqo">0</span>)
+                    , (<span class="Content__hljs-number__1Gqqo">0</span>,<span class="Content__hljs-number__1Gqqo">1</span>) <span class="Content__hljs-comment__2_Ezx">-- Second row</span>
+                    , (<span class="Content__hljs-number__1Gqqo">2</span>,<span class="Content__hljs-number__1Gqqo">1</span>)
+                    , (<span class="Content__hljs-number__1Gqqo">0</span>,<span class="Content__hljs-number__1Gqqo">2</span>) <span class="Content__hljs-comment__2_Ezx">-- Third row</span>
+                    , (<span class="Content__hljs-number__1Gqqo">1</span>,<span class="Content__hljs-number__1Gqqo">2</span>)
+                    , (<span class="Content__hljs-number__1Gqqo">2</span>,<span class="Content__hljs-number__1Gqqo">2</span>)
+                    ]
+        w = old.width / <span class="Content__hljs-number__1Gqqo">3</span>
+        mkBorderSquare (fx,fy) =
+            <span class="Content__hljs-keyword__1gFtb">let</span> x = old.corner.x + w*fx
+                y = old.corner.y + w*fy
+            <span class="Content__hljs-keyword__1gFtb">in</span> blueSquare w (mkPoint x y)
+    <span class="Content__hljs-keyword__1gFtb">in</span> <span class="Content__hljs-type__1tL9w">List</span>.map mkBorderSquare additions
+</code></pre>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="stopp-hva-var-det-vi-skulle-igjen">
+<h1 class="Content__activity__12AJC" id="stopp-hva-var-det-vi-skulle-igjen">Stopp! Hva var det vi skulle igjen?</h1>
+<p><strong>Nivå 1</strong> har vi klart:</p>
+<p><svg width="100%" viewbox="0 0 729 729"><rect x="0" y="0" width="729" height="729" fill="green"></rect><rect x="243" y="243" width="243" height="243" fill="blue"></rect></svg></p>
+<p><strong>Nivå 2</strong> har vi også klart når vi har gjort Steg 7:</p>
+<p><svg width="100%" viewbox="0 0 729 729"><rect x="0" y="0" width="729" height="729" fill="green"></rect><rect x="243" y="243" width="243" height="243" fill="blue"></rect><rect x="81" y="81" width="81" height="81" fill="blue"></rect><rect x="324" y="81" width="81" height="81" fill="blue"></rect><rect x="567" y="81" width="81" height="81" fill="blue"></rect><rect x="81" y="324" width="81" height="81" fill="blue"></rect><rect x="567" y="324" width="81" height="81" fill="blue"></rect><rect x="81" y="567" width="81" height="81" fill="blue"></rect><rect x="324" y="567" width="81" height="81" fill="blue"></rect><rect x="567" y="567" width="81" height="81" fill="blue"></rect></svg></p>
+<p>Men videre blir det vanskeligere. Hvordan skal vi få til steg 3 og steg 4 på en elegant måte?</p>
+<p><strong>Nivå 3</strong>:</p>
+<p>
+  <img src="level3.svg">
+</p>
+<p><strong>Nivå 4</strong>:</p>
+<p>
+  <img src="level4.svg">
+</p>
+<p>Først lager vi én firkant. Så vil vi lage de åtte små firkanene som følger denne
+ene. Så vil vi for hver av de åtte nye gjøre det samme! Da får vi 8*8=64 nye små
+firkanter. Så vil vi <em>igjen</em> for hver av de 64 nye firkantene tegne åtte nye
+firkanter.</p>
+<p>I nivå 1 lager vi <strong>1</strong> ny firkant.</p>
+<p>I nivå 2 lager vi <strong>8</strong> nye firkanter.</p>
+<p>I nivå 3 lager vi <strong>8 * 8 = 64</strong> nye firkanter.</p>
+<p>Bruk <code>elm repl</code> til å regne ut disse:</p>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_30"><label for="cbx_30"> Hvor mange nye firkanter lager vi i nivå <strong>4</strong>?</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_31"><label for="cbx_31"> Hvor mange nye firkanter lager vi i nivå <strong>5</strong>?</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_32"><label for="cbx_32"> Hvor mange nye firkanter lager vi i nivå <strong>6</strong>?</label></li>
+</ul>
+<p>Klarer du å se et mønster?</p>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_33"><label for="cbx_33"> Hvor mange nye firkanter lager vi i nivå <strong>x</strong>?</label></li>
+</ul>
+</section>
+<section class="Content__activity__12AJC" id="steg-8-og">
+<h1 class="Content__activity__12AJC" id="steg-8-og">Steg 8: <code>concat</code> og <code>map</code></h1>
+<p>Vi skal trene litt før vi går videre.</p>
+<section class="Content__check__sbZVW" id="sjekkliste-9">
+<h2 class="Content__check__sbZVW" id="sjekkliste-9"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_34"><label for="cbx_34"> Lag filen Tall.elm. Legg inn dette i toppen:</label></p>
+<pre><code class="elm"><span class="Content__hljs-keyword__1gFtb">module</span> Tall <span class="Content__hljs-keyword__1gFtb">exposing</span> (..)
+
+<span class="Content__hljs-title__1NRbS">hei</span> = <span class="Content__hljs-string__2DCAo">"Hei!"</span>
+</code></pre>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_35"><label for="cbx_35"> Start <code>elm repl</code> fra kommandovindu i samme mappe</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_36"><label for="cbx_36"> Importer alle funksjonene fra <code>Tall.elm</code> fra <code>elm repl</code>:</label></p>
+<pre><code class="text">---- elm-repl <span class="Content__hljs-number__1Gqqo">0.18</span>.<span class="Content__hljs-number__1Gqqo">0</span> -----------------------------------------------------------
+:help <span class="Content__hljs-keyword__1gFtb">for</span> help, :<span class="Content__hljs-keyword__1gFtb">exit</span> to <span class="Content__hljs-keyword__1gFtb">exit</span>, more at &lt;https:<span class="Content__hljs-regexp__lxJZu">//gi</span>thub.com<span class="Content__hljs-regexp__lxJZu">/elm-lang/</span>elm-repl&gt;
+--------------------------------------------------------------------------------
+&gt; import Tall exposing (..)
+&gt; hei
+<span class="Content__hljs-string__2DCAo">"Hei!"</span> : String
+</code></pre>
+</li>
+</ul>
+<p><strong>Får du til? Bra!</strong></p>
+<p>Nå skal vi prøve oss på et problem fra matematikken:</p>
+<p><em>Er det mulig å liste opp alle desimaltall mellom 0 og 1?</em></p>
+<p>... gitt at vi har uendelig god tid. Hmm! La oss prøve, men begrense oss på
+antall desimaler i starten.</p>
+<p>Dette kunne vært første steg:</p>
+<pre><code class="text">0<span class="Content__hljs-selector-class__1YokA">.0</span>
+0<span class="Content__hljs-selector-class__1YokA">.1</span>
+0<span class="Content__hljs-selector-class__1YokA">.2</span>
+0<span class="Content__hljs-selector-class__1YokA">.3</span>
+0<span class="Content__hljs-selector-class__1YokA">.4</span>
+0<span class="Content__hljs-selector-class__1YokA">.5</span>
+0<span class="Content__hljs-selector-class__1YokA">.6</span>
+0<span class="Content__hljs-selector-class__1YokA">.7</span>
+0<span class="Content__hljs-selector-class__1YokA">.8</span>
+0<span class="Content__hljs-selector-class__1YokA">.9</span>
+</code></pre>
+</section>
+<section class="Content__check__sbZVW" id="sjekkliste-10">
+<h2 class="Content__check__sbZVW" id="sjekkliste-10"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_37"><label for="cbx_37"> Lag <code>sifre</code> for å spare på 0-9:</label></p>
+<pre><code class="elm">&gt; sifre
+[<span class="Content__hljs-string__2DCAo">"0"</span>,<span class="Content__hljs-string__2DCAo">"1"</span>,<span class="Content__hljs-string__2DCAo">"2"</span>,<span class="Content__hljs-string__2DCAo">"3"</span>,<span class="Content__hljs-string__2DCAo">"4"</span>,<span class="Content__hljs-string__2DCAo">"5"</span>,<span class="Content__hljs-string__2DCAo">"6"</span>,<span class="Content__hljs-string__2DCAo">"7"</span>,<span class="Content__hljs-string__2DCAo">"8"</span>,<span class="Content__hljs-string__2DCAo">"9"</span>] : <span class="Content__hljs-type__1tL9w">List</span> <span class="Content__hljs-type__1tL9w">String</span>
+</code></pre>
+</li>
+</ul>
+<p>Prøv selv først!</p>
+<p>Her er hva jeg gjorde:</p>
+<pre><code class="elm"><span class="Content__hljs-title__1NRbS">sifre</span> =
+    <span class="Content__hljs-keyword__1gFtb">let</span> nullTilNi = <span class="Content__hljs-type__1tL9w">List</span>.range <span class="Content__hljs-number__1Gqqo">0</span> <span class="Content__hljs-number__1Gqqo">9</span>
+    <span class="Content__hljs-keyword__1gFtb">in</span> <span class="Content__hljs-type__1tL9w">List</span>.map toString nullTilNi
+</code></pre>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_38"><label for="cbx_38"> Lag <code>ettSifferBak</code> som tar inn starten på tallet og legger på sifrene 0-9
+på slutten:</label></p>
+<pre><code class="elm">&gt; ettSifferBak
+&lt;function&gt; : <span class="Content__hljs-type__1tL9w">String</span> -&gt; <span class="Content__hljs-type__1tL9w">List</span> <span class="Content__hljs-type__1tL9w">String</span>
+&gt; ettSifferBak <span class="Content__hljs-string__2DCAo">"0."</span>
+[<span class="Content__hljs-string__2DCAo">"0.0"</span>,<span class="Content__hljs-string__2DCAo">"0.1"</span>,<span class="Content__hljs-string__2DCAo">"0.2"</span>,<span class="Content__hljs-string__2DCAo">"0.3"</span>,<span class="Content__hljs-string__2DCAo">"0.4"</span>,<span class="Content__hljs-string__2DCAo">"0.5"</span>,<span class="Content__hljs-string__2DCAo">"0.6"</span>,<span class="Content__hljs-string__2DCAo">"0.7"</span>,<span class="Content__hljs-string__2DCAo">"0.8"</span>,<span class="Content__hljs-string__2DCAo">"0.9"</span>] : <span class="Content__hljs-type__1tL9w">List</span> <span class="Content__hljs-type__1tL9w">String</span>
+&gt; ettSifferBak <span class="Content__hljs-string__2DCAo">"tull"</span>
+[<span class="Content__hljs-string__2DCAo">"tull0"</span>,<span class="Content__hljs-string__2DCAo">"tull1"</span>,<span class="Content__hljs-string__2DCAo">"tull2"</span>,<span class="Content__hljs-string__2DCAo">"tull3"</span>,<span class="Content__hljs-string__2DCAo">"tull4"</span>,<span class="Content__hljs-string__2DCAo">"tull5"</span>,<span class="Content__hljs-string__2DCAo">"tull6"</span>,<span class="Content__hljs-string__2DCAo">"tull7"</span>,<span class="Content__hljs-string__2DCAo">"tull8"</span>,<span class="Content__hljs-string__2DCAo">"tull9"</span>]
+    : <span class="Content__hljs-type__1tL9w">List</span> <span class="Content__hljs-type__1tL9w">String</span>
+</code></pre>
+</li>
+</ul>
+<p>Slik gjorde jeg det:</p>
+<pre><code class="elm"><span class="Content__hljs-title__1NRbS">ettSifferBak</span> start =
+    <span class="Content__hljs-keyword__1gFtb">let</span> begynnMedStart slutt = start ++ slutt
+    <span class="Content__hljs-keyword__1gFtb">in</span> <span class="Content__hljs-type__1tL9w">List</span>.map begynnMedStart sifre
+</code></pre>
+<p>Nå kommer trikset for å gå dypere: For hver mulige begynnelse må vi lage alle
+løsninger, og slå sammen disse.</p>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_39"><label for="cbx_39"> Lag <code>sifreAvLengde</code> som tar inn hvor mange sifre som skal legges på og
+begynnelsen, og gir tilbake alle mulighetene.</label></li>
+</ul>
+<pre><code class="elm">&gt; sifreAvLengde <span class="Content__hljs-number__1Gqqo">0</span> <span class="Content__hljs-string__2DCAo">""</span>
+[<span class="Content__hljs-string__2DCAo">""</span>] : <span class="Content__hljs-type__1tL9w">List</span> <span class="Content__hljs-type__1tL9w">String</span>
+&gt; sifreAvLengde <span class="Content__hljs-number__1Gqqo">0</span> <span class="Content__hljs-string__2DCAo">"0."</span>
+[<span class="Content__hljs-string__2DCAo">"0."</span>] : <span class="Content__hljs-type__1tL9w">List</span> <span class="Content__hljs-type__1tL9w">String</span>
+&gt; sifreAvLengde <span class="Content__hljs-number__1Gqqo">1</span> <span class="Content__hljs-string__2DCAo">"0."</span>
+[<span class="Content__hljs-string__2DCAo">"0.0"</span>,<span class="Content__hljs-string__2DCAo">"0.1"</span>,<span class="Content__hljs-string__2DCAo">"0.2"</span>,<span class="Content__hljs-string__2DCAo">"0.3"</span>,<span class="Content__hljs-string__2DCAo">"0.4"</span>,<span class="Content__hljs-string__2DCAo">"0.5"</span>,<span class="Content__hljs-string__2DCAo">"0.6"</span>,<span class="Content__hljs-string__2DCAo">"0.7"</span>,<span class="Content__hljs-string__2DCAo">"0.8"</span>,<span class="Content__hljs-string__2DCAo">"0.9"</span>] : <span class="Content__hljs-type__1tL9w">List</span> <span class="Content__hljs-type__1tL9w">String</span>
+&gt; sifreAvLengde <span class="Content__hljs-number__1Gqqo">1</span> <span class="Content__hljs-string__2DCAo">"1."</span>
+[<span class="Content__hljs-string__2DCAo">"1.0"</span>,<span class="Content__hljs-string__2DCAo">"1.1"</span>,<span class="Content__hljs-string__2DCAo">"1.2"</span>,<span class="Content__hljs-string__2DCAo">"1.3"</span>,<span class="Content__hljs-string__2DCAo">"1.4"</span>,<span class="Content__hljs-string__2DCAo">"1.5"</span>,<span class="Content__hljs-string__2DCAo">"1.6"</span>,<span class="Content__hljs-string__2DCAo">"1.7"</span>,<span class="Content__hljs-string__2DCAo">"1.8"</span>,<span class="Content__hljs-string__2DCAo">"1.9"</span>] : <span class="Content__hljs-type__1tL9w">List</span> <span class="Content__hljs-type__1tL9w">String</span>
+&gt; sifreAvLengde <span class="Content__hljs-number__1Gqqo">2</span> <span class="Content__hljs-string__2DCAo">"0."</span>
+[<span class="Content__hljs-string__2DCAo">"0.00"</span>,<span class="Content__hljs-string__2DCAo">"0.01"</span>,<span class="Content__hljs-string__2DCAo">"0.02"</span>,<span class="Content__hljs-string__2DCAo">"0.03"</span>,<span class="Content__hljs-string__2DCAo">"0.04"</span>,<span class="Content__hljs-string__2DCAo">"0.05"</span>,<span class="Content__hljs-string__2DCAo">"0.06"</span>,<span class="Content__hljs-string__2DCAo">"0.07"</span>,<span class="Content__hljs-string__2DCAo">"0.08"</span>,<span class="Content__hljs-string__2DCAo">"0.09"</span>,<span class="Content__hljs-string__2DCAo">"0.10"</span>,<span class="Content__hljs-string__2DCAo">"0.11"</span>,<span class="Content__hljs-string__2DCAo">"0.12"</span>,<span class="Content__hljs-string__2DCAo">"0.13"</span>,<span class="Content__hljs-string__2DCAo">"0.14"</span>,<span class="Content__hljs-string__2DCAo">"0.15"</span>,<span class="Content__hljs-string__2DCAo">"0.16"</span>,<span class="Content__hljs-string__2DCAo">"0.17"</span>,<span class="Content__hljs-string__2DCAo">"0.18"</span>,<span class="Content__hljs-string__2DCAo">"0.19"</span>,<span class="Content__hljs-string__2DCAo">"0.20"</span>,<span class="Content__hljs-string__2DCAo">"0.21"</span>,<span class="Content__hljs-string__2DCAo">"0.22"</span>,<span class="Content__hljs-string__2DCAo">"0.23"</span>,<span class="Content__hljs-string__2DCAo">"0.24"</span>,<span class="Content__hljs-string__2DCAo">"0.25"</span>,<span class="Content__hljs-string__2DCAo">"0.26"</span>,<span class="Content__hljs-string__2DCAo">"0.27"</span>,<span class="Content__hljs-string__2DCAo">"0.28"</span>,<span class="Content__hljs-string__2DCAo">"0.29"</span>,<span class="Content__hljs-string__2DCAo">"0.30"</span>,<span class="Content__hljs-string__2DCAo">"0.31"</span>,<span class="Content__hljs-string__2DCAo">"0.32"</span>,<span class="Content__hljs-string__2DCAo">"0.33"</span>,<span class="Content__hljs-string__2DCAo">"0.34"</span>,<span class="Content__hljs-string__2DCAo">"0.35"</span>,<span class="Content__hljs-string__2DCAo">"0.36"</span>,<span class="Content__hljs-string__2DCAo">"0.37"</span>,<span class="Content__hljs-string__2DCAo">"0.38"</span>,<span class="Content__hljs-string__2DCAo">"0.39"</span>,<span class="Content__hljs-string__2DCAo">"0.40"</span>,<span class="Content__hljs-string__2DCAo">"0.41"</span>,<span class="Content__hljs-string__2DCAo">"0.42"</span>,<span class="Content__hljs-string__2DCAo">"0.43"</span>,<span class="Content__hljs-string__2DCAo">"0.44"</span>,<span class="Content__hljs-string__2DCAo">"0.45"</span>,<span class="Content__hljs-string__2DCAo">"0.46"</span>,<span class="Content__hljs-string__2DCAo">"0.47"</span>,<span class="Content__hljs-string__2DCAo">"0.48"</span>,<span class="Content__hljs-string__2DCAo">"0.49"</span>,<span class="Content__hljs-string__2DCAo">"0.50"</span>,<span class="Content__hljs-string__2DCAo">"0.51"</span>,<span class="Content__hljs-string__2DCAo">"0.52"</span>,<span class="Content__hljs-string__2DCAo">"0.53"</span>,<span class="Content__hljs-string__2DCAo">"0.54"</span>,<span class="Content__hljs-string__2DCAo">"0.55"</span>,<span class="Content__hljs-string__2DCAo">"0.56"</span>,<span class="Content__hljs-string__2DCAo">"0.57"</span>,<span class="Content__hljs-string__2DCAo">"0.58"</span>,<span class="Content__hljs-string__2DCAo">"0.59"</span>,<span class="Content__hljs-string__2DCAo">"0.60"</span>,<span class="Content__hljs-string__2DCAo">"0.61"</span>,<span class="Content__hljs-string__2DCAo">"0.62"</span>,<span class="Content__hljs-string__2DCAo">"0.63"</span>,<span class="Content__hljs-string__2DCAo">"0.64"</span>,<span class="Content__hljs-string__2DCAo">"0.65"</span>,<span class="Content__hljs-string__2DCAo">"0.66"</span>,<span class="Content__hljs-string__2DCAo">"0.67"</span>,<span class="Content__hljs-string__2DCAo">"0.68"</span>,<span class="Content__hljs-string__2DCAo">"0.69"</span>,<span class="Content__hljs-string__2DCAo">"0.70"</span>,<span class="Content__hljs-string__2DCAo">"0.71"</span>,<span class="Content__hljs-string__2DCAo">"0.72"</span>,<span class="Content__hljs-string__2DCAo">"0.73"</span>,<span class="Content__hljs-string__2DCAo">"0.74"</span>,<span class="Content__hljs-string__2DCAo">"0.75"</span>,<span class="Content__hljs-string__2DCAo">"0.76"</span>,<span class="Content__hljs-string__2DCAo">"0.77"</span>,<span class="Content__hljs-string__2DCAo">"0.78"</span>,<span class="Content__hljs-string__2DCAo">"0.79"</span>,<span class="Content__hljs-string__2DCAo">"0.80"</span>,<span class="Content__hljs-string__2DCAo">"0.81"</span>,<span class="Content__hljs-string__2DCAo">"0.82"</span>,<span class="Content__hljs-string__2DCAo">"0.83"</span>,<span class="Content__hljs-string__2DCAo">"0.84"</span>,<span class="Content__hljs-string__2DCAo">"0.85"</span>,<span class="Content__hljs-string__2DCAo">"0.86"</span>,<span class="Content__hljs-string__2DCAo">"0.87"</span>,<span class="Content__hljs-string__2DCAo">"0.88"</span>,<span class="Content__hljs-string__2DCAo">"0.89"</span>,<span class="Content__hljs-string__2DCAo">"0.90"</span>,<span class="Content__hljs-string__2DCAo">"0.91"</span>,<span class="Content__hljs-string__2DCAo">"0.92"</span>,<span class="Content__hljs-string__2DCAo">"0.93"</span>,<span class="Content__hljs-string__2DCAo">"0.94"</span>,<span class="Content__hljs-string__2DCAo">"0.95"</span>,<span class="Content__hljs-string__2DCAo">"0.96"</span>,<span class="Content__hljs-string__2DCAo">"0.97"</span>,<span class="Content__hljs-string__2DCAo">"0.98"</span>,<span class="Content__hljs-string__2DCAo">"0.99"</span>]
+    : <span class="Content__hljs-type__1tL9w">List</span> <span class="Content__hljs-type__1tL9w">String</span>
+</code></pre>
+<p>Slik gjorde jeg det:</p>
+<pre><code class="elm"><span class="Content__hljs-title__1NRbS">sifreAvLengde</span> n start =
+    <span class="Content__hljs-keyword__1gFtb">if</span> n == <span class="Content__hljs-number__1Gqqo">0</span>
+    <span class="Content__hljs-comment__2_Ezx">-- Hvis vi ikke vil ha flere tall, gir vi tilbake kun hva vi har.</span>
+    <span class="Content__hljs-keyword__1gFtb">then</span> [start]
+    <span class="Content__hljs-keyword__1gFtb">else</span>
+        <span class="Content__hljs-keyword__1gFtb">let</span>
+            <span class="Content__hljs-comment__2_Ezx">-- Liste over alle de nye startene for neste nivå</span>
+            starter = ettSifferBak start
+
+            <span class="Content__hljs-comment__2_Ezx">-- Funksjon som tar inn en start og lager alle sluttene.</span>
+            <span class="Content__hljs-comment__2_Ezx">-- Hvorfor bruker vi n-1? Hva skjer om vi bruker n i stedet?</span>
+            fortsett nyStart = sifreAvLengde (n<span class="Content__hljs-number__1Gqqo">-1</span>) nyStart
+
+            <span class="Content__hljs-comment__2_Ezx">-- Lager listene med fortsettelser for 0, 1, 2, ..., i hver sin liste</span>
+            fortsettelser = <span class="Content__hljs-type__1tL9w">List</span>.map fortsett starter
+
+        <span class="Content__hljs-comment__2_Ezx">-- Slår sammen fortsettelsene i én liste</span>
+        <span class="Content__hljs-keyword__1gFtb">in</span> <span class="Content__hljs-type__1tL9w">List</span>.concat fortsettelser
+</code></pre>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_40"><label for="cbx_40"> Bruk <code>sifreAvLengde</code> til å lage <code>desimaler</code>:</label></li>
+</ul>
+<pre><code class="elm">&gt; desimaler <span class="Content__hljs-number__1Gqqo">0</span>
+[<span class="Content__hljs-string__2DCAo">"0."</span>] : <span class="Content__hljs-type__1tL9w">List</span> <span class="Content__hljs-type__1tL9w">String</span>
+&gt; desimaler <span class="Content__hljs-number__1Gqqo">1</span>
+[<span class="Content__hljs-string__2DCAo">"0.0"</span>,<span class="Content__hljs-string__2DCAo">"0.1"</span>,<span class="Content__hljs-string__2DCAo">"0.2"</span>,<span class="Content__hljs-string__2DCAo">"0.3"</span>,<span class="Content__hljs-string__2DCAo">"0.4"</span>,<span class="Content__hljs-string__2DCAo">"0.5"</span>,<span class="Content__hljs-string__2DCAo">"0.6"</span>,<span class="Content__hljs-string__2DCAo">"0.7"</span>,<span class="Content__hljs-string__2DCAo">"0.8"</span>,<span class="Content__hljs-string__2DCAo">"0.9"</span>] : <span class="Content__hljs-type__1tL9w">List</span> <span class="Content__hljs-type__1tL9w">String</span>
+&gt; desimaler <span class="Content__hljs-number__1Gqqo">2</span>
+[<span class="Content__hljs-string__2DCAo">"0.00"</span>,<span class="Content__hljs-string__2DCAo">"0.01"</span>,<span class="Content__hljs-string__2DCAo">"0.02"</span>,<span class="Content__hljs-string__2DCAo">"0.03"</span>,<span class="Content__hljs-string__2DCAo">"0.04"</span>,<span class="Content__hljs-string__2DCAo">"0.05"</span>,<span class="Content__hljs-string__2DCAo">"0.06"</span>,<span class="Content__hljs-string__2DCAo">"0.07"</span>,<span class="Content__hljs-string__2DCAo">"0.08"</span>,<span class="Content__hljs-string__2DCAo">"0.09"</span>,<span class="Content__hljs-string__2DCAo">"0.10"</span>,<span class="Content__hljs-string__2DCAo">"0.11"</span>,<span class="Content__hljs-string__2DCAo">"0.12"</span>,<span class="Content__hljs-string__2DCAo">"0.13"</span>,<span class="Content__hljs-string__2DCAo">"0.14"</span>,<span class="Content__hljs-string__2DCAo">"0.15"</span>,<span class="Content__hljs-string__2DCAo">"0.16"</span>,<span class="Content__hljs-string__2DCAo">"0.17"</span>,<span class="Content__hljs-string__2DCAo">"0.18"</span>,<span class="Content__hljs-string__2DCAo">"0.19"</span>,<span class="Content__hljs-string__2DCAo">"0.20"</span>,<span class="Content__hljs-string__2DCAo">"0.21"</span>,<span class="Content__hljs-string__2DCAo">"0.22"</span>,<span class="Content__hljs-string__2DCAo">"0.23"</span>,<span class="Content__hljs-string__2DCAo">"0.24"</span>,<span class="Content__hljs-string__2DCAo">"0.25"</span>,<span class="Content__hljs-string__2DCAo">"0.26"</span>,<span class="Content__hljs-string__2DCAo">"0.27"</span>,<span class="Content__hljs-string__2DCAo">"0.28"</span>,<span class="Content__hljs-string__2DCAo">"0.29"</span>,<span class="Content__hljs-string__2DCAo">"0.30"</span>,<span class="Content__hljs-string__2DCAo">"0.31"</span>,<span class="Content__hljs-string__2DCAo">"0.32"</span>,<span class="Content__hljs-string__2DCAo">"0.33"</span>,<span class="Content__hljs-string__2DCAo">"0.34"</span>,<span class="Content__hljs-string__2DCAo">"0.35"</span>,<span class="Content__hljs-string__2DCAo">"0.36"</span>,<span class="Content__hljs-string__2DCAo">"0.37"</span>,<span class="Content__hljs-string__2DCAo">"0.38"</span>,<span class="Content__hljs-string__2DCAo">"0.39"</span>,<span class="Content__hljs-string__2DCAo">"0.40"</span>,<span class="Content__hljs-string__2DCAo">"0.41"</span>,<span class="Content__hljs-string__2DCAo">"0.42"</span>,<span class="Content__hljs-string__2DCAo">"0.43"</span>,<span class="Content__hljs-string__2DCAo">"0.44"</span>,<span class="Content__hljs-string__2DCAo">"0.45"</span>,<span class="Content__hljs-string__2DCAo">"0.46"</span>,<span class="Content__hljs-string__2DCAo">"0.47"</span>,<span class="Content__hljs-string__2DCAo">"0.48"</span>,<span class="Content__hljs-string__2DCAo">"0.49"</span>,<span class="Content__hljs-string__2DCAo">"0.50"</span>,<span class="Content__hljs-string__2DCAo">"0.51"</span>,<span class="Content__hljs-string__2DCAo">"0.52"</span>,<span class="Content__hljs-string__2DCAo">"0.53"</span>,<span class="Content__hljs-string__2DCAo">"0.54"</span>,<span class="Content__hljs-string__2DCAo">"0.55"</span>,<span class="Content__hljs-string__2DCAo">"0.56"</span>,<span class="Content__hljs-string__2DCAo">"0.57"</span>,<span class="Content__hljs-string__2DCAo">"0.58"</span>,<span class="Content__hljs-string__2DCAo">"0.59"</span>,<span class="Content__hljs-string__2DCAo">"0.60"</span>,<span class="Content__hljs-string__2DCAo">"0.61"</span>,<span class="Content__hljs-string__2DCAo">"0.62"</span>,<span class="Content__hljs-string__2DCAo">"0.63"</span>,<span class="Content__hljs-string__2DCAo">"0.64"</span>,<span class="Content__hljs-string__2DCAo">"0.65"</span>,<span class="Content__hljs-string__2DCAo">"0.66"</span>,<span class="Content__hljs-string__2DCAo">"0.67"</span>,<span class="Content__hljs-string__2DCAo">"0.68"</span>,<span class="Content__hljs-string__2DCAo">"0.69"</span>,<span class="Content__hljs-string__2DCAo">"0.70"</span>,<span class="Content__hljs-string__2DCAo">"0.71"</span>,<span class="Content__hljs-string__2DCAo">"0.72"</span>,<span class="Content__hljs-string__2DCAo">"0.73"</span>,<span class="Content__hljs-string__2DCAo">"0.74"</span>,<span class="Content__hljs-string__2DCAo">"0.75"</span>,<span class="Content__hljs-string__2DCAo">"0.76"</span>,<span class="Content__hljs-string__2DCAo">"0.77"</span>,<span class="Content__hljs-string__2DCAo">"0.78"</span>,<span class="Content__hljs-string__2DCAo">"0.79"</span>,<span class="Content__hljs-string__2DCAo">"0.80"</span>,<span class="Content__hljs-string__2DCAo">"0.81"</span>,<span class="Content__hljs-string__2DCAo">"0.82"</span>,<span class="Content__hljs-string__2DCAo">"0.83"</span>,<span class="Content__hljs-string__2DCAo">"0.84"</span>,<span class="Content__hljs-string__2DCAo">"0.85"</span>,<span class="Content__hljs-string__2DCAo">"0.86"</span>,<span class="Content__hljs-string__2DCAo">"0.87"</span>,<span class="Content__hljs-string__2DCAo">"0.88"</span>,<span class="Content__hljs-string__2DCAo">"0.89"</span>,<span class="Content__hljs-string__2DCAo">"0.90"</span>,<span class="Content__hljs-string__2DCAo">"0.91"</span>,<span class="Content__hljs-string__2DCAo">"0.92"</span>,<span class="Content__hljs-string__2DCAo">"0.93"</span>,<span class="Content__hljs-string__2DCAo">"0.94"</span>,<span class="Content__hljs-string__2DCAo">"0.95"</span>,<span class="Content__hljs-string__2DCAo">"0.96"</span>,<span class="Content__hljs-string__2DCAo">"0.97"</span>,<span class="Content__hljs-string__2DCAo">"0.98"</span>,<span class="Content__hljs-string__2DCAo">"0.99"</span>]
+    : <span class="Content__hljs-type__1tL9w">List</span> <span class="Content__hljs-type__1tL9w">String</span>
+</code></pre>
+<p>I <code>sifreAvLengde</code> lagde vi først alle resultatene i hver sin liste med
+<code>List.map</code>, før vi slo listene sammen med <code>List.concat</code>. Her har vi skrevet om
+koden litt:</p>
+<pre><code class="elm"><span class="Content__hljs-title__1NRbS">sifreAvLengde</span> n start =
+    <span class="Content__hljs-keyword__1gFtb">if</span> n == <span class="Content__hljs-number__1Gqqo">0</span>
+    <span class="Content__hljs-comment__2_Ezx">-- Hvis vi ikke vil ha flere tall, gir vi tilbake kun hva vi har.</span>
+    <span class="Content__hljs-keyword__1gFtb">then</span> [start]
+    <span class="Content__hljs-keyword__1gFtb">else</span>
+        <span class="Content__hljs-keyword__1gFtb">let</span>
+            <span class="Content__hljs-comment__2_Ezx">-- Liste over alle de nye startene for neste nivå</span>
+            starter = ettSifferBak start
+
+            <span class="Content__hljs-comment__2_Ezx">-- Funksjon som tar inn en start og lager alle sluttene.</span>
+            <span class="Content__hljs-comment__2_Ezx">-- Hvorfor bruker vi n-1? Hva skjer om vi bruker n i stedet?</span>
+            fortsett nyStart = sifreAvLengde (n<span class="Content__hljs-number__1Gqqo">-1</span>) nyStart
+
+        <span class="Content__hljs-comment__2_Ezx">-- Slår sammen fortsettelsene i én liste</span>
+        <span class="Content__hljs-keyword__1gFtb">in</span> <span class="Content__hljs-type__1tL9w">List</span>.concat (<span class="Content__hljs-type__1tL9w">List</span>.map fortsett starter)
+</code></pre>
+<p><code>List.concat (List.map funksjon liste)</code> er noe vi ser ofte. Derfor finnes
+funksjonen <code>concatMap</code> som kjører <code>List.concat</code> på resultatet av en <code>List.map</code>.
+Da kan vi korte ned litt til:</p>
+<pre><code class="elm"><span class="Content__hljs-title__1NRbS">sifreAvLengde</span> n start =
+    <span class="Content__hljs-keyword__1gFtb">if</span> n == <span class="Content__hljs-number__1Gqqo">0</span>
+    <span class="Content__hljs-comment__2_Ezx">-- Hvis vi ikke vil ha flere tall, gir vi tilbake kun hva vi har.</span>
+    <span class="Content__hljs-keyword__1gFtb">then</span> [start]
+    <span class="Content__hljs-keyword__1gFtb">else</span>
+        <span class="Content__hljs-keyword__1gFtb">let</span>
+            <span class="Content__hljs-comment__2_Ezx">-- Liste over alle de nye startene for neste nivå</span>
+            starter = ettSifferBak start
+
+            <span class="Content__hljs-comment__2_Ezx">-- Funksjon som tar inn en start og lager alle sluttene.</span>
+            <span class="Content__hljs-comment__2_Ezx">-- Hvorfor bruker vi n-1? Hva skjer om vi bruker n i stedet?</span>
+            fortsett nyStart = sifreAvLengde (n<span class="Content__hljs-number__1Gqqo">-1</span>) nyStart
+
+        <span class="Content__hljs-comment__2_Ezx">-- Slår sammen fortsettelsene i én liste</span>
+        <span class="Content__hljs-keyword__1gFtb">in</span> <span class="Content__hljs-type__1tL9w">List</span>.concatMap fortsett starter
+</code></pre>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_41"><label for="cbx_41"> Hvor lange tall kan du skrive ut før PC-en din begynner å gå tregt?</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_42"><label for="cbx_42"> Hvor mange desimaltall finner du da?</label></p>
+</li>
+</ul>
+<p>Hint: 0.0-0.9 blir 10 tall. 0.00 til 0.99 blir ...? Hva med 0.00000 til 0.99999?</p>
+</section>
+<section class="Content__protip__3oM5h" id="har-du-hort-om">
+<h2 class="Content__protip__3oM5h" id="har-du-hort-om">Har du hørt om <code>++</code>?</h2>
+<p><code>++</code> kan slå sammen tekst:</p>
+<pre><code class="elm">&gt; <span class="Content__hljs-string__2DCAo">"Hei "</span> ++ <span class="Content__hljs-string__2DCAo">"på deg"</span>
+<span class="Content__hljs-string__2DCAo">"Hei på deg"</span> : <span class="Content__hljs-type__1tL9w">String</span>
+</code></pre>
+<p><code>++</code> kan også slå sammen lister:</p>
+<pre><code class="elm">&gt; [<span class="Content__hljs-number__1Gqqo">1</span>,<span class="Content__hljs-number__1Gqqo">2</span>,<span class="Content__hljs-number__1Gqqo">3</span>] ++ [<span class="Content__hljs-number__1Gqqo">4</span>,<span class="Content__hljs-number__1Gqqo">5</span>,<span class="Content__hljs-number__1Gqqo">6</span>]
+[<span class="Content__hljs-number__1Gqqo">1</span>,<span class="Content__hljs-number__1Gqqo">2</span>,<span class="Content__hljs-number__1Gqqo">3</span>,<span class="Content__hljs-number__1Gqqo">4</span>,<span class="Content__hljs-number__1Gqqo">5</span>,<span class="Content__hljs-number__1Gqqo">6</span>] : <span class="Content__hljs-type__1tL9w">List</span> number
+</code></pre>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="steg-9-sa-mange-nivaer-vi-vil">
+<h1 class="Content__activity__12AJC" id="steg-9-sa-mange-nivaer-vi-vil">Steg 9: Så mange nivåer vi vil!</h1>
+<p>Nå skal vi bruke teknikken fra Steg 8 til å komme til bunns i fraktalen vår.</p>
+<section class="Content__check__sbZVW" id="sjekkliste-11">
+<h2 class="Content__check__sbZVW" id="sjekkliste-11"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_43"><label for="cbx_43"> Lag <code>generateCenterSquares</code>. Denne skal kunne fungere slik:</label></li>
+</ul>
+<pre><code class="text">---- elm-repl <span class="Content__hljs-number__1Gqqo">0.18</span>.<span class="Content__hljs-number__1Gqqo">0</span> -----------------------------------------------------------
+ :help for help, :exit to exit, more at &lt;https://github.com/elm-lang/elm-repl&gt;
+--------------------------------------------------------------------------------
+&gt; <span class="hljs-built_in">import</span> Main exposing (..)
+&gt; start
+{ <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"green"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">729</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">0</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">0</span> } } : Main.Square
+&gt; generateCenterSquares <span class="Content__hljs-number__1Gqqo">0</span> start
+[] : List Main.Square
+&gt; generateCenterSquares <span class="Content__hljs-number__1Gqqo">1</span> start
+[{ <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"blue"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">243</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">243</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">243</span> } }]
+    : List Main.Square
+&gt; generateCenterSquares <span class="Content__hljs-number__1Gqqo">2</span> start
+[ { <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"blue"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">243</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">243</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">243</span> } },
+  { <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"blue"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">81</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">81</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">81</span> } },
+  { <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"blue"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">81</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">324</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">81</span> } },
+  { <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"blue"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">81</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">567</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">81</span> } },
+  { <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"blue"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">81</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">81</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">324</span> } },
+  { <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"blue"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">81</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">567</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">324</span> } },
+  { <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"blue"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">81</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">81</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">567</span> } },
+  { <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"blue"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">81</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">324</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">567</span> } },
+  { <span class="hljs-attr">color</span> = <span class="Content__hljs-string__2DCAo">"blue"</span>, <span class="hljs-attr">width</span> = <span class="Content__hljs-number__1Gqqo">81</span>, <span class="hljs-attr">corner</span> = { <span class="hljs-attr">x</span> = <span class="Content__hljs-number__1Gqqo">567</span>, <span class="hljs-attr">y</span> = <span class="Content__hljs-number__1Gqqo">567</span> } }
+]
+    : List Main.Square
+</code></pre>
+<p>Gikk det greit? Her er slik jeg gjorde det, og hvordan jeg bruker
+<code>generateCenterSquares</code> i <code>main</code>:</p>
+<pre><code class="elm"><span class="Content__hljs-title__1NRbS">generateCenterSquares</span> : number -&gt; <span class="Content__hljs-type__1tL9w">Square</span> -&gt; <span class="Content__hljs-type__1tL9w">List</span> <span class="Content__hljs-type__1tL9w">Square</span>
+<span class="Content__hljs-title__1NRbS">generateCenterSquares</span> level source =
+    <span class="Content__hljs-keyword__1gFtb">if</span> level == <span class="Content__hljs-number__1Gqqo">0</span> <span class="Content__hljs-keyword__1gFtb">then</span> []
+    <span class="Content__hljs-keyword__1gFtb">else</span> <span class="Content__hljs-keyword__1gFtb">let</span> children = <span class="Content__hljs-type__1tL9w">List</span>.concatMap (generateCenterSquares (level - <span class="Content__hljs-number__1Gqqo">1</span>)) (borderSquares source)
+         <span class="Content__hljs-keyword__1gFtb">in</span> [centerSquare source] ++ children
+
+
+<span class="Content__hljs-title__1NRbS">main</span> =
+    svg
+      [ width <span class="Content__hljs-string__2DCAo">"100%"</span>, viewBox <span class="Content__hljs-string__2DCAo">"0 0 729 729"</span> ]
+      ( [viewSquare start] ++
+            <span class="Content__hljs-type__1tL9w">List</span>.map viewSquare (generateCenterSquares <span class="Content__hljs-number__1Gqqo">3</span> start)
+      )
+</code></pre>
+</section>
+</section>
+</div><div class="row" data-reactid="102"><div class="ImprovePage__container__HeXzk" data-reactid="103"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="104"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="105"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="106"><h2 data-reactid="107">Forbedre denne siden</h2><p data-reactid="108"><!-- react-text: 109 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 110 --> <!-- /react-text --><br data-reactid="111"/><!-- react-text: 112 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="113"><div data-reactid="114"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Elm: 10 fraktaler&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/elm/10_fraktaler/10_fraktaler%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/elm/10_fraktaler%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="115">Rapporter et problem</a></div><div data-reactid="116"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="117">Gå til forumet</a></div><div data-reactid="118"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/elm/10_fraktaler" target="_blank" class="btn btn-orange" data-reactid="119">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div data-reactid="120"><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="121"><div class="Footer__center__3xqZ_ row" data-reactid="122"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="123">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="124">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="125"><a href="https://www.sparebank1.no" target="_blank" data-reactid="126"><img class="Footer__img__25Ink" src="/beta/CCV-assets/smn.41dee6.jpg" data-reactid="127"/></a><a href="https://ibok.no/" target="_blank" data-reactid="128"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ibok.7f1adf.jpg" data-reactid="129"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="130"><img class="Footer__img__25Ink" src="/beta/CCV-assets/teknograd.6d3bfb.png" data-reactid="131"/></a><a target="_blank" data-reactid="132"><img class="Footer__img__25Ink" src="/beta/CCV-assets/tekna.04ca97.jpg" data-reactid="133"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="134"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ntnu_idi.7bbd05.png" data-reactid="135"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="136"><img class="Footer__img__25Ink" src="/beta/CCV-assets/excITEd.ce9ee2.png" data-reactid="137"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="138"><img class="Footer__img__25Ink" src="/beta/CCV-assets/uio_ifi.eebbdf.png" data-reactid="139"/></a></div></div></div></div></div></div>
 
     
-    <script src="/beta/manifest.f206b7.js" type="text/javascript"></script>
+    <script src="/beta/manifest.33a959.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor.27fe3c.js" type="text/javascript"></script>
+    <script src="/beta/vendor.1d4ab7.js" type="text/javascript"></script>
     
-    <script src="/beta/main.c8ba3c.js" type="text/javascript"></script>
+    <script src="/beta/main.f42a23.js" type="text/javascript"></script>
     
-    <script src="/beta/vendor2.961fdb.js" type="text/javascript"></script>
+    <script src="/beta/vendor2.27943c.js" type="text/javascript"></script>
     
 </body>
 </html>
