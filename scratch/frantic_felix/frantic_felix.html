@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Frantic Felix | Kodeklubben</title>
+
+    
+    <link href="/beta/vendor2.c70f63.css" rel="stylesheet">
+    
+
+    <style type="text/css">.App__appContainer__3y6aN {
+  overflow-x: hidden; }
+.NavBar__navbarWrapper__35BW9 .navbar > .container-fluid {
+  padding: 0; }
+  .NavBar__navbarWrapper__35BW9 .navbar > .container-fluid .navbar-header {
+    margin: 0; }
+  .NavBar__navbarWrapper__35BW9 .navbar > .container-fluid .navbar-collapse {
+    margin: 0;
+    padding: 0; }
+
+.NavBar__navbarWrapper__35BW9 .navbar-nav {
+  margin: 0; }
+
+.NavBar__navbarWrapper__35BW9 .navbar-brand {
+  padding: 0 10px; }
+
+.NavBar__navbarWrapper__35BW9 .navbar-default {
+  background-color: #f2f2f2; }
+  .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav {
+    background-color: transparent; }
+    .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a {
+      color: #444; }
+      .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a:focus {
+        color: #0fbe7c;
+        background-color: transparent; }
+      .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a:hover {
+        color: #0fbe7c;
+        background-color: transparent; }
+    .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a, .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a:focus, .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a:hover {
+      color: #0fbe7c;
+      background-color: transparent; }
+
+.NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle {
+  float: none;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  width: 100%;
+  color: white;
+  font-size: 1.2em; }
+  .NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle, .NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle:focus {
+    background-color: #3a3a3a; }
+  .NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle:hover {
+    background-color: #0fbe7c; }
+  .NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle .icon-bar {
+    background-color: white; }
+
+@media (max-width: 767px) {
+  .NavBar__navbarWrapper__35BW9 .navbar-header {
+    text-align: center; }
+  .NavBar__navbarWrapper__35BW9 .navbar-brand {
+    float: none;
+    display: inline-block;
+    padding: 0; }
+  .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav {
+    background-color: #3a3a3a; }
+    .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a {
+      color: white; }
+      .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a:focus {
+        color: white;
+        background-color: #3a3a3a; }
+      .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a:hover {
+        color: white;
+        background-color: #0fbe7c; }
+    .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a, .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a:focus, .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a:hover {
+      color: white;
+      background-color: #0fbe7c; } }
+
+.NavBar__toggleContent__1tzFa {
+  display: inline-block;
+  padding: 0 5px; }
+
+.NavBar__navContainer__3KRmh {
+  background-color: #3a3a3a;
+  padding: 0 20px; }
+
+.NavBar__logo__6osKq {
+  height: 127px; }
+
+.NavBar__spacing__2FOa3 {
+  width: 100%;
+  height: 77px; }
+  @media (max-width: 767px) {
+    .NavBar__spacing__2FOa3 {
+      height: 0;
+      width: 0; } }
+
+.NavBar__widgets__9B6hC {
+  display: inline-block;
+  width: 100%;
+  min-height: 50px;
+  font-family: "Roboto", "Verdana", sans-serif;
+  font-weight: 300;
+  border-radius: 0;
+  margin-bottom: -5px; }
+
+.NavBar__widgetStudent__2MyCf {
+  color: #265732;
+  background-color: #b1daae; }
+
+.NavBar__widgetTeacher__2mxrU {
+  color: #215651;
+  background-color: #a3cccb; }
+
+.NavBar__gadgetGroup__2VPWF {
+  display: inline;
+  float: right;
+  padding: 4px 0; }
+.BreadCrumb__breadcrumb__1u8pT {
+  padding-left: 10px;
+  float: left;
+  font-size: 30px; }
+
+.BreadCrumb__homeIcon__1AzmV {
+  line-height: 43px;
+  font-size: 0.8em; }
+
+.BreadCrumb__courseIcon__2aqTu {
+  height: 50px;
+  padding: 10px 0 15px; }
+
+.BreadCrumb__lessonLink__o9_Mz {
+  font-size: 20px;
+  vertical-align: middle; }
+
+.BreadCrumb__lesson__1OSql {
+  margin-left: 7px; }
+  @media (max-width: 767px) {
+    .BreadCrumb__lesson__1OSql {
+      display: none; } }
+.NavLink__linkBase__1m4Sm {
+  color: black; }
+  .NavLink__linkBase__1m4Sm:focus, .NavLink__linkBase__1m4Sm:hover {
+    text-decoration: none;
+    color: black; }
+  .NavLink__linkBase__1m4Sm:hover {
+    opacity: 0.5;
+    color: black; }
+.LevelIcon__levelIcon__2LO2- {
+  margin-right: 0.3em;
+  width: 0.75em;
+  height: 0.75em;
+  vertical-align: baseline; }
+.LanguageDropdown__language__1g4QB {
+  margin-left: 10px; }
+
+@media (max-width: 767px) {
+  .LanguageDropdown__onlyFlag__UCJAY {
+    display: none; } }
+
+.LanguageDropdown__flag__14wo3 {
+  margin: 1px 0;
+  width: 30px;
+  height: 20px; }
+
+.LanguageDropdown__gadgetContainer__LYX2I {
+  display: inline-block;
+  padding: 3px 5px; }
+.ModeDropdown__gadgetContainer__2HE97 {
+  display: inline-block;
+  padding: 3px 5px; }
+
+@media (max-width: 767px) {
+  .ModeDropdown__onlyMode__1fZJE {
+    display: none; } }
+
+.ModeDropdown__icon__3I03J {
+  margin-top: 2px;
+  margin-right: 10px; }
+.Lesson__container__133OS {
+  max-width: 800px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; }
+  .Lesson__container__133OS figure > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px; }
+  @media (max-width: 767px) {
+    .Lesson__container__133OS {
+      font-size: 106.25%; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .Lesson__container__133OS {
+      font-size: 118.75%; } }
+  @media (min-width: 992px) {
+    .Lesson__container__133OS {
+      font-size: 125%; } }
+
+.Lesson__box__2CtND {
+  display: none;
+  font-style: italic;
+  font-size: 0.75em; }
+  @media print {
+    .Lesson__box__2CtND {
+      display: block; } }
+/*
+
+Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+.Content__hljs__3U3C5 {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #000;
+  background: #fff; }
+
+.Content__hljs-subst__2pbFW,
+.Content__hljs-title__1NRbS {
+  font-weight: normal;
+  color: #000; }
+
+.Content__hljs-comment__2_Ezx,
+.Content__hljs-quote__2OYA5 {
+  color: #808080;
+  font-style: italic; }
+
+.Content__hljs-meta__otMql {
+  color: #808000; }
+
+.Content__hljs-tag__3JFP3 {
+  background: #efefef; }
+
+.Content__hljs-section__1q6Ri,
+.Content__hljs-name__2Cvim,
+.Content__hljs-literal__7rtGP,
+.Content__hljs-keyword__1gFtb,
+.Content__hljs-selector-tag__3DPD7,
+.Content__hljs-type__1tL9w,
+.Content__hljs-selector-id__3RV11,
+.Content__hljs-selector-class__1YokA {
+  font-weight: bold;
+  color: #000080; }
+
+.Content__hljs-attribute__NlSqs,
+.Content__hljs-number__1Gqqo,
+.Content__hljs-regexp__lxJZu,
+.Content__hljs-link__2O7c_ {
+  font-weight: bold;
+  color: #0000ff; }
+
+.Content__hljs-number__1Gqqo,
+.Content__hljs-regexp__lxJZu,
+.Content__hljs-link__2O7c_ {
+  font-weight: normal; }
+
+.Content__hljs-string__2DCAo {
+  color: #008000;
+  font-weight: bold; }
+
+.Content__hljs-symbol__3Phin,
+.Content__hljs-bullet__u6Nvq,
+.Content__hljs-formula__1EouS {
+  color: #000;
+  background: #d0eded;
+  font-style: italic; }
+
+.Content__hljs-doctag__1_4v0 {
+  text-decoration: underline; }
+
+.Content__hljs-variable__2B6Js,
+.Content__hljs-template-variable__1bdN5 {
+  color: #660e7a; }
+
+.Content__hljs-addition__3aghy {
+  background: #baeeba; }
+
+.Content__hljs-deletion__fahjb {
+  background: #ffc8bd; }
+
+.Content__hljs-emphasis__ohx_M {
+  font-style: italic; }
+
+.Content__hljs-strong__3Dxks {
+  font-weight: bold; }
+
+table {
+  background-color: transparent; }
+
+caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #777777;
+  text-align: left; }
+
+th {
+  text-align: left; }
+
+.Content__table__2Gq2x, table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 22px; }
+  .Content__table__2Gq2x > thead > tr > th, table > thead > tr > th,
+  .Content__table__2Gq2x > thead > tr > td, table > thead > tr > td,
+  .Content__table__2Gq2x > tbody > tr > th, table > tbody > tr > th,
+  .Content__table__2Gq2x > tbody > tr > td, table > tbody > tr > td,
+  .Content__table__2Gq2x > tfoot > tr > th, table > tfoot > tr > th,
+  .Content__table__2Gq2x > tfoot > tr > td, table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857;
+    vertical-align: top;
+    border-top: 1px solid #000; }
+  .Content__table__2Gq2x > thead > tr > th, table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #000; }
+  .Content__table__2Gq2x > caption + thead > tr:first-child > th, table > caption + thead > tr:first-child > th,
+  .Content__table__2Gq2x > caption + thead > tr:first-child > td, table > caption + thead > tr:first-child > td,
+  .Content__table__2Gq2x > colgroup + thead > tr:first-child > th, table > colgroup + thead > tr:first-child > th,
+  .Content__table__2Gq2x > colgroup + thead > tr:first-child > td, table > colgroup + thead > tr:first-child > td,
+  .Content__table__2Gq2x > thead:first-child > tr:first-child > th, table > thead:first-child > tr:first-child > th,
+  .Content__table__2Gq2x > thead:first-child > tr:first-child > td, table > thead:first-child > tr:first-child > td {
+    border-top: 0; }
+  .Content__table__2Gq2x > tbody + tbody, table > tbody + tbody {
+    border-top: 2px solid #000; }
+  .Content__table__2Gq2x .Content__table__2Gq2x, table .Content__table__2Gq2x, .Content__table__2Gq2x table, table table {
+    background-color: #fff; }
+
+.Content__table-condensed__2Qjps > thead > tr > th,
+.Content__table-condensed__2Qjps > thead > tr > td,
+.Content__table-condensed__2Qjps > tbody > tr > th,
+.Content__table-condensed__2Qjps > tbody > tr > td,
+.Content__table-condensed__2Qjps > tfoot > tr > th,
+.Content__table-condensed__2Qjps > tfoot > tr > td {
+  padding: 5px; }
+
+.Content__table-bordered__BqOIs {
+  border: 1px solid #000; }
+  .Content__table-bordered__BqOIs > thead > tr > th,
+  .Content__table-bordered__BqOIs > thead > tr > td,
+  .Content__table-bordered__BqOIs > tbody > tr > th,
+  .Content__table-bordered__BqOIs > tbody > tr > td,
+  .Content__table-bordered__BqOIs > tfoot > tr > th,
+  .Content__table-bordered__BqOIs > tfoot > tr > td {
+    border: 1px solid #000; }
+  .Content__table-bordered__BqOIs > thead > tr > th,
+  .Content__table-bordered__BqOIs > thead > tr > td {
+    border-bottom-width: 2px; }
+
+.Content__table-striped__nrYi3 > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9; }
+
+.Content__table-hover__28JMy > tbody > tr:hover {
+  background-color: #f5f5f5; }
+
+table col[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-column; }
+
+table td[class*="col-"],
+table th[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-cell; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__active__3pus6, table > thead > tr > td.Content__active__3pus6,
+.Content__table__2Gq2x > thead > tr > th.Content__active__3pus6, table > thead > tr > th.Content__active__3pus6,
+.Content__table__2Gq2x > thead > tr.Content__active__3pus6 > td, table > thead > tr.Content__active__3pus6 > td,
+.Content__table__2Gq2x > thead > tr.Content__active__3pus6 > th, table > thead > tr.Content__active__3pus6 > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__active__3pus6, table > tbody > tr > td.Content__active__3pus6,
+.Content__table__2Gq2x > tbody > tr > th.Content__active__3pus6, table > tbody > tr > th.Content__active__3pus6,
+.Content__table__2Gq2x > tbody > tr.Content__active__3pus6 > td, table > tbody > tr.Content__active__3pus6 > td,
+.Content__table__2Gq2x > tbody > tr.Content__active__3pus6 > th, table > tbody > tr.Content__active__3pus6 > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__active__3pus6, table > tfoot > tr > td.Content__active__3pus6,
+.Content__table__2Gq2x > tfoot > tr > th.Content__active__3pus6, table > tfoot > tr > th.Content__active__3pus6,
+.Content__table__2Gq2x > tfoot > tr.Content__active__3pus6 > td, table > tfoot > tr.Content__active__3pus6 > td,
+.Content__table__2Gq2x > tfoot > tr.Content__active__3pus6 > th, table > tfoot > tr.Content__active__3pus6 > th {
+  background-color: #f5f5f5; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__active__3pus6:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__active__3pus6:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__active__3pus6:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__active__3pus6,
+.Content__table-hover__28JMy > tbody > tr.Content__active__3pus6:hover > th {
+  background-color: #e8e8e8; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__success__1fKZD, table > thead > tr > td.Content__success__1fKZD,
+.Content__table__2Gq2x > thead > tr > th.Content__success__1fKZD, table > thead > tr > th.Content__success__1fKZD,
+.Content__table__2Gq2x > thead > tr.Content__success__1fKZD > td, table > thead > tr.Content__success__1fKZD > td,
+.Content__table__2Gq2x > thead > tr.Content__success__1fKZD > th, table > thead > tr.Content__success__1fKZD > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__success__1fKZD, table > tbody > tr > td.Content__success__1fKZD,
+.Content__table__2Gq2x > tbody > tr > th.Content__success__1fKZD, table > tbody > tr > th.Content__success__1fKZD,
+.Content__table__2Gq2x > tbody > tr.Content__success__1fKZD > td, table > tbody > tr.Content__success__1fKZD > td,
+.Content__table__2Gq2x > tbody > tr.Content__success__1fKZD > th, table > tbody > tr.Content__success__1fKZD > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__success__1fKZD, table > tfoot > tr > td.Content__success__1fKZD,
+.Content__table__2Gq2x > tfoot > tr > th.Content__success__1fKZD, table > tfoot > tr > th.Content__success__1fKZD,
+.Content__table__2Gq2x > tfoot > tr.Content__success__1fKZD > td, table > tfoot > tr.Content__success__1fKZD > td,
+.Content__table__2Gq2x > tfoot > tr.Content__success__1fKZD > th, table > tfoot > tr.Content__success__1fKZD > th {
+  background-color: #dff0d8; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__success__1fKZD:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__success__1fKZD:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__success__1fKZD:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__success__1fKZD,
+.Content__table-hover__28JMy > tbody > tr.Content__success__1fKZD:hover > th {
+  background-color: #d0e9c6; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__info__3Uyf3, table > thead > tr > td.Content__info__3Uyf3,
+.Content__table__2Gq2x > thead > tr > th.Content__info__3Uyf3, table > thead > tr > th.Content__info__3Uyf3,
+.Content__table__2Gq2x > thead > tr.Content__info__3Uyf3 > td, table > thead > tr.Content__info__3Uyf3 > td,
+.Content__table__2Gq2x > thead > tr.Content__info__3Uyf3 > th, table > thead > tr.Content__info__3Uyf3 > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__info__3Uyf3, table > tbody > tr > td.Content__info__3Uyf3,
+.Content__table__2Gq2x > tbody > tr > th.Content__info__3Uyf3, table > tbody > tr > th.Content__info__3Uyf3,
+.Content__table__2Gq2x > tbody > tr.Content__info__3Uyf3 > td, table > tbody > tr.Content__info__3Uyf3 > td,
+.Content__table__2Gq2x > tbody > tr.Content__info__3Uyf3 > th, table > tbody > tr.Content__info__3Uyf3 > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__info__3Uyf3, table > tfoot > tr > td.Content__info__3Uyf3,
+.Content__table__2Gq2x > tfoot > tr > th.Content__info__3Uyf3, table > tfoot > tr > th.Content__info__3Uyf3,
+.Content__table__2Gq2x > tfoot > tr.Content__info__3Uyf3 > td, table > tfoot > tr.Content__info__3Uyf3 > td,
+.Content__table__2Gq2x > tfoot > tr.Content__info__3Uyf3 > th, table > tfoot > tr.Content__info__3Uyf3 > th {
+  background-color: #d9edf7; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__info__3Uyf3:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__info__3Uyf3:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__info__3Uyf3:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__info__3Uyf3,
+.Content__table-hover__28JMy > tbody > tr.Content__info__3Uyf3:hover > th {
+  background-color: #c4e3f3; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__warning__3vM1b, table > thead > tr > td.Content__warning__3vM1b,
+.Content__table__2Gq2x > thead > tr > th.Content__warning__3vM1b, table > thead > tr > th.Content__warning__3vM1b,
+.Content__table__2Gq2x > thead > tr.Content__warning__3vM1b > td, table > thead > tr.Content__warning__3vM1b > td,
+.Content__table__2Gq2x > thead > tr.Content__warning__3vM1b > th, table > thead > tr.Content__warning__3vM1b > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__warning__3vM1b, table > tbody > tr > td.Content__warning__3vM1b,
+.Content__table__2Gq2x > tbody > tr > th.Content__warning__3vM1b, table > tbody > tr > th.Content__warning__3vM1b,
+.Content__table__2Gq2x > tbody > tr.Content__warning__3vM1b > td, table > tbody > tr.Content__warning__3vM1b > td,
+.Content__table__2Gq2x > tbody > tr.Content__warning__3vM1b > th, table > tbody > tr.Content__warning__3vM1b > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__warning__3vM1b, table > tfoot > tr > td.Content__warning__3vM1b,
+.Content__table__2Gq2x > tfoot > tr > th.Content__warning__3vM1b, table > tfoot > tr > th.Content__warning__3vM1b,
+.Content__table__2Gq2x > tfoot > tr.Content__warning__3vM1b > td, table > tfoot > tr.Content__warning__3vM1b > td,
+.Content__table__2Gq2x > tfoot > tr.Content__warning__3vM1b > th, table > tfoot > tr.Content__warning__3vM1b > th {
+  background-color: #fcf8e3; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__warning__3vM1b:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__warning__3vM1b:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__warning__3vM1b:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__warning__3vM1b,
+.Content__table-hover__28JMy > tbody > tr.Content__warning__3vM1b:hover > th {
+  background-color: #faf2cc; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__danger__DoByx, table > thead > tr > td.Content__danger__DoByx,
+.Content__table__2Gq2x > thead > tr > th.Content__danger__DoByx, table > thead > tr > th.Content__danger__DoByx,
+.Content__table__2Gq2x > thead > tr.Content__danger__DoByx > td, table > thead > tr.Content__danger__DoByx > td,
+.Content__table__2Gq2x > thead > tr.Content__danger__DoByx > th, table > thead > tr.Content__danger__DoByx > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__danger__DoByx, table > tbody > tr > td.Content__danger__DoByx,
+.Content__table__2Gq2x > tbody > tr > th.Content__danger__DoByx, table > tbody > tr > th.Content__danger__DoByx,
+.Content__table__2Gq2x > tbody > tr.Content__danger__DoByx > td, table > tbody > tr.Content__danger__DoByx > td,
+.Content__table__2Gq2x > tbody > tr.Content__danger__DoByx > th, table > tbody > tr.Content__danger__DoByx > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__danger__DoByx, table > tfoot > tr > td.Content__danger__DoByx,
+.Content__table__2Gq2x > tfoot > tr > th.Content__danger__DoByx, table > tfoot > tr > th.Content__danger__DoByx,
+.Content__table__2Gq2x > tfoot > tr.Content__danger__DoByx > td, table > tfoot > tr.Content__danger__DoByx > td,
+.Content__table__2Gq2x > tfoot > tr.Content__danger__DoByx > th, table > tfoot > tr.Content__danger__DoByx > th {
+  background-color: #f2dede; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__danger__DoByx:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__danger__DoByx:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__danger__DoByx:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__danger__DoByx,
+.Content__table-hover__28JMy > tbody > tr.Content__danger__DoByx:hover > th {
+  background-color: #ebcccc; }
+
+.Content__table-responsive__1_Wb8 {
+  overflow-x: auto;
+  min-height: 0.01%; }
+  @media screen and (max-width: 767px) {
+    .Content__table-responsive__1_Wb8 {
+      width: 100%;
+      margin-bottom: 16.5px;
+      overflow-y: hidden;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      border: 1px solid #000; }
+      .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x, .Content__table-responsive__1_Wb8 > table {
+        margin-bottom: 0; }
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > thead > tr > th, .Content__table-responsive__1_Wb8 > table > thead > tr > th,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > thead > tr > td,
+        .Content__table-responsive__1_Wb8 > table > thead > tr > td,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > tbody > tr > th,
+        .Content__table-responsive__1_Wb8 > table > tbody > tr > th,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > tbody > tr > td,
+        .Content__table-responsive__1_Wb8 > table > tbody > tr > td,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > tfoot > tr > th,
+        .Content__table-responsive__1_Wb8 > table > tfoot > tr > th,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > tfoot > tr > td,
+        .Content__table-responsive__1_Wb8 > table > tfoot > tr > td {
+          white-space: nowrap; }
+      .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs {
+        border: 0; }
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > thead > tr > th:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > thead > tr > td:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr > th:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr > td:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr > th:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr > td:first-child {
+          border-left: 0; }
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > thead > tr > th:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > thead > tr > td:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr > th:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr > td:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr > th:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr > td:last-child {
+          border-right: 0; }
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr:last-child > th,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr:last-child > td,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr:last-child > th,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr:last-child > td {
+          border-bottom: 0; } }
+
+.Content__check__sbZVW ul,
+.Content__check__sbZVW ol,
+.Content__activity__12AJC ul,
+.Content__activity__12AJC ol,
+.Content__save__3P_NU ul,
+.Content__save__3P_NU ol {
+  padding: 0;
+  margin: 0 0 20px; }
+
+.Content__check__sbZVW ul.Content__task-list__2CKPB li.Content__task-list-item__2A55S::before,
+.Content__activity__12AJC ul.Content__task-list__2CKPB li.Content__task-list-item__2A55S::before,
+.Content__save__3P_NU ul.Content__task-list__2CKPB li.Content__task-list-item__2A55S::before {
+  display: none; }
+
+.Content__check__sbZVW li,
+.Content__activity__12AJC li,
+.Content__save__3P_NU li {
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 45px; }
+
+.Content__check__sbZVW li::before,
+.Content__activity__12AJC li::before,
+.Content__save__3P_NU li::before {
+  content: " ";
+  border-radius: 20px;
+  border: 3px solid #abdbea;
+  padding: 8px;
+  float: left;
+  margin-left: -40px;
+  margin-top: 2px; }
+
+.Content__check__sbZVW label,
+.Content__activity__12AJC label,
+.Content__save__3P_NU label {
+  font-weight: normal;
+  margin-left: 6px; }
+
+pre.Content__blocks__1k922,
+code.Content__b__2nfHe {
+  background-color: inherit;
+  border: 0; }
+
+pre > code {
+  background-color: transparent; }
+
+section.Content__activity__12AJC h1 {
+  color: #fff;
+  background: #349946;
+  padding: 10px;
+  border-radius: 5px; }
+
+section.Content__activity__12AJC .Content__subsection__3XzlJ h2 {
+  color: #fff;
+  background: #349946;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 300; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 ul,
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 ol {
+    padding: 0;
+    margin: 0 0 20px; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 ul.Content__task-list__2CKPB li.Content__task-list-item__2A55S::before {
+    display: none; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 li {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 45px; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 li::before {
+    content: " ";
+    border-radius: 20px;
+    border: 3px solid #abdbea;
+    padding: 8px;
+    float: left;
+    margin-left: -40px;
+    margin-top: 2px; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 label {
+    font-weight: normal;
+    margin-left: 6px; }
+
+section.Content__check__sbZVW h2 {
+  padding-top: 4px;
+  padding-bottom: 9px; }
+  section.Content__check__sbZVW h2 img {
+    height: 40px;
+    vertical-align: text-bottom;
+    padding-right: 10px; }
+
+section.Content__try__9Al91 {
+  background: #abdbea;
+  border-radius: 10px;
+  padding: 1px 20px 10px; }
+  section.Content__try__9Al91 code {
+    background-color: #fff;
+    color: #007cc9; }
+  section.Content__try__9Al91 li::before {
+    border: 3px solid #fff; }
+
+section.Content__protip__3oM5h,
+section.Content__tip__2hJcQ {
+  border: 3px solid #ff7f00;
+  background: #fff99d;
+  border-radius: 12px;
+  padding: 0 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+section.Content__flag__1GjEr {
+  border-top: 3px dotted #e6862d;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  section.Content__flag__1GjEr h2 {
+    color: #36a137;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px; }
+    section.Content__flag__1GjEr h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
+
+section.Content__save__3P_NU {
+  border-top: 3px solid #245a9a;
+  margin: 20px 0; }
+  section.Content__save__3P_NU h2 {
+    color: #245a9a;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px; }
+    section.Content__save__3P_NU h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
+
+section.Content__challenge__2LUyO {
+  border: 3px solid #00b1da;
+  border-radius: 12px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  section.Content__challenge__2LUyO h2 {
+    color: #fff;
+    background: #00b1da;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0; }
+    @media print {
+      section.Content__challenge__2LUyO h2 {
+        border-bottom: 2px #00b1da solid; } }
+  section.Content__challenge__2LUyO > * {
+    padding: 0 20px; }
+
+code.Content__blockmotion__2TNTp {
+  background-color: #505fd7; }
+
+code.Content__blocklooks__NJdsX {
+  background-color: #9b33d9; }
+
+code.Content__blocksound__wb8Zz {
+  background-color: #d000c2; }
+
+code.Content__blockpen__1tOwq {
+  background-color: #00a16f; }
+
+code.Content__blockdata__1wt1I {
+  background-color: #ff7500; }
+
+code.Content__blockevents__r08uu {
+  background-color: #d38117; }
+
+code.Content__blockcontrol__3yrIr {
+  background-color: #e9aa00; }
+
+code.Content__blocksensing__2mkm9 {
+  background-color: #00a3e6; }
+
+code.Content__blockoperators__x9p0o {
+  background-color: #00c114; }
+
+code.Content__blockmoreblocks__3YKWS {
+  background-color: #71009a; }
+
+code.Content__blockmotion__2TNTp, code.Content__blocklooks__NJdsX, code.Content__blocksound__wb8Zz, code.Content__blockpen__1tOwq, code.Content__blockdata__1wt1I, code.Content__blockevents__r08uu, code.Content__blockcontrol__3yrIr, code.Content__blocksensing__2mkm9, code.Content__blockoperators__x9p0o, code.Content__blockmoreblocks__3YKWS {
+  color: #fff; }
+
+@media aural, braille, handheld, projection, screen, tty, tv, embossed {
+  pre > code {
+    word-wrap: normal;
+    white-space: pre; } }
+
+.Content__video-container__2gCjN {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 30px 0 60px; }
+  .Content__video-container__2gCjN iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+input[type="checkbox"] {
+  display: none; }
+
+input[type="checkbox"] + label {
+  position: relative;
+  font-weight: normal;
+  margin-left: 0; }
+
+input[type="checkbox"] + label::before {
+  content: '\A0';
+  display: inline-block;
+  visibility: visible;
+  width: 1.3em;
+  height: 1.3em;
+  margin: 0 0.6em 0 -2.2em;
+  line-height: 1.1em;
+  text-align: center;
+  border: 3px solid #abdbea;
+  border-radius: 3px; }
+
+input[type="checkbox"]:checked + label::before {
+  content: '\2714';
+  line-height: 1.1em;
+  padding-left: 0.1em; }
+.MainLanguageButton__textMargin__-3bsu {
+  margin-left: 10px; }
+  @media (max-width: 767px) {
+    .MainLanguageButton__textMargin__-3bsu {
+      display: none; } }
+
+.MainLanguageButton__container__3anRY {
+  margin: 10px 10px 0 0; }
+  @media print {
+    .MainLanguageButton__container__3anRY {
+      display: none; } }
+
+.MainLanguageButton__flag__2kKnQ {
+  width: 30px;
+  height: 20px; }
+.PdfButton__container__cTzho {
+  margin: 10px 10px 0 0; }
+  @media print {
+    .PdfButton__container__cTzho {
+      display: none; } }
+
+.PdfButton__textMargin__3ywqP {
+  margin-left: 10px; }
+  @media (max-width: 767px) {
+    .PdfButton__textMargin__3ywqP {
+      display: none; } }
+
+.PdfButton__icon__m5ajZ {
+  margin-top: 2px; }
+.ImprovePage__font__1MdMv {
+  font-family: "Roboto", "Verdana", sans-serif;
+  font-weight: 300;
+  font-size: 1em; }
+
+/* Container for improve box */
+.ImprovePage__container__HeXzk {
+  margin: 10px 30px; }
+  @media print {
+    .ImprovePage__container__HeXzk {
+      display: none; } }
+
+.ImprovePage__improvePageBox__cyxic {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+  max-width: 650px;
+  border-radius: 10px; }
+
+/* Student / Teacher mode */
+.ImprovePage__student__3q08- {
+  background-color: #b1daae; }
+
+.ImprovePage__teacher__2iOCW {
+  background-color: #a3cccb; }
+
+/* Row containing the text */
+/* Box-shadow works as a <hr/> to differentiate text and links */
+.ImprovePage__textRowStudent__2MdgF {
+  margin: 5px 20px 15px;
+  box-shadow: 0 8px 6px -6px #89c785; }
+
+.ImprovePage__textRowTeacher__2aMXI {
+  margin: 5px 20px 15px;
+  box-shadow: 0 8px 6px -6px #7bb7b6; }
+
+/* Row containing the links */
+.ImprovePage__linkRow__20Z6P {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .ImprovePage__linkRow__20Z6P div {
+    margin: 10px; }
+
+/* Media screen */
+@media only screen and (max-width: 300px) {
+  .ImprovePage__textRowStudent__2MdgF,
+  .ImprovePage__textRowTeacher__2aMXI {
+    max-width: 150px; } }
+.Footer__container__1SZrv {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-family: "Roboto", "Verdana", sans-serif; }
+  .Footer__container__1SZrv a {
+    text-decoration: none; }
+  @media print {
+    .Footer__container__1SZrv {
+      display: none; } }
+
+.Footer__containerStudent__3Yr5f {
+  background-color: #b1daae;
+  color: #265732; }
+  .Footer__containerStudent__3Yr5f a {
+    color: #265732; }
+
+.Footer__containerTeacher__36KZb {
+  background-color: #a3cccb;
+  color: #215651; }
+  .Footer__containerTeacher__36KZb a {
+    color: #215651; }
+
+.Footer__center__3xqZ_ {
+  text-align: center; }
+
+.Footer__inline__1Q6ds {
+  display: inline-block;
+  margin: 20px 10px; }
+
+.Footer__svg__29r7H {
+  width: 100px;
+  height: auto;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__img__25Ink {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  width: auto;
+  height: 50px;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__divider__LJrti {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid;
+  width: 50%; }
+
+.Footer__svg__29r7H:hover,
+.Footer__img__25Ink:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.5); }
+</style>
+<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/CCV-icons-4d5e7c/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/CCV-icons-4d5e7c/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/CCV-icons-4d5e7c/favicon-16x16.png"><link rel="shortcut icon" href="/beta/CCV-icons-4d5e7c/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1536x2008.png"></head>
+<body>
+    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="1873459325"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/CCV-assets/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/scratch" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/scratch/logo-black.8dc8be.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Scratch</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/scratch/frantic_felix/frantic_felix" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-4.2eb68b.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">Frantic Felix</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="53"/><span class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</span></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="59"/><span class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</span></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nn.fa23ab.svg" data-reactid="64"/><span class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</span></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_en.7eea7b.svg" data-reactid="69"/><span class="LanguageDropdown__language__1g4QB" data-reactid="70">English</span></div></a></li></ul></div></div><div class="ModeDropdown__gadgetContainer__2HE97" data-reactid="71"><div class="dropdown btn-group btn-group-student" data-reactid="72"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="73"><div data-reactid="74"><span class="ModeDropdown__icon__3I03J glyphicon glyphicon-pencil" data-reactid="75"></span><span data-reactid="76"><span class="ModeDropdown__onlyMode__1fZJE" data-reactid="77">Modus: </span><!-- react-text: 78 -->Elev<!-- /react-text --></span></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="79"><li role="presentation" class="active" data-reactid="80"><a role="menuitem" tabindex="-1" href="#" data-reactid="81"><span class="ModeDropdown__icon__3I03J glyphicon glyphicon-pencil" data-reactid="82"></span><!-- react-text: 83 -->Elev<!-- /react-text --></a></li><li role="presentation" class="" data-reactid="84"><a role="menuitem" tabindex="-1" href="#" data-reactid="85"><span class="ModeDropdown__icon__3I03J glyphicon glyphicon-education" data-reactid="86"></span><!-- react-text: 87 -->Lærer<!-- /react-text --></a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="88"><h1 data-reactid="89"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-4.2eb68b.svg" data-reactid="90"/><!-- react-text: 91 -->Frantic Felix<!-- /react-text --></h1><p data-reactid="92"><i data-reactid="93"><!-- react-text: 94 -->Skrevet av:<!-- /react-text --><!-- react-text: 95 --> <!-- /react-text --><span data-reactid="96">Oversatt fra <a href="//codeclub.org.uk">Code Club UK</a></span></i></p><p data-reactid="97"><i data-reactid="98"><!-- react-text: 99 -->Oversatt av:<!-- /react-text --><!-- react-text: 100 --> <!-- /react-text --><!-- react-text: 101 -->Lars-Erik Wollan<!-- /react-text --></i></p><div class="Lesson__box__2CtND" data-reactid="102"><div data-reactid="103"><!-- react-text: 104 -->Kurs:<!-- /react-text --><!-- react-text: 105 --> <!-- /react-text --><!-- react-text: 106 -->Scratch<!-- /react-text --></div><div data-reactid="107">Språk: Norsk bokmål</div></div><!-- react-empty: 108 --><a href="frantic_felix.pdf" download="" class="PdfButton__container__cTzho btn btn-sm btn-pdf" data-reactid="109"><span class="PdfButton__icon__m5ajZ glyphicon glyphicon-cloud-download" data-reactid="110"></span><span class="PdfButton__textMargin__3ywqP" data-reactid="111">Last ned PDF</span></a><div data-reactid="112"><section class="intro" id="introduksjon">
+<h1 class="intro" id="introduksjon">Introduksjon:</h1>
+<p>I dette prosjektet skal du lage et komplett spill. Det er et
+plattformspill, hvor katten Felix hopper rundt, unnslipper slemminger
+og samler nøkler for å slippe ut av hulen. Når han kommer seg ut,
+fortsetter spillet i neste hule.</p>
+<p>I del 1 av dette prosjektet kommer du til å lære hvordan vi får Felix
+til å flytte seg og samhandle med forskjellige ting. I del 2 skal du
+designe egne brett og nivåer. Til slutt skal du sette brettene sammen
+til et ferdig spill.</p>
+</section>
+<section>
+<h1 id="del-1-lag-byggeklossene">Del 1: Lag byggeklossene</h1>
+<p>Plattformspill, som for eksempel <strong>Manic Miner</strong> og <strong>Mario Bros</strong>,
+handler om en figur som beveger seg rundt i en verden og hopper inn i
+ting. Noen ting, som vegger, stopper deg. Andre ting, som slemminger,
+tar livet av deg. Ting som nøkler må du samle på. Andre ting er
+bakgrunner og påvirker ikke spillet i det heletatt.</p>
+<p>Det betyr at det å vite når du har kommet bort i noe er
+viktig. Scratch har noen klosser for å oppdage at noe berører noe
+annet: <code class="Content__blocksensing__2mkm9">berører sprite</code>, <code class="Content__blocksensing__2mkm9">berører farge?</code>-kloss, <code class="Content__blocksensing__2mkm9">farge berører?</code>-kloss,
+og <code class="Content__blocksensing__2mkm9">avstand til</code>-kloss. Men for å lage spillet, må du
+vite mer enn at to figurer har kommet borti hverandre; du trenger å
+vite hvilken <strong>side</strong> som berøres. Hvis du går mot en vegg til
+venstre, kan du ikke gå lengre til venstre. Men du kan fortsatt gå til
+høyre, eller hoppe, eller falle ned hvis det ikke er noe gulv å stå
+på.</p>
+<p>Hvis du berører en slemming, kan dette skade deg; men hvis du berører
+slemmingen med beina, kan du skade den. Ingen av de innebygde
+Scratchklossene kan si noe om <strong>retningen av berøringen</strong>. Vi må
+derfor bygge våre egne berøringssensorer.</p>
+</section>
+<section class="Content__activity__12AJC" id="steg-1-beroringssensor">
+<h1 class="Content__activity__12AJC" id="steg-1-beroringssensor">Steg 1: Berøringssensor</h1>
+<p>Vi skal ha fire figurer som følger etter Frantic Felix. <strong>Hver figur
+oppdager berøring i én retning og setter en variabel hvis det oppstår
+en berøring</strong>. Hovedfiguren Felix bruker disse variablene for å
+kontrollere hvordan Felix kan bevege seg. Hver berøringssensor har en
+farget linje og bruker <code class="Content__blocksensing__2mkm9">farge berører?</code>-klossen for å
+oppdage ting. Vi bruker <strong>svart</strong> for gulvet og <strong>grønn</strong> for
+hinder. Vi bruker <strong>rød</strong> for berøringssensorene.</p>
+<section class="Content__check__sbZVW" id="sjekkliste">
+<h2 class="Content__check__sbZVW" id="sjekkliste"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_0"><label for="cbx_0"> <strong>Åpne et nytt prosjekt</strong>. Legg til <strong>frantic-felix/testlevel</strong>
+bakgrunnen og slett den hvite <strong>background1</strong>.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_1"><label for="cbx_1"> <strong>Endre navn på figur Sprite1 til Felix</strong>. Kontroller at drakten bare kan flippe venstre-høyre.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_2"><label for="cbx_2"> Lag fire nye figurer fra bildene (be om hjelp hvis du ikke har
+disse) <strong>frantic-felix/top</strong>, <strong>frantic-felix/bottom</strong>,
+<strong>frantic-felix/left</strong>, og <strong>frantic-felix/right</strong>. Disse figurene
+skal bli berøringssensor. Gi de nye figurene navnene <strong>topp</strong>,
+<strong>bunn</strong>, <strong>venstre</strong>, og <strong>høyre</strong>. Kontroller at draktene deres
+ikke kan flippes eller roteres.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_3"><label for="cbx_3"> Lag fire variabler (for hver av figurene): <code class="Content__blockdata__1wt1I">blokkert topp</code>, <code class="Content__blockdata__1wt1I">blokkert bunn</code>, <code class="Content__blockdata__1wt1I">blokkert høyre</code> og <code class="Content__blockdata__1wt1I">blokkert venstre</code>.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Lag dette skriptet for hver av sensorene:</label></p>
+<pre class="Content__blocks__1k922">når grønt flagg klikkes // eksempel for høyre sensor
+for alltid
+  gå til [Felix v]
+    hvis &lt;farge [rød v] berører [grønn v] ?&gt;
+    sett [blokkert høyre v] til [1]
+    ellers
+    sett [blokkert høyre v] til [0]
+    slutt
+slutt
+</pre>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Endre variablene for hver av sensorene. Den nederste sensoren
+trenger en <strong>eller</strong> kloss slik at den setter <strong>blokkert bunn</strong> hvis
+den berører grønn eller svart.</label></p>
+</li>
+</ul>
+<p><strong>Tips</strong>: Det er enklere å velge fargene i én figur, for så å kopiere
+skriptet over til de andre figurene og oppdatere variablene som blir
+satt. Da slipper du å finne de riktige fargene fire ganger.  Inntil
+videre trenger Felix bare et skript for å følge musepekeren evig.</p>
+</section>
+<section class="Content__flag__1GjEr" id="test-prosjektet">
+<h2 class="Content__flag__1GjEr" id="test-prosjektet"><img src="/beta/CCV-assets/flag.4a58cd.svg">Test prosjektet</h2>
+<p><strong>Trykk på det grønne flagget.</strong></p>
+<p>Du bør se at Felix følger etter musepekeren, omringet av et rødt
+rektangel. Rektangelet er en berøringssensor. Hvis du følger med på
+variablene, ser du at de endrer seg når du drar Felix rundt og når han
+berører ulike deler av skjermen. For øyeblikket beveger Felix seg
+gjennom plattformene og grønne hindre. Det skal vi fikse nå.</p>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="steg-2-bevegelse-gulv-og-falling">
+<h1 class="Content__activity__12AJC" id="steg-2-bevegelse-gulv-og-falling">Steg 2: Bevegelse, gulv og falling</h1>
+<section class="Content__check__sbZVW" id="sjekkliste-2">
+<h2 class="Content__check__sbZVW" id="sjekkliste-2"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Neste steg er å få Felix til å gå. Vi bruker <strong>venstre</strong> og <strong>høre
+piltast</strong> for å flytte ham til venstre og høyre. Hvis han ikke står
+på et gulv, faller han ned (vi fikser hopping etterpå). Vi vil at
+når man trykker på venstre piltast, så skal Felix peke til venstre
+og flytter seg litt. Men vi vil ikke at han skal flytte seg hvis det
+er en hindring i veien.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Vi kunne brukt <code class="Content__blockevents__r08uu">når tast trykkes</code> for å flytte Felix,
+men det gir en hakkete bevegelse. Det blir en mykere bevegelse hvis
+du bruker <code class="Content__blockcontrol__3yrIr">hvis</code><code class="Content__blocksensing__2mkm9">tast pil venstre trykket?</code>-klosser i en <code class="Content__blockcontrol__3yrIr">for alltid</code>-løkke.  Berøringssensorer betyr at vi må
+teste <strong>blokkert venstre</strong> variabelen i <code class="Content__blockcontrol__3yrIr">hvis</code>, og
+bruke en <strong>og kloss</strong> slik at Felix bare beveger seg til venstre når
+man trykker på en tast og <strong>blokkert venstre</strong> er 0. Vi må gjøre
+tilsvarende for bevegelse til høyre.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Vi kunne animere Felix sine bein i samme kloss, men da beveger de
+seg for raskt. Gjør animasjonen i en egen <code class="Content__blockcontrol__3yrIr">for alltid</code>-løkke under en annen <code class="Content__blockevents__r08uu">når grønt flagg klikkes</code>-hatt.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Det siste vi må gjøre er å ordne <strong>falling</strong>. Hvis Felix ikke står
+på fast grunn vil vi at han skal falle ned. Det ordner vi med en
+<code class="Content__blockcontrol__3yrIr">for alltid</code>-løkke under en <code class="Content__blockevents__r08uu">når grønt flagg klikkes</code>-hatt.</label></p>
+<pre class="Content__blocks__1k922">når grønt flagg klikkes // håndter flytting
+for alltid
+    hvis &lt; &lt;tast [pil venstre v] trykket?&gt; og ((blokkert venstre)=(0))&gt;
+    pek i retning (-90)
+        gå (2) steg
+    slutt
+    hvis &lt; &lt;tast [pil høyre v] trykket?&gt; og ((blokkert høyre)=(0))&gt;
+    pek i retning (90)
+        gå (2) steg
+    slutt
+slutt
+
+når grønt flagg klikkes // beveg Felix
+for alltid
+  hvis &lt; &lt;tast [pil venstre v] trykket?&gt; eller &lt;tast [pil høyre v] trykket?&gt; &gt;
+      neste drakt
+        vent (0.1) sekunder
+    slutt
+slutt
+
+når grønt flagg klikkes // håndter falling
+for alltid
+    hvis &lt;(blokkert bunn)=(0)&gt;
+        endre y med (-2)
+    slutt
+slutt
+</pre>
+</li>
+</ul>
+</section>
+<section class="Content__flag__1GjEr" id="test-prosjektet-ditt">
+<h2 class="Content__flag__1GjEr" id="test-prosjektet-ditt"><img src="/beta/CCV-assets/flag.4a58cd.svg">Test prosjektet ditt</h2>
+<p><strong>Bruk musen for å dra Felix et sted på scenen og trykk så på det
+grønne flagget</strong>. Hvis Felix hopper til muspekeren, må du fjerne det
+skriptet!  Du bør kunne bruke venstre og høyre knapper for å få Felix
+til å gå fra side til side. Hvis han ikke står på gulvet, bør han
+falle sakte nedover.</p>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_10"><label for="cbx_10"> Vi vil også at berøringssensorene ikke skal vises. Det er ikke mulig
+å bruke en skjult blokk, for da vil ingen berøringer bli
+oppdaget. Istedet, legg til en <code class="Content__blocklooks__NJdsX">sett gjennomsiktig effekt til 100</code>-kloss rett under den grønn flag hatt'en i hver
+kollisjonssensor. Dette gjør figuren gjennomsiktig, uten å å skjule
+den.</label></li>
+</ul>
+</section>
+<section class="Content__flag__1GjEr" id="test-prosjektet-ditt-2">
+<h2 class="Content__flag__1GjEr" id="test-prosjektet-ditt-2"><img src="/beta/CCV-assets/flag.4a58cd.svg">Test prosjektet ditt</h2>
+<p><strong>Nå du klikker på det grønne flagget</strong>, skal kollisjonssensorene
+forsvinne. De dukker opp igjen når du trykker på det røde
+stoppskiltet.</p>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="steg-3-hopping">
+<h1 class="Content__activity__12AJC" id="steg-3-hopping">Steg 3: Hopping</h1>
+<p><strong>Det er et par utfordringer med hopping.</strong></p>
+<ul>
+<li>
+<p>Vi vil ikke at Felix <strong>faller</strong> hvis han er <strong>på vei opp</strong>.</p>
+</li>
+<li>
+<p>Vi vil ikke at Felix skal hindres av gulv når han er på vei opp, men
+vi vil fortsatt at han skal stoppes av gulvet når han <strong>er på vei
+ned</strong>.</p>
+</li>
+<li>
+<p>Vi vil ikke at Felix skal _<em>hoppe opp</em> i undersiden av et <strong>grønt
+hinder</strong>.</p>
+</li>
+<li>
+<p>Vi vil at hoppet skal være en myk bevegelse, så vi vil ikke at Felix
+flytter seg for raskt.</p>
+</li>
+<li>
+<p>Felix skal bare kunne hoppe hvis han <strong>står på gulvet</strong>. Spillet
+blir litt for enkelt hvis Felix kan hoppe fra løse luften.</p>
+</li>
+</ul>
+<section class="Content__check__sbZVW" id="sjekkliste-3">
+<h2 class="Content__check__sbZVW" id="sjekkliste-3"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Det som gjenstår nå, er å få Felix til å hoppe. La oss bruke
+<strong>mellomromstasten</strong> for å få Felix til å hoppe.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_12"><label for="cbx_12"> For å kontrollere hoppet, bruker vi en ny variabel,
+<code class="Content__blockdata__1wt1I">hopphøyde</code>. Hvis denne er høyere enn 0, er Felix på vei
+opp. Hvis den er 0, faller han (eller har falt), som beskrevet over.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_13"><label for="cbx_13"> Vi vil at Felix skal hoppe opp til <strong>100 pixler</strong>. Legg til en ny
+<code class="Content__blockcontrol__3yrIr">hvis</code>-kloss inni <code class="Content__blockcontrol__3yrIr">for alltid</code>-klossen
+som håndterer tastetrykk. Hvis vi trykker <strong>mellomromstasten</strong> og
+Felix står på gulvet (variablen <code class="Content__blockdata__1wt1I">blokkert under</code> er satt
+til 1, så setter vi <code class="Content__blockdata__1wt1I">hopphøyde</code> til 100.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_14"><label for="cbx_14"> Vi må endre falle-skriptet. I <code class="Content__blockcontrol__3yrIr">for alltid</code>, trenger
+vi en <code class="Content__blockcontrol__3yrIr">hvis-ellers</code>-kloss som oppdater hvis Felix
+hopper opp eller ikke. Kravet for denne
+<code class="Content__blockcontrol__3yrIr">hvis-ellers</code>-klossen er at hvis
+<code class="Content__blockdata__1wt1I">hopphøyde</code> er <strong>større enn 0</strong>. Den eksisterende faller
+ned <code class="Content__blockcontrol__3yrIr">hvis</code>-klossen går inn i ellers-delen av den nye
+<code class="Content__blockcontrol__3yrIr">hvis-ellers</code>-klossen.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_15"><label for="cbx_15"> Når vi vet at Felix hopper opp, må vi sjekke om hodet hans treffer
+noe. Hvis <code class="Content__blockdata__1wt1I">blokkert topp</code> er <strong>1</strong>, sett
+<code class="Content__blockdata__1wt1I">hopphøyde</code> til <strong>0</strong>. (Dette gjør at Felix ikke kan
+hoppe inn i hindringer). <strong>Ellers, flytt Felix opp 10 og reduser
+hopphøyde med 10.</strong></label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_16"><label for="cbx_16"> Du ender opp med noe tilsvarende dette:</label></p>
+<pre class="Content__blocks__1k922">når grønt flagg klikkes // håndtere falling
+for alltid
+  hvis &lt;(hopphøyde)=(0)&gt;
+    hvis &lt;(blokkert topp)=(1)&gt;
+      sett (hopphøyde) til (0)
+        ellers
+      endre y med (10)
+            endre [hopphøyde v] med (-10)
+        slutt
+    ellers
+    hvis &lt;(blokkert bunn)=(0)&gt;
+      endre y med (-2)
+        slutt
+    slutt
+slutt
+</pre>
+</li>
+</ul>
+</section>
+<section class="Content__flag__1GjEr" id="test-prosjektet-ditt-3">
+<h2 class="Content__flag__1GjEr" id="test-prosjektet-ditt-3"><img src="/beta/CCV-assets/flag.4a58cd.svg">Test prosjektet ditt</h2>
+<p><strong>Trykk på det grønne flagget</strong>. Kan Felix hoppe? Hopper han fra en
+plattform til en annen? Faller han hvis han går over kanten? Hva om
+han hopper oppover over kanten av en plattform? Hva om han prøver å
+hoppe under den grønne blokken til høyre? Hva skjer når du trykker på
+mellomromstasten mens Felix faller?</p>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="steg-4-nokler-og-mal">
+<h1 class="Content__activity__12AJC" id="steg-4-nokler-og-mal">Steg 4: Nøkler og mål</h1>
+<p><strong>Vi har klart å få Felix til å bevege seg rundt i verdenen. Nå må vi
+få han til å klare ett nivå</strong>.</p>
+<p>Vi plasserer tre nøkler rundt i hulen. Felix kan plukke dem opp ved å
+gå til dem. Når han har samlet alle tre, kan han klatre til en
+redningskapsel og redde seg selv ut av hulen.</p>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_17"><label for="cbx_17"> Vi lager en ny variabel, <code class="Content__blockdata__1wt1I">nøkler igjen</code>, som holder
+orden på hvor mange nøkler som gjenstår. Et nytt skript på
+<strong>scenen</strong> skal sette denne til <strong>3</strong> når det <strong>grønne flagget</strong>
+klikkes.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_18"><label for="cbx_18"> Både nøklene og redningskapselen må være figurer. (Bruk
+<strong>frantic-felix/key</strong> for nøklene og <strong>frantic-felix/escape-pod</strong>
+for kapselen.)</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_19"><label for="cbx_19"> Hver nøkkel trenger <strong>to skript</strong>: det første plasserer nøklen på
+riktig sted, med størrelse og vinkel, og en <code class="Content__blockcontrol__3yrIr">for alltid</code>-løkke for å endre fargen (som gjør det
+enklere å se den på skjermen). Det andre skriptet er en <code class="Content__blockcontrol__3yrIr">for alltid</code>-løkke som venter til Felix kommer bort til
+nøkkelen. Når dette skjer, skjuler skiptet nøkkelen og reduserer
+antall nøkler.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_20"><label for="cbx_20"> Redningskapselen er et litt vanskeligere skript. Den bruker en <code class="Content__blockcontrol__3yrIr">for alltid</code>-løkke for å vente på at <code class="Content__blockdata__1wt1I">nøkler igjen</code> blir <strong>0</strong>. Med en gang dette skjer, begynner
+kapselen å blinke (for å vise spilleren at de kan komme seg ut). Så
+kan vi bruke en annen <code class="Content__blockcontrol__3yrIr">hvis</code> for å oppdage når Felix
+berører den blinkende redningskapselen. Så snart han gjør det,
+sender kapselen en <code>seier</code>-melding og sier “Du vant!”. Felix svarer
+på meldingen ved å gjemme seg.</label></p>
+<pre class="Content__blocks__1k922">når grønt flagg klikkes
+gå til x:(220) y:(-125)
+for alltid
+  hvis &lt;(nøkler igjen) = [0]&gt;
+    endre [farge v] effekt med (25)
+        hvis &lt;berører [Felix v]?&gt;
+      send melding [seier v]
+            si [Du vant!]
+        slutt
+    slutt
+slutt
+</pre>
+</li>
+</ul>
+<section class="Content__flag__1GjEr" id="test-prosjektet-ditt-4">
+<h2 class="Content__flag__1GjEr" id="test-prosjektet-ditt-4"><img src="/beta/CCV-assets/flag.4a58cd.svg">Test prosjektet ditt</h2>
+<p><strong>Trykk på det grønne flagget</strong>.</p>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="steg-5-slemminger-og-dodelige-omgivelser">
+<h1 class="Content__activity__12AJC" id="steg-5-slemminger-og-dodelige-omgivelser">Steg 5: Slemminger og dødelige omgivelser</h1>
+<p><strong>Nå er det på tide med slemminger!</strong></p>
+<p>Det skal være to typer farlige ting. En type vil være slemminger som
+går rundt og skader Felix hvis kan krasjer inn i dem. Den andre typen
+er farlige ting i bakgrunnen.</p>
+<p><strong>La oss først lage en slemming. Den vil bare bevege seg langs en fast
+sti.</strong></p>
+<section class="Content__check__sbZVW" id="sjekkliste-4">
+<h2 class="Content__check__sbZVW" id="sjekkliste-4"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_21"><label for="cbx_21"> <strong>Lag en ny figur</strong>, bruk hvilken som helst drakt. Den bør være
+samme størrelse som Felix (Vi brukte <strong>things/flower-vase</strong> drakt,
+og gjorde den fire steg mindre). Slemmingen trenger bare et enkelt
+skript som beveger den og oppdager om den berører Felix.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_22"><label for="cbx_22"> Lag tre <code class="Content__blockcontrol__3yrIr">hvis</code>-klosser inni en <code class="Content__blockcontrol__3yrIr">for alltid</code>-løkke. Den første sjekker om en slemming
+berører Felix; hvis den gjør det, sender den en <code>tap</code>-melding. De to
+andre <code class="Content__blockcontrol__3yrIr">hvis</code>-klossene sjekker om slemmingen har nådd
+slutten av stien; hvis den har det, snur slemmingen. Tilslutt, tar
+slemmingen to steg. (Ved å bruke <code class="Content__blockmotion__2TNTp">gå</code> isteden for
+<code class="Content__blockmotion__2TNTp">gli</code> -klosser blir det enklere å kontrollere hvor
+raskt slemmingen går.)</label></p>
+<p><strong>Vi trenger ikke å bruke kollisjonssensor her, da vi ikke bryr
+oss om på hvilken side Felix berører slemmingen.</strong></p>
+<pre class="Content__blocks__1k922">når grønt flagg klikkes
+gå til x:(-50) y:(47)
+pek i retning (-90)
+for alltid
+  hvis &lt;berører [Felix v]?&gt;
+    send melding [tap v]
+    slutt
+    hvis &lt; (x-posisjon) &gt; [-200] &gt;
+    pek i retning (90)
+    slutt
+    hvis &lt; (x-posisjon) &gt; [-50] &gt;
+    pek i retning (-90)
+    slutt
+    gå (2) steg
+slutt
+</pre>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_23"><label for="cbx_23"> Legg skript til både Felix og redningskapselen slik at den svarer på
+<code>tap</code>-meldingen. Felix skal bare skjule seg selv.  Kapselen skal si
+&quot;Du tapte!&quot;.</label></p>
+</li>
+</ul>
+</section>
+<section class="Content__flag__1GjEr" id="test-prosjektet-ditt-5">
+<h2 class="Content__flag__1GjEr" id="test-prosjektet-ditt-5"><img src="/beta/CCV-assets/flag.4a58cd.svg">Test prosjektet ditt</h2>
+<p><strong>Trykk på det grønne flagget</strong>. Beveger vasen seg? Stopper den og
+snur ved kanten? Hva skjer når Felix går inn i den? Hva skjer hvis
+Felix hopper på den, fra oversiden eller undersiden? Forsvinner Felix?
+Sier kapselen ifra når du har tapt? Kan du forstatt vinne spillet?</p>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_24"><label for="cbx_24"> <strong>Neste, farlige ting!</strong> La oss si at alt som er lyseblå er dødlig
+for Felix. Last inn bakgrunnen <strong>frantic-felix/level2</strong>, som har en
+blå rose på det øverste nivået. Legg til enda et skript på Felix,
+under et grønt flagg hatt:</label></p>
+<pre class="Content__blocks__1k922">for alltid
+    hvis &lt;berører fargen [blå v]?&gt;
+        send melding [spill slutt v]
+    slutt
+slutt
+</pre>
+</li>
+</ul>
+</section>
+<section class="Content__flag__1GjEr" id="test-prosjektet-ditt-6">
+<h2 class="Content__flag__1GjEr" id="test-prosjektet-ditt-6"><img src="/beta/CCV-assets/flag.4a58cd.svg">Test prosjektet ditt</h2>
+<p><strong>Trykk på det grønne flagget</strong>. Dør Felix hvis han kommer borti den
+blå rosen? Hva skjer når han berører andre ting?</p>
+</section>
+<section>
+<h2 id="oppsummering">Oppsummering</h2>
+<p><strong>Det du har laget nå er et veldig enkelt plattformspill. Akkurat nå,
+er det et ganske kjedelig spill. Men det er ikke poenget. Dette
+spillet er en verktøykasse som du kan bruke til å lage egne spill og
+brett. I neste del skal du lage egne brett.</strong></p>
+</section>
+</section>
+<section>
+<h1 id="del-2-brettdesign">Del 2: Brettdesign</h1>
+<p><strong>Forrige gang bygde du alle delene et plattformspill består av. Nå
+skal du bruke disse delene for å lage egne brett..</strong></p>
+<p>Kort oppsummert gjorde du:</p>
+<ul>
+<li>
+<p>Felix kan gå til venstre og høyre og han kan hoppe.</p>
+</li>
+<li>
+<p>Felix faller ned hvis han ikke står på gulvet.</p>
+</li>
+<li>
+<p>Felix kan ikke gå gjennom grønne hindere.</p>
+</li>
+<li>
+<p>Blå ting i bakgrunnen og slemminger tar livet av Felix.</p>
+</li>
+<li>
+<p>Slemminger beveger seg i faste ruter.</p>
+</li>
+<li>
+<p>Slemminger kan ta livet av Felix hvis han kommer borti dem.</p>
+</li>
+<li>
+<p>Felix kan samle nøkler ved å gå bort til dem.</p>
+</li>
+<li>
+<p>Når Felix har samlet alle nøklene, kommer en redningskapsel til syne
+og han kan rømme i sikkerhet (eller til neste nivå).</p>
+</li>
+</ul>
+<p>Dette kan være byggeklossene dine. <strong>Bruk dem til å lage egne brett.</strong></p>
+<p>Du kan lage en hel rekke med brett som Felix må klare. Neste gang skal
+vi se på hvordan vi kan knytte brettene sammen.</p>
+<p>Brett kan ha store eller små plattformer, mange eller få
+plattformer. Det kan være mange slemminger eller ingen. Det kan være
+mange hindringer eller dødelige ting i bakgrunnen. Prøv å lage flere
+måter man kan klare brettet på, selv om et kanskje er enklere enn et
+annet. Tenk over hvor vanskelig eller enkelt brettet er.</p>
+<p>Du kan endre de spesielle fargene (svart, grønn og blå), men da må du
+<strong>oppdatere fargeberøringsblokkene</strong> i alle skriptene. Det må være
+samme farge i alle brett. (Du kunne hatt forskjellige farger i
+forskjellige brett, men det betyr at du måtte legge inn mange
+<code class="Content__blockoperators__x9p0o">eller</code>-klosser rundt fargeberøringsblokkene.)</p>
+<p><strong>Test brettene dine</strong>. Hvis du har tid, opprett brett i Scratch og
+spill dem. Sjekk at de ikke er <strong>for vanskelige</strong> og <strong>ikke for
+enkle</strong>. Hvis du programmerer brettene, må du <strong>lagre bakgrunnen du
+lager</strong> og notere <strong>start posisjon</strong> for Felix, nøkler, og eventuelle
+slemminger. I tillegg må du huske retningen slemmingene beveger seg i
+og hvor langt de går.</p>
+<p>Hvis du har laget et par brett og lagt dem inn i Scratch, prøv disse
+ekstraoppgavene:</p>
+<section class="Content__challenge__2LUyO" id="utvidelse-tramping">
+<h2 class="Content__challenge__2LUyO" id="utvidelse-tramping">Utvidelse: Tramping</h2>
+<p><strong>Hva om slemmingene døde hvis de ble trampet på?</strong> Kanskje du kan
+legge til et skript på slemmingene som gjør noe hvis slemmingen
+berører den nederste kollisjonssensoren.</p>
+</section>
+<section class="Content__challenge__2LUyO" id="utvidelse-kraftpiller">
+<h2 class="Content__challenge__2LUyO" id="utvidelse-kraftpiller">Utvidelse: Kraftpiller</h2>
+<p><strong>Du kan lage en “kraftpille” som gjør at Felix kan ødelegge slemmingene</strong>. Når Felix tar kraftpillen, ødelegger Felix slemmingene han berører. Effekten går over etterhvert</p>
+<p>Det er opp til deg hvordan du får dette til å fungere. Kanskje vil du at slemmingene skal endre utseende når Felix kan ta dem?</p>
+</section>
+<section class="Content__flag__1GjEr" id="test-prosjektet-ditt-7">
+<h2 class="Content__flag__1GjEr" id="test-prosjektet-ditt-7"><img src="/beta/CCV-assets/flag.4a58cd.svg">Test prosjektet ditt</h2>
+<p><strong>Trykk på det grønne flagget</strong>.</p>
+</section>
+<section>
+<h2 id="del-3-sett-sammen-spillet">Del 3: Sett sammen spillet</h2>
+<p><strong>Nå har du noen brett. Du har nok verktøy til å få dem til å
+fungere. Det siste vi må gjøre er å sette delene sammen til et ferdig
+spill!</strong> Hvis du klarer å sette sammen brettene kjapt, kan du ta en
+titt på aktivitet 2 and 3 før du begynner å spille spillet ditt.</p>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="steg-1-vise-et-nytt-brett">
+<h1 class="Content__activity__12AJC" id="steg-1-vise-et-nytt-brett">Steg 1: Vise et nytt brett</h1>
+<p><strong>Når Felix klarer ett brett, må vi flytte til neste</strong>. Det betyr at
+vi må få redningskapselen til å sende en <code>start brett</code>-melding
+(istedet for <code>seier</code>-meldingen) når Felix har funnet alle nøklene og
+klatret inn i kapselen. Vi kan bruke start brett melding for å
+klargjøre neste brett. Vi trenger også en variabel, <code class="Content__blockdata__1wt1I">nåværende nivå</code>, som settes av redningskapselen før den sender
+<code>start brett</code>-melding.</p>
+<p>Alt må stort sett svare på <code>start brett</code>-meldinger for å klargjøre
+neste brett.</p>
+<p><strong>Scenen</strong> må vise riktig bakgrunn. Hver av slemmingene, alle nøkler,
+og redningskapselen trenger å flytte til <strong>riktig start
+posisjon</strong>. Slemmingenes rute trenger <strong>oppdatering</strong>. Felix må
+flyttes til sin <strong>nye startposisjon</strong>. Først da er brettet klart til
+start.</p>
+<p>De fleste figurene må svare på <code>start brett</code>-meldingen istedet for det
+grønne flagget. Det betyr at du må <strong>endre hatt-klossene</strong> i de fleste
+skript.</p>
+<section class="Content__flag__1GjEr" id="test-prosjektet-ditt-8">
+<h2 class="Content__flag__1GjEr" id="test-prosjektet-ditt-8"><img src="/beta/CCV-assets/flag.4a58cd.svg">Test prosjektet ditt</h2>
+<p><strong>Fortsett å teste spillet etter hver endring. Husk å teste de delene
+som du allerede har endret, slik at de fortsatt virker som planlagt.</strong></p>
+<p>Vi kommer ikke beskrive alle endringene, men vi skal vise hvordan
+Felix sitt oppdaterte skript for å vise hva som må gjøres.</p>
+<pre class="Content__blocks__1k922">når jeg mottar [start brett v]
+    gå til x: (element [nåværende nivå v] av [xs v]) y: (element [nåværende nivå v] av [ys v])
+pek i retning (element [nåværende nivå v] av [retning v])
+for alltid
+  hvis &lt;&lt;tast[pil venstre v] trykket?&gt; og &lt;(blokkert venstre)=(0)&gt;
+    pek i retning (-90)
+        gå (2) steg
+    slutt
+    hvis &lt;&lt;tast [pil høyre v] trykket?&gt; og &lt;(blokkert høyre)=(0)&gt;
+        pek i retning (90)
+        gå (2) steg
+    slutt
+    hvis &lt;&lt;tast [mellomrom v] trykket?&gt; og &lt;(blokkert bunn)=(1)&gt;
+    sett [hopphøyde v] til [100]
+    slutt
+slutt
+</pre>
+<p>Du legger kanskje merke til at start verdiene <strong>x</strong>, <strong>y</strong>, og
+<strong>retning</strong> for Felix settes med lister. Vi laget noen lister for hver
+figur (hver liste privat til den figuren) for å lagre verdiene vi
+trenger for den figuren. Du trenger en liste for hver ting du
+lagrer. Du trenger ikke bruke lister, du kan bruke
+<code class="Content__blockcontrol__3yrIr">hvis</code>-klosser som sjekker hvilket brett du er på og
+gjør riktig ting basert på dette.</p>
+<p>Og her er redningskapselen, som håndterer all nivå-endringen:</p>
+<pre class="Content__blocks__1k922">når grønt flagg klikkes
+sett [nåværende nivå v] til [1]
+send melding [start brett v]
+
+når jeg mottar [start brett v]
+gå til x: (element [nåværende nivå v] av [xs v]) y: (element [nåværende nivå v] av [ys v])
+for alltid
+  hvis &lt;[nøkler å ta v] = [0]&gt;
+      endre [farge v] effekt med (25)
+        hvis &lt;berører [Felix v]?&gt;
+      hvis &lt;[nåværende nivå v] = &lt;lengden av [nøkler per brett v]&gt;
+        si [Du vant!!]
+                send melding [seier v]
+                stopp [alle v] :: control
+            ellers
+        endre [nåværende nivå v] med (1)
+                send melding [start brett v]
+            slutt
+        slutt
+    slutt
+slutt
+</pre>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="steg-2-spill">
+<h1 class="Content__activity__12AJC" id="steg-2-spill">Steg 2: Spill!</h1>
+<p><strong>Du har laget spill</strong>. De andre i kodeklubben har laget spill. Spill
+de forskjellige spillene! Klarer du å runde deres spill? Kan de andre
+runde spillet ditt?</p>
+<section class="Content__challenge__2LUyO" id="utvidelse-1-flere-liv">
+<h2 class="Content__challenge__2LUyO" id="utvidelse-1-flere-liv">Utvidelse 1: Flere liv</h2>
+<p>Felix trenger kanskje et par sjanser, eller et par liv for å klare seg
+igjennom brettene. <strong>Legg til en ny figur</strong> med tre drakter, som viser
+<strong>ett</strong>, <strong>to</strong>, og <strong>tre hjerter</strong>.</p>
+<p>Bruk frantic-felix/1-heart, frantic-felix/2-heart, and
+frantic-felix/3-heart draktene. Plasser figuren i hjørnet av
+scenen. Når det <strong>grønne flagget</strong> blir trykket, skal det vises tre
+hjerter. Hver gang det mottar en tap melding, skal det vises et hjerte
+mindre. Isteden for å vise ingen hjerter, skal figuren skjules og
+sende en <code>slutt over</code>-melding.</p>
+<p><code>spill slutt</code>- og <code>seier</code>-meldinger bør håndteres av en <strong>ny figur</strong>,
+som <strong>skjules</strong> når det grønne flagget trykkes og viser riktig plakat
+når <code>spill slutt</code>- og <code>seier</code>-meldinger sendes. Denne figurer skal
+også stoppe alle skript når den viser seg selv.</p>
+<p>Du må endre hvordan redningskapselen håndterer vinning og tap, da
+dette er ansvaret for liv og ferdigplakat figurene.</p>
+<p>Kanskje er slemmingen litt for kjappe på foten, de tar Felix før
+brettet er kommet igang. Hvis Felix taper mer enn et liv når han
+kommer borti en slemming, <code class="Content__blocklooks__NJdsX">skjul</code> slemmingen så snart den
+sender <code>tap</code>-meldingen. Det gir resten av spillet (inkludert Felix)
+tid å nullstille før slemmingene oppdager en ny kollisjon med Felix.</p>
+</section>
+<section class="Content__challenge__2LUyO" id="utvidelse-2-tidsbegrensninger">
+<h2 class="Content__challenge__2LUyO" id="utvidelse-2-tidsbegrensninger">Utvidelse 2: Tidsbegrensninger</h2>
+<p><strong>Ta tiden på Felix!</strong> Bruk et <strong>Timer Scratchkort</strong> for å legge til
+en tidsbegrensning. Hvis timeren løper ut, sender den <code>spill over</code>-melding. Husk å <strong>nullstille timeren</strong> når et nytt brett
+starter.</p>
+</section>
+</section>
+</div><div class="row" data-reactid="113"><div class="ImprovePage__container__HeXzk" data-reactid="114"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="115"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="116"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="117"><h2 data-reactid="118">Forbedre denne siden</h2><p data-reactid="119"><!-- react-text: 120 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 121 --> <!-- /react-text --><br data-reactid="122"/><!-- react-text: 123 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="124"><div data-reactid="125"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Scratch: Frantic felix&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/scratch/frantic_felix/frantic_felix%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/frantic_felix%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="126">Rapporter et problem</a></div><div data-reactid="127"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="128">Gå til forumet</a></div><div data-reactid="129"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/frantic_felix" target="_blank" class="btn btn-orange" data-reactid="130">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div data-reactid="131"><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="132"><div class="Footer__center__3xqZ_ row" data-reactid="133"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="134">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="135">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="136"><a href="https://www.sparebank1.no" target="_blank" data-reactid="137"><img class="Footer__img__25Ink" src="/beta/CCV-assets/smn.41dee6.jpg" data-reactid="138"/></a><a href="https://ibok.no/" target="_blank" data-reactid="139"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ibok.7f1adf.jpg" data-reactid="140"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="141"><img class="Footer__img__25Ink" src="/beta/CCV-assets/teknograd.6d3bfb.png" data-reactid="142"/></a><a target="_blank" data-reactid="143"><img class="Footer__img__25Ink" src="/beta/CCV-assets/tekna.04ca97.jpg" data-reactid="144"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="145"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ntnu_idi.7bbd05.png" data-reactid="146"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="147"><img class="Footer__img__25Ink" src="/beta/CCV-assets/excITEd.ce9ee2.png" data-reactid="148"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="149"><img class="Footer__img__25Ink" src="/beta/CCV-assets/uio_ifi.eebbdf.png" data-reactid="150"/></a></div></div></div></div></div></div>
+
+    
+    <script src="/beta/manifest.6b3ba4.js" type="text/javascript"></script>
+    
+    <script src="/beta/vendor.87e099.js" type="text/javascript"></script>
+    
+    <script src="/beta/main.aae969.js" type="text/javascript"></script>
+    
+    <script src="/beta/vendor2.c70f63.js" type="text/javascript"></script>
+    
+</body>
+</html>

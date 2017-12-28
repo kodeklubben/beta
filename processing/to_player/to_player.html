@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ToPlayer | Kodeklubben</title>
+
+    
+    <link href="/beta/vendor2.c70f63.css" rel="stylesheet">
+    
+
+    <style type="text/css">.App__appContainer__3y6aN {
+  overflow-x: hidden; }
+.NavBar__navbarWrapper__35BW9 .navbar > .container-fluid {
+  padding: 0; }
+  .NavBar__navbarWrapper__35BW9 .navbar > .container-fluid .navbar-header {
+    margin: 0; }
+  .NavBar__navbarWrapper__35BW9 .navbar > .container-fluid .navbar-collapse {
+    margin: 0;
+    padding: 0; }
+
+.NavBar__navbarWrapper__35BW9 .navbar-nav {
+  margin: 0; }
+
+.NavBar__navbarWrapper__35BW9 .navbar-brand {
+  padding: 0 10px; }
+
+.NavBar__navbarWrapper__35BW9 .navbar-default {
+  background-color: #f2f2f2; }
+  .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav {
+    background-color: transparent; }
+    .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a {
+      color: #444; }
+      .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a:focus {
+        color: #0fbe7c;
+        background-color: transparent; }
+      .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a:hover {
+        color: #0fbe7c;
+        background-color: transparent; }
+    .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a, .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a:focus, .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a:hover {
+      color: #0fbe7c;
+      background-color: transparent; }
+
+.NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle {
+  float: none;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  width: 100%;
+  color: white;
+  font-size: 1.2em; }
+  .NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle, .NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle:focus {
+    background-color: #3a3a3a; }
+  .NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle:hover {
+    background-color: #0fbe7c; }
+  .NavBar__navbarWrapper__35BW9 .navbar-toggle.navbar-toggle .icon-bar {
+    background-color: white; }
+
+@media (max-width: 767px) {
+  .NavBar__navbarWrapper__35BW9 .navbar-header {
+    text-align: center; }
+  .NavBar__navbarWrapper__35BW9 .navbar-brand {
+    float: none;
+    display: inline-block;
+    padding: 0; }
+  .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav {
+    background-color: #3a3a3a; }
+    .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a {
+      color: white; }
+      .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a:focus {
+        color: white;
+        background-color: #3a3a3a; }
+      .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > li > a:hover {
+        color: white;
+        background-color: #0fbe7c; }
+    .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a, .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a:focus, .NavBar__navbarWrapper__35BW9 .navbar-default .navbar-nav > .active > a:hover {
+      color: white;
+      background-color: #0fbe7c; } }
+
+.NavBar__toggleContent__1tzFa {
+  display: inline-block;
+  padding: 0 5px; }
+
+.NavBar__navContainer__3KRmh {
+  background-color: #3a3a3a;
+  padding: 0 20px; }
+
+.NavBar__logo__6osKq {
+  height: 127px; }
+
+.NavBar__spacing__2FOa3 {
+  width: 100%;
+  height: 77px; }
+  @media (max-width: 767px) {
+    .NavBar__spacing__2FOa3 {
+      height: 0;
+      width: 0; } }
+
+.NavBar__widgets__9B6hC {
+  display: inline-block;
+  width: 100%;
+  min-height: 50px;
+  font-family: "Roboto", "Verdana", sans-serif;
+  font-weight: 300;
+  border-radius: 0;
+  margin-bottom: -5px; }
+
+.NavBar__widgetStudent__2MyCf {
+  color: #265732;
+  background-color: #b1daae; }
+
+.NavBar__widgetTeacher__2mxrU {
+  color: #215651;
+  background-color: #a3cccb; }
+
+.NavBar__gadgetGroup__2VPWF {
+  display: inline;
+  float: right;
+  padding: 4px 0; }
+.BreadCrumb__breadcrumb__1u8pT {
+  padding-left: 10px;
+  float: left;
+  font-size: 30px; }
+
+.BreadCrumb__homeIcon__1AzmV {
+  line-height: 43px;
+  font-size: 0.8em; }
+
+.BreadCrumb__courseIcon__2aqTu {
+  height: 50px;
+  padding: 10px 0 15px; }
+
+.BreadCrumb__lessonLink__o9_Mz {
+  font-size: 20px;
+  vertical-align: middle; }
+
+.BreadCrumb__lesson__1OSql {
+  margin-left: 7px; }
+  @media (max-width: 767px) {
+    .BreadCrumb__lesson__1OSql {
+      display: none; } }
+.NavLink__linkBase__1m4Sm {
+  color: black; }
+  .NavLink__linkBase__1m4Sm:focus, .NavLink__linkBase__1m4Sm:hover {
+    text-decoration: none;
+    color: black; }
+  .NavLink__linkBase__1m4Sm:hover {
+    opacity: 0.5;
+    color: black; }
+.LevelIcon__levelIcon__2LO2- {
+  margin-right: 0.3em;
+  width: 0.75em;
+  height: 0.75em;
+  vertical-align: baseline; }
+.LanguageDropdown__language__1g4QB {
+  margin-left: 10px; }
+
+@media (max-width: 767px) {
+  .LanguageDropdown__onlyFlag__UCJAY {
+    display: none; } }
+
+.LanguageDropdown__flag__14wo3 {
+  margin: 1px 0;
+  width: 30px;
+  height: 20px; }
+
+.LanguageDropdown__gadgetContainer__LYX2I {
+  display: inline-block;
+  padding: 3px 5px; }
+.ModeDropdown__gadgetContainer__2HE97 {
+  display: inline-block;
+  padding: 3px 5px; }
+
+@media (max-width: 767px) {
+  .ModeDropdown__onlyMode__1fZJE {
+    display: none; } }
+
+.ModeDropdown__icon__3I03J {
+  margin-top: 2px;
+  margin-right: 10px; }
+.Lesson__container__133OS {
+  max-width: 800px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; }
+  .Lesson__container__133OS figure > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px; }
+  @media (max-width: 767px) {
+    .Lesson__container__133OS {
+      font-size: 106.25%; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .Lesson__container__133OS {
+      font-size: 118.75%; } }
+  @media (min-width: 992px) {
+    .Lesson__container__133OS {
+      font-size: 125%; } }
+
+.Lesson__box__2CtND {
+  display: none;
+  font-style: italic;
+  font-size: 0.75em; }
+  @media print {
+    .Lesson__box__2CtND {
+      display: block; } }
+/*
+
+Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+.Content__hljs__3U3C5 {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #000;
+  background: #fff; }
+
+.Content__hljs-subst__2pbFW,
+.Content__hljs-title__1NRbS {
+  font-weight: normal;
+  color: #000; }
+
+.Content__hljs-comment__2_Ezx,
+.Content__hljs-quote__2OYA5 {
+  color: #808080;
+  font-style: italic; }
+
+.Content__hljs-meta__otMql {
+  color: #808000; }
+
+.Content__hljs-tag__3JFP3 {
+  background: #efefef; }
+
+.Content__hljs-section__1q6Ri,
+.Content__hljs-name__2Cvim,
+.Content__hljs-literal__7rtGP,
+.Content__hljs-keyword__1gFtb,
+.Content__hljs-selector-tag__3DPD7,
+.Content__hljs-type__1tL9w,
+.Content__hljs-selector-id__3RV11,
+.Content__hljs-selector-class__1YokA {
+  font-weight: bold;
+  color: #000080; }
+
+.Content__hljs-attribute__NlSqs,
+.Content__hljs-number__1Gqqo,
+.Content__hljs-regexp__lxJZu,
+.Content__hljs-link__2O7c_ {
+  font-weight: bold;
+  color: #0000ff; }
+
+.Content__hljs-number__1Gqqo,
+.Content__hljs-regexp__lxJZu,
+.Content__hljs-link__2O7c_ {
+  font-weight: normal; }
+
+.Content__hljs-string__2DCAo {
+  color: #008000;
+  font-weight: bold; }
+
+.Content__hljs-symbol__3Phin,
+.Content__hljs-bullet__u6Nvq,
+.Content__hljs-formula__1EouS {
+  color: #000;
+  background: #d0eded;
+  font-style: italic; }
+
+.Content__hljs-doctag__1_4v0 {
+  text-decoration: underline; }
+
+.Content__hljs-variable__2B6Js,
+.Content__hljs-template-variable__1bdN5 {
+  color: #660e7a; }
+
+.Content__hljs-addition__3aghy {
+  background: #baeeba; }
+
+.Content__hljs-deletion__fahjb {
+  background: #ffc8bd; }
+
+.Content__hljs-emphasis__ohx_M {
+  font-style: italic; }
+
+.Content__hljs-strong__3Dxks {
+  font-weight: bold; }
+
+table {
+  background-color: transparent; }
+
+caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #777777;
+  text-align: left; }
+
+th {
+  text-align: left; }
+
+.Content__table__2Gq2x, table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 22px; }
+  .Content__table__2Gq2x > thead > tr > th, table > thead > tr > th,
+  .Content__table__2Gq2x > thead > tr > td, table > thead > tr > td,
+  .Content__table__2Gq2x > tbody > tr > th, table > tbody > tr > th,
+  .Content__table__2Gq2x > tbody > tr > td, table > tbody > tr > td,
+  .Content__table__2Gq2x > tfoot > tr > th, table > tfoot > tr > th,
+  .Content__table__2Gq2x > tfoot > tr > td, table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857;
+    vertical-align: top;
+    border-top: 1px solid #000; }
+  .Content__table__2Gq2x > thead > tr > th, table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #000; }
+  .Content__table__2Gq2x > caption + thead > tr:first-child > th, table > caption + thead > tr:first-child > th,
+  .Content__table__2Gq2x > caption + thead > tr:first-child > td, table > caption + thead > tr:first-child > td,
+  .Content__table__2Gq2x > colgroup + thead > tr:first-child > th, table > colgroup + thead > tr:first-child > th,
+  .Content__table__2Gq2x > colgroup + thead > tr:first-child > td, table > colgroup + thead > tr:first-child > td,
+  .Content__table__2Gq2x > thead:first-child > tr:first-child > th, table > thead:first-child > tr:first-child > th,
+  .Content__table__2Gq2x > thead:first-child > tr:first-child > td, table > thead:first-child > tr:first-child > td {
+    border-top: 0; }
+  .Content__table__2Gq2x > tbody + tbody, table > tbody + tbody {
+    border-top: 2px solid #000; }
+  .Content__table__2Gq2x .Content__table__2Gq2x, table .Content__table__2Gq2x, .Content__table__2Gq2x table, table table {
+    background-color: #fff; }
+
+.Content__table-condensed__2Qjps > thead > tr > th,
+.Content__table-condensed__2Qjps > thead > tr > td,
+.Content__table-condensed__2Qjps > tbody > tr > th,
+.Content__table-condensed__2Qjps > tbody > tr > td,
+.Content__table-condensed__2Qjps > tfoot > tr > th,
+.Content__table-condensed__2Qjps > tfoot > tr > td {
+  padding: 5px; }
+
+.Content__table-bordered__BqOIs {
+  border: 1px solid #000; }
+  .Content__table-bordered__BqOIs > thead > tr > th,
+  .Content__table-bordered__BqOIs > thead > tr > td,
+  .Content__table-bordered__BqOIs > tbody > tr > th,
+  .Content__table-bordered__BqOIs > tbody > tr > td,
+  .Content__table-bordered__BqOIs > tfoot > tr > th,
+  .Content__table-bordered__BqOIs > tfoot > tr > td {
+    border: 1px solid #000; }
+  .Content__table-bordered__BqOIs > thead > tr > th,
+  .Content__table-bordered__BqOIs > thead > tr > td {
+    border-bottom-width: 2px; }
+
+.Content__table-striped__nrYi3 > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9; }
+
+.Content__table-hover__28JMy > tbody > tr:hover {
+  background-color: #f5f5f5; }
+
+table col[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-column; }
+
+table td[class*="col-"],
+table th[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-cell; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__active__3pus6, table > thead > tr > td.Content__active__3pus6,
+.Content__table__2Gq2x > thead > tr > th.Content__active__3pus6, table > thead > tr > th.Content__active__3pus6,
+.Content__table__2Gq2x > thead > tr.Content__active__3pus6 > td, table > thead > tr.Content__active__3pus6 > td,
+.Content__table__2Gq2x > thead > tr.Content__active__3pus6 > th, table > thead > tr.Content__active__3pus6 > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__active__3pus6, table > tbody > tr > td.Content__active__3pus6,
+.Content__table__2Gq2x > tbody > tr > th.Content__active__3pus6, table > tbody > tr > th.Content__active__3pus6,
+.Content__table__2Gq2x > tbody > tr.Content__active__3pus6 > td, table > tbody > tr.Content__active__3pus6 > td,
+.Content__table__2Gq2x > tbody > tr.Content__active__3pus6 > th, table > tbody > tr.Content__active__3pus6 > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__active__3pus6, table > tfoot > tr > td.Content__active__3pus6,
+.Content__table__2Gq2x > tfoot > tr > th.Content__active__3pus6, table > tfoot > tr > th.Content__active__3pus6,
+.Content__table__2Gq2x > tfoot > tr.Content__active__3pus6 > td, table > tfoot > tr.Content__active__3pus6 > td,
+.Content__table__2Gq2x > tfoot > tr.Content__active__3pus6 > th, table > tfoot > tr.Content__active__3pus6 > th {
+  background-color: #f5f5f5; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__active__3pus6:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__active__3pus6:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__active__3pus6:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__active__3pus6,
+.Content__table-hover__28JMy > tbody > tr.Content__active__3pus6:hover > th {
+  background-color: #e8e8e8; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__success__1fKZD, table > thead > tr > td.Content__success__1fKZD,
+.Content__table__2Gq2x > thead > tr > th.Content__success__1fKZD, table > thead > tr > th.Content__success__1fKZD,
+.Content__table__2Gq2x > thead > tr.Content__success__1fKZD > td, table > thead > tr.Content__success__1fKZD > td,
+.Content__table__2Gq2x > thead > tr.Content__success__1fKZD > th, table > thead > tr.Content__success__1fKZD > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__success__1fKZD, table > tbody > tr > td.Content__success__1fKZD,
+.Content__table__2Gq2x > tbody > tr > th.Content__success__1fKZD, table > tbody > tr > th.Content__success__1fKZD,
+.Content__table__2Gq2x > tbody > tr.Content__success__1fKZD > td, table > tbody > tr.Content__success__1fKZD > td,
+.Content__table__2Gq2x > tbody > tr.Content__success__1fKZD > th, table > tbody > tr.Content__success__1fKZD > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__success__1fKZD, table > tfoot > tr > td.Content__success__1fKZD,
+.Content__table__2Gq2x > tfoot > tr > th.Content__success__1fKZD, table > tfoot > tr > th.Content__success__1fKZD,
+.Content__table__2Gq2x > tfoot > tr.Content__success__1fKZD > td, table > tfoot > tr.Content__success__1fKZD > td,
+.Content__table__2Gq2x > tfoot > tr.Content__success__1fKZD > th, table > tfoot > tr.Content__success__1fKZD > th {
+  background-color: #dff0d8; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__success__1fKZD:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__success__1fKZD:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__success__1fKZD:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__success__1fKZD,
+.Content__table-hover__28JMy > tbody > tr.Content__success__1fKZD:hover > th {
+  background-color: #d0e9c6; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__info__3Uyf3, table > thead > tr > td.Content__info__3Uyf3,
+.Content__table__2Gq2x > thead > tr > th.Content__info__3Uyf3, table > thead > tr > th.Content__info__3Uyf3,
+.Content__table__2Gq2x > thead > tr.Content__info__3Uyf3 > td, table > thead > tr.Content__info__3Uyf3 > td,
+.Content__table__2Gq2x > thead > tr.Content__info__3Uyf3 > th, table > thead > tr.Content__info__3Uyf3 > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__info__3Uyf3, table > tbody > tr > td.Content__info__3Uyf3,
+.Content__table__2Gq2x > tbody > tr > th.Content__info__3Uyf3, table > tbody > tr > th.Content__info__3Uyf3,
+.Content__table__2Gq2x > tbody > tr.Content__info__3Uyf3 > td, table > tbody > tr.Content__info__3Uyf3 > td,
+.Content__table__2Gq2x > tbody > tr.Content__info__3Uyf3 > th, table > tbody > tr.Content__info__3Uyf3 > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__info__3Uyf3, table > tfoot > tr > td.Content__info__3Uyf3,
+.Content__table__2Gq2x > tfoot > tr > th.Content__info__3Uyf3, table > tfoot > tr > th.Content__info__3Uyf3,
+.Content__table__2Gq2x > tfoot > tr.Content__info__3Uyf3 > td, table > tfoot > tr.Content__info__3Uyf3 > td,
+.Content__table__2Gq2x > tfoot > tr.Content__info__3Uyf3 > th, table > tfoot > tr.Content__info__3Uyf3 > th {
+  background-color: #d9edf7; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__info__3Uyf3:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__info__3Uyf3:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__info__3Uyf3:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__info__3Uyf3,
+.Content__table-hover__28JMy > tbody > tr.Content__info__3Uyf3:hover > th {
+  background-color: #c4e3f3; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__warning__3vM1b, table > thead > tr > td.Content__warning__3vM1b,
+.Content__table__2Gq2x > thead > tr > th.Content__warning__3vM1b, table > thead > tr > th.Content__warning__3vM1b,
+.Content__table__2Gq2x > thead > tr.Content__warning__3vM1b > td, table > thead > tr.Content__warning__3vM1b > td,
+.Content__table__2Gq2x > thead > tr.Content__warning__3vM1b > th, table > thead > tr.Content__warning__3vM1b > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__warning__3vM1b, table > tbody > tr > td.Content__warning__3vM1b,
+.Content__table__2Gq2x > tbody > tr > th.Content__warning__3vM1b, table > tbody > tr > th.Content__warning__3vM1b,
+.Content__table__2Gq2x > tbody > tr.Content__warning__3vM1b > td, table > tbody > tr.Content__warning__3vM1b > td,
+.Content__table__2Gq2x > tbody > tr.Content__warning__3vM1b > th, table > tbody > tr.Content__warning__3vM1b > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__warning__3vM1b, table > tfoot > tr > td.Content__warning__3vM1b,
+.Content__table__2Gq2x > tfoot > tr > th.Content__warning__3vM1b, table > tfoot > tr > th.Content__warning__3vM1b,
+.Content__table__2Gq2x > tfoot > tr.Content__warning__3vM1b > td, table > tfoot > tr.Content__warning__3vM1b > td,
+.Content__table__2Gq2x > tfoot > tr.Content__warning__3vM1b > th, table > tfoot > tr.Content__warning__3vM1b > th {
+  background-color: #fcf8e3; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__warning__3vM1b:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__warning__3vM1b:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__warning__3vM1b:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__warning__3vM1b,
+.Content__table-hover__28JMy > tbody > tr.Content__warning__3vM1b:hover > th {
+  background-color: #faf2cc; }
+
+.Content__table__2Gq2x > thead > tr > td.Content__danger__DoByx, table > thead > tr > td.Content__danger__DoByx,
+.Content__table__2Gq2x > thead > tr > th.Content__danger__DoByx, table > thead > tr > th.Content__danger__DoByx,
+.Content__table__2Gq2x > thead > tr.Content__danger__DoByx > td, table > thead > tr.Content__danger__DoByx > td,
+.Content__table__2Gq2x > thead > tr.Content__danger__DoByx > th, table > thead > tr.Content__danger__DoByx > th,
+.Content__table__2Gq2x > tbody > tr > td.Content__danger__DoByx, table > tbody > tr > td.Content__danger__DoByx,
+.Content__table__2Gq2x > tbody > tr > th.Content__danger__DoByx, table > tbody > tr > th.Content__danger__DoByx,
+.Content__table__2Gq2x > tbody > tr.Content__danger__DoByx > td, table > tbody > tr.Content__danger__DoByx > td,
+.Content__table__2Gq2x > tbody > tr.Content__danger__DoByx > th, table > tbody > tr.Content__danger__DoByx > th,
+.Content__table__2Gq2x > tfoot > tr > td.Content__danger__DoByx, table > tfoot > tr > td.Content__danger__DoByx,
+.Content__table__2Gq2x > tfoot > tr > th.Content__danger__DoByx, table > tfoot > tr > th.Content__danger__DoByx,
+.Content__table__2Gq2x > tfoot > tr.Content__danger__DoByx > td, table > tfoot > tr.Content__danger__DoByx > td,
+.Content__table__2Gq2x > tfoot > tr.Content__danger__DoByx > th, table > tfoot > tr.Content__danger__DoByx > th {
+  background-color: #f2dede; }
+
+.Content__table-hover__28JMy > tbody > tr > td.Content__danger__DoByx:hover,
+.Content__table-hover__28JMy > tbody > tr > th.Content__danger__DoByx:hover,
+.Content__table-hover__28JMy > tbody > tr.Content__danger__DoByx:hover > td,
+.Content__table-hover__28JMy > tbody > tr:hover > .Content__danger__DoByx,
+.Content__table-hover__28JMy > tbody > tr.Content__danger__DoByx:hover > th {
+  background-color: #ebcccc; }
+
+.Content__table-responsive__1_Wb8 {
+  overflow-x: auto;
+  min-height: 0.01%; }
+  @media screen and (max-width: 767px) {
+    .Content__table-responsive__1_Wb8 {
+      width: 100%;
+      margin-bottom: 16.5px;
+      overflow-y: hidden;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      border: 1px solid #000; }
+      .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x, .Content__table-responsive__1_Wb8 > table {
+        margin-bottom: 0; }
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > thead > tr > th, .Content__table-responsive__1_Wb8 > table > thead > tr > th,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > thead > tr > td,
+        .Content__table-responsive__1_Wb8 > table > thead > tr > td,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > tbody > tr > th,
+        .Content__table-responsive__1_Wb8 > table > tbody > tr > th,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > tbody > tr > td,
+        .Content__table-responsive__1_Wb8 > table > tbody > tr > td,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > tfoot > tr > th,
+        .Content__table-responsive__1_Wb8 > table > tfoot > tr > th,
+        .Content__table-responsive__1_Wb8 > .Content__table__2Gq2x > tfoot > tr > td,
+        .Content__table-responsive__1_Wb8 > table > tfoot > tr > td {
+          white-space: nowrap; }
+      .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs {
+        border: 0; }
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > thead > tr > th:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > thead > tr > td:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr > th:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr > td:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr > th:first-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr > td:first-child {
+          border-left: 0; }
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > thead > tr > th:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > thead > tr > td:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr > th:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr > td:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr > th:last-child,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr > td:last-child {
+          border-right: 0; }
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr:last-child > th,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tbody > tr:last-child > td,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr:last-child > th,
+        .Content__table-responsive__1_Wb8 > .Content__table-bordered__BqOIs > tfoot > tr:last-child > td {
+          border-bottom: 0; } }
+
+.Content__check__sbZVW ul,
+.Content__check__sbZVW ol,
+.Content__activity__12AJC ul,
+.Content__activity__12AJC ol,
+.Content__save__3P_NU ul,
+.Content__save__3P_NU ol {
+  padding: 0;
+  margin: 0 0 20px; }
+
+.Content__check__sbZVW ul.Content__task-list__2CKPB li.Content__task-list-item__2A55S::before,
+.Content__activity__12AJC ul.Content__task-list__2CKPB li.Content__task-list-item__2A55S::before,
+.Content__save__3P_NU ul.Content__task-list__2CKPB li.Content__task-list-item__2A55S::before {
+  display: none; }
+
+.Content__check__sbZVW li,
+.Content__activity__12AJC li,
+.Content__save__3P_NU li {
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 45px; }
+
+.Content__check__sbZVW li::before,
+.Content__activity__12AJC li::before,
+.Content__save__3P_NU li::before {
+  content: " ";
+  border-radius: 20px;
+  border: 3px solid #abdbea;
+  padding: 8px;
+  float: left;
+  margin-left: -40px;
+  margin-top: 2px; }
+
+.Content__check__sbZVW label,
+.Content__activity__12AJC label,
+.Content__save__3P_NU label {
+  font-weight: normal;
+  margin-left: 6px; }
+
+pre.Content__blocks__1k922,
+code.Content__b__2nfHe {
+  background-color: inherit;
+  border: 0; }
+
+pre > code {
+  background-color: transparent; }
+
+section.Content__activity__12AJC h1 {
+  color: #fff;
+  background: #349946;
+  padding: 10px;
+  border-radius: 5px; }
+
+section.Content__activity__12AJC .Content__subsection__3XzlJ h2 {
+  color: #fff;
+  background: #349946;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 300; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 ul,
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 ol {
+    padding: 0;
+    margin: 0 0 20px; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 ul.Content__task-list__2CKPB li.Content__task-list-item__2A55S::before {
+    display: none; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 li {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 45px; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 li::before {
+    content: " ";
+    border-radius: 20px;
+    border: 3px solid #abdbea;
+    padding: 8px;
+    float: left;
+    margin-left: -40px;
+    margin-top: 2px; }
+  section.Content__activity__12AJC .Content__subsection__3XzlJ h2 label {
+    font-weight: normal;
+    margin-left: 6px; }
+
+section.Content__check__sbZVW h2 {
+  padding-top: 4px;
+  padding-bottom: 9px; }
+  section.Content__check__sbZVW h2 img {
+    height: 40px;
+    vertical-align: text-bottom;
+    padding-right: 10px; }
+
+section.Content__try__9Al91 {
+  background: #abdbea;
+  border-radius: 10px;
+  padding: 1px 20px 10px; }
+  section.Content__try__9Al91 code {
+    background-color: #fff;
+    color: #007cc9; }
+  section.Content__try__9Al91 li::before {
+    border: 3px solid #fff; }
+
+section.Content__protip__3oM5h,
+section.Content__tip__2hJcQ {
+  border: 3px solid #ff7f00;
+  background: #fff99d;
+  border-radius: 12px;
+  padding: 0 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+section.Content__flag__1GjEr {
+  border-top: 3px dotted #e6862d;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  section.Content__flag__1GjEr h2 {
+    color: #36a137;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px; }
+    section.Content__flag__1GjEr h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
+
+section.Content__save__3P_NU {
+  border-top: 3px solid #245a9a;
+  margin: 20px 0; }
+  section.Content__save__3P_NU h2 {
+    color: #245a9a;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px; }
+    section.Content__save__3P_NU h2 img {
+      height: 40px;
+      vertical-align: text-bottom;
+      padding-right: 10px; }
+
+section.Content__challenge__2LUyO {
+  border: 3px solid #00b1da;
+  border-radius: 12px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  section.Content__challenge__2LUyO h2 {
+    color: #fff;
+    background: #00b1da;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0; }
+    @media print {
+      section.Content__challenge__2LUyO h2 {
+        border-bottom: 2px #00b1da solid; } }
+  section.Content__challenge__2LUyO > * {
+    padding: 0 20px; }
+
+code.Content__blockmotion__2TNTp {
+  background-color: #505fd7; }
+
+code.Content__blocklooks__NJdsX {
+  background-color: #9b33d9; }
+
+code.Content__blocksound__wb8Zz {
+  background-color: #d000c2; }
+
+code.Content__blockpen__1tOwq {
+  background-color: #00a16f; }
+
+code.Content__blockdata__1wt1I {
+  background-color: #ff7500; }
+
+code.Content__blockevents__r08uu {
+  background-color: #d38117; }
+
+code.Content__blockcontrol__3yrIr {
+  background-color: #e9aa00; }
+
+code.Content__blocksensing__2mkm9 {
+  background-color: #00a3e6; }
+
+code.Content__blockoperators__x9p0o {
+  background-color: #00c114; }
+
+code.Content__blockmoreblocks__3YKWS {
+  background-color: #71009a; }
+
+code.Content__blockmotion__2TNTp, code.Content__blocklooks__NJdsX, code.Content__blocksound__wb8Zz, code.Content__blockpen__1tOwq, code.Content__blockdata__1wt1I, code.Content__blockevents__r08uu, code.Content__blockcontrol__3yrIr, code.Content__blocksensing__2mkm9, code.Content__blockoperators__x9p0o, code.Content__blockmoreblocks__3YKWS {
+  color: #fff; }
+
+@media aural, braille, handheld, projection, screen, tty, tv, embossed {
+  pre > code {
+    word-wrap: normal;
+    white-space: pre; } }
+
+.Content__video-container__2gCjN {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 30px 0 60px; }
+  .Content__video-container__2gCjN iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+input[type="checkbox"] {
+  display: none; }
+
+input[type="checkbox"] + label {
+  position: relative;
+  font-weight: normal;
+  margin-left: 0; }
+
+input[type="checkbox"] + label::before {
+  content: '\A0';
+  display: inline-block;
+  visibility: visible;
+  width: 1.3em;
+  height: 1.3em;
+  margin: 0 0.6em 0 -2.2em;
+  line-height: 1.1em;
+  text-align: center;
+  border: 3px solid #abdbea;
+  border-radius: 3px; }
+
+input[type="checkbox"]:checked + label::before {
+  content: '\2714';
+  line-height: 1.1em;
+  padding-left: 0.1em; }
+.MainLanguageButton__textMargin__-3bsu {
+  margin-left: 10px; }
+  @media (max-width: 767px) {
+    .MainLanguageButton__textMargin__-3bsu {
+      display: none; } }
+
+.MainLanguageButton__container__3anRY {
+  margin: 10px 10px 0 0; }
+  @media print {
+    .MainLanguageButton__container__3anRY {
+      display: none; } }
+
+.MainLanguageButton__flag__2kKnQ {
+  width: 30px;
+  height: 20px; }
+.PdfButton__container__cTzho {
+  margin: 10px 10px 0 0; }
+  @media print {
+    .PdfButton__container__cTzho {
+      display: none; } }
+
+.PdfButton__textMargin__3ywqP {
+  margin-left: 10px; }
+  @media (max-width: 767px) {
+    .PdfButton__textMargin__3ywqP {
+      display: none; } }
+
+.PdfButton__icon__m5ajZ {
+  margin-top: 2px; }
+.ImprovePage__font__1MdMv {
+  font-family: "Roboto", "Verdana", sans-serif;
+  font-weight: 300;
+  font-size: 1em; }
+
+/* Container for improve box */
+.ImprovePage__container__HeXzk {
+  margin: 10px 30px; }
+  @media print {
+    .ImprovePage__container__HeXzk {
+      display: none; } }
+
+.ImprovePage__improvePageBox__cyxic {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+  max-width: 650px;
+  border-radius: 10px; }
+
+/* Student / Teacher mode */
+.ImprovePage__student__3q08- {
+  background-color: #b1daae; }
+
+.ImprovePage__teacher__2iOCW {
+  background-color: #a3cccb; }
+
+/* Row containing the text */
+/* Box-shadow works as a <hr/> to differentiate text and links */
+.ImprovePage__textRowStudent__2MdgF {
+  margin: 5px 20px 15px;
+  box-shadow: 0 8px 6px -6px #89c785; }
+
+.ImprovePage__textRowTeacher__2aMXI {
+  margin: 5px 20px 15px;
+  box-shadow: 0 8px 6px -6px #7bb7b6; }
+
+/* Row containing the links */
+.ImprovePage__linkRow__20Z6P {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .ImprovePage__linkRow__20Z6P div {
+    margin: 10px; }
+
+/* Media screen */
+@media only screen and (max-width: 300px) {
+  .ImprovePage__textRowStudent__2MdgF,
+  .ImprovePage__textRowTeacher__2aMXI {
+    max-width: 150px; } }
+.Footer__container__1SZrv {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-family: "Roboto", "Verdana", sans-serif; }
+  .Footer__container__1SZrv a {
+    text-decoration: none; }
+  @media print {
+    .Footer__container__1SZrv {
+      display: none; } }
+
+.Footer__containerStudent__3Yr5f {
+  background-color: #b1daae;
+  color: #265732; }
+  .Footer__containerStudent__3Yr5f a {
+    color: #265732; }
+
+.Footer__containerTeacher__36KZb {
+  background-color: #a3cccb;
+  color: #215651; }
+  .Footer__containerTeacher__36KZb a {
+    color: #215651; }
+
+.Footer__center__3xqZ_ {
+  text-align: center; }
+
+.Footer__inline__1Q6ds {
+  display: inline-block;
+  margin: 20px 10px; }
+
+.Footer__svg__29r7H {
+  width: 100px;
+  height: auto;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__img__25Ink {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  width: auto;
+  height: 50px;
+  transition: all 0.075s ease-in-out; }
+
+.Footer__divider__LJrti {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid;
+  width: 50%; }
+
+.Footer__svg__29r7H:hover,
+.Footer__img__25Ink:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.5); }
+</style>
+<meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="codeclub-viewer"><link rel="apple-touch-icon" sizes="57x57" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/beta/CCV-icons-4d5e7c/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="codeclub-viewer"><link rel="icon" type="image/png" sizes="32x32" href="/beta/CCV-icons-4d5e7c/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/beta/CCV-icons-4d5e7c/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/beta/CCV-icons-4d5e7c/favicon-16x16.png"><link rel="shortcut icon" href="/beta/CCV-icons-4d5e7c/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/beta/CCV-icons-4d5e7c/apple-touch-startup-image-1536x2008.png"></head>
+<body>
+    <div id="app"><div><div class="App__appContainer__3y6aN" data-reactroot="" data-reactid="1" data-react-checksum="-1726199482"><div class="NavBar__navbarWrapper__35BW9" data-reactid="2"><nav class="navbar navbar-default navbar-static-top" data-reactid="3"><div class="container-fluid" data-reactid="4"><div class="navbar-header" data-reactid="5"><a href="http://kidsakoder.no" class="NavBar__logo__6osKq navbar-brand" data-reactid="6"><img src="/beta/CCV-assets/LKK_small.42c715.png" data-reactid="7"/></a><div class="clearfix visible-xs-block" data-reactid="8"></div><button type="button" class="navbar-toggle collapsed" data-reactid="9"><span class="sr-only" data-reactid="10">Toggle navigation</span><span class="NavBar__toggleContent__1tzFa" data-reactid="11"><span class="icon-bar" data-reactid="12"></span><span class="icon-bar" data-reactid="13"></span><span class="icon-bar" data-reactid="14"></span></span><span class="NavBar__toggleContent__1tzFa" data-reactid="15">Meny</span></button></div><div class="navbar-collapse collapse" data-reactid="16"><div class="NavBar__spacing__2FOa3" data-reactid="17"></div><div class="NavBar__navContainer__3KRmh" data-reactid="18"><ul class="nav navbar-nav" data-reactid="19"><li role="presentation" class="" data-reactid="20"><a href="http://kidsakoder.no/om-lkk/" data-reactid="21">Om LKK</a></li><li role="presentation" class="" data-reactid="22"><a href="http://kidsakoder.no/nyheter/" data-reactid="23">Nyheter</a></li><li role="presentation" class="active" data-reactid="24"><a action="push" href="/" data-reactid="25">Oppgaver</a></li><li role="presentation" class="" data-reactid="26"><a href="http://kidsakoder.no/kodeklubben/kodeklubboversikt/" data-reactid="27">Finn kodeklubb</a></li><li role="presentation" class="" data-reactid="28"><a href="http://kidsakoder.no/kodeklubben/" data-reactid="29">Kodeklubben</a></li><li role="presentation" class="" data-reactid="30"><a href="http://kidsakoder.no/skole/" data-reactid="31">Skole</a></li><li role="presentation" class="" data-reactid="32"><a href="http://kidsakoder.no/kodetimen/" data-reactid="33">Kodetimen</a></li><li role="presentation" class="" data-reactid="34"><a href="http://kidsakoder.no/bidra/" data-reactid="35">Bidra?</a></li></ul></div></div><div class="NavBar__widgets__9B6hC NavBar__widgetStudent__2MyCf" data-reactid="36"><div class="BreadCrumb__breadcrumb__1u8pT" data-reactid="37"><a class="NavLink__linkBase__1m4Sm" href="/" data-reactid="38"><span class="BreadCrumb__homeIcon__1AzmV glyphicon glyphicon-home" data-reactid="39"></span></a><span data-reactid="40"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz" href="/processing" data-reactid="41"><img class="BreadCrumb__courseIcon__2aqTu" src="/beta/processing/logo-black.690d1f.png" data-reactid="42"/><span class="BreadCrumb__lesson__1OSql" data-reactid="43">Processing</span></a><span data-reactid="44"> / </span><a class="NavLink__linkBase__1m4Sm BreadCrumb__lessonLink__o9_Mz active" href="/processing/to_player/to_player" data-reactid="45"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="46"/><span class="BreadCrumb__lesson__1OSql" data-reactid="47">ToPlayer</span></a></div><div class="NavBar__gadgetGroup__2VPWF" data-reactid="48"><div class="LanguageDropdown__gadgetContainer__LYX2I" data-reactid="49"><div class="dropdown btn-group btn-group-language-student" data-reactid="50"><button id="language-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-language-student" data-reactid="51"><div data-reactid="52"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="53"/><span class="LanguageDropdown__language__1g4QB LanguageDropdown__onlyFlag__UCJAY" data-reactid="54">Norsk bokmål</span></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown" data-reactid="55"><li role="presentation" class="active" data-reactid="56"><a role="menuitem" tabindex="-1" href="#" data-reactid="57"><div data-reactid="58"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nb.fa23ab.svg" data-reactid="59"/><span class="LanguageDropdown__language__1g4QB" data-reactid="60">Norsk bokmål</span></div></a></li><li role="presentation" class="" data-reactid="61"><a role="menuitem" tabindex="-1" href="#" data-reactid="62"><div data-reactid="63"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_nn.fa23ab.svg" data-reactid="64"/><span class="LanguageDropdown__language__1g4QB" data-reactid="65">Norsk nynorsk</span></div></a></li><li role="presentation" class="" data-reactid="66"><a role="menuitem" tabindex="-1" href="#" data-reactid="67"><div data-reactid="68"><img class="LanguageDropdown__flag__14wo3" src="/beta/CCV-assets/flag_en.7eea7b.svg" data-reactid="69"/><span class="LanguageDropdown__language__1g4QB" data-reactid="70">English</span></div></a></li></ul></div></div><div class="ModeDropdown__gadgetContainer__2HE97" data-reactid="71"><div class="dropdown btn-group btn-group-student" data-reactid="72"><button id="mode-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-student" data-reactid="73"><div data-reactid="74"><span class="ModeDropdown__icon__3I03J glyphicon glyphicon-pencil" data-reactid="75"></span><span data-reactid="76"><span class="ModeDropdown__onlyMode__1fZJE" data-reactid="77">Modus: </span><!-- react-text: 78 -->Elev<!-- /react-text --></span></div></button><ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="mode-dropdown" data-reactid="79"><li role="presentation" class="active" data-reactid="80"><a role="menuitem" tabindex="-1" href="#" data-reactid="81"><span class="ModeDropdown__icon__3I03J glyphicon glyphicon-pencil" data-reactid="82"></span><!-- react-text: 83 -->Elev<!-- /react-text --></a></li><li role="presentation" class="" data-reactid="84"><a role="menuitem" tabindex="-1" href="#" data-reactid="85"><span class="ModeDropdown__icon__3I03J glyphicon glyphicon-education" data-reactid="86"></span><!-- react-text: 87 -->Lærer<!-- /react-text --></a></li></ul></div></div></div></div></div></nav></div><div class="Lesson__container__133OS" data-reactid="88"><h1 data-reactid="89"><img class="LevelIcon__levelIcon__2LO2-" src="/beta/CCV-assets/level-1.d6aa43.svg" data-reactid="90"/><!-- react-text: 91 -->ToPlayer<!-- /react-text --></h1><p data-reactid="92"><i data-reactid="93"><!-- react-text: 94 -->Skrevet av:<!-- /react-text --><!-- react-text: 95 --> <!-- /react-text --><span data-reactid="96">Ruben Gjerstad Eide og Kine Gjerstad Eide</span></i></p><div class="Lesson__box__2CtND" data-reactid="97"><div data-reactid="98"><!-- react-text: 99 -->Kurs:<!-- /react-text --><!-- react-text: 100 --> <!-- /react-text --><!-- react-text: 101 -->Processing<!-- /react-text --></div><div data-reactid="102">Tema: Tekstbasert</div><div data-reactid="103">Fag: Matematikk, Programmering</div><div data-reactid="104">Klassetrinn: 8.-10. klasse, Videregående skole</div><div data-reactid="105">Språk: Norsk bokmål</div></div><!-- react-empty: 106 --><a href="to_player.pdf" download="" class="PdfButton__container__cTzho btn btn-sm btn-pdf" data-reactid="107"><span class="PdfButton__icon__m5ajZ glyphicon glyphicon-cloud-download" data-reactid="108"></span><span class="PdfButton__textMargin__3ywqP" data-reactid="109">Last ned PDF</span></a><div data-reactid="110"><section class="intro" id="introduksjon">
+<h1 class="intro" id="introduksjon">Introduksjon:</h1>
+<p>Nå skal vi lage et spill som to personer kan spille mot hverandre. Vi har kalt det ToPlayer, men du kan kalle det hva du vil. Målet er å dytte en figur, eller en spillebrikke ut av vinduet på motstanderen sin side. Spillet ser ganske enkelt ut, men du kan etter hvert pimpe det opp som du vil. Når du har kommet deg gjennom hele denne oppgaven skal spillet ligne på bildet under. Du får bestemme farger og litt annet selv, så det vil avhenge av hva du liker.</p>
+<figure><img src="preview.png" alt=""></figure>
+</section>
+<section class="Content__activity__12AJC" id="steg-1-kom-i-gang-med-metodene-og">
+<h1 class="Content__activity__12AJC" id="steg-1-kom-i-gang-med-metodene-og">Steg 1: Kom i gang med metodene <code>setup</code> og <code>draw</code></h1>
+<p>Start med å åpne Processing. Når det er gjort, så må du skrive to metoder. Alle metoder har sitt eget navn, og to metoder kan ikke hete det samme. De to metodene du skal skrive er <code>setup</code> og <code>draw</code>. Bortsett fra metodenavnet, så skrives de på akkurat samme måte. Derfor viser vi deg hvordan du skal skrive <code>setup</code>-metoden, og så må du selv forsøke å skrive <code>draw</code>-metoden.</p>
+<p>Slik ser <code>setup</code>-metoden ut:</p>
+<pre><code class="processing"><span class="Content__hljs-keyword__1gFtb">void</span> <span class="Content__hljs-title__1NRbS">setup</span>(){
+
+}
+</code></pre>
+<section class="Content__check__sbZVW" id="gjor-dette">
+<h2 class="Content__check__sbZVW" id="gjor-dette"><img src="/beta/CCV-assets/check.15ac74.svg">Gjør dette:</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Skriv <code>draw</code>-metoden under <code>setup</code>-metoden.</label></p>
+</li>
+<li class="Content__task-list-item__2A55S">
+<p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Sjekk at metodene fungerer ved å kjøre programmet. Klikk på pilen oppe til venstre for å gjøre det.</label></p>
+</li>
+</ul>
+<figure><img src="play.png" alt=""></figure>
+<p>Dersom programmet kjører og alt er i orden så vil det dukke opp et nytt bitte lite vindu på skjermen din. Dersom du fikk opp vinduet, så er det bare å gå videre til steg 2. Dersom ikke, så kan du sjekke at du har fått med alle detaljene i koden din, ved å sammenligne med bildet under.</p>
+<figure><img src="steg1.png" alt=""></figure>
+<p>Lagre koden din før du går videre.</p>
+</section>
+<section class="Content__protip__3oM5h" id="forklaring-av-setup-og-draw">
+<h2 class="Content__protip__3oM5h" id="forklaring-av-setup-og-draw">Forklaring av setup og draw</h2>
+<p>Alt innholdet i <code>setup</code> skjer én gang når programmet starter, deretter går programmet videre til <code>draw</code>. Alt innholdet i <code>draw</code> skjer på nytt og på nytt helt til programmet stopper.</p>
+</section>
+</section>
+<section>
+<h1 id="steg-2-bestem-storrelse-og-bakgrunnsfarge-pa-vinduet">Steg 2: Bestem størrelse og bakgrunnsfarge på vinduet</h1>
+<p>Nå er det størrelsen på vinduet og bakgrunnsfargen som skal kodes. For å gjøre det, trengs bare to kodelinjer. Begge skal skrives inn i <code>setup</code>-metoden. Å skrive kode inni en metode vil si at vi skriver mellom krøllparentesene, altså mellom disse to: <code>{</code> og <code>}</code>.</p>
+<p>Størrelsen bestemmes ved å skrive denne kodelinja:</p>
+<pre><code class="processing">	<span class="hljs-built_in">size</span>(<span class="Content__hljs-number__1Gqqo">200</span>, <span class="Content__hljs-number__1Gqqo">600</span>);
+</code></pre>
+<p>Tallene mellom parentesene bestemmer størrelsen på vinduet.</p>
+<p>Koden som bestemmer bakgrunnsfargen ser slik ut:</p>
+<pre><code class="processing">	<span class="hljs-built_in">background</span>(<span class="Content__hljs-number__1Gqqo">40</span>, <span class="Content__hljs-number__1Gqqo">150</span>, <span class="Content__hljs-number__1Gqqo">255</span>);
+</code></pre>
+<p>Tallene inni parentesene bestemmer fargen.</p>
+<p>Her er en sjekkliste med ting du kan gjøre for å sjekke at du forstår koden din. For hvert punkt må du starte programmet og se hva som endrer seg. Det er viktig at du har forståelse for koden din før du går videre til neste steg.</p>
+<section class="Content__check__sbZVW" id="sjekkliste">
+<h2 class="Content__check__sbZVW" id="sjekkliste"><img src="/beta/CCV-assets/check.15ac74.svg">Sjekkliste</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_2"><label for="cbx_2"> Gjør det første tallet i parentesene til <code>size</code> dobbelt så stort.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_3"><label for="cbx_3"> Forsøk å få vinduet til å dekke hele skjermen din.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_4"><label for="cbx_4"> Sett tallene inni parentesene til <code>background</code> til å være dette: (255, 0, 0)</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_5"><label for="cbx_5"> Sett tallene inni parentesene til <code>background</code> til å være dette: (0, 255, 0)</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_6"><label for="cbx_6"> Sett tallene inni parentesene til <code>background</code> til å være dette: (0, 0, 255)</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_7"><label for="cbx_7"> Sett tallene inni parentesene til <code>background</code> til å være dette: (0, 255, 255)</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_8"><label for="cbx_8"> Sett alle tallene inni parentesene til <code>background</code> til å være 0.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_9"><label for="cbx_9"> Forsøk å få bakgrunnen til å bli hvit.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_10"><label for="cbx_10"> Forsøk å få bakgrunnen til å bli lilla.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_11"><label for="cbx_11"> Finn en størrelse du liker på vinduet ditt.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_12"><label for="cbx_12"> Finn en bakgrunnsfarge på vinduet ditt som du liker.</label></li>
+</ul>
+<p>Kjør programmet ditt og sjekk at du får vinduet til å vises før du går videre. Her er koden vi har laga så langt, husk at dine tall kanskje er litt forskjellig fra våre tall.</p>
+<figure><img src="steg2.png" alt=""></figure>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="steg-3-spillbrikke">
+<h1 class="Content__activity__12AJC" id="steg-3-spillbrikke">Steg 3: Spillbrikke</h1>
+<p>Vi skal lage spillbrikka, deretter skal vi gjøre slik at den kan bevege seg.</p>
+<p>Her er koden som skal brukes:</p>
+<pre><code class="processing">	<span class="hljs-built_in">fill</span>(<span class="Content__hljs-number__1Gqqo">30</span>, <span class="Content__hljs-number__1Gqqo">230</span>, <span class="Content__hljs-number__1Gqqo">100</span>);
+	<span class="hljs-built_in">ellipse</span>(<span class="Content__hljs-number__1Gqqo">400</span>, <span class="Content__hljs-number__1Gqqo">250</span>, <span class="Content__hljs-number__1Gqqo">50</span>, <span class="Content__hljs-number__1Gqqo">50</span>);
+</code></pre>
+<section class="Content__check__sbZVW" id="gjor-dette-2">
+<h2 class="Content__check__sbZVW" id="gjor-dette-2"><img src="/beta/CCV-assets/check.15ac74.svg">Gjør dette:</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_13"><label for="cbx_13"> Skriv inn de to kodelinjene i <code>draw</code>-metoden og test at programmet kjører.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_14"><label for="cbx_14"> Bytt ut ett og ett av tallene inni parentesen til <code>ellipse</code> og finn ut hva de gjør.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_15"><label for="cbx_15"> Bytt ut ett og ett av tallene inni parentesen til <code>fill</code> og finn ut hva de gjør.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_16"><label for="cbx_16"> Forsøk å få spillbrikka til å bli rosa.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_17"><label for="cbx_17"> Forsøk å få spillbrikka til å bli så stor at den dekker hele vinduet.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_18"><label for="cbx_18"> Still tilbake størrelsen på spillbrikka og velg en farge du liker.</label></li>
+</ul>
+<p>Nå skal vi gjøre slik at ellipsen er klar til å bevege seg sidelengs. Som du sikkert har funnet ut, så bestemmer det første tallet i parentesen hvor ellipsen står plassert sidelengs. Vi ønsker å gjøre dette tallet til en variabel, altså til et tall som kan variere.</p>
+<p>For å får det til, så deklarerer vi variabelen helt i toppen av programmet vårt (utenfor <code>setup</code>- og <code>draw</code>-metodene). Dette gjør vi ved å skrive denne kodelinja:</p>
+<pre><code class="processing">	<span class="hljs-built_in">int</span> x;
+</code></pre>
+<p>Denne lille koden er ganske enkel, <code>int</code> forteller PC-en at vi skal ha et heltall, og <code>x</code> er navnet vi har valgt å gi tallet vårt. Vi kunne kalt tallet noe helt annet som <code>pute</code> eller <code>boks</code>.</p>
+<p>Vi må gi <code>x</code> en verdi som den har til å begynne med, det gjør vi inni <code>setup</code> metoden. Alt vi trenger å skrive er dette:</p>
+<pre><code class="processing">	x = <span class="Content__hljs-number__1Gqqo">90</span>;
+</code></pre>
+<p>Så må vi bytte ut det første tallet i parentesen til <code>ellipse</code> med <code>x</code>. Da ser koden for ellipse slik ut:</p>
+<pre><code class="processing">	<span class="hljs-built_in">ellipse</span>(x, <span class="Content__hljs-number__1Gqqo">250</span>, <span class="Content__hljs-number__1Gqqo">50</span>, <span class="Content__hljs-number__1Gqqo">50</span>);
+</code></pre>
+</section>
+<section class="Content__check__sbZVW" id="gjor-dette-3">
+<h2 class="Content__check__sbZVW" id="gjor-dette-3"><img src="/beta/CCV-assets/check.15ac74.svg">Gjør dette:</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_19"><label for="cbx_19"> Skriv inn de tre kodelinjene som ble forklart over, pass på at du plasserer dem på riktig plass i koden..</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_20"><label for="cbx_20"> Test at programmet ditt kjører, ingenting nytt skal skje, bortsett fra at spillebrikken kanskje har flytta litt på seg.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_21"><label for="cbx_21"> Bytt ut verdien til <code>x</code> med for eksempel <code>180</code> og se at ellipsa flytter seg.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_22"><label for="cbx_22"> Se om du får til å plassere ellipsen så lagt ut til den høyre sida av vinduet at du bare kan se halve ellipsen.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_23"><label for="cbx_23"> Plasser ellipsen midt på skjermen sideveis.</label></li>
+</ul>
+<p>Her er koden vi har laga så langt.</p>
+<figure><img src="steg3.png" alt=""></figure>
+</section>
+</section>
+<section class="Content__activity__12AJC" id="steg-4-lag-kontrollere">
+<h1 class="Content__activity__12AJC" id="steg-4-lag-kontrollere">Steg 4: Lag kontrollere!</h1>
+<p>Nå skal vi lage en <code>if</code>-setning som registrerer om du trykker på en knapp.</p>
+<p>Skriv denne koden inni <code>draw</code>-metoden etter ellipsa:</p>
+<pre><code class="processing"><span class="Content__hljs-keyword__1gFtb">if</span>(<span class="hljs-built_in">keyPressed</span> &amp;&amp; <span class="hljs-built_in">key</span> == <span class="Content__hljs-string__2DCAo">'a'</span>){
+	x+=<span class="Content__hljs-number__1Gqqo">10</span>;
+}
+</code></pre>
+<p>Denne koden skal gjøre slik at dersom man har trykka på en knapp og den knappen er <code>a</code>, så skal <code>x</code>, altså plasseringen til ellipsa vår, flytte seg 10 piksler til høyre.</p>
+<section class="Content__protip__3oM5h" id="forklaring-av-if">
+<h2 class="Content__protip__3oM5h" id="forklaring-av-if">Forklaring av if</h2>
+<p>En <code>if</code>-setning sjekker om noe er sant. Dersom det er sant, så skjer det som står inni <code>if</code>-setningen. En <code>if</code>-setning er bygd opp av en test og så noe som blir utført:</p>
+<pre><code class="processing"><span class="Content__hljs-keyword__1gFtb">if</span>(test){
+	her utføres noe bare dersom testen er sann.
+}
+</code></pre>
+<p><code>If</code>-tester er lette å sette opp som muntlige setninger og så gjøre dem om til kode etterpå. Vi skriver det på samme måte som en ordentlig <code>if</code>-setning, slik at det er lett å gjøre om til kode. Inni <code>if</code>-setningen har vi kommet med noen eksempler.</p>
+<pre><code class="processing">Dersom ( et eller annet er sant) så skal dette skje{
+	vi får mer liv
+	vi hopper,
+	noe flytter på seg,
+}
+</code></pre>
+<p>Noe som er vanlig å sjekke i en <code>if</code>-setning er om man har trykka på en spesiell knapp, eller om datamusa er innenfor et bestemt område. Eller man kan sjekke hvor mange liv man har igjen, og dersom det er 0 så kan man skrive &quot;GAME OVER&quot;.</p>
+</section>
+</section>
+<section>
+<h1 id=""></h1>
+<p>Når vi skriver if-setningen vår med ord blir det slik:</p>
+<pre><code class="processing">Dersom (man trykker en knapp og knappen er <span class="Content__hljs-string__2DCAo">'a'</span>) så skal dette skje{
+	ellipsen skal bevege seg til høyre;
+}
+</code></pre>
+<p>Vi forsøker å gjøre setningen mer lik kode:</p>
+<pre><code class="processing">dersom ( enKnappErPressaNed og knappen er lik <span class="Content__hljs-string__2DCAo">'a'</span>){
+	så skal x bli <span class="Content__hljs-number__1Gqqo">10</span> større;
+}
+</code></pre>
+<p>Så gjør vi det til kode:</p>
+<pre><code class="processing"><span class="Content__hljs-keyword__1gFtb">if</span>(<span class="hljs-built_in">keyPressed</span> &amp;&amp; <span class="hljs-built_in">key</span> == <span class="Content__hljs-string__2DCAo">'a'</span>){
+	x+=<span class="Content__hljs-number__1Gqqo">10</span>;
+}
+</code></pre>
+<section class="Content__check__sbZVW" id="prov-dette">
+<h2 class="Content__check__sbZVW" id="prov-dette"><img src="/beta/CCV-assets/check.15ac74.svg">Prøv dette</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_24"><label for="cbx_24"> Skriv inn if-setningen i <code>draw</code>-metoden.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_25"><label for="cbx_25"> Kjør programmet, trykk på <code>a</code>, hva skjer?</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_26"><label for="cbx_26"> Flytt kodelinja som setter bakgrunsfargen fra <code>setup</code>-metoden til <code>draw</code>metoden. Putt den øverst inni <code>draw</code>.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_27"><label for="cbx_27"> Kjør programmet på nytt og se hva som skjer.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_28"><label for="cbx_28"> Bytt ut 10-tallet med ett annet tall.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_29"><label for="cbx_29"> Bytt ut <code>a</code> med en annen bokstav.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_30"><label for="cbx_30"> Flytt kodelinja som setter bakgrunnsfargen frem og tilbake mellom <code>setup</code> og <code>draw</code> noen ganger og se om du forstår hva som skjer.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_31"><label for="cbx_31"> Forsøk nå å skrive en <code>if</code>-setning til. Denne skal stå under den forrige, og nå kan du velge en annen bokstav. I stede for at <code>x</code> blir større, så må du skrive koden slik at <code>x</code> blir mindre. Dersom det er litt vanskelig, så kan du forsøke å sette opp <code>if</code>-setningen som en vanlig setning slik vi har vist i forklaringen over.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_32"><label for="cbx_32"> Bytt ut tallet inni den nye <code>if</code>-setningen, slik at du får ellipsen til å gå dobbelt så raskt til venstre.</label></li>
+</ul>
+<p>Dersom ikke koden din fungerer helt som den skal, så kan du sjekke her hva som er feil.</p>
+<figure><img src="steg4.png" alt=""></figure>
+</section>
+<section class="Content__activity__12AJC" id="steg-5-vi-trenger-en-vinner">
+<h2 class="Content__activity__12AJC" id="steg-5-vi-trenger-en-vinner">Steg 5: Vi trenger en vinner!</h2>
+<p>Vi trenger flere <code>if</code>-setninger, disse skal skrive en beskjed på skjermen hvis en spiller vinner. Man vinner med å dytte ellipsen ut av skjermen.</p>
+<p>Her er <code>if</code>-setningen som trengs for å sjekke om venstre spiller har vunnet. Denne skal skrives under de to forrige <code>if</code>-setningene:</p>
+<pre><code class="processing">	<span class="Content__hljs-keyword__1gFtb">if</span>(x &gt; <span class="Content__hljs-number__1Gqqo">800</span>){
+		<span class="hljs-built_in">text</span>(<span class="Content__hljs-string__2DCAo">"Venstre spiller vant!"</span>, <span class="Content__hljs-number__1Gqqo">350</span>, <span class="Content__hljs-number__1Gqqo">200</span>);
+	}
+</code></pre>
+</section>
+<section class="Content__check__sbZVW" id="prov-dette-2">
+<h2 class="Content__check__sbZVW" id="prov-dette-2"><img src="/beta/CCV-assets/check.15ac74.svg">Prøv dette</h2>
+<ul class="Content__task-list__2CKPB">
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_33"><label for="cbx_33"> Skriv inn den nye <code>if</code>-setningen.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_34"><label for="cbx_34"> Sjekk at programmet fungerer ved å få ellipsen ut av skjermen på høyre side. Da skal teksten vises.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_35"><label for="cbx_35"> Hva tror du skjer hvis du forandrer <code>800</code> tallet som står inni <code>(x &gt; 800)</code> til ett annet tall?</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_36"><label for="cbx_36"> Bytt ut <code>800</code> med noe mye mindre og finn ut hva som skjer.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_37"><label for="cbx_37"> Hva skjer hvis du forandrer teksten til &quot;Høyre spiller har vunnet&quot;?</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_38"><label for="cbx_38"> Finn ut hva tallene som står inni parentesene til <code>text</code> gjør ved å bytte dem ut.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_39"><label for="cbx_39"> Gjør størrelsen på vinduet ditt større og se hvordan det påvirker <code>if</code>-setningen.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_40"><label for="cbx_40"> Still tilbake alle tallene, slik at teksten dukker opp på skjermen bare når spillbrikka er ute av skjermen.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_41"><label for="cbx_41"> Lag en ny <code>if</code>-setning som gjør nesten akkurat det samme, men som heller sjekker om ellipsen går ut av skjermen på venstre side.</label></li>
+<li class="Content__task-list-item__2A55S"><input type="checkbox" id="cbx_42"><label for="cbx_42"> Test at koden din fungerer.</label></li>
+</ul>
+<p>Her er hele koden, sjekk om din er lik.</p>
+<figure><img src="steg5.png" alt=""></figure>
+</section>
+</section>
+</div><div class="row" data-reactid="111"><div class="ImprovePage__container__HeXzk" data-reactid="112"><div class="ImprovePage__student__3q08- ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="113"><div class="ImprovePage__improvePageBox__cyxic ImprovePage__font__1MdMv" data-reactid="114"><div class="ImprovePage__textRowStudent__2MdgF" data-reactid="115"><h2 data-reactid="116">Forbedre denne siden</h2><p data-reactid="117"><!-- react-text: 118 -->Funnet en feil? Kunne noe vært bedre?<!-- /react-text --><!-- react-text: 119 --> <!-- /react-text --><br data-reactid="120"/><!-- react-text: 121 -->Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!<!-- /react-text --></p></div><div class="ImprovePage__linkRow__20Z6P" data-reactid="122"><div data-reactid="123"><a href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Processing: To player&#x27;&amp;body=Oppgave: http://oppgaver.kidsakoder.no/beta/processing/to_player/to_player%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/processing/to_player%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" class="btn btn-white-grey" data-reactid="124">Rapporter et problem</a></div><div data-reactid="125"><a href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" class="btn btn-guide" data-reactid="126">Gå til forumet</a></div><div data-reactid="127"><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/processing/to_player" target="_blank" class="btn btn-orange" data-reactid="128">Vis koden og fiks selv</a></div></div></div></div></div></div></div><div data-reactid="129"><div class="Footer__containerStudent__3Yr5f Footer__container__1SZrv container-fluid" data-reactid="130"><div class="Footer__center__3xqZ_ row" data-reactid="131"><a class="Footer__inline__1Q6ds" href="http://kidsakoder.no/" data-reactid="132">kidsakoder.no</a><a class="Footer__inline__1Q6ds" href="https://github.com/kodeklubben/kodeklubben.github.io/archive/master.zip" data-reactid="133">Last ned alle kurs som zip-fil</a></div><div class="Footer__center__3xqZ_ row" data-reactid="134"><a href="https://www.sparebank1.no" target="_blank" data-reactid="135"><img class="Footer__img__25Ink" src="/beta/CCV-assets/smn.41dee6.jpg" data-reactid="136"/></a><a href="https://ibok.no/" target="_blank" data-reactid="137"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ibok.7f1adf.jpg" data-reactid="138"/></a><a href="https://www.teknograd.no/" target="_blank" data-reactid="139"><img class="Footer__img__25Ink" src="/beta/CCV-assets/teknograd.6d3bfb.png" data-reactid="140"/></a><a target="_blank" data-reactid="141"><img class="Footer__img__25Ink" src="/beta/CCV-assets/tekna.04ca97.jpg" data-reactid="142"/></a><a href="https://www.ntnu.edu/idi/" target="_blank" data-reactid="143"><img class="Footer__img__25Ink" src="/beta/CCV-assets/ntnu_idi.7bbd05.png" data-reactid="144"/></a><a href="http://www.ntnu.edu/web/excited" target="_blank" data-reactid="145"><img class="Footer__img__25Ink" src="/beta/CCV-assets/excITEd.ce9ee2.png" data-reactid="146"/></a><a href="http://www.mn.uio.no/ifi/" target="_blank" data-reactid="147"><img class="Footer__img__25Ink" src="/beta/CCV-assets/uio_ifi.eebbdf.png" data-reactid="148"/></a></div></div></div></div></div></div>
+
+    
+    <script src="/beta/manifest.6b3ba4.js" type="text/javascript"></script>
+    
+    <script src="/beta/vendor.87e099.js" type="text/javascript"></script>
+    
+    <script src="/beta/main.aae969.js" type="text/javascript"></script>
+    
+    <script src="/beta/vendor2.c70f63.js" type="text/javascript"></script>
+    
+</body>
+</html>

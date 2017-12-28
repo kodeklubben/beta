@@ -1,1 +1,0 @@
-webpackJsonp([10,436],{2672:function(t,n,o){t.exports={frontmatter:o(1223),content:o(786)}}});
