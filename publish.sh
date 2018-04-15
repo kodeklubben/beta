@@ -25,7 +25,7 @@ if ! git branch | grep "* master" > /dev/null; then
   git checkout -f master
 fi
 git reset --hard origin/master
-git clean -fd .
+git clean -fdx .
 if git branch | grep "gh-pages" > /dev/null; then
   git branch -D gh-pages
 fi
@@ -110,7 +110,7 @@ mv codeclub-viewer/dist .
 git add dist
 git rm -rf codeclub-viewer
 git rm -rf oppgaver
-git clean -fd .
+git clean -fdx .
 git commit -m "Add the built site from oppgaver/${oppgaver_branch} `git log oppgaver/master -n 1 | head -1` and codeclub-viewer/${cv_branch} `git log codeclub-viewer/master -n 1 | head -1`"
 
 git checkout -b gh-pages origin/gh-pages
