@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title data-react-helmet="true">Soloball | Kodeklubben</title>
+  <meta data-react-helmet="true" charset="utf-8"/><meta data-react-helmet="true" name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/><meta data-react-helmet="true" name="description" content="Vi skal nå lære hvordan vi kan lage et enkelt ballspill med Scratch. I soloball skal du styre katten som kontrollerer ballen, slik at ballen ikke går i nettet."/>
+
+  <link rel="shortcut icon" href="/icons-bfd76/favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="/icons-bfd76/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/icons-bfd76/favicon-32x32.png"><link rel="manifest" href="/icons-bfd76/manifest.json"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="Lær Kidsa Koding"><link rel="apple-touch-icon" sizes="57x57" href="/icons-bfd76/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/icons-bfd76/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/icons-bfd76/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/icons-bfd76/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/icons-bfd76/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/icons-bfd76/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/icons-bfd76/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/icons-bfd76/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="167x167" href="/icons-bfd76/apple-touch-icon-167x167.png"><link rel="apple-touch-icon" sizes="180x180" href="/icons-bfd76/apple-touch-icon-180x180.png"><link rel="apple-touch-icon" sizes="1024x1024" href="/icons-bfd76/apple-touch-icon-1024x1024.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Lær Kidsa Koding"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/icons-bfd76/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/icons-bfd76/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/icons-bfd76/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/icons-bfd76/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/icons-bfd76/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-1536x2008.png"><meta name="msapplication-TileColor" content="#fff"><meta name="msapplication-TileImage" content="/icons-bfd76/mstile-144x144.png"><meta name="msapplication-config" content="/icons-bfd76/browserconfig.xml">
+
+  
+
+  <style id='jss-server-side'>.MuiToolbar-root {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.MuiToolbar-gutters {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiToolbar-regular {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+  .MuiToolbar-dense {
+    min-height: 48px;
+  }
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: bolder;
+}
+body {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  background-color: #fafafa;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #fafafa;
+}
+  .MuiPaper-root {
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #fff;
+  }
+  .MuiPaper-rounded {
+    border-radius: 4px;
+  }
+  .MuiPaper-elevation0 {
+    box-shadow: none;
+  }
+  .MuiPaper-elevation1 {
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation2 {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation3 {
+    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation4 {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation5 {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation6 {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation7 {
+    box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation8 {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation9 {
+    box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation10 {
+    box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation11 {
+    box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation12 {
+    box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation13 {
+    box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation14 {
+    box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation15 {
+    box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation16 {
+    box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation17 {
+    box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation18 {
+    box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation19 {
+    box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation20 {
+    box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation21 {
+    box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation22 {
+    box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation23 {
+    box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation24 {
+    box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+  }
+  .MuiAppBar-root {
+    width: 100%;
+    display: flex;
+    z-index: 1100;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .MuiAppBar-positionFixed {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: fixed;
+  }
+  .MuiAppBar-positionAbsolute {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+  }
+  .MuiAppBar-positionSticky {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: sticky;
+  }
+  .MuiAppBar-positionStatic {
+    position: static;
+    transform: translateZ(0);
+  }
+  .MuiAppBar-positionRelative {
+    position: relative;
+  }
+  .MuiAppBar-colorDefault {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #f5f5f5;
+  }
+  .MuiAppBar-colorPrimary {
+    color: #fff;
+    background-color: #3f51b5;
+  }
+  .MuiAppBar-colorSecondary {
+    color: #fff;
+    background-color: #f50057;
+  }
+  .MuiDrawer-docked {
+    flex: 0 0 auto;
+  }
+  .MuiDrawer-paper {
+    top: 0;
+    flex: 1 0 auto;
+    height: 100%;
+    display: flex;
+    outline: 0;
+    z-index: 1200;
+    position: fixed;
+    overflow-y: auto;
+    flex-direction: column;
+    -webkit-overflow-scrolling: touch;
+  }
+  .MuiDrawer-paperAnchorLeft {
+    left: 0;
+    right: auto;
+  }
+  .MuiDrawer-paperAnchorRight {
+    left: auto;
+    right: 0;
+  }
+  .MuiDrawer-paperAnchorTop {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    height: auto;
+    max-height: 100%;
+  }
+  .MuiDrawer-paperAnchorBottom {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    max-height: 100%;
+  }
+  .MuiDrawer-paperAnchorDockedLeft {
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedTop {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedRight {
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedBottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiButtonBase-root {
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiButtonBase-root::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiButtonBase-root.Mui-disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+  .MuiIconButton-root {
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+  }
+  .MuiIconButton-root:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .MuiIconButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+  }
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-edgeStart {
+    margin-left: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+    margin-left: -3px;
+  }
+  .MuiIconButton-edgeEnd {
+    margin-right: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+    margin-right: -3px;
+  }
+  .MuiIconButton-colorInherit {
+    color: inherit;
+  }
+  .MuiIconButton-colorPrimary {
+    color: #3f51b5;
+  }
+  .MuiIconButton-colorPrimary:hover {
+    background-color: rgba(63, 81, 181, 0.08);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-colorSecondary {
+    color: #f50057;
+  }
+  .MuiIconButton-colorSecondary:hover {
+    background-color: rgba(245, 0, 87, 0.08);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-sizeSmall {
+    padding: 3px;
+    font-size: 1.125rem;
+  }
+  .MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiTypography-root {
+    margin: 0;
+  }
+  .MuiTypography-body2 {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+  }
+  .MuiTypography-caption {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+  }
+  .MuiTypography-button {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-h1 {
+    font-size: 6rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.01562em;
+  }
+  .MuiTypography-h2 {
+    font-size: 3.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.00833em;
+  }
+  .MuiTypography-h3 {
+    font-size: 3rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.04;
+    letter-spacing: 0em;
+  }
+  .MuiTypography-h4 {
+    font-size: 2.125rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.00735em;
+  }
+  .MuiTypography-h5 {
+    font-size: 1.5rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 0em;
+  }
+  .MuiTypography-h6 {
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+  }
+  .MuiTypography-subtitle1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.00938em;
+  }
+  .MuiTypography-subtitle2 {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.57;
+    letter-spacing: 0.00714em;
+  }
+  .MuiTypography-overline {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 2.66;
+    letter-spacing: 0.08333em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-srOnly {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .MuiTypography-alignLeft {
+    text-align: left;
+  }
+  .MuiTypography-alignCenter {
+    text-align: center;
+  }
+  .MuiTypography-alignRight {
+    text-align: right;
+  }
+  .MuiTypography-alignJustify {
+    text-align: justify;
+  }
+  .MuiTypography-noWrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiTypography-gutterBottom {
+    margin-bottom: 0.35em;
+  }
+  .MuiTypography-paragraph {
+    margin-bottom: 16px;
+  }
+  .MuiTypography-colorInherit {
+    color: inherit;
+  }
+  .MuiTypography-colorPrimary {
+    color: #3f51b5;
+  }
+  .MuiTypography-colorSecondary {
+    color: #f50057;
+  }
+  .MuiTypography-colorTextPrimary {
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .MuiTypography-colorTextSecondary {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiTypography-colorError {
+    color: #f44336;
+  }
+  .MuiTypography-displayInline {
+    display: inline;
+  }
+  .MuiTypography-displayBlock {
+    display: block;
+  }
+  .MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  .MuiSvgIcon-colorPrimary {
+    color: #3f51b5;
+  }
+  .MuiSvgIcon-colorSecondary {
+    color: #f50057;
+  }
+  .MuiSvgIcon-colorAction {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiSvgIcon-colorError {
+    color: #f44336;
+  }
+  .MuiSvgIcon-colorDisabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+  .MuiSvgIcon-fontSizeInherit {
+    font-size: inherit;
+  }
+  .MuiSvgIcon-fontSizeSmall {
+    font-size: 1.25rem;
+  }
+  .MuiSvgIcon-fontSizeLarge {
+    font-size: 2.1875rem;
+  }
+  .jss98 {
+    display: flex;
+    margin-left: 8px;
+    user-select: none;
+    margin-right: 8px;
+  }
+  .MuiBreadcrumbs-ol {
+    margin: 0;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .MuiBreadcrumbs-li {
+    list-style: none;
+  }
+  .MuiGrid-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .MuiGrid-item {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .MuiGrid-zeroMinWidth {
+    min-width: 0;
+  }
+  .MuiGrid-direction-xs-column {
+    flex-direction: column;
+  }
+  .MuiGrid-direction-xs-column-reverse {
+    flex-direction: column-reverse;
+  }
+  .MuiGrid-direction-xs-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .MuiGrid-wrap-xs-nowrap {
+    flex-wrap: nowrap;
+  }
+  .MuiGrid-wrap-xs-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+  .MuiGrid-align-items-xs-center {
+    align-items: center;
+  }
+  .MuiGrid-align-items-xs-flex-start {
+    align-items: flex-start;
+  }
+  .MuiGrid-align-items-xs-flex-end {
+    align-items: flex-end;
+  }
+  .MuiGrid-align-items-xs-baseline {
+    align-items: baseline;
+  }
+  .MuiGrid-align-content-xs-center {
+    align-content: center;
+  }
+  .MuiGrid-align-content-xs-flex-start {
+    align-content: flex-start;
+  }
+  .MuiGrid-align-content-xs-flex-end {
+    align-content: flex-end;
+  }
+  .MuiGrid-align-content-xs-space-between {
+    align-content: space-between;
+  }
+  .MuiGrid-align-content-xs-space-around {
+    align-content: space-around;
+  }
+  .MuiGrid-justify-xs-center {
+    justify-content: center;
+  }
+  .MuiGrid-justify-xs-flex-end {
+    justify-content: flex-end;
+  }
+  .MuiGrid-justify-xs-space-between {
+    justify-content: space-between;
+  }
+  .MuiGrid-justify-xs-space-around {
+    justify-content: space-around;
+  }
+  .MuiGrid-justify-xs-space-evenly {
+    justify-content: space-evenly;
+  }
+  .MuiGrid-spacing-xs-1 {
+    width: calc(100% + 8px);
+    margin: -4px;
+  }
+  .MuiGrid-spacing-xs-1 > .MuiGrid-item {
+    padding: 4px;
+  }
+  .MuiGrid-spacing-xs-2 {
+    width: calc(100% + 16px);
+    margin: -8px;
+  }
+  .MuiGrid-spacing-xs-2 > .MuiGrid-item {
+    padding: 8px;
+  }
+  .MuiGrid-spacing-xs-3 {
+    width: calc(100% + 24px);
+    margin: -12px;
+  }
+  .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+    padding: 12px;
+  }
+  .MuiGrid-spacing-xs-4 {
+    width: calc(100% + 32px);
+    margin: -16px;
+  }
+  .MuiGrid-spacing-xs-4 > .MuiGrid-item {
+    padding: 16px;
+  }
+  .MuiGrid-spacing-xs-5 {
+    width: calc(100% + 40px);
+    margin: -20px;
+  }
+  .MuiGrid-spacing-xs-5 > .MuiGrid-item {
+    padding: 20px;
+  }
+  .MuiGrid-spacing-xs-6 {
+    width: calc(100% + 48px);
+    margin: -24px;
+  }
+  .MuiGrid-spacing-xs-6 > .MuiGrid-item {
+    padding: 24px;
+  }
+  .MuiGrid-spacing-xs-7 {
+    width: calc(100% + 56px);
+    margin: -28px;
+  }
+  .MuiGrid-spacing-xs-7 > .MuiGrid-item {
+    padding: 28px;
+  }
+  .MuiGrid-spacing-xs-8 {
+    width: calc(100% + 64px);
+    margin: -32px;
+  }
+  .MuiGrid-spacing-xs-8 > .MuiGrid-item {
+    padding: 32px;
+  }
+  .MuiGrid-spacing-xs-9 {
+    width: calc(100% + 72px);
+    margin: -36px;
+  }
+  .MuiGrid-spacing-xs-9 > .MuiGrid-item {
+    padding: 36px;
+  }
+  .MuiGrid-spacing-xs-10 {
+    width: calc(100% + 80px);
+    margin: -40px;
+  }
+  .MuiGrid-spacing-xs-10 > .MuiGrid-item {
+    padding: 40px;
+  }
+  .MuiGrid-grid-xs-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xs-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xs-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xs-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xs-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xs-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xs-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xs-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xs-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xs-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xs-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xs-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xs-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xs-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+@media (min-width:600px) {
+  .MuiGrid-grid-sm-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-sm-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-sm-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-sm-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-sm-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-sm-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-sm-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-sm-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-sm-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-sm-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-sm-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-sm-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-sm-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-sm-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:960px) {
+  .MuiGrid-grid-md-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-md-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-md-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-md-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-md-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-md-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-md-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-md-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-md-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-md-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-md-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-md-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-md-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-md-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1280px) {
+  .MuiGrid-grid-lg-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-lg-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-lg-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-lg-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-lg-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-lg-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-lg-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-lg-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-lg-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-lg-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-lg-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-lg-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-lg-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-lg-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1920px) {
+  .MuiGrid-grid-xl-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xl-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xl-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xl-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xl-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xl-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xl-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xl-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xl-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xl-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xl-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xl-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xl-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xl-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+  .MuiLink-underlineNone {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover:hover {
+    text-decoration: underline;
+  }
+  .MuiLink-underlineAlways {
+    text-decoration: underline;
+  }
+  .MuiLink-button {
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiLink-button::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiLink-button.Mui-focusVisible {
+    outline: auto;
+  }
+  .MuiButton-root {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiButton-root:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .MuiButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-root:hover.Mui-disabled {
+    background-color: transparent;
+  }
+  .MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiButton-text {
+    padding: 6px 8px;
+  }
+  .MuiButton-textPrimary {
+    color: #3f51b5;
+  }
+  .MuiButton-textPrimary:hover {
+    background-color: rgba(63, 81, 181, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-textSecondary {
+    color: #f50057;
+  }
+  .MuiButton-textSecondary:hover {
+    background-color: rgba(245, 0, 87, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlined {
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    padding: 5px 15px;
+  }
+  .MuiButton-outlined.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+  }
+  .MuiButton-outlinedPrimary {
+    color: #3f51b5;
+    border: 1px solid rgba(63, 81, 181, 0.5);
+  }
+  .MuiButton-outlinedPrimary:hover {
+    border: 1px solid #3f51b5;
+    background-color: rgba(63, 81, 181, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlinedSecondary {
+    color: #f50057;
+    border: 1px solid rgba(245, 0, 87, 0.5);
+  }
+  .MuiButton-outlinedSecondary:hover {
+    border: 1px solid #f50057;
+    background-color: rgba(245, 0, 87, 0.08);
+  }
+  .MuiButton-outlinedSecondary.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-contained {
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+  .MuiButton-contained:hover {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+    background-color: #d5d5d5;
+  }
+  .MuiButton-contained.Mui-focusVisible {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained:active {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+  .MuiButton-contained:hover.Mui-disabled {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+  .MuiButton-containedPrimary {
+    color: #fff;
+    background-color: #3f51b5;
+  }
+  .MuiButton-containedPrimary:hover {
+    background-color: #303f9f;
+  }
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #3f51b5;
+  }
+}
+  .MuiButton-containedSecondary {
+    color: #fff;
+    background-color: #f50057;
+  }
+  .MuiButton-containedSecondary:hover {
+    background-color: #c51162;
+  }
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #f50057;
+  }
+}
+  .MuiButton-colorInherit {
+    color: inherit;
+    border-color: currentColor;
+  }
+  .MuiButton-textSizeSmall {
+    padding: 4px 5px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-textSizeLarge {
+    padding: 8px 11px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-outlinedSizeSmall {
+    padding: 3px 9px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-outlinedSizeLarge {
+    padding: 7px 21px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-containedSizeSmall {
+    padding: 4px 10px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-containedSizeLarge {
+    padding: 8px 22px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-fullWidth {
+    width: 100%;
+  }
+  .MuiButton-startIcon {
+    display: inherit;
+    margin-left: -4px;
+    margin-right: 8px;
+  }
+  .MuiButton-startIcon.MuiButton-iconSizeSmall {
+    margin-left: -2px;
+  }
+  .MuiButton-endIcon {
+    display: inherit;
+    margin-left: 8px;
+    margin-right: -4px;
+  }
+  .MuiButton-endIcon.MuiButton-iconSizeSmall {
+    margin-right: -2px;
+  }
+  .MuiButton-iconSizeSmall > *:first-child {
+    font-size: 18px;
+  }
+  .MuiButton-iconSizeMedium > *:first-child {
+    font-size: 20px;
+  }
+  .MuiButton-iconSizeLarge > *:first-child {
+    font-size: 22px;
+  }
+@media print {
+  .jss3 {
+    display: none;
+  }
+}
+  .jss4 {
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+  .jss5 {
+    display: flex;
+  }
+  .jss6 {
+    width: 20px;
+    height: 20px;
+  }
+  .jss7 {
+    width: 16px;
+    height: auto;
+    align-self: center;
+    margin-right: 8px;
+  }
+  .jss8 {
+    margin-left: 8px;
+  }
+  .jss266 {
+    margin-top: 40px;
+  }
+@media print {
+  .jss266 {
+    display: none;
+  }
+}
+  .jss267 {
+    width: auto;
+    height: 50px;
+    margin: 20px 7px 10px;
+  }
+@media print {
+  .jss1 {
+    display: none;
+  }
+}
+  .jss2 {
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .MuiContainer-root {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiContainer-root {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-root {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media (min-width:600px) {
+  .MuiContainer-fixed {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-fixed {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-fixed {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-fixed {
+    max-width: 1920px;
+  }
+}
+@media (min-width:0px) {
+  .MuiContainer-maxWidthXs {
+    max-width: 444px;
+  }
+}
+@media (min-width:600px) {
+  .MuiContainer-maxWidthSm {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-maxWidthMd {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-maxWidthLg {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-maxWidthXl {
+    max-width: 1920px;
+  }
+}
+
+  .jss235 {
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+@media print {
+  .jss235 {
+    display: none;
+  }
+}
+  .jss264 {
+    padding: 16px;
+    max-width: 700px;
+    margin-top: 40px;
+  }
+@media print {
+  .jss264 {
+    display: none;
+  }
+}
+  .jss265 {
+    margin: 8px;
+  }
+  .jss234 {
+    display: none;
+    font-size: 0.75em;
+    font-style: italic;
+  }
+@media print {
+  .jss234 {
+    display: block;
+  }
+}
+  .jss226 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }</style></head>
+<body>
+  <div id="app"><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionFixed jss3 mui-fixed"><div class="MuiToolbar-root MuiToolbar-regular jss4 MuiToolbar-gutters"><nav class="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"><ol class="MuiBreadcrumbs-ol"><li class="MuiBreadcrumbs-li"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-colorTextPrimary" aria-label="Hjem" href="/"><svg class="MuiSvgIcon-root jss6" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></a></li><li aria-hidden="true" class="jss98 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone jss5 MuiTypography-colorTextPrimary" href="/scratch"><img class="jss7" src="/_/oppgaver/src/scratch/logo-black.4de5c7.png" alt="Bilde av Scratch"/><p class="MuiTypography-root MuiTypography-body1">Scratch</p></a></li><li aria-hidden="true" class="jss98 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone jss5 MuiTypography-colorTextPrimary" aria-label="Soloball" href="/scratch/soloball/soloball"><div class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg><p class="MuiTypography-root jss8 MuiTypography-body1">Soloball</p></div></a></li></ol></nav><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></header><div class="MuiToolbar-root MuiToolbar-regular jss1 MuiToolbar-gutters"></div><div class="jss2"><div class="MuiContainer-root jss226 MuiContainer-maxWidthMd"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg></div><div class="MuiGrid-root MuiGrid-item"><h1 class="MuiTypography-root MuiTypography-h3">Soloball</h1></div></div><p><i>Skrevet av:<!-- --> <span>Geir Arne Hjelle</span></i></p><div class="jss234"><div>Kurs:<!-- --> <!-- -->Scratch</div><div>Tema: Blokkbasert, Spill</div><div>Fag: Matematikk, Programmering</div><div>Klassetrinn: 1.-4. klasse, 5.-7. klasse, 8.-10. klasse</div></div><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss235" tabindex="0" role="button" aria-disabled="false" href="http://pdf-ace.com/pdfme?print_media=1" download=""><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg></span>Last ned PDF</span></a><div><section class="intro"> <h1 class="intro">Introduksjon</h1> <p>Vi skal nå lære hvordan vi kan lage et enkelt ballspill med Scratch. I soloball skal du styre katten som kontrollerer ballen, slik at ballen ikke går i nettet.</p> <figure><img src="soloball.png" alt="Bilde av katten Felix som spiller soloball"></figure> </section> <section class="activity"> <h1 class="activity">Steg 1: En roterende katt</h1> <p><em>Vi begynner med å se på hvordan vi kan få kattefiguren til å rotere.</em></p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Start et nytt Scratch-prosjekt. Du vil se en kattefigur midt på scenen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Pusle sammen de følgende klossene i kode-området i midten av skjermen.</label></p> <pre class="blocks">når @greenFlag klikkes
+gå til x: (0) y: (0)
+gjenta for alltid
+    pek mot [musepeker v]
+slutt
+</pre> <p>Dette er et eksempel på et lite program, eller skript som det kalles i Scratch. Dette skriptet sier at kattefiguren skal stå midt på skjermen og alltid peke mot, eller se mot, musepekeren.</p> </li> </ul> </section> <section class="flag"> <h2 class="flag"><img src="/CCV-assets/flag.d7ff62.svg" alt="flag">Test prosjektet</h2> <p><strong>Klikk på det grønne flagget.</strong></p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_2"><label for="cbx_2"> For å starte programmet du nettopp puslet sammen kan du klikke på det grønne flagget over scenen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_3"><label for="cbx_3"> Begynner katten å rotere rundt slik at den alltid ser mot musepekeren?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_4"><label for="cbx_4"> For å stoppe programmet ditt kan du klikke på det røde stopp-tegnet ved siden av det grønne flagget.</label></p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Steg 2: Katten løper rundt</h1> <p><em>I stedet for at katten roterer vil vi at den skal kunne løpe rundt i sirkel på skjermen.</em></p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <p>Vi skal nå gjøre et lite triks hvor vi flytter katten vekk fra sentrum slik at det ser ut som om den løper i sirkel i stedet for å rotere.</p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Gi først kattefiguren din navnet <code>Katt</code>. Dette gjør du ved å skrive <code>Katt</code> i tekstfeltet over kattefiguren.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Klikk på <code class="blocklightgrey">Drakter</code>-fanen øverst på skjermen. Du vil nå se to kattefigurer. Slett en av dem ved å klikke på den lille x-en i hjørnet av figuren.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Gjør katten mindre ved å klikke på den i det store bildet, og deretter dra i et av hjørnene.</label></p> <figure><img src="katt_krymp.png" alt="Bilde av hvordan krympe katten Felix"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Roter deretter katten ved å dra i den lille rundingen over katten.</label></p> <figure><img src="katt_roter.png" alt="Bilde av hvordan rotere katten Felix"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Til slutt kan du ta tak i kattefiguren ved å klikke på den lille rundingen midt på katten. Flytt den et stykke til siden. Følg med på scenen øverst til venstre at du ikke drar den av skjermen.</label></p> <figure><img src="katt_flytt.png" alt="Bilde av hvordan flytte den roterte katten Felix"></figure> </li> </ul> </section> <section class="flag"> <h2 class="flag"><img src="/CCV-assets/flag.d7ff62.svg" alt="flag">Test prosjektet</h2> <p><strong>Klikk på det grønne flagget.</strong></p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_10"><label for="cbx_10"> Start programmet ditt igjen. Flytter katten seg i sirkel når du beveger musepekeren?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Fungerer bevegelsen bra? Ser katten passe stor ut? Husk at du kan gå tilbake og endre på kattefiguren senere hvis du oppdager noe som kunne vært bedre.</label></p> </li> </ul> </section> <section class="challenge"> <h2 class="challenge">Hva skjedde?</h2> <p>Selv om ikke endret programmet vårt oppfører katten seg veldig annerledes. Skjønner du hvorfor?</p> <p>Når vi sier at katten skal <code class="blockmotion">peke mot musepekeren</code> må den rotere rundt et punkt. Dette punktet kalles senterpunktet til figuren.</p> <p>Senterpunktet er i midten av bildet til katten. Når du trykker <code>=</code> ikonet under bildet vil du se hele bildet til figuren, og senterpunktet er da alltid i midten.</p> <figure><img src="../bilder/scratch_3_senterpunkt_illustrasjon.png" alt="Senterpunkt illustrasjon"></figure> <p>Når katten er utenfor senterpunktet vil det se ut som om katten løper rundt dette punktet i stedet for at den bare roterer uten å flytte seg.</p> </section> </section> <section class="activity"> <h1 class="activity">Steg 3: En ball!</h1> <p><em>Nå skal vi lage en ball og få den til å sprette rundt på skjermen.</em></p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_12"><label for="cbx_12"> Klikk på <code class="blocklightgrey">Kode</code>-fanen slik at du ser skriptet du skrev tidligere.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_13"><label for="cbx_13"> Klikk på <img src="../bilder/hent-fra-bibliotek.png" alt="Velg figur fra biblioteket"> ved siden av <code>Ny figur</code> for å hente en ny figur.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_14"><label for="cbx_14"> Hvis du klikker kategorien <code>Sport</code> vil du se flere baller. Velg en av dem.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_15"><label for="cbx_15"> Vi skal nå se en annen måte å gjøre figurer mindre på. Finn <code>Størrelse</code> feltet over ball-figuren. Den har nå verdien 100. Skriv en mindre verdi, da blir ballen mindre. Prøv ulike tall til ballen ser ut som riktig størrelse i forhold til katten.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_16"><label for="cbx_16"> Nå lager vi et program for ballen. Vi vil at ballen skal starte midt på skjermen. Deretter går den inn i en løkke hvor den flytter seg litt, og snur om katten kommer borti den.</label></p> <pre class="blocks">når @greenFlag klikkes
+gå til x: (0) y: (0)
+gjenta for alltid
+    gå (3) steg
+    hvis &lt;berører [Katt v] ?&gt;
+        pek i retning ((180) + (retning))
+    slutt
+slutt
+</pre> <p>Klossen <code class="blockmotion">retning</code> finner du helt nederst i <code class="blockmotion">Bevegelse</code>-kategorien.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_17"><label for="cbx_17"> Skjønner du hvorfor</label></p> <pre class="blocks">pek i retning ((180) + (retning))
+</pre> <p>gjør at ballen snur? Vi vil se nærmere på dette i Steg 6.</p> </li> </ul> </section> <section class="flag"> <h2 class="flag"><img src="/CCV-assets/flag.d7ff62.svg" alt="flag">Test prosjektet</h2> <p><strong>Klikk på det grønne flagget.</strong></p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_18"><label for="cbx_18"> Beveger ballen seg? Snur ballen når katten berører den?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_19"><label for="cbx_19"> Hva skjer om ballen flyr forbi katten?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_20"><label for="cbx_20"> Starter ballen midt på skjermen igjen hvis du trykker på det grønne flagget en gang til?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_21"><label for="cbx_21"> Hvis du synes ballen blir for lett &quot;fanget&quot; av katten kan du prøve å gjøre katten litt mindre. Vi vil finne en bedre løsning på dette problemet i Ekstra 3-delen.</label></p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Steg 4: Et nett!</h1> <p><em>Vi skal nå lage et nett som kan fange ballen hvis den flyr forbi katten.</em></p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_22"><label for="cbx_22"> Vi skal nå lage en figur som vi tegner selv. For å gjøre dette holder du musepekeren over <img src="../bilder/hent-fra-bibliotek.png" alt="Hent fra bibliotek">, og så klikker du på <code>Tegn</code> ikonet.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_23"><label for="cbx_23"> Velg linje-verktøyet på venstre side av skjermen, og trykk så <code>Kant</code> boksen for å velge farge. Velg en godt synlig farge, eksempel rød.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_24"><label for="cbx_24"> Tegn en liten loddrett strek til høyre på figuren din. Hold gjerne inne <code>Skift</code>-knappen, da får du en helt loddrett strek.</label></p> <figure><img src="tegn_nett.png" alt="Bilde av en helt loddrett strek"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_25"><label for="cbx_25"> Klikk på <code class="blocklightgrey">Kode</code>-fanen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_26"><label for="cbx_26"> Vi skal nå tegne et sirkelformet nett ved å stemple denne figuren på bakgrunnen mange ganger i en sirkel. Lag det følgende skriptet:</label></p> <pre class="blocks">når @greenFlag klikkes
+gå til x: (0) y: (0)
+gjenta (36) ganger
+    snu @turnLeft (10) grader
+    lag klon av (meg)
+slutt
+</pre> <p><code>lag klon av (meg)</code> lager en kopi av figuren der den befinner seg, før original-figuren flytter seg videre.</p> </li> </ul> </section> <section class="flag"> <h2 class="flag"><img src="/CCV-assets/flag.d7ff62.svg" alt="flag">Test prosjektet</h2> <p><strong>Klikk på det grønne flagget.</strong></p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_27"><label for="cbx_27"> Tegnes det en sirkel på bakgrunnen når spillet starter?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_28"><label for="cbx_28"> Det kan hende du må flytte litt på katt- og nett-figuren for at de skal passe sammen. Vi vil at det skal se ut omtrent som på bildet i begynnelsen av denne oppgaven.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_29"><label for="cbx_29"> Skjer det noe når ballen treffer nettet?</label></p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Steg 5: Nettet fanger ballen</h1> <p><em>Vi vil at ballen skal stoppe når den treffer nettet.</em></p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <p>Foreløpig har vi ikke laget noe kode som forteller ballen at den har truffet nettet. Det skal vi gjøre nå.</p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_30"><label for="cbx_30"> Klikk på ball-figuren, slik at du ser skriptet vi tidligere lagde for denne.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_31"><label for="cbx_31"> Vi skal nå bruke <code class="blocksensing">berører fargen</code>-klossen for å oppdage at ballen treffer nettet. Legg til nye klosser i skriptet ditt slik at det blir seende slik ut:</label></p> <pre class="blocks">når @greenFlag klikkes
+gå til x: (0) y: (0)
+gjenta for alltid
+    gå (3) steg
+    hvis &lt;berører [Katt v] ?&gt;
+        pek i retning ((180) + (retning))
+    slutt
+    hvis &lt;berører fargen [#ff0000] ?&gt;
+        stopp [alle v] :: control
+    slutt
+slutt
+</pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_32"><label for="cbx_32"> For å få riktig farge i <code class="blocksensing">berører fargen</code>-klossen klikker du først på den lille firkanten hvor fargen vises. I boksen som vises midt på skjermen med fargevalg, så er det et lite &quot;dråpeteller&quot;-ikon under. Klikk på det. Deretter flytter du musepekeren slik at den peker på nettet sin rød-farge. Trykk på det, så velger du den fargen.</label></p> </li> </ul> </section> <section class="flag"> <h2 class="flag"><img src="/CCV-assets/flag.d7ff62.svg" alt="flag">Test prosjektet</h2> <p><strong>Klikk på det grønne flagget.</strong></p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_33"><label for="cbx_33"> Stopper ballen når den kommer til nettet?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_34"><label for="cbx_34"> Med <code class="blockcontrol">stopp alle</code>-klossen stoppes hele spillet når ballen treffer nettet. For å spille videre må du klikke det grønne flagget igjen.</label></p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Steg 6: Mer naturlig sprett</h1> <p><em>Nå spretter ballen bare fram og tilbake på samme linje hele tiden. Vi vil at den skal sprette litt mer naturlig når den treffer katten.</em></p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <p>En bra modell for hvordan en ball spretter er at vinkelen ut er den samme som vinkelen inn.</p> <figure><img src="sprett_vinkel1.png" alt="Bilde av hvordan en ball sprett"></figure> <p>I spillet er det to retninger vi må tenke på, retningen til ballen og retningen kattefiguren står i.</p> <figure><img src="sprett_vinkel2.png" alt="Bilde av retning av katt og ball"></figure> <p>Før vi gjør noe mer så trenger ballen å vite hvilken retning katten har.</p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_35"><label for="cbx_35"> Velg kattefiguren, trykk på <code>Variabel</code> kategorien og lag en ny variabel på katten som du kaller <code>retning av katt</code> (og velg at den skal være synlig for alle figurer).</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_36"><label for="cbx_36"> I kattens skript, juster slik at den hele tiden oppdaterer denne variabelen med sin retning:</label></p> </li> </ul> <pre class="blocks"> når @greenFlag klikkes
+ gå til x: (0) y: (0)
+ gjenta for alltid
+     pek mot [musepeker v]
+     sett (kattens retning) til (retning)
+ slutt
+</pre> <p>Nå kan ballen få tak i retningen til katten.</p> <p>I figuren over og i koden videre betyr <code class="blockmotion">retning</code> retningen til ballen, siden koden tilhører ballfiguren. Så langt har vi brukt</p> <pre class="blocks">pek i retning ((180) + (retning))
+</pre> <p>for at ballen skal snu. I figuren ser vi at dette betyr at ballen spretter tilbake der den kom i fra.</p> <p>Vi bør også kompensere for retningen til <code>Katt</code>. Dette kan vi gjøre ved å trekke fra to ganger (<code class="blockmotion">retning</code> - <code class="blockdata">retning av katt</code>). Skjønner du hvorfor av figuren? Da blir den nye retningen</p> <pre class="blocks">(((180) + (retning)) - ((2) * ((retning) - (retning av katt)))
+</pre> <p>Vi kan forenkle dette til</p> <pre class="blocks">(((180) - (retning)) + ((2) * (retning av katt)))
+</pre> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_37"><label for="cbx_37"> Endre i skriptet til ballen slik at spretten blir bedre,</label></p> <pre class="blocks">når @greenFlag klikkes
+gå til x: (0) y: (0)
+gjenta for alltid
+    gå (3) steg
+    hvis &lt;berører [Katt v] ?&gt;
+        pek i retning (((180) - (retning)) + ((2) * (retning av katt)))
+    slutt
+    hvis &lt;berører fargen [#ff0000] ?&gt;
+        stopp [alle v] :: control
+    slutt
+slutt
+</pre> </li> </ul> </section> <section class="flag"> <h2 class="flag"><img src="/CCV-assets/flag.d7ff62.svg" alt="flag">Test prosjektet</h2> <p><strong>Klikk på det grønne flagget.</strong></p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_38"><label for="cbx_38"> Ser du at ballen spretter litt mer naturlig nå?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_39"><label for="cbx_39"> Har du noen ideer til hvordan spillet kan bli enda bedre? Prøv dem ut!</label></p> </li> </ul> </section> <section class="save"> <h2 class="save"><img src="/CCV-assets/save.5c804c.svg" alt="save">Lagre og legg ut prosjektet</h2> <p>Vi har nå laget et ganske morsomt spill! Hvis du vil kan du gå videre med de neste stegene for å gjøre spillet enda litt mer spennende.</p> <p>For å lagre spillet ditt kan du velge <code>Lagre nå</code> i <code>Fil</code>-menyen. Spillet blir da lagret på brukerkontoen ditt hos Scratch. Om du ikke har laget deg brukerkonto kan du velge <code>Last ned til datamaskinen</code> i stedet.</p> <p>Om du lagrer spillet på brukerkontoen din kan du også legge det ut slik at andre kan spille det. For å gjøre dette klikker du <code>Legg ut</code> i midten i toppen av skjermen. Du kan deretter dele nettadressen til spillet ditt med venner og familie.</p> </section> </section> <section class="activity"> <h1 class="activity">Ekstra 1: Tell poeng</h1> <p><em>Alle spill blir morsommere hvis man får poeng!</em></p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <p>For å telle poeng skal vi bruke noe som kalles en variabel. En variabel er et navn på en verdi som kan variere.</p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_40"><label for="cbx_40"> Klikk på <code>Data</code>-kategorien og deretter på <code class="blocklightgrey">Lag en Variabel</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_41"><label for="cbx_41"> Gi variabelen navnet <code class="blockdata">Poeng</code>, og la den gjelde for alle figurer. Legg merke til at når du klikker <code>OK</code> dukker det opp en boks som heter <code class="blockdata">Poeng</code> på scenen, og flere nye klosser under <code class="blocklightgrey">Lag en Variabel</code>.</label></p> </li> </ul> <p>Vi vil nå at <code class="blockdata">Poeng</code> skal settes til <code>0</code> når spillet starter. Deretter skal vi få ett poeng hver gang vi returnerer ballen.</p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_42"><label for="cbx_42"> Legg på to nye klosser i skriptet som styrer ballen:</label></p> <pre class="blocks">når @greenFlag klikkes
+gå til x: (0) y: (0)
+sett [Poeng v] til [0]
+gjenta for alltid
+    gå (3) steg
+    hvis &lt;berører [Katt v] ?&gt;
+        pek i retning (((180) - (retning)) + ((2) * (retning av katt)))
+        endre [Poeng v] med (1)
+    slutt
+    hvis &lt;berører fargen [#ff0000] ?&gt;
+        stopp [alle v] :: control
+    slutt
+slutt
+</pre> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Ekstra 2: Øk hastigheten</h1> <p><em>Vi skal nå lage spillet vanskeligere etterhvert som tiden går, ved at ballen beveger seg stadig raskere.</em></p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <p>Hastigheten på ballen styres nå av klossen</p> <pre class="blocks">gå (3) steg
+</pre> <p>Ved å endre på <code>3</code>-tallet endrer vi hastigheten på ballen. Prøv dette selv!</p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_43"><label for="cbx_43"> For å endre hastigheten underveis i spillet trenger vi en variabel. Lag en ny variabel som du kaller <code class="blockdata">Hastighet</code>. Du kan la denne gjelde kun for denne figuren.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_44"><label for="cbx_44"> Hastigheten er ikke så interessant å vise på scenen. Du kan skjule boksen på scenen ved å fjerne avhukingen ved siden av <code class="blockdata">Hastighet</code>.</label></p> <figure><img src="variabel.png" alt="Bilde av hvordan skjule variabelen &quot;Hastighet&quot;"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_45"><label for="cbx_45"> Vi vil nå sette hastigheten til <code>3</code> (du kan bruke et annet tall om du vil) når spillet starter. Deretter vil vi øke denne littegrann hver gang katten berører ballen. Dette gjør vi på samme måte som når vi teller poeng.</label></p> <pre class="blocks">når @greenFlag klikkes
+gå til x: (0) y: (0)
+sett [Poeng v] til [0]
+sett [Hastighet v] til [3]
+gjenta for alltid
+    gå (hastighet) steg
+    hvis &lt;berører [Katt v] ?&gt;
+        pek i retning (((180) - (retning)) + ((2) * (retning av katt)))
+        endre [Poeng v] med (1)
+        endre [Hastighet v] med (0.1)
+    slutt
+    hvis &lt;berører fargen [#ff0000] ?&gt;
+        stopp [alle v] :: control
+    slutt
+slutt
+</pre> <p>Pass på at du også endrer <code class="blockmotion">gå steg</code>-klossen.</p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Ekstra 3: Unngå at katten fanger ballen</h1> <p><em>Du har sikkert opplevd at katten av og til &quot;fanger&quot; ballen. Vi skal nå fikse slik at den ikke gjør det.</em></p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <p>Av og til virker det som om katten &quot;fanger&quot; ballen. Dette skjer fordi ballen ikke flytter seg langt nok etter at den har snudd. Den fortsetter å berøre katten og blir derfor snudd igjen ... og igjen ... og igjen.</p> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_46"><label for="cbx_46"> Vi skal nå lage nok en variabel. Denne skal hete <code class="blockdata">Flytt</code>, kun gjelde for denne figuren, og heller ikke vises på scenen.</label></li> </ul> <p><code class="blockdata">Flytt</code>-variabelen vil vi bruke til å telle hvor mange flytt ballen har gjort siden den sist berørte katten. Deretter kan vi si at ballen skal snu kun hvis den har flyttet mange ganger siden den sist snudde.</p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_47"><label for="cbx_47"> Utvid skriptet ditt som under. Legg spesielt merke til at <code class="blockcontrol">hvis</code>-testen har blitt utvidet.</label></p> <pre class="blocks">når @greenFlag klikkes
+gå til x: (0) y: (0)
+sett [Poeng v] til [0]
+sett [Hastighet v] til [3]
+gjenta for alltid
+    gå (hastighet) steg
+    endre [Flytt v] med (1)
+    hvis &lt;&lt;berører [Katt v] ?&gt; og &lt;(Flytt) &gt; [20]&gt;&gt;
+        pek i retning (((180) - (retning)) + ((2) * (retning av katt)))
+        endre [Poeng v] med (1)
+        endre [Hastighet v] med (0.1)
+        sett [Flytt v] til [0]
+    slutt
+    hvis &lt;berører fargen [#ff0000] ?&gt;
+        stopp [alle v] :: control
+    slutt
+slutt
+</pre> </li> </ul> </section> <section class="challenge"> <h2 class="challenge">Prøv selv</h2> <p>I disse ekstrastegene har vi sett på noen måter vi kan gjøre spillet bedre og mer spennende på. Her er enda flere ideer:</p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_48"><label for="cbx_48"> Du kan bytte kattefiguren med en annen figur. Dette gjør du enklest ved å gå til <code>Drakter</code>-fanen fordi da beholder du skriptet du allerede har laget på figuren. Her kan du velge en av de ferdige figurene eller tegne en ny figur selv.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_49"><label for="cbx_49"> Prøv å legg på lyder, for eksempel når katten berører ballen eller når ballen treffer nettet. Se på de forskjellige klossene i <code class="blocksound">Lyder</code>-kategorien, og lydene som finnes under <code>Lyder</code>-fanen.</label></p> </li> </ul> <p>Det finnes mange andre ting å prøve også. Du bestemmer!</p> </section> </section> </div><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1"><div class="MuiGrid-root MuiGrid-item">Lisens: </div><div class="MuiGrid-root MuiGrid-item"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="http://creativecommons.org/licenses/by-sa/4.0/deed" target="_blank" rel="noopener">CC BY-SA 4.0</a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><div class="MuiPaper-root MuiPaper-elevation1 jss264 MuiPaper-rounded"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><h2 class="MuiTypography-root MuiTypography-h4">Forbedre denne siden</h2></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Funnet en feil? Kunne noe vært bedre?</p></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!</p></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Scratch: Soloball&#x27;&amp;body=Oppgave: https://oppgaver.kidsakoder.no/scratch/soloball/soloball%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/soloball/soloball.md%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Rapporter et problem</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265" tabindex="0" role="button" aria-disabled="false" href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></span>Gå til forumet</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/soloball/soloball.md" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Vis koden og fiks selv</span></a></div></div></div></div></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionStatic jss266"><div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.sparebank1.no" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/smn.098a83.jpg" alt="SpareBank1"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://ibok.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/ibok.06cd44.jpg" alt="Ibok"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.teknograd.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/teknograd.03c75e.png" alt="Teknograd"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.tekna.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/tekna.41a4f5.jpg" alt="Tekna"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.ntnu.edu/idi/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/ntnu_idi.5179a4.png" alt="NTNU institutt for datateknologi og informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.ntnu.edu/web/excited" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/excITEd.915706.png" alt="excited"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.mn.uio.no/ifi/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/uio_ifi.37ef13.png" alt="UIO institutt for informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.samsung.com/no/innovation/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/samsung.bec12f.png" alt="Samsung"/></a></div></div></header></div>
+  
+  <script src="/main.295399.js" async></script>  
+</body>
+</html>

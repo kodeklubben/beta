@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title data-react-helmet="true">JS: Trykkomania | Kodeklubben</title>
+  <meta data-react-helmet="true" charset="utf-8"/><meta data-react-helmet="true" name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/><meta data-react-helmet="true" name="description" content="Denne oppgåva viser deg korleis du kan lage eit spel med JavaScript og dele det med venene dine. Spelet heiter Trykkomania fordi det handlar om å trykke på ein ball flest mogleg gonger før tida renn ut."/>
+
+  <link rel="shortcut icon" href="/icons-bfd76/favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="/icons-bfd76/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/icons-bfd76/favicon-32x32.png"><link rel="manifest" href="/icons-bfd76/manifest.json"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="Lær Kidsa Koding"><link rel="apple-touch-icon" sizes="57x57" href="/icons-bfd76/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/icons-bfd76/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/icons-bfd76/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/icons-bfd76/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/icons-bfd76/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/icons-bfd76/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/icons-bfd76/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/icons-bfd76/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="167x167" href="/icons-bfd76/apple-touch-icon-167x167.png"><link rel="apple-touch-icon" sizes="180x180" href="/icons-bfd76/apple-touch-icon-180x180.png"><link rel="apple-touch-icon" sizes="1024x1024" href="/icons-bfd76/apple-touch-icon-1024x1024.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Lær Kidsa Koding"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/icons-bfd76/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/icons-bfd76/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/icons-bfd76/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/icons-bfd76/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/icons-bfd76/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-1536x2008.png"><meta name="msapplication-TileColor" content="#fff"><meta name="msapplication-TileImage" content="/icons-bfd76/mstile-144x144.png"><meta name="msapplication-config" content="/icons-bfd76/browserconfig.xml">
+
+  
+
+  <style id='jss-server-side'>.MuiToolbar-root {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.MuiToolbar-gutters {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiToolbar-regular {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+  .MuiToolbar-dense {
+    min-height: 48px;
+  }
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: bolder;
+}
+body {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  background-color: #fafafa;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #fafafa;
+}
+  .MuiPaper-root {
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #fff;
+  }
+  .MuiPaper-rounded {
+    border-radius: 4px;
+  }
+  .MuiPaper-elevation0 {
+    box-shadow: none;
+  }
+  .MuiPaper-elevation1 {
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation2 {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation3 {
+    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation4 {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation5 {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation6 {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation7 {
+    box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation8 {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation9 {
+    box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation10 {
+    box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation11 {
+    box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation12 {
+    box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation13 {
+    box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation14 {
+    box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation15 {
+    box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation16 {
+    box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation17 {
+    box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation18 {
+    box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation19 {
+    box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation20 {
+    box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation21 {
+    box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation22 {
+    box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation23 {
+    box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation24 {
+    box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+  }
+  .MuiAppBar-root {
+    width: 100%;
+    display: flex;
+    z-index: 1100;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .MuiAppBar-positionFixed {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: fixed;
+  }
+  .MuiAppBar-positionAbsolute {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+  }
+  .MuiAppBar-positionSticky {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: sticky;
+  }
+  .MuiAppBar-positionStatic {
+    position: static;
+    transform: translateZ(0);
+  }
+  .MuiAppBar-positionRelative {
+    position: relative;
+  }
+  .MuiAppBar-colorDefault {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #f5f5f5;
+  }
+  .MuiAppBar-colorPrimary {
+    color: #fff;
+    background-color: #3f51b5;
+  }
+  .MuiAppBar-colorSecondary {
+    color: #fff;
+    background-color: #f50057;
+  }
+  .MuiDrawer-docked {
+    flex: 0 0 auto;
+  }
+  .MuiDrawer-paper {
+    top: 0;
+    flex: 1 0 auto;
+    height: 100%;
+    display: flex;
+    outline: 0;
+    z-index: 1200;
+    position: fixed;
+    overflow-y: auto;
+    flex-direction: column;
+    -webkit-overflow-scrolling: touch;
+  }
+  .MuiDrawer-paperAnchorLeft {
+    left: 0;
+    right: auto;
+  }
+  .MuiDrawer-paperAnchorRight {
+    left: auto;
+    right: 0;
+  }
+  .MuiDrawer-paperAnchorTop {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    height: auto;
+    max-height: 100%;
+  }
+  .MuiDrawer-paperAnchorBottom {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    max-height: 100%;
+  }
+  .MuiDrawer-paperAnchorDockedLeft {
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedTop {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedRight {
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedBottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiButtonBase-root {
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiButtonBase-root::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiButtonBase-root.Mui-disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+  .MuiIconButton-root {
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+  }
+  .MuiIconButton-root:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .MuiIconButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+  }
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-edgeStart {
+    margin-left: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+    margin-left: -3px;
+  }
+  .MuiIconButton-edgeEnd {
+    margin-right: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+    margin-right: -3px;
+  }
+  .MuiIconButton-colorInherit {
+    color: inherit;
+  }
+  .MuiIconButton-colorPrimary {
+    color: #3f51b5;
+  }
+  .MuiIconButton-colorPrimary:hover {
+    background-color: rgba(63, 81, 181, 0.08);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-colorSecondary {
+    color: #f50057;
+  }
+  .MuiIconButton-colorSecondary:hover {
+    background-color: rgba(245, 0, 87, 0.08);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-sizeSmall {
+    padding: 3px;
+    font-size: 1.125rem;
+  }
+  .MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiTypography-root {
+    margin: 0;
+  }
+  .MuiTypography-body2 {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+  }
+  .MuiTypography-caption {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+  }
+  .MuiTypography-button {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-h1 {
+    font-size: 6rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.01562em;
+  }
+  .MuiTypography-h2 {
+    font-size: 3.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.00833em;
+  }
+  .MuiTypography-h3 {
+    font-size: 3rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.04;
+    letter-spacing: 0em;
+  }
+  .MuiTypography-h4 {
+    font-size: 2.125rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.00735em;
+  }
+  .MuiTypography-h5 {
+    font-size: 1.5rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 0em;
+  }
+  .MuiTypography-h6 {
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+  }
+  .MuiTypography-subtitle1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.00938em;
+  }
+  .MuiTypography-subtitle2 {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.57;
+    letter-spacing: 0.00714em;
+  }
+  .MuiTypography-overline {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 2.66;
+    letter-spacing: 0.08333em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-srOnly {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .MuiTypography-alignLeft {
+    text-align: left;
+  }
+  .MuiTypography-alignCenter {
+    text-align: center;
+  }
+  .MuiTypography-alignRight {
+    text-align: right;
+  }
+  .MuiTypography-alignJustify {
+    text-align: justify;
+  }
+  .MuiTypography-noWrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiTypography-gutterBottom {
+    margin-bottom: 0.35em;
+  }
+  .MuiTypography-paragraph {
+    margin-bottom: 16px;
+  }
+  .MuiTypography-colorInherit {
+    color: inherit;
+  }
+  .MuiTypography-colorPrimary {
+    color: #3f51b5;
+  }
+  .MuiTypography-colorSecondary {
+    color: #f50057;
+  }
+  .MuiTypography-colorTextPrimary {
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .MuiTypography-colorTextSecondary {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiTypography-colorError {
+    color: #f44336;
+  }
+  .MuiTypography-displayInline {
+    display: inline;
+  }
+  .MuiTypography-displayBlock {
+    display: block;
+  }
+  .MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  .MuiSvgIcon-colorPrimary {
+    color: #3f51b5;
+  }
+  .MuiSvgIcon-colorSecondary {
+    color: #f50057;
+  }
+  .MuiSvgIcon-colorAction {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiSvgIcon-colorError {
+    color: #f44336;
+  }
+  .MuiSvgIcon-colorDisabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+  .MuiSvgIcon-fontSizeInherit {
+    font-size: inherit;
+  }
+  .MuiSvgIcon-fontSizeSmall {
+    font-size: 1.25rem;
+  }
+  .MuiSvgIcon-fontSizeLarge {
+    font-size: 2.1875rem;
+  }
+  .jss98 {
+    display: flex;
+    margin-left: 8px;
+    user-select: none;
+    margin-right: 8px;
+  }
+  .MuiBreadcrumbs-ol {
+    margin: 0;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .MuiBreadcrumbs-li {
+    list-style: none;
+  }
+  .MuiGrid-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .MuiGrid-item {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .MuiGrid-zeroMinWidth {
+    min-width: 0;
+  }
+  .MuiGrid-direction-xs-column {
+    flex-direction: column;
+  }
+  .MuiGrid-direction-xs-column-reverse {
+    flex-direction: column-reverse;
+  }
+  .MuiGrid-direction-xs-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .MuiGrid-wrap-xs-nowrap {
+    flex-wrap: nowrap;
+  }
+  .MuiGrid-wrap-xs-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+  .MuiGrid-align-items-xs-center {
+    align-items: center;
+  }
+  .MuiGrid-align-items-xs-flex-start {
+    align-items: flex-start;
+  }
+  .MuiGrid-align-items-xs-flex-end {
+    align-items: flex-end;
+  }
+  .MuiGrid-align-items-xs-baseline {
+    align-items: baseline;
+  }
+  .MuiGrid-align-content-xs-center {
+    align-content: center;
+  }
+  .MuiGrid-align-content-xs-flex-start {
+    align-content: flex-start;
+  }
+  .MuiGrid-align-content-xs-flex-end {
+    align-content: flex-end;
+  }
+  .MuiGrid-align-content-xs-space-between {
+    align-content: space-between;
+  }
+  .MuiGrid-align-content-xs-space-around {
+    align-content: space-around;
+  }
+  .MuiGrid-justify-xs-center {
+    justify-content: center;
+  }
+  .MuiGrid-justify-xs-flex-end {
+    justify-content: flex-end;
+  }
+  .MuiGrid-justify-xs-space-between {
+    justify-content: space-between;
+  }
+  .MuiGrid-justify-xs-space-around {
+    justify-content: space-around;
+  }
+  .MuiGrid-justify-xs-space-evenly {
+    justify-content: space-evenly;
+  }
+  .MuiGrid-spacing-xs-1 {
+    width: calc(100% + 8px);
+    margin: -4px;
+  }
+  .MuiGrid-spacing-xs-1 > .MuiGrid-item {
+    padding: 4px;
+  }
+  .MuiGrid-spacing-xs-2 {
+    width: calc(100% + 16px);
+    margin: -8px;
+  }
+  .MuiGrid-spacing-xs-2 > .MuiGrid-item {
+    padding: 8px;
+  }
+  .MuiGrid-spacing-xs-3 {
+    width: calc(100% + 24px);
+    margin: -12px;
+  }
+  .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+    padding: 12px;
+  }
+  .MuiGrid-spacing-xs-4 {
+    width: calc(100% + 32px);
+    margin: -16px;
+  }
+  .MuiGrid-spacing-xs-4 > .MuiGrid-item {
+    padding: 16px;
+  }
+  .MuiGrid-spacing-xs-5 {
+    width: calc(100% + 40px);
+    margin: -20px;
+  }
+  .MuiGrid-spacing-xs-5 > .MuiGrid-item {
+    padding: 20px;
+  }
+  .MuiGrid-spacing-xs-6 {
+    width: calc(100% + 48px);
+    margin: -24px;
+  }
+  .MuiGrid-spacing-xs-6 > .MuiGrid-item {
+    padding: 24px;
+  }
+  .MuiGrid-spacing-xs-7 {
+    width: calc(100% + 56px);
+    margin: -28px;
+  }
+  .MuiGrid-spacing-xs-7 > .MuiGrid-item {
+    padding: 28px;
+  }
+  .MuiGrid-spacing-xs-8 {
+    width: calc(100% + 64px);
+    margin: -32px;
+  }
+  .MuiGrid-spacing-xs-8 > .MuiGrid-item {
+    padding: 32px;
+  }
+  .MuiGrid-spacing-xs-9 {
+    width: calc(100% + 72px);
+    margin: -36px;
+  }
+  .MuiGrid-spacing-xs-9 > .MuiGrid-item {
+    padding: 36px;
+  }
+  .MuiGrid-spacing-xs-10 {
+    width: calc(100% + 80px);
+    margin: -40px;
+  }
+  .MuiGrid-spacing-xs-10 > .MuiGrid-item {
+    padding: 40px;
+  }
+  .MuiGrid-grid-xs-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xs-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xs-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xs-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xs-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xs-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xs-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xs-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xs-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xs-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xs-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xs-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xs-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xs-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+@media (min-width:600px) {
+  .MuiGrid-grid-sm-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-sm-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-sm-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-sm-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-sm-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-sm-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-sm-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-sm-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-sm-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-sm-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-sm-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-sm-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-sm-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-sm-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:960px) {
+  .MuiGrid-grid-md-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-md-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-md-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-md-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-md-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-md-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-md-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-md-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-md-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-md-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-md-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-md-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-md-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-md-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1280px) {
+  .MuiGrid-grid-lg-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-lg-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-lg-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-lg-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-lg-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-lg-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-lg-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-lg-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-lg-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-lg-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-lg-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-lg-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-lg-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-lg-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1920px) {
+  .MuiGrid-grid-xl-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xl-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xl-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xl-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xl-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xl-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xl-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xl-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xl-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xl-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xl-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xl-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xl-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xl-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+  .MuiLink-underlineNone {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover:hover {
+    text-decoration: underline;
+  }
+  .MuiLink-underlineAlways {
+    text-decoration: underline;
+  }
+  .MuiLink-button {
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiLink-button::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiLink-button.Mui-focusVisible {
+    outline: auto;
+  }
+  .MuiButton-root {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiButton-root:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .MuiButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-root:hover.Mui-disabled {
+    background-color: transparent;
+  }
+  .MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiButton-text {
+    padding: 6px 8px;
+  }
+  .MuiButton-textPrimary {
+    color: #3f51b5;
+  }
+  .MuiButton-textPrimary:hover {
+    background-color: rgba(63, 81, 181, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-textSecondary {
+    color: #f50057;
+  }
+  .MuiButton-textSecondary:hover {
+    background-color: rgba(245, 0, 87, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlined {
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    padding: 5px 15px;
+  }
+  .MuiButton-outlined.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+  }
+  .MuiButton-outlinedPrimary {
+    color: #3f51b5;
+    border: 1px solid rgba(63, 81, 181, 0.5);
+  }
+  .MuiButton-outlinedPrimary:hover {
+    border: 1px solid #3f51b5;
+    background-color: rgba(63, 81, 181, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlinedSecondary {
+    color: #f50057;
+    border: 1px solid rgba(245, 0, 87, 0.5);
+  }
+  .MuiButton-outlinedSecondary:hover {
+    border: 1px solid #f50057;
+    background-color: rgba(245, 0, 87, 0.08);
+  }
+  .MuiButton-outlinedSecondary.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-contained {
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+  .MuiButton-contained:hover {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+    background-color: #d5d5d5;
+  }
+  .MuiButton-contained.Mui-focusVisible {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained:active {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+  .MuiButton-contained:hover.Mui-disabled {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+  .MuiButton-containedPrimary {
+    color: #fff;
+    background-color: #3f51b5;
+  }
+  .MuiButton-containedPrimary:hover {
+    background-color: #303f9f;
+  }
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #3f51b5;
+  }
+}
+  .MuiButton-containedSecondary {
+    color: #fff;
+    background-color: #f50057;
+  }
+  .MuiButton-containedSecondary:hover {
+    background-color: #c51162;
+  }
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #f50057;
+  }
+}
+  .MuiButton-colorInherit {
+    color: inherit;
+    border-color: currentColor;
+  }
+  .MuiButton-textSizeSmall {
+    padding: 4px 5px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-textSizeLarge {
+    padding: 8px 11px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-outlinedSizeSmall {
+    padding: 3px 9px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-outlinedSizeLarge {
+    padding: 7px 21px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-containedSizeSmall {
+    padding: 4px 10px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-containedSizeLarge {
+    padding: 8px 22px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-fullWidth {
+    width: 100%;
+  }
+  .MuiButton-startIcon {
+    display: inherit;
+    margin-left: -4px;
+    margin-right: 8px;
+  }
+  .MuiButton-startIcon.MuiButton-iconSizeSmall {
+    margin-left: -2px;
+  }
+  .MuiButton-endIcon {
+    display: inherit;
+    margin-left: 8px;
+    margin-right: -4px;
+  }
+  .MuiButton-endIcon.MuiButton-iconSizeSmall {
+    margin-right: -2px;
+  }
+  .MuiButton-iconSizeSmall > *:first-child {
+    font-size: 18px;
+  }
+  .MuiButton-iconSizeMedium > *:first-child {
+    font-size: 20px;
+  }
+  .MuiButton-iconSizeLarge > *:first-child {
+    font-size: 22px;
+  }
+  .jss264 {
+    width: 30px;
+    height: 20px;
+  }
+@media print {
+  .jss3 {
+    display: none;
+  }
+}
+  .jss4 {
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+  .jss5 {
+    display: flex;
+  }
+  .jss6 {
+    width: 20px;
+    height: 20px;
+  }
+  .jss7 {
+    width: 16px;
+    height: auto;
+    align-self: center;
+    margin-right: 8px;
+  }
+  .jss8 {
+    margin-left: 8px;
+  }
+  .jss268 {
+    margin-top: 40px;
+  }
+@media print {
+  .jss268 {
+    display: none;
+  }
+}
+  .jss269 {
+    width: auto;
+    height: 50px;
+    margin: 20px 7px 10px;
+  }
+@media print {
+  .jss1 {
+    display: none;
+  }
+}
+  .jss2 {
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .MuiContainer-root {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiContainer-root {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-root {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media (min-width:600px) {
+  .MuiContainer-fixed {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-fixed {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-fixed {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-fixed {
+    max-width: 1920px;
+  }
+}
+@media (min-width:0px) {
+  .MuiContainer-maxWidthXs {
+    max-width: 444px;
+  }
+}
+@media (min-width:600px) {
+  .MuiContainer-maxWidthSm {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-maxWidthMd {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-maxWidthLg {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-maxWidthXl {
+    max-width: 1920px;
+  }
+}
+
+  .jss235 {
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+@media print {
+  .jss235 {
+    display: none;
+  }
+}
+  .jss265 {
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+@media print {
+  .jss265 {
+    display: none;
+  }
+}
+  .jss266 {
+    padding: 16px;
+    max-width: 700px;
+    margin-top: 40px;
+  }
+@media print {
+  .jss266 {
+    display: none;
+  }
+}
+  .jss267 {
+    margin: 8px;
+  }
+  .jss234 {
+    display: none;
+    font-size: 0.75em;
+    font-style: italic;
+  }
+@media print {
+  .jss234 {
+    display: block;
+  }
+}
+  .jss226 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }</style></head>
+<body>
+  <div id="app"><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionFixed jss3 mui-fixed"><div class="MuiToolbar-root MuiToolbar-regular jss4 MuiToolbar-gutters"><nav class="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"><ol class="MuiBreadcrumbs-ol"><li class="MuiBreadcrumbs-li"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-colorTextPrimary" aria-label="Hjem" href="/"><svg class="MuiSvgIcon-root jss6" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></a></li><li aria-hidden="true" class="jss98 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone jss5 MuiTypography-colorTextPrimary" href="/web"><img class="jss7" src="/_/oppgaver/src/web/logo-black.2245be.png" alt="Bilde av Web"/><p class="MuiTypography-root MuiTypography-body1">Web</p></a></li><li aria-hidden="true" class="jss98 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone jss5 MuiTypography-colorTextPrimary" aria-label="JS: Trykkomania" href="/web/trykkomania/trykkomania_nn"><div class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 7.77L18.39 18H5.61L12 7.77M12 4L2 20h20L12 4z"></path></svg><p class="MuiTypography-root jss8 MuiTypography-body1">JS: Trykkomania</p></div></a></li></ol></nav><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></header><div class="MuiToolbar-root MuiToolbar-regular jss1 MuiToolbar-gutters"></div><div class="jss2"><div class="MuiContainer-root jss226 MuiContainer-maxWidthMd"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 7.77L18.39 18H5.61L12 7.77M12 4L2 20h20L12 4z"></path></svg></div><div class="MuiGrid-root MuiGrid-item"><h1 class="MuiTypography-root MuiTypography-h3">JS: Trykkomania</h1></div></div><p><i>Skrevet av:<!-- --> <span>Arve Seljebu</span></i></p><p><i>Oversatt av:<!-- --> <!-- -->Stein Olav Romslo</i></p><div class="jss234"><div>Kurs:<!-- --> <!-- -->Web</div><div>Tema: Tekstbasert, Nettside, Spill</div><div>Fag: Matematikk, Programmering</div><div>Klassetrinn: 1.-4. klasse, 5.-7. klasse, 8.-10. klasse, Videregående skole</div></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorPrimary" href="/web/trykkomania/trykkomania"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss235" tabindex="0" type="button"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><img class="jss264" src="/CCV-assets/flag_nb.cc8503.svg" alt="Bilde av Bokmål"/></span>På Bokmål</span></button></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265" tabindex="0" role="button" aria-disabled="false" href="http://pdf-ace.com/pdfme?print_media=1" download=""><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg></span>Last ned PDF</span></a><div><section class="intro"> <h1 class="intro">Introduksjon</h1> <p>Denne oppgåva viser deg korleis du kan lage eit spel med JavaScript og dele det med venene dine. Spelet heiter <em>Trykkomania</em> fordi det handlar om å trykke på ein ball flest mogleg gonger før tida renn ut.</p> <p>Før du startar med denne oppgåva bør du ha ein del erfaring med variablar, funksjonar og eventListeners i JavaScript. Viss du ikkje har det anbefalar me at du gjer nokre av dei enklare oppgåvene fyrst.</p> <figure><img src="trykkomania.gif" alt="Animasjon av spelet Trykkomania"></figure> </section> <section class="activity"> <h1 class="activity">Steg 1: Åpne JS Bin</h1> <p>Me skal bruke JS Bin (http://jsbin.com) for å lage spelet. Viss du ikkje har brukt JS Bin før bør du ta ein kikk på oppgåva <a href="../hei_js/hei_js_nn.html">Hei, JavaScript</a>. Viss du heller vil lage spelet i ei eiga fil på PC-en din, så kan du åpne favoritt-teksteditoren din og hoppe til steg 2.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Åpne adressa <a href="http://jsbin.com">jsbin.com</a> i eit nytt vindauge.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Vel å vise <strong>JavaScript</strong> og <strong>Output</strong>. Skjul dei andre fanene ved å trykkje på dei.</label></p> <figure><img src="faner.png" alt="Bilete av JS Bin med fanene Javascript og Output"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_2"><label for="cbx_2"> I <strong>JavaScript</strong> skriv me koden.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_3"><label for="cbx_3"> I <strong>Output</strong> vidast nettsida.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Når du startar er begge fanene tomme.</label></p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Steg 2: Lage ein ball</h1> <p>Me skal bruke JavaScript til å lage innhaldet på nettsida. Dette tyder at me skal bruke JavaScript til å lage HTML. Du treng ikkje kunne noko spesielt om HTML, men viss du vil lære meir om det fyrst kan du sjå på oppgåva <a href="../introduksjon_til_web/introduksjon_til_web_nn.html">Introduksjon til web</a>.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Me startar med å lage ein funksjon som heiter <code>Ball</code>:</label></p> <pre><code class="js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Ball</span>(<span class="hljs-params"></span>) </span>{
+
+}
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Inne i funksjonen lagar me eit nytt <code>div</code>-element:</label></p> <pre><code class="js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Ball</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+}
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_7"><label for="cbx_7"> <code>var el</code> tyder at elementet får namnet <code>el</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_8"><label for="cbx_8"> No kan me gi elementet ein stil:</label></p> <pre><code class="js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Ball</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+  el.style.backgroundColor = <span class="hljs-string">'black'</span>;
+  el.style.width = <span class="hljs-string">'60px'</span>;
+  el.style.height = <span class="hljs-string">'60px'</span>;
+}
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_9"><label for="cbx_9"> <code>el.style.backgroundColor = 'black'</code> gjer ballen svart.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_10"><label for="cbx_10"> <code>el.style.width = '60px'</code> gjer ballen 60 <a href="https://no.wikipedia.org/wiki/Piksel">pikslar</a> brei.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_11"><label for="cbx_11"> <code>el.style.height = '60px'</code> gjer ballen 60 pikslar høg.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_12"><label for="cbx_12"> La oss leggje til ballen på sida:</label></p> <pre><code class="js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Ball</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+  el.style.backgroundColor = <span class="hljs-string">'black'</span>;
+  el.style.width = <span class="hljs-string">'60px'</span>;
+  el.style.height = <span class="hljs-string">'60px'</span>;
+  <span class="hljs-built_in">document</span>.body.appendChild(el);
+}
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_13"><label for="cbx_13"> For at ballen skal visast må me køyre funksjonen ved hjelp av denne koden:</label></p> <pre><code class="js">Ball();
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_14"><label for="cbx_14"> Ser du ein &quot;ball&quot; i <strong>Output</strong>?</label></p> <figure><img src="firkantet_ball.png" alt="Bilete av ein firkanta ball i Output"></figure> </li> </ul> <p>Så ballen vår er ikkje akkurat rund. Me kan bruke <code>el.style.borderRadius</code> for å runde av hjørnene. Sidan ballen er <code>60px</code> brei og høg, så avrundar me kantane med <code>30px</code>, altså halvparten av sidekanten.</p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_15"><label for="cbx_15"> Legg koden under dei andre <code>el.style</code>-setningane:</label></p> <pre><code class="js">el.style.borderRadius = <span class="hljs-string">'30px'</span>;
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_16"><label for="cbx_16"> Fekk du ein rund ball?</label></p> </li> </ul> </section> <section class="challenge"> <h2 class="challenge">Utforsk</h2> <p>Viss du ynskjer ei anna form, prøv andre verdiar enn <code>30px</code> for avrundinga. Korleis ser det ut med <code>5px</code>?</p> </section> <section class="protip"> <h2 class="protip">Tips</h2> <p>Viss du sit fast kan du sjå på <a href="http://jsbin.com/pozova/1/edit?js,output">koden så langt</a>.</p> </section> </section> <section class="activity"> <h1 class="activity">Steg 3: Flytte ballen</h1> <p>Akkurat no visast ballen heilt øvst til venstre i <strong>Output</strong>. La oss flytte den rundt omkring.</p> <p>Me brukar <code>el.style.position = 'fixed'</code> for å fortelje at me ynskjer å plassere ballen i forhold til kantane i vindauget. Halvparten (<code>50 %</code>) frå toppen blir då <code>el.style.top = '50%'</code>.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_17"><label for="cbx_17"> Legg til ein posisjon for ballen:</label></p> <pre><code class="js">el.style.position = <span class="hljs-string">'fixed'</span>;
+el.style.top = <span class="hljs-string">'80%'</span>;
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_18"><label for="cbx_18"> Flytta ballen seg ned?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_19"><label for="cbx_19"> Flytt ballen ut frå venstre kant:</label></p> <pre><code class="js">el.style.left = <span class="hljs-string">'30%'</span>;
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_20"><label for="cbx_20"> Prøv andre verdiar mellom <code>0%</code> og <code>100%</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_21"><label for="cbx_21"> Klarar du å finne ut når ballen forsvinn ut av vindauget?</label></p> </li> </ul> </section> <section class="protip"> <h2 class="protip">Tips</h2> <p>Viss du står fast kan du sjå på <a href="http://jsbin.com/pozova/2/edit?js,output">koden så langt</a>.</p> </section> </section> <section class="activity"> <h1 class="activity">Steg 4: Flytte ballen med ein funksjon</h1> <p>Sidan me ynskjer at ballen skal flytte seg undervegs i spelet, så skal me lage ein funksjon som flyttar ballen.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_22"><label for="cbx_22"> Inne i <code>Ball</code> lagar du ein funksjon som heiter <code>el.posisjon</code>. Denne funksjonen skal ta inn ein <code>x</code>- og ein <code>y</code>-verdi, plassere elementet og returnere elementet.</label></p> <pre><code class="js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Ball</span>(<span class="hljs-params"></span>) </span>{
+  ...
+  el.posisjon = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">x, y</span>) </span>{
+
+  };
+}
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_23"><label for="cbx_23"> Funksjonen skal bestemme <code>el.style.top</code> og <code>el.style.left</code>.</label></p> <pre><code class="js"> el.posisjon = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">x, y</span>) </span>{
+   el.style.left = x;
+   el.style.top = y;
+ };
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_24"><label for="cbx_24"> Returner <code>el</code> slik at me kan bruke funksjonane til ballen. Når elementet <code>el</code> returnerast vil <code>el</code> oppdaterast med ny plassering.</label></p> <pre><code class="js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Ball</span>(<span class="hljs-params"></span>) </span>{
+  ...
+  el.posisjon = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">x, y</span>) </span>{
+    el.style.left = x;
+    el.style.top = y;
+  };
+
+  <span class="hljs-keyword">return</span> el;
+}
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_25"><label for="cbx_25"> No kan du flytte ballen slik som dette:</label></p> <pre><code class="js"><span class="hljs-keyword">var</span> ball = Ball();  <span class="hljs-comment">// lagar ballen</span>
+ball.posisjon(<span class="hljs-string">'10%'</span>, <span class="hljs-string">'20%'</span>);  <span class="hljs-comment">// flyttar til x = 10% og y = 20%</span>
+</code></pre> </li> </ul> </section> <section class="protip"> <h2 class="protip">Tips</h2> <p>Viss du står fast kan du sjå på <a href="http://jsbin.com/hipepuy/edit?js,output">koden så langt</a>.</p> </section> </section> <section class="activity"> <h1 class="activity">Steg 5: Vel ei tilfeldig plassering</h1> <p>I JavaScript kan me bruke <code>Math.random()</code> for å få ein tilfeldig verdi mellom 0 og 1. La oss bruke denne slik at ballen blir plassert på ein tilfeldig stad.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_26"><label for="cbx_26"> Trykk på fana <strong>Console</strong>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_27"><label for="cbx_27"> Skriv inn <code>Math.random()</code> og trykk enter.</label></p> <figure><img src="tilfeldig.png" alt="Bilete av output frå &quot;Math.random()&quot;"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_28"><label for="cbx_28"> Fekk du eit tal mellom 0 og 1</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_29"><label for="cbx_29"> Me kan gjere om talet til prosent ved å gange med 100. Prøv det sjølv.</label></p> <figure><img src="prosent1.png" alt="Bilete av output multiplisert med 100"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_30"><label for="cbx_30"> Me kan leggje til prosentteiknet med <code>+ '%'</code>:</label></p> <figure><img src="prosent2.png" alt="Bilete av output i prosent"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_31"><label for="cbx_31"> Legg merke til at me får nye tal kvar gong me køyrer kommandoen. Det er dette som kallast <em>tilfeldig</em>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_32"><label for="cbx_32"> Lukk <strong>Console</strong> ved å trykkje på den.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_33"><label for="cbx_33"> La oss bruke <code>Math.random</code> til å plassere ballen:</label></p> <pre><code class="js"><span class="hljs-keyword">var</span> x = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">100</span> + <span class="hljs-string">'%'</span>;
+<span class="hljs-keyword">var</span> y = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">100</span> + <span class="hljs-string">'%'</span>;
+ball.posisjon(x, y);
+</code></pre> </li> </ul> <p>Her har me laga to variablar, <code>x</code> og <code>y</code>. Begge heldt på kvart sitt tilfeldige tal. Dette talet blir sendt inn i funksjonen <code>posisjon(x,y)</code> me laga i stad.</p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_34"><label for="cbx_34"> Flyttar ballen på seg viss du trykkar på knappen <button>Run with JS</button>?</label></p> <figure><img src="tilfeldig_plassering.gif" alt="Bilete av ballen som får ei ny tilfeldigplassering"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_35"><label for="cbx_35"> Viss du har haka av <strong>Auto-run JS</strong> vil koden køyre kvar gong du endrar koden.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_36"><label for="cbx_36"> Trykkar du mange nok gonger kan du leggje merke til at ballen nokre gonger kjem utanfor botnen og høgre side.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_37"><label for="cbx_37"> For å unngå dette kan me avgrense flyttinga til 80 %:</label></p> <pre><code class="js"><span class="hljs-keyword">var</span> x = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">80</span> + <span class="hljs-string">'%'</span>;
+<span class="hljs-keyword">var</span> y = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">80</span> + <span class="hljs-string">'%'</span>;
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_38"><label for="cbx_38"> Sidan <code>Math.random()</code> maksimalt er 1 og me gangar med 80, så vil aldri ballen flytte seng lengre ut frå toppen eller venstre side enn 80 %.</label></p> </li> </ul> </section> <section class="protip"> <h2 class="protip">Tips</h2> <p>Viss du står fast kan du sjå på <a href="http://jsbin.com/digiqa/1/edit?js,output">koden så langt</a>.</p> </section> </section> <section class="activity"> <h1 class="activity">Steg 6: Flytte ballen kvart andre sekund</h1> <p>Me vil at ballen skal flytte seg heile tida. No skal me bruke <code>setInterval</code> for å flytte ballen kvart andre sekund.</p> <pre><code class="js">setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">//koden som skal køyrast i intervall</span>
+}, antall_millisekunder); <span class="hljs-comment">// Kor ofte den skal køyre</span>
+</code></pre> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_39"><label for="cbx_39"> Bruk <code>setInterval</code> til å flytte ballen kvart andre sekund:</label></p> <pre><code class="js">setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> x = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">80</span> + <span class="hljs-string">'%'</span>;
+  <span class="hljs-keyword">var</span> y = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">80</span> + <span class="hljs-string">'%'</span>;
+  ball.posisjon(x, y);
+}, <span class="hljs-number">2000</span>);
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_40"><label for="cbx_40"> <code>setInterval(function ..., 2000)</code> tyder &quot;køyr <code>function</code> kvart 2000. millisekund&quot;.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_41"><label for="cbx_41"> 2000 millisekund er 2 sekund, altså blir ballen teikna ein ny stad kvart andre sekund.</label></p> </li> </ul> </section> <section class="protip"> <h2 class="protip">Tips</h2> <p>Viss du står fast kan du sjå på <a href="http://jsbin.com/lecamej/1/edit?js,output">koden så langt</a>.</p> </section> </section> <section class="activity"> <h1 class="activity">Steg 7: Poeng</h1> <p>No har du ein ball som sprett rundt. La oss leggje til poeng. Me har laga ein poeng-komponent som du kan bruke, så kjem du raskare i gang. <code>Poeng</code> er bygd opp på same måte som <code>Ball</code>, så du må gjerne lese gjennom og sjå om du forstår den.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_42"><label for="cbx_42"> Legg til koden for komponenten <code>Poeng</code>:</label></p> <pre><code class="js"><span class="hljs-comment">/**
+ * Poeng - viser poengsum nede i venstre hjørne.
+ *
+ * Bruk:
+ *   var poeng = Poeng();  // viser poengsummen
+ *   poeng.auk();  // aukar poengsummen med 100
+ *   poeng.nullstill();  // set poengsummen til 0
+ *
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Poeng</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+
+  <span class="hljs-comment">// CSS til "el"</span>
+  el.style.position = <span class="hljs-string">'fixed'</span>;
+  el.style.bottom = <span class="hljs-string">'5px'</span>;
+  el.style.left = <span class="hljs-string">'8px'</span>;
+  el.style.padding = <span class="hljs-string">'5px'</span>;
+  el.style.backgroundColor = <span class="hljs-string">'black'</span>;
+  el.style.color = <span class="hljs-string">'white'</span>;
+
+  <span class="hljs-comment">// Viser poengsum på skjermen, og lagar variabelen "_poeng"</span>
+  <span class="hljs-keyword">var</span> _poeng = <span class="hljs-number">0</span>;
+  el.innerHTML = _poeng + <span class="hljs-string">' poeng'</span>;
+  <span class="hljs-built_in">document</span>.body.appendChild(el);
+
+  <span class="hljs-comment">// To funksjonar som aukar eller nullstiller poenga</span>
+  el.auk = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    _poeng += <span class="hljs-number">100</span>;
+    el.innerHTML = _poeng + <span class="hljs-string">' poeng'</span>;
+  };
+  el.nullstill = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    _poeng = <span class="hljs-number">0</span>;
+    el.innerHTML = _poeng + <span class="hljs-string">' poeng'</span>;
+  };
+
+  <span class="hljs-keyword">return</span> el;
+}
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_43"><label for="cbx_43"> For at poengsummen skal visast må me køyre <code>Poeng()</code> ein gong, slik me gjorde med <code>Ball()</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_44"><label for="cbx_44"> Legg denne linja over <code>Ball()</code>:</label></p> <pre><code class="js"><span class="hljs-keyword">var</span> poeng = Poeng();
+<span class="hljs-keyword">var</span> ball = Ball();
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_45"><label for="cbx_45"> Visast &quot;<strong>Poeng 0</strong>&quot;?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_46"><label for="cbx_46"> For å halde orden på programmet er det lurt å ha det som skjer i toppen. Funksjonar kan brukast sjølv om dei ikkje står fyrst, så flytt <code>function Ball</code> og <code>function Poeng</code> ned til botnen.</label></p> <pre><code class="js"><span class="hljs-keyword">var</span> poeng = Poeng();
+<span class="hljs-keyword">var</span> ball = Ball();
+setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  ...
+}, <span class="hljs-number">2000</span>);
+
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Ball</span>(<span class="hljs-params"></span>) </span>{
+  ...
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Poeng</span>(<span class="hljs-params"></span>) </span>{
+  ...
+}
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_47"><label for="cbx_47"> No står det som skjer i toppen:</label></p> <ul> <li> <p>Vis poenga: <code>var poeng = Poeng()</code>.</p> </li> <li> <p>Vis ballen: <code>var ball = Ball()</code>.</p> </li> <li> <p>Flytt ballen kvart andre sekund: <code>setInterval(..., 2000)</code>.`</p> </li> </ul> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_48"><label for="cbx_48"> No vel me å køyre funksjonen <code>poeng.auk</code> kvar gong ballen blir trykka.</label></p> <pre><code class="js">ball.onclick = poeng.auk;
+</code></pre> <p><strong>OBS!</strong> Det skal <strong>ikkje</strong> vere <code>()</code> på slutten av <code>poeng.auk</code>. Det er fordi funksjonen ikkje blir køyrt her, men kvar gong nokon klikkar på ballen.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_49"><label for="cbx_49"> <code>ball.onclick = poeng.auk;</code> tyder at funksjonen <code>poeng.auk()</code> køyrast når nokon klikkar på ballen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_50"><label for="cbx_50"> Sjekk at du får poeng når du treffer ballen med eit klikk.</label></p> <figure><img src="poeng.gif" alt="Animasjon av at du får poeng når du treff ballen med eit klikk"></figure> </li> </ul> </section> <section class="protip"> <h2 class="protip">Tips</h2> <p>Viss du står fast kan du sjå på <a href="http://jsbin.com/mewole/1/edit?js,output">koden så langt</a>.</p> </section> <section class="flag"> <h2 class="flag"><img src="/CCV-assets/flag.d7ff62.svg" alt="flag">Teste spelet</h2> <p>No har du kome så langt at det kan vere kult å teste spelet. Sidan spelet handlar om å trykkje flest mogleg gonger på ballen, så kan du godt prøve det på mobiltelefonen din.</p> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_51"><label for="cbx_51"> Nokre mobiltelefonar zoomar når ein dobbeltklikkar på skjermen, difor skal me slå av zooming.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_52"><label for="cbx_52"> Åpne fana <strong>HTML</strong> ved å trykkje på den.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_53"><label for="cbx_53"> Finn linja med <code>&lt;meta name=&quot;viewport&quot; ...</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_54"><label for="cbx_54"> Endre linja til:</label></p> <pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, user-scalable=no"</span>&gt;</span>
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_55"><label for="cbx_55"> Lukk fana <strong>HTML</strong> ved å trykkje på den.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_56"><label for="cbx_56"> Øvst i nettlesaren din står adressa til sida.</label></p> <figure><img src="adresse.png" alt="Bilete av adressa til sida øvst i nettlesaren"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_57"><label for="cbx_57"> Adressa du treng å taste inn på mobilen er det som står <em>før</em> '/edit?js,output'.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_58"><label for="cbx_58"> I dømet over er adressa <code>jsbin.com/dutebe</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_59"><label for="cbx_59"> Tast adressa <em>di</em> inn på mobiltelefonen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_60"><label for="cbx_60"> Spel!</label></p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Steg 8: Avgrense tida</h1> <p>Akkurat no har du ikkje noko tidsavgrensing i spelet. La oss leggje til ei nedteljing av tid, slik at det går an å konkurrere om kven som klarar flest klikk på 10 sekund.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_61"><label for="cbx_61"> Legg til koden for nedteljing i botnen av programmet.</label></p> <pre><code class="js"><span class="hljs-comment">/**
+ * Nedteljing - Ei linje som viser at tida renn ut.
+ *
+ * Bruk:
+ *   var nedteljing = Nedteljing(slutt);  // funksjonen `slutt` blir køyrt når tida er ute
+ *   nedteljing.telNed(10);  // tel ned 10 sekund
+ *
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Nedteljing</span> (<span class="hljs-params">ferdig</span>) </span>{
+  <span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+
+  <span class="hljs-comment">// CSSen til elementet "el"</span>
+  el.style.position = <span class="hljs-string">'fixed'</span>;
+  el.style.left = <span class="hljs-string">'0'</span>;
+  el.style.bottom = <span class="hljs-string">'0'</span>;
+  el.style.height = <span class="hljs-string">'100%'</span>;
+  el.style.width = <span class="hljs-string">'3px'</span>;
+  el.style.backgroundColor = <span class="hljs-string">'red'</span>;
+  <span class="hljs-built_in">document</span>.body.appendChild(el);
+
+  <span class="hljs-comment">// Reknar ut prosenten av kor lang tid det er att</span>
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">prosent</span> (<span class="hljs-params">slutt, tid</span>) </span>{
+    <span class="hljs-keyword">return</span> (slutt - <span class="hljs-built_in">Date</span>.now()) / tid / <span class="hljs-number">10</span>;
+  }
+
+  <span class="hljs-comment">// Funksjon som tel ned og stoppar når den har kome til null</span>
+  el.telNed = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">tid</span>) </span>{
+    <span class="hljs-keyword">var</span> slutt = <span class="hljs-built_in">Date</span>.now() + tid * <span class="hljs-number">1000</span>;
+    <span class="hljs-keyword">var</span> intervall = setInterval(teikn, <span class="hljs-number">20</span>);
+
+    <span class="hljs-comment">// Teiknar streken på venstre side til tida er ute</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">teikn</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">var</span> p = prosent(slutt, tid);
+      <span class="hljs-keyword">if</span> (p &lt; <span class="hljs-number">0</span>) {
+        el.style.height = <span class="hljs-string">'0%'</span>;
+        clearInterval(intervall);
+        ferdig();
+      }
+      el.style.height = p + <span class="hljs-string">'%'</span>;
+    }
+  }
+
+  <span class="hljs-keyword">return</span> el;
+}
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_62"><label for="cbx_62"> I toppen startar me nedteljinga.</label></p> <pre><code class="js"><span class="hljs-keyword">var</span> nedteljing = Nedteljing();
+nedteljing.telNed(<span class="hljs-number">10</span>);
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_63"><label for="cbx_63"> Dette lagar ei nedteljing på 10 sekund.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_64"><label for="cbx_64"> Viss du trykkar på <button>Run with JS</button> ser du nedteljinga, men ingenting skjer når tida er ute.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_65"><label for="cbx_65"> Lag funksjonen <code>stopp</code> som fortel kva som skal skje når tida er ute.</label></p> <pre><code class="js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">stopp</span>(<span class="hljs-params"></span>) </span>{
+  ball.skjul();
+}
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_66"><label for="cbx_66"> Me har ikkje laga funksjonen <code>ball.skjul</code> endå. Me treng <code>ball.vis</code> òg.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_67"><label for="cbx_67"> Lag <code>ball.skjul</code> og <code>ball.vis</code> inne i <code>function Ball</code>.</label></p> <pre><code class="js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Ball</span>(<span class="hljs-params"></span>) </span>{
+  ...
+  el.skjul = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    el.style.display = <span class="hljs-string">'none'</span>;
+  };
+  el.vis = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    el.style.display = <span class="hljs-string">''</span>;
+  };
+
+  <span class="hljs-keyword">return</span> el;
+}
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_68"><label for="cbx_68"> No skal me fortelje nedteljinga at den skal køyre <code>stopp()</code> når tida er ute.</label></p> <pre><code class="js"><span class="hljs-keyword">var</span> nedteljing = Nedteljing(stopp);
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_69"><label for="cbx_69"> Forsvinn ballen når tida er ute.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_70"><label for="cbx_70"> Kor mange poeng klarar du på mobiltelefonen innan tida?</label></p> </li> </ul> </section> <section class="protip"> <h2 class="protip">Tips</h2> <p>Viss du står fast kan du sjå på <a href="http://jsbin.com/tukiwu/1/edit?js,output">koden så langt</a>.</p> </section> </section> <section class="activity"> <h1 class="activity">Steg 9: Starte spelet på nytt</h1> <p>No kan me starte spelet om att ved å oppdatere nettlesaren. Er det ikkje stiligare med ein knapp som startar spelet?</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_71"><label for="cbx_71"> Lag ein funksjon <code>start</code>.</label></p> <pre><code class="js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">start</span>(<span class="hljs-params"></span>) </span>{
+
+}
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_72"><label for="cbx_72"> Funksjonen skal bestemme kva som skjer når spelet skal starte. Me må nullstille poengsummen, vise nedteljinga og vise ballen.</label></p> <pre><code class="js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">start</span>(<span class="hljs-params"></span>) </span>{
+  poeng.nullstill();
+  nedteljing.telNed(<span class="hljs-number">10</span>);
+  ball.vis();
+}
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_73"><label for="cbx_73"> <code>start</code> skal køyrast kvar gong ein knapp blir trykka, så me treng ein knapp.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_74"><label for="cbx_74"> Legg til koden for knappen i botnen av programmet.</label></p> <pre><code class="js"><span class="hljs-comment">/**
+ * Ein knapp som ligg midt på sida.
+ *
+ * Bruk:
+ *   var knapp = Knapp('trykk på meg');  // lagar ein knapp som ligg midt på sida
+ *   knapp.vis();  // viser knappen
+ *   knapp.skjul();  // skjuler knappen
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Knapp</span>(<span class="hljs-params">tekst</span>) </span>{
+  <span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'button'</span>);
+  el.style.display = <span class="hljs-string">'none'</span>;
+  el.innerText = tekst;
+  el.style.position = <span class="hljs-string">'fixed'</span>;
+  el.style.top = <span class="hljs-string">'50%'</span>;
+  el.style.left = <span class="hljs-string">'50%'</span>;
+  el.style.padding = <span class="hljs-string">'20px'</span>;
+  el.style.border = <span class="hljs-string">'solid 1px'</span>;
+  <span class="hljs-built_in">document</span>.body.appendChild(el);
+
+  el.skjul = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    el.style.display = <span class="hljs-string">'none'</span>;
+  };
+  el.vis = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    el.style.display = <span class="hljs-string">''</span>;
+    <span class="hljs-comment">// plasser akkurat på midten</span>
+    <span class="hljs-comment">// midten av skjermen er 50 % minus halvparten av storleiken til knappen</span>
+    <span class="hljs-keyword">var</span> w = el.offsetWidth / <span class="hljs-number">2</span>;
+    <span class="hljs-keyword">var</span> h = el.offsetHeight / <span class="hljs-number">2</span>;
+    el.style.marginLeft = <span class="hljs-string">'-'</span> + w + <span class="hljs-string">'px'</span>;
+    el.style.marginTop = <span class="hljs-string">'-'</span> + h + <span class="hljs-string">'px'</span>;
+  };
+
+  <span class="hljs-keyword">return</span> el;
+}
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_75"><label for="cbx_75"> I toppen legg me til knappen.</label></p> <pre><code class="js"><span class="hljs-keyword">var</span> knapp = Knapp(<span class="hljs-string">'Prøv ein gong til'</span>);
+knapp.onclick = start;
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_76"><label for="cbx_76"> <code>knapp.onclick</code> bestemmer kva som skal skje når me klikkar på knappen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_77"><label for="cbx_77"> Knappen visast ikkje, så me må bestemme at den skal visast når spelet er over.</label></p> <pre><code class="js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">stopp</span>(<span class="hljs-params"></span>) </span>{
+  ...
+  knapp.vis();
+}
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_78"><label for="cbx_78"> Visast knappen når spelet er ferdig?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_79"><label for="cbx_79"> Du legg kanskje merke til ein bug? Me må jo skjule knappen når spelet startar!</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_80"><label for="cbx_80"> Skjul knappen når spelet startar.</label></p> <pre><code class="js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">start</span>(<span class="hljs-params"></span>) </span>{
+  ...
+  knapp.skjul();
+}
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_81"><label for="cbx_81"> Spelet er ferdig! Del adressa med venene dine, og sjå kven som klarar flest poeng.</label></p> </li> </ul> </section> <section class="protip"> <h2 class="protip">Tips</h2> <p>Her er <a href="losning_nn.js">fasiten</a>.</p> </section> <section class="challenge"> <h2 class="challenge">Utfordringar</h2> <p>Her er nokre utfordringar:</p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_82"><label for="cbx_82"> Endre storleiken på ballen slik at spelet blir vanskelegare.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_83"><label for="cbx_83"> Endre kor lenge spelet varar.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_84"><label for="cbx_84"> Endre farga på ballen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_85"><label for="cbx_85"> Auk poengsummen med 1000 i staden for 100.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_86"><label for="cbx_86"> Klarar du å få ballen til å endre til ulik storleik kvar gong den kjem til syne.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_87"><label for="cbx_87"> Klarar du å få fram fleire enn ein ball?</label></p> </li> </ul> </section> </section> </div><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1"><div class="MuiGrid-root MuiGrid-item">Lisens: </div><div class="MuiGrid-root MuiGrid-item"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="http://creativecommons.org/licenses/by-sa/4.0/deed" target="_blank" rel="noopener">CC BY-SA 4.0</a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><div class="MuiPaper-root MuiPaper-elevation1 jss266 MuiPaper-rounded"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><h2 class="MuiTypography-root MuiTypography-h4">Forbedre denne siden</h2></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Funnet en feil? Kunne noe vært bedre?</p></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!</p></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss267" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Web: Trykkomania&#x27;&amp;body=Oppgave: https://oppgaver.kidsakoder.no/web/trykkomania/trykkomania_nn%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/web/trykkomania/trykkomania_nn.md%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Rapporter et problem</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss267" tabindex="0" role="button" aria-disabled="false" href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></span>Gå til forumet</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss267" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/tree/master/src/web/trykkomania/trykkomania_nn.md" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Vis koden og fiks selv</span></a></div></div></div></div></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionStatic jss268"><div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.sparebank1.no" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/smn.098a83.jpg" alt="SpareBank1"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://ibok.no/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/ibok.06cd44.jpg" alt="Ibok"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.teknograd.no/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/teknograd.03c75e.png" alt="Teknograd"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.tekna.no/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/tekna.41a4f5.jpg" alt="Tekna"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.ntnu.edu/idi/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/ntnu_idi.5179a4.png" alt="NTNU institutt for datateknologi og informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.ntnu.edu/web/excited" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/excITEd.915706.png" alt="excited"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.mn.uio.no/ifi/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/uio_ifi.37ef13.png" alt="UIO institutt for informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.samsung.com/no/innovation/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/samsung.bec12f.png" alt="Samsung"/></a></div></div></header></div>
+  
+  <script src="/main.295399.js" async></script>  
+</body>
+</html>

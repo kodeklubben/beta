@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title data-react-helmet="true">Introduksjon til ComputerCraft | Kodeklubben</title>
+  <meta data-react-helmet="true" charset="utf-8"/><meta data-react-helmet="true" name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/><meta data-react-helmet="true" name="description" content="ComputerCraft er en mod til Minecraft, som gir deg muligheten til å bygge og programmere datamaskiner og roboter inne i Minecraft-verdenen."/>
+
+  <link rel="shortcut icon" href="/icons-bfd76/favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="/icons-bfd76/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/icons-bfd76/favicon-32x32.png"><link rel="manifest" href="/icons-bfd76/manifest.json"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="Lær Kidsa Koding"><link rel="apple-touch-icon" sizes="57x57" href="/icons-bfd76/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/icons-bfd76/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/icons-bfd76/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/icons-bfd76/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/icons-bfd76/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/icons-bfd76/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/icons-bfd76/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/icons-bfd76/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="167x167" href="/icons-bfd76/apple-touch-icon-167x167.png"><link rel="apple-touch-icon" sizes="180x180" href="/icons-bfd76/apple-touch-icon-180x180.png"><link rel="apple-touch-icon" sizes="1024x1024" href="/icons-bfd76/apple-touch-icon-1024x1024.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Lær Kidsa Koding"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/icons-bfd76/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/icons-bfd76/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/icons-bfd76/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/icons-bfd76/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/icons-bfd76/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-1536x2008.png"><meta name="msapplication-TileColor" content="#fff"><meta name="msapplication-TileImage" content="/icons-bfd76/mstile-144x144.png"><meta name="msapplication-config" content="/icons-bfd76/browserconfig.xml">
+
+  
+
+  <style id='jss-server-side'>.MuiToolbar-root {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.MuiToolbar-gutters {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiToolbar-regular {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+  .MuiToolbar-dense {
+    min-height: 48px;
+  }
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: bolder;
+}
+body {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  background-color: #fafafa;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #fafafa;
+}
+  .MuiPaper-root {
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #fff;
+  }
+  .MuiPaper-rounded {
+    border-radius: 4px;
+  }
+  .MuiPaper-elevation0 {
+    box-shadow: none;
+  }
+  .MuiPaper-elevation1 {
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation2 {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation3 {
+    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation4 {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation5 {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation6 {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation7 {
+    box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation8 {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation9 {
+    box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation10 {
+    box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation11 {
+    box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation12 {
+    box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation13 {
+    box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation14 {
+    box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation15 {
+    box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation16 {
+    box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation17 {
+    box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation18 {
+    box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation19 {
+    box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation20 {
+    box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation21 {
+    box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation22 {
+    box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation23 {
+    box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation24 {
+    box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+  }
+  .MuiAppBar-root {
+    width: 100%;
+    display: flex;
+    z-index: 1100;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .MuiAppBar-positionFixed {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: fixed;
+  }
+  .MuiAppBar-positionAbsolute {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+  }
+  .MuiAppBar-positionSticky {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: sticky;
+  }
+  .MuiAppBar-positionStatic {
+    position: static;
+    transform: translateZ(0);
+  }
+  .MuiAppBar-positionRelative {
+    position: relative;
+  }
+  .MuiAppBar-colorDefault {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #f5f5f5;
+  }
+  .MuiAppBar-colorPrimary {
+    color: #fff;
+    background-color: #3f51b5;
+  }
+  .MuiAppBar-colorSecondary {
+    color: #fff;
+    background-color: #f50057;
+  }
+  .MuiDrawer-docked {
+    flex: 0 0 auto;
+  }
+  .MuiDrawer-paper {
+    top: 0;
+    flex: 1 0 auto;
+    height: 100%;
+    display: flex;
+    outline: 0;
+    z-index: 1200;
+    position: fixed;
+    overflow-y: auto;
+    flex-direction: column;
+    -webkit-overflow-scrolling: touch;
+  }
+  .MuiDrawer-paperAnchorLeft {
+    left: 0;
+    right: auto;
+  }
+  .MuiDrawer-paperAnchorRight {
+    left: auto;
+    right: 0;
+  }
+  .MuiDrawer-paperAnchorTop {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    height: auto;
+    max-height: 100%;
+  }
+  .MuiDrawer-paperAnchorBottom {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    max-height: 100%;
+  }
+  .MuiDrawer-paperAnchorDockedLeft {
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedTop {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedRight {
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedBottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiButtonBase-root {
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiButtonBase-root::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiButtonBase-root.Mui-disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+  .MuiIconButton-root {
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+  }
+  .MuiIconButton-root:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .MuiIconButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+  }
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-edgeStart {
+    margin-left: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+    margin-left: -3px;
+  }
+  .MuiIconButton-edgeEnd {
+    margin-right: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+    margin-right: -3px;
+  }
+  .MuiIconButton-colorInherit {
+    color: inherit;
+  }
+  .MuiIconButton-colorPrimary {
+    color: #3f51b5;
+  }
+  .MuiIconButton-colorPrimary:hover {
+    background-color: rgba(63, 81, 181, 0.08);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-colorSecondary {
+    color: #f50057;
+  }
+  .MuiIconButton-colorSecondary:hover {
+    background-color: rgba(245, 0, 87, 0.08);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-sizeSmall {
+    padding: 3px;
+    font-size: 1.125rem;
+  }
+  .MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiTypography-root {
+    margin: 0;
+  }
+  .MuiTypography-body2 {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+  }
+  .MuiTypography-caption {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+  }
+  .MuiTypography-button {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-h1 {
+    font-size: 6rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.01562em;
+  }
+  .MuiTypography-h2 {
+    font-size: 3.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.00833em;
+  }
+  .MuiTypography-h3 {
+    font-size: 3rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.04;
+    letter-spacing: 0em;
+  }
+  .MuiTypography-h4 {
+    font-size: 2.125rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.00735em;
+  }
+  .MuiTypography-h5 {
+    font-size: 1.5rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 0em;
+  }
+  .MuiTypography-h6 {
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+  }
+  .MuiTypography-subtitle1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.00938em;
+  }
+  .MuiTypography-subtitle2 {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.57;
+    letter-spacing: 0.00714em;
+  }
+  .MuiTypography-overline {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 2.66;
+    letter-spacing: 0.08333em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-srOnly {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .MuiTypography-alignLeft {
+    text-align: left;
+  }
+  .MuiTypography-alignCenter {
+    text-align: center;
+  }
+  .MuiTypography-alignRight {
+    text-align: right;
+  }
+  .MuiTypography-alignJustify {
+    text-align: justify;
+  }
+  .MuiTypography-noWrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiTypography-gutterBottom {
+    margin-bottom: 0.35em;
+  }
+  .MuiTypography-paragraph {
+    margin-bottom: 16px;
+  }
+  .MuiTypography-colorInherit {
+    color: inherit;
+  }
+  .MuiTypography-colorPrimary {
+    color: #3f51b5;
+  }
+  .MuiTypography-colorSecondary {
+    color: #f50057;
+  }
+  .MuiTypography-colorTextPrimary {
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .MuiTypography-colorTextSecondary {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiTypography-colorError {
+    color: #f44336;
+  }
+  .MuiTypography-displayInline {
+    display: inline;
+  }
+  .MuiTypography-displayBlock {
+    display: block;
+  }
+  .MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  .MuiSvgIcon-colorPrimary {
+    color: #3f51b5;
+  }
+  .MuiSvgIcon-colorSecondary {
+    color: #f50057;
+  }
+  .MuiSvgIcon-colorAction {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiSvgIcon-colorError {
+    color: #f44336;
+  }
+  .MuiSvgIcon-colorDisabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+  .MuiSvgIcon-fontSizeInherit {
+    font-size: inherit;
+  }
+  .MuiSvgIcon-fontSizeSmall {
+    font-size: 1.25rem;
+  }
+  .MuiSvgIcon-fontSizeLarge {
+    font-size: 2.1875rem;
+  }
+  .jss98 {
+    display: flex;
+    margin-left: 8px;
+    user-select: none;
+    margin-right: 8px;
+  }
+  .MuiBreadcrumbs-ol {
+    margin: 0;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .MuiBreadcrumbs-li {
+    list-style: none;
+  }
+  .MuiGrid-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .MuiGrid-item {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .MuiGrid-zeroMinWidth {
+    min-width: 0;
+  }
+  .MuiGrid-direction-xs-column {
+    flex-direction: column;
+  }
+  .MuiGrid-direction-xs-column-reverse {
+    flex-direction: column-reverse;
+  }
+  .MuiGrid-direction-xs-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .MuiGrid-wrap-xs-nowrap {
+    flex-wrap: nowrap;
+  }
+  .MuiGrid-wrap-xs-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+  .MuiGrid-align-items-xs-center {
+    align-items: center;
+  }
+  .MuiGrid-align-items-xs-flex-start {
+    align-items: flex-start;
+  }
+  .MuiGrid-align-items-xs-flex-end {
+    align-items: flex-end;
+  }
+  .MuiGrid-align-items-xs-baseline {
+    align-items: baseline;
+  }
+  .MuiGrid-align-content-xs-center {
+    align-content: center;
+  }
+  .MuiGrid-align-content-xs-flex-start {
+    align-content: flex-start;
+  }
+  .MuiGrid-align-content-xs-flex-end {
+    align-content: flex-end;
+  }
+  .MuiGrid-align-content-xs-space-between {
+    align-content: space-between;
+  }
+  .MuiGrid-align-content-xs-space-around {
+    align-content: space-around;
+  }
+  .MuiGrid-justify-xs-center {
+    justify-content: center;
+  }
+  .MuiGrid-justify-xs-flex-end {
+    justify-content: flex-end;
+  }
+  .MuiGrid-justify-xs-space-between {
+    justify-content: space-between;
+  }
+  .MuiGrid-justify-xs-space-around {
+    justify-content: space-around;
+  }
+  .MuiGrid-justify-xs-space-evenly {
+    justify-content: space-evenly;
+  }
+  .MuiGrid-spacing-xs-1 {
+    width: calc(100% + 8px);
+    margin: -4px;
+  }
+  .MuiGrid-spacing-xs-1 > .MuiGrid-item {
+    padding: 4px;
+  }
+  .MuiGrid-spacing-xs-2 {
+    width: calc(100% + 16px);
+    margin: -8px;
+  }
+  .MuiGrid-spacing-xs-2 > .MuiGrid-item {
+    padding: 8px;
+  }
+  .MuiGrid-spacing-xs-3 {
+    width: calc(100% + 24px);
+    margin: -12px;
+  }
+  .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+    padding: 12px;
+  }
+  .MuiGrid-spacing-xs-4 {
+    width: calc(100% + 32px);
+    margin: -16px;
+  }
+  .MuiGrid-spacing-xs-4 > .MuiGrid-item {
+    padding: 16px;
+  }
+  .MuiGrid-spacing-xs-5 {
+    width: calc(100% + 40px);
+    margin: -20px;
+  }
+  .MuiGrid-spacing-xs-5 > .MuiGrid-item {
+    padding: 20px;
+  }
+  .MuiGrid-spacing-xs-6 {
+    width: calc(100% + 48px);
+    margin: -24px;
+  }
+  .MuiGrid-spacing-xs-6 > .MuiGrid-item {
+    padding: 24px;
+  }
+  .MuiGrid-spacing-xs-7 {
+    width: calc(100% + 56px);
+    margin: -28px;
+  }
+  .MuiGrid-spacing-xs-7 > .MuiGrid-item {
+    padding: 28px;
+  }
+  .MuiGrid-spacing-xs-8 {
+    width: calc(100% + 64px);
+    margin: -32px;
+  }
+  .MuiGrid-spacing-xs-8 > .MuiGrid-item {
+    padding: 32px;
+  }
+  .MuiGrid-spacing-xs-9 {
+    width: calc(100% + 72px);
+    margin: -36px;
+  }
+  .MuiGrid-spacing-xs-9 > .MuiGrid-item {
+    padding: 36px;
+  }
+  .MuiGrid-spacing-xs-10 {
+    width: calc(100% + 80px);
+    margin: -40px;
+  }
+  .MuiGrid-spacing-xs-10 > .MuiGrid-item {
+    padding: 40px;
+  }
+  .MuiGrid-grid-xs-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xs-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xs-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xs-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xs-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xs-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xs-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xs-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xs-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xs-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xs-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xs-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xs-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xs-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+@media (min-width:600px) {
+  .MuiGrid-grid-sm-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-sm-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-sm-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-sm-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-sm-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-sm-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-sm-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-sm-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-sm-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-sm-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-sm-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-sm-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-sm-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-sm-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:960px) {
+  .MuiGrid-grid-md-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-md-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-md-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-md-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-md-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-md-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-md-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-md-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-md-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-md-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-md-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-md-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-md-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-md-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1280px) {
+  .MuiGrid-grid-lg-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-lg-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-lg-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-lg-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-lg-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-lg-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-lg-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-lg-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-lg-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-lg-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-lg-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-lg-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-lg-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-lg-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1920px) {
+  .MuiGrid-grid-xl-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xl-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xl-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xl-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xl-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xl-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xl-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xl-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xl-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xl-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xl-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xl-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xl-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xl-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+  .MuiLink-underlineNone {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover:hover {
+    text-decoration: underline;
+  }
+  .MuiLink-underlineAlways {
+    text-decoration: underline;
+  }
+  .MuiLink-button {
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiLink-button::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiLink-button.Mui-focusVisible {
+    outline: auto;
+  }
+  .MuiButton-root {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiButton-root:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .MuiButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-root:hover.Mui-disabled {
+    background-color: transparent;
+  }
+  .MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiButton-text {
+    padding: 6px 8px;
+  }
+  .MuiButton-textPrimary {
+    color: #3f51b5;
+  }
+  .MuiButton-textPrimary:hover {
+    background-color: rgba(63, 81, 181, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-textSecondary {
+    color: #f50057;
+  }
+  .MuiButton-textSecondary:hover {
+    background-color: rgba(245, 0, 87, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlined {
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    padding: 5px 15px;
+  }
+  .MuiButton-outlined.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+  }
+  .MuiButton-outlinedPrimary {
+    color: #3f51b5;
+    border: 1px solid rgba(63, 81, 181, 0.5);
+  }
+  .MuiButton-outlinedPrimary:hover {
+    border: 1px solid #3f51b5;
+    background-color: rgba(63, 81, 181, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlinedSecondary {
+    color: #f50057;
+    border: 1px solid rgba(245, 0, 87, 0.5);
+  }
+  .MuiButton-outlinedSecondary:hover {
+    border: 1px solid #f50057;
+    background-color: rgba(245, 0, 87, 0.08);
+  }
+  .MuiButton-outlinedSecondary.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-contained {
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+  .MuiButton-contained:hover {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+    background-color: #d5d5d5;
+  }
+  .MuiButton-contained.Mui-focusVisible {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained:active {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+  .MuiButton-contained:hover.Mui-disabled {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+  .MuiButton-containedPrimary {
+    color: #fff;
+    background-color: #3f51b5;
+  }
+  .MuiButton-containedPrimary:hover {
+    background-color: #303f9f;
+  }
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #3f51b5;
+  }
+}
+  .MuiButton-containedSecondary {
+    color: #fff;
+    background-color: #f50057;
+  }
+  .MuiButton-containedSecondary:hover {
+    background-color: #c51162;
+  }
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #f50057;
+  }
+}
+  .MuiButton-colorInherit {
+    color: inherit;
+    border-color: currentColor;
+  }
+  .MuiButton-textSizeSmall {
+    padding: 4px 5px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-textSizeLarge {
+    padding: 8px 11px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-outlinedSizeSmall {
+    padding: 3px 9px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-outlinedSizeLarge {
+    padding: 7px 21px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-containedSizeSmall {
+    padding: 4px 10px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-containedSizeLarge {
+    padding: 8px 22px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-fullWidth {
+    width: 100%;
+  }
+  .MuiButton-startIcon {
+    display: inherit;
+    margin-left: -4px;
+    margin-right: 8px;
+  }
+  .MuiButton-startIcon.MuiButton-iconSizeSmall {
+    margin-left: -2px;
+  }
+  .MuiButton-endIcon {
+    display: inherit;
+    margin-left: 8px;
+    margin-right: -4px;
+  }
+  .MuiButton-endIcon.MuiButton-iconSizeSmall {
+    margin-right: -2px;
+  }
+  .MuiButton-iconSizeSmall > *:first-child {
+    font-size: 18px;
+  }
+  .MuiButton-iconSizeMedium > *:first-child {
+    font-size: 20px;
+  }
+  .MuiButton-iconSizeLarge > *:first-child {
+    font-size: 22px;
+  }
+@media print {
+  .jss3 {
+    display: none;
+  }
+}
+  .jss4 {
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+  .jss5 {
+    display: flex;
+  }
+  .jss6 {
+    width: 20px;
+    height: 20px;
+  }
+  .jss7 {
+    width: 16px;
+    height: auto;
+    align-self: center;
+    margin-right: 8px;
+  }
+  .jss8 {
+    margin-left: 8px;
+  }
+  .jss266 {
+    margin-top: 40px;
+  }
+@media print {
+  .jss266 {
+    display: none;
+  }
+}
+  .jss267 {
+    width: auto;
+    height: 50px;
+    margin: 20px 7px 10px;
+  }
+@media print {
+  .jss1 {
+    display: none;
+  }
+}
+  .jss2 {
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .MuiContainer-root {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiContainer-root {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-root {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media (min-width:600px) {
+  .MuiContainer-fixed {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-fixed {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-fixed {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-fixed {
+    max-width: 1920px;
+  }
+}
+@media (min-width:0px) {
+  .MuiContainer-maxWidthXs {
+    max-width: 444px;
+  }
+}
+@media (min-width:600px) {
+  .MuiContainer-maxWidthSm {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-maxWidthMd {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-maxWidthLg {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-maxWidthXl {
+    max-width: 1920px;
+  }
+}
+
+  .jss235 {
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+@media print {
+  .jss235 {
+    display: none;
+  }
+}
+  .jss264 {
+    padding: 16px;
+    max-width: 700px;
+    margin-top: 40px;
+  }
+@media print {
+  .jss264 {
+    display: none;
+  }
+}
+  .jss265 {
+    margin: 8px;
+  }
+  .jss234 {
+    display: none;
+    font-size: 0.75em;
+    font-style: italic;
+  }
+@media print {
+  .jss234 {
+    display: block;
+  }
+}
+  .jss226 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }</style></head>
+<body>
+  <div id="app"><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionFixed jss3 mui-fixed"><div class="MuiToolbar-root MuiToolbar-regular jss4 MuiToolbar-gutters"><nav class="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"><ol class="MuiBreadcrumbs-ol"><li class="MuiBreadcrumbs-li"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-colorTextPrimary" aria-label="Hjem" href="/"><svg class="MuiSvgIcon-root jss6" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></a></li><li aria-hidden="true" class="jss98 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone jss5 MuiTypography-colorTextPrimary" href="/computercraft"><img class="jss7" src="/_/oppgaver/src/computercraft/logo-black.741d2b.png" alt="Bilde av ComputerCraft"/><p class="MuiTypography-root MuiTypography-body1">ComputerCraft</p></a></li><li aria-hidden="true" class="jss98 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone jss5 MuiTypography-colorTextPrimary" aria-label="Introduksjon til ComputerCraft" href="/computercraft/introduksjon_til_computercraft/introduksjon_til_computercraft"><div class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg><p class="MuiTypography-root jss8 MuiTypography-body1">Introduksjon til ComputerCraft</p></div></a></li></ol></nav><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></header><div class="MuiToolbar-root MuiToolbar-regular jss1 MuiToolbar-gutters"></div><div class="jss2"><div class="MuiContainer-root jss226 MuiContainer-maxWidthMd"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg></div><div class="MuiGrid-root MuiGrid-item"><h1 class="MuiTypography-root MuiTypography-h3">Introduksjon til ComputerCraft</h1></div></div><p><i>Skrevet av:<!-- --> <span>Geir Arne Hjelle</span></i></p><div class="jss234"><div>Kurs:<!-- --> <!-- -->Computercraft</div><div>Tema: Tekstbasert, Minecraft</div><div>Fag: Programmering, Teknologi</div><div>Klassetrinn: 5.-7. klasse, 8.-10. klasse, Videregående skole</div></div><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss235" tabindex="0" role="button" aria-disabled="false" href="http://pdf-ace.com/pdfme?print_media=1" download=""><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg></span>Last ned PDF</span></a><div><section class="intro"> <h1 class="intro">Introduksjon</h1> <p><strong>ComputerCraft</strong> er en mod til <strong>Minecraft</strong>, som gir deg muligheten til å bygge og programmere <strong>datamaskiner</strong> og <strong>roboter</strong> inne i Minecraft-verdenen.</p> <p>Vi begynner med å bygge en enkel datamaskin. Etter å ha brukt litt tid på å bli kjent med hvordan datamaskinen virker, bruker vi den til å låse opp en dør ved hjelp av passord. Etter at vi har klart dette begynner vi å se på datamaskiner som kan bevege seg, altså roboter! Disse kan vi bruke til både å grave og bygge ting for oss.</p> <figure><img src="introduksjon_til_computercraft.png" alt="Bilde av en datamaskin og en robot"></figure> </section> <section class="activity"> <h1 class="activity">Steg 1: Vår første datamaskin</h1> <p><em>Vi begynner med å lage en datamaskin.</em></p> <p>I utgangspunktet er det mye enklere å starte i <em>Creative Mode</em> når vi skal lære å bruke datamaskinene, siden vi da slipper å bruke tid på å samle materiale og slåss mot monstre. Vi vil derfor i fortsettelsen anta at du er i <em>Creative Mode</em>, og kan plukke akkurat det du trenger i inventory'et ditt.</p> <p>Men først, for å vise at en datamaskin kan bygges på vanlig måte i Minecraft:</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Trykk <code>E</code> for å åpne inventory'et ditt. Finn frem 7 <strong>Stone</strong>, 1 <strong>Redstone</strong> og 1 <strong>Glass pane</strong>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Åpne et <strong>Crafting table</strong>, og legg ut materialet slik:</label></p> <figure><img src="../bli_kjent_med_datamaskinen/craft_computer.png" alt="Bilde av hvordan crafte en datamaskin i minecraft"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_2"><label for="cbx_2"> Legg den nye datamaskinen i den nederste raden i inventory'et ditt, slik at du kan ta den på hånden. Lukk inventory'et.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_3"><label for="cbx_3"> Bruk talltastene til å velge datamaskinen, og høyreklikk for å lage en datamaskin.</label></p> </li> </ul> <p>I <em>Creative Mode</em> kan du også få tak i datamaskiner ved å trykke <code>E</code>, deretter klikke <code>&gt;</code> for å gå til neste side, og til slutt velge fanen med datamaskinsymbolet.</p> <section class="protip"> <h3 class="protip">ComputerCraft-datamaskiner</h3> <p>Høyreklikk en datamaskin for å starte den opp. Den vil åpne en svart skjerm med teksten <code>CraftOS</code> på toppen. Dette er datamaskinens <em>kommandolinje</em>, og vi vil bruke den til å styre datamaskinen med.</p> </section> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Prøv å skriv <code>help</code> og trykk enter.</label></p> <p>Du får nå se noen tips om hvordan du kan finne ut mer om datamaskinen. For eksempel kan du skrive <code>programs</code> for å se en liste over hvilke programmer som er på datamaskinen, eller <code>help programming</code> for å få noen tips til hvordan man programmerer datamaskinen.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Skriv <code>programs</code> og trykk enter.</label></p> <p>Mange av disse programmene er enkle programmer som lar deg undersøke datamaskinen nærmere. Etter kurset kan du prøve å utforske flere av disse programmene.</p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Steg 2: Vårt første program</h1> <p><em>Det er nå på tide at vi skriver vårt første program.</em></p> <p>Det er en lang tradisjon blant programmerere at det første programmet de lager når de lærer et nytt språk skriver en trivelig melding til skjermen. Vi følger den tradisjonen og begynner med et program som heter <code>heiverden</code>.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Start en datamaskin.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Skriv <code>edit heiverden</code> for å begynne å skrive på et nytt program som heter <code>heiverden</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_8"><label for="cbx_8"> I det nye vinduet, skriv</label></p> <pre><code class="lua"><span class="hljs-built_in">print</span>(<span class="hljs-string">'Hei verden!'</span>)
+</code></pre> <p>Etter at du har skrevet dette så trykker du på <em>Ctrl</em>-tasten og velger <code>Save</code>. Deretter trykker du <em>Ctrl</em> en gang til og velger <code>Exit</code>.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Vi har nå laget vårt første program. Prøv å skriv <code>programs</code> og du vil se at <code>heiverden</code> er på listen over programmer.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_10"><label for="cbx_10"> For å kjøre programmet vi har laget, skriver vi <code>heiverden</code> og trykker enter.</label></p> </li> </ul> <section class="challenge"> <h3 class="challenge">Prøv selv</h3> <p>Klarer du å endre på programmet slik at det for eksempel sier hei til deg, eller kanskje til de som sitter ved siden av deg?</p> <p>Prøv å skriv <code>edit heiverden</code> en gang til. Da åpner programmet ditt seg igjen, og du kan endre på det slik at det sier noe annet. Som tidligere må du bruke <em>Ctrl</em>-tasten for å gå til menyen slik at du kan lagre og avslutte endringene.</p> </section> </section> </section> <section class="activity"> <h1 class="activity">Steg 3: Datamaskiner og Redstone</h1> <p><em>Vi skal nå bruke datamaskinen til å åpne en dør for oss, og kanskje etterhvert legge på et passord på døren.</em></p> <p>Datamaskinene i ComputerCraft bruker et programmeringsspråk som heter <strong>Lua</strong>. Dette er et ganske enkelt og fleksibelt språk som ofte brukes inne i andre programmer. For eksempel kan også deler av Photoshop, Wikipedia og World of Warcraft programmeres med Lua.</p> <section class="protip"> <h3 class="protip">Lua</h3> <p>Lua ble opprinnelig laget i Brasil på begynnelsen av 1990-tallet. På universitetet i Rio de Janeiro brukte de tidligere et språk som het <em>Simple Object Language</em> (SOL). Ordet <em>lua</em> er portugisisk og betyr <em>måne</em>, noe de syntes var et fint navn som passet sammen med SOL.</p> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <p>Vi vil bruke <strong>Redstone</strong> for å kontrollere døren. Redstone er et materiale som kan overføre energi i Minecraft. La oss først sette opp en datamaskin ved siden av en dør.</p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Gå ut av datamaskinen ved å trykke <code>Esc</code>-knappen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_12"><label for="cbx_12"> Samle sammen litt <strong>Stone</strong>, en <strong>Iron door</strong> og en <strong>Computer</strong>, og lag en vegg hvor du setter inn en dør og med datamaskinen rett ved siden av døren. Det skal se omtrent slik ut:</label></p> <figure><img src="../bli_kjent_med_datamaskinen/passord.png" alt="Bilde av en vegg med en dør og en datamaskin"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_13"><label for="cbx_13"> Start datamaskinen.</label></p> </li> </ul> <p>Vi skal nå prøve å skrive noen kommandoer direkte i Lua. Dette er en fin måte å teste enkle ting på.</p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_14"><label for="cbx_14"> Skriv <code>lua</code> og trykk enter. Dette starter en <em>Lua-tolker</em> som vil utføre hver enkelt kommando du skriver med en gang.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_15"><label for="cbx_15"> Vi begynner med kommandoen fra det første programmet vårt. Skriv <code>print('Hei verden!')</code> og trykk enter. Skjer det samme som tidligere?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_16"><label for="cbx_16"> Som de aller fleste programmeringsspråk er Lua glad i å regne. Skriv <code>1 + 1</code> og trykk enter.</label></p> <p>Lua kjenner alle de vanlige matematikk-operasjonene. Prøv for eksempel <code>17 - 8</code>, <code>3 * 4</code> eller <code>22 / 7</code>. Kjenner du igjen hva hver av disse betyr?</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_17"><label for="cbx_17"> Skriv <code>redstone.setOutput('left', true)</code> og trykk enter.</label></p> <p>Denne kommandoen skal åpne døren til venstre for datamaskinen. Her forteller <code>left</code> hvilken side av datamaskinen døren står på. Du kan også bruke for eksempel <code>right</code>, <code>top</code> eller <code>bottom</code>.</p> <p>Dette er et eksempel på å kalle en <em>funksjon</em>, noe vi gjør ofte når vi programmerer. I dette tilfellet heter funksjonen <code>setOutput</code> og den hører hjemme i <code>redstone</code>-<em>biblioteket</em>.</p> </li> </ul> <section class="protip"> <h3 class="protip">Funksjoner</h3> <p>Alle programmeringsspråk lar deg lage noe som kalles <em>funksjoner</em>. Dette er en samling instruksjoner som utføres sammen slik at det blir enklere å gjøre vanskelige ting. Lua kommer med innebygde funksjoner. Vi har så langt sett <code>print</code> og <code>redstone.setOutput</code> som eksempler på dette. Det går også an å lage egne funksjoner.</p> </section> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_18"><label for="cbx_18"> Trykk pil opp-tasten slik at du kan endre <code>redstone.setOutput('left', true)</code> til <code>redstone.setOutput('left', false)</code>. Trykk enter. Nå lukker døren seg igjen fordi vi skrur av <em>redstone</em>-energien.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_19"><label for="cbx_19"> Avslutt Lua-tolkeren ved å skrive <code>exit()</code> og trykk enter.</label></p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Steg 4: Passordlås på en dør</h1> <p><em>Vi skal nå bruke redstone-biblioteket til å lage en passordlås på døra. Underveis vil vi også lære litt om tester og løkker.</em></p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_20"><label for="cbx_20"> Start et nytt program ved å skrive <code>edit passord</code> og trykk enter.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_21"><label for="cbx_21"> Skriv inn følgende program nøyaktig slik det står</label></p> <pre><code class="lua"><span class="hljs-keyword">local</span> passord = <span class="hljs-string">'kodeklubben'</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Passordet er '</span> .. passord .. <span class="hljs-string">'!'</span>)
+</code></pre> <p>Pass på at du skriver de to punktumene <code>..</code> riktig. Disse betyr at vi setter sammen tekst.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_22"><label for="cbx_22"> Lagre og avslutt editoren. Kjør programmet ved å skrive <code>passord</code>.</label></p> <p>Programmet forteller deg hva passordet er. Klarer du å endre passordet til noe annet? Kanskje til <code>ComputerCraft</code> eller til navnet ditt?</p> </li> </ul> <section class="protip"> <h3 class="protip">Variabler</h3> <p>Vi har nå laget en variabel. Variabelen <code>passord</code> husker hva passordet skal være. På denne måten blir det enkelt å endre passordet senere. Ordet <code>local</code> foran variabelen sier at vi bare skal huske variabelen i dette programmet (lokalt).</p> </section> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_23"><label for="cbx_23"> Vi skal nå jobbe videre med programmet. Vi vil jo at datamaskinen skal spørre oss om passordet, ikke fortelle oss hva det er. Skriv <code>edit passord</code> igjen, og endre programmet slik at det blir seende ut som følger:</label></p> <pre><code class="lua"><span class="hljs-keyword">local</span> passord = <span class="hljs-string">'kodeklubben'</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Hva er passordet?'</span>)                    <span class="hljs-comment">-- endret linje</span>
+svar = <span class="hljs-built_in">read</span>()                                 <span class="hljs-comment">-- ny linje</span>
+</code></pre> <p>Lagre, avslutt, og kjør programmet på nytt. Nå vil programmet spørre deg om passordet. Skjer det noe når du svarer? Funksjonen <code>read</code> brukes for å lese ting du skriver på tastaturet, men programmet gjør foreløbig ingenting med svaret ditt.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_24"><label for="cbx_24"> Det neste vi vil er derfor at programmet skal sjekke om du svarer med riktig passord. For å gjøre dette vil vi bruke noe som heter <code>if</code>-tester. Disse kan teste om noe er sant, og vi vil bruke dem for å sjekke om det er sant at svaret ditt er likt med det faktiske passordet. Legg til en <code>if</code>-test nederst i programmet ditt slik som dette:</label></p> <pre><code class="lua"><span class="hljs-keyword">local</span> passord = <span class="hljs-string">'kodeklubben'</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Hva er passordet?'</span>)
+svar = <span class="hljs-built_in">read</span>()
+
+<span class="hljs-keyword">if</span> svar == passord <span class="hljs-keyword">then</span>                       <span class="hljs-comment">-- ny linje</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Riktig, passordet er '</span> .. passord) <span class="hljs-comment">-- ny linje</span>
+<span class="hljs-keyword">else</span>                                          <span class="hljs-comment">-- ny linje</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Feil, passordet er ikke '</span> .. svar) <span class="hljs-comment">-- ny linje</span>
+<span class="hljs-keyword">end</span>                                           <span class="hljs-comment">-- ny linje</span>
+</code></pre> <p>Kjør programmet igjen. Hva skjer når du svarer riktig? Hva skjer når du svarer feil? Skjønner du hvorfor?</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_25"><label for="cbx_25"> Nå kan vi koble sammen passordet med <code>redstone</code>-kommandoene vi så tidligere. La oss åpne døren hvis passordet er riktig. Etter 5 sekunder kan vi lukke døren igjen. Endre programmet slik:</label></p> <pre><code class="lua"><span class="hljs-keyword">local</span> passord = <span class="hljs-string">'kodeklubben'</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'Hva er passordet?'</span>)
+svar = <span class="hljs-built_in">read</span>()
+
+<span class="hljs-keyword">if</span> svar == passord <span class="hljs-keyword">then</span>
+    redstone.setOutput(<span class="hljs-string">'left'</span>, <span class="hljs-literal">true</span>)          <span class="hljs-comment">-- endret linje</span>
+    sleep(<span class="hljs-number">5</span>)                                  <span class="hljs-comment">-- endret linje</span>
+    redstone.setOutput(<span class="hljs-string">'left'</span>, <span class="hljs-literal">false</span>)         <span class="hljs-comment">-- endret linje</span>
+<span class="hljs-keyword">end</span>
+</code></pre> <p>Kjør programmet. Hva skjer nå når du skriver riktig passord?</p> <p>Funksjonen <code>sleep</code> gjør at datamaskinen sover, det vil si gjør ingenting. I dette tilfellet sover datamaskinen i 5 sekunder, før energien skrus av igjen og døren lukker seg.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_26"><label for="cbx_26"> Det er kjedelig at vi hele tiden må starte programmet på nytt. Vi lager derfor en løkke som kan spørre oss om passord igjen og igjen.</label></p> <pre><code class="lua"><span class="hljs-keyword">local</span> passord = <span class="hljs-string">'kodeklubben'</span>
+
+<span class="hljs-keyword">while</span> <span class="hljs-literal">true</span> <span class="hljs-keyword">do</span>                                 <span class="hljs-comment">-- ny linje</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Hva er passordet?'</span>)
+    svar = <span class="hljs-built_in">read</span>()
+
+    <span class="hljs-keyword">if</span> svar == passord <span class="hljs-keyword">then</span>
+        redstone.setOutput(<span class="hljs-string">'left'</span>, <span class="hljs-literal">true</span>)
+        sleep(<span class="hljs-number">5</span>)
+        redstone.setOutput(<span class="hljs-string">'left'</span>, <span class="hljs-literal">false</span>)
+    <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>                                           <span class="hljs-comment">-- ny linje</span>
+</code></pre> <p>Det er bare èn ny ting her som vi ikke har sett tidligere, nemlig en <code>while</code>-løkke. Slike løkker vil fortsette å gjøre ting om igjen så lenge noe er sant. I vårt tilfelle er dette <em>noe</em> verdien <code>true</code> som alltid er sann. Det betyr at vi har laget en <em>evig løkke</em>. Dette programmet vil fortsette å spørre oss om passordet for alltid!</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_27"><label for="cbx_27"> Kjør programmet. Oppfører programmet seg slik du hadde trodd? Husker du passordet?</label></p> </li> </ul> <section class="protip"> <h3 class="protip">Avslutte programmer</h3> <p>For å avslutte dette programmet holder du inne <em>Ctrl</em> og <em>T</em> samtidig i cirka ett sekund. Da avbrytes programmet, og teksten <code>Terminated</code> skrives på skjermen. Dette fungerer både her og i andre programmer.</p> </section> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_28"><label for="cbx_28"> Før vi er helt fornøyde med dette programmet vil vi gjøre noen små forbedringer. Først kaller vi to funksjoner fra <code>term</code>-biblioteket. Den ene vil rense skjermen, mens den andre setter posisjonen hvor vi skriver teksten til <code>(1, 1)</code> som betyr øverst til venstre. I tillegg forteller vi <code>read</code> at vi ikke vil at passordet vi skriver inn skal synes på skjermen. I stedet vil vi at <code>*</code>-tegn skal vises. Programmet ser da slik ut:</label></p> <pre><code class="lua"><span class="hljs-keyword">local</span> passord = <span class="hljs-string">'kodeklubben'</span>
+
+<span class="hljs-keyword">while</span> <span class="hljs-literal">true</span> <span class="hljs-keyword">do</span>
+    term.clear()                              <span class="hljs-comment">-- ny linje</span>
+    term.setCursorPos(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>)                   <span class="hljs-comment">-- ny linje</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Hva er passordet?'</span>)
+    svar = <span class="hljs-built_in">read</span>(<span class="hljs-string">'*'</span>)                          <span class="hljs-comment">-- endret linje</span>
+
+    <span class="hljs-keyword">if</span> svar == passord <span class="hljs-keyword">then</span>
+        redstone.setOutput(<span class="hljs-string">'left'</span>, <span class="hljs-literal">true</span>)
+        sleep(<span class="hljs-number">5</span>)
+        redstone.setOutput(<span class="hljs-string">'left'</span>, <span class="hljs-literal">false</span>)
+    <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</code></pre> </li> </ul> <p>Gratulerer, du har allerede lært ganske mye om hvordan man programmerer datamaskiner med ComputerCraft i Minecraft! Prøv gjerne å forandre noen av programmene vi har laget. Kan du lage dem enda bedre?</p> </section> </section> <section class="activity"> <h1 class="activity">Steg 5: Vår første robot</h1> <p><em>Vi skal nå bli kjent med roboter og se noe av det de kan brukes til.</em></p> <p>En robot er en datamaskin som kan bevege seg. I ComputerCraft kan vi også gi robotene forskjellige verktøy slik at de for eksempel kan grave, bygge, slåss og så videre.</p> <p>Vi begynner likevel med en helt enkel robot:</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_29"><label for="cbx_29"> Åpne inventory'et ditt ved å trykke 'E'. Finn frem 7 <strong>Iron Ingot</strong>, 1 <strong>Chest</strong> og 1 <strong>Computer</strong>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_30"><label for="cbx_30"> Start et <strong>Crafting table</strong>, og lag en robot slik:</label></p> <figure><img src="../robotinvasjon/craft_turtle.png" alt="Bilde av hvordan crafte en robot i minecraft"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_31"><label for="cbx_31"> Legg den nye roboten i hånden din. Lukk inventory'et og lag en robot.</label></p> </li> </ul> <p>I <em>Creative Mode</em> finner du også robotene ved å trykke <code>E</code>, deretter <code>&gt;</code> og til slutt velge fanen med datamaskinsymbolet. Robotene heter <strong>Turtle</strong> i ComputerCraft.</p> <section class="protip"> <h3 class="protip">Turtles</h3> <p>Navnet <strong>Turtle</strong> betyr <em>skilpadde</em> på norsk. Grunnen til at disse robotene kalles skilpadder er historisk. For nesten 70 år siden bygde William Grey Walter et par roboter som kunne bevege seg rundt. Disse beveget seg ganske sakte, og var lave og skallformet. De fikk derfor etterhvert kallenavnet skilpadder.</p> <p>Senere ble måten disse skilpaddene beveget seg på (vi skal se hvordan snart) tatt inn i forskjellige programmeringsspråk, spesielt som en måte å tegne på. Språket <em>Logo</em> er nok det som er mest kjent for slik skilpaddegrafikk, men nesten alle programmeringsspråk støtter dette i dag, inkludert for eksempel <em>Scratch</em>, <em>Python</em> og <em>ComputerCraft</em>.</p> </section> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <p>På samme måte som med datamaskiner starter du roboter ved å høyreklikke på dem. Dette vil starte kommandolinjen til roboten.</p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_32"><label for="cbx_32"> Start en robot. Skriv <code>programs</code> og trykk enter.</label></p> <p>Dette viser hvilke programmer denne roboten kjenner til. Hvis du sammenligner med programmene en datamaskin kjenner til vil du se at det er mange av de samme programmene, men at roboten også kan noen ting som datamaskinen ikke kan.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_33"><label for="cbx_33"> Kjør programmet <code>dance</code>.</label></p> <p>Roboten begynner nå å danse! Trykk <em>Esc</em>-knappen for å stenge kommandolinjen, slik at du ser roboten. Blir du imponert?</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_34"><label for="cbx_34"> Hvis du vil at roboten skal slutte å danse kan du høyreklikke på den igjen. I kommandolinjen står det nå en liten tekst som sier at du kan få roboten til å slutte å danse ved å trykke en knapp på tastaturet.</label></p> <p>Hvis du vil kan du også la roboten fortsette å danse. Lag i så fall en ny robot som du kan bruke i de neste oppgavene.</p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Steg 6: Roboter og skilpadder</h1> <p><em>Vi vil nå se hvordan vi kan få robotene våre til å bevege seg rundt.</em></p> <p>Som nevnt i boksen <em>Turtles</em> ovenfor beveger vi robotene våre på en måte som ligner slik noen spesielle skilpadderoboter ble kontrollert for nesten 70 år siden. Dette gjør vi ved å bruke programmet <code>go</code> for å bevege robotene rundt.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_35"><label for="cbx_35"> Kjør programmet <code>go forward</code> i kommandolinjen til en robot.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_36"><label for="cbx_36"> Roboten sier at den er <code>Out of fuel</code>.</label></p> <p>Roboter bruker <em>fuel</em> for å bevege seg. De kan bruke stort sett samme materiale som en <strong>Furnace</strong> som fuel, for eksempel er <strong>Coal</strong> eller <strong>Blaze Rod</strong> fine å bruke.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_37"><label for="cbx_37"> Finn litt <strong>Coal</strong> i inventory'et ditt. Høyreklikk på roboten. Legg merke til at det er et inventory med 16 plasser (4 ganger 4) på høyre side. Dette er robotens inventory. Flytt kullet over til roboten.</label></p> <figure><img src="../robotinvasjon/robot_inventory.png" alt="Bilde av inventory'et til roboten"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_38"><label for="cbx_38"> Skriv <code>refuel</code> i kommandolinjen og trykk enter.</label></p> <p>Legg merke til at en kull blir borte fra robotens inventory. Roboten svarer også ved å fortelle om sin <em>fuel level</em>. Dette tallet forteller hvor langt roboten kan bevege seg før den går tom for fuel igjen.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_39"><label for="cbx_39"> Gi roboten litt mer <strong>Coal</strong> og skriv <code>refuel all</code>.</label></p> <p>Roboten vil nå spise opp alt kullet, og deretter rapportere at den er klar til å gå ganske så langt!</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_40"><label for="cbx_40"> Da prøver vi igjen: Kjør programmet <code>go forward</code>. Dette skal flytte roboten forover ett steg.</label></p> <p>Flytter roboten din seg? Det kan være litt vanskelig å se hva som er fram og bak på en robot. Et triks kan være å tenke på den lange, smale sprekken som øynene til roboten. Altså at den siden med sprekken er foran.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_41"><label for="cbx_41"> Vi kan få roboten til å flytte seg bakover ved å skrive <code>go back</code>.</label></p> </li> </ul> <section class="protip"> <h3 class="protip">Finne hjelp</h3> <p>Datamaskiner og roboter har et innebygd hjelpesystem. For å se hvordan det virker kan du skrive <code>help</code> og trykke enter. Dette gir deg en rask introduksjon til nyttige hjelpekommandoer. Legg merke til at du kan skrive <code>help &lt;program&gt;</code> for å få hjelp om et spesielt program. Da må du bytte ut <code>&lt;program&gt;</code> med navnet på programmet. For eksempel kan du skrive <code>help go</code> for å finne hjelp om <code>go</code>-programmet.</p> <p>Det finnes selvsagt også en del hjelp på Internett. Et bra sted å starte er ComputerCraft Wiki'en: <a href="http://computercraft.info/wiki/">http://computercraft.info/wiki/</a>.</p> </section> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_42"><label for="cbx_42"> For å få vite mer om hvordan roboten kan flytte seg kan vi skrive <code>help go</code>.</label></p> <p>Dette viser oss at vi kan bruke <code>go forward</code>, <code>go back</code>, <code>go up</code>, <code>go down</code>, <code>go left</code> og <code>go right</code> for å flytte roboten rundt. I tillegg ser vi at vi kan bruke tall for at roboten skal flytte seg flere steg.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_43"><label for="cbx_43"> Prøv <code>go up 2</code>, <code>go forward 10</code>, <code>go down</code> og lignende kommandoer.</label></p> <p>Hvordan kan vi få roboten til å bevege seg sidelengs?</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_44"><label for="cbx_44"> Det finnes ingen kommando som får roboten til å bevege seg sidelengs. Kommandoene <code>go left</code> og <code>go right</code> bare snur roboten. For å få roboten til å gå sidelengs må vi derfor først snu roboten, og deretter bruke for eksempel <code>go forward</code>. Skriv <code>go left</code> og deretter <code>go forward 3</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_45"><label for="cbx_45"> Vi kan også kombinere flere kommandoer i et kall. For eksempel vil <code>go forward 3 left forward 4 up 2</code> gjøre at roboten først går fremover 3 steg, så snur den seg mot venstre, deretter går den 4 steg til før den løfter seg 2 steg oppover.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_46"><label for="cbx_46"> Lek litt mer med <code>go</code>-programmet til du skjønner hvordan du flytter roboten rundt omkring. Dersom du synes <code>go left</code> og <code>go right</code> er litt forvirrende siden roboten ikke går noe sted, kan du bruke <code>turn left</code> og <code>turn right</code> i stedet.</label></p> <p>Hva skjer dersom du ber roboten gå gjennom bakken, gjennom en vegg, eller om du står i veien for roboten?</p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Steg 7: Gruverobot</h1> <p><em>Hvis vi gir roboter de riktige verktøyene kan de grave, bygge og slåss for oss.</em></p> <p>Vi skal nå bruke en gruverobot som kan grave for oss.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_47"><label for="cbx_47"> Finn en gruverobot i inventory'et ditt ved å gå til datamaskinfanen og plukke ut en <strong>Mining Turtle</strong>. Lag og start en gruverobot.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_48"><label for="cbx_48"> Gi roboten litt <strong>Coal</strong> og kjør <code>refuel all</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_49"><label for="cbx_49"> Vi skal nå bruke et program som heter <code>excavate</code>, dette betyr <em>grav ut</em>. og vil be roboten om å grave ut et hull i bakken.</label></p> <p>Skriv <code>excavate 3</code> og trykk enter.</p> <p>Ta et steg tilbake og se på mens roboten graver. Roboten vil fortsette å grave til den går tom for fuel eller kommer til grunnfjellet, <strong>Bedrock</strong>.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_50"><label for="cbx_50"> Hva tror du tallet <code>3</code> i kommandoen vi skrev over betyr? Skriv <code>help excavate</code> for å se om du har rett.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_51"><label for="cbx_51"> Høyreklikk på roboten slik at du ser inventory'et den har. Legg merke til at den tar vare på alt den graver ut.</label></p> <p>Når roboten er ferdig å grave kommer den tilbake dit den startet. Der gir den fra seg alt materialet den har gravd ut slik at du kan plukke det opp om du vil.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_52"><label for="cbx_52"> Lag flere gruveroboter som kan grave større eller mindre hull.</label></p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Steg 8: Robotprogrammer</h1> <p><em>Vi skal nå lære hvordan vi kan kontrollere roboter i våre egne programmer.</em></p> <p>Når vi skriver egne programmer som styrer robotene bruker vi kommandoer fra <code>turtle</code>-biblioteket.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_53"><label for="cbx_53"> Start en ny robot. Pass på at den har fått litt kull og blitt <code>refuel</code>et.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_54"><label for="cbx_54"> Vi begynner med å prøve å finne litt mer informasjon om <code>turtle</code>-biblioteket. Skriv <code>help turtle</code>.</label></p> <p>Du får nå se en ganske lang liste med kommandoer som vi kan bruke. Vi vil vise frem noen av disse. Du kan senere teste alle sammen på egen hånd, og se om du skjønner hvordan de alle virker.</p> <p>For å komme ut av listen kan du for eksempel holde mellomromtasten nede en liten stund.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_55"><label for="cbx_55"> For å gjøre enkle eksperimenter vil vi begynne med å skrive kommandoene direkte i Lua-tolkeren. Skriv <code>lua</code> og trykk enter. Husk at du skriver <code>exit()</code> for å gå ut av Lua-tolkeren og tilbake til kommandolinjen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_56"><label for="cbx_56"> Vi begynner med de enkle flytte-kommandoene. Skriv <code>turtle.forward()</code> og trykk enter. Flytter roboten seg forover?</label></p> <p>Husk at du kan trykke <em>Esc</em>-knappen for enklere å se hva roboten gjør. Høyreklikk på roboten for å komme tilbake til Lua-tolkeren.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_57"><label for="cbx_57"> Prøv også de følgende kommandoene. Disse tilsvarer <code>go</code>-programmet, og til sammen gir de oss muligheten til å flytte roboten dit vi vil ha den:</label></p> <p><code>turtle.forward()</code>, <code>turtle.back()</code>, <code>turtle.turnLeft()</code>, <code>turtle.turnRight()</code>, <code>turtle.up()</code>, <code>turtle.down()</code>.</p> </li> </ul> <section class="challenge"> <h3 class="challenge">Prøv selv</h3> <p>Lag en liten kloss litt unna roboten din, omtrent som på bildet under. Klarer du å bruke <code>turtle</code>-kommandoene over til å plassere roboten på toppen av klossen?</p> <figure><img src="../robotinvasjon/flytt_robot_oppgave.png" alt="Bilde av en robot ved siden av en klosse"></figure> </section> </section> </section> <section class="activity"> <h1 class="activity">Steg 9: Up, up, up, and away ...</h1> <p><em>Kan vi klare å få roboten til å bygge for oss?</em></p> <p>Ett av poengene med roboter er at de kan gjøre arbeid for oss. I Minecraft betyr det at vi vil at robotene for eksempel skal kunne grave eller bygge.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_58"><label for="cbx_58"> Start en ny robot. Gi den fuel (og kjør <code>refuel</code>). Legg også noe byggemateriale, for eksempel <strong>Grass</strong>, i den øverste venstre boksen i robotens inventory.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_59"><label for="cbx_59"> Pass på at det ikke er noe foran roboten, og skriv <code>turtle.place()</code> inne i Lua-tolkeren.</label></p> <p>Bygde roboten en gresskloss foran seg? Da har du gjort alt riktig. Hvis dette ikke skjedde kan du sjekke</p> <p><strong>1</strong>: at du har startet <code>lua</code>,</p> <p><strong>2</strong>: at roboten har fuel,</p> <p><strong>3</strong>: at roboten har byggemateriale,</p> <p><strong>4</strong>: at det ikke står noe foran roboten (husk at den smale sprekken er øynene til roboten), og</p> <p><strong>5</strong>: at boksen med byggemateriale i robotens inventory er merket, det vil si at den har en litt tykkere ramme rundt seg enn de andre boksene.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_60"><label for="cbx_60"> Roboten kan også sjekke om den har noe foran seg: Skriv <code>turtle.detect()</code>.</label></p> <p>Du skal få svaret <code>true</code> som betyr at roboten merker at den har noe foran seg.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_61"><label for="cbx_61"> Prøv så <code>turtle.back()</code> etterfulgt av <code>turtle.detect()</code>.</label></p> <p>Siden roboten nå ikke har noe rett foran seg får du svaret <code>false</code>.</p> </li> </ul> <p>I Steg 10 skal vi se hvordan vi kan bruke <code>place()</code> og <code>detect()</code> sammen for å lage en ganske smart byggerobot.</p> <p>Men først, en ting vi kunne gjøre med <code>go</code> var å flytte roboten flere steg ved å skrive et tall, for eksempel <code>go forward 3</code>. Det samme fungerer ikke med <code>turtle</code>-biblioteket. I stedet må vi bruke løkker.</p> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_62"><label for="cbx_62"> En enkel måte å gjøre noe et bestemt antall ganger er å bruke <code>for</code>-løkker.</label></p> <p>Skriv</p> <pre><code class="lua"><span class="hljs-keyword">for</span> i = <span class="hljs-number">1</span>, <span class="hljs-number">5</span> <span class="hljs-keyword">do</span> turtle.back(); <span class="hljs-keyword">end</span>
+</code></pre> <p>i Lua-tolkeren. Flytter roboten din seg 5 steg bakover?</p> </li> </ul> <section class="protip"> <h3 class="protip"><code>for</code>-løkker</h3> <p>En <code>for</code>-løkke brukes ofte når vi vet hvor mange ganger vi vil gjøre en bestemt ting. I eksempelet over så vi at roboten flyttet seg 5 ganger bakover. En nyttig ting er at vi også kan følge med på hvor i løkken vi er, fordi <code>i</code> i koden over er en variabel. For eksempel kan vi skrive</p> <pre><code class="lua"><span class="hljs-keyword">for</span> i = <span class="hljs-number">1</span>, <span class="hljs-number">5</span> <span class="hljs-keyword">do</span> <span class="hljs-built_in">print</span>(i); <span class="hljs-keyword">end</span>
+</code></pre> <p>Dette vil skrive tallene 1, 2, 3, 4, 5 til skjermen på hver sin linje.</p> <p>Vi kan også bruke andre variabelnavn enn <code>i</code>, og vi kan starte på andre tall enn <code>1</code>:</p> <pre><code class="lua"><span class="hljs-keyword">for</span> tall = <span class="hljs-number">10</span>, <span class="hljs-number">20</span> <span class="hljs-keyword">do</span> <span class="hljs-built_in">print</span>(tall); <span class="hljs-keyword">end</span>
+</code></pre> </section> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_63"><label for="cbx_63"> Hvis vi vil kombinere flere kommandoer inne i en løkke i Lua-tolkeren bruker vi semikolon, <code>;</code>.</label></p> <p>Prøv</p> <pre><code class="lua"><span class="hljs-keyword">for</span> i = <span class="hljs-number">1</span>, <span class="hljs-number">5</span> <span class="hljs-keyword">do</span> turtle.back(); turtle.place(); <span class="hljs-keyword">end</span>
+</code></pre> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_64"><label for="cbx_64"> Pass på at roboten din har mye byggemateriale, for eksempel 64 <strong>Grass</strong>, i den merkede boksen i inventory'et sitt.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_65"><label for="cbx_65"> La oss bygge et høyt tårn!</label></p> <p>Skriv</p> <pre><code class="lua"><span class="hljs-keyword">for</span> i = <span class="hljs-number">1</span>, <span class="hljs-number">60</span> <span class="hljs-keyword">do</span> turtle.up(); turtle.place(); <span class="hljs-keyword">end</span>
+</code></pre> <figure><img src="../robotinvasjon/hoyt_tarn.png" alt="Bilde av en robot som bygger et høy tårn"></figure> </li> </ul> <p>Oops! Vi glemte å fortelle roboten at den skulle komme ned når den blir ferdig med å bygge. Hvordan skal vi få tak i den igjen?</p> </section> </section> <section class="activity"> <h1 class="activity">Steg 10: Bygg en trapp</h1> <p><em>Kan vi skrive et program som kan hjelpe oss å hente ned den forsvunne roboten?</em></p> <p>Når vi skal gjøre ting som er litt kompliserte er det som regel enklere å skrive et program, i stedet for å bare gi enkeltkommandoer i Lua-tolkeren. La oss prøve å lage et program som kan bygge en trapp opp til toppen av det høye tårnet.</p> <p>Før vi begynner på utfordringen det er å bygge en kjempehøy trapp, la oss øve oss, og teste programmet på et mindre tårn.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_66"><label for="cbx_66"> Bygg et tårn som er tre klosser høyt. Dette kan du bygge enten med en robot eller bare på egen hånd.</label></p> <figure><img src="../robotinvasjon/lite_tarn.png" alt="Bilde av et tårn som er tre klosser høyt"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_67"><label for="cbx_67"> Lag en ny robot inntil det lille tårnet du nettopp bygde. Gi den fuel og byggematerialer. Pass på at den peker mot tårnet.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_68"><label for="cbx_68"> Begynn et nytt program ved å skrive <code>edit byggTrapp</code>. Skriv inn følgende:</label></p> <pre><code class="lua">turtle.detect()
+</code></pre> <p>Lagre og avslutt ved å bruke <em>Ctrl</em>-tasten.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_69"><label for="cbx_69"> Kjør programmet ved å skrive <code>byggTrapp</code>. Dette programmet bygger ingen trapp enda, det virker faktisk som om det ikke gjør noe som helst. Det eneste som skjer er at roboten merker at den har en kloss foran seg. Men vi har ikke fortalt den hva den skal gjøre etterpå.</label></p> <p>Vi kan bruke <code>turtle.detect()</code> til å finne toppen av tårnet.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_70"><label for="cbx_70"> Endre på programmet ditt ved å skrive <code>edit byggTrapp</code> igjen. Vi lager nå en løkke hvor roboten klatrer oppover så lenge den merker at tårnet er høyere.</label></p> <pre><code class="lua"><span class="hljs-keyword">while</span> turtle.detect() <span class="hljs-keyword">do</span>                      <span class="hljs-comment">-- endret linje</span>
+    turtle.up()                               <span class="hljs-comment">-- ny linje</span>
+<span class="hljs-keyword">end</span>                                           <span class="hljs-comment">-- ny linje</span>
+</code></pre> <p>Lagre og kjør programmet ditt. Klatrer roboten til toppen av det lille tårnet?</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_71"><label for="cbx_71"> Vi har lært av feilen vi gjorde tidligere, så nå vil vi passe på at roboten kommer ned igjen. La oss legge til en ny løkke i programmet, slik at roboten klatrer ned. Denne gangen bruker vi kommandoen <code>detectDown()</code>. Denne gjør det samme som <code>detect()</code>, bortsett fra at den merker om roboten har en kloss under seg i stedet for foran seg.</label></p> <p>Utvid programmet ditt slik:</p> <pre><code class="lua"><span class="hljs-keyword">while</span> turtle.detect() <span class="hljs-keyword">do</span>
+    turtle.up()
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">not</span> turtle.detectDown() <span class="hljs-keyword">do</span>              <span class="hljs-comment">-- ny linje</span>
+    turtle.down()                             <span class="hljs-comment">-- ny linje</span>
+<span class="hljs-keyword">end</span>                                           <span class="hljs-comment">-- ny linje</span>
+</code></pre> <p>Vi sier at så lenge roboten <em>ikke</em> har en kloss under seg kan den ta et steg ned. Kommer roboten ned igjen når du kjører programmet?</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_72"><label for="cbx_72"> Nå er vi klar til å la roboten bygge selve trappen. Det gjør vi ved å ta et steg tilbake i den andre løkken, og plassere ut en kloss.</label></p> <pre><code class="lua"><span class="hljs-keyword">while</span> turtle.detect() <span class="hljs-keyword">do</span>
+    turtle.up()
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">not</span> turtle.detectDown() <span class="hljs-keyword">do</span>
+    turtle.down()
+    turtle.back()                             <span class="hljs-comment">-- ny linje</span>
+    turtle.place()                            <span class="hljs-comment">-- ny linje</span>
+<span class="hljs-keyword">end</span>
+</code></pre> <p>Virker det? Lager roboten en trapp?</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_73"><label for="cbx_73"> Nå er vi klare for den store testen. Klarer vi å sende trappebyggeroboten vår opp det høye tårnet?</label></p> <p>Pass på at roboten fortsatt har nok fuel, og fyll opp med byggemateriale. Kjør den bort til det høye tårnet, og la den <code>byggTrapp</code>!</p> <figure><img src="../robotinvasjon/byggtrapp.png" alt="Bilde av en robot som har bygget en høy trapp"></figure> </li> </ul> <p>Gratulerer! Du har nå programmert en robot! Legg merke til at siden <code>byggTrapp</code>-programmet vårt bruker <code>detect</code>-kommandoer kan det bygge trapper opp alle slags tårn og bratte fjellsider!</p> <section class="challenge"> <h3 class="challenge">Prøv selv</h3> <p>Vi har nå laget et program som kan bygge trapper oppover. Kan du lage et program som kan grave trapper ned under bakken?</p> <p>Lag et program som heter <code>gravTrapp</code>. For å gjøre dette trenger du en <strong>Mining Turtle</strong>.</p> <p>Se på kommandoene <code>turtle.dig()</code> og <code>turtle.digDown()</code>. Disse vil grave henholdsvis foran og under roboten. <code>turtle.digUp()</code> kan også være nyttig om du vil lage nok plass til at man kan gå ned i trappen.</p> <p>For å vite hvor langt ned roboten skal grave, er det enkleste å bruke en <code>for</code>-løkke. For eksempel kan du si at roboten skal grave 10 trinn nedover.</p> <p>Hvis du vil ha en utfordring kan du la roboten grave nedover til den finner for eksempel grunnfjellet, <strong>Bedrock</strong>. For å gjøre dette kan du legge en <strong>Bedrock</strong> øverst til venstre i inventory'et til roboten. Deretter kan du bruke <code>turtle.select(1)</code> og <code>turtle.compareDown()</code> for å finne ut om roboten har kommet ned til grunnfjellet.</p> </section> </section> </section> </div><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1"><div class="MuiGrid-root MuiGrid-item">Lisens: </div><div class="MuiGrid-root MuiGrid-item"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="http://creativecommons.org/licenses/by-sa/4.0/deed" target="_blank" rel="noopener">CC BY-SA 4.0</a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><div class="MuiPaper-root MuiPaper-elevation1 jss264 MuiPaper-rounded"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><h2 class="MuiTypography-root MuiTypography-h4">Forbedre denne siden</h2></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Funnet en feil? Kunne noe vært bedre?</p></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!</p></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Computercraft: Introduksjon til computercraft&#x27;&amp;body=Oppgave: https://oppgaver.kidsakoder.no/computercraft/introduksjon_til_computercraft/introduksjon_til_computercraft%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/computercraft/introduksjon_til_computercraft/introduksjon_til_computercraft.md%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Rapporter et problem</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265" tabindex="0" role="button" aria-disabled="false" href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></span>Gå til forumet</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/tree/master/src/computercraft/introduksjon_til_computercraft/introduksjon_til_computercraft.md" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Vis koden og fiks selv</span></a></div></div></div></div></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionStatic jss266"><div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.sparebank1.no" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/smn.098a83.jpg" alt="SpareBank1"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://ibok.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/ibok.06cd44.jpg" alt="Ibok"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.teknograd.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/teknograd.03c75e.png" alt="Teknograd"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.tekna.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/tekna.41a4f5.jpg" alt="Tekna"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.ntnu.edu/idi/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/ntnu_idi.5179a4.png" alt="NTNU institutt for datateknologi og informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.ntnu.edu/web/excited" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/excITEd.915706.png" alt="excited"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.mn.uio.no/ifi/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/uio_ifi.37ef13.png" alt="UIO institutt for informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.samsung.com/no/innovation/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/samsung.bec12f.png" alt="Samsung"/></a></div></div></header></div>
+  
+  <script src="/main.295399.js" async></script>  
+</body>
+</html>
