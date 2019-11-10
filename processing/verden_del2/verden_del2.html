@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title data-react-helmet="true">Verden - Del 2 | Kodeklubben</title>
+  <meta data-react-helmet="true" charset="utf-8"/><meta data-react-helmet="true" name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/><meta data-react-helmet="true" name="description" content="Denne oppgaven bygger på oppgaven med samme navn som ligger på introduksjonsnivå her i Processingoppgavene. Klikk her for å gå til introduksjonsoppgaven av verden."/>
+
+  <link rel="shortcut icon" href="/icons-bfd76/favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="/icons-bfd76/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/icons-bfd76/favicon-32x32.png"><link rel="manifest" href="/icons-bfd76/manifest.json"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="Lær Kidsa Koding"><link rel="apple-touch-icon" sizes="57x57" href="/icons-bfd76/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/icons-bfd76/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/icons-bfd76/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/icons-bfd76/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/icons-bfd76/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/icons-bfd76/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/icons-bfd76/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/icons-bfd76/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="167x167" href="/icons-bfd76/apple-touch-icon-167x167.png"><link rel="apple-touch-icon" sizes="180x180" href="/icons-bfd76/apple-touch-icon-180x180.png"><link rel="apple-touch-icon" sizes="1024x1024" href="/icons-bfd76/apple-touch-icon-1024x1024.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Lær Kidsa Koding"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/icons-bfd76/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/icons-bfd76/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/icons-bfd76/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/icons-bfd76/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/icons-bfd76/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-1536x2008.png"><meta name="msapplication-TileColor" content="#fff"><meta name="msapplication-TileImage" content="/icons-bfd76/mstile-144x144.png"><meta name="msapplication-config" content="/icons-bfd76/browserconfig.xml">
+
+  
+
+  <style id='jss-server-side'>.MuiToolbar-root {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.MuiToolbar-gutters {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiToolbar-regular {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+  .MuiToolbar-dense {
+    min-height: 48px;
+  }
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: bolder;
+}
+body {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  background-color: #fafafa;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #fafafa;
+}
+  .MuiPaper-root {
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #fff;
+  }
+  .MuiPaper-rounded {
+    border-radius: 4px;
+  }
+  .MuiPaper-elevation0 {
+    box-shadow: none;
+  }
+  .MuiPaper-elevation1 {
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation2 {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation3 {
+    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation4 {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation5 {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation6 {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation7 {
+    box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation8 {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation9 {
+    box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation10 {
+    box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation11 {
+    box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation12 {
+    box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation13 {
+    box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation14 {
+    box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation15 {
+    box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation16 {
+    box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation17 {
+    box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation18 {
+    box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation19 {
+    box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation20 {
+    box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation21 {
+    box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation22 {
+    box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation23 {
+    box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation24 {
+    box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+  }
+  .MuiAppBar-root {
+    width: 100%;
+    display: flex;
+    z-index: 1100;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .MuiAppBar-positionFixed {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: fixed;
+  }
+  .MuiAppBar-positionAbsolute {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+  }
+  .MuiAppBar-positionSticky {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: sticky;
+  }
+  .MuiAppBar-positionStatic {
+    position: static;
+    transform: translateZ(0);
+  }
+  .MuiAppBar-positionRelative {
+    position: relative;
+  }
+  .MuiAppBar-colorDefault {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #f5f5f5;
+  }
+  .MuiAppBar-colorPrimary {
+    color: #fff;
+    background-color: #3f51b5;
+  }
+  .MuiAppBar-colorSecondary {
+    color: #fff;
+    background-color: #f50057;
+  }
+  .MuiDrawer-docked {
+    flex: 0 0 auto;
+  }
+  .MuiDrawer-paper {
+    top: 0;
+    flex: 1 0 auto;
+    height: 100%;
+    display: flex;
+    outline: 0;
+    z-index: 1200;
+    position: fixed;
+    overflow-y: auto;
+    flex-direction: column;
+    -webkit-overflow-scrolling: touch;
+  }
+  .MuiDrawer-paperAnchorLeft {
+    left: 0;
+    right: auto;
+  }
+  .MuiDrawer-paperAnchorRight {
+    left: auto;
+    right: 0;
+  }
+  .MuiDrawer-paperAnchorTop {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    height: auto;
+    max-height: 100%;
+  }
+  .MuiDrawer-paperAnchorBottom {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    max-height: 100%;
+  }
+  .MuiDrawer-paperAnchorDockedLeft {
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedTop {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedRight {
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedBottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiButtonBase-root {
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiButtonBase-root::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiButtonBase-root.Mui-disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+  .MuiIconButton-root {
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+  }
+  .MuiIconButton-root:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .MuiIconButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+  }
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-edgeStart {
+    margin-left: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+    margin-left: -3px;
+  }
+  .MuiIconButton-edgeEnd {
+    margin-right: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+    margin-right: -3px;
+  }
+  .MuiIconButton-colorInherit {
+    color: inherit;
+  }
+  .MuiIconButton-colorPrimary {
+    color: #3f51b5;
+  }
+  .MuiIconButton-colorPrimary:hover {
+    background-color: rgba(63, 81, 181, 0.08);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-colorSecondary {
+    color: #f50057;
+  }
+  .MuiIconButton-colorSecondary:hover {
+    background-color: rgba(245, 0, 87, 0.08);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-sizeSmall {
+    padding: 3px;
+    font-size: 1.125rem;
+  }
+  .MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiTypography-root {
+    margin: 0;
+  }
+  .MuiTypography-body2 {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+  }
+  .MuiTypography-caption {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+  }
+  .MuiTypography-button {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-h1 {
+    font-size: 6rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.01562em;
+  }
+  .MuiTypography-h2 {
+    font-size: 3.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.00833em;
+  }
+  .MuiTypography-h3 {
+    font-size: 3rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.04;
+    letter-spacing: 0em;
+  }
+  .MuiTypography-h4 {
+    font-size: 2.125rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.00735em;
+  }
+  .MuiTypography-h5 {
+    font-size: 1.5rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 0em;
+  }
+  .MuiTypography-h6 {
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+  }
+  .MuiTypography-subtitle1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.00938em;
+  }
+  .MuiTypography-subtitle2 {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.57;
+    letter-spacing: 0.00714em;
+  }
+  .MuiTypography-overline {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 2.66;
+    letter-spacing: 0.08333em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-srOnly {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .MuiTypography-alignLeft {
+    text-align: left;
+  }
+  .MuiTypography-alignCenter {
+    text-align: center;
+  }
+  .MuiTypography-alignRight {
+    text-align: right;
+  }
+  .MuiTypography-alignJustify {
+    text-align: justify;
+  }
+  .MuiTypography-noWrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiTypography-gutterBottom {
+    margin-bottom: 0.35em;
+  }
+  .MuiTypography-paragraph {
+    margin-bottom: 16px;
+  }
+  .MuiTypography-colorInherit {
+    color: inherit;
+  }
+  .MuiTypography-colorPrimary {
+    color: #3f51b5;
+  }
+  .MuiTypography-colorSecondary {
+    color: #f50057;
+  }
+  .MuiTypography-colorTextPrimary {
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .MuiTypography-colorTextSecondary {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiTypography-colorError {
+    color: #f44336;
+  }
+  .MuiTypography-displayInline {
+    display: inline;
+  }
+  .MuiTypography-displayBlock {
+    display: block;
+  }
+  .MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  .MuiSvgIcon-colorPrimary {
+    color: #3f51b5;
+  }
+  .MuiSvgIcon-colorSecondary {
+    color: #f50057;
+  }
+  .MuiSvgIcon-colorAction {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiSvgIcon-colorError {
+    color: #f44336;
+  }
+  .MuiSvgIcon-colorDisabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+  .MuiSvgIcon-fontSizeInherit {
+    font-size: inherit;
+  }
+  .MuiSvgIcon-fontSizeSmall {
+    font-size: 1.25rem;
+  }
+  .MuiSvgIcon-fontSizeLarge {
+    font-size: 2.1875rem;
+  }
+  .jss98 {
+    display: flex;
+    margin-left: 8px;
+    user-select: none;
+    margin-right: 8px;
+  }
+  .MuiBreadcrumbs-ol {
+    margin: 0;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .MuiBreadcrumbs-li {
+    list-style: none;
+  }
+  .MuiGrid-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .MuiGrid-item {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .MuiGrid-zeroMinWidth {
+    min-width: 0;
+  }
+  .MuiGrid-direction-xs-column {
+    flex-direction: column;
+  }
+  .MuiGrid-direction-xs-column-reverse {
+    flex-direction: column-reverse;
+  }
+  .MuiGrid-direction-xs-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .MuiGrid-wrap-xs-nowrap {
+    flex-wrap: nowrap;
+  }
+  .MuiGrid-wrap-xs-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+  .MuiGrid-align-items-xs-center {
+    align-items: center;
+  }
+  .MuiGrid-align-items-xs-flex-start {
+    align-items: flex-start;
+  }
+  .MuiGrid-align-items-xs-flex-end {
+    align-items: flex-end;
+  }
+  .MuiGrid-align-items-xs-baseline {
+    align-items: baseline;
+  }
+  .MuiGrid-align-content-xs-center {
+    align-content: center;
+  }
+  .MuiGrid-align-content-xs-flex-start {
+    align-content: flex-start;
+  }
+  .MuiGrid-align-content-xs-flex-end {
+    align-content: flex-end;
+  }
+  .MuiGrid-align-content-xs-space-between {
+    align-content: space-between;
+  }
+  .MuiGrid-align-content-xs-space-around {
+    align-content: space-around;
+  }
+  .MuiGrid-justify-xs-center {
+    justify-content: center;
+  }
+  .MuiGrid-justify-xs-flex-end {
+    justify-content: flex-end;
+  }
+  .MuiGrid-justify-xs-space-between {
+    justify-content: space-between;
+  }
+  .MuiGrid-justify-xs-space-around {
+    justify-content: space-around;
+  }
+  .MuiGrid-justify-xs-space-evenly {
+    justify-content: space-evenly;
+  }
+  .MuiGrid-spacing-xs-1 {
+    width: calc(100% + 8px);
+    margin: -4px;
+  }
+  .MuiGrid-spacing-xs-1 > .MuiGrid-item {
+    padding: 4px;
+  }
+  .MuiGrid-spacing-xs-2 {
+    width: calc(100% + 16px);
+    margin: -8px;
+  }
+  .MuiGrid-spacing-xs-2 > .MuiGrid-item {
+    padding: 8px;
+  }
+  .MuiGrid-spacing-xs-3 {
+    width: calc(100% + 24px);
+    margin: -12px;
+  }
+  .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+    padding: 12px;
+  }
+  .MuiGrid-spacing-xs-4 {
+    width: calc(100% + 32px);
+    margin: -16px;
+  }
+  .MuiGrid-spacing-xs-4 > .MuiGrid-item {
+    padding: 16px;
+  }
+  .MuiGrid-spacing-xs-5 {
+    width: calc(100% + 40px);
+    margin: -20px;
+  }
+  .MuiGrid-spacing-xs-5 > .MuiGrid-item {
+    padding: 20px;
+  }
+  .MuiGrid-spacing-xs-6 {
+    width: calc(100% + 48px);
+    margin: -24px;
+  }
+  .MuiGrid-spacing-xs-6 > .MuiGrid-item {
+    padding: 24px;
+  }
+  .MuiGrid-spacing-xs-7 {
+    width: calc(100% + 56px);
+    margin: -28px;
+  }
+  .MuiGrid-spacing-xs-7 > .MuiGrid-item {
+    padding: 28px;
+  }
+  .MuiGrid-spacing-xs-8 {
+    width: calc(100% + 64px);
+    margin: -32px;
+  }
+  .MuiGrid-spacing-xs-8 > .MuiGrid-item {
+    padding: 32px;
+  }
+  .MuiGrid-spacing-xs-9 {
+    width: calc(100% + 72px);
+    margin: -36px;
+  }
+  .MuiGrid-spacing-xs-9 > .MuiGrid-item {
+    padding: 36px;
+  }
+  .MuiGrid-spacing-xs-10 {
+    width: calc(100% + 80px);
+    margin: -40px;
+  }
+  .MuiGrid-spacing-xs-10 > .MuiGrid-item {
+    padding: 40px;
+  }
+  .MuiGrid-grid-xs-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xs-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xs-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xs-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xs-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xs-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xs-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xs-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xs-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xs-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xs-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xs-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xs-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xs-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+@media (min-width:600px) {
+  .MuiGrid-grid-sm-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-sm-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-sm-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-sm-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-sm-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-sm-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-sm-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-sm-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-sm-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-sm-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-sm-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-sm-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-sm-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-sm-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:960px) {
+  .MuiGrid-grid-md-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-md-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-md-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-md-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-md-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-md-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-md-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-md-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-md-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-md-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-md-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-md-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-md-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-md-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1280px) {
+  .MuiGrid-grid-lg-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-lg-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-lg-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-lg-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-lg-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-lg-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-lg-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-lg-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-lg-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-lg-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-lg-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-lg-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-lg-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-lg-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1920px) {
+  .MuiGrid-grid-xl-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xl-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xl-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xl-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xl-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xl-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xl-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xl-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xl-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xl-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xl-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xl-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xl-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xl-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+  .MuiLink-underlineNone {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover:hover {
+    text-decoration: underline;
+  }
+  .MuiLink-underlineAlways {
+    text-decoration: underline;
+  }
+  .MuiLink-button {
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiLink-button::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiLink-button.Mui-focusVisible {
+    outline: auto;
+  }
+  .MuiButton-root {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiButton-root:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .MuiButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-root:hover.Mui-disabled {
+    background-color: transparent;
+  }
+  .MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiButton-text {
+    padding: 6px 8px;
+  }
+  .MuiButton-textPrimary {
+    color: #3f51b5;
+  }
+  .MuiButton-textPrimary:hover {
+    background-color: rgba(63, 81, 181, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-textSecondary {
+    color: #f50057;
+  }
+  .MuiButton-textSecondary:hover {
+    background-color: rgba(245, 0, 87, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlined {
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    padding: 5px 15px;
+  }
+  .MuiButton-outlined.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+  }
+  .MuiButton-outlinedPrimary {
+    color: #3f51b5;
+    border: 1px solid rgba(63, 81, 181, 0.5);
+  }
+  .MuiButton-outlinedPrimary:hover {
+    border: 1px solid #3f51b5;
+    background-color: rgba(63, 81, 181, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlinedSecondary {
+    color: #f50057;
+    border: 1px solid rgba(245, 0, 87, 0.5);
+  }
+  .MuiButton-outlinedSecondary:hover {
+    border: 1px solid #f50057;
+    background-color: rgba(245, 0, 87, 0.08);
+  }
+  .MuiButton-outlinedSecondary.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-contained {
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+  .MuiButton-contained:hover {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+    background-color: #d5d5d5;
+  }
+  .MuiButton-contained.Mui-focusVisible {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained:active {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+  .MuiButton-contained:hover.Mui-disabled {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+  .MuiButton-containedPrimary {
+    color: #fff;
+    background-color: #3f51b5;
+  }
+  .MuiButton-containedPrimary:hover {
+    background-color: #303f9f;
+  }
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #3f51b5;
+  }
+}
+  .MuiButton-containedSecondary {
+    color: #fff;
+    background-color: #f50057;
+  }
+  .MuiButton-containedSecondary:hover {
+    background-color: #c51162;
+  }
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #f50057;
+  }
+}
+  .MuiButton-colorInherit {
+    color: inherit;
+    border-color: currentColor;
+  }
+  .MuiButton-textSizeSmall {
+    padding: 4px 5px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-textSizeLarge {
+    padding: 8px 11px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-outlinedSizeSmall {
+    padding: 3px 9px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-outlinedSizeLarge {
+    padding: 7px 21px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-containedSizeSmall {
+    padding: 4px 10px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-containedSizeLarge {
+    padding: 8px 22px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-fullWidth {
+    width: 100%;
+  }
+  .MuiButton-startIcon {
+    display: inherit;
+    margin-left: -4px;
+    margin-right: 8px;
+  }
+  .MuiButton-startIcon.MuiButton-iconSizeSmall {
+    margin-left: -2px;
+  }
+  .MuiButton-endIcon {
+    display: inherit;
+    margin-left: 8px;
+    margin-right: -4px;
+  }
+  .MuiButton-endIcon.MuiButton-iconSizeSmall {
+    margin-right: -2px;
+  }
+  .MuiButton-iconSizeSmall > *:first-child {
+    font-size: 18px;
+  }
+  .MuiButton-iconSizeMedium > *:first-child {
+    font-size: 20px;
+  }
+  .MuiButton-iconSizeLarge > *:first-child {
+    font-size: 22px;
+  }
+@media print {
+  .jss3 {
+    display: none;
+  }
+}
+  .jss4 {
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+  .jss5 {
+    display: flex;
+  }
+  .jss6 {
+    width: 20px;
+    height: 20px;
+  }
+  .jss7 {
+    width: 16px;
+    height: auto;
+    align-self: center;
+    margin-right: 8px;
+  }
+  .jss8 {
+    margin-left: 8px;
+  }
+  .jss266 {
+    margin-top: 40px;
+  }
+@media print {
+  .jss266 {
+    display: none;
+  }
+}
+  .jss267 {
+    width: auto;
+    height: 50px;
+    margin: 20px 7px 10px;
+  }
+@media print {
+  .jss1 {
+    display: none;
+  }
+}
+  .jss2 {
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .MuiContainer-root {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiContainer-root {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-root {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media (min-width:600px) {
+  .MuiContainer-fixed {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-fixed {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-fixed {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-fixed {
+    max-width: 1920px;
+  }
+}
+@media (min-width:0px) {
+  .MuiContainer-maxWidthXs {
+    max-width: 444px;
+  }
+}
+@media (min-width:600px) {
+  .MuiContainer-maxWidthSm {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-maxWidthMd {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-maxWidthLg {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-maxWidthXl {
+    max-width: 1920px;
+  }
+}
+
+  .jss235 {
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+@media print {
+  .jss235 {
+    display: none;
+  }
+}
+  .jss264 {
+    padding: 16px;
+    max-width: 700px;
+    margin-top: 40px;
+  }
+@media print {
+  .jss264 {
+    display: none;
+  }
+}
+  .jss265 {
+    margin: 8px;
+  }
+  .jss234 {
+    display: none;
+    font-size: 0.75em;
+    font-style: italic;
+  }
+@media print {
+  .jss234 {
+    display: block;
+  }
+}
+  .jss226 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }</style></head>
+<body>
+  <div id="app"><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionFixed jss3 mui-fixed"><div class="MuiToolbar-root MuiToolbar-regular jss4 MuiToolbar-gutters"><nav class="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"><ol class="MuiBreadcrumbs-ol"><li class="MuiBreadcrumbs-li"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-colorTextPrimary" aria-label="Hjem" href="/"><svg class="MuiSvgIcon-root jss6" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></a></li><li aria-hidden="true" class="jss98 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone jss5 MuiTypography-colorTextPrimary" href="/processing"><img class="jss7" src="/_/oppgaver/src/processing/logo-black.ffde4d.png" alt="Bilde av Processing"/><p class="MuiTypography-root MuiTypography-body1">Processing</p></a></li><li aria-hidden="true" class="jss98 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone jss5 MuiTypography-colorTextPrimary" aria-label="Verden - Del 2" href="/processing/verden_del2/verden_del2"><div class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 7.77L18.39 18H5.61L12 7.77M12 4L2 20h20L12 4z"></path></svg><p class="MuiTypography-root jss8 MuiTypography-body1">Verden - Del 2</p></div></a></li></ol></nav><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></header><div class="MuiToolbar-root MuiToolbar-regular jss1 MuiToolbar-gutters"></div><div class="jss2"><div class="MuiContainer-root jss226 MuiContainer-maxWidthMd"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 7.77L18.39 18H5.61L12 7.77M12 4L2 20h20L12 4z"></path></svg></div><div class="MuiGrid-root MuiGrid-item"><h1 class="MuiTypography-root MuiTypography-h3">Verden - Del 2</h1></div></div><p><i>Skrevet av:<!-- --> <span>Kine Gjerstad Eide</span></i></p><div class="jss234"><div>Kurs:<!-- --> <!-- -->Processing</div><div>Tema: Tekstbasert</div><div>Fag: Matematikk, Programmering, Samfunnsfag</div><div>Klassetrinn: 8.-10. klasse, Videregående skole</div></div><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss235" tabindex="0" role="button" aria-disabled="false" href="http://pdf-ace.com/pdfme?print_media=1" download=""><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg></span>Last ned PDF</span></a><div><section class="intro"> <h1 class="intro">Intro</h1> <p>Denne oppgaven bygger på oppgaven med samme navn som ligger på introduksjonsnivå her i Processingoppgavene. <a href="https://oppgaver.kidsakoder.no/processing/verden_del1/verden_del1" target="blank">Klikk her for å gå til introduksjonsoppgaven av verden</a>.</p> <p>I denne oppgaven skal vi fortsette med verdenspillet! Nå skal vi komme så langt på spillet at det skal dukke opp navnet på en verdensdel i vinduet, og så er det om å gjøre å trykke på verdensdelen.</p> <p>Slik skal oppgaven se ut når vi er ferdig å kode alt sammen:</p> <figure><img src="previewAvSpillet.png" alt="Bilde av det ferdige verdenskart spillet"></figure> </section> <section class="activity"> <h1 class="activity">Steg 0: Oppsummering fra introduksjonsoppgaven</h1> <p>Her er koden vi gjorde i introduksjonsoppgaven:</p> <pre><code class="processing"><span class="hljs-keyword">PImage</span> verdenskartet;
+
+<span class="hljs-keyword">void</span> <span class="hljs-title">setup</span>(){
+  <span class="hljs-built_in">size</span>(<span class="hljs-number">1200</span>, <span class="hljs-number">850</span>);
+  verdenskartet = <span class="hljs-built_in">loadImage</span>(<span class="hljs-string">"world-map.png"</span>);
+}
+<span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>(){
+  <span class="hljs-built_in">image</span>(verdenskartet, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+  <span class="hljs-built_in">text</span>(<span class="hljs-string">"X: "</span> + <span class="hljs-built_in">mouseX</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);  
+  <span class="hljs-built_in">text</span>(<span class="hljs-string">"Y: "</span> + <span class="hljs-built_in">mouseY</span>, <span class="hljs-number">50</span>, <span class="hljs-number">100</span>);
+
+  <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">365</span>){
+      <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">694</span>){
+          <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">455</span>){
+              <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">33</span>){
+                <span class="hljs-built_in">text</span>(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+              }
+          }
+      }
+  }
+}
+</code></pre> <p>Hittil har vi fått det til å dukke opp &quot;EUROPA&quot; på skjermen når musepekeren holdes over verdensdelen Europa på kartet.</p> <p>Dette ble gjort ved å først si at Europa er firkanta. Deretter ble koordinatene til musepekeren vist som tekst i vinduet og så holdt vi musepekeren nøyaktig på grensene som var tegna opp, slik at vi kunne se hva koordinatene var og bruke disse for å lage if-setninger til å sjekke med.</p> <p>Vi lagde en if-setning for hver side i firkanten som utgjorde grensa til Europa. Disse fant vi ut at måtte skrives inni hverandre slik at man sjekket om man var innenfor alle fire grensene samtidig.</p> <p>Under har vi laga ei sjekkliste, dersom du får til alle punktene i lista, så er det ikke noe problem for deg å gjøre resten av denne oppgaven. Dersom du synes sjekklista er vanskelig, så anbefaler vi at du forsøker deg på introduksjonsdelen av oppgaven før du går videre.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Skriv inn koden som ble gjort i introduksjonsdelen av oppgaven og få det til å kjøre.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Flytt teksten som viser koordinatene ned til høyre hjørne av skjermen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_2"><label for="cbx_2"> Få teksten &quot;EUROPA ER 10 180 000 KVADRATMETER&quot; til å vises på skjermen i stede for bare &quot;EUROPA&quot; når du holder musepekeren over Europa.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_3"><label for="cbx_3"> Bytt størrelsen på vinduet, slik at det når fra toppen til bunnen av skjermen din.</label></p> </li> </ul> <p>Fikk du til alle punktene? Still tilbake alt sammen før du går videre.</p> </section> </section> <section class="activity"> <h1 class="activity">Steg 1: Legg til Asia</h1> <p>Du lærte i introduksjonsdelen hvordan du la til Europa, så nå skal du få legge til Asia på samme måte. Vi har delt opp dette i mindre deler for deg. Under har vi laga ei sjekkliste som du må følge. Dersom noen av punktene er vanskelige, så husk at du kan sjekke med introduksjonsoppgaven.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Last ned dette bilde og få det til å vise i vinduet i stedet for det du har nå:</label></p> <figure><img src="mapAsia.png" alt="Bilde av kart med Europa og Asia markert"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Finn ut hvor grensene til Asia er og lagre dem som kommentarer i koden din. Kommentarer lages ved å sette to skråstreker først, slik som dette: <code>//</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Skriv <code>if</code>-setningen for den første grensa og sjekk at det fungerer.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Gjør et metodekall på <code>text();</code> inni <code>if</code>-setningen hvor den første parameteren er &quot;ASIA&quot;. De to neste parameterne kan være det samme som de to siste i metodekallet som får &quot;EUROPA&quot; til å vises på skjermen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Skriv <code>if</code>-setningen for den andre grensa og sjekk at det fungerer. Husk at alle <code>if</code>-setningene må stå inni hverandre.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Skriv <code>if</code>-setningen for den tredje grensa og sjekk at det fungerer.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_10"><label for="cbx_10"> Skriv <code>if</code>-setningen for den fjerde grensa og sjekk at det fungerer.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Bytt tilbake til bildet av verdenskartet uten firkanta grenser på.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_12"><label for="cbx_12"> Test at alt fungerer, nå skal &quot;ASIA&quot; vises i vinduet når du holder musepekeren over Asia, mens &quot;EUROPA&quot; skal vises i vinduet når du holder musepekeren over Europa.</label></p> </li> </ul> <p>Her er koden så langt.</p> <pre><code class="processing"><span class="hljs-keyword">PImage</span> verdenskartet;
+
+<span class="hljs-keyword">void</span> <span class="hljs-title">setup</span>(){
+  <span class="hljs-built_in">size</span>(<span class="hljs-number">1200</span>, <span class="hljs-number">850</span>);
+  verdenskartet = <span class="hljs-built_in">loadImage</span>(<span class="hljs-string">"world-map.png"</span>);
+}
+<span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>(){
+  <span class="hljs-built_in">image</span>(verdenskartet, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+  <span class="hljs-built_in">text</span>(<span class="hljs-string">"X: "</span> + <span class="hljs-built_in">mouseX</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);  
+  <span class="hljs-built_in">text</span>(<span class="hljs-string">"Y: "</span> + <span class="hljs-built_in">mouseY</span>, <span class="hljs-number">50</span>, <span class="hljs-number">100</span>);
+
+  <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">365</span>){
+      <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">694</span>){
+          <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">455</span>){
+              <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">33</span>){
+                <span class="hljs-built_in">text</span>(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+              }
+          }
+      }
+  }
+
+  <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">694</span>){
+      <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">1197</span>){
+          <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">537</span>){
+              <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">88</span>){
+                <span class="hljs-built_in">text</span>(<span class="hljs-string">"ASIA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+              }
+          }
+      }
+  }
+}
+</code></pre> </section> </section> <section class="activity"> <h1 class="activity">Steg 2: Slå sammen if-setninger</h1> <p>Nå som du har vært gjennom hvordan du setter opp <code>if</code>-setninger inne hverandre, så er det på tide å vise hvordan du kan slå <code>if</code>-setninger sammen. Når du if-setninger settes inni hverandre så kan det leses som dette:</p> <pre><code class="processing">Dersom musepekeren er innenfor venstre grense
+    og dersom musepekeren er innenfor høyre grense
+        og dersom musepekeren er innenfor nedre grense
+            og dersom musepekeren er innenfor øvre grense,
+                så skal vi vise <span class="hljs-string">"EUROPA"</span> på skjermen.
+</code></pre> <p>Gjør vi dette om til litt mer vanlig tale, så ville vi sagt:</p> <pre><code class="processing">Dersom musepekeren er innenfor venstre grense og musepekeren er innenfor høyre grense og musepekeren er innenfor nedre grense og musepekeren er innenfor øvre grense,
+    så skal vi vise <span class="hljs-string">"EUROPA"</span> på skjermen.
+</code></pre> <p>Dette har vi lov å gjøre når vi koder også. La oss bytte ut det vi har så langt med kode i setningen over, da får vi dette:</p> <pre><code class="processing"><span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">365</span> og <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">694</span> og <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">455</span> og <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">33</span>)]{
+    <span class="hljs-built_in">text</span>(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+}
+</code></pre> <p>Så langt har vi ikke lagt til noe ny kode. Vi har bare satt alle testene på samme linje med &quot;og&quot; mellom. Vi har ikke lov å bruke &quot;og&quot;, men vi har lov å bruke <code>&amp;&amp;</code> som betyr akkurat det samme. La oss sette inn <code>&amp;&amp;</code> der hvor vi har &quot;og&quot;, da får vi:</p> <pre><code class="processing"><span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">365</span> &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">694</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">455</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">33</span>)]{
+    <span class="hljs-built_in">text</span>(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+}
+</code></pre> <p>Dette blir en ganske lang <code>if</code>-setning som kanskje er litt vanskelig å lese, men det sparer mye plass i koden.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Gjør dette:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_13"><label for="cbx_13"> Dersom du ikke har gjort det allerede, så må du nå slå sammen de fire <code>if</code>-setningene som sjekker grensene til Europa til å være bare en <code>if</code>-setning.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_14"><label for="cbx_14"> Sjekk at koden fungerer.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_15"><label for="cbx_15"> Skriv om <code>if</code>-setningene for Asia, slik at du sjekker alle grensene i en <code>if</code>-setning.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_16"><label for="cbx_16"> Sjekk at koden fungerer.</label></p> </li> </ul> <p>Her er bilde av koden så langt.</p> <pre><code class="processing"><span class="hljs-keyword">PImage</span> verdenskartet;
+
+<span class="hljs-keyword">void</span> <span class="hljs-title">setup</span>(){
+  <span class="hljs-built_in">size</span>(<span class="hljs-number">1200</span>, <span class="hljs-number">850</span>);
+  verdenskartet = <span class="hljs-built_in">loadImage</span>(<span class="hljs-string">"world-map.png"</span>);
+}
+<span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>(){
+  <span class="hljs-built_in">image</span>(verdenskartet, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+  <span class="hljs-built_in">text</span>(<span class="hljs-string">"X: "</span> + <span class="hljs-built_in">mouseX</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);  
+  <span class="hljs-built_in">text</span>(<span class="hljs-string">"Y: "</span> + <span class="hljs-built_in">mouseY</span>, <span class="hljs-number">50</span>, <span class="hljs-number">100</span>);
+
+  <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">365</span> &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">694</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">455</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">33</span>){
+                <span class="hljs-built_in">text</span>(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+  }
+
+  <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">694</span>) &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">1197</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">537</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">88</span>){
+                <span class="hljs-built_in">text</span>(<span class="hljs-string">"ASIA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+  }
+}
+</code></pre> </section> </section> <section class="activity"> <h1 class="activity">Steg 3: Sjekk Afrika med to if-setninger</h1> <p>Nå skal vi legge til Afrika, dette skal gjøres i en <code>if</code>-setning. Nå kan du velge om du vil følge sjekklista under bilde for å sette opp koden som trengs, eller om du vil forsøke å skrive den alene. Her er bilde av grensa til Afrika:</p> <figure><img src="mapAfrika1.png" alt="Bilde av grensa til Afrika"></figure> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_17"><label for="cbx_17"> Bytt ut verdenskartbilde med bildet over.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_18"><label for="cbx_18"> Finn koordinatene på de fire grensene til Afrika og skriv dem inn som kommentarer i koden din.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_19"><label for="cbx_19"> Kall på <code>text();</code> og bruk &quot;AFRIKA&quot; som første parameter.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_20"><label for="cbx_20"> Skriv koden til den første grensa.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_21"><label for="cbx_21"> Sjekk at koden fungerer og at if-setningen gjør det den skal.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_22"><label for="cbx_22"> Skriv <code>&amp;&amp;</code> og legg til testen for den andre grensa til Afrika i samme <code>if</code>-setning, muntlig blir dette:</label></p> </li> </ul> <pre><code class="processing"><span class="hljs-keyword">if</span>(er musepekeren innenfor den første grensa &amp;&amp; er musepekeren innenfor den andre grensa){
+    vis teksten <span class="hljs-string">"AFRIKA"</span> i vinduet.
+}
+</code></pre> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_23"><label for="cbx_23"> Test at koden fungerer som den skal.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_24"><label for="cbx_24"> Skriv <code>&amp;&amp;</code> og legg til testen for den tredje grensa til Afrika i samme <code>if</code>-setning.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_25"><label for="cbx_25"> Test at dette fungerer som det skal.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_26"><label for="cbx_26"> Skriv <code>&amp;&amp;</code> og legg til testen for den fjerde grensa til Afrika i samme <code>if</code>-setning.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_27"><label for="cbx_27"> Test at koden fungerer og at &quot;AFRIKA&quot; vises i vinduet når du holder musepekeren over Afrika.</label></p> </li> </ul> <p>Nå som Afrika også fungerer, så skal vi legge til en liten rute til, fordi som du ser på kartet, så er ikke Madagaskar, Somalia, halve Etiopia og Djibouti tatt med i firkanten, så når vi holder musepekeren over disse landene, så kommer ikke &quot;AFRIKA&quot; opp på skjermen. Det må vi fikse.</p> <p>Vi har laga en ny firkant som bare inkluderer disse landene. Nå har du skrevet så mange <code>if</code>-setninger at denne tror vi du greier uten en sjekkliste. Dersom det er vanskelig, så er det bare å bruke sjekklista over, det er akkurat det samme som skal gjøres, bare med nye koordinater på grensene.</p> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Gjør dette:</h2> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_28"><label for="cbx_28"> Lag en ny <code>if</code>-setning som sjekker grensene til den nye firkanten. Her er bildet:</label></li> </ul> <figure><img src="mapAfrika.png" alt="Bilde av verdenskartet og Afrika"></figure> <p>Her er koden vår så langt. Nå begynner det å bli en del <code>if</code>-setninger!</p> <pre><code class="processing"><span class="hljs-keyword">PImage</span> verdenskartet;
+
+<span class="hljs-keyword">void</span> <span class="hljs-title">setup</span>(){
+  <span class="hljs-built_in">size</span>(<span class="hljs-number">1200</span>, <span class="hljs-number">850</span>);
+  verdenskartet = <span class="hljs-built_in">loadImage</span>(<span class="hljs-string">"world-map.png"</span>);
+}
+<span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>(){
+  <span class="hljs-built_in">image</span>(verdenskartet, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+  <span class="hljs-built_in">text</span>(<span class="hljs-string">"X: "</span> + <span class="hljs-built_in">mouseX</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);  
+  <span class="hljs-built_in">text</span>(<span class="hljs-string">"Y: "</span> + <span class="hljs-built_in">mouseY</span>, <span class="hljs-number">50</span>, <span class="hljs-number">100</span>);
+
+  <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">365</span> &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">694</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">455</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">33</span>){
+                <span class="hljs-built_in">text</span>(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+  }
+
+  <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">694</span>) &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">1197</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">537</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">88</span>){
+                <span class="hljs-built_in">text</span>(<span class="hljs-string">"ASIA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+  }
+
+  <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">493</span>) &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">695</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">708</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">455</span>){
+                <span class="hljs-built_in">text</span>(<span class="hljs-string">"AFRIKA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+  }
+
+  <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">694</span>) &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">740</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">698</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">537</span>){
+                <span class="hljs-built_in">text</span>(<span class="hljs-string">"AFRIKA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+  }
+}
+</code></pre> </section> </section> <section class="activity"> <h1 class="activity">Steg 4: Lag en metode i steden for alle if-setningene</h1> <p>Nå skal vi gjøre koden vår enda mindre. Det er fordi vi skal legge til mange flere <code>if</code>-setninger og da vil vi skrive kode som er så enkel som mulig.</p> <p>Når du ser etter på <code>if</code>-setningene, så er de nesten helt like. Det er bare grenseverdiene som er forskjellige. Når vi oppdager at vi kommer til å måtte skrive mye kode som ligner veldig, så kan man ofte putte det som er likt over i en metode og så foreta metodekall i stedet for å skrive samme kode på nytt og på nytt.</p> <p><code>setup</code> og <code>draw</code> er metoder vi har skrevet, mens <code>text();</code> er en metode vi har kalt på. Når du trykker på play, så gjøres det automatisk et kall på <code>setup</code>, det skjer bare en gang. Deretter kalles <code>draw</code> på nytt og på nytt helt til programmet slås av.</p> <p>La oss skrive en ny metode, den plasseres unden <code>draw</code>. Vi har valgt å gi metoden navnet <code>sjekkVerdensdel</code>. Da blir det slik:</p> <pre><code class="processing"><span class="hljs-keyword">void</span> sjekkVerdensdel(){
+
+
+}
+</code></pre> <p>Inni krøllparentesene skal vi skrive den koden vår som blir gjentatt, altså de lange <code>if</code>-setningene.</p> <p>La oss starte med å putte inn en av if-setningene. Vi har valgt å kopiere inn <code>if</code>-setningen som sjekker om musepekeren er innenfor Europa sin grense, så nå ser metoden slik ut:</p> <pre><code class="processing"><span class="hljs-keyword">void</span> sjekkVerdensdel(){
+    <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">365</span> &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">694</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">455</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">33</span>)]{
+        <span class="hljs-built_in">text</span>(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+    }
+}
+</code></pre> <p>Vi har ikke lyst å skriv inn en <code>if</code>-setning for hver verdensdel i den nye metoden. For å bare ha en <code>if</code>-sentning, så bytter vi ut alle de tallene som er forskjellig fra verdensdel til verdensdel med variabler. Vi gir variabelnavn som er logiske, da er det lettere å lese koden senere. En variabel kan endres mens programmet kjører, men tall som er skrevet direkte inn kan ikke endres mens programmet kjører. I den første testen sjekker vi om musepekeren er innenfor den første grensa, altså den grensa som er til høyre. Vi har ikke lov å bruke <code>æ</code>, <code>ø</code> eller <code>å</code>, så da skriver vi <code>høyre</code> med <code>o</code>, altså <code>hoyreGrense</code>. Vi putter dette inn i stede for tallet <code>365</code> og får:</p> <pre><code class="processing"><span class="hljs-keyword">void</span> sjekkVerdensdel(){
+    <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; hoyreGrense &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">694</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">455</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">33</span>)]{
+        <span class="hljs-built_in">text</span>(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+    }
+}
+</code></pre> <p>Vi gjør det samme med de andre tre grensene også.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Gjør dette:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_29"><label for="cbx_29"> Finn passende navn til de andre grensene også og bytt ut tallene i <code>if</code>-setningen med de navna du har funnet.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_30"><label for="cbx_30"> Kjør programmet, hva skjer?</label></p> </li> </ul> <p>Nå fikk vi en feilmelding som ser slik ut:</p> <figure><img src="errorVariabel.png" alt="Bilde av en feilmelding i processing"></figure> <p>Programmet sier at <code>hoyreGrense</code> ikke kan bli en variabel. Det er fordi vi ikke har skrevet kode som forteller programmet at <code>hoyreGrense</code> er en variabel. Forløpig tror programmet at vi har gjort en skrivefeil. Programmet vet at vi skal sammenligne musepekeren sin koordinat med et eller annet tall, men akkurat nå er ikke <code>hoyreGrense</code> noe tall, det er bare noen bokstaver.</p> <p>Vi må gjøre om <code>hoyreGrense</code> til en variabel av typen <code>int</code>, det betyr heltall. Det heter å deklarere variabelen. Vi kan deklarere variabelen flere steder, inni den nye metoden, utenfor alle metodene, eller inni parentesene til metoden. Hvor vi velger å deklarere variabelen avhenger av hvordan vi skal bruke metoden.</p> <p>Ettersom vi ønsker å sjekke forskjellige grenser hver gang vi kaller metoden, så er det lurt å deklarere variabelen <code>hoyreGrense</code> inni parentesene til den nye metoden. Når deklarasjonen er plassert her, så må vi legge ved grenseverdien som parameter hver gang vi kaller på metoden.</p> <p>Metoden ser slik ut:</p> <pre><code class="processing"><span class="hljs-keyword">void</span> sjekkVerdensdel(<span class="hljs-built_in">int</span> hoyreGrense, <span class="hljs-built_in">int</span> ...., <span class="hljs-built_in">int</span> ...., <span class="hljs-built_in">int</span> .... ){
+    <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; hoyreGrense &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; .... &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; .... &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; ....)]{
+        <span class="hljs-built_in">text</span>(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+    }
+}
+</code></pre> <p>I stede for punktum så skal det være de navna du har valgt for de forskjellige grensene.</p> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Gjør dette:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_31"><label for="cbx_31"> Deklarer alle de fire variablene dine inni parentesen til den nye metoden din.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_32"><label for="cbx_32"> Sjekk om programmet kjører.</label></p> </li> </ul> <p>Nå er det en ting som mangler. Det er navnet på verdensdelen. Alle verdensdelene skal ikke hete &quot;EUROPA&quot;. Da må vi gjøre denne om til en <code>String</code>, det betyr en tekst.</p> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Gjør dette:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_33"><label for="cbx_33"> Bytt ut det første parameteret inni metodekallet på <code>text();</code> inni <code>if</code>-setningen som er inni den nye metoden og skriv heller <code>verdensdel</code> (du kan velge et annet navn enn <code>verdensdel</code>).</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_34"><label for="cbx_34"> Kjør programmet, hva skjer?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_35"><label for="cbx_35"> Deklarer <code>verdensdel</code> til å være en <code>String</code> inni parentesene til den nye metoden.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_36"><label for="cbx_36"> Kjør programmet, hva skjer?</label></p> </li> </ul> <p>Nå har vi laget en ny metode, men vi har ikke kalt på den nye metoden noe sted. Så forløpig så kjører programmet vårt en gang gjennom <code>setup</code> og deretter på nytt og på nytt gjennom <code>draw</code> uten å gå til den nye metoden.</p> <p>Her er koden så langt, husk at vi sikkert har valgt litt forskjellige variabelnavn for de forskjellige grensene. Så lenge programmet kjører er ikke det noe problem. Det kan være greit om deklarasjonene på de forskjellige grensene, samt navnet på verdensdelen ligger i samme rekkefølge, men det er bare for å gjøre det lettere å feilsøke i koden seinere.</p> <pre><code class="processing"><span class="hljs-keyword">PImage</span> verdenskartet;
+
+<span class="hljs-keyword">void</span> <span class="hljs-title">setup</span>(){
+  <span class="hljs-built_in">size</span>(<span class="hljs-number">1200</span>, <span class="hljs-number">850</span>);
+  verdenskartet = <span class="hljs-built_in">loadImage</span>(<span class="hljs-string">"world-map.png"</span>);
+}
+<span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>(){
+  <span class="hljs-built_in">image</span>(verdenskartet, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+  <span class="hljs-built_in">text</span>(<span class="hljs-string">"X: "</span> + <span class="hljs-built_in">mouseX</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);  
+  <span class="hljs-built_in">text</span>(<span class="hljs-string">"Y: "</span> + <span class="hljs-built_in">mouseY</span>, <span class="hljs-number">50</span>, <span class="hljs-number">100</span>);
+
+  <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">365</span> &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">694</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">455</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">33</span>){
+                <span class="hljs-built_in">text</span>(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+  }
+
+  <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">694</span>) &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">1197</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">537</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">88</span>){
+                <span class="hljs-built_in">text</span>(<span class="hljs-string">"ASIA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+  }
+
+  <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">493</span>) &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">695</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">708</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">455</span>){
+                <span class="hljs-built_in">text</span>(<span class="hljs-string">"AFRIKA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+  }
+
+  <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">694</span>) &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">740</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">698</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">537</span>){
+                <span class="hljs-built_in">text</span>(<span class="hljs-string">"AFRIKA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+  }
+}
+
+<span class="hljs-keyword">void</span> sjekkVerdensdel(<span class="hljs-keyword">String</span> verdensdel, <span class="hljs-built_in">int</span> hoyreGrense, <span class="hljs-built_in">int</span> venstreGrense,
+  <span class="hljs-built_in">int</span> nedreGrense, <span class="hljs-built_in">int</span> ovreGrense){
+    <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; hoyreGrense &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; venstreGrense &amp;&amp;
+      <span class="hljs-built_in">mouseY</span> &lt; nedreGrense &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; ovreGrense)]{
+        <span class="hljs-built_in">text</span>(verdensdel, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+    }
+}
+</code></pre> </section> </section> <section class="activity"> <h1 class="activity">Steg 5: Bruk den nye metoden</h1> <p>For å bruke den nye metoden må vi gjøre et metodekall på den. På samme måte som at vi har gjort et metodekall på <code>text();</code> og <code>size();</code>, så skal vi nå gjøre et metodekall på <code>sjekkVerdensdel();</code>. Dette gjør vi inni <code>draw</code>-metoden.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Gjør dette:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_37"><label for="cbx_37"> Gjør et metodekall på <code>sjekkVerdensdel();</code> inni <code>draw</code>-metoden.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_38"><label for="cbx_38"> Kjør koden, hva skjer, forstår du hva feilmeldingen betyr?</label></p> <figure><img src="errorParameter.png" alt="Bilde av en feilemlding for metoden sjekkVerdensdel"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_39"><label for="cbx_39"> Gjør metodekallet om til en kommentar ved å sette to skråstreker først på linja.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_40"><label for="cbx_40"> Ta bort parameterne inni ett av metodekallene på <code>text();</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_41"><label for="cbx_41"> Kjør programmet. Hva skjer, forstår du feilmeldingen?</label></p> <figure><img src="errortext.png" alt="Bilde av en feilemding for metoden text"></figure> </li> </ul> <p>Det mangler rett og slett parametre i metodekallene. For metodekallet på <code>text();</code> trengs det først en <code>char</code> og deretter to <code>float</code>. Det betyr først den teksten som skal vises i vinduet, deretter to tall som bestemmer hvor teksten skal vises.</p> <p>For metodekallet på <code>sjekkVerdensdel();</code> så trengs det først en <code>String</code>, som sier hvilken verdensdel vi sjekker om musepekeren er i, deretter fire <code>int</code>, som forteller hvor de fire grensene til verdensdelen er.</p> <p>Da må vi putte inn parametere i metodekallet.</p> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Gjør dette:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_42"><label for="cbx_42"> Sett inn igjen parameterne i metodekallet på <code>text();</code></label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_43"><label for="cbx_43"> Start med Europa. Den første parameteren skal da være <code>&quot;EUROPA&quot;</code>. Husk hermetegnene, ellers vet ikke programmet at det er en tekst. Skill hver av parameterne med komma. Den neste parameteren er den første grensa, altså 365. Så kommer den andre grensa, altså den på venstre side av firkanten vi har brukt, som er 694. Nå er det den nedre grensa sin tur, den fant vi ut var 455 og til slutt må vi ha den øvre grensa til Europa, som vi fant ut at var 33.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_44"><label for="cbx_44"> Kjør programmet, hva skjer?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_45"><label for="cbx_45"> Nå vil &quot;EUROPA&quot; vises på skjermen dobbelt opp, fordi nå sjekker vi om musepekeren er over Europa først i <code>if</code>-setningen inni <code>draw</code>-metoden og deretter i det nye metodekallet vårt. Ta derfor bort <code>if</code>-setningen som er skrevet inni <code>draw</code> og som sjekker Europa.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_46"><label for="cbx_46"> Kjør programmet på nytt, fungerer det fremdeles som det skal?</label></p> </li> </ul> <p>Her er bilde av koden, vi har bare tatt med metodene <code>draw</code> og <code>sjekkVerdensdel</code>, ettersom det bare er der det er gjort endringer. Det er viktig at du har fjernet riktig <code>if</code>-setning og at du har brukt riktige parametre inni metodekallet på <code>sjekkVerdensdel();</code>.</p> <pre><code class="processing"><span class="hljs-keyword">PImage</span> verdenskartet;
+
+<span class="hljs-keyword">void</span> <span class="hljs-title">setup</span>(){
+  <span class="hljs-built_in">size</span>(<span class="hljs-number">1200</span>, <span class="hljs-number">850</span>);
+  verdenskartet = <span class="hljs-built_in">loadImage</span>(<span class="hljs-string">"world-map.png"</span>);
+}
+<span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>(){
+  <span class="hljs-built_in">image</span>(verdenskartet, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+  <span class="hljs-built_in">text</span>(<span class="hljs-string">"X: "</span> + <span class="hljs-built_in">mouseX</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);  
+  <span class="hljs-built_in">text</span>(<span class="hljs-string">"Y: "</span> + <span class="hljs-built_in">mouseY</span>, <span class="hljs-number">50</span>, <span class="hljs-number">100</span>);
+
+  <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">694</span>) &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">1197</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">537</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">88</span>){
+                <span class="hljs-built_in">text</span>(<span class="hljs-string">"ASIA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+  }
+
+  <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">493</span>) &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">695</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">708</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">455</span>){
+                <span class="hljs-built_in">text</span>(<span class="hljs-string">"AFRIKA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+  }
+
+  <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; <span class="hljs-number">694</span>) &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; <span class="hljs-number">740</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &lt; <span class="hljs-number">698</span> &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; <span class="hljs-number">537</span>){
+                <span class="hljs-built_in">text</span>(<span class="hljs-string">"AFRIKA"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+  }
+
+  sjekkVerdensdel(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">365</span>, <span class="hljs-number">694</span>, <span class="hljs-number">455</span>, <span class="hljs-number">33</span>);
+}
+
+<span class="hljs-keyword">void</span> sjekkVerdensdel(<span class="hljs-keyword">String</span> verdensdel, <span class="hljs-built_in">int</span> hoyreGrense, <span class="hljs-built_in">int</span> venstreGrense,
+  <span class="hljs-built_in">int</span> nedreGrense, <span class="hljs-built_in">int</span> ovreGrense){
+    <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; hoyreGrense &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; venstreGrense &amp;&amp;
+      <span class="hljs-built_in">mouseY</span> &lt; nedreGrense &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; ovreGrense)]{
+        <span class="hljs-built_in">text</span>(verdensdel, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+    }
+}
+</code></pre> </section> </section> <section class="activity"> <h1 class="activity">Steg 6: Bruk <code>sjekkVerdensdel</code>-metoden til alle verdensdelene</h1> <p>Nå skal du få bruke metoden <code>sjekkVerdensdel();</code> til å sjekke Asia og Afrika. Siden du allerede har funnet ut hva koordinatene er akkurat på grensa, så trenger du ikke å gjøre det på nytt.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Gjør dette:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_47"><label for="cbx_47"> Gjør et metodekall på <code>sjekkVerdensdel();</code> hvor de forskjellige parameterne er de du har funnet for Asia.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_48"><label for="cbx_48"> Fjern <code>if</code>-setningen som sjekker om musepekeren holder over Asia.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_49"><label for="cbx_49"> Kjør koden og sjekk at &quot;ASIA&quot; kommer opp når du holder musepekeren innen for grensene til Asia.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_50"><label for="cbx_50"> Gjør to metodekall på <code>sjekkVerdensdel();</code> og få den til å sjekke om musepekeren er innenfor Afrika.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_51"><label for="cbx_51"> Fjern de to <code>if</code>-setningene som sjekker om musepekeren er innenfor Afrika.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_52"><label for="cbx_52"> Sjekk at koden fungerer.</label></p> </li> </ul> <p>Her er koden vår så langt.</p> <figure><img src="alleVerdensdelene.png" alt="Bilde av koden som sjekker alle verdensdelene"></figure> <p>Nå må vi legge til de siste verdensdelene. Her har vi et kart hvor vi har vist alle sammen. Nå skal vi gjøre metodekall på <code>sjekkVerdensdel();</code> og legge til grenseverdiene til Nord-Amerika, Sør-Amerika og Oseania. Kartet vårt mangler verdensdelen Antarktis (Sydpolen), men det kan du ordne ved å velge et annet kart.</p> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Gjør dette:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_53"><label for="cbx_53"> Bytt ut slik at dette bildet vises:</label></p> <figure><img src="heleVerden.png" alt="Bilde av verdenskartet med verdensdelene markert"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_54"><label for="cbx_54"> Gjør et metodekall på <code>sjekkVerdensdel();</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_55"><label for="cbx_55"> Sett inn den første parameteren til metoden, som er <code>&quot;OSEANIA&quot;</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_56"><label for="cbx_56"> Finn grenseverdiene til Oseania og skriv disse rett inn som parameter i metodekallet i stedet for å skrive dem som kommentarer i koden først. Start med den venstre grensa, så den høyre, deretter den nedre grensa og til slutt den øvre.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_57"><label for="cbx_57"> Sjekk at koden fungerer. Nå skal &quot;OSEANIA&quot; vises på skjermen når du holder musepekeren over Oseania. Dersom det ikke fungerte som det skulle, så forsøk å skrive grensene til Oseania som kommentarer først, slik at du er helt sikker på hva som er hva av tallene. Sjekk også at rekkefølgen på parameterne er riktig.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_58"><label for="cbx_58"> Gjør et nytt metodekall på <code>sjekkVerdensdel();</code> og putt inn parameterne for Nord-Amerika. Siden du akkurat har gjort det for Oseania, så er det bare å gjøre det samme her.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_59"><label for="cbx_59"> Test at koden fungerer, nå skal alle verdensdelene bortsett fra Sør-Amerika dukke opp på skjermen når du holder musepekeren over dem.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_60"><label for="cbx_60"> Skriv kode slik at Sør-Amerika også vises på skjermen når du holder musepekeren over verdensdelen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_61"><label for="cbx_61"> Test at koden fungerer.</label></p> </li> </ul> <p>Her er koden vår så langt.</p> <pre><code class="processing"><span class="hljs-keyword">PImage</span> verdenskartet;
+
+<span class="hljs-keyword">void</span> <span class="hljs-title">setup</span>(){
+  <span class="hljs-built_in">size</span>(<span class="hljs-number">1200</span>, <span class="hljs-number">850</span>);
+  verdenskartet = <span class="hljs-built_in">loadImage</span>(<span class="hljs-string">"world-map.png"</span>);
+}
+<span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>(){
+  <span class="hljs-built_in">image</span>(verdenskartet, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+  <span class="hljs-built_in">text</span>(<span class="hljs-string">"X: "</span> + <span class="hljs-built_in">mouseX</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);  
+  <span class="hljs-built_in">text</span>(<span class="hljs-string">"Y: "</span> + <span class="hljs-built_in">mouseY</span>, <span class="hljs-number">50</span>, <span class="hljs-number">100</span>);
+
+  sjekkVerdensdel(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">365</span>, <span class="hljs-number">694</span>, <span class="hljs-number">455</span>, <span class="hljs-number">33</span>);
+
+  sjekkVerdensdel(<span class="hljs-string">"ASIA"</span>, <span class="hljs-number">694</span>, <span class="hljs-number">1197</span>, <span class="hljs-number">537</span>, <span class="hljs-number">88</span>);
+
+  sjekkVerdensdel(<span class="hljs-string">"AFRIKA"</span>, <span class="hljs-number">493</span>, <span class="hljs-number">695</span>, <span class="hljs-number">708</span>, <span class="hljs-number">455</span>);
+
+  sjekkVerdensdel(<span class="hljs-string">"AFRIKA"</span>, <span class="hljs-number">694</span>, <span class="hljs-number">740</span>, <span class="hljs-number">698</span>, <span class="hljs-number">537</span>);
+
+  sjekkVerdensdel(<span class="hljs-string">"OSEANIA"</span>, <span class="hljs-number">874</span>, <span class="hljs-number">1194</span>, <span class="hljs-number">780</span>, <span class="hljs-number">537</span>);
+
+  sjekkVerdensdel(<span class="hljs-string">"NORD-AMERIKA"</span>, <span class="hljs-number">2</span>, <span class="hljs-number">365</span>, <span class="hljs-number">528</span>, <span class="hljs-number">36</span>);
+
+  sjekkVerdensdel(<span class="hljs-string">"SØR-AMERIKA"</span>, <span class="hljs-number">238</span>, <span class="hljs-number">449</span>, <span class="hljs-number">810</span>, <span class="hljs-number">528</span>);
+}
+
+<span class="hljs-keyword">void</span> sjekkVerdensdel(<span class="hljs-keyword">String</span> verdensdel, <span class="hljs-built_in">int</span> hoyreGrense, <span class="hljs-built_in">int</span> venstreGrense,
+  <span class="hljs-built_in">int</span> nedreGrense, <span class="hljs-built_in">int</span> ovreGrense){
+    <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; hoyreGrense &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; venstreGrense &amp;&amp;
+      <span class="hljs-built_in">mouseY</span> &lt; nedreGrense &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; ovreGrense)]{
+        <span class="hljs-built_in">text</span>(verdensdel, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+    }
+}
+</code></pre> </section> </section> <section class="activity"> <h1 class="activity">Steg 7: Trekk en tilfeldig verdensdel</h1> <p>Nå har vi fått alle verdensdelene til å vises når vi holder musepekeren over dem, da er det på tide å få dette til å bli mer som et spill. Vi ønsker at det skal dukke opp navnet på en tilfeldig verdensdel på skjermen og så skal vi få poeng dersom vi greier å trykke på riktig verdensdel.</p> <p>Det vi trenger for å få dette til å skje, er en liste med alle verdensdelene og deretter noe kode for å trekke tilfeldig fra lista.</p> <p>Vi starter med lista. Denne skal inneholde ordene &quot;AFRIKA&quot;, &quot;ASIA&quot;, &quot;EUROPA&quot;, &quot;SØR-AMERIKA&quot;, &quot;NORD-AMERIKA&quot; og &quot;OSEANIA&quot;. Dette er tekst, så da bruker vi en liste for å lage tekst. Da vi oppretta metoden <code>sjekkVerdensdel</code>, så brukte vi <code>String</code> inni parentesen for å ta i mot en tekst, men dette var bare ett ord, eller en tekst. Nå trenger vi noe som kan inneholde mange separate tekster. Det er ganske enkelt, alt vi trenger å gjøre er å sette <code>[]</code> bak <code>String</code> og så vet programmet at det er en liste med tekster vi skal ha. Vi vet nøyaktig hva lista skal inneholde, så vi fyller den opp samtidig som vi deklarerer den.</p> <p>Vi deklarerer lista vår helt i toppen av programmet, utenfor alle metodene. Vi kan gi lista hvilket navn vi vil. Her har vi valgt <code>alleVerdensdelene</code>, så kodelinja ser slik ut:</p> <pre><code class="processing"> <span class="hljs-keyword">String</span>[] alleVerdensdelene = {<span class="hljs-string">"ASIA"</span>, <span class="hljs-string">"EUROPA"</span>, <span class="hljs-string">"NORD-AMERIKA"</span>, <span class="hljs-string">"SØR-AMERIKA"</span>, <span class="hljs-string">"OSEANIA"</span>, <span class="hljs-string">"AFRIKA"</span>};
+</code></pre> <p>Dette er alt vi trenger for å lage lista, denne typen liste heter <code>String array</code>.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Gjør dette:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_62"><label for="cbx_62"> Deklarer et <code>String array</code>. Du kan gi det hvilket navn du vil, men vi anbefaler <code>alleVerdensdelene</code>, slik at det er lettere å sammenligne din kode med vår.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_63"><label for="cbx_63"> Kjør programmet og se at det kjører som det skal.</label></p> </li> </ul> <p><code>random();</code> er en metode som vi kan kalle på for å få et tilfeldig tall. Til forskjell fra <code>text();</code> og <code>size();</code>, så gjør ikke <code>random();</code> noe med vinduet vårt, det som skjer når vi bruker random er at vi får tibake et tall og det tallet må vi putte i en variabel, slik at vi kan bruke det.</p> <p>La oss derfor først deklarere en variabel. <code>random();</code> gir oss et tall av typen <code>float</code>, derfor skulle egentlig variabelen vært av typen <code>float</code>, men når vi skal bruke tallet senere må det være av typen <code>int</code>. Derfor skal vi gjøre noe som heter å <code>caste</code> til <code>int</code>. Det betyr rett og slett bare at vi gjør verdien fra <code>random();</code> om til en <code>int</code>. Navnet til variabelen kan vi bestemme selv, her har vi valgt at den skal hete <code>tilfeldigTalll</code>. Denne deklarasjonen skal skje øverst i koden, enten rett over eller rett under deklarasjonen av lista. Kodelinja blir slik:</p> <pre><code class="processing"><span class="hljs-built_in">int</span> tilfeldigTalll;
+</code></pre> <p>Nå må vi få <code>tilfeldigTalll</code> til å inneholde et tilfeldig tall, det gjør vi inni <code>setup</code>-metoden. Vi starter med muntlig kode:</p> <pre><code class="processing">    variabelen tilfeldigTalll skal være ett tilfeldig tall;
+</code></pre> <p>Nå bruker vi <code>random();</code> med casting til <code>int</code>, da blir det:</p> <pre><code class="processing">    tilfeldigTalll = (<span class="hljs-built_in">int</span>)<span class="hljs-built_in">random</span>(<span class="hljs-number">6</span>);
+</code></pre> <p>Parameteret til <code>random();</code> forteller hvor hvilke tall det skal velges tilfeldig mellom. Siden vi har 6 forskjellige verdensdeler med i lista, så vil vi at <code>random();</code> skal gi oss ett tall mellom 0 og 6. Derfor skriver vi 6 som parameter.</p> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Gjør dette:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_64"><label for="cbx_64"> Deklarer en variabel av typen <code>int</code>, gi variabelen et passende navn, vi anbefaler <code>tilfeldigTalll</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_65"><label for="cbx_65"> Sjekk at koden kjører.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_66"><label for="cbx_66"> Sett variabelen til å bli et tilfeldig tall mellom 0 og 6, ved å gjøre et metodekall på <code>random();</code> og cast <code>int</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_67"><label for="cbx_67"> Sjekk at koden kjører.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_68"><label for="cbx_68"> Gjør et metodekall på <code>text();</code> der første parameter er: <code>&quot;Variabelen tilfeldigTalll er: &quot; + tilfeldigTalll</code>. De to neste parameterne bestemmer du selv. Nå skal vi bare sjekke hvilke tall <code>tilfeldigTalll</code> er blitt til.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_69"><label for="cbx_69"> Kjør programmet noen ganger og sjekk at det variabelen <code>tilfeldigTalll</code> blir forskjellige tall.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_70"><label for="cbx_70"> Gjør et nytt metodekall på <code>text();</code> der det første parameteret er: <code>&quot;Trykk på: &quot; + alleVerdensdelene[tilfeldigTalll]</code>. De to neste parameterne bestemmer du selv. <code>alleVerdensdelene</code> er lista med verdensdeler, så det vi gjør her er å si at vi skal vise verdensdelen som er på plassen til det tallet som variabelen <code>tilfeldigTalll</code> inneholder.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_71"><label for="cbx_71"> Sjekk at koden kjører. Start programmet flere ganger og sjekka at forskjellige verdensdeler blir valgt.</label></p> </li> </ul> <p>Når vi skal velge noe fra et String array, så må vi skrive navnet på arrayet, så <code>[]</code>. Alt som ligger i lista er nummerert i den rekkefølgen vi har skrevet lista. Inni <code>[]</code> skriver vi nummeret på den tingen i lista vi vil ha, dette nummeret må være av typen <code>int</code>. Dette er grunnen til at vi caster til <code>int</code> når vi gjør metodekall på <code>random();</code>. Sjekk at tallene stemmer ved å sammenligne tallet som <code>tilfeldigTalll</code> er med hvilken plass i lista verdensdelen som vises på skjermen er.</p> <p>Før vi går videre er det på tide å fjerne litt unødvendig kode.</p> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Gjør dette:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_72"><label for="cbx_72"> Fjern de to metodekallene på <code>text();</code> som viser oss hva musepekerens X og Y koordinat er.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_73"><label for="cbx_73"> Fjern metodekallet på <code>text();</code> som vi har skrevet inni <code>if</code>-setningen inni <code>sjekkVerdensdeler</code>-metoden. I neste steg putter vi inn en helt annen kode her.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_74"><label for="cbx_74"> Fjern metodekallet på <code>text()</code> som viser hvilket tall <code>tilfeldigTalll</code> er.</label></p> </li> </ul> <p>Her er koden så langt.</p> <pre><code class="processing"><span class="hljs-keyword">PImage</span> verdenskartet;
+<span class="hljs-keyword">String</span>[] alleVerdensdelene = {<span class="hljs-string">"ASIA"</span>, <span class="hljs-string">"EUROPA"</span>, <span class="hljs-string">"NORD-AMERIKA"</span>,
+  <span class="hljs-string">"SØR-AMERIKA"</span>, <span class="hljs-string">"OSEANIA"</span>, <span class="hljs-string">"AFRIKA"</span>};
+<span class="hljs-built_in">int</span> tilfeldigTall;
+
+<span class="hljs-keyword">void</span> <span class="hljs-title">setup</span>(){
+  <span class="hljs-built_in">size</span>(<span class="hljs-number">1200</span>, <span class="hljs-number">850</span>);
+  verdenskartet = <span class="hljs-built_in">loadImage</span>(<span class="hljs-string">"world-map.png"</span>);
+  tilfeldigTall = (<span class="hljs-built_in">int</span>)<span class="hljs-built_in">random</span>(<span class="hljs-number">6</span>);
+}
+<span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>(){
+  <span class="hljs-built_in">image</span>(verdenskartet, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+  <span class="hljs-built_in">text</span>(<span class="hljs-string">"Trykk på: "</span> + alleVerdensdelene[tilfeldigTall], <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);  
+
+  sjekkVerdensdel(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">365</span>, <span class="hljs-number">694</span>, <span class="hljs-number">455</span>, <span class="hljs-number">33</span>);
+  sjekkVerdensdel(<span class="hljs-string">"ASIA"</span>, <span class="hljs-number">694</span>, <span class="hljs-number">1197</span>, <span class="hljs-number">537</span>, <span class="hljs-number">88</span>);
+  sjekkVerdensdel(<span class="hljs-string">"AFRIKA"</span>, <span class="hljs-number">493</span>, <span class="hljs-number">695</span>, <span class="hljs-number">708</span>, <span class="hljs-number">455</span>);
+  sjekkVerdensdel(<span class="hljs-string">"AFRIKA"</span>, <span class="hljs-number">694</span>, <span class="hljs-number">740</span>, <span class="hljs-number">698</span>, <span class="hljs-number">537</span>);
+  sjekkVerdensdel(<span class="hljs-string">"OSEANIA"</span>, <span class="hljs-number">874</span>, <span class="hljs-number">1194</span>, <span class="hljs-number">780</span>, <span class="hljs-number">537</span>);
+  sjekkVerdensdel(<span class="hljs-string">"NORD-AMERIKA"</span>, <span class="hljs-number">2</span>, <span class="hljs-number">365</span>, <span class="hljs-number">528</span>, <span class="hljs-number">36</span>);
+  sjekkVerdensdel(<span class="hljs-string">"SØR-AMERIKA"</span>, <span class="hljs-number">238</span>, <span class="hljs-number">449</span>, <span class="hljs-number">810</span>, <span class="hljs-number">528</span>);
+}
+
+<span class="hljs-keyword">void</span> sjekkVerdensdel(<span class="hljs-keyword">String</span> verdensdel, <span class="hljs-built_in">int</span> hoyreGrense, <span class="hljs-built_in">int</span> venstreGrense,
+  <span class="hljs-built_in">int</span> nedreGrense, <span class="hljs-built_in">int</span> ovreGrense){
+    <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; hoyreGrense &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; venstreGrense &amp;&amp;
+      <span class="hljs-built_in">mouseY</span> &lt; nedreGrense &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; ovreGrense)]{
+    }
+}
+</code></pre> </section> </section> <section class="activity"> <h1 class="activity">Steg 8: Sjekk om man trykker på riktig verdensdel</h1> <p>Nå skal vi sjekke om den som spiller trykker på riktig verdensdel. Da starter vi med å sjekke om spilleren trykker på knappen på musepekeren.</p> <p>På samme måte som at vi kan bruke <code>mouseX</code> og <code>mousY</code>, så kan vi også bruke <code>mousePressed</code>. Forskjellen er at mens <code>mouseX</code> og <code>mousY</code> hele tiden oppdateres med tall som forteller oss hvor i vinduet musepekeren er, så er mousePressed en boolsk variabel, det betyr at den enten er <code>true</code> eller <code>false</code>, derfor kan vi bruke den direkte i en <code>if</code>-setning.</p> <p>Muntlig skal vi gjøre dette:</p> <pre><code class="processing"> Dersom musepekeren er klikka på,
+    så skal vi sjekke om musepekeren er over en og en verdensdel
+</code></pre> <p>Det å sjekke om musepekeren er over en og en av verdensdelene har vi allerede gjort inni <code>draw</code>-metoden ved å kalle på <code>sjekkVerdensdel();</code> mange ganger. Da gjenstår bare å putte alle disse inni en <code>if</code>-setning.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Gjør dette:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_75"><label for="cbx_75"> Skriv en <code>if</code>-setning hvor du sjekker om musepekeren er trykka på. Nå skal bare <code>mousePressed</code> stå inni parentesen til <code>if</code>-setningen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_76"><label for="cbx_76"> Putt alle metodekallene <code>sjekkVerdensdel();</code> inni <code>if</code>-setningen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_77"><label for="cbx_77"> Sjekk at koden kjører. Ingenting nytt skal skje.</label></p> </li> </ul> <p>Neste steg nå er å sjekke om spilleren har trykke på riktig verdensdel. Dette gjør vi inni <code>if</code>-setningen som er inni metoden <code>sjekkVerdensdel</code>. Nå skal vi sjekke om verdensdelen fra strengen som blir sendt inn til metoden er lik som den verdensdelen som er trekt tilfeldig. Muntlig blir dette:</p> <pre><code class="processing">Dersom verdensdelen som er trekt tilfeldig er lik verdelsdelen fra Stringen,
+    så viser vi teksten <span class="hljs-string">"RIKTIG"</span> i vinduet.
+</code></pre> <p>Vi putter inn de tingene vi har, da blir <code>if</code>-setningen slik:</p> <pre><code class="processing"><span class="hljs-keyword">if</span>(alleVerdensdelene[tilfeldigTalll] er lik verdensdel){
+    <span class="hljs-built_in">text</span>(<span class="hljs-string">"RIKTIG"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+}
+</code></pre> <p>Nå skal vi sjekke om en tekst er lik en annen tekst. Da må vi bruke en metode som hører til klassen <code>String</code>, metoden heter <code>equals();</code> og som parameter tar den det ordet vi skal sjekke. Når vi skal bruke en metode som hører til en klasse trenger vi bare sette punktum i mellom. Koden blir slik:</p> <pre><code class="processing"><span class="hljs-keyword">if</span>(alleVerdensdelene[tilfeldigTalll].equals(verdensdel)){
+    <span class="hljs-built_in">text</span>(<span class="hljs-string">"RIKTIG"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">50</span>);
+}
+</code></pre> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Gjør dette:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_78"><label for="cbx_78"> Skriv inn <code>if</code>-setningen som nettopp ble forklart.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_79"><label for="cbx_79"> Sjekk at koden fungerer. Nå skal teksten &quot;RIKTIG&quot; vises på skjermen når du trykker på riktig verdensdel.</label></p> </li> </ul> <p>Her er koden så langt.</p> <pre><code class="processing"><span class="hljs-keyword">PImage</span> verdenskartet;
+<span class="hljs-keyword">String</span>[] alleVerdensdelene = {<span class="hljs-string">"ASIA"</span>, <span class="hljs-string">"EUROPA"</span>, <span class="hljs-string">"NORD-AMERIKA"</span>,
+  <span class="hljs-string">"SØR-AMERIKA"</span>, <span class="hljs-string">"OSEANIA"</span>, <span class="hljs-string">"AFRIKA"</span>};
+<span class="hljs-built_in">int</span> tilfeldigTall;
+
+<span class="hljs-keyword">void</span> <span class="hljs-title">setup</span>(){
+  <span class="hljs-built_in">size</span>(<span class="hljs-number">1200</span>, <span class="hljs-number">850</span>);
+  verdenskartet = <span class="hljs-built_in">loadImage</span>(<span class="hljs-string">"world-map.png"</span>);
+  tilfeldigTall = (<span class="hljs-built_in">int</span>)<span class="hljs-built_in">random</span>(<span class="hljs-number">6</span>);
+}
+<span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>(){
+  <span class="hljs-built_in">image</span>(verdenskartet, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+  <span class="hljs-built_in">text</span>(<span class="hljs-string">"Trykk på: "</span> + alleVerdensdelene[tilfeldigTall], <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);  
+
+  sjekkVerdensdel(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">365</span>, <span class="hljs-number">694</span>, <span class="hljs-number">455</span>, <span class="hljs-number">33</span>);
+  sjekkVerdensdel(<span class="hljs-string">"ASIA"</span>, <span class="hljs-number">694</span>, <span class="hljs-number">1197</span>, <span class="hljs-number">537</span>, <span class="hljs-number">88</span>);
+  sjekkVerdensdel(<span class="hljs-string">"AFRIKA"</span>, <span class="hljs-number">493</span>, <span class="hljs-number">695</span>, <span class="hljs-number">708</span>, <span class="hljs-number">455</span>);
+  sjekkVerdensdel(<span class="hljs-string">"AFRIKA"</span>, <span class="hljs-number">694</span>, <span class="hljs-number">740</span>, <span class="hljs-number">698</span>, <span class="hljs-number">537</span>);
+  sjekkVerdensdel(<span class="hljs-string">"OSEANIA"</span>, <span class="hljs-number">874</span>, <span class="hljs-number">1194</span>, <span class="hljs-number">780</span>, <span class="hljs-number">537</span>);
+  sjekkVerdensdel(<span class="hljs-string">"NORD-AMERIKA"</span>, <span class="hljs-number">2</span>, <span class="hljs-number">365</span>, <span class="hljs-number">528</span>, <span class="hljs-number">36</span>);
+  sjekkVerdensdel(<span class="hljs-string">"SØR-AMERIKA"</span>, <span class="hljs-number">238</span>, <span class="hljs-number">449</span>, <span class="hljs-number">810</span>, <span class="hljs-number">528</span>);
+}
+
+<span class="hljs-keyword">void</span> sjekkVerdensdel(<span class="hljs-keyword">String</span> verdensdel, <span class="hljs-built_in">int</span> hoyreGrense, <span class="hljs-built_in">int</span> venstreGrense,
+  <span class="hljs-built_in">int</span> nedreGrense, <span class="hljs-built_in">int</span> ovreGrense){
+    <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; hoyreGrense &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; venstreGrense &amp;&amp;
+      <span class="hljs-built_in">mouseY</span> &lt; nedreGrense &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; ovreGrense)]{
+        <span class="hljs-keyword">if</span>(alleVerdensdelene[tilfeldigTall].equals(verdensdel)){
+          <span class="hljs-built_in">text</span>(<span class="hljs-string">"RIKTIG"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">100</span>);
+        }
+    }
+}
+</code></pre> </section> </section> <section class="activity"> <h1 class="activity">Steg 9: Få ny verdensdel å trykke på</h1> <p>Det er kjipt å starte programmet på nytt hver gang spilleren har trykka på riktig verdensdel. Derfor må vi velge ett nytt tilfeldig tall inni <code>if</code>-setningen som sjekker om riktig verdensdel er trykka på.</p> <p>Da gjør vi akkurat det samme som vi gjorde i <code>setup</code>-metoden da vi satt <code>tilfeldigTalll</code> til å være ett tilfeldig tall.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Gjør dette:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_80"><label for="cbx_80"> Sett <code>tilfeldigTalll</code> til å bli et nytt tilfeldig tall inni <code>if</code>-setningen som sjekker om spilleren har trykka på riktig verdensdel.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_81"><label for="cbx_81"> Kjør koden og se at det fungerer. Nå skal du få opp en ny verdensdel hver gang du trykker på riktig verdensdel.</label></p> </li> </ul> <p>Her er koden så langt. Siden vi bare har lagt til en kodelinje inni metoden <code>sjekkVerdensdel</code> så viser vi bare den metoden:</p> <pre><code class="processing"><span class="hljs-keyword">void</span> sjekkVerdensdel(<span class="hljs-keyword">String</span> verdensdel, <span class="hljs-built_in">int</span> hoyreGrense, <span class="hljs-built_in">int</span> venstreGrense,
+  <span class="hljs-built_in">int</span> nedreGrense, <span class="hljs-built_in">int</span> ovreGrense){
+    <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; hoyreGrense &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; venstreGrense &amp;&amp;
+      <span class="hljs-built_in">mouseY</span> &lt; nedreGrense &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; ovreGrense)]{
+        <span class="hljs-keyword">if</span>(alleVerdensdelene[tilfeldigTall].equals(verdensdel)){
+          <span class="hljs-built_in">text</span>(<span class="hljs-string">"RIKTIG"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">100</span>);
+          tilfeldigTall = (<span class="hljs-built_in">int</span>)<span class="hljs-built_in">random</span>(<span class="hljs-number">6</span>);
+        }
+    }
+}
+</code></pre> </section> </section> <section class="activity"> <h1 class="activity">Steg 10: Få poeng</h1> <p>Til sist skal vi gi spilleren poeng hver gang riktig verdensdel blir trykka på. Siden vi hele tiden ønsker å få flere og flere poeng, så må vi lage en variabel som vi kan oppdatere når riktig verdensdel blir trykka på.</p> <p>Variabelen skal være av typen <code>int</code> og kan for eksempel hete <code>poeng</code>.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Gjør dette:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_82"><label for="cbx_82"> Deklarer en variabel av typen <code>int</code> med navnet <code>poeng</code> sammen med de andre deklarasjonene du har skrevet i toppen av koden. Husk at du også her kan gi variabelen et annet navn dersom du vil.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_83"><label for="cbx_83"> Sett variabelen til å være <code>0</code>. Det gjør du ved å skrive denne kodelinja inni <code>setup</code>-metoden:</label></p> </li> </ul> <pre><code class="processing">    poeng = <span class="hljs-number">0</span>;
+</code></pre> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_84"><label for="cbx_84"> Få poengene til å vises i vinduet ved å gjøre et metodekall på <code>text();</code>. Den første parameteren skal være først en passende tekst inni hermetegnene og deretter <code> + poeng</code>. De to neste bestemmer du selv.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_85"><label for="cbx_85"> Test at koden fungerer så langt. Nå skal poengene vises på skjermen, men du vil forløpig ikke få flere poeng selv om du trykker på riktig verdensdel.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_86"><label for="cbx_86"> Forsøk å skrive den neste kodelinja der du tror den skal være. Den gjør at hver gang programmet leser den, så bli verdien til <code>poeng</code> en større. Her er kodelinja:</label></p> </li> </ul> <pre><code class="processing">    poeng = poeng + <span class="hljs-number">1</span>;
+</code></pre> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_87"><label for="cbx_87"> Test om koden fungerer, dersom du har skrevet kodelinja på riktig plass, så skal du nå få poeng hver gang du trykker på riktig verdensdel.</label></li> </ul> <p>Nå gjenstår bare å få minuspoeng når man trykker på feil verdensdel. Muntlig blir koden slik:</p> <pre><code class="processing">Dersom verdensdelen som er trekt tilfeldig er lik verdelsdelen fra stringen,
+    Så viser vi teksten <span class="hljs-string">"RIKTIG"</span> i vinduet.
+    trekk et nytt tilfeldig tall
+    få et poeng
+ellers
+    så skal vi få minus ett poeng
+</code></pre> <p>Vi har allerede de <code>if</code>-setningene som utfører sjekken, og vi har alt som skjer dersom vi trykker på riktig verdensdel. Det eneste som mangler er hva som skjer fra <code>ellers</code> og nedover.</p> <p>Når vi skriver en <code>if</code>-setning, så kan vi alltid legge til en <code>ellers</code>, på engelsk <code>else</code>. Dersom vi legger til en <code>else</code> etter en <code>if</code>-setning, så vil koden inni <code>else</code> skje dersom testen i <code>if</code>-setningen er usann. Så dersom man trykker på riktig verdensdel, så får man poeng, ellers får man minuspoeng.</p> <p>En <code>else</code> åpnes og stenges på samme måte som en <code>if</code>-setning, altså med krøllparenteser <code>{</code> og <code>}</code>.</p> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Gjør dette:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_88"><label for="cbx_88"> Legg til en <code>else</code> rett etter at <code>if</code>-setningen som sjekker om verdensdelene er like er avslutta.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_89"><label for="cbx_89"> Kodelinja som du brukte for å legge til et poeng, skal du nå bruke for å trekke fra et poeng. Alt du trenger å gjøre er å skrive <code>-</code> i steden for <code>+</code>. Skriv denne kodelinja inni <code>else</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_90"><label for="cbx_90"> Sjekk at koden kjører. Hva skjer? Får du et minuspoeng hver gang du trykker på feil verdensdel? Hva skjer når du trykker på riktig verdensdel, får du poeng?</label></p> </li> </ul> <p>Grunnen til at du får for mange minuspoeng er at du ikke rekker å slippe knappen på musepekeren før programmet har endre hvilken verdensdel du skal trykke på. Programmet kjører gjennom all koden din ca. 30 eller 60 ganger i sekundet. Det betyr at du må trykke veldig raskt for å ikke få minuspoeng for hver gang du trykker, selv om du trykker på riktig verdensdel. Du kan sjekke hvor raskt koden blir kjørt ved å gjøre et metodekall på <code>text();</code> og så sette det første parameteret til å være <code>frameRate</code>. Tallet som vises på skjermen er antall ganger koden blir kjørt i sekundet.</p> <p>Vi kan fikse alle minuspoengene ved å gjøre et metodekall på <code>delay();</code>, denne tar som parameter antall millisekunder koden skal ta pause. Et sekund er det samme som 1000 millisekunder. Du må være veldig forsiktig med å bruke <code>delay();</code> i andre sammenhenger, fordi den pauser hele programmet, det betyr at absolutt ingenting blir sjekket så lenge programmet står og har pause.</p> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Gjør dette:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_91"><label for="cbx_91"> Gjør et metodekall på <code>delay();</code> rett etter at du har avslutta <code>else</code>. La den ta 50 millisekunder som parameter.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_92"><label for="cbx_92"> Test at koden kjører.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_93"><label for="cbx_93"> Bytt til 5000 millisekunder og test programmet igjen. Hva skjer?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_94"><label for="cbx_94"> Forsøk med andre tider og finn ut hva du synes er best.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_95"><label for="cbx_95"> Dersom du ikke har gjort det allerede, så må du bytte bildet av verdenskartet tilbake til bildet uten firkanta grenser på.</label></p> </li> </ul> <p>Det var det! Nå har du et lite spill. Utvid spillet som du selv ønsker. Det er mange muligheter. Under finner du noen ekstraoppgaver som du kan gjøre dersom du har lyst.</p> <p>Her er koden så langt. Husk at vår kode og din kode kan være forskjellig dersom du har valgt andre variabelnavn eller andre verdier enn det vi har. Det viktigste er at den fungerer!</p> <pre><code class="processing"><span class="hljs-keyword">PImage</span> verdenskartet;
+<span class="hljs-keyword">String</span>[] alleVerdensdelene = {<span class="hljs-string">"ASIA"</span>, <span class="hljs-string">"EUROPA"</span>, <span class="hljs-string">"NORD-AMERIKA"</span>,
+  <span class="hljs-string">"SØR-AMERIKA"</span>, <span class="hljs-string">"OSEANIA"</span>, <span class="hljs-string">"AFRIKA"</span>};
+<span class="hljs-built_in">int</span> tilfeldigTall;
+<span class="hljs-built_in">int</span> poeng;
+
+<span class="hljs-keyword">void</span> <span class="hljs-title">setup</span>(){
+  <span class="hljs-built_in">size</span>(<span class="hljs-number">1200</span>, <span class="hljs-number">850</span>);
+  verdenskartet = <span class="hljs-built_in">loadImage</span>(<span class="hljs-string">"world-map.png"</span>);
+  tilfeldigTall = (<span class="hljs-built_in">int</span>)<span class="hljs-built_in">random</span>(<span class="hljs-number">6</span>);
+  poeng = <span class="hljs-number">0</span>;
+}
+<span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>(){
+  <span class="hljs-built_in">image</span>(verdenskartet, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+  <span class="hljs-built_in">text</span>(<span class="hljs-string">"Trykk på: "</span> + alleVerdensdelene[tilfeldigTall], <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+  <span class="hljs-built_in">text</span>(<span class="hljs-string">"Poeng: "</span> + poeng, <span class="hljs-number">50</span>, <span class="hljs-number">100</span>);
+
+  sjekkVerdensdel(<span class="hljs-string">"EUROPA"</span>, <span class="hljs-number">365</span>, <span class="hljs-number">694</span>, <span class="hljs-number">455</span>, <span class="hljs-number">33</span>);
+  sjekkVerdensdel(<span class="hljs-string">"ASIA"</span>, <span class="hljs-number">694</span>, <span class="hljs-number">1197</span>, <span class="hljs-number">537</span>, <span class="hljs-number">88</span>);
+  sjekkVerdensdel(<span class="hljs-string">"AFRIKA"</span>, <span class="hljs-number">493</span>, <span class="hljs-number">695</span>, <span class="hljs-number">708</span>, <span class="hljs-number">455</span>);
+  sjekkVerdensdel(<span class="hljs-string">"AFRIKA"</span>, <span class="hljs-number">694</span>, <span class="hljs-number">740</span>, <span class="hljs-number">698</span>, <span class="hljs-number">537</span>);
+  sjekkVerdensdel(<span class="hljs-string">"OSEANIA"</span>, <span class="hljs-number">874</span>, <span class="hljs-number">1194</span>, <span class="hljs-number">780</span>, <span class="hljs-number">537</span>);
+  sjekkVerdensdel(<span class="hljs-string">"NORD-AMERIKA"</span>, <span class="hljs-number">2</span>, <span class="hljs-number">365</span>, <span class="hljs-number">528</span>, <span class="hljs-number">36</span>);
+  sjekkVerdensdel(<span class="hljs-string">"SØR-AMERIKA"</span>, <span class="hljs-number">238</span>, <span class="hljs-number">449</span>, <span class="hljs-number">810</span>, <span class="hljs-number">528</span>);
+}
+
+<span class="hljs-keyword">void</span> sjekkVerdensdel(<span class="hljs-keyword">String</span> verdensdel, <span class="hljs-built_in">int</span> hoyreGrense, <span class="hljs-built_in">int</span> venstreGrense,
+  <span class="hljs-built_in">int</span> nedreGrense, <span class="hljs-built_in">int</span> ovreGrense){
+    <span class="hljs-keyword">if</span>(<span class="hljs-built_in">mouseX</span> &gt; hoyreGrense &amp;&amp; <span class="hljs-built_in">mouseX</span> &lt; venstreGrense &amp;&amp;
+      <span class="hljs-built_in">mouseY</span> &lt; nedreGrense &amp;&amp; <span class="hljs-built_in">mouseY</span> &gt; ovreGrense)]{
+        <span class="hljs-keyword">if</span>(alleVerdensdelene[tilfeldigTall].equals(verdensdel)){
+          <span class="hljs-built_in">text</span>(<span class="hljs-string">"RIKTIG"</span>, <span class="hljs-number">950</span>, <span class="hljs-number">100</span>);
+          tilfeldigTall = (<span class="hljs-built_in">int</span>)<span class="hljs-built_in">random</span>(<span class="hljs-number">6</span>);
+          poeng ++;
+        } <span class="hljs-keyword">else</span> {
+          poeng --;
+        }
+        delay(<span class="hljs-number">80</span>);
+    }
+}
+</code></pre> </section> </section> <section class="activity"> <h1 class="activity">Steg 11: Ekstra</h1> <p>Dette er ekstraoppgaver som du kan gjøre dersom du vil.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Prøv dette:</h2> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_96"><label for="cbx_96"> Legg inn igjen tekst som viser hva koordinatene på musepekeren er.</label></li> </ul> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Forbedre verdenskartet:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_97"><label for="cbx_97"> Finn koordinatene for tuppen av India og Sri Lanka og skriv kode som gjør at dette området også blir regnet med som Asia.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_98"><label for="cbx_98"> Finn ut nøyaktig hvilke av øyene mellom Oseania og Asia som høyrer til hvor og fiks grensen mellom de to verdensdelene slik at den blir mer riktig.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_99"><label for="cbx_99"> Skriv kode som gjør at Nord-Amerika ikke inkluderer den vestlige biten av Grønland, men fremdeles inkluderer alt av Nord-Amerika.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_100"><label for="cbx_100"> Fiks koden slik at hele Grønland hører til Europa.</label></p> </li> </ul> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Fylker i Norge:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_101"><label for="cbx_101"> Bytt ut kartet over verden med et kart over Norge.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_102"><label for="cbx_102"> Lag firkanter som du bruker til å skille fylkene i Norge.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_103"><label for="cbx_103"> Skriv kode som sjekker om musepekeren er innenfor fylkene i Norge.</label></p> </li> </ul> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Helt andre oppgaver:</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_104"><label for="cbx_104"> Finn et kart for Game of Thrones og lag spill hvor spilleren kan gjette hvor de forskjellige folkene hører hjemme.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_105"><label for="cbx_105"> Finn et bilde av forskjellige dyr, lag en liste med navna på dyrene på engelsk, eller et helt annet språk. Lag grenser rundt dyrene og la spilleren gjette hva de forskjellige dyrene heter på forskjellige språk.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_106"><label for="cbx_106"> Finn et bilde av en menneskekropp som er laga for undervisning, slik at man kan se hva som er inni, slik som hjertet, lungene, nyrene, ribbein, og lignende. Lag grenser rundt de forskjellige tingene og la spilleren gjette hvor de er.</label></p> </li> </ul> </section> </section> </div><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1"><div class="MuiGrid-root MuiGrid-item">Lisens: </div><div class="MuiGrid-root MuiGrid-item"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="http://creativecommons.org/licenses/by-sa/4.0/deed" target="_blank" rel="noopener">CC BY-SA 4.0</a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><div class="MuiPaper-root MuiPaper-elevation1 jss264 MuiPaper-rounded"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><h2 class="MuiTypography-root MuiTypography-h4">Forbedre denne siden</h2></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Funnet en feil? Kunne noe vært bedre?</p></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!</p></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Processing: Verden del2&#x27;&amp;body=Oppgave: https://oppgaver.kidsakoder.no/processing/verden_del2/verden_del2%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/processing/verden_del2/verden_del2.md%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Rapporter et problem</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265" tabindex="0" role="button" aria-disabled="false" href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></span>Gå til forumet</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/tree/master/src/processing/verden_del2/verden_del2.md" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Vis koden og fiks selv</span></a></div></div></div></div></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionStatic jss266"><div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.sparebank1.no" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/smn.098a83.jpg" alt="SpareBank1"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://ibok.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/ibok.06cd44.jpg" alt="Ibok"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.teknograd.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/teknograd.03c75e.png" alt="Teknograd"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.tekna.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/tekna.41a4f5.jpg" alt="Tekna"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.ntnu.edu/idi/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/ntnu_idi.5179a4.png" alt="NTNU institutt for datateknologi og informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.ntnu.edu/web/excited" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/excITEd.915706.png" alt="excited"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.mn.uio.no/ifi/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/uio_ifi.37ef13.png" alt="UIO institutt for informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.samsung.com/no/innovation/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/samsung.bec12f.png" alt="Samsung"/></a></div></div></header></div>
+  
+  <script src="/main.295399.js" async></script>  
+</body>
+</html>

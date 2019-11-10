@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title data-react-helmet="true">Farger | Kodeklubben</title>
+  <meta data-react-helmet="true" charset="utf-8"/><meta data-react-helmet="true" name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/><meta data-react-helmet="true" name="description" content="På skolen lærer man om farger og hvordan man kan blande dem for å få andre farger. Slik er det med farger i datamaskinen også; vi blander primærfarger og mengden av hver primærfarge bestemmer hvilken farge vi får. Hvis vi sammenligner blandi..."/>
+
+  <link rel="shortcut icon" href="/icons-bfd76/favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="/icons-bfd76/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/icons-bfd76/favicon-32x32.png"><link rel="manifest" href="/icons-bfd76/manifest.json"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="Lær Kidsa Koding"><link rel="apple-touch-icon" sizes="57x57" href="/icons-bfd76/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/icons-bfd76/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/icons-bfd76/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/icons-bfd76/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/icons-bfd76/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/icons-bfd76/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/icons-bfd76/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/icons-bfd76/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="167x167" href="/icons-bfd76/apple-touch-icon-167x167.png"><link rel="apple-touch-icon" sizes="180x180" href="/icons-bfd76/apple-touch-icon-180x180.png"><link rel="apple-touch-icon" sizes="1024x1024" href="/icons-bfd76/apple-touch-icon-1024x1024.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Lær Kidsa Koding"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/icons-bfd76/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/icons-bfd76/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/icons-bfd76/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/icons-bfd76/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/icons-bfd76/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/icons-bfd76/apple-touch-startup-image-1536x2008.png"><meta name="msapplication-TileColor" content="#fff"><meta name="msapplication-TileImage" content="/icons-bfd76/mstile-144x144.png"><meta name="msapplication-config" content="/icons-bfd76/browserconfig.xml">
+
+  
+
+  <style id='jss-server-side'>.MuiToolbar-root {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.MuiToolbar-gutters {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiToolbar-regular {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+  .MuiToolbar-dense {
+    min-height: 48px;
+  }
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: bolder;
+}
+body {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  background-color: #fafafa;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #fafafa;
+}
+  .MuiPaper-root {
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #fff;
+  }
+  .MuiPaper-rounded {
+    border-radius: 4px;
+  }
+  .MuiPaper-elevation0 {
+    box-shadow: none;
+  }
+  .MuiPaper-elevation1 {
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation2 {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation3 {
+    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation4 {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation5 {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation6 {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation7 {
+    box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation8 {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation9 {
+    box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation10 {
+    box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation11 {
+    box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation12 {
+    box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation13 {
+    box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation14 {
+    box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation15 {
+    box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation16 {
+    box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation17 {
+    box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation18 {
+    box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation19 {
+    box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation20 {
+    box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation21 {
+    box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation22 {
+    box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation23 {
+    box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation24 {
+    box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+  }
+  .MuiAppBar-root {
+    width: 100%;
+    display: flex;
+    z-index: 1100;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .MuiAppBar-positionFixed {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: fixed;
+  }
+  .MuiAppBar-positionAbsolute {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+  }
+  .MuiAppBar-positionSticky {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: sticky;
+  }
+  .MuiAppBar-positionStatic {
+    position: static;
+    transform: translateZ(0);
+  }
+  .MuiAppBar-positionRelative {
+    position: relative;
+  }
+  .MuiAppBar-colorDefault {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #f5f5f5;
+  }
+  .MuiAppBar-colorPrimary {
+    color: #fff;
+    background-color: #3f51b5;
+  }
+  .MuiAppBar-colorSecondary {
+    color: #fff;
+    background-color: #f50057;
+  }
+  .MuiDrawer-docked {
+    flex: 0 0 auto;
+  }
+  .MuiDrawer-paper {
+    top: 0;
+    flex: 1 0 auto;
+    height: 100%;
+    display: flex;
+    outline: 0;
+    z-index: 1200;
+    position: fixed;
+    overflow-y: auto;
+    flex-direction: column;
+    -webkit-overflow-scrolling: touch;
+  }
+  .MuiDrawer-paperAnchorLeft {
+    left: 0;
+    right: auto;
+  }
+  .MuiDrawer-paperAnchorRight {
+    left: auto;
+    right: 0;
+  }
+  .MuiDrawer-paperAnchorTop {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    height: auto;
+    max-height: 100%;
+  }
+  .MuiDrawer-paperAnchorBottom {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    max-height: 100%;
+  }
+  .MuiDrawer-paperAnchorDockedLeft {
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedTop {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedRight {
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedBottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiButtonBase-root {
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiButtonBase-root::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiButtonBase-root.Mui-disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+  .MuiIconButton-root {
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+  }
+  .MuiIconButton-root:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .MuiIconButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+  }
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-edgeStart {
+    margin-left: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+    margin-left: -3px;
+  }
+  .MuiIconButton-edgeEnd {
+    margin-right: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+    margin-right: -3px;
+  }
+  .MuiIconButton-colorInherit {
+    color: inherit;
+  }
+  .MuiIconButton-colorPrimary {
+    color: #3f51b5;
+  }
+  .MuiIconButton-colorPrimary:hover {
+    background-color: rgba(63, 81, 181, 0.08);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-colorSecondary {
+    color: #f50057;
+  }
+  .MuiIconButton-colorSecondary:hover {
+    background-color: rgba(245, 0, 87, 0.08);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-sizeSmall {
+    padding: 3px;
+    font-size: 1.125rem;
+  }
+  .MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiTypography-root {
+    margin: 0;
+  }
+  .MuiTypography-body2 {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+  }
+  .MuiTypography-caption {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+  }
+  .MuiTypography-button {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-h1 {
+    font-size: 6rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.01562em;
+  }
+  .MuiTypography-h2 {
+    font-size: 3.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.00833em;
+  }
+  .MuiTypography-h3 {
+    font-size: 3rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.04;
+    letter-spacing: 0em;
+  }
+  .MuiTypography-h4 {
+    font-size: 2.125rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.00735em;
+  }
+  .MuiTypography-h5 {
+    font-size: 1.5rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 0em;
+  }
+  .MuiTypography-h6 {
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+  }
+  .MuiTypography-subtitle1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.00938em;
+  }
+  .MuiTypography-subtitle2 {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.57;
+    letter-spacing: 0.00714em;
+  }
+  .MuiTypography-overline {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 2.66;
+    letter-spacing: 0.08333em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-srOnly {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .MuiTypography-alignLeft {
+    text-align: left;
+  }
+  .MuiTypography-alignCenter {
+    text-align: center;
+  }
+  .MuiTypography-alignRight {
+    text-align: right;
+  }
+  .MuiTypography-alignJustify {
+    text-align: justify;
+  }
+  .MuiTypography-noWrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiTypography-gutterBottom {
+    margin-bottom: 0.35em;
+  }
+  .MuiTypography-paragraph {
+    margin-bottom: 16px;
+  }
+  .MuiTypography-colorInherit {
+    color: inherit;
+  }
+  .MuiTypography-colorPrimary {
+    color: #3f51b5;
+  }
+  .MuiTypography-colorSecondary {
+    color: #f50057;
+  }
+  .MuiTypography-colorTextPrimary {
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .MuiTypography-colorTextSecondary {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiTypography-colorError {
+    color: #f44336;
+  }
+  .MuiTypography-displayInline {
+    display: inline;
+  }
+  .MuiTypography-displayBlock {
+    display: block;
+  }
+  .MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  .MuiSvgIcon-colorPrimary {
+    color: #3f51b5;
+  }
+  .MuiSvgIcon-colorSecondary {
+    color: #f50057;
+  }
+  .MuiSvgIcon-colorAction {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiSvgIcon-colorError {
+    color: #f44336;
+  }
+  .MuiSvgIcon-colorDisabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+  .MuiSvgIcon-fontSizeInherit {
+    font-size: inherit;
+  }
+  .MuiSvgIcon-fontSizeSmall {
+    font-size: 1.25rem;
+  }
+  .MuiSvgIcon-fontSizeLarge {
+    font-size: 2.1875rem;
+  }
+  .jss98 {
+    display: flex;
+    margin-left: 8px;
+    user-select: none;
+    margin-right: 8px;
+  }
+  .MuiBreadcrumbs-ol {
+    margin: 0;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .MuiBreadcrumbs-li {
+    list-style: none;
+  }
+  .MuiGrid-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .MuiGrid-item {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .MuiGrid-zeroMinWidth {
+    min-width: 0;
+  }
+  .MuiGrid-direction-xs-column {
+    flex-direction: column;
+  }
+  .MuiGrid-direction-xs-column-reverse {
+    flex-direction: column-reverse;
+  }
+  .MuiGrid-direction-xs-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .MuiGrid-wrap-xs-nowrap {
+    flex-wrap: nowrap;
+  }
+  .MuiGrid-wrap-xs-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+  .MuiGrid-align-items-xs-center {
+    align-items: center;
+  }
+  .MuiGrid-align-items-xs-flex-start {
+    align-items: flex-start;
+  }
+  .MuiGrid-align-items-xs-flex-end {
+    align-items: flex-end;
+  }
+  .MuiGrid-align-items-xs-baseline {
+    align-items: baseline;
+  }
+  .MuiGrid-align-content-xs-center {
+    align-content: center;
+  }
+  .MuiGrid-align-content-xs-flex-start {
+    align-content: flex-start;
+  }
+  .MuiGrid-align-content-xs-flex-end {
+    align-content: flex-end;
+  }
+  .MuiGrid-align-content-xs-space-between {
+    align-content: space-between;
+  }
+  .MuiGrid-align-content-xs-space-around {
+    align-content: space-around;
+  }
+  .MuiGrid-justify-xs-center {
+    justify-content: center;
+  }
+  .MuiGrid-justify-xs-flex-end {
+    justify-content: flex-end;
+  }
+  .MuiGrid-justify-xs-space-between {
+    justify-content: space-between;
+  }
+  .MuiGrid-justify-xs-space-around {
+    justify-content: space-around;
+  }
+  .MuiGrid-justify-xs-space-evenly {
+    justify-content: space-evenly;
+  }
+  .MuiGrid-spacing-xs-1 {
+    width: calc(100% + 8px);
+    margin: -4px;
+  }
+  .MuiGrid-spacing-xs-1 > .MuiGrid-item {
+    padding: 4px;
+  }
+  .MuiGrid-spacing-xs-2 {
+    width: calc(100% + 16px);
+    margin: -8px;
+  }
+  .MuiGrid-spacing-xs-2 > .MuiGrid-item {
+    padding: 8px;
+  }
+  .MuiGrid-spacing-xs-3 {
+    width: calc(100% + 24px);
+    margin: -12px;
+  }
+  .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+    padding: 12px;
+  }
+  .MuiGrid-spacing-xs-4 {
+    width: calc(100% + 32px);
+    margin: -16px;
+  }
+  .MuiGrid-spacing-xs-4 > .MuiGrid-item {
+    padding: 16px;
+  }
+  .MuiGrid-spacing-xs-5 {
+    width: calc(100% + 40px);
+    margin: -20px;
+  }
+  .MuiGrid-spacing-xs-5 > .MuiGrid-item {
+    padding: 20px;
+  }
+  .MuiGrid-spacing-xs-6 {
+    width: calc(100% + 48px);
+    margin: -24px;
+  }
+  .MuiGrid-spacing-xs-6 > .MuiGrid-item {
+    padding: 24px;
+  }
+  .MuiGrid-spacing-xs-7 {
+    width: calc(100% + 56px);
+    margin: -28px;
+  }
+  .MuiGrid-spacing-xs-7 > .MuiGrid-item {
+    padding: 28px;
+  }
+  .MuiGrid-spacing-xs-8 {
+    width: calc(100% + 64px);
+    margin: -32px;
+  }
+  .MuiGrid-spacing-xs-8 > .MuiGrid-item {
+    padding: 32px;
+  }
+  .MuiGrid-spacing-xs-9 {
+    width: calc(100% + 72px);
+    margin: -36px;
+  }
+  .MuiGrid-spacing-xs-9 > .MuiGrid-item {
+    padding: 36px;
+  }
+  .MuiGrid-spacing-xs-10 {
+    width: calc(100% + 80px);
+    margin: -40px;
+  }
+  .MuiGrid-spacing-xs-10 > .MuiGrid-item {
+    padding: 40px;
+  }
+  .MuiGrid-grid-xs-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xs-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xs-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xs-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xs-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xs-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xs-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xs-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xs-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xs-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xs-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xs-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xs-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xs-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+@media (min-width:600px) {
+  .MuiGrid-grid-sm-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-sm-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-sm-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-sm-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-sm-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-sm-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-sm-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-sm-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-sm-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-sm-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-sm-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-sm-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-sm-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-sm-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:960px) {
+  .MuiGrid-grid-md-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-md-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-md-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-md-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-md-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-md-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-md-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-md-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-md-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-md-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-md-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-md-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-md-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-md-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1280px) {
+  .MuiGrid-grid-lg-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-lg-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-lg-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-lg-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-lg-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-lg-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-lg-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-lg-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-lg-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-lg-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-lg-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-lg-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-lg-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-lg-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1920px) {
+  .MuiGrid-grid-xl-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xl-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xl-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xl-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xl-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xl-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xl-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xl-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xl-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xl-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xl-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xl-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xl-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xl-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+  .MuiLink-underlineNone {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover:hover {
+    text-decoration: underline;
+  }
+  .MuiLink-underlineAlways {
+    text-decoration: underline;
+  }
+  .MuiLink-button {
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiLink-button::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiLink-button.Mui-focusVisible {
+    outline: auto;
+  }
+  .MuiButton-root {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiButton-root:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .MuiButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-root:hover.Mui-disabled {
+    background-color: transparent;
+  }
+  .MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiButton-text {
+    padding: 6px 8px;
+  }
+  .MuiButton-textPrimary {
+    color: #3f51b5;
+  }
+  .MuiButton-textPrimary:hover {
+    background-color: rgba(63, 81, 181, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-textSecondary {
+    color: #f50057;
+  }
+  .MuiButton-textSecondary:hover {
+    background-color: rgba(245, 0, 87, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlined {
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    padding: 5px 15px;
+  }
+  .MuiButton-outlined.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+  }
+  .MuiButton-outlinedPrimary {
+    color: #3f51b5;
+    border: 1px solid rgba(63, 81, 181, 0.5);
+  }
+  .MuiButton-outlinedPrimary:hover {
+    border: 1px solid #3f51b5;
+    background-color: rgba(63, 81, 181, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlinedSecondary {
+    color: #f50057;
+    border: 1px solid rgba(245, 0, 87, 0.5);
+  }
+  .MuiButton-outlinedSecondary:hover {
+    border: 1px solid #f50057;
+    background-color: rgba(245, 0, 87, 0.08);
+  }
+  .MuiButton-outlinedSecondary.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-contained {
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+  .MuiButton-contained:hover {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+    background-color: #d5d5d5;
+  }
+  .MuiButton-contained.Mui-focusVisible {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained:active {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+  .MuiButton-contained:hover.Mui-disabled {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+  .MuiButton-containedPrimary {
+    color: #fff;
+    background-color: #3f51b5;
+  }
+  .MuiButton-containedPrimary:hover {
+    background-color: #303f9f;
+  }
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #3f51b5;
+  }
+}
+  .MuiButton-containedSecondary {
+    color: #fff;
+    background-color: #f50057;
+  }
+  .MuiButton-containedSecondary:hover {
+    background-color: #c51162;
+  }
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #f50057;
+  }
+}
+  .MuiButton-colorInherit {
+    color: inherit;
+    border-color: currentColor;
+  }
+  .MuiButton-textSizeSmall {
+    padding: 4px 5px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-textSizeLarge {
+    padding: 8px 11px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-outlinedSizeSmall {
+    padding: 3px 9px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-outlinedSizeLarge {
+    padding: 7px 21px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-containedSizeSmall {
+    padding: 4px 10px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-containedSizeLarge {
+    padding: 8px 22px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-fullWidth {
+    width: 100%;
+  }
+  .MuiButton-startIcon {
+    display: inherit;
+    margin-left: -4px;
+    margin-right: 8px;
+  }
+  .MuiButton-startIcon.MuiButton-iconSizeSmall {
+    margin-left: -2px;
+  }
+  .MuiButton-endIcon {
+    display: inherit;
+    margin-left: 8px;
+    margin-right: -4px;
+  }
+  .MuiButton-endIcon.MuiButton-iconSizeSmall {
+    margin-right: -2px;
+  }
+  .MuiButton-iconSizeSmall > *:first-child {
+    font-size: 18px;
+  }
+  .MuiButton-iconSizeMedium > *:first-child {
+    font-size: 20px;
+  }
+  .MuiButton-iconSizeLarge > *:first-child {
+    font-size: 22px;
+  }
+@media print {
+  .jss3 {
+    display: none;
+  }
+}
+  .jss4 {
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+  .jss5 {
+    display: flex;
+  }
+  .jss6 {
+    width: 20px;
+    height: 20px;
+  }
+  .jss7 {
+    width: 16px;
+    height: auto;
+    align-self: center;
+    margin-right: 8px;
+  }
+  .jss8 {
+    margin-left: 8px;
+  }
+  .jss266 {
+    margin-top: 40px;
+  }
+@media print {
+  .jss266 {
+    display: none;
+  }
+}
+  .jss267 {
+    width: auto;
+    height: 50px;
+    margin: 20px 7px 10px;
+  }
+@media print {
+  .jss1 {
+    display: none;
+  }
+}
+  .jss2 {
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .MuiContainer-root {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiContainer-root {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-root {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media (min-width:600px) {
+  .MuiContainer-fixed {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-fixed {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-fixed {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-fixed {
+    max-width: 1920px;
+  }
+}
+@media (min-width:0px) {
+  .MuiContainer-maxWidthXs {
+    max-width: 444px;
+  }
+}
+@media (min-width:600px) {
+  .MuiContainer-maxWidthSm {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-maxWidthMd {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-maxWidthLg {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-maxWidthXl {
+    max-width: 1920px;
+  }
+}
+
+  .jss235 {
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+@media print {
+  .jss235 {
+    display: none;
+  }
+}
+  .jss264 {
+    padding: 16px;
+    max-width: 700px;
+    margin-top: 40px;
+  }
+@media print {
+  .jss264 {
+    display: none;
+  }
+}
+  .jss265 {
+    margin: 8px;
+  }
+  .jss234 {
+    display: none;
+    font-size: 0.75em;
+    font-style: italic;
+  }
+@media print {
+  .jss234 {
+    display: block;
+  }
+}
+  .jss226 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }</style></head>
+<body>
+  <div id="app"><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionFixed jss3 mui-fixed"><div class="MuiToolbar-root MuiToolbar-regular jss4 MuiToolbar-gutters"><nav class="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"><ol class="MuiBreadcrumbs-ol"><li class="MuiBreadcrumbs-li"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-colorTextPrimary" aria-label="Hjem" href="/"><svg class="MuiSvgIcon-root jss6" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></a></li><li aria-hidden="true" class="jss98 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone jss5 MuiTypography-colorTextPrimary" href="/processing"><img class="jss7" src="/_/oppgaver/src/processing/logo-black.ffde4d.png" alt="Bilde av Processing"/><p class="MuiTypography-root MuiTypography-body1">Processing</p></a></li><li aria-hidden="true" class="jss98 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone jss5 MuiTypography-colorTextPrimary" aria-label="Farger" href="/processing/farger/farger"><div class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg><p class="MuiTypography-root jss8 MuiTypography-body1">Farger</p></div></a></li></ol></nav><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></header><div class="MuiToolbar-root MuiToolbar-regular jss1 MuiToolbar-gutters"></div><div class="jss2"><div class="MuiContainer-root jss226 MuiContainer-maxWidthMd"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg></div><div class="MuiGrid-root MuiGrid-item"><h1 class="MuiTypography-root MuiTypography-h3">Farger</h1></div></div><p><i>Skrevet av:<!-- --> <span>Sigmund Hansen</span></i></p><div class="jss234"><div>Kurs:<!-- --> <!-- -->Processing</div><div>Tema: Tekstbasert</div><div>Fag: Matematikk, Programmering, Kunst og håndverk</div><div>Klassetrinn: 8.-10. klasse, Videregående skole</div></div><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss235" tabindex="0" role="button" aria-disabled="false" href="http://pdf-ace.com/pdfme?print_media=1" download=""><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg></span>Last ned PDF</span></a><div><section class="intro"> <h1 class="intro">Introduksjon</h1> <p>På skolen lærer man om farger og hvordan man kan blande dem for å få andre farger. Slik er det med farger i datamaskinen også; vi blander primærfarger og mengden av hver primærfarge bestemmer hvilken farge vi får. Hvis vi sammenligner blanding av malingsfarger med blanding av farger på en dataskjerm, fungerer blandingen litt annerledes. Hvordan blandingen fungerer på en dataskjerm skal du lære mer om i denne leksjonen med Processing.</p> <figure><img src="RGB.png" alt="Tre overlappende sirkler i rødt, grønt og blått. Der de overlapper blandesfargene til gul, cyan, magenta og hvitt." title="Tre overlappende sirkler i
+rødt, grønt og blått. Der de overlapper blandes fargene til gul, cyan, magenta
+og hvitt."></figure> </section> <section class="activity"> <h1 class="activity">Steg 1: Mer enn grått</h1> <p>Her skal vi se hvordan bakgrunnsfargen bestemmes. I det første punktet viser vi hele programmet, og i resten av punktene ser vi kun på <code>draw</code> som er den delen av koden som skal endres. For hvert steg kan du kjøre programmet med <strong>Ctrl + R</strong>, og hvis du vil, kan du lagre det med <strong>Ctrl + S</strong>.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Vi begynner med å fylle bakgrunnen med sort:</label></p> <pre><code class="processing"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span>() {
+  <span class="hljs-comment">// bestem størrelse til vinduet</span>
+  <span class="hljs-built_in">size</span>(<span class="hljs-number">800</span>, <span class="hljs-number">600</span>);
+}
+
+<span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>() {
+  <span class="hljs-built_in">background</span>(<span class="hljs-number">0</span>);
+}
+</code></pre> <p>Dette har du kanskje sett før. Når vi kaller på <code>background</code> med bare ett tall får vi en gråtone der <code>0</code> er sort og <code>255</code> er hvitt.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_1"><label for="cbx_1"> La oss endre på <code>draw</code> slik at vi får en rød bakgrunn:</label></p> <pre><code class="processing"><span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>() {
+  <span class="hljs-built_in">background</span>(<span class="hljs-number">255</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+}
+</code></pre> <p>Dette likner på det vi hadde i det første steget, men nå bruker vi plutselig tre tall istedenfor ett. La oss utforske dem.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_2"><label for="cbx_2"> La oss endre <code>background</code> igjen:</label></p> <pre><code class="processing"><span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>() {
+  <span class="hljs-built_in">background</span>(<span class="hljs-number">0</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>);
+}
+</code></pre> <p>Når du kjører programmet, hvilken farge får du på bakgrunnen?</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_3"><label for="cbx_3"> La oss endre <code>background</code> enda en gang:</label></p> <pre><code class="processing"><span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>() {
+  <span class="hljs-built_in">background</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">255</span>);
+}
+</code></pre> <p>Hvilken farge får du nå?</p> </li> </ul> </section> <section class="protip"> <h2 class="protip">Forklaring av additive farger</h2> <p>Som nevnt har du kanskje lært om farger på skolen og brukt maling eller fargeblyanter. Du lærte nok om primærfargene rød, <strong>gul</strong> og blå, og at du kunne lage omtrent alle slags farger ved å blande disse sammen.</p> <p>Jo flere farger man blander sammen når man maler, desto mørkere ble den ferdige fargen. Dette er fordi malingen inneholder fargede pigmenter som absorberer lys. Jo flere farger av lyset som absorberes, desto færre farger og mindre lys reflekteres og treffer øyet ditt. For eksempel absorberer grønn maling rødt og blått lys, det grønne lyset reflekteres tilbake og treffer øyet ditt. Gul maling absorberer blått lys, og blå maling absorberer rødt og deler av det grønne lyset. Da gjenstår det bare grønt lys igjen, og derfor kan du blande gul og blå for å få grønn.</p> <p>I en datamaskin er det annerledes. Har du lagt merke til at skjermen lyser? Siden skjermen lyser, angir vi <em>hvor mye</em> hver farge skal <em>lyse</em>. Øyet reagerer på rødt, grønt og blått lys, så disse er valgt som de tre primærfargene i dataskjermer. Om du går nærme nok en gammel data- eller TV-skjerm kan du se de tre fargene hver for seg.</p> <p>Hvilke tre farger fikk du i stegene ovenfor? Nå forstår du kanskje hvorfor de tre verdiene <code>255, 0, 0</code>, <code>0, 255, 0</code> og <code>0, 0, 255</code> ga henholdsvis rød, grønn og blå?</p> <p>Fordi primærfargene er rød, grønn og blå kalles dette systemet RGB. Det er et <em>additivt</em> system, fordi man legger sammen fargene, mens i tegning på papir jobber man med et <em>subtraktivt</em> system der farger trekkes fra.</p> <p>Vi kan også blande farger her, men det oppfører seg annerledes fra du kanskje er vant til fra maling. Hvis vi blander rødt og grønt, får vi gult. Hvis vi blander grønt og blått, får vi en slags turkis, kalt cyan. Hvis vi blander rødt og blått, får vi en slags rosa, kalt magenta. Når alle tre fargene er like sterke, får vi en gråtone. Med alle tre på fullt, <code>255</code>, får vi hvitt.</p> <figure><img src="RGB.png" alt="Tre overlappende sirkler i rødt, grønt og blått. Der de overlapper blandesfargene til gul, cyan, magenta og hvitt." title="Tre overlappende sirkler i
+rødt, grønt og blått. Der de overlapper blandes fargene til gul, cyan, magenta
+og hvitt."></figure> <p>Du har kankje også sett et fargehjul før, der primærfargne plasseres rundt hjulet. Sekundærfargene, fargene man får når man blander to primærfarger plasseres da mellom disse. Vi kan også lage et slikt for RGB.</p> <figure><img src="FargehjulRGB.png" alt="RGB-fargehjulet med primær- og sekundærfarger." title="RGB-fargehjulet med primær- og sekundærfarger."></figure> </section> </section> <section class="activity"> <h1 class="activity">Steg 2: Fyllfarger og omriss</h1> <p>Når vi tegner former, er det en stor sjanse for at vi vil bruke andre farger enn svart og hvit. Foreløpig har vi bare sett at vi kan styre fargen på bakgrunnen, så la oss se hva vi kan gjøre med fargene til former.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Legg til en sirkel i <code>draw</code>:</label></p> <pre><code class="processing"><span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>() {
+  <span class="hljs-built_in">background</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">255</span>);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-built_in">width</span> / <span class="hljs-number">2</span>, <span class="hljs-built_in">height</span> / <span class="hljs-number">2</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+}
+</code></pre> <p>Hvis du kjører programmet, ser du kanskje noe du ikke har lagt merke til før: Hva er det som er rundt sirkelen?</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Endre fargen som sirkelen fargelegges med, med funksjonen <code>fill</code>:</label></p> <pre><code class="processing"><span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>() {
+  <span class="hljs-built_in">background</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">255</span>);
+  <span class="hljs-built_in">fill</span>(<span class="hljs-number">255</span>, <span class="hljs-number">192</span>, <span class="hljs-number">64</span>);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-built_in">width</span> / <span class="hljs-number">2</span>, <span class="hljs-built_in">height</span> / <span class="hljs-number">2</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+}
+</code></pre> <p>Nå får du en mørkegul sirkel midt i vinduet på en blå bakgrunn.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Endre fargen på omrisset med funksjonen <code>stroke</code>:</label></p> <pre><code class="processing"><span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>() {
+  <span class="hljs-built_in">background</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">255</span>);
+  <span class="hljs-built_in">fill</span>(<span class="hljs-number">255</span>, <span class="hljs-number">192</span>, <span class="hljs-number">64</span>);
+  <span class="hljs-built_in">stroke</span>(<span class="hljs-number">192</span>, <span class="hljs-number">96</span>, <span class="hljs-number">64</span>);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-built_in">width</span> / <span class="hljs-number">2</span>, <span class="hljs-built_in">height</span> / <span class="hljs-number">2</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+}
+</code></pre> <p>Nå er streken rundt sirkelen en rødlig brun. Det er kanskje ikke så lett å se fargen på streken siden den er så tynn.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Gjør omrisset fetere med funksjonen <code>strokeWeight</code>:</label></p> <pre><code class="processing"><span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>() {
+  <span class="hljs-built_in">background</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">255</span>);
+  <span class="hljs-built_in">fill</span>(<span class="hljs-number">255</span>, <span class="hljs-number">192</span>, <span class="hljs-number">64</span>);
+  <span class="hljs-built_in">stroke</span>(<span class="hljs-number">192</span>, <span class="hljs-number">96</span>, <span class="hljs-number">64</span>);
+  <span class="hljs-built_in">strokeWeight</span>(<span class="hljs-number">3</span>);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-built_in">width</span> / <span class="hljs-number">2</span>, <span class="hljs-built_in">height</span> / <span class="hljs-number">2</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+}
+</code></pre> <p>Nå er omrisset tre piksler bredt.</p> </li> </ul> </section> <section class="challenge"> <h2 class="challenge">Eksperimenter</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Prøv forskjellige bakgrunnsfarger. Hvordan synes du forskjellige bakgrunnsfarger passer sammen med fargene på sirkelen?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Prøv forskjellige fyllfarger. Hvordan passer disse med fargen på omrisset?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_10"><label for="cbx_10"> Prøv forskjellige farger på omrisset. Hvordan passer det med bakgrunnen og fyllfargen?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Prøv andre tykkelser på omrisset. Hvor synes du at det er passe tykt?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_12"><label for="cbx_12"> Kan du tegne to sirkler på skjermen i forskjellige farger?</label></p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Steg 3: Fargevelgeren</h1> <p>Noen ganger kan det være tungvint å skulle lage fargene man har lyst på ved å bare tenke ut tallene. Man blir riktignok flinkere på dette etter hvert som man har gjort det en del ganger. Inntil man har blitt komfortabel med dette, kan det være lurt å bruke fargevelgeren som finnes i Processing.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_13"><label for="cbx_13"> Åpne fargevelgeren ved å velge <strong>Tools → Color Selector</strong></label></p> <figure><img src="Fargevelger.png" alt="Fargevelgeren slik den er når den først åpnes." title="Fargevelgeren slik den er når den først åpnes."></figure> <p>Du får da opp et vindu som lar deg velge farger. Her kan du fylle inn tallverdiene som vi har sett tidligere, R, G og B. Det er også noen andre felt. H, S og B er for et annet fargesystem som naturlig nok heter HSB. Det er også to områder som vi kan velge farge fra ved å klikke. Øverst til høyre vises fargen som er valgt.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_14"><label for="cbx_14"> Prøv å trykke i det store fargefeltet til venstre. Her kan du velge hvor sterk og hvor lys fargen skal være.</label></p> <p>Hva skjer med verdiene til R, G og B for lyse farger? Hva er verdien til R, G og B for mørke farger?</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_15"><label for="cbx_15"> Prøv å trykke i det lille fargefeltet rett ved siden av. Her kan du velge hvilken farge du vil ha.</label></p> <figure><img src="Fargevelger.gif" alt="En animasjon som viser at fargen endres i fargevelgeren." title="En animasjon som viser at fargen endres i fargevelgeren."></figure> <p>Hva skjer med verdiene til RGB nå?</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_16"><label for="cbx_16"> Finn en farge du liker til bakgrunnsfarge. Skriv inn verdiene for R, G og B i <code>background</code> og i <code>draw</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_17"><label for="cbx_17"> Finn en farge du liker til sirkelen. Trykk på knappen <strong>Copy</strong>. Visk ut alle verdiene gitt i <code>fill</code> og lim inn den kopierte fargekoden: enten med <strong>Edit → Paste</strong> eller trykk på <strong>Ctrl + V</strong> eller <strong>Cmd + V</strong> hvis du bruker Mac.</label></p> <p>Når du limer inn, ser du at koden er på formen <code>#0123EF</code>. Dette er fargekoden som stod i det nederste tekstfeltet i fargevelgeren. Hvordan denne fargekoden fungerer er forklart i boksen under.</p> </li> </ul> </section> <section class="protip"> <h2 class="protip">Web-farger - fargekoder i heksadesimaler</h2> <p>De som har jobbet med nettsider, er vant til å angi farger med en sekssifret kode: <code>#0123EF</code>. Du tenker kanskje: «Kan <code>F</code> være et siffer?» Ja, i heksadesimaler, eller sekstentallssystemet, utvides sifrene med bokstavene A-F. Da får vi sifre fra 0 til F, som er tallene fra null til femten. <code>A</code> er da 10, <code>B</code> er 11, <code>C</code> er 12, osv. Det er ingen forskjell på små og store bokstaver her, så man kan også skrive det som <code>#0123EF</code>.</p> <p>Siden vi skal angi tre farger, RGB, består koden av tre tosifrede tall. I <code>#0123EF</code> er disse tre tosifrede tallene <code>01</code>, <code>23</code> og <code>EF</code>. De første to angir rødt, de neste to grønt og de to siste blått.</p> <p>Vi kan regne om <code>#0123EF</code> til rød, grønn og blå slik som dette:</p> <ul> <li> <p><code>rød = 0 · 16 + 1 = 1</code></p> </li> <li> <p><code>grønn = 2 · 16 + 3 = 35</code></p> </li> <li> <p><code>blå = 14 · 16 + 15 = 249</code></p> </li> </ul> <p>Altså nesten ingenting rødt, noe grønt og masse blått. La oss teste det ut:</p> <pre><code class="processing"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span>() {
+  <span class="hljs-built_in">size</span>(<span class="hljs-number">800</span>, <span class="hljs-number">600</span>);
+}
+
+<span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>() {
+  <span class="hljs-built_in">background</span>(#<span class="hljs-number">0123</span>EF);
+}
+</code></pre> <p>Disse fargekodene kan være nyttige hvis man er kjent med de fra før. Fargekodene brukes stort sett kun direkte, og det er vanskelig å bruke heksadesimale fargekoder når fargen skal variere. For eksempel om du skal la programmet vise alle rød-farger, er det enklere å bruke vanlige heltall.</p> <p>Men for program der du ikke ønsker å variere fargen underveis, kan de brukes med eksempelvis <code>background</code>. Senere skal vi se på hvordan vi kan lage <em>color</em>-variabler med disse kodene.</p> </section> </section> <section class="activity"> <h1 class="activity">Steg 4: HSB</h1> <p>Da vi så på fargevelgeren, så vi tre tekstfelter merket H, S og B. Du så kanskje også hvordan disse oppførte seg når vi endret fargevalget? Hvis ikke, tar vi en rask titt på dette igjen under.</p> <p>Dette systemet kalles HSB: Hue, Saturation, Brightness. Som på norsk er fargetone/kulør, fargemetning og lyshet/valør. Det første tallet, <strong>H</strong>, bestemmer hva slags farge det blir. Det andre, <strong>S</strong>, bestemmer hvor sterk fargen skal være. Det siste, <strong>B</strong>, bestemmer hvor lys fargen skal være.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_18"><label for="cbx_18"> Først tar vi en titt på hvordan fargevelgeren og HSB henger sammen. Åpne fargevelgeren igjen med <strong>Tools → Color Selector</strong>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_19"><label for="cbx_19"> Bruk det store fargefeltet til venstre og se hva som skjer med de tre verdiene: H, S og B. Hvordan oppfører de seg når du gjør fargen lysere, mørkere, sterkere og svakere? Kan du knytte en av de tre verdiene til bevegelse opp og ned? Hva med sideveis?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_20"><label for="cbx_20"> Bruk det lille fargefeltet ved siden av og se hva som skjer med verdiene nå. Hvilke av verdiene endres når du endrer plasseringen i dette feltet?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_21"><label for="cbx_21"> La oss prøve ut HSB nå som du har sett hvordan disse verdiene henger sammen i farge velgeren:</label></p> <pre><code class="processing"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span>() {
+  <span class="hljs-built_in">size</span>(<span class="hljs-number">800</span>, <span class="hljs-number">600</span>);
+  <span class="hljs-built_in">colorMode</span>(HSB, <span class="hljs-number">360</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+}
+
+<span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>() {
+  <span class="hljs-built_in">background</span>(<span class="hljs-number">0</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-built_in">fill</span>(<span class="hljs-number">120</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-built_in">stroke</span>(<span class="hljs-number">120</span>, <span class="hljs-number">75</span>, <span class="hljs-number">50</span>);
+  <span class="hljs-built_in">strokeWeight</span>(<span class="hljs-number">3</span>);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-built_in">width</span> / <span class="hljs-number">2</span>, <span class="hljs-built_in">height</span> / <span class="hljs-number">2</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+}
+</code></pre> <p>Her kaller vi på en ny funksjon <code>colorMode</code> som tar imot fargesystemet som første argument og så maksverdier for de forskjelloge <em>kanalene</em> (H, S og B). Bare <strong>RGB</strong> og <strong>HSB</strong> kan brukes som fargesystem.</p> <p>Du lurer kanskje på hvorfor <strong>H</strong> har fått <code>360</code> som maksverdi. Det er fordi fargetonen baseres på fargehjulet, og det gir 360 grader med fargetoner. Metning og lys gis typisk i prosent. Du kan selvfølgelig velge helt andre maksverdier om du ønsker det.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_22"><label for="cbx_22"> Kjør programmet om du ikke har gjort det allerede.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_23"><label for="cbx_23"> Vi har sett at rød ligger på null grader, og grønn på <code>120</code> grader. La oss se hvilke farger som befinner seg rundt hjulet ved å endre <code>draw</code>:</label></p> <pre><code class="processing"><span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>() {
+  <span class="hljs-built_in">background</span>(<span class="hljs-number">0</span>);
+
+  <span class="hljs-built_in">fill</span>(<span class="hljs-number">0</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-built_in">width</span> / <span class="hljs-number">4</span>, <span class="hljs-built_in">height</span> / <span class="hljs-number">3</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+
+  <span class="hljs-built_in">fill</span>(<span class="hljs-number">60</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-number">2</span> * <span class="hljs-built_in">width</span> / <span class="hljs-number">4</span>, <span class="hljs-built_in">height</span> / <span class="hljs-number">3</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+
+  <span class="hljs-built_in">fill</span>(<span class="hljs-number">120</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-number">3</span> * <span class="hljs-built_in">width</span> / <span class="hljs-number">4</span>, <span class="hljs-built_in">height</span> / <span class="hljs-number">3</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+
+  <span class="hljs-built_in">fill</span>(<span class="hljs-number">180</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-built_in">width</span> / <span class="hljs-number">4</span>, <span class="hljs-number">2</span> * <span class="hljs-built_in">height</span> / <span class="hljs-number">3</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+
+  <span class="hljs-built_in">fill</span>(<span class="hljs-number">240</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-number">2</span> * <span class="hljs-built_in">width</span> / <span class="hljs-number">4</span>, <span class="hljs-number">2</span> * <span class="hljs-built_in">height</span> / <span class="hljs-number">3</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+
+  <span class="hljs-built_in">fill</span>(<span class="hljs-number">300</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-number">3</span> * <span class="hljs-built_in">width</span> / <span class="hljs-number">4</span>, <span class="hljs-number">2</span> * <span class="hljs-built_in">height</span> / <span class="hljs-number">3</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+}
+</code></pre> <p>Her går vi gjennom fargetonene <code>60</code> grader ad gangen. Hvilke farger ligger på de seks vinklene: <code>0, 60, 120, 180, 240</code> og <code>300</code>? Hva tror du befinner seg på <code>360</code> grader?</p> <p>Om du lurer på regnestykkene for plasseringene av sirklene, så deler vi bredden på fire fordi det blir fire tomrom med tre kolonner. Tilsvarende blir det tre tomrom i høyden når vi har to rader. Ved å dele på antall tomrom, får vi bredden på avstanden mellom to nabosirkler eller vinduskanten og den nærmeste sirkelen.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_24"><label for="cbx_24"> Kjør programmet om du ikke har gjort det.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_25"><label for="cbx_25"> La oss se på hvordan metningen og lysheten påvirker fargen. Vi legger til en variabel for fargetone som skal endres over tid, sånn at vi kan se effekten også på forskjellige fargetoner. Legg derfor til følgende øverst i programmet, ovenfor både <em>setup()</em> og <em>draw()</em>:</label></p> <pre><code class="processing"><span class="hljs-built_in">float</span> tone;
+</code></pre> <p>Så endrer vi <code>draw</code> til å tegne opp 9 sirkler der radene har samme metning, og kolonnene har samme lyshet:</p> <pre><code class="processing"><span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>() {
+  <span class="hljs-built_in">background</span>(<span class="hljs-number">0</span>);
+
+  <span class="hljs-built_in">float</span> metning = <span class="hljs-number">100</span>;
+  <span class="hljs-built_in">float</span> lyshet = <span class="hljs-number">100</span>;
+
+  tone = tone + <span class="hljs-number">1</span>;
+  <span class="hljs-keyword">if</span> (tone &gt; <span class="hljs-number">360</span>) {
+    tone = <span class="hljs-number">0</span>;
+  }
+
+  <span class="hljs-built_in">fill</span>(tone, metning, lyshet);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-built_in">width</span> / <span class="hljs-number">4</span>, <span class="hljs-built_in">height</span> / <span class="hljs-number">4</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+
+  lyshet = lyshet - <span class="hljs-number">40</span>;
+  <span class="hljs-built_in">fill</span>(tone, metning, lyshet);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-number">2</span> * <span class="hljs-built_in">width</span> / <span class="hljs-number">4</span>, <span class="hljs-built_in">height</span> / <span class="hljs-number">4</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+
+  lyshet = lyshet - <span class="hljs-number">40</span>;
+  <span class="hljs-built_in">fill</span>(tone, metning, lyshet);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-number">2</span> * <span class="hljs-built_in">width</span> / <span class="hljs-number">4</span>, <span class="hljs-built_in">height</span> / <span class="hljs-number">4</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+
+  lyshet = <span class="hljs-number">100</span>;
+  metning = metning - <span class="hljs-number">40</span>;
+  <span class="hljs-built_in">fill</span>(tone, metning, lyshet);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-built_in">width</span> / <span class="hljs-number">4</span>, <span class="hljs-number">2</span> * <span class="hljs-built_in">height</span> / <span class="hljs-number">4</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+
+  lyshet = lyshet - <span class="hljs-number">40</span>;
+  <span class="hljs-built_in">fill</span>(tone, metning, lyshet);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-number">2</span> * <span class="hljs-built_in">width</span> / <span class="hljs-number">4</span>, <span class="hljs-number">2</span> * <span class="hljs-built_in">height</span> / <span class="hljs-number">4</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+
+  lyshet = lyshet - <span class="hljs-number">40</span>;
+  <span class="hljs-built_in">fill</span>(tone, metning, lyshet);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-number">2</span> * <span class="hljs-built_in">width</span> / <span class="hljs-number">4</span>, <span class="hljs-number">2</span> * <span class="hljs-built_in">height</span> / <span class="hljs-number">4</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+
+  lyshet = <span class="hljs-number">100</span>;
+  metning = metning - <span class="hljs-number">40</span>;
+  <span class="hljs-built_in">fill</span>(tone, metning, lyshet);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-built_in">width</span> / <span class="hljs-number">4</span>, <span class="hljs-number">3</span> * <span class="hljs-built_in">height</span> / <span class="hljs-number">4</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+
+  lyshet = lyshet - <span class="hljs-number">40</span>;
+  <span class="hljs-built_in">fill</span>(tone, metning, lyshet);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-number">2</span> * <span class="hljs-built_in">width</span> / <span class="hljs-number">4</span>, <span class="hljs-number">3</span> * <span class="hljs-built_in">height</span> / <span class="hljs-number">4</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+
+  lyshet = lyshet - <span class="hljs-number">40</span>;
+  <span class="hljs-built_in">fill</span>(tone, metning, lyshet);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-number">2</span> * <span class="hljs-built_in">width</span> / <span class="hljs-number">4</span>, <span class="hljs-number">3</span> * <span class="hljs-built_in">height</span> / <span class="hljs-number">4</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+}
+</code></pre> </li> </ul> <section class="protip"> <h3 class="protip">Repetisjon av kode</h3> <p>I koden over, er det mye repetisjon av kode for å sette fargen og tegne opp sirklene. Selv om vi ikke skal gå gjennom løkker nå, kan det være nyttig å se hvordan denne koden kunne vært gjort kortere og enklere ved hjelp av løkker.</p> <pre><code class="processing"><span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>() {
+  <span class="hljs-built_in">background</span>(<span class="hljs-number">0</span>);
+
+  <span class="hljs-built_in">int</span> metning = <span class="hljs-number">100</span>;
+  <span class="hljs-built_in">int</span> lyshet = <span class="hljs-number">100</span>;
+
+  tone = tone + <span class="hljs-number">1</span>;
+  <span class="hljs-keyword">if</span> (tone &gt; <span class="hljs-number">360</span>) {
+    tone = <span class="hljs-number">0</span>;
+  }
+
+  <span class="hljs-keyword">for</span> (<span class="hljs-built_in">int</span> rad = <span class="hljs-number">1</span>; rad &lt;= <span class="hljs-number">3</span>; rad++) {
+    lyshet = <span class="hljs-number">100</span>;
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-built_in">int</span> kolonne = <span class="hljs-number">1</span>; kolonne &lt;= <span class="hljs-number">3</span>; kolonne++) {
+      lyshet = lyshet - <span class="hljs-number">40</span>;
+      <span class="hljs-built_in">fill</span>(tone, metning, lyshet);
+      <span class="hljs-built_in">ellipse</span>(kolonne * <span class="hljs-built_in">width</span> / <span class="hljs-number">4</span>, rad * <span class="hljs-built_in">height</span> / <span class="hljs-number">4</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+    }
+
+    metning = metning - <span class="hljs-number">40</span>;
+  }
+}
+</code></pre> </section> </section> </section> <section class="activity"> <h1 class="activity">Steg 5: Fargevariabler og -funksjoner</h1> <p>Noen ganger er det nyttig å kunne ha variabler for å holde rede på farger. Over så vi at vi godt kan bruke tre variabler, en for hver fargekanal i systemet, men nå skal vi se på en egen type som kan brukes til farger: <code>color</code>.</p> <p>Vi skal også se på noen funksjoner for å jobbe med farger. Dette gjør at vi kan få mer nytte av fargevariabler uten å bruke en variabel for hver fargekanal. Hvis farger skal endre seg veldig mye, kan det likevel være enklere med tre variabler. Variablene defineres, som tidligere, utenfor <em>setup()</em> og <em>draw()</em>.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.e0eedd.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_26"><label for="cbx_26"> Vi begynner helt enkelt med en fargevariabel for bakgrunn og en for fyllfarge:</label></p> <pre><code class="processing"><span class="hljs-built_in">color</span> bakgrunn = <span class="hljs-built_in">color</span>(<span class="hljs-number">32</span>, <span class="hljs-number">128</span>, <span class="hljs-number">64</span>);
+<span class="hljs-built_in">color</span> fyll = <span class="hljs-built_in">color</span>(<span class="hljs-number">64</span>, <span class="hljs-number">128</span>, <span class="hljs-number">255</span>);
+
+<span class="hljs-keyword">void</span> <span class="hljs-title">setup</span>() {
+  <span class="hljs-built_in">size</span>(<span class="hljs-number">800</span>, <span class="hljs-number">600</span>);
+}
+
+<span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>() {
+  <span class="hljs-built_in">background</span>(bakgrunn);
+  <span class="hljs-built_in">fill</span>(fyll);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-built_in">width</span> / <span class="hljs-number">2</span>, <span class="hljs-built_in">height</span> / <span class="hljs-number">2</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+}
+</code></pre> <p>Hvis du kjører programmet ser du en blå sirkel på en grønn bakgrunn. <code>color(32, 128, 64)</code> gir oss en verdi som vi kan putte i en <code>color</code>-variabel. Nå vi bruker variabelen i <code>background(bakgrunn)</code>, er det som om vi skrev <code>background(32, 128, 64)</code>.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_27"><label for="cbx_27"> La oss se hvordan vi kan lage en farge som ligger et sted mellom to farger med <code>lerpColor</code>. Legg til en ekstra farge for svart først i programmet:</label></p> <pre><code class="processing"><span class="hljs-built_in">color</span> svart = <span class="hljs-built_in">color</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+</code></pre> <p>Så setter vi omrisset til sirkelen til å være en mellomting mellom svart og fyllfargen:</p> <pre><code class="processing"><span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>() {
+  <span class="hljs-built_in">background</span>(bakgrunn);
+  <span class="hljs-built_in">fill</span>(fyll);
+  <span class="hljs-built_in">stroke</span>(<span class="hljs-built_in">lerpColor</span>(fyll, svart, <span class="hljs-number">0.5</span>));
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-built_in">width</span> / <span class="hljs-number">2</span>, <span class="hljs-built_in">height</span> / <span class="hljs-number">2</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+}
+</code></pre> <p><code>lerpColor(farge1, farge2, blandingsForhold)</code> gir en som ligger mellom <code>farge1</code> og <code>farge2</code>, eller <code>fyll</code> og <code>svart</code> i koden ovenfor. <code>blandingsForholdet</code> er et tall mellom <code>0</code> og <code>1</code>. Når det er <code>0</code> blir fargen helt lik <code>farge1</code>. Når det er <code>1</code> blir fargen helt lik <code>farge2</code>. <code>0.5</code> gir oss da en farge midt mellom de to.</p> <p>Siden resultatet av et kall på <code>lerpColor</code> er en farge, kunne du også lagt resultatet i en <code>color</code>-variabel: <code>color omriss = lerpColor(fyll, svart, 0.5);</code></p> <p>Kjør programmet og merk at omrisset nå er en mørkere variant av blåfargen istedenfor helt svart.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_28"><label for="cbx_28"> Hvis man vil bruke HSB istedenfor RGB, går det også an, men da må man bytte fargesystem før man lager fargene:</label></p> <pre><code class="processing"><span class="hljs-built_in">color</span> bakgrunn;
+<span class="hljs-built_in">color</span> fyll;
+
+<span class="hljs-keyword">void</span> <span class="hljs-title">setup</span>() {
+  <span class="hljs-built_in">size</span>(<span class="hljs-number">800</span>, <span class="hljs-number">600</span>);
+  <span class="hljs-built_in">colorMode</span>(HSB, <span class="hljs-number">360</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+  bakgrunn = <span class="hljs-built_in">color</span>(<span class="hljs-number">120</span>, <span class="hljs-number">75</span>, <span class="hljs-number">60</span>);
+  fyll = <span class="hljs-built_in">color</span>(<span class="hljs-number">210</span>, <span class="hljs-number">75</span>, <span class="hljs-number">75</span>);
+}
+
+<span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>() {
+  <span class="hljs-built_in">background</span>(bakgrunn);
+  <span class="hljs-built_in">fill</span>(fyll);
+  <span class="hljs-built_in">ellipse</span>(<span class="hljs-built_in">width</span> / <span class="hljs-number">2</span>, <span class="hljs-built_in">height</span> / <span class="hljs-number">2</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+}
+</code></pre> <p>Kjør programmet.</p> <p>Hva skjer med fargene om du lager dem før du bytter til HSB? Hva om du bytter til RGB, <code>colorMode(RGB, 255);</code>, etter at du har lagd fargene ovenfor?</p> </li> </ul> <section class="challenge"> <h3 class="challenge">Prøv selv</h3> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_29"><label for="cbx_29"> Ta utgangspunkt i punktet hvor du blandet farger med <code>lerpColor</code>. Kan du tegne et ansikt eller en annen figur med ellipser der du blander farger med <code>lerpColor</code> for omriss- og/eller fyllfargene? Hvis du skal bruke blandingsfarger til både omriss og fyll, kan det være lurt å legge resultatene av blandingen i <code>color</code>-variabler.</label></li> </ul> </section> </section> </section> </div><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1"><div class="MuiGrid-root MuiGrid-item">Lisens: </div><div class="MuiGrid-root MuiGrid-item"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="http://creativecommons.org/licenses/by-sa/4.0/deed" target="_blank" rel="noopener">CC BY-SA 4.0</a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><div class="MuiPaper-root MuiPaper-elevation1 jss264 MuiPaper-rounded"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><h2 class="MuiTypography-root MuiTypography-h4">Forbedre denne siden</h2></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Funnet en feil? Kunne noe vært bedre?</p></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!</p></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Processing: Farger&#x27;&amp;body=Oppgave: https://oppgaver.kidsakoder.no/processing/farger/farger%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/processing/farger/farger.md%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Rapporter et problem</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265" tabindex="0" role="button" aria-disabled="false" href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></span>Gå til forumet</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/tree/master/src/processing/farger/farger.md" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Vis koden og fiks selv</span></a></div></div></div></div></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionStatic jss266"><div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.sparebank1.no" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/smn.098a83.jpg" alt="SpareBank1"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://ibok.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/ibok.06cd44.jpg" alt="Ibok"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.teknograd.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/teknograd.03c75e.png" alt="Teknograd"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.tekna.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/tekna.41a4f5.jpg" alt="Tekna"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.ntnu.edu/idi/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/ntnu_idi.5179a4.png" alt="NTNU institutt for datateknologi og informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.ntnu.edu/web/excited" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/excITEd.915706.png" alt="excited"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.mn.uio.no/ifi/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/uio_ifi.37ef13.png" alt="UIO institutt for informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.samsung.com/no/innovation/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/samsung.bec12f.png" alt="Samsung"/></a></div></div></header></div>
+  
+  <script src="/main.295399.js" async></script>  
+</body>
+</html>
