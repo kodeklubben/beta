@@ -56,7 +56,7 @@ strong, b {
 body {
   color: rgba(0, 0, 0, 0.87);
   margin: 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   line-height: 1.43;
@@ -193,11 +193,11 @@ body::backdrop {
   }
   .MuiAppBar-colorPrimary {
     color: #fff;
-    background-color: #3f51b5;
+    background-color: #212121;
   }
   .MuiAppBar-colorSecondary {
-    color: #fff;
-    background-color: #f50057;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #dcedc8;
   }
   .MuiDrawer-docked {
     flex: 0 0 auto;
@@ -282,7 +282,7 @@ body::backdrop {
     color: rgba(0, 0, 0, 0.54);
     padding: 12px;
     overflow: visible;
-    font-size: 1.5rem;
+    font-size: 1.7142857142857142rem;
     text-align: center;
     transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     border-radius: 50%;
@@ -315,10 +315,10 @@ body::backdrop {
     color: inherit;
   }
   .MuiIconButton-colorPrimary {
-    color: #3f51b5;
+    color: #212121;
   }
   .MuiIconButton-colorPrimary:hover {
-    background-color: rgba(63, 81, 181, 0.08);
+    background-color: rgba(33, 33, 33, 0.08);
   }
 @media (hover: none) {
   .MuiIconButton-colorPrimary:hover {
@@ -326,10 +326,10 @@ body::backdrop {
   }
 }
   .MuiIconButton-colorSecondary {
-    color: #f50057;
+    color: #dcedc8;
   }
   .MuiIconButton-colorSecondary:hover {
-    background-color: rgba(245, 0, 87, 0.08);
+    background-color: rgba(220, 237, 200, 0.08);
   }
 @media (hover: none) {
   .MuiIconButton-colorSecondary:hover {
@@ -338,7 +338,7 @@ body::backdrop {
 }
   .MuiIconButton-sizeSmall {
     padding: 3px;
-    font-size: 1.125rem;
+    font-size: 1.2857142857142856rem;
   }
   .MuiIconButton-label {
     width: 100%;
@@ -346,32 +346,271 @@ body::backdrop {
     align-items: inherit;
     justify-content: inherit;
   }
+  .MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.7142857142857142rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  .MuiSvgIcon-colorPrimary {
+    color: #212121;
+  }
+  .MuiSvgIcon-colorSecondary {
+    color: #dcedc8;
+  }
+  .MuiSvgIcon-colorAction {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiSvgIcon-colorError {
+    color: #f44336;
+  }
+  .MuiSvgIcon-colorDisabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+  .MuiSvgIcon-fontSizeInherit {
+    font-size: inherit;
+  }
+  .MuiSvgIcon-fontSizeSmall {
+    font-size: 1.4285714285714284rem;
+  }
+  .MuiSvgIcon-fontSizeLarge {
+    font-size: 2.5rem;
+  }
+  .MuiButton-root {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 6px 16px;
+    font-size: 1rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiButton-root:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .MuiButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-root:hover.Mui-disabled {
+    background-color: transparent;
+  }
+  .MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiButton-text {
+    padding: 6px 8px;
+  }
+  .MuiButton-textPrimary {
+    color: #212121;
+  }
+  .MuiButton-textPrimary:hover {
+    background-color: rgba(33, 33, 33, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-textSecondary {
+    color: #dcedc8;
+  }
+  .MuiButton-textSecondary:hover {
+    background-color: rgba(220, 237, 200, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlined {
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    padding: 5px 15px;
+  }
+  .MuiButton-outlined.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+  }
+  .MuiButton-outlinedPrimary {
+    color: #212121;
+    border: 1px solid rgba(33, 33, 33, 0.5);
+  }
+  .MuiButton-outlinedPrimary:hover {
+    border: 1px solid #212121;
+    background-color: rgba(33, 33, 33, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlinedSecondary {
+    color: #dcedc8;
+    border: 1px solid rgba(220, 237, 200, 0.5);
+  }
+  .MuiButton-outlinedSecondary:hover {
+    border: 1px solid #dcedc8;
+    background-color: rgba(220, 237, 200, 0.08);
+  }
+  .MuiButton-outlinedSecondary.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-contained {
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+  .MuiButton-contained:hover {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+    background-color: #d5d5d5;
+  }
+  .MuiButton-contained.Mui-focusVisible {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained:active {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+  .MuiButton-contained:hover.Mui-disabled {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+  .MuiButton-containedPrimary {
+    color: #fff;
+    background-color: #212121;
+  }
+  .MuiButton-containedPrimary:hover {
+    background-color: rgb(23, 23, 23);
+  }
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #212121;
+  }
+}
+  .MuiButton-containedSecondary {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #dcedc8;
+  }
+  .MuiButton-containedSecondary:hover {
+    background-color: rgb(154, 165, 140);
+  }
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #dcedc8;
+  }
+}
+  .MuiButton-colorInherit {
+    color: inherit;
+    border-color: currentColor;
+  }
+  .MuiButton-textSizeSmall {
+    padding: 4px 5px;
+    font-size: 0.9285714285714285rem;
+  }
+  .MuiButton-textSizeLarge {
+    padding: 8px 11px;
+    font-size: 1.0714285714285714rem;
+  }
+  .MuiButton-outlinedSizeSmall {
+    padding: 3px 9px;
+    font-size: 0.9285714285714285rem;
+  }
+  .MuiButton-outlinedSizeLarge {
+    padding: 7px 21px;
+    font-size: 1.0714285714285714rem;
+  }
+  .MuiButton-containedSizeSmall {
+    padding: 4px 10px;
+    font-size: 0.9285714285714285rem;
+  }
+  .MuiButton-containedSizeLarge {
+    padding: 8px 22px;
+    font-size: 1.0714285714285714rem;
+  }
+  .MuiButton-fullWidth {
+    width: 100%;
+  }
+  .MuiButton-startIcon {
+    display: inherit;
+    margin-left: -4px;
+    margin-right: 8px;
+  }
+  .MuiButton-startIcon.MuiButton-iconSizeSmall {
+    margin-left: -2px;
+  }
+  .MuiButton-endIcon {
+    display: inherit;
+    margin-left: 8px;
+    margin-right: -4px;
+  }
+  .MuiButton-endIcon.MuiButton-iconSizeSmall {
+    margin-right: -2px;
+  }
+  .MuiButton-iconSizeSmall > *:first-child {
+    font-size: 18px;
+  }
+  .MuiButton-iconSizeMedium > *:first-child {
+    font-size: 20px;
+  }
+  .MuiButton-iconSizeLarge > *:first-child {
+    font-size: 22px;
+  }
   .MuiTypography-root {
     margin: 0;
   }
   .MuiTypography-body2 {
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.43;
     letter-spacing: 0.01071em;
   }
   .MuiTypography-body1 {
-    font-size: 1rem;
+    font-size: 1.1428571428571428rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.00938em;
   }
   .MuiTypography-caption {
-    font-size: 0.75rem;
+    font-size: 0.8571428571428571rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.66;
     letter-spacing: 0.03333em;
   }
   .MuiTypography-button {
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 500;
     line-height: 1.75;
@@ -379,63 +618,63 @@ body::backdrop {
     text-transform: uppercase;
   }
   .MuiTypography-h1 {
-    font-size: 6rem;
+    font-size: 6.857142857142857rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 300;
     line-height: 1;
     letter-spacing: -0.01562em;
   }
   .MuiTypography-h2 {
-    font-size: 3.75rem;
+    font-size: 4.285714285714286rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 300;
     line-height: 1;
     letter-spacing: -0.00833em;
   }
   .MuiTypography-h3 {
-    font-size: 3rem;
+    font-size: 3.4285714285714284rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.04;
     letter-spacing: 0em;
   }
   .MuiTypography-h4 {
-    font-size: 2.125rem;
+    font-size: 2.4285714285714284rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.00735em;
   }
   .MuiTypography-h5 {
-    font-size: 1.5rem;
+    font-size: 1.7142857142857142rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.33;
     letter-spacing: 0em;
   }
   .MuiTypography-h6 {
-    font-size: 1.25rem;
+    font-size: 1.4285714285714284rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 500;
     line-height: 1.6;
     letter-spacing: 0.0075em;
   }
   .MuiTypography-subtitle1 {
-    font-size: 1rem;
+    font-size: 1.1428571428571428rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.75;
     letter-spacing: 0.00938em;
   }
   .MuiTypography-subtitle2 {
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 500;
     line-height: 1.57;
     letter-spacing: 0.00714em;
   }
   .MuiTypography-overline {
-    font-size: 0.75rem;
+    font-size: 0.8571428571428571rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 2.66;
@@ -475,10 +714,10 @@ body::backdrop {
     color: inherit;
   }
   .MuiTypography-colorPrimary {
-    color: #3f51b5;
+    color: #212121;
   }
   .MuiTypography-colorSecondary {
-    color: #f50057;
+    color: #dcedc8;
   }
   .MuiTypography-colorTextPrimary {
     color: rgba(0, 0, 0, 0.87);
@@ -495,41 +734,40 @@ body::backdrop {
   .MuiTypography-displayBlock {
     display: block;
   }
-  .MuiSvgIcon-root {
-    fill: currentColor;
-    width: 1em;
-    height: 1em;
-    display: inline-block;
-    font-size: 1.5rem;
-    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    flex-shrink: 0;
+  .MuiLink-underlineNone {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover:hover {
+    text-decoration: underline;
+  }
+  .MuiLink-underlineAlways {
+    text-decoration: underline;
+  }
+  .MuiLink-button {
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: relative;
     user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
   }
-  .MuiSvgIcon-colorPrimary {
-    color: #3f51b5;
+  .MuiLink-button::-moz-focus-inner {
+    border-style: none;
   }
-  .MuiSvgIcon-colorSecondary {
-    color: #f50057;
+  .MuiLink-button.Mui-focusVisible {
+    outline: auto;
   }
-  .MuiSvgIcon-colorAction {
-    color: rgba(0, 0, 0, 0.54);
-  }
-  .MuiSvgIcon-colorError {
-    color: #f44336;
-  }
-  .MuiSvgIcon-colorDisabled {
-    color: rgba(0, 0, 0, 0.26);
-  }
-  .MuiSvgIcon-fontSizeInherit {
-    font-size: inherit;
-  }
-  .MuiSvgIcon-fontSizeSmall {
-    font-size: 1.25rem;
-  }
-  .MuiSvgIcon-fontSizeLarge {
-    font-size: 2.1875rem;
-  }
-  .jss98 {
+  .jss101 {
     display: flex;
     margin-left: 8px;
     user-select: none;
@@ -544,6 +782,18 @@ body::backdrop {
   }
   .MuiBreadcrumbs-li {
     list-style: none;
+  }
+@media print {
+  .jss3 {
+    display: none;
+  }
+}
+  .jss4 {
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+  .jss5 {
+    background: #dcedc8;
   }
   .MuiGrid-container {
     width: 100%;
@@ -1043,278 +1293,15 @@ body::backdrop {
     flex-basis: 100%;
   }
 }
-  .MuiLink-underlineNone {
-    text-decoration: none;
-  }
-  .MuiLink-underlineHover {
-    text-decoration: none;
-  }
-  .MuiLink-underlineHover:hover {
-    text-decoration: underline;
-  }
-  .MuiLink-underlineAlways {
-    text-decoration: underline;
-  }
-  .MuiLink-button {
-    border: 0;
-    cursor: pointer;
-    margin: 0;
-    outline: 0;
-    padding: 0;
-    position: relative;
-    user-select: none;
-    border-radius: 0;
-    vertical-align: middle;
-    -moz-appearance: none;
-    background-color: transparent;
-    -webkit-appearance: none;
-    -webkit-tap-highlight-color: transparent;
-  }
-  .MuiLink-button::-moz-focus-inner {
-    border-style: none;
-  }
-  .MuiLink-button.Mui-focusVisible {
-    outline: auto;
-  }
-  .MuiButton-root {
-    color: rgba(0, 0, 0, 0.87);
-    padding: 6px 16px;
-    font-size: 0.875rem;
-    min-width: 64px;
-    box-sizing: border-box;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 500;
-    line-height: 1.75;
-    border-radius: 4px;
-    letter-spacing: 0.02857em;
-    text-transform: uppercase;
-  }
-  .MuiButton-root:hover {
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.08);
-  }
-  .MuiButton-root.Mui-disabled {
-    color: rgba(0, 0, 0, 0.26);
-  }
-@media (hover: none) {
-  .MuiButton-root:hover {
-    background-color: transparent;
-  }
-}
-  .MuiButton-root:hover.Mui-disabled {
-    background-color: transparent;
-  }
-  .MuiButton-label {
-    width: 100%;
-    display: inherit;
-    align-items: inherit;
-    justify-content: inherit;
-  }
-  .MuiButton-text {
-    padding: 6px 8px;
-  }
-  .MuiButton-textPrimary {
-    color: #3f51b5;
-  }
-  .MuiButton-textPrimary:hover {
-    background-color: rgba(63, 81, 181, 0.08);
-  }
-@media (hover: none) {
-  .MuiButton-textPrimary:hover {
-    background-color: transparent;
-  }
-}
-  .MuiButton-textSecondary {
-    color: #f50057;
-  }
-  .MuiButton-textSecondary:hover {
-    background-color: rgba(245, 0, 87, 0.08);
-  }
-@media (hover: none) {
-  .MuiButton-textSecondary:hover {
-    background-color: transparent;
-  }
-}
-  .MuiButton-outlined {
-    border: 1px solid rgba(0, 0, 0, 0.23);
-    padding: 5px 15px;
-  }
-  .MuiButton-outlined.Mui-disabled {
-    border: 1px solid rgba(0, 0, 0, 0.26);
-  }
-  .MuiButton-outlinedPrimary {
-    color: #3f51b5;
-    border: 1px solid rgba(63, 81, 181, 0.5);
-  }
-  .MuiButton-outlinedPrimary:hover {
-    border: 1px solid #3f51b5;
-    background-color: rgba(63, 81, 181, 0.08);
-  }
-@media (hover: none) {
-  .MuiButton-outlinedPrimary:hover {
-    background-color: transparent;
-  }
-}
-  .MuiButton-outlinedSecondary {
-    color: #f50057;
-    border: 1px solid rgba(245, 0, 87, 0.5);
-  }
-  .MuiButton-outlinedSecondary:hover {
-    border: 1px solid #f50057;
-    background-color: rgba(245, 0, 87, 0.08);
-  }
-  .MuiButton-outlinedSecondary.Mui-disabled {
-    border: 1px solid rgba(0, 0, 0, 0.26);
-  }
-@media (hover: none) {
-  .MuiButton-outlinedSecondary:hover {
-    background-color: transparent;
-  }
-}
-  .MuiButton-contained {
-    color: rgba(0, 0, 0, 0.87);
-    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
-    background-color: #e0e0e0;
-  }
-  .MuiButton-contained:hover {
-    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
-    background-color: #d5d5d5;
-  }
-  .MuiButton-contained.Mui-focusVisible {
-    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
-  }
-  .MuiButton-contained:active {
-    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
-  }
-  .MuiButton-contained.Mui-disabled {
-    color: rgba(0, 0, 0, 0.26);
-    box-shadow: none;
-    background-color: rgba(0, 0, 0, 0.12);
-  }
-@media (hover: none) {
-  .MuiButton-contained:hover {
-    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
-    background-color: #e0e0e0;
-  }
-}
-  .MuiButton-contained:hover.Mui-disabled {
-    background-color: rgba(0, 0, 0, 0.12);
-  }
-  .MuiButton-containedPrimary {
-    color: #fff;
-    background-color: #3f51b5;
-  }
-  .MuiButton-containedPrimary:hover {
-    background-color: #303f9f;
-  }
-@media (hover: none) {
-  .MuiButton-containedPrimary:hover {
-    background-color: #3f51b5;
-  }
-}
-  .MuiButton-containedSecondary {
-    color: #fff;
-    background-color: #f50057;
-  }
-  .MuiButton-containedSecondary:hover {
-    background-color: #c51162;
-  }
-@media (hover: none) {
-  .MuiButton-containedSecondary:hover {
-    background-color: #f50057;
-  }
-}
-  .MuiButton-colorInherit {
-    color: inherit;
-    border-color: currentColor;
-  }
-  .MuiButton-textSizeSmall {
-    padding: 4px 5px;
-    font-size: 0.8125rem;
-  }
-  .MuiButton-textSizeLarge {
-    padding: 8px 11px;
-    font-size: 0.9375rem;
-  }
-  .MuiButton-outlinedSizeSmall {
-    padding: 3px 9px;
-    font-size: 0.8125rem;
-  }
-  .MuiButton-outlinedSizeLarge {
-    padding: 7px 21px;
-    font-size: 0.9375rem;
-  }
-  .MuiButton-containedSizeSmall {
-    padding: 4px 10px;
-    font-size: 0.8125rem;
-  }
-  .MuiButton-containedSizeLarge {
-    padding: 8px 22px;
-    font-size: 0.9375rem;
-  }
-  .MuiButton-fullWidth {
-    width: 100%;
-  }
-  .MuiButton-startIcon {
-    display: inherit;
-    margin-left: -4px;
-    margin-right: 8px;
-  }
-  .MuiButton-startIcon.MuiButton-iconSizeSmall {
-    margin-left: -2px;
-  }
-  .MuiButton-endIcon {
-    display: inherit;
-    margin-left: 8px;
-    margin-right: -4px;
-  }
-  .MuiButton-endIcon.MuiButton-iconSizeSmall {
-    margin-right: -2px;
-  }
-  .MuiButton-iconSizeSmall > *:first-child {
-    font-size: 18px;
-  }
-  .MuiButton-iconSizeMedium > *:first-child {
-    font-size: 20px;
-  }
-  .MuiButton-iconSizeLarge > *:first-child {
-    font-size: 22px;
-  }
-@media print {
-  .jss3 {
-    display: none;
-  }
-}
-  .jss4 {
-    flex-grow: 1;
-    justify-content: space-between;
-  }
-  .jss5 {
-    display: flex;
-  }
-  .jss6 {
-    width: 20px;
-    height: 20px;
-  }
-  .jss7 {
-    width: 16px;
-    height: auto;
-    align-self: center;
-    margin-right: 8px;
-  }
-  .jss8 {
-    margin-left: 8px;
-  }
-  .jss266 {
+  .jss263 {
     margin-top: 40px;
   }
 @media print {
-  .jss266 {
+  .jss263 {
     display: none;
   }
 }
-  .jss267 {
+  .jss264 {
     width: auto;
     height: 50px;
     margin: 20px 7px 10px;
@@ -1394,50 +1381,50 @@ body::backdrop {
   }
 }
 
-  .jss235 {
+  .jss226 {
     margin-top: 16px;
     margin-right: 16px;
   }
 @media print {
-  .jss235 {
+  .jss226 {
     display: none;
   }
 }
-  .jss264 {
+  .jss261 {
     padding: 16px;
     max-width: 700px;
     margin-top: 40px;
   }
 @media print {
-  .jss264 {
+  .jss261 {
     display: none;
   }
 }
-  .jss265 {
+  .jss262 {
     margin: 8px;
   }
-  .jss234 {
+  .jss225 {
     display: none;
     font-size: 0.75em;
     font-style: italic;
   }
 @media print {
-  .jss234 {
+  .jss225 {
     display: block;
   }
 }
-  .jss226 {
+  .jss114 {
     margin-top: 40px;
     margin-bottom: 40px;
   }</style></head>
 <body>
-  <div id="app"><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionFixed jss3 mui-fixed"><div class="MuiToolbar-root MuiToolbar-regular jss4 MuiToolbar-gutters"><nav class="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"><ol class="MuiBreadcrumbs-ol"><li class="MuiBreadcrumbs-li"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-colorTextPrimary" aria-label="Hjem" href="/"><svg class="MuiSvgIcon-root jss6" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></a></li><li aria-hidden="true" class="jss98 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone jss5 MuiTypography-colorTextPrimary" href="/microbit"><img class="jss7" src="/_/oppgaver/src/microbit/logo-black.f1dcc4.png" alt="Bilde av Micro:bit"/><p class="MuiTypography-root MuiTypography-body1">Micro:bit</p></a></li><li aria-hidden="true" class="jss98 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone jss5 MuiTypography-colorTextPrimary" aria-label="PXT: Spå fremtiden med bilder" href="/microbit/pxt_spaa_fremtiden_med_bilder/spaa_fremtiden_med_bilder"><div class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg><p class="MuiTypography-root jss8 MuiTypography-body1">PXT: Spå fremtiden med bilder</p></div></a></li></ol></nav><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></header><div class="MuiToolbar-root MuiToolbar-regular jss1 MuiToolbar-gutters"></div><div class="jss2"><div class="MuiContainer-root jss226 MuiContainer-maxWidthMd"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg></div><div class="MuiGrid-root MuiGrid-item"><h1 class="MuiTypography-root MuiTypography-h3">PXT: Spå fremtiden med bilder</h1></div></div><p><i>Skrevet av:<!-- --> <span>Helene Isnes</span></i></p><div class="jss234"><div>Kurs:<!-- --> <!-- -->Microbit</div><div>Tema: Elektronikk, Blokkbasert, Spill</div><div>Fag: Kunst og håndverk, Matematikk, Programmering</div><div>Klassetrinn: 5.-7. klasse, 8.-10. klasse, Videregående skole</div></div><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss235" tabindex="0" role="button" aria-disabled="false" href="http://pdf-ace.com/pdfme?print_media=1" download=""><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg></span>Last ned PDF</span></a><div><section class="intro"> <h1 class="intro">Introduksjon</h1> <p>I denne oppgaven skal vi opprette en liste med bilder, og ved å trykke på port 0 på micro:biten skal et tilfeldig bilde vises på skjermen. Dette kan du bruke til å spå andre med!</p> <figure><img src="spill.png" alt="Bilder av micro:biten og en som holder på portene 0 og GND"></figure> <p>Micro:biten har fem store tilkoblinger på brettet, som vi kaller porter. Disse er koblet til store hull og er merket: 0, 1, 2, 3V og GND, på micro:biten.</p> <figure><img src="kontakt.png" alt="Bilde av en micro:bit og påkoblede krokodilleklemmer"></figure> <p>GND porten blir brukt for å fullføre en krets. Hvis du holder på GND-porten med en hånd, kan du programmere micro:biten til å oppdage at du berører 0, 1 eller 2 pinnen med den andre hånden (da bruker du kroppen din til å fullføre en elektrisk krets). Dette kan du bruke for å få micro:biten til å gjøre eller vise ulike ting. Du kan også få micro:biten til å sende signaler ut gjennom portene. Da kan du for eksempel sende ut en elektrisk spenning, og ved å koble på et leddlys med krokodilleklemmer, kan du få det til å lyse.</p> <p>Du kan lese mer om portene på micro:biten her: <a href="https://microbit.org/no/guide/hardware/pins/" target="blank">microbit.org</a></p> </section> <section class="activity"> <h1 class="activity">Steg 1: Opprett liste</h1> <p><em>Klossene</em> <code class="microbitbasic">vis bilde</code> <em>og</em> <code class="microbitbasic">vis ikon</code> <em>i</em> <code class="microbitbasic">Basis</code> <em>lar deg vise bilder med en gang på micro:biten, men man kan også lagre bilder eller lister med bilder i variabler. I denne oppgaven skal vi gjøre sistnevnte.</em></p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Gå til kategorien <code class="microbitvariables">Variabler</code>, trykk på <code class="microbitvariables">Lag en variabel</code> og skriv inn &quot;Bildeliste&quot;.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Klikk på <strong>Avansert</strong>, deretter på <code class="microbitarrays">Lister</code> og finn klossen som heter <code class="microbitarrays">sett list til array of</code> (&quot;array of&quot; betyr &quot;liste av&quot; på norsk). Plasser klossen i <code class="microbitbasic">ved start</code> og bytt navn på variabelen til &quot;Bildeliste&quot;.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_2"><label for="cbx_2"> Fyll ut plassene i listen (der hvor det står tall) med klossen<code class="microbitimages">ikonbilde</code> som ligger i <strong>Avansert</strong> -&gt; <code class="microbitimages">Bilder</code>. Du kan utvide listen og legge til så mange bilder du vil ved å trykke på plusstegnet helt til høyre på liste-klossen. Legg til minst 5 bilder/ikoner.</label></p> </li> </ul> <pre class="microbit">let Bildeliste = [images.iconImage(IconNames.Heart), images.iconImage(IconNames.No)]
+  <div id="app"><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionFixed jss3 MuiAppBar-colorSecondary mui-fixed"><div class="MuiToolbar-root MuiToolbar-regular jss4 MuiToolbar-gutters"><nav class="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"><ol class="MuiBreadcrumbs-ol"><li class="MuiBreadcrumbs-li"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" aria-label="Hjem" href="/"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></a></li><li aria-hidden="true" class="jss101 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div></div></li><li aria-hidden="true" class="jss101 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div></div></li></ol></nav><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></header><div class="MuiToolbar-root MuiToolbar-regular jss1 MuiToolbar-gutters"></div><div class="jss2"><div class="MuiContainer-root jss114 MuiContainer-maxWidthMd"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg></div><div class="MuiGrid-root MuiGrid-item"><h1 class="MuiTypography-root MuiTypography-h3">PXT: Spå fremtiden med bilder</h1></div></div><p><i>Skrevet av:<!-- --> <span>Helene Isnes</span></i></p><div class="jss225"><div>Kurs:<!-- --> <!-- -->Microbit</div><div>Tema: Elektronikk, Blokkbasert, Spill</div><div>Fag: Kunst og håndverk, Matematikk, Programmering</div><div>Klassetrinn: 5.-7. klasse, 8.-10. klasse, Videregående skole</div></div><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss226 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://pdf-ace.com/pdfme?print_media=1"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg></span>Last ned PDF</span></a><div><section class="intro"> <h1 class="intro">Introduksjon</h1> <p>I denne oppgaven skal vi opprette en liste med bilder, og ved å trykke på port 0 på micro:biten skal et tilfeldig bilde vises på skjermen. Dette kan du bruke til å spå andre med!</p> <figure><img src="spill.png" alt="Bilder av micro:biten og en som holder på portene 0 og GND"></figure> <p>Micro:biten har fem store tilkoblinger på brettet, som vi kaller porter. Disse er koblet til store hull og er merket: 0, 1, 2, 3V og GND, på micro:biten.</p> <figure><img src="kontakt.png" alt="Bilde av en micro:bit og påkoblede krokodilleklemmer"></figure> <p>GND porten blir brukt for å fullføre en krets. Hvis du holder på GND-porten med en hånd, kan du programmere micro:biten til å oppdage at du berører 0, 1 eller 2 pinnen med den andre hånden (da bruker du kroppen din til å fullføre en elektrisk krets). Dette kan du bruke for å få micro:biten til å gjøre eller vise ulike ting. Du kan også få micro:biten til å sende signaler ut gjennom portene. Da kan du for eksempel sende ut en elektrisk spenning, og ved å koble på et leddlys med krokodilleklemmer, kan du få det til å lyse.</p> <p>Du kan lese mer om portene på micro:biten her: <a href="https://microbit.org/no/guide/hardware/pins/" target="blank">microbit.org</a></p> </section> <section class="activity"> <h1 class="activity">Steg 1: Opprett liste</h1> <p><em>Klossene</em> <code class="microbitbasic">vis bilde</code> <em>og</em> <code class="microbitbasic">vis ikon</code> <em>i</em> <code class="microbitbasic">Basis</code> <em>lar deg vise bilder med en gang på micro:biten, men man kan også lagre bilder eller lister med bilder i variabler. I denne oppgaven skal vi gjøre sistnevnte.</em></p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Gå til kategorien <code class="microbitvariables">Variabler</code>, trykk på <code class="microbitvariables">Lag en variabel</code> og skriv inn &quot;Bildeliste&quot;.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Klikk på <strong>Avansert</strong>, deretter på <code class="microbitarrays">Lister</code> og finn klossen som heter <code class="microbitarrays">sett list til array of</code> (&quot;array of&quot; betyr &quot;liste av&quot; på norsk). Plasser klossen i <code class="microbitbasic">ved start</code> og bytt navn på variabelen til &quot;Bildeliste&quot;.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_2"><label for="cbx_2"> Fyll ut plassene i listen (der hvor det står tall) med klossen<code class="microbitimages">ikonbilde</code> som ligger i <strong>Avansert</strong> -&gt; <code class="microbitimages">Bilder</code>. Du kan utvide listen og legge til så mange bilder du vil ved å trykke på plusstegnet helt til høyre på liste-klossen. Legg til minst 5 bilder/ikoner.</label></p> </li> </ul> <pre class="microbit">let Bildeliste = [images.iconImage(IconNames.Heart), images.iconImage(IconNames.No)]
 </pre> </section> </section> <section class="activity"> <h1 class="activity">Steg 2: Velg et tilfeldig bilde</h1> <p>Når noen holder på portene GND og 0 på micro:biten skal et tilfeldig bilde velges. Vi gjør dette ved å velge et tilfeldig tall og lagre det i en variabel.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_3"><label for="cbx_3"> Lag en ny variabel som heter <code class="microbitvariables">Tilfeldig bildenummer</code>.</label></li> </ul> <p>Elementene (her: bildene) i en liste er nummerert. Det første elementet har nummer 0, neste nummer 1 osv. Hvis listen din har 5 bilder, er de nummerert 0, 1, 2, 3, 4. Vi må derfor velge et tilfeldig tall mellom 0 og lengden av listen - 1.</p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Lag en kode som gjør at når man trykker på port 0, så settes variabelen <code class="microbitvariables">Tilfeldig bildenummer</code> til et tilfeldig tall. <code class="microbitarrays">Lengde på liste</code>-klossen finner du i <code class="microbitarrays">Lister</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Koden din burde se ut som den under:</label></p> </li> </ul> <pre class="microbit">input.onPinPressed(TouchPin.P0, function () {
 		let Bildeliste: Image[] = []
     Tilfeldig_bildenummer = Math.randomRange(0, Bildeliste.length - 1)
 })
-</pre> </section> <section class="tip"> <h2 class="tip"></h2> <p>Kan man ikke bare velge et tilfeldig tall fra 0 til 4, tenker du kanskje? Jo, det kan du. Men nå kan du legge til flere bilder i listen uten å måtte oppdatere resten av koden. Dette trikset er nyttig når man har lang kode og store lister, så det er greit å lære seg.</p> </section> </section> <section class="activity"> <h1 class="activity">Steg 3: Vis bilde</h1> <p><em>Nå skal vi vise bildet med det valgte bildenummeret på micro:biten.</em></p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_6"><label for="cbx_6"> Gå til kategorien <code class="microbitimages">Bilder</code> og finn <code class="microbitimages">show image variabel at offset 0</code>-klossen (vis bilde variabel med forskyvning 0). Vi skal ikke forskyve bildet, så la det stå 0 bakerst. Legg klossen under <code class="microbitvariables">sett Tilfeldig bildenummer til... </code> fra forrige steg.</label></li> </ul> <p>Hadde vi lagret et bilde i en variabel, hadde vi brukt den variabelen nå til å erstatte <code class="microbitvariables">myImage</code>. Men her vi må hente ut et element (bilde) fra listen istedenfor.</p> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_7"><label for="cbx_7"> Bruk klossen <code class="microbitarrays">får en verdi ved</code> fra <code class="microbitarrays">Lister</code> og erstatt <code class="microbitvariables">list</code> med variabelen vi har lagret bildelisten vår i, nemlig <code class="microbitvariables">Bildeliste</code>. Vi vil hente ut elementet med det nummeret som er lagret i <code class="microbitvariables">Tilfeldig bildenummer</code>, så vi erstatter 0 med denne variabelen. Erstatt <code class="microbitvariables">myImage</code> i klossen fra forrige punkt med blokken du nå har laget.</label></li> </ul> </section> <section class="flag"> <h2 class="flag"><img src="/CCV-assets/flag.4a58cd.svg" alt="flag">Test prosjektet</h2> <p><em>Nå har du laget alt du trenger!</em></p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Test koden din på simulatoren og/eller last den ned til micro:biten. Pass på at du holder jordporten (GND) samtidig som du trykker på port 0 hvis du tester på micro:biten.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Nå kan du prøve å spå fremtiden til den som tar på portene, om du vil.</label></p> </li> </ul> </section> <section class="challenge"> <h2 class="challenge">Utfordring</h2> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_10"><label for="cbx_10"> Når man spår med kort trekker man ofte flere kort og tolker dem sammen. Klarer du å oppdatere koden din slik at en bildeserie på tre tilfeldige bilder vises istedenfor bare ett?</label></li> </ul> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Flere ideer</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Hvis du vil at spåen din skal se litt bedre ut, og bli litt enklere for den som blir spådd, kan du lage to store knapper som den som blir spådd kan holde på. Klipp ut to sirkler i papp og ta aluminiumsfolie rundt. Fest en krokodilleklemme på hver av sirklene. Den andre enden av krokodilleklemmene skal på port 0 og GND på micro:biten.</label></p> <figure><img src="knapper.png" alt="Bilde som viser tegning av hvordan micro:biten med store knapper kan være koblet på"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_12"><label for="cbx_12"> Prøv å spå flere personer. La en holde på 0 porten, og en annen holde på GND porten. Disse to må da holde hender eller ta high five for at elektriske signaler skal bli sendt gjennom. Kanskje går det an med flere enn to personer også hvis de lager en lenke?</label></p> </li> </ul> </section> </section> </div><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1"><div class="MuiGrid-root MuiGrid-item">Lisens: </div><div class="MuiGrid-root MuiGrid-item"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="http://creativecommons.org/licenses/by-sa/4.0/deed" target="_blank" rel="noopener">CC BY-SA 4.0</a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><div class="MuiPaper-root MuiPaper-elevation1 jss264 MuiPaper-rounded"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><h2 class="MuiTypography-root MuiTypography-h4">Forbedre denne siden</h2></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Funnet en feil? Kunne noe vært bedre?</p></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!</p></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Microbit: Pxt spaa fremtiden med bilder&#x27;&amp;body=Oppgave: https://oppgaver.kidsakoder.no/microbit/pxt_spaa_fremtiden_med_bilder/spaa_fremtiden_med_bilder%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/microbit/pxt_spaa_fremtiden_med_bilder/spaa_fremtiden_med_bilder.md%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Rapporter et problem</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265" tabindex="0" role="button" aria-disabled="false" href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></span>Gå til forumet</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/tree/master/src/microbit/pxt_spaa_fremtiden_med_bilder/spaa_fremtiden_med_bilder.md" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Vis koden og fiks selv</span></a></div></div></div></div></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionStatic jss266"><div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.sparebank1.no" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/smn.098a83.jpg" alt="SpareBank1"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://ibok.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/ibok.06cd44.jpg" alt="Ibok"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.teknograd.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/teknograd.03c75e.png" alt="Teknograd"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.tekna.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/tekna.41a4f5.jpg" alt="Tekna"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.ntnu.edu/idi/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/ntnu_idi.5179a4.png" alt="NTNU institutt for datateknologi og informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.ntnu.edu/web/excited" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/excITEd.915706.png" alt="excited"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.mn.uio.no/ifi/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/uio_ifi.37ef13.png" alt="UIO institutt for informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.samsung.com/no/innovation/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/samsung.bec12f.png" alt="Samsung"/></a></div></div></header></div>
+</pre> </section> <section class="tip"> <h2 class="tip"></h2> <p>Kan man ikke bare velge et tilfeldig tall fra 0 til 4, tenker du kanskje? Jo, det kan du. Men nå kan du legge til flere bilder i listen uten å måtte oppdatere resten av koden. Dette trikset er nyttig når man har lang kode og store lister, så det er greit å lære seg.</p> </section> </section> <section class="activity"> <h1 class="activity">Steg 3: Vis bilde</h1> <p><em>Nå skal vi vise bildet med det valgte bildenummeret på micro:biten.</em></p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_6"><label for="cbx_6"> Gå til kategorien <code class="microbitimages">Bilder</code> og finn <code class="microbitimages">show image variabel at offset 0</code>-klossen (vis bilde variabel med forskyvning 0). Vi skal ikke forskyve bildet, så la det stå 0 bakerst. Legg klossen under <code class="microbitvariables">sett Tilfeldig bildenummer til... </code> fra forrige steg.</label></li> </ul> <p>Hadde vi lagret et bilde i en variabel, hadde vi brukt den variabelen nå til å erstatte <code class="microbitvariables">myImage</code>. Men her vi må hente ut et element (bilde) fra listen istedenfor.</p> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_7"><label for="cbx_7"> Bruk klossen <code class="microbitarrays">får en verdi ved</code> fra <code class="microbitarrays">Lister</code> og erstatt <code class="microbitvariables">list</code> med variabelen vi har lagret bildelisten vår i, nemlig <code class="microbitvariables">Bildeliste</code>. Vi vil hente ut elementet med det nummeret som er lagret i <code class="microbitvariables">Tilfeldig bildenummer</code>, så vi erstatter 0 med denne variabelen. Erstatt <code class="microbitvariables">myImage</code> i klossen fra forrige punkt med blokken du nå har laget.</label></li> </ul> </section> <section class="flag"> <h2 class="flag"><img src="/CCV-assets/flag.4a58cd.svg" alt="flag">Test prosjektet</h2> <p><em>Nå har du laget alt du trenger!</em></p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Test koden din på simulatoren og/eller last den ned til micro:biten. Pass på at du holder jordporten (GND) samtidig som du trykker på port 0 hvis du tester på micro:biten.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Nå kan du prøve å spå fremtiden til den som tar på portene, om du vil.</label></p> </li> </ul> </section> <section class="challenge"> <h2 class="challenge">Utfordring</h2> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_10"><label for="cbx_10"> Når man spår med kort trekker man ofte flere kort og tolker dem sammen. Klarer du å oppdatere koden din slik at en bildeserie på tre tilfeldige bilder vises istedenfor bare ett?</label></li> </ul> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Flere ideer</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Hvis du vil at spåen din skal se litt bedre ut, og bli litt enklere for den som blir spådd, kan du lage to store knapper som den som blir spådd kan holde på. Klipp ut to sirkler i papp og ta aluminiumsfolie rundt. Fest en krokodilleklemme på hver av sirklene. Den andre enden av krokodilleklemmene skal på port 0 og GND på micro:biten.</label></p> <figure><img src="knapper.png" alt="Bilde som viser tegning av hvordan micro:biten med store knapper kan være koblet på"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_12"><label for="cbx_12"> Prøv å spå flere personer. La en holde på 0 porten, og en annen holde på GND porten. Disse to må da holde hender eller ta high five for at elektriske signaler skal bli sendt gjennom. Kanskje går det an med flere enn to personer også hvis de lager en lenke?</label></p> </li> </ul> </section> </section> </div><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1"><div class="MuiGrid-root MuiGrid-item">Lisens: </div><div class="MuiGrid-root MuiGrid-item"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="http://creativecommons.org/licenses/by-sa/4.0/deed" target="_blank" rel="noopener">CC BY-SA 4.0</a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><div class="MuiPaper-root MuiPaper-elevation1 jss261 MuiPaper-rounded"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><h2 class="MuiTypography-root MuiTypography-h4">Forbedre denne siden</h2></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Funnet en feil? Kunne noe vært bedre?</p></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!</p></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss262 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Microbit: Pxt spaa fremtiden med bilder&#x27;&amp;body=Oppgave: https://oppgaver.kidsakoder.no/microbit/pxt_spaa_fremtiden_med_bilder/spaa_fremtiden_med_bilder%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/microbit/pxt_spaa_fremtiden_med_bilder/spaa_fremtiden_med_bilder.md%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Rapporter et problem</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss262 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></span>Gå til forumet</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss262 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/tree/master/src/microbit/pxt_spaa_fremtiden_med_bilder/spaa_fremtiden_med_bilder.md" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Vis koden og fiks selv</span></a></div></div></div></div></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionStatic jss263 MuiAppBar-colorSecondary"><div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.sparebank1.no" target="_blank" rel="noopener"><img class="jss264" src="/CCV-assets/smn.098a83.jpg" alt="SpareBank1"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://ibok.no/" target="_blank" rel="noopener"><img class="jss264" src="/CCV-assets/ibok.06cd44.jpg" alt="Ibok"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.teknograd.no/" target="_blank" rel="noopener"><img class="jss264" src="/CCV-assets/teknograd.03c75e.png" alt="Teknograd"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.tekna.no/" target="_blank" rel="noopener"><img class="jss264" src="/CCV-assets/tekna.41a4f5.jpg" alt="Tekna"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.ntnu.edu/idi/" target="_blank" rel="noopener"><img class="jss264" src="/CCV-assets/ntnu_idi.5179a4.png" alt="NTNU institutt for datateknologi og informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.ntnu.edu/web/excited" target="_blank" rel="noopener"><img class="jss264" src="/CCV-assets/excITEd.915706.png" alt="excited"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.mn.uio.no/ifi/" target="_blank" rel="noopener"><img class="jss264" src="/CCV-assets/uio_ifi.37ef13.png" alt="UIO institutt for informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.samsung.com/no/innovation/" target="_blank" rel="noopener"><img class="jss264" src="/CCV-assets/samsung.bec12f.png" alt="Samsung"/></a></div></div></header></div>
   
-  <script src="/main.b2c30a.js" async></script>  
+  <script src="/main.35a6c0.js" async></script>  
 </body>
 </html>
