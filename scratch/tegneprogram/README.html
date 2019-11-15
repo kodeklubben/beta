@@ -25,7 +25,7 @@ strong, b {
 body {
   color: rgba(0, 0, 0, 0.87);
   margin: 0;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   line-height: 1.43;
@@ -219,50 +219,332 @@ body::backdrop {
 .MuiDrawer-paperAnchorDockedBottom {
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
-.MuiButtonBase-root {
-  color: inherit;
-  border: 0;
-  cursor: pointer;
+.MuiList-root {
   margin: 0;
-  display: inline-flex;
-  outline: 0;
   padding: 0;
   position: relative;
-  align-items: center;
-  user-select: none;
-  border-radius: 0;
-  vertical-align: middle;
-  -moz-appearance: none;
-  justify-content: center;
-  text-decoration: none;
-  background-color: transparent;
-  -webkit-appearance: none;
-  -webkit-tap-highlight-color: transparent;
+  list-style: none;
 }
-.MuiButtonBase-root::-moz-focus-inner {
-  border-style: none;
+.MuiList-padding {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
-.MuiButtonBase-root.Mui-disabled {
-  cursor: default;
-  pointer-events: none;
+.MuiList-subheader {
+  padding-top: 0;
 }
-.MuiIconButton-root {
-  flex: 0 0 auto;
-  color: rgba(0, 0, 0, 0.54);
-  padding: 12px;
-  overflow: visible;
-  font-size: 1.6071428571428572rem;
-  text-align: center;
-  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  border-radius: 50%;
+.MuiTypography-root {
+  margin: 0;
 }
-.MuiIconButton-root:hover {
-  background-color: rgba(0, 0, 0, 0.08);
+.MuiTypography-body2 {
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
 }
-.MuiIconButton-root.Mui-disabled {
-  color: rgba(0, 0, 0, 0.26);
-  background-color: transparent;
+.MuiTypography-body1 {
+  font-size: 1.0714285714285714rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
 }
+@media (min-width:600px) {
+  .MuiTypography-body1 {
+    font-size: 1.1667rem;
+  }
+}
+@media (min-width:960px) {
+  .MuiTypography-body1 {
+    font-size: 1.1667rem;
+  }
+}
+@media (min-width:1280px) {
+  .MuiTypography-body1 {
+    font-size: 1.1667rem;
+  }
+}
+  .MuiTypography-caption {
+    font-size: 0.8571428571428571rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+  }
+  .MuiTypography-button {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-h1 {
+    font-size: 3.9285714285714284rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.01562em;
+  }
+@media (min-width:600px) {
+  .MuiTypography-h1 {
+    font-size: 5.25rem;
+  }
+}
+@media (min-width:960px) {
+  .MuiTypography-h1 {
+    font-size: 6.25rem;
+  }
+}
+@media (min-width:1280px) {
+  .MuiTypography-h1 {
+    font-size: 6.75rem;
+  }
+}
+  .MuiTypography-h2 {
+    font-size: 2.642857142857143rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.00833em;
+  }
+@media (min-width:600px) {
+  .MuiTypography-h2 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width:960px) {
+  .MuiTypography-h2 {
+    font-size: 4rem;
+  }
+}
+@media (min-width:1280px) {
+  .MuiTypography-h2 {
+    font-size: 4.25rem;
+  }
+}
+  .MuiTypography-h3 {
+    font-size: 2.2142857142857144rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.04;
+    letter-spacing: 0em;
+  }
+@media (min-width:600px) {
+  .MuiTypography-h3 {
+    font-size: 2.8846rem;
+  }
+}
+@media (min-width:960px) {
+  .MuiTypography-h3 {
+    font-size: 3.125rem;
+  }
+}
+@media (min-width:1280px) {
+  .MuiTypography-h3 {
+    font-size: 3.3654rem;
+  }
+}
+  .MuiTypography-h4 {
+    font-size: 1.7142857142857142rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.00735em;
+  }
+@media (min-width:600px) {
+  .MuiTypography-h4 {
+    font-size: 2.1368rem;
+  }
+}
+@media (min-width:960px) {
+  .MuiTypography-h4 {
+    font-size: 2.3504rem;
+  }
+}
+@media (min-width:1280px) {
+  .MuiTypography-h4 {
+    font-size: 2.3504rem;
+  }
+}
+  .MuiTypography-h5 {
+    font-size: 1.3571428571428572rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 0em;
+  }
+@media (min-width:600px) {
+  .MuiTypography-h5 {
+    font-size: 1.5038rem;
+  }
+}
+@media (min-width:960px) {
+  .MuiTypography-h5 {
+    font-size: 1.6917rem;
+  }
+}
+@media (min-width:1280px) {
+  .MuiTypography-h5 {
+    font-size: 1.6917rem;
+  }
+}
+  .MuiTypography-h6 {
+    font-size: 1.2142857142857142rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+  }
+@media (min-width:600px) {
+  .MuiTypography-h6 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width:960px) {
+  .MuiTypography-h6 {
+    font-size: 1.4063rem;
+  }
+}
+@media (min-width:1280px) {
+  .MuiTypography-h6 {
+    font-size: 1.4063rem;
+  }
+}
+  .MuiTypography-subtitle1 {
+    font-size: 1.0714285714285714rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.00938em;
+  }
+@media (min-width:600px) {
+  .MuiTypography-subtitle1 {
+    font-size: 1.1429rem;
+  }
+}
+@media (min-width:960px) {
+  .MuiTypography-subtitle1 {
+    font-size: 1.1429rem;
+  }
+}
+@media (min-width:1280px) {
+  .MuiTypography-subtitle1 {
+    font-size: 1.1429rem;
+  }
+}
+  .MuiTypography-subtitle2 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.57;
+    letter-spacing: 0.00714em;
+  }
+  .MuiTypography-overline {
+    font-size: 0.8571428571428571rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 2.66;
+    letter-spacing: 0.08333em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-srOnly {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .MuiTypography-alignLeft {
+    text-align: left;
+  }
+  .MuiTypography-alignCenter {
+    text-align: center;
+  }
+  .MuiTypography-alignRight {
+    text-align: right;
+  }
+  .MuiTypography-alignJustify {
+    text-align: justify;
+  }
+  .MuiTypography-noWrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiTypography-gutterBottom {
+    margin-bottom: 0.35em;
+  }
+  .MuiTypography-paragraph {
+    margin-bottom: 16px;
+  }
+  .MuiTypography-colorInherit {
+    color: inherit;
+  }
+  .MuiTypography-colorPrimary {
+    color: #212121;
+  }
+  .MuiTypography-colorSecondary {
+    color: #dcedc8;
+  }
+  .MuiTypography-colorTextPrimary {
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .MuiTypography-colorTextSecondary {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiTypography-colorError {
+    color: #f44336;
+  }
+  .MuiTypography-displayInline {
+    display: inline;
+  }
+  .MuiTypography-displayBlock {
+    display: block;
+  }
+  .MuiButtonBase-root {
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiButtonBase-root::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiButtonBase-root.Mui-disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+  .MuiIconButton-root {
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.7142857142857142rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+  }
+  .MuiIconButton-root:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .MuiIconButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+  }
 @media (hover: none) {
   .MuiIconButton-root:hover {
     background-color: transparent;
@@ -307,7 +589,7 @@ body::backdrop {
 }
   .MuiIconButton-sizeSmall {
     padding: 3px;
-    font-size: 1.2053571428571428rem;
+    font-size: 1.2857142857142856rem;
   }
   .MuiIconButton-label {
     width: 100%;
@@ -320,7 +602,7 @@ body::backdrop {
     width: 1em;
     height: 1em;
     display: inline-block;
-    font-size: 1.6071428571428572rem;
+    font-size: 1.7142857142857142rem;
     transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     flex-shrink: 0;
     user-select: none;
@@ -344,15 +626,15 @@ body::backdrop {
     font-size: inherit;
   }
   .MuiSvgIcon-fontSizeSmall {
-    font-size: 1.3392857142857142rem;
+    font-size: 1.4285714285714284rem;
   }
   .MuiSvgIcon-fontSizeLarge {
-    font-size: 2.34375rem;
+    font-size: 2.5rem;
   }
   .MuiButton-root {
     color: rgba(0, 0, 0, 0.87);
     padding: 6px 16px;
-    font-size: 0.9375rem;
+    font-size: 1rem;
     min-width: 64px;
     box-sizing: border-box;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -504,27 +786,27 @@ body::backdrop {
   }
   .MuiButton-textSizeSmall {
     padding: 4px 5px;
-    font-size: 0.8705357142857143rem;
+    font-size: 0.9285714285714285rem;
   }
   .MuiButton-textSizeLarge {
     padding: 8px 11px;
-    font-size: 1.0044642857142856rem;
+    font-size: 1.0714285714285714rem;
   }
   .MuiButton-outlinedSizeSmall {
     padding: 3px 9px;
-    font-size: 0.8705357142857143rem;
+    font-size: 0.9285714285714285rem;
   }
   .MuiButton-outlinedSizeLarge {
     padding: 7px 21px;
-    font-size: 1.0044642857142856rem;
+    font-size: 1.0714285714285714rem;
   }
   .MuiButton-containedSizeSmall {
     padding: 4px 10px;
-    font-size: 0.8705357142857143rem;
+    font-size: 0.9285714285714285rem;
   }
   .MuiButton-containedSizeLarge {
     padding: 8px 22px;
-    font-size: 1.0044642857142856rem;
+    font-size: 1.0714285714285714rem;
   }
   .MuiButton-fullWidth {
     width: 100%;
@@ -554,274 +836,59 @@ body::backdrop {
   .MuiButton-iconSizeLarge > *:first-child {
     font-size: 22px;
   }
-  .MuiTypography-root {
-    margin: 0;
-  }
-  .MuiTypography-body2 {
-    font-size: 0.9375rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 400;
-    line-height: 1.43;
-    letter-spacing: 0.01071em;
-  }
-  .MuiTypography-body1 {
-    font-size: 1.0357142857142856rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.00938em;
-  }
-@media (min-width:600px) {
-  .MuiTypography-body1 {
-    font-size: 1rem;
-  }
-}
-@media (min-width:960px) {
-  .MuiTypography-body1 {
-    font-size: 1rem;
-  }
-}
-@media (min-width:1280px) {
-  .MuiTypography-body1 {
-    font-size: 1rem;
-  }
-}
-  .MuiTypography-caption {
-    font-size: 0.8035714285714286rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 400;
-    line-height: 1.66;
-    letter-spacing: 0.03333em;
-  }
-  .MuiTypography-button {
-    font-size: 0.9375rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 500;
-    line-height: 1.75;
-    letter-spacing: 0.02857em;
-    text-transform: uppercase;
-  }
-  .MuiTypography-h1 {
-    font-size: 3.7142857142857144rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -0.01562em;
-  }
-@media (min-width:600px) {
-  .MuiTypography-h1 {
-    font-size: 5rem;
-  }
-}
-@media (min-width:960px) {
-  .MuiTypography-h1 {
-    font-size: 5.75rem;
-  }
-}
-@media (min-width:1280px) {
-  .MuiTypography-h1 {
-    font-size: 6.5rem;
-  }
-}
-  .MuiTypography-h2 {
-    font-size: 2.508928571428571rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -0.00833em;
-  }
-@media (min-width:600px) {
-  .MuiTypography-h2 {
-    font-size: 3.25rem;
-  }
-}
-@media (min-width:960px) {
-  .MuiTypography-h2 {
-    font-size: 3.75rem;
-  }
-}
-@media (min-width:1280px) {
-  .MuiTypography-h2 {
-    font-size: 4rem;
-  }
-}
-  .MuiTypography-h3 {
-    font-size: 2.107142857142857rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 400;
-    line-height: 1.04;
-    letter-spacing: 0em;
-  }
-@media (min-width:600px) {
-  .MuiTypography-h3 {
-    font-size: 2.6442rem;
-  }
-}
-@media (min-width:960px) {
-  .MuiTypography-h3 {
-    font-size: 2.8846rem;
-  }
-}
-@media (min-width:1280px) {
-  .MuiTypography-h3 {
-    font-size: 3.125rem;
-  }
-}
-  .MuiTypography-h4 {
-    font-size: 1.6383928571428572rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 400;
-    line-height: 1.17;
-    letter-spacing: 0.00735em;
-  }
-@media (min-width:600px) {
-  .MuiTypography-h4 {
-    font-size: 1.9231rem;
-  }
-}
-@media (min-width:960px) {
-  .MuiTypography-h4 {
-    font-size: 2.1368rem;
-  }
-}
-@media (min-width:1280px) {
-  .MuiTypography-h4 {
-    font-size: 2.3504rem;
-  }
-}
-  .MuiTypography-h5 {
-    font-size: 1.3035714285714286rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 400;
-    line-height: 1.33;
-    letter-spacing: 0em;
-  }
-@media (min-width:600px) {
-  .MuiTypography-h5 {
-    font-size: 1.5038rem;
-  }
-}
-@media (min-width:960px) {
-  .MuiTypography-h5 {
-    font-size: 1.5038rem;
-  }
-}
-@media (min-width:1280px) {
-  .MuiTypography-h5 {
-    font-size: 1.6917rem;
-  }
-}
-  .MuiTypography-h6 {
-    font-size: 1.1696428571428572rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 500;
-    line-height: 1.6;
-    letter-spacing: 0.0075em;
-  }
-@media (min-width:600px) {
-  .MuiTypography-h6 {
-    font-size: 1.25rem;
-  }
-}
-@media (min-width:960px) {
-  .MuiTypography-h6 {
-    font-size: 1.25rem;
-  }
-}
-@media (min-width:1280px) {
-  .MuiTypography-h6 {
-    font-size: 1.4063rem;
-  }
-}
-  .MuiTypography-subtitle1 {
-    font-size: 1.0357142857142856rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 400;
-    line-height: 1.75;
-    letter-spacing: 0.00938em;
-  }
-@media (min-width:600px) {
-  .MuiTypography-subtitle1 {
-    font-size: 1rem;
-  }
-}
-@media (min-width:960px) {
-  .MuiTypography-subtitle1 {
-    font-size: 1rem;
-  }
-}
-@media (min-width:1280px) {
-  .MuiTypography-subtitle1 {
-    font-size: 1.1429rem;
-  }
-}
-  .MuiTypography-subtitle2 {
-    font-size: 0.9375rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 500;
-    line-height: 1.57;
-    letter-spacing: 0.00714em;
-  }
-  .MuiTypography-overline {
-    font-size: 0.8035714285714286rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 400;
-    line-height: 2.66;
-    letter-spacing: 0.08333em;
-    text-transform: uppercase;
-  }
-  .MuiTypography-srOnly {
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-  }
-  .MuiTypography-alignLeft {
+  .MuiListItem-root {
+    width: 100%;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
     text-align: left;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: flex-start;
+    text-decoration: none;
   }
-  .MuiTypography-alignCenter {
-    text-align: center;
+  .MuiListItem-root.Mui-focusVisible {
+    background-color: rgba(0, 0, 0, 0.14);
   }
-  .MuiTypography-alignRight {
-    text-align: right;
+  .MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
+    background-color: rgba(0, 0, 0, 0.14);
   }
-  .MuiTypography-alignJustify {
-    text-align: justify;
+  .MuiListItem-root.Mui-disabled {
+    opacity: 0.5;
   }
-  .MuiTypography-noWrap {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  .MuiListItem-container {
+    position: relative;
   }
-  .MuiTypography-gutterBottom {
-    margin-bottom: 0.35em;
+  .MuiListItem-dense {
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
-  .MuiTypography-paragraph {
-    margin-bottom: 16px;
+  .MuiListItem-alignItemsFlexStart {
+    align-items: flex-start;
   }
-  .MuiTypography-colorInherit {
-    color: inherit;
+  .MuiListItem-divider {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    background-clip: padding-box;
   }
-  .MuiTypography-colorPrimary {
-    color: #212121;
+  .MuiListItem-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
   }
-  .MuiTypography-colorSecondary {
-    color: #dcedc8;
+  .MuiListItem-button {
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   }
-  .MuiTypography-colorTextPrimary {
-    color: rgba(0, 0, 0, 0.87);
+  .MuiListItem-button:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.08);
   }
-  .MuiTypography-colorTextSecondary {
-    color: rgba(0, 0, 0, 0.54);
+@media (hover: none) {
+  .MuiListItem-button:hover {
+    background-color: transparent;
   }
-  .MuiTypography-colorError {
-    color: #f44336;
-  }
-  .MuiTypography-displayInline {
-    display: inline;
-  }
-  .MuiTypography-displayBlock {
-    display: block;
+}
+  .MuiListItem-secondaryAction {
+    padding-right: 48px;
   }
   .MuiLink-underlineNone {
     text-decoration: none;
@@ -856,7 +923,7 @@ body::backdrop {
   .MuiLink-button.Mui-focusVisible {
     outline: auto;
   }
-  .jss121 {
+  .jss153 {
     display: flex;
     margin-left: 8px;
     user-select: none;
@@ -872,42 +939,120 @@ body::backdrop {
   .MuiBreadcrumbs-li {
     list-style: none;
   }
-  .jss6 {
+@media (min-width:0px) and (max-width:599.95px) {
+  .jss50 {
+    display: none;
+  }
+}
+@media (min-width:0px) {
+  .jss51 {
+    display: none;
+  }
+}
+@media (max-width:599.95px) {
+  .jss52 {
+    display: none;
+  }
+}
+@media (min-width:600px) and (max-width:959.95px) {
+  .jss53 {
+    display: none;
+  }
+}
+@media (min-width:600px) {
+  .jss54 {
+    display: none;
+  }
+}
+@media (max-width:959.95px) {
+  .jss55 {
+    display: none;
+  }
+}
+@media (min-width:960px) and (max-width:1279.95px) {
+  .jss56 {
+    display: none;
+  }
+}
+@media (min-width:960px) {
+  .jss57 {
+    display: none;
+  }
+}
+@media (max-width:1279.95px) {
+  .jss58 {
+    display: none;
+  }
+}
+@media (min-width:1280px) and (max-width:1919.95px) {
+  .jss59 {
+    display: none;
+  }
+}
+@media (min-width:1280px) {
+  .jss60 {
+    display: none;
+  }
+}
+@media (max-width:1919.95px) {
+  .jss61 {
+    display: none;
+  }
+}
+@media (min-width:1920px) {
+  .jss62 {
+    display: none;
+  }
+}
+@media (min-width:1920px) {
+  .jss63 {
+    display: none;
+  }
+}
+@media (min-width:0px) {
+  .jss64 {
+    display: none;
+  }
+}
+  .jss7 {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .jss7 {
+  .jss8 {
     width: 250px;
     height: auto;
     max-width: 100%;
     margin-left: 16px;
     margin-right: 16px;
   }
-  .jss8 {
+  .jss9 {
     margin-right: 16px;
   }
-  .jss9 {
+  .jss10 {
     margin-right: 24px;
   }
-  .jss10 {
+  .jss11 {
     display: none;
-    padding: 16px;
     z-index: 9999;
     position: absolute;
     max-width: 160px;
     box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
   }
-  .jss10:hover {
+  .jss11:hover {
     display: block;
   }
-  .jss11 {
+  .jss12 {
     display: inline-block;
     position: relative;
     margin-right: 24px;
   }
-  .jss11:hover + .jss10 {
+  .jss12:hover + .jss11 {
     display: block;
+  }
+  .jss13 {
+    display: flex;
+    justify-content: flex-end;
   }
 @media print {
   .jss3 {
@@ -921,6 +1066,10 @@ body::backdrop {
   }
   .jss5 {
     background: #dcedc8;
+  }
+  .jss6 {
+    display: flex;
+    justify-content: flex-end;
   }
   .MuiToolbar-root {
     display: flex;
@@ -1451,15 +1600,15 @@ body::backdrop {
     flex-basis: 100%;
   }
 }
-  .jss268 {
+  .jss300 {
     margin-top: 40px;
   }
 @media print {
-  .jss268 {
+  .jss300 {
     display: none;
   }
 }
-  .jss269 {
+  .jss301 {
     width: auto;
     height: 50px;
     margin: 20px 7px 10px;
@@ -1538,178 +1687,410 @@ body::backdrop {
     max-width: 1920px;
   }
 }
-  .jss265 img {
-    height: auto;
-    display: block;
-    max-width: 100%;
-  }
-  .jss265 a {
+  .jss297 a {
     color: #212121;
   }
-  .jss265 code.blockmotion {
+  .jss297 pre.blocks, .jss297 code.b {
+    border: 0;
+    background-color: inherit;
+  }
+  .jss297 section.try {
+    padding: 1px 20px 10px;
+    background: #abdbea;
+    border-radius: 10px;
+  }
+  .jss297 section.protip, .jss297 section.tip {
+    border: 3px solid #ff7f00;
+    padding: 0 20px 20px;
+    background: #fff99d;
+    margin-top: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  .jss297 section.flag {
+    border-top: 3px dotted rgb(230, 134, 45);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .jss297 section.save {
+    margin: 20px, 0;
+    border-top: 3px solid rgb(36, 90, 154);
+  }
+  .jss297 section.challenge {
+    border: 3px solid #00b1da;
+    margin-top: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  .jss297 .blockmotion {
     color: #fff;
     background-color: #4c97ff;
   }
-  .jss265 code.blocklooks {
+  .jss297 .blocklooks {
     color: #fff;
     background-color: #96f;
   }
-  .jss265 code.blocksound {
+  .jss297 .blocksound {
     color: #fff;
     background-color: #cf63cf;
   }
-  .jss265 code.blockpen {
+  .jss297 .blockpen {
     color: #fff;
     background-color: #0fbd8c;
   }
-  .jss265 code.blockdata {
+  .jss297 .blockdata {
     color: #fff;
     background-color: #ff8c1a;
   }
-  .jss265 code.blockevents {
+  .jss297 .blockevents {
     color: #fff;
     background-color: #ffbf00;
   }
-  .jss265 code.blockcontrol {
+  .jss297 .blockcontrol {
     color: #fff;
     background-color: #ffab19;
   }
-  .jss265 code.blocksensing {
+  .jss297 .blocksensing {
     color: #fff;
     background-color: #5cb1d6;
   }
-  .jss265 code.blockoperators {
+  .jss297 .blockoperators {
     color: #fff;
     background-color: #59c059;
   }
-  .jss265 code.blockmoreblocks {
+  .jss297 .blockmoreblocks {
     color: #fff;
     background-color: #ff6680;
   }
-  .jss265 code.microbitbasic {
+  .jss297 .microbitbasic {
     color: #fff;
     background-color: #1e90ff;
   }
-  .jss265 code.microbitinput {
+  .jss297 .microbitinput {
     color: #fff;
     background-color: #d400d4;
   }
-  .jss265 code.microbitmusic {
+  .jss297 .microbitmusic {
     color: #fff;
     background-color: #e63022;
   }
-  .jss265 code.microbitled {
+  .jss297 .microbitled {
     color: #fff;
     background-color: #5c2d91;
   }
-  .jss265 code.microbitradio {
+  .jss297 .microbitradio {
     color: #fff;
     background-color: #e3008c;
   }
-  .jss265 code.microbitloops {
+  .jss297 .microbitloops {
     color: #fff;
     background-color: #0a0;
   }
-  .jss265 code.microbitlogic {
+  .jss297 .microbitlogic {
     color: #fff;
     background-color: #00a4a6;
   }
-  .jss265 code.microbitvariables {
+  .jss297 .microbitvariables {
     color: #fff;
     background-color: #dc143c;
   }
-  .jss265 code.microbitmath {
+  .jss297 .microbitmath {
     color: #fff;
     background-color: #9400d3;
   }
-  .jss265 code.microbitfunctions {
+  .jss297 .microbitfunctions {
     color: #fff;
     background-color: #3455db;
   }
-  .jss265 code.microbitarrays {
+  .jss297 .microbitarrays {
     color: #fff;
     background-color: #e65722;
   }
-  .jss265 code.microbittext {
+  .jss297 .microbittext {
     color: #fff;
     background-color: #b8860b;
   }
-  .jss265 code.microbitgame {
+  .jss297 .microbitgame {
     color: #fff;
     background-color: #007a4b;
   }
-  .jss265 code.microbitimages {
+  .jss297 .microbitimages {
     color: #fff;
     background-color: #7600a8;
   }
-  .jss265 code.microbitpins {
+  .jss297 .microbitpins {
     color: #fff;
     background-color: #b22222;
   }
-  .jss265 code.microbitserial {
+  .jss297 .microbitserial {
     color: #fff;
     background-color: #002050;
   }
-  .jss265 code.microbitcontrol {
+  .jss297 .microbitcontrol {
     color: #fff;
     background-color: #333;
   }
-  .jss235 {
+  .jss297 table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .jss297 .video-container {
+    height: 0;
+    margin: 30px 0 60px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+  }
+  .jss297 input[type=checkbox] {
+    opacity: 0;
+    position: absolute;
+  }
+  .jss297 input[type=checkbox] + .jss297 label {
+    position: relative;
+    font-weight: normal;
+    margin-left: 0;
+  }
+  .jss297 input[type=checkbox] + .jss297 label::before {
+    width: 1.3em;
+    border: 3px solid #abdbea;
+    height: 1.3em;
+    margin: 0 0.6em 0 -2.2em;
+    content: a0;
+    display: inline-block;
+    visibility: visible;
+    line-height: 1.1em;
+    border-radius: 3px;
+  }
+  .jss297 input[type=checkbox]:checked + .jss297 label::before {
+    content: 2714;
+    line-height: 1.1em;
+    padding-left: 0.1em;
+  }
+  .jss297 input[type=checkbox]:active + .jss297 label::before, .jss297 input[type=checkbox]:focus + .jss297 label::before {
+    background: darken(#abdbea, 20%);
+  }
+  .jss297 .video-container iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .jss297 table tbody + .jss297 table tbody {
+    border-top: 2px solid #ddd;
+  }
+  .jss297 table .table {
+    background-color: #fff;
+  }
+  .jss297 table caption + .jss297 table thead tr:first-child th, .jss297 table caption + .jss297 table thead tr:first-child td, .jss297 table colgroup + .jss297 table thead tr:first-child th, .jss297 table colgroup + .jss297 table thead tr:first-child td, .jss297 table thead:first-child tr:first-child th, .jss297 table thead:first-child tr:first-child td {
+    border-top: 0;
+  }
+  .jss297 table thead tr th {
+    border-bottom: 2px solid #ddd;
+    vartical-align: bottom;
+  }
+  .jss297 table thead tr th, .jss297 table thead tr td, .jss297 table tbody tr th, .jss297 table tbody tr td, .jss297 table tfoot tr th, .jss297 table tfoot tr td {
+    padding: 8px;
+    border-top: 1px solid #ddd;
+    line-height: 1.4px;
+    vertical-align: top;
+  }
+  .jss297 section.challenge h2 {
+    color: #fff;
+    background: #00b1da;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+  .jss297 section.challenge * {
+    padding: 0 20px;
+  }
+@media print {
+  .jss297 section.challenge h2 {
+    border-bottom: 2px solid #00b1da;
+  }
+}
+  .jss297 section.save h2 {
+    color: rgb(36, 90, 154);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .jss297 section.save h2 img {
+    height: 40px;
+    padding-right: 10px;
+  }
+  .jss297 section.flag h2 {
+    color: rgb(54, 161, 55);
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  .jss297 section.flag h2 img {
+    height: 40px;
+    padding-right: 10px;
+  }
+  .jss297 section.try code {
+    color: #007cc9;
+    background-color: #fff;
+  }
+  .jss297 section.try li::before {
+    border: 3px solid #fff;
+  }
+  .jss297 section.check h2 {
+    display: flex;
+    align-items: center;
+    padding-top: 4px;
+    padding-bottom: 9px;
+  }
+  .jss297 section.check h2 img {
+    height: 40px;
+    padding-right: 10px;
+  }
+  .jss297 section.activity h1 {
+    color: #fff;
+    padding: 10px;
+    background: #349946;
+    border-radius: 5px;
+  }
+  .jss297 section.activity.subsection h2 {
+    color: #fff;
+    padding: 10px;
+    background: #349946;
+    font-weight: 300;
+    border-radius: 5px;
+  }
+  .jss297 section.activity.subsection h2 ul, .jss297 section.activity.subsection h2 ol {
+    margin: 0 0 20px;
+    padding: 0;
+  }
+  .jss297 section.activity.subsection h2 li.task-list-item::before {
+    content: "";
+    opacity: 0;
+  }
+  .jss297 section.activity.subsection h2 li {
+    list-style: none;
+    margin-left: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .jss297 section.activity.subsection h2 li::before {
+    float: left;
+    border: 3px solid #abdbea;
+    content: "";
+    padding: 8px;
+    margin-top: 2px;
+    margin-left: -40px;
+    border-radius: 20px;
+  }
+  .jss297 section.activity.subsection h2 li label {
+    font-weight: normal;
+    margin-left: 6px;
+  }
+  .jss297 pre code {
+    word-wrap: normal;
+    white-space: pre;
+    background-color: transparent;
+  }
+  .jss297 .check ul, .jss297 .check ol, .jss297 .activity ul, .jss297 .activity ol, .jss297 .save ul, .jss297 .save ol {
+    margin: 0 0 20px;
+    padding: 0;
+  }
+  .jss297 .check li.task-list-item::before, .jss297 .activity li.task-list-item::before, .jss297 .save li.task-list-item::before {
+    content: "";
+    opacity: 0;
+  }
+  .jss297 .check li, .jss297 .activity li, .jss297 .save li {
+    list-style: none;
+    margin-left: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .jss297 .check li::before, .jss297 .activity li::before, .jss297 .save li::before {
+    float: left;
+    border: 3px solid #abdbea;
+    content: "";
+    padding: 8px;
+    margin-top: 2px;
+    margin-left: -40px;
+    border-radius: 20px;
+  }
+  .jss297 .check li label, .jss297 .activity li label, .jss297 .save li label {
+    font-weight: normal;
+    margin-left: 6px;
+  }
+  .jss297 figure img {
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    padding: 20px;
+    max-width: 100%;
+  }
+  .jss295 {
     margin-top: 16px;
     margin-right: 16px;
   }
 @media print {
-  .jss235 {
+  .jss295 {
     display: none;
   }
 }
-  .jss264 {
+  .jss296 {
     margin-top: 16px;
     margin-right: 16px;
   }
 @media print {
-  .jss264 {
+  .jss296 {
     display: none;
   }
 }
-  .jss266 {
+  .jss298 {
     padding: 16px;
     max-width: 700px;
     background: #dcedc8;
     margin-top: 40px;
   }
 @media print {
-  .jss266 {
+  .jss298 {
     display: none;
   }
 }
-  .jss267 {
+  .jss299 {
     margin: 8px;
   }
-  .jss234 {
+  .jss294 {
     display: none;
     font-size: 0.75em;
     font-style: italic;
   }
 @media print {
-  .jss234 {
+  .jss294 {
     display: block;
   }
 }
-  .jss122 {
+  .jss182 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  .jss123 {
+  .jss183 {
     margin-top: 16px;
   }
-  .jss123 a {
+  .jss183 a {
     color: #212121;
   }</style></head>
 <body>
-  <div id="app"><div class="jss6"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://kidsakoder.no"><img class="jss7" alt="LKK logo" src="/CCV-assets/lkk_logo_black.a76309.png"/></a><div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss11 MuiTypography-colorPrimary" href="https://kidsakoder.no/om-lkk">Om Lær Kidsa Koding</a><div class="MuiPaper-root MuiPaper-elevation1 jss10 MuiPaper-rounded"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://kidsakoder.no/kontakt">Kontakt</a><br/><br/><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.kidsakoder.no/om-lkk/personvern-i-laer-kidsa-koding-og-kodeklubben">Personvern i Lær Kidsa Koding og Kodeklubben</a></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="https://kidsakoder.no/nyheter">Nyheter</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="/">Oppgaver</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="https://forum.kidsakoder.no">Forum</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodeklubben">Kodeklubber</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="https://kidsakoder.no/skole">Skole</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodetimen">Kodetimen</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="https://kidsakoder.no/bidra">Bidra?</a><button class="MuiButtonBase-root MuiIconButton-root jss8 MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionSticky jss3 MuiAppBar-colorSecondary"><div class="jss4"><nav class="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"><ol class="MuiBreadcrumbs-ol"><li class="MuiBreadcrumbs-li"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" aria-label="Hjem" href="/"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></a></li><li aria-hidden="true" class="jss121 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div></div></li><li aria-hidden="true" class="jss121 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div></div></li></ol></nav><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></header><div class="jss2"><div class="MuiContainer-root jss122 MuiContainer-maxWidthMd"><div class="MuiGrid-root MuiGrid-container MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg><h1 class="MuiTypography-root MuiTypography-h3">Lærerveiledning - Tegneprogram</h1></div><p class="MuiTypography-root jss123 MuiTypography-body1">Skrevet av:<!-- --> <span>Stein Olav Romslo</span></p><div class="jss234"><div>Kurs:<!-- --> <!-- -->Scratch</div><div>Tema: Blokkbasert</div><div>Fag: Matematikk, Programmering, Kunst og håndverk</div><div>Klassetrinn: 1.-4. klasse, 5.-7. klasse, 8.-10. klasse</div></div><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss235 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="/scratch/tegneprogram/tegneprogram"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg></span>Til oppgave</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss264 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://pdf-ace.com/pdfme?print_media=1"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg></span>Last ned PDF</span></a><div class="jss265"><section class="activity"> <h1 class="activity">Om oppgaven</h1> <p>I dette prosjektet lager vi et tegneprogram slik at man etterpå kan lage sin egen kunst. Man kan tegne med forskjellige farger, bruke viskelær, lage stempler og mye mer!</p> <figure><img src="tegneprogram.png" alt="Bilde av et tegneprogram"></figure> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Oppgaven passer til:</h2> <p><strong>Fag</strong>: Kunst og håndtverk, matematikk, programmering.</p> <p><strong>Anbefalte trinn</strong>: 3.-10. trinn.</p> <p><strong>Tema</strong>: Tegning, koordinatsystem, brukerinteraksjon.</p> <p><strong>Tidsbruk</strong>: Dobbelttime eller mer.</p> </section> <section class="challenge"> <h2 class="challenge">Kompetansemål</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_0"><label for="cbx_0"> <strong>Kunst og håndtverk, 4. trinn</strong>: bruke enkle funksjoner i digitale bildebehandlingsprogram</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_1"><label for="cbx_1"> <strong>Matematikk, 4. trinn</strong>: lese av, plassere og beskrive posisjoner i rutenett, på kart og i koordinatsystemer, både med og uten digitale verktøy</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_2"><label for="cbx_2"> <strong>Programmering, 10. trinn</strong>: bruke grunnleggende prinsipper i programmering, slik som løkker, tester, variabler, funksjoner og enkel brukerinteraksjon</label></p> </li> </ul> </section> <section class="challenge"> <h2 class="challenge">Forslag til læringsmål</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_3"><label for="cbx_3"> Elevene kan lage og bruke enkle funksjoner for bildebehandling.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Elevene kan bruke kode til å lese av posisjonen til musepekeren i et koordinatsystem, og bruke denne informasjonen videre.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Elevene kan bruke et koordinatsystem til å avgrense arbeidsområdet på skjermen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Elevene kan bruke kode til å endre funksjoner og verktøy etter brukerinteraksjon.</label></p> </li> </ul> </section> <section class="challenge"> <h2 class="challenge">Forslag til vurderingskriterier</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Eleven viser middels måloppnåelse ved å fullføre oppgaven.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Eleven viser høy måloppnåelse ved å videreutvikle egen kode basert på oppgaven.</label></p> </li> </ul> </section> <section class="challenge"> <h2 class="challenge">Forutsetninger og utstyr</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_9"><label for="cbx_9"> <strong>Forutsetninger</strong>: Elevene må ha god kunnskap i Scratch. De bør ha gjort flere prosjekter på introduksjons- og nybegynnernivå før de starter med denne oppgaven.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_10"><label for="cbx_10"> <strong>Utstyr</strong>: Datamaskiner med Scratch installert. Merk at Tegneprogram bruker ressurser som ikke er tilgjengelig i Scratch-biblioteket, men lastes ned utenom. Dette er beskrevet i oppgaven. Eventuelt finner du ressursene i katalogen <code>ressurser</code> på GitHub: <a href="https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/">https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/</a>, eller i en zip-fil kalt <code>Materials</code> eller <code>Tegneprogram_ressurser.zip</code>, tilgjengelig sammen med disse instruksene. Elevene kan med fordel ha lastet ned zip-filen på forhånd, ellers bør du beregne tid til dette i starten av timen.</label></p> </li> </ul> </section> <section> <h2>Fremgangsmåte</h2> <p><a href="../tegneprogram/tegneprogram.html" target="_blank">Klikk her for å se oppgaveteksten.</a></p> </section> </section> <section class="activity"> <h1 class="activity">Steg 1: Dra og tegn!</h1> <p>Noen brukere har rapportert at de har hatt problemer med å få blyanten til å tegne. Dette ser ut til å skje inne i Scratch-utviklingsmiljøet (det vil si ikke når programmet kjører i fullskjerm), fordi Scratch merker at du klikker på blyanten og tror at du ønsker å flytte på blyantfiguren. Problemet har to løsninger:</p> <ol> <li> <p>Prøv å bruke fullskjermmodus.</p> </li> <li> <p>Sett senterpunktet rett <em>utenfor</em> selve blyanten. Da vil ikke Scratch tro at man ønsker å flytte på blyanten.</p> </li> </ol> <section class="challenge"> <h2 class="challenge">Variasjoner</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Elevene kan lage en blyant som endrer farge av seg selv.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_12"><label for="cbx_12"> Elevene kan lage tastatursnarveier for å endre farge uten å måtte klikke.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_13"><label for="cbx_13"> Elevene kan lage et verktøy som endrer størrelsen på blyantstreken.</label></p> </li> </ul> </section> <section class="challenge"> <h2 class="challenge">Eksterne ressurser</h2> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_14"><label for="cbx_14"> Foreløpig ingen eksterne ressurser...</label></li> </ul> </section> </section> </div><p class="MuiTypography-root jss123 MuiTypography-body1">Lisens: <!-- --> <span><a href="https://github.com/CodeClub/scratch-curriculum/blob/master/LICENSE.md">Code Club World Limited Terms of Service</a></span></p><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><div class="MuiPaper-root jss266 MuiPaper-elevation1 MuiPaper-rounded"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><h2 class="MuiTypography-root MuiTypography-h4">Forbedre denne siden</h2></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Funnet en feil? Kunne noe vært bedre?</p></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!</p></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss267 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Scratch: Tegneprogram&#x27;&amp;body=Oppgave: https://oppgaver.kidsakoder.no/scratch/tegneprogram/README%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/tegneprogram/README.md%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Rapporter et problem</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss267 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></span>Gå til forumet</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss267 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/tegneprogram/README.md" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Vis koden og fiks selv</span></a></div></div></div></div></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionStatic jss268 MuiAppBar-colorSecondary"><div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.sparebank1.no" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/smn.098a83.jpg" alt="SpareBank1"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://ibok.no/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/ibok.06cd44.jpg" alt="Ibok"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.teknograd.no/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/teknograd.03c75e.png" alt="Teknograd"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.tekna.no/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/tekna.41a4f5.jpg" alt="Tekna"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.ntnu.edu/idi/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/ntnu_idi.5179a4.png" alt="NTNU institutt for datateknologi og informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.ntnu.edu/web/excited" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/excITEd.915706.png" alt="excited"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.mn.uio.no/ifi/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/uio_ifi.37ef13.png" alt="UIO institutt for informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.samsung.com/no/innovation/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/samsung.bec12f.png" alt="Samsung"/></a></div></div></header></div>
+  <div id="app"><div class="jss7"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://kidsakoder.no"><img class="jss8" alt="LKK logo" src="/CCV-assets/lkk_logo_black.a76309.png"/></a><div><div class="jss58"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss12 MuiTypography-colorPrimary" href="https://kidsakoder.no/om-lkk">Om Lær Kidsa Koding</a><div class="MuiPaper-root MuiPaper-elevation1 jss11 MuiPaper-rounded"><ul class="MuiList-root MuiList-padding"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" href="https://kidsakoder.no/kontakt">Kontakt</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" href="https://www.kidsakoder.no/om-lkk/personvern-i-laer-kidsa-koding-og-kodeklubben">Personvern i Lær Kidsa Koding og Kodeklubben</a></ul></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/nyheter">Nyheter</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="/">Oppgaver</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://forum.kidsakoder.no">Forum</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodeklubben">Kodeklubber</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/skole">Skole</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodetimen">Kodetimen</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/bidra">Bidra?</a></div><div class="jss60"><button class="MuiButtonBase-root MuiIconButton-root jss9 MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionSticky jss3 MuiAppBar-colorSecondary"><div class="jss4"><nav class="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"><ol class="MuiBreadcrumbs-ol"><li class="MuiBreadcrumbs-li"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" aria-label="Hjem" href="/"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></a></li><li aria-hidden="true" class="jss153 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div><div class="jss52"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/scratch"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeSmall"><img height="16" src="/_/oppgaver/src/scratch/logo-black.4de5c7.png" alt="Bilde av Scratch"/></span>Scratch</span></a></div><div class="jss54"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/scratch"><span class="MuiIconButton-label"><img height="22" src="/_/oppgaver/src/scratch/logo-black.4de5c7.png" alt="Bilde av Scratch"/></span></a></div></div></li><li aria-hidden="true" class="jss153 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div><div class="jss52"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/scratch/tegneprogram/README"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeSmall"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg></span>Lærerveiledning - Tegneprogram</span></a></div><div class="jss54"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/scratch/tegneprogram/README"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg></span></a></div></div></li></ol></nav><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></header><div class="jss2"><div class="MuiContainer-root jss182 MuiContainer-maxWidthMd"><div class="MuiGrid-root MuiGrid-container MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg><h1 class="MuiTypography-root MuiTypography-h3">Lærerveiledning - Tegneprogram</h1></div><p class="MuiTypography-root jss183 MuiTypography-body1">Skrevet av:<!-- --> <span>Stein Olav Romslo</span></p><div class="jss294"><div>Kurs:<!-- --> <!-- -->Scratch</div><div>Tema: Blokkbasert</div><div>Fag: Matematikk, Programmering, Kunst og håndverk</div><div>Klassetrinn: 1.-4. klasse, 5.-7. klasse, 8.-10. klasse</div></div><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss295 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="/scratch/tegneprogram/tegneprogram"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg></span>Til oppgave</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss296 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://pdf-ace.com/pdfme?print_media=1"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg></span>Last ned PDF</span></a><div class="jss297"><section class="activity"> <h1 class="activity">Om oppgaven</h1> <p>I dette prosjektet lager vi et tegneprogram slik at man etterpå kan lage sin egen kunst. Man kan tegne med forskjellige farger, bruke viskelær, lage stempler og mye mer!</p> <figure><img src="tegneprogram.png" alt="Bilde av et tegneprogram"></figure> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Oppgaven passer til:</h2> <p><strong>Fag</strong>: Kunst og håndtverk, matematikk, programmering.</p> <p><strong>Anbefalte trinn</strong>: 3.-10. trinn.</p> <p><strong>Tema</strong>: Tegning, koordinatsystem, brukerinteraksjon.</p> <p><strong>Tidsbruk</strong>: Dobbelttime eller mer.</p> </section> <section class="challenge"> <h2 class="challenge">Kompetansemål</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_0"><label for="cbx_0"> <strong>Kunst og håndtverk, 4. trinn</strong>: bruke enkle funksjoner i digitale bildebehandlingsprogram</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_1"><label for="cbx_1"> <strong>Matematikk, 4. trinn</strong>: lese av, plassere og beskrive posisjoner i rutenett, på kart og i koordinatsystemer, både med og uten digitale verktøy</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_2"><label for="cbx_2"> <strong>Programmering, 10. trinn</strong>: bruke grunnleggende prinsipper i programmering, slik som løkker, tester, variabler, funksjoner og enkel brukerinteraksjon</label></p> </li> </ul> </section> <section class="challenge"> <h2 class="challenge">Forslag til læringsmål</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_3"><label for="cbx_3"> Elevene kan lage og bruke enkle funksjoner for bildebehandling.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Elevene kan bruke kode til å lese av posisjonen til musepekeren i et koordinatsystem, og bruke denne informasjonen videre.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Elevene kan bruke et koordinatsystem til å avgrense arbeidsområdet på skjermen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Elevene kan bruke kode til å endre funksjoner og verktøy etter brukerinteraksjon.</label></p> </li> </ul> </section> <section class="challenge"> <h2 class="challenge">Forslag til vurderingskriterier</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Eleven viser middels måloppnåelse ved å fullføre oppgaven.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Eleven viser høy måloppnåelse ved å videreutvikle egen kode basert på oppgaven.</label></p> </li> </ul> </section> <section class="challenge"> <h2 class="challenge">Forutsetninger og utstyr</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_9"><label for="cbx_9"> <strong>Forutsetninger</strong>: Elevene må ha god kunnskap i Scratch. De bør ha gjort flere prosjekter på introduksjons- og nybegynnernivå før de starter med denne oppgaven.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_10"><label for="cbx_10"> <strong>Utstyr</strong>: Datamaskiner med Scratch installert. Merk at Tegneprogram bruker ressurser som ikke er tilgjengelig i Scratch-biblioteket, men lastes ned utenom. Dette er beskrevet i oppgaven. Eventuelt finner du ressursene i katalogen <code>ressurser</code> på GitHub: <a href="https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/">https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/</a>, eller i en zip-fil kalt <code>Materials</code> eller <code>Tegneprogram_ressurser.zip</code>, tilgjengelig sammen med disse instruksene. Elevene kan med fordel ha lastet ned zip-filen på forhånd, ellers bør du beregne tid til dette i starten av timen.</label></p> </li> </ul> </section> <section> <h2>Fremgangsmåte</h2> <p><a href="../tegneprogram/tegneprogram.html" target="_blank">Klikk her for å se oppgaveteksten.</a></p> </section> </section> <section class="activity"> <h1 class="activity">Steg 1: Dra og tegn!</h1> <p>Noen brukere har rapportert at de har hatt problemer med å få blyanten til å tegne. Dette ser ut til å skje inne i Scratch-utviklingsmiljøet (det vil si ikke når programmet kjører i fullskjerm), fordi Scratch merker at du klikker på blyanten og tror at du ønsker å flytte på blyantfiguren. Problemet har to løsninger:</p> <ol> <li> <p>Prøv å bruke fullskjermmodus.</p> </li> <li> <p>Sett senterpunktet rett <em>utenfor</em> selve blyanten. Da vil ikke Scratch tro at man ønsker å flytte på blyanten.</p> </li> </ol> <section class="challenge"> <h2 class="challenge">Variasjoner</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Elevene kan lage en blyant som endrer farge av seg selv.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_12"><label for="cbx_12"> Elevene kan lage tastatursnarveier for å endre farge uten å måtte klikke.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_13"><label for="cbx_13"> Elevene kan lage et verktøy som endrer størrelsen på blyantstreken.</label></p> </li> </ul> </section> <section class="challenge"> <h2 class="challenge">Eksterne ressurser</h2> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_14"><label for="cbx_14"> Foreløpig ingen eksterne ressurser...</label></li> </ul> </section> </section> </div><p class="MuiTypography-root jss183 MuiTypography-body1">Lisens: <!-- --> <span><a href="https://github.com/CodeClub/scratch-curriculum/blob/master/LICENSE.md">Code Club World Limited Terms of Service</a></span></p><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><div class="MuiPaper-root jss298 MuiPaper-elevation1 MuiPaper-rounded"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><h2 class="MuiTypography-root MuiTypography-h4">Forbedre denne siden</h2></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Funnet en feil? Kunne noe vært bedre?</p></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!</p></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss299 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Scratch: Tegneprogram&#x27;&amp;body=Oppgave: https://oppgaver.kidsakoder.no/scratch/tegneprogram/README%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/tegneprogram/README.md%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Rapporter et problem</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss299 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></span>Gå til forumet</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss299 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/tegneprogram/README.md" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Vis koden og fiks selv</span></a></div></div></div></div></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionStatic jss300 MuiAppBar-colorSecondary"><div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.sparebank1.no" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/smn.098a83.jpg" alt="SpareBank1"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://ibok.no/" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/ibok.06cd44.jpg" alt="Ibok"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.teknograd.no/" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/teknograd.03c75e.png" alt="Teknograd"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.tekna.no/" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/tekna.41a4f5.jpg" alt="Tekna"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.ntnu.edu/idi/" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/ntnu_idi.5179a4.png" alt="NTNU institutt for datateknologi og informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.ntnu.edu/web/excited" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/excITEd.915706.png" alt="excited"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.mn.uio.no/ifi/" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/uio_ifi.37ef13.png" alt="UIO institutt for informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.samsung.com/no/innovation/" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/samsung.bec12f.png" alt="Samsung"/></a></div></div></header></div>
   
   <script src="/sw.js" async></script>  
-  <script src="/main.8ec48f.js" async></script>  
+  <script src="/main.fe75bd.js" async></script>  
 </body>
 </html>
