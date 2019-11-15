@@ -11,38 +11,7 @@
 
   
 
-  <style id='jss-server-side'>.MuiToolbar-root {
-  display: flex;
-  position: relative;
-  align-items: center;
-}
-.MuiToolbar-gutters {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-@media (min-width:600px) {
-  .MuiToolbar-gutters {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-  .MuiToolbar-regular {
-    min-height: 56px;
-  }
-@media (min-width:0px) and (orientation: landscape) {
-  .MuiToolbar-regular {
-    min-height: 48px;
-  }
-}
-@media (min-width:600px) {
-  .MuiToolbar-regular {
-    min-height: 64px;
-  }
-}
-  .MuiToolbar-dense {
-    min-height: 48px;
-  }
-html {
+  <style id='jss-server-side'>html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -56,7 +25,7 @@ strong, b {
 body {
   color: rgba(0, 0, 0, 0.87);
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   line-height: 1.43;
@@ -71,229 +40,229 @@ body {
 body::backdrop {
   background-color: #fafafa;
 }
-  .MuiPaper-root {
-    color: rgba(0, 0, 0, 0.87);
-    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    background-color: #fff;
-  }
-  .MuiPaper-rounded {
-    border-radius: 4px;
-  }
-  .MuiPaper-elevation0 {
-    box-shadow: none;
-  }
-  .MuiPaper-elevation1 {
-    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation2 {
-    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation3 {
-    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation4 {
-    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation5 {
-    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation6 {
-    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation7 {
-    box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation8 {
-    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation9 {
-    box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation10 {
-    box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation11 {
-    box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation12 {
-    box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation13 {
-    box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation14 {
-    box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation15 {
-    box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation16 {
-    box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation17 {
-    box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation18 {
-    box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation19 {
-    box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation20 {
-    box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation21 {
-    box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation22 {
-    box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation23 {
-    box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation24 {
-    box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
-  }
-  .MuiAppBar-root {
-    width: 100%;
-    display: flex;
-    z-index: 1100;
-    box-sizing: border-box;
-    flex-shrink: 0;
-    flex-direction: column;
-  }
-  .MuiAppBar-positionFixed {
-    top: 0;
-    left: auto;
-    right: 0;
-    position: fixed;
-  }
-  .MuiAppBar-positionAbsolute {
-    top: 0;
-    left: auto;
-    right: 0;
-    position: absolute;
-  }
-  .MuiAppBar-positionSticky {
-    top: 0;
-    left: auto;
-    right: 0;
-    position: sticky;
-  }
-  .MuiAppBar-positionStatic {
-    position: static;
-    transform: translateZ(0);
-  }
-  .MuiAppBar-positionRelative {
-    position: relative;
-  }
-  .MuiAppBar-colorDefault {
-    color: rgba(0, 0, 0, 0.87);
-    background-color: #f5f5f5;
-  }
-  .MuiAppBar-colorPrimary {
-    color: #fff;
-    background-color: #212121;
-  }
-  .MuiAppBar-colorSecondary {
-    color: rgba(0, 0, 0, 0.87);
-    background-color: #dcedc8;
-  }
-  .MuiDrawer-docked {
-    flex: 0 0 auto;
-  }
-  .MuiDrawer-paper {
-    top: 0;
-    flex: 1 0 auto;
-    height: 100%;
-    display: flex;
-    outline: 0;
-    z-index: 1200;
-    position: fixed;
-    overflow-y: auto;
-    flex-direction: column;
-    -webkit-overflow-scrolling: touch;
-  }
-  .MuiDrawer-paperAnchorLeft {
-    left: 0;
-    right: auto;
-  }
-  .MuiDrawer-paperAnchorRight {
-    left: auto;
-    right: 0;
-  }
-  .MuiDrawer-paperAnchorTop {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: auto;
-    height: auto;
-    max-height: 100%;
-  }
-  .MuiDrawer-paperAnchorBottom {
-    top: auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: auto;
-    max-height: 100%;
-  }
-  .MuiDrawer-paperAnchorDockedLeft {
-    border-right: 1px solid rgba(0, 0, 0, 0.12);
-  }
-  .MuiDrawer-paperAnchorDockedTop {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  }
-  .MuiDrawer-paperAnchorDockedRight {
-    border-left: 1px solid rgba(0, 0, 0, 0.12);
-  }
-  .MuiDrawer-paperAnchorDockedBottom {
-    border-top: 1px solid rgba(0, 0, 0, 0.12);
-  }
-  .MuiButtonBase-root {
-    color: inherit;
-    border: 0;
-    cursor: pointer;
-    margin: 0;
-    display: inline-flex;
-    outline: 0;
-    padding: 0;
-    position: relative;
-    align-items: center;
-    user-select: none;
-    border-radius: 0;
-    vertical-align: middle;
-    -moz-appearance: none;
-    justify-content: center;
-    text-decoration: none;
-    background-color: transparent;
-    -webkit-appearance: none;
-    -webkit-tap-highlight-color: transparent;
-  }
-  .MuiButtonBase-root::-moz-focus-inner {
-    border-style: none;
-  }
-  .MuiButtonBase-root.Mui-disabled {
-    cursor: default;
-    pointer-events: none;
-  }
-  .MuiIconButton-root {
-    flex: 0 0 auto;
-    color: rgba(0, 0, 0, 0.54);
-    padding: 12px;
-    overflow: visible;
-    font-size: 1.7142857142857142rem;
-    text-align: center;
-    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    border-radius: 50%;
-  }
-  .MuiIconButton-root:hover {
-    background-color: rgba(0, 0, 0, 0.08);
-  }
-  .MuiIconButton-root.Mui-disabled {
-    color: rgba(0, 0, 0, 0.26);
-    background-color: transparent;
-  }
+.MuiPaper-root {
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #fff;
+}
+.MuiPaper-rounded {
+  border-radius: 4px;
+}
+.MuiPaper-elevation0 {
+  box-shadow: none;
+}
+.MuiPaper-elevation1 {
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation2 {
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation3 {
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation4 {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation5 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation6 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation7 {
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation8 {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation9 {
+  box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation10 {
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation11 {
+  box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation12 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation13 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation14 {
+  box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation15 {
+  box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation16 {
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation17 {
+  box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation18 {
+  box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation19 {
+  box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation20 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation21 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation22 {
+  box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation23 {
+  box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation24 {
+  box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+}
+.MuiAppBar-root {
+  width: 100%;
+  display: flex;
+  z-index: 1100;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.MuiAppBar-positionFixed {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: fixed;
+}
+.MuiAppBar-positionAbsolute {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: absolute;
+}
+.MuiAppBar-positionSticky {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: sticky;
+}
+.MuiAppBar-positionStatic {
+  position: static;
+  transform: translateZ(0);
+}
+.MuiAppBar-positionRelative {
+  position: relative;
+}
+.MuiAppBar-colorDefault {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #f5f5f5;
+}
+.MuiAppBar-colorPrimary {
+  color: #fff;
+  background-color: #212121;
+}
+.MuiAppBar-colorSecondary {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #dcedc8;
+}
+.MuiDrawer-docked {
+  flex: 0 0 auto;
+}
+.MuiDrawer-paper {
+  top: 0;
+  flex: 1 0 auto;
+  height: 100%;
+  display: flex;
+  outline: 0;
+  z-index: 1200;
+  position: fixed;
+  overflow-y: auto;
+  flex-direction: column;
+  -webkit-overflow-scrolling: touch;
+}
+.MuiDrawer-paperAnchorLeft {
+  left: 0;
+  right: auto;
+}
+.MuiDrawer-paperAnchorRight {
+  left: auto;
+  right: 0;
+}
+.MuiDrawer-paperAnchorTop {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  height: auto;
+  max-height: 100%;
+}
+.MuiDrawer-paperAnchorBottom {
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  max-height: 100%;
+}
+.MuiDrawer-paperAnchorDockedLeft {
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiDrawer-paperAnchorDockedTop {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiDrawer-paperAnchorDockedRight {
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiDrawer-paperAnchorDockedBottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+.MuiIconButton-root {
+  flex: 0 0 auto;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 12px;
+  overflow: visible;
+  font-size: 1.6071428571428572rem;
+  text-align: center;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 50%;
+}
+.MuiIconButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.MuiIconButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  background-color: transparent;
+}
 @media (hover: none) {
   .MuiIconButton-root:hover {
     background-color: transparent;
@@ -338,7 +307,7 @@ body::backdrop {
 }
   .MuiIconButton-sizeSmall {
     padding: 3px;
-    font-size: 1.2857142857142856rem;
+    font-size: 1.2053571428571428rem;
   }
   .MuiIconButton-label {
     width: 100%;
@@ -351,7 +320,7 @@ body::backdrop {
     width: 1em;
     height: 1em;
     display: inline-block;
-    font-size: 1.7142857142857142rem;
+    font-size: 1.6071428571428572rem;
     transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     flex-shrink: 0;
     user-select: none;
@@ -375,15 +344,15 @@ body::backdrop {
     font-size: inherit;
   }
   .MuiSvgIcon-fontSizeSmall {
-    font-size: 1.4285714285714284rem;
+    font-size: 1.3392857142857142rem;
   }
   .MuiSvgIcon-fontSizeLarge {
-    font-size: 2.5rem;
+    font-size: 2.34375rem;
   }
   .MuiButton-root {
     color: rgba(0, 0, 0, 0.87);
     padding: 6px 16px;
-    font-size: 1rem;
+    font-size: 0.9375rem;
     min-width: 64px;
     box-sizing: border-box;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -535,27 +504,27 @@ body::backdrop {
   }
   .MuiButton-textSizeSmall {
     padding: 4px 5px;
-    font-size: 0.9285714285714285rem;
+    font-size: 0.8705357142857143rem;
   }
   .MuiButton-textSizeLarge {
     padding: 8px 11px;
-    font-size: 1.0714285714285714rem;
+    font-size: 1.0044642857142856rem;
   }
   .MuiButton-outlinedSizeSmall {
     padding: 3px 9px;
-    font-size: 0.9285714285714285rem;
+    font-size: 0.8705357142857143rem;
   }
   .MuiButton-outlinedSizeLarge {
     padding: 7px 21px;
-    font-size: 1.0714285714285714rem;
+    font-size: 1.0044642857142856rem;
   }
   .MuiButton-containedSizeSmall {
     padding: 4px 10px;
-    font-size: 0.9285714285714285rem;
+    font-size: 0.8705357142857143rem;
   }
   .MuiButton-containedSizeLarge {
     padding: 8px 22px;
-    font-size: 1.0714285714285714rem;
+    font-size: 1.0044642857142856rem;
   }
   .MuiButton-fullWidth {
     width: 100%;
@@ -589,14 +558,14 @@ body::backdrop {
     margin: 0;
   }
   .MuiTypography-body2 {
-    font-size: 1rem;
+    font-size: 0.9375rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.43;
     letter-spacing: 0.01071em;
   }
   .MuiTypography-body1 {
-    font-size: 1.0714285714285714rem;
+    font-size: 1.0357142857142856rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.5;
@@ -604,28 +573,28 @@ body::backdrop {
   }
 @media (min-width:600px) {
   .MuiTypography-body1 {
-    font-size: 1.1667rem;
+    font-size: 1rem;
   }
 }
 @media (min-width:960px) {
   .MuiTypography-body1 {
-    font-size: 1.1667rem;
+    font-size: 1rem;
   }
 }
 @media (min-width:1280px) {
   .MuiTypography-body1 {
-    font-size: 1.1667rem;
+    font-size: 1rem;
   }
 }
   .MuiTypography-caption {
-    font-size: 0.8571428571428571rem;
+    font-size: 0.8035714285714286rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.66;
     letter-spacing: 0.03333em;
   }
   .MuiTypography-button {
-    font-size: 1rem;
+    font-size: 0.9375rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 500;
     line-height: 1.75;
@@ -633,7 +602,7 @@ body::backdrop {
     text-transform: uppercase;
   }
   .MuiTypography-h1 {
-    font-size: 3.9285714285714284rem;
+    font-size: 3.7142857142857144rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 300;
     line-height: 1;
@@ -641,21 +610,21 @@ body::backdrop {
   }
 @media (min-width:600px) {
   .MuiTypography-h1 {
-    font-size: 5.25rem;
+    font-size: 5rem;
   }
 }
 @media (min-width:960px) {
   .MuiTypography-h1 {
-    font-size: 6.25rem;
+    font-size: 5.75rem;
   }
 }
 @media (min-width:1280px) {
   .MuiTypography-h1 {
-    font-size: 6.75rem;
+    font-size: 6.5rem;
   }
 }
   .MuiTypography-h2 {
-    font-size: 2.642857142857143rem;
+    font-size: 2.508928571428571rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 300;
     line-height: 1;
@@ -663,21 +632,21 @@ body::backdrop {
   }
 @media (min-width:600px) {
   .MuiTypography-h2 {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
 }
 @media (min-width:960px) {
   .MuiTypography-h2 {
-    font-size: 4rem;
+    font-size: 3.75rem;
   }
 }
 @media (min-width:1280px) {
   .MuiTypography-h2 {
-    font-size: 4.25rem;
+    font-size: 4rem;
   }
 }
   .MuiTypography-h3 {
-    font-size: 2.2142857142857144rem;
+    font-size: 2.107142857142857rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.04;
@@ -685,21 +654,21 @@ body::backdrop {
   }
 @media (min-width:600px) {
   .MuiTypography-h3 {
-    font-size: 2.8846rem;
+    font-size: 2.6442rem;
   }
 }
 @media (min-width:960px) {
   .MuiTypography-h3 {
-    font-size: 3.125rem;
+    font-size: 2.8846rem;
   }
 }
 @media (min-width:1280px) {
   .MuiTypography-h3 {
-    font-size: 3.3654rem;
+    font-size: 3.125rem;
   }
 }
   .MuiTypography-h4 {
-    font-size: 1.7142857142857142rem;
+    font-size: 1.6383928571428572rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.17;
@@ -707,12 +676,12 @@ body::backdrop {
   }
 @media (min-width:600px) {
   .MuiTypography-h4 {
-    font-size: 2.1368rem;
+    font-size: 1.9231rem;
   }
 }
 @media (min-width:960px) {
   .MuiTypography-h4 {
-    font-size: 2.3504rem;
+    font-size: 2.1368rem;
   }
 }
 @media (min-width:1280px) {
@@ -721,7 +690,7 @@ body::backdrop {
   }
 }
   .MuiTypography-h5 {
-    font-size: 1.3571428571428572rem;
+    font-size: 1.3035714285714286rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.33;
@@ -734,7 +703,7 @@ body::backdrop {
 }
 @media (min-width:960px) {
   .MuiTypography-h5 {
-    font-size: 1.6917rem;
+    font-size: 1.5038rem;
   }
 }
 @media (min-width:1280px) {
@@ -743,7 +712,7 @@ body::backdrop {
   }
 }
   .MuiTypography-h6 {
-    font-size: 1.2142857142857142rem;
+    font-size: 1.1696428571428572rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 500;
     line-height: 1.6;
@@ -756,7 +725,7 @@ body::backdrop {
 }
 @media (min-width:960px) {
   .MuiTypography-h6 {
-    font-size: 1.4063rem;
+    font-size: 1.25rem;
   }
 }
 @media (min-width:1280px) {
@@ -765,7 +734,7 @@ body::backdrop {
   }
 }
   .MuiTypography-subtitle1 {
-    font-size: 1.0714285714285714rem;
+    font-size: 1.0357142857142856rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.75;
@@ -773,12 +742,12 @@ body::backdrop {
   }
 @media (min-width:600px) {
   .MuiTypography-subtitle1 {
-    font-size: 1.1429rem;
+    font-size: 1rem;
   }
 }
 @media (min-width:960px) {
   .MuiTypography-subtitle1 {
-    font-size: 1.1429rem;
+    font-size: 1rem;
   }
 }
 @media (min-width:1280px) {
@@ -787,14 +756,14 @@ body::backdrop {
   }
 }
   .MuiTypography-subtitle2 {
-    font-size: 1rem;
+    font-size: 0.9375rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 500;
     line-height: 1.57;
     letter-spacing: 0.00714em;
   }
   .MuiTypography-overline {
-    font-size: 0.8571428571428571rem;
+    font-size: 0.8035714285714286rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 2.66;
@@ -887,7 +856,7 @@ body::backdrop {
   .MuiLink-button.Mui-focusVisible {
     outline: auto;
   }
-  .jss101 {
+  .jss121 {
     display: flex;
     margin-left: 8px;
     user-select: none;
@@ -903,17 +872,86 @@ body::backdrop {
   .MuiBreadcrumbs-li {
     list-style: none;
   }
+  .jss6 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .jss7 {
+    width: 250px;
+    height: auto;
+    max-width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .jss8 {
+    margin-right: 16px;
+  }
+  .jss9 {
+    margin-right: 24px;
+  }
+  .jss10 {
+    display: none;
+    padding: 16px;
+    z-index: 9999;
+    position: absolute;
+    max-width: 160px;
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+  }
+  .jss10:hover {
+    display: block;
+  }
+  .jss11 {
+    display: inline-block;
+    position: relative;
+    margin-right: 24px;
+  }
+  .jss11:hover + .jss10 {
+    display: block;
+  }
 @media print {
   .jss3 {
     display: none;
   }
 }
   .jss4 {
-    flex-grow: 1;
+    display: flex;
+    padding: 8px 16px;
     justify-content: space-between;
   }
   .jss5 {
     background: #dcedc8;
+  }
+  .MuiToolbar-root {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .MuiToolbar-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiToolbar-regular {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+  .MuiToolbar-dense {
+    min-height: 48px;
   }
   .MuiGrid-container {
     width: 100%;
@@ -1413,15 +1451,15 @@ body::backdrop {
     flex-basis: 100%;
   }
 }
-  .jss266 {
+  .jss268 {
     margin-top: 40px;
   }
 @media print {
-  .jss266 {
+  .jss268 {
     display: none;
   }
 }
-  .jss267 {
+  .jss269 {
     width: auto;
     height: 50px;
     margin: 20px 7px 10px;
@@ -1500,176 +1538,176 @@ body::backdrop {
     max-width: 1920px;
   }
 }
-  .jss257 img {
+  .jss265 img {
     height: auto;
     display: block;
     max-width: 100%;
   }
-  .jss257 a {
+  .jss265 a {
     color: #212121;
   }
-  .jss257 code.blockmotion {
+  .jss265 code.blockmotion {
     color: #fff;
     background-color: #4c97ff;
   }
-  .jss257 code.blocklooks {
+  .jss265 code.blocklooks {
     color: #fff;
     background-color: #96f;
   }
-  .jss257 code.blocksound {
+  .jss265 code.blocksound {
     color: #fff;
     background-color: #cf63cf;
   }
-  .jss257 code.blockpen {
+  .jss265 code.blockpen {
     color: #fff;
     background-color: #0fbd8c;
   }
-  .jss257 code.blockdata {
+  .jss265 code.blockdata {
     color: #fff;
     background-color: #ff8c1a;
   }
-  .jss257 code.blockevents {
+  .jss265 code.blockevents {
     color: #fff;
     background-color: #ffbf00;
   }
-  .jss257 code.blockcontrol {
+  .jss265 code.blockcontrol {
     color: #fff;
     background-color: #ffab19;
   }
-  .jss257 code.blocksensing {
+  .jss265 code.blocksensing {
     color: #fff;
     background-color: #5cb1d6;
   }
-  .jss257 code.blockoperators {
+  .jss265 code.blockoperators {
     color: #fff;
     background-color: #59c059;
   }
-  .jss257 code.blockmoreblocks {
+  .jss265 code.blockmoreblocks {
     color: #fff;
     background-color: #ff6680;
   }
-  .jss257 code.microbitbasic {
+  .jss265 code.microbitbasic {
     color: #fff;
     background-color: #1e90ff;
   }
-  .jss257 code.microbitinput {
+  .jss265 code.microbitinput {
     color: #fff;
     background-color: #d400d4;
   }
-  .jss257 code.microbitmusic {
+  .jss265 code.microbitmusic {
     color: #fff;
     background-color: #e63022;
   }
-  .jss257 code.microbitled {
+  .jss265 code.microbitled {
     color: #fff;
     background-color: #5c2d91;
   }
-  .jss257 code.microbitradio {
+  .jss265 code.microbitradio {
     color: #fff;
     background-color: #e3008c;
   }
-  .jss257 code.microbitloops {
+  .jss265 code.microbitloops {
     color: #fff;
     background-color: #0a0;
   }
-  .jss257 code.microbitlogic {
+  .jss265 code.microbitlogic {
     color: #fff;
     background-color: #00a4a6;
   }
-  .jss257 code.microbitvariables {
+  .jss265 code.microbitvariables {
     color: #fff;
     background-color: #dc143c;
   }
-  .jss257 code.microbitmath {
+  .jss265 code.microbitmath {
     color: #fff;
     background-color: #9400d3;
   }
-  .jss257 code.microbitfunctions {
+  .jss265 code.microbitfunctions {
     color: #fff;
     background-color: #3455db;
   }
-  .jss257 code.microbitarrays {
+  .jss265 code.microbitarrays {
     color: #fff;
     background-color: #e65722;
   }
-  .jss257 code.microbittext {
+  .jss265 code.microbittext {
     color: #fff;
     background-color: #b8860b;
   }
-  .jss257 code.microbitgame {
+  .jss265 code.microbitgame {
     color: #fff;
     background-color: #007a4b;
   }
-  .jss257 code.microbitimages {
+  .jss265 code.microbitimages {
     color: #fff;
     background-color: #7600a8;
   }
-  .jss257 code.microbitpins {
+  .jss265 code.microbitpins {
     color: #fff;
     background-color: #b22222;
   }
-  .jss257 code.microbitserial {
+  .jss265 code.microbitserial {
     color: #fff;
     background-color: #002050;
   }
-  .jss257 code.microbitcontrol {
+  .jss265 code.microbitcontrol {
     color: #fff;
     background-color: #333;
   }
-  .jss227 {
+  .jss235 {
     margin-top: 16px;
     margin-right: 16px;
   }
 @media print {
-  .jss227 {
-    display: none;
-  }
-}
-  .jss256 {
-    margin-top: 16px;
-    margin-right: 16px;
-  }
-@media print {
-  .jss256 {
+  .jss235 {
     display: none;
   }
 }
   .jss264 {
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+@media print {
+  .jss264 {
+    display: none;
+  }
+}
+  .jss266 {
     padding: 16px;
     max-width: 700px;
     background: #dcedc8;
     margin-top: 40px;
   }
 @media print {
-  .jss264 {
+  .jss266 {
     display: none;
   }
 }
-  .jss265 {
+  .jss267 {
     margin: 8px;
   }
-  .jss226 {
+  .jss234 {
     display: none;
     font-size: 0.75em;
     font-style: italic;
   }
 @media print {
-  .jss226 {
+  .jss234 {
     display: block;
   }
 }
-  .jss114 {
+  .jss122 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  .jss115 {
+  .jss123 {
     margin-top: 16px;
   }
-  .jss115 a {
+  .jss123 a {
     color: #212121;
   }</style></head>
 <body>
-  <div id="app"><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionFixed jss3 MuiAppBar-colorSecondary mui-fixed"><div class="MuiToolbar-root MuiToolbar-regular jss4 MuiToolbar-gutters"><nav class="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"><ol class="MuiBreadcrumbs-ol"><li class="MuiBreadcrumbs-li"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" aria-label="Hjem" href="/"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></a></li><li aria-hidden="true" class="jss101 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div></div></li><li aria-hidden="true" class="jss101 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div></div></li></ol></nav><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></header><div class="MuiToolbar-root MuiToolbar-regular jss1 MuiToolbar-gutters"></div><div class="jss2"><div class="MuiContainer-root jss114 MuiContainer-maxWidthMd"><div class="MuiGrid-root MuiGrid-container MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg><h1 class="MuiTypography-root MuiTypography-h3">King Kong</h1></div><p class="MuiTypography-root jss115 MuiTypography-body1">Skrevet av:<!-- --> <span>Samuel Erik Abildsø og Geir Arne Hjelle</span></p><div class="jss226"><div>Kurs:<!-- --> <!-- -->Scratch</div><div>Tema: Blokkbasert, Spill, Animasjon</div><div>Fag: Matematikk, Programmering, Engelsk, Kunst og håndverk</div><div>Klassetrinn: 1.-4. klasse, 5.-7. klasse, 8.-10. klasse</div></div><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss227 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="/scratch/kingkong/README"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>Til lærerveiledning</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss256 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://pdf-ace.com/pdfme?print_media=1"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg></span>Last ned PDF</span></a><div class="jss257"><section class="intro"> <h1 class="intro">Introduksjon</h1> <p>I dette spillet inspirert av historien om King Kong, skal vi se hvor lett det er å bruke grafikk som ikke allerede ligger i Scratch-biblioteket. I spillet styrer vi King Kong som må passe seg for flyene som angriper ham.</p> <figure><img src="kingkong.png" alt="Bilde av King Kong som passer seg for fly"></figure> </section> <section class="activity"> <h1 class="activity">Steg 1: Hente grafikk fra nettet</h1> <p>Vi skal først se på hvordan vi kan hente bilder og figurer fra nettet og bruke dem i våre egne spill. Til dette spillet trenger vi en skyskraper, et fly og en gorilla.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Åpne en ny fane i nettleseren din og gjør et søk, for eksempel etter <code>skyscraper icon</code>. Velg gjerne <em>Bildesøk</em> eller lignende for å bare se søkeresultatene som er bilder.</label></p> <p>Finn en skyskraper som du liker. Velg deretter <em>Se bildet</em> for å få bildet i full størrelse. Høyreklikk på bildet og velg <em>Lagre bildet som</em> og lagre det på din datamaskin et sted du finner det igjen.</p> </li> </ul> <section class="protip"> <h3 class="protip">Tips for søking</h3> <ul> <li> <p>Når du søker etter bilder er det best å søke på engelsk fordi det er det mest brukte språket på internett.</p> </li> <li> <p>For å finne grafikk i stedet for bilder kan det være lurt å ta med ord som <code>icon</code>, <code>pixel</code> eller <code>drawing</code> i søket ditt.</p> </li> <li> <p>De fleste søkemotorene har også muligheten for å gjøre <em>avansert bildesøk</em>. Da kan du som regel begrense søket til å bare lete etter tegninger eller tilsvarende.</p> </li> </ul> </section> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Søk også opp figurer for fly og King Kong.</label></p> <p>Her er noen eksempler, men bruk gjerne bilder du finner selv:</p> <figure><img src="eksempel.png" alt="Bilde av en skyskraper, et fly og King Kong"></figure> <p>Skyskraper fra <a href="http://www.iconarchive.com/show/home-sweet-home-icons-by-iconka/Home-Skyscraper-icon.html">www.iconka.com</a>, fly fra <a href="http://hellraz3r.deviantart.com/art/Plane-Pixel-Art-193480982">hellraz3r.deviantart.com</a> og King Kong fra <a href="http://www.flaticon.com/free-icon/small-monkey-with-long-tail_28726">www.freepik.com</a>.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_2"><label for="cbx_2"> Etter at du har lastet ned bildene fra nettet er det på tide å ta dem inn som nye figurer i Scratch. Gå tilbake til Scratch. Klikk på <img src="../bilder/hent-fra-fil.png" alt="Last opp figurfra fil"> ved siden av <strong>Ny figur</strong> og velg et av bildene du har lastet ned. Gjør det samme med de andre bildene, slik at du har tre figurer, en skyskraper, et fly og en King Kong-figur.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_3"><label for="cbx_3"> Figurene får navn fra bildefilene. Endre gjerne navnet på figurene i figurlisten til <code>skyskraper</code>, <code>fly</code> og <code>kong</code> slik at det blir enklere å holde oversikten.</label></p> </li> </ul> <section class="protip"> <h3 class="protip">Hvilke bilder kan du bruke?</h3> <p>Når du henter bilder fra nettet bør du sjekke at du har tillatelse til å bruke dem. Selv om bilder ligger på Internett betyr ikke det at du kan kopiere dem og bruke de som du selv vil!</p> <p>Mange bilder har en <em>lisens</em> som sier at andre kan bruke dem. Dette står ofte på nettsiden i nærheten av bildet (på samme måte som det står Lisens nederst i denne oppgaven). Vanligvis vil de som eier bildet at du forteller at du har kopiert bildet fra dem. Dette er veldig lett i Scratch, da man kan skrive hvor bildene kommer fra på Prosjektsiden under <em>Merknader og Bidragsytere</em>.</p> </section> </section> </section> <section class="activity"> <h1 class="activity">Steg 2: Tegn litt selv</h1> <p>Like morsomt som å finne bilder på nettet er det å tegne litt selv.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_4"><label for="cbx_4"> La oss først tegne en enkel bakgrunn. Klikk på <img src="../bilder/tegn-ny.png" alt="Tegn nybakgrunn"> ved <strong>Ny bakgrunn</strong> nederst til venstre.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Velg Malingsbøtte-verktøyet (<em>Fyll med farge</em>) for å fargelegge bakgrunnen. Finn et par fine himmelfarger, for eksempel en overgang fra blå øverst til noe lysere nederst. Klikk på bakgrunnen slik at den blir fargelagt.</label></p> <figure><img src="tegn_bakgrunn.png" alt="Bilde av malingsbøtte-verktøyet"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_6"><label for="cbx_6"> For en litt enkel gresseffekt skal vi nå velge <em>Rektangel</em>-verktøyet, og en helt svart farge. Tegn et svart rektangel på den nederste delen av bakgrunnen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Velg så en ganske lys grønn farge og tegn et grønt rektangel som dekker det meste av det svarte rektangelet, slik at det blir en svart strek mellom gresset og himmelen.</label></p> <figure><img src="gronn_bakgrunn.png" alt="Viser en grønn bakgrunn, et svart skille og blå himmel"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Velg deretter en litt mørkere grønn farge, og tegn et nytt grønt rektangel som dekker den nedre delen av det forrige rektangelet. Gjenta dette med stadig mørkere grønnfarger til du har et passende antall striper som forestiller gresset. Se <a href="#introduksjon">øverst i oppgaven</a> for et ferdig eksempel.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Du kan også tegne litt på figurene du har lastet ned. For eksempel, om du lastet ned skyskraperen fra lenken over er den gjennomsiktig! Det ser litt rart ut. Det blir bedre om du velger en farge og fargelegger skyskraperen!</label></p> </li> </ul> <p>Til spillet vårt vil vi behøve to drakter til <strong>King Kong</strong>. En drakt der han står på venstre side av skyskraperen og en der han står på høyre side.</p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_10"><label for="cbx_10"> Klikk på <code>kong</code>-figuren og velg <code>Drakter</code>-fanen. Høyreklikk på <code>kong</code>-drakten og velg <code>Lag en kopi</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Klikk på kopien og bruk knappen <img src="../bilder/speilvend.png" alt="speilvend" title="Speilvend høyre-venstre"> i øverste høyre hjørne til å speilvende denne nye drakten.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_12"><label for="cbx_12"> Gi de to draktene navnene <code>Høyre</code> og <code>Venstre</code>.</label></p> </li> </ul> <section class="protip"> <h3 class="protip">Utforsk tegneverktøyene</h3> <p>Prøv gjerne de forskjellige tegneverktøyene på egen hånd. Vet du hva alle gjør?</p> <p>Legg merke til at nede i høyre hjørnet velger du mellom å jobbe med <em>pikselgrafikk</em> og <em>vektorgrafikk</em>. I pikselgrafikk jobber vi med nettopp pikslene (hvert punkt bildet består av kalles en piksel) i bildet. Typisk vil du gjøre dette med bilder du laster ned fra nettet. Med vektorgrafikk kan vi jobbe med direkte med linjer og former. Mange av figurene i Scratchbiblioteket bruker dette, og det er ofte bedre når vi skal tegne selv.</p> </section> </section> </section> <section class="activity"> <h1 class="activity">Steg 3: King Kong flytter seg</h1> <p>Nå har vi tatt inn grafikken vi trenger. Det er på tide å begynne å programmere!</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_13"><label for="cbx_13"> La oss begynne med <code>skyskraper</code>-figuren. Denne er ganske enkel. Vi vil bare passe på at den står i ro midt på skjermen i en passende størrelse. Det kan vi gjøre med et skript som ligner dette:</label></p> <pre class="blocks">når @greenFlag klikkes
+  <div id="app"><div class="jss6"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://kidsakoder.no"><img class="jss7" alt="LKK logo" src="/CCV-assets/lkk_logo_black.a76309.png"/></a><div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss11 MuiTypography-colorPrimary" href="https://kidsakoder.no/om-lkk">Om Lær Kidsa Koding</a><div class="MuiPaper-root MuiPaper-elevation1 jss10 MuiPaper-rounded"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://kidsakoder.no/kontakt">Kontakt</a><br/><br/><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.kidsakoder.no/om-lkk/personvern-i-laer-kidsa-koding-og-kodeklubben">Personvern i Lær Kidsa Koding og Kodeklubben</a></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="https://kidsakoder.no/nyheter">Nyheter</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="/">Oppgaver</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="https://forum.kidsakoder.no">Forum</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodeklubben">Kodeklubber</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="https://kidsakoder.no/skole">Skole</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodetimen">Kodetimen</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="https://kidsakoder.no/bidra">Bidra?</a><button class="MuiButtonBase-root MuiIconButton-root jss8 MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionSticky jss3 MuiAppBar-colorSecondary"><div class="jss4"><nav class="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"><ol class="MuiBreadcrumbs-ol"><li class="MuiBreadcrumbs-li"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" aria-label="Hjem" href="/"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></a></li><li aria-hidden="true" class="jss121 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div></div></li><li aria-hidden="true" class="jss121 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div></div></li></ol></nav><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></header><div class="jss2"><div class="MuiContainer-root jss122 MuiContainer-maxWidthMd"><div class="MuiGrid-root MuiGrid-container MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg><h1 class="MuiTypography-root MuiTypography-h3">King Kong</h1></div><p class="MuiTypography-root jss123 MuiTypography-body1">Skrevet av:<!-- --> <span>Samuel Erik Abildsø og Geir Arne Hjelle</span></p><div class="jss234"><div>Kurs:<!-- --> <!-- -->Scratch</div><div>Tema: Blokkbasert, Spill, Animasjon</div><div>Fag: Matematikk, Programmering, Engelsk, Kunst og håndverk</div><div>Klassetrinn: 1.-4. klasse, 5.-7. klasse, 8.-10. klasse</div></div><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss235 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="/scratch/kingkong/README"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>Til lærerveiledning</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss264 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://pdf-ace.com/pdfme?print_media=1"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg></span>Last ned PDF</span></a><div class="jss265"><section class="intro"> <h1 class="intro">Introduksjon</h1> <p>I dette spillet inspirert av historien om King Kong, skal vi se hvor lett det er å bruke grafikk som ikke allerede ligger i Scratch-biblioteket. I spillet styrer vi King Kong som må passe seg for flyene som angriper ham.</p> <figure><img src="kingkong.png" alt="Bilde av King Kong som passer seg for fly"></figure> </section> <section class="activity"> <h1 class="activity">Steg 1: Hente grafikk fra nettet</h1> <p>Vi skal først se på hvordan vi kan hente bilder og figurer fra nettet og bruke dem i våre egne spill. Til dette spillet trenger vi en skyskraper, et fly og en gorilla.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Åpne en ny fane i nettleseren din og gjør et søk, for eksempel etter <code>skyscraper icon</code>. Velg gjerne <em>Bildesøk</em> eller lignende for å bare se søkeresultatene som er bilder.</label></p> <p>Finn en skyskraper som du liker. Velg deretter <em>Se bildet</em> for å få bildet i full størrelse. Høyreklikk på bildet og velg <em>Lagre bildet som</em> og lagre det på din datamaskin et sted du finner det igjen.</p> </li> </ul> <section class="protip"> <h3 class="protip">Tips for søking</h3> <ul> <li> <p>Når du søker etter bilder er det best å søke på engelsk fordi det er det mest brukte språket på internett.</p> </li> <li> <p>For å finne grafikk i stedet for bilder kan det være lurt å ta med ord som <code>icon</code>, <code>pixel</code> eller <code>drawing</code> i søket ditt.</p> </li> <li> <p>De fleste søkemotorene har også muligheten for å gjøre <em>avansert bildesøk</em>. Da kan du som regel begrense søket til å bare lete etter tegninger eller tilsvarende.</p> </li> </ul> </section> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Søk også opp figurer for fly og King Kong.</label></p> <p>Her er noen eksempler, men bruk gjerne bilder du finner selv:</p> <figure><img src="eksempel.png" alt="Bilde av en skyskraper, et fly og King Kong"></figure> <p>Skyskraper fra <a href="http://www.iconarchive.com/show/home-sweet-home-icons-by-iconka/Home-Skyscraper-icon.html">www.iconka.com</a>, fly fra <a href="http://hellraz3r.deviantart.com/art/Plane-Pixel-Art-193480982">hellraz3r.deviantart.com</a> og King Kong fra <a href="http://www.flaticon.com/free-icon/small-monkey-with-long-tail_28726">www.freepik.com</a>.</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_2"><label for="cbx_2"> Etter at du har lastet ned bildene fra nettet er det på tide å ta dem inn som nye figurer i Scratch. Gå tilbake til Scratch. Klikk på <img src="../bilder/hent-fra-fil.png" alt="Last opp figurfra fil"> ved siden av <strong>Ny figur</strong> og velg et av bildene du har lastet ned. Gjør det samme med de andre bildene, slik at du har tre figurer, en skyskraper, et fly og en King Kong-figur.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_3"><label for="cbx_3"> Figurene får navn fra bildefilene. Endre gjerne navnet på figurene i figurlisten til <code>skyskraper</code>, <code>fly</code> og <code>kong</code> slik at det blir enklere å holde oversikten.</label></p> </li> </ul> <section class="protip"> <h3 class="protip">Hvilke bilder kan du bruke?</h3> <p>Når du henter bilder fra nettet bør du sjekke at du har tillatelse til å bruke dem. Selv om bilder ligger på Internett betyr ikke det at du kan kopiere dem og bruke de som du selv vil!</p> <p>Mange bilder har en <em>lisens</em> som sier at andre kan bruke dem. Dette står ofte på nettsiden i nærheten av bildet (på samme måte som det står Lisens nederst i denne oppgaven). Vanligvis vil de som eier bildet at du forteller at du har kopiert bildet fra dem. Dette er veldig lett i Scratch, da man kan skrive hvor bildene kommer fra på Prosjektsiden under <em>Merknader og Bidragsytere</em>.</p> </section> </section> </section> <section class="activity"> <h1 class="activity">Steg 2: Tegn litt selv</h1> <p>Like morsomt som å finne bilder på nettet er det å tegne litt selv.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_4"><label for="cbx_4"> La oss først tegne en enkel bakgrunn. Klikk på <img src="../bilder/tegn-ny.png" alt="Tegn nybakgrunn"> ved <strong>Ny bakgrunn</strong> nederst til venstre.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Velg Malingsbøtte-verktøyet (<em>Fyll med farge</em>) for å fargelegge bakgrunnen. Finn et par fine himmelfarger, for eksempel en overgang fra blå øverst til noe lysere nederst. Klikk på bakgrunnen slik at den blir fargelagt.</label></p> <figure><img src="tegn_bakgrunn.png" alt="Bilde av malingsbøtte-verktøyet"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_6"><label for="cbx_6"> For en litt enkel gresseffekt skal vi nå velge <em>Rektangel</em>-verktøyet, og en helt svart farge. Tegn et svart rektangel på den nederste delen av bakgrunnen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Velg så en ganske lys grønn farge og tegn et grønt rektangel som dekker det meste av det svarte rektangelet, slik at det blir en svart strek mellom gresset og himmelen.</label></p> <figure><img src="gronn_bakgrunn.png" alt="Viser en grønn bakgrunn, et svart skille og blå himmel"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Velg deretter en litt mørkere grønn farge, og tegn et nytt grønt rektangel som dekker den nedre delen av det forrige rektangelet. Gjenta dette med stadig mørkere grønnfarger til du har et passende antall striper som forestiller gresset. Se <a href="#introduksjon">øverst i oppgaven</a> for et ferdig eksempel.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Du kan også tegne litt på figurene du har lastet ned. For eksempel, om du lastet ned skyskraperen fra lenken over er den gjennomsiktig! Det ser litt rart ut. Det blir bedre om du velger en farge og fargelegger skyskraperen!</label></p> </li> </ul> <p>Til spillet vårt vil vi behøve to drakter til <strong>King Kong</strong>. En drakt der han står på venstre side av skyskraperen og en der han står på høyre side.</p> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_10"><label for="cbx_10"> Klikk på <code>kong</code>-figuren og velg <code>Drakter</code>-fanen. Høyreklikk på <code>kong</code>-drakten og velg <code>Lag en kopi</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Klikk på kopien og bruk knappen <img src="../bilder/speilvend.png" alt="speilvend" title="Speilvend høyre-venstre"> i øverste høyre hjørne til å speilvende denne nye drakten.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_12"><label for="cbx_12"> Gi de to draktene navnene <code>Høyre</code> og <code>Venstre</code>.</label></p> </li> </ul> <section class="protip"> <h3 class="protip">Utforsk tegneverktøyene</h3> <p>Prøv gjerne de forskjellige tegneverktøyene på egen hånd. Vet du hva alle gjør?</p> <p>Legg merke til at nede i høyre hjørnet velger du mellom å jobbe med <em>pikselgrafikk</em> og <em>vektorgrafikk</em>. I pikselgrafikk jobber vi med nettopp pikslene (hvert punkt bildet består av kalles en piksel) i bildet. Typisk vil du gjøre dette med bilder du laster ned fra nettet. Med vektorgrafikk kan vi jobbe med direkte med linjer og former. Mange av figurene i Scratchbiblioteket bruker dette, og det er ofte bedre når vi skal tegne selv.</p> </section> </section> </section> <section class="activity"> <h1 class="activity">Steg 3: King Kong flytter seg</h1> <p>Nå har vi tatt inn grafikken vi trenger. Det er på tide å begynne å programmere!</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_13"><label for="cbx_13"> La oss begynne med <code>skyskraper</code>-figuren. Denne er ganske enkel. Vi vil bare passe på at den står i ro midt på skjermen i en passende størrelse. Det kan vi gjøre med et skript som ligner dette:</label></p> <pre class="blocks">når @greenFlag klikkes
 sett størrelse til (200) %
 legg [foran alt v]
 gå til x: (0) y: (-50)
@@ -1721,9 +1759,9 @@ gjenta for alltid
     vent (0.5) sekunder
     fjern grafiske effekter
 slutt
-</pre> <p>Her venter vi 0.5 sekunder både for at fargeeffekten skal synes og for at da har flyet passert slik at ikke King Kong blir truffet flere ganger av det samme flyet.</p> </li> </ul> <p>Vi har nå laget et ganske enkelt spill. Men det er flere ting du kan prøve på egen hånd! Nedenfor er noen forslag, men du har kanskje egne ideer til hvordan spillet kan videreutvikles?</p> <section class="challenge"> <h3 class="challenge">Prøv selv</h3> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_23"><label for="cbx_23"> Legg til lydeffekter! Kanskje litt motorlyd fra flyene, og så klart trenger vi en lyd når King Kong blir truffet av flyene.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_24"><label for="cbx_24"> Tell poeng! Kanskje du kan få poeng for hvert fly som passerer?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_25"><label for="cbx_25"> Tell liv! King Kong kan ikke bli truffet av flyene <code class="blockcontrol">for alltid</code>. Legg til en <code class="blockdata">liv</code>-variabel som teller hvor mange liv du har igjen. Kanskje <code>kong</code> ramler ned fra skyskraperen når han er tom for liv?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_26"><label for="cbx_26"> Kan du utvide spillet? Kanskje kommer det fly i flere retninger og King Kong må dukke eller hoppe for å unngå dem? Kanskje King Kong kan fange flyene på en eller annen måte og få poeng for det?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_27"><label for="cbx_27"> Kan du gjøre spillet vanskeligere etterhvert? For eksempel kan flyene komme raskere etterhvert som du får flere poeng?</label></p> </li> </ul> </section> </section> </section> </div><p class="MuiTypography-root jss115 MuiTypography-body1">Lisens: <!-- --> <a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="http://creativecommons.org/licenses/by-sa/4.0/deed" target="_blank" rel="noopener">CC BY-SA 4.0</a></p><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><div class="MuiPaper-root jss264 MuiPaper-elevation1 MuiPaper-rounded"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><h2 class="MuiTypography-root MuiTypography-h4">Forbedre denne siden</h2></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Funnet en feil? Kunne noe vært bedre?</p></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!</p></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Scratch: Kingkong&#x27;&amp;body=Oppgave: https://oppgaver.kidsakoder.no/scratch/kingkong/kingkong%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/kingkong/kingkong.md%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Rapporter et problem</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></span>Gå til forumet</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/kingkong/kingkong.md" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Vis koden og fiks selv</span></a></div></div></div></div></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionStatic jss266 MuiAppBar-colorSecondary"><div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.sparebank1.no" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/smn.098a83.jpg" alt="SpareBank1"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://ibok.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/ibok.06cd44.jpg" alt="Ibok"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.teknograd.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/teknograd.03c75e.png" alt="Teknograd"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.tekna.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/tekna.41a4f5.jpg" alt="Tekna"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.ntnu.edu/idi/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/ntnu_idi.5179a4.png" alt="NTNU institutt for datateknologi og informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.ntnu.edu/web/excited" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/excITEd.915706.png" alt="excited"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.mn.uio.no/ifi/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/uio_ifi.37ef13.png" alt="UIO institutt for informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.samsung.com/no/innovation/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/samsung.bec12f.png" alt="Samsung"/></a></div></div></header></div>
+</pre> <p>Her venter vi 0.5 sekunder både for at fargeeffekten skal synes og for at da har flyet passert slik at ikke King Kong blir truffet flere ganger av det samme flyet.</p> </li> </ul> <p>Vi har nå laget et ganske enkelt spill. Men det er flere ting du kan prøve på egen hånd! Nedenfor er noen forslag, men du har kanskje egne ideer til hvordan spillet kan videreutvikles?</p> <section class="challenge"> <h3 class="challenge">Prøv selv</h3> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_23"><label for="cbx_23"> Legg til lydeffekter! Kanskje litt motorlyd fra flyene, og så klart trenger vi en lyd når King Kong blir truffet av flyene.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_24"><label for="cbx_24"> Tell poeng! Kanskje du kan få poeng for hvert fly som passerer?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_25"><label for="cbx_25"> Tell liv! King Kong kan ikke bli truffet av flyene <code class="blockcontrol">for alltid</code>. Legg til en <code class="blockdata">liv</code>-variabel som teller hvor mange liv du har igjen. Kanskje <code>kong</code> ramler ned fra skyskraperen når han er tom for liv?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_26"><label for="cbx_26"> Kan du utvide spillet? Kanskje kommer det fly i flere retninger og King Kong må dukke eller hoppe for å unngå dem? Kanskje King Kong kan fange flyene på en eller annen måte og få poeng for det?</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_27"><label for="cbx_27"> Kan du gjøre spillet vanskeligere etterhvert? For eksempel kan flyene komme raskere etterhvert som du får flere poeng?</label></p> </li> </ul> </section> </section> </section> </div><p class="MuiTypography-root jss123 MuiTypography-body1">Lisens: <!-- --> <a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="http://creativecommons.org/licenses/by-sa/4.0/deed" target="_blank" rel="noopener">CC BY-SA 4.0</a></p><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><div class="MuiPaper-root jss266 MuiPaper-elevation1 MuiPaper-rounded"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><h2 class="MuiTypography-root MuiTypography-h4">Forbedre denne siden</h2></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Funnet en feil? Kunne noe vært bedre?</p></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!</p></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss267 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Scratch: Kingkong&#x27;&amp;body=Oppgave: https://oppgaver.kidsakoder.no/scratch/kingkong/kingkong%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/kingkong/kingkong.md%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Rapporter et problem</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss267 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></span>Gå til forumet</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss267 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/tree/master/src/scratch/kingkong/kingkong.md" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Vis koden og fiks selv</span></a></div></div></div></div></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionStatic jss268 MuiAppBar-colorSecondary"><div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.sparebank1.no" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/smn.098a83.jpg" alt="SpareBank1"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://ibok.no/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/ibok.06cd44.jpg" alt="Ibok"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.teknograd.no/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/teknograd.03c75e.png" alt="Teknograd"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.tekna.no/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/tekna.41a4f5.jpg" alt="Tekna"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.ntnu.edu/idi/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/ntnu_idi.5179a4.png" alt="NTNU institutt for datateknologi og informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.ntnu.edu/web/excited" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/excITEd.915706.png" alt="excited"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.mn.uio.no/ifi/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/uio_ifi.37ef13.png" alt="UIO institutt for informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.samsung.com/no/innovation/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/samsung.bec12f.png" alt="Samsung"/></a></div></div></header></div>
   
   <script src="/sw.js" async></script>  
-  <script src="/main.9a9119.js" async></script>  
+  <script src="/main.8ec48f.js" async></script>  
 </body>
 </html>

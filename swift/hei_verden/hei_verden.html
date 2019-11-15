@@ -11,38 +11,7 @@
 
   
 
-  <style id='jss-server-side'>.MuiToolbar-root {
-  display: flex;
-  position: relative;
-  align-items: center;
-}
-.MuiToolbar-gutters {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-@media (min-width:600px) {
-  .MuiToolbar-gutters {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-  .MuiToolbar-regular {
-    min-height: 56px;
-  }
-@media (min-width:0px) and (orientation: landscape) {
-  .MuiToolbar-regular {
-    min-height: 48px;
-  }
-}
-@media (min-width:600px) {
-  .MuiToolbar-regular {
-    min-height: 64px;
-  }
-}
-  .MuiToolbar-dense {
-    min-height: 48px;
-  }
-html {
+  <style id='jss-server-side'>html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -56,7 +25,7 @@ strong, b {
 body {
   color: rgba(0, 0, 0, 0.87);
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   line-height: 1.43;
@@ -71,229 +40,229 @@ body {
 body::backdrop {
   background-color: #fafafa;
 }
-  .MuiPaper-root {
-    color: rgba(0, 0, 0, 0.87);
-    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    background-color: #fff;
-  }
-  .MuiPaper-rounded {
-    border-radius: 4px;
-  }
-  .MuiPaper-elevation0 {
-    box-shadow: none;
-  }
-  .MuiPaper-elevation1 {
-    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation2 {
-    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation3 {
-    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation4 {
-    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation5 {
-    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation6 {
-    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation7 {
-    box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation8 {
-    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation9 {
-    box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation10 {
-    box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation11 {
-    box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation12 {
-    box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation13 {
-    box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation14 {
-    box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation15 {
-    box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation16 {
-    box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation17 {
-    box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation18 {
-    box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation19 {
-    box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation20 {
-    box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation21 {
-    box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation22 {
-    box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation23 {
-    box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
-  }
-  .MuiPaper-elevation24 {
-    box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
-  }
-  .MuiAppBar-root {
-    width: 100%;
-    display: flex;
-    z-index: 1100;
-    box-sizing: border-box;
-    flex-shrink: 0;
-    flex-direction: column;
-  }
-  .MuiAppBar-positionFixed {
-    top: 0;
-    left: auto;
-    right: 0;
-    position: fixed;
-  }
-  .MuiAppBar-positionAbsolute {
-    top: 0;
-    left: auto;
-    right: 0;
-    position: absolute;
-  }
-  .MuiAppBar-positionSticky {
-    top: 0;
-    left: auto;
-    right: 0;
-    position: sticky;
-  }
-  .MuiAppBar-positionStatic {
-    position: static;
-    transform: translateZ(0);
-  }
-  .MuiAppBar-positionRelative {
-    position: relative;
-  }
-  .MuiAppBar-colorDefault {
-    color: rgba(0, 0, 0, 0.87);
-    background-color: #f5f5f5;
-  }
-  .MuiAppBar-colorPrimary {
-    color: #fff;
-    background-color: #212121;
-  }
-  .MuiAppBar-colorSecondary {
-    color: rgba(0, 0, 0, 0.87);
-    background-color: #dcedc8;
-  }
-  .MuiDrawer-docked {
-    flex: 0 0 auto;
-  }
-  .MuiDrawer-paper {
-    top: 0;
-    flex: 1 0 auto;
-    height: 100%;
-    display: flex;
-    outline: 0;
-    z-index: 1200;
-    position: fixed;
-    overflow-y: auto;
-    flex-direction: column;
-    -webkit-overflow-scrolling: touch;
-  }
-  .MuiDrawer-paperAnchorLeft {
-    left: 0;
-    right: auto;
-  }
-  .MuiDrawer-paperAnchorRight {
-    left: auto;
-    right: 0;
-  }
-  .MuiDrawer-paperAnchorTop {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: auto;
-    height: auto;
-    max-height: 100%;
-  }
-  .MuiDrawer-paperAnchorBottom {
-    top: auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: auto;
-    max-height: 100%;
-  }
-  .MuiDrawer-paperAnchorDockedLeft {
-    border-right: 1px solid rgba(0, 0, 0, 0.12);
-  }
-  .MuiDrawer-paperAnchorDockedTop {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  }
-  .MuiDrawer-paperAnchorDockedRight {
-    border-left: 1px solid rgba(0, 0, 0, 0.12);
-  }
-  .MuiDrawer-paperAnchorDockedBottom {
-    border-top: 1px solid rgba(0, 0, 0, 0.12);
-  }
-  .MuiButtonBase-root {
-    color: inherit;
-    border: 0;
-    cursor: pointer;
-    margin: 0;
-    display: inline-flex;
-    outline: 0;
-    padding: 0;
-    position: relative;
-    align-items: center;
-    user-select: none;
-    border-radius: 0;
-    vertical-align: middle;
-    -moz-appearance: none;
-    justify-content: center;
-    text-decoration: none;
-    background-color: transparent;
-    -webkit-appearance: none;
-    -webkit-tap-highlight-color: transparent;
-  }
-  .MuiButtonBase-root::-moz-focus-inner {
-    border-style: none;
-  }
-  .MuiButtonBase-root.Mui-disabled {
-    cursor: default;
-    pointer-events: none;
-  }
-  .MuiIconButton-root {
-    flex: 0 0 auto;
-    color: rgba(0, 0, 0, 0.54);
-    padding: 12px;
-    overflow: visible;
-    font-size: 1.7142857142857142rem;
-    text-align: center;
-    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    border-radius: 50%;
-  }
-  .MuiIconButton-root:hover {
-    background-color: rgba(0, 0, 0, 0.08);
-  }
-  .MuiIconButton-root.Mui-disabled {
-    color: rgba(0, 0, 0, 0.26);
-    background-color: transparent;
-  }
+.MuiPaper-root {
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #fff;
+}
+.MuiPaper-rounded {
+  border-radius: 4px;
+}
+.MuiPaper-elevation0 {
+  box-shadow: none;
+}
+.MuiPaper-elevation1 {
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation2 {
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation3 {
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation4 {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation5 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation6 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation7 {
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation8 {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation9 {
+  box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation10 {
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation11 {
+  box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation12 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation13 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation14 {
+  box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation15 {
+  box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation16 {
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation17 {
+  box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation18 {
+  box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation19 {
+  box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation20 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation21 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation22 {
+  box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation23 {
+  box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation24 {
+  box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+}
+.MuiAppBar-root {
+  width: 100%;
+  display: flex;
+  z-index: 1100;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.MuiAppBar-positionFixed {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: fixed;
+}
+.MuiAppBar-positionAbsolute {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: absolute;
+}
+.MuiAppBar-positionSticky {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: sticky;
+}
+.MuiAppBar-positionStatic {
+  position: static;
+  transform: translateZ(0);
+}
+.MuiAppBar-positionRelative {
+  position: relative;
+}
+.MuiAppBar-colorDefault {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #f5f5f5;
+}
+.MuiAppBar-colorPrimary {
+  color: #fff;
+  background-color: #212121;
+}
+.MuiAppBar-colorSecondary {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #dcedc8;
+}
+.MuiDrawer-docked {
+  flex: 0 0 auto;
+}
+.MuiDrawer-paper {
+  top: 0;
+  flex: 1 0 auto;
+  height: 100%;
+  display: flex;
+  outline: 0;
+  z-index: 1200;
+  position: fixed;
+  overflow-y: auto;
+  flex-direction: column;
+  -webkit-overflow-scrolling: touch;
+}
+.MuiDrawer-paperAnchorLeft {
+  left: 0;
+  right: auto;
+}
+.MuiDrawer-paperAnchorRight {
+  left: auto;
+  right: 0;
+}
+.MuiDrawer-paperAnchorTop {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  height: auto;
+  max-height: 100%;
+}
+.MuiDrawer-paperAnchorBottom {
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  max-height: 100%;
+}
+.MuiDrawer-paperAnchorDockedLeft {
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiDrawer-paperAnchorDockedTop {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiDrawer-paperAnchorDockedRight {
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiDrawer-paperAnchorDockedBottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+.MuiIconButton-root {
+  flex: 0 0 auto;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 12px;
+  overflow: visible;
+  font-size: 1.6071428571428572rem;
+  text-align: center;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 50%;
+}
+.MuiIconButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.MuiIconButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  background-color: transparent;
+}
 @media (hover: none) {
   .MuiIconButton-root:hover {
     background-color: transparent;
@@ -338,7 +307,7 @@ body::backdrop {
 }
   .MuiIconButton-sizeSmall {
     padding: 3px;
-    font-size: 1.2857142857142856rem;
+    font-size: 1.2053571428571428rem;
   }
   .MuiIconButton-label {
     width: 100%;
@@ -351,7 +320,7 @@ body::backdrop {
     width: 1em;
     height: 1em;
     display: inline-block;
-    font-size: 1.7142857142857142rem;
+    font-size: 1.6071428571428572rem;
     transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     flex-shrink: 0;
     user-select: none;
@@ -375,15 +344,15 @@ body::backdrop {
     font-size: inherit;
   }
   .MuiSvgIcon-fontSizeSmall {
-    font-size: 1.4285714285714284rem;
+    font-size: 1.3392857142857142rem;
   }
   .MuiSvgIcon-fontSizeLarge {
-    font-size: 2.5rem;
+    font-size: 2.34375rem;
   }
   .MuiButton-root {
     color: rgba(0, 0, 0, 0.87);
     padding: 6px 16px;
-    font-size: 1rem;
+    font-size: 0.9375rem;
     min-width: 64px;
     box-sizing: border-box;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -535,27 +504,27 @@ body::backdrop {
   }
   .MuiButton-textSizeSmall {
     padding: 4px 5px;
-    font-size: 0.9285714285714285rem;
+    font-size: 0.8705357142857143rem;
   }
   .MuiButton-textSizeLarge {
     padding: 8px 11px;
-    font-size: 1.0714285714285714rem;
+    font-size: 1.0044642857142856rem;
   }
   .MuiButton-outlinedSizeSmall {
     padding: 3px 9px;
-    font-size: 0.9285714285714285rem;
+    font-size: 0.8705357142857143rem;
   }
   .MuiButton-outlinedSizeLarge {
     padding: 7px 21px;
-    font-size: 1.0714285714285714rem;
+    font-size: 1.0044642857142856rem;
   }
   .MuiButton-containedSizeSmall {
     padding: 4px 10px;
-    font-size: 0.9285714285714285rem;
+    font-size: 0.8705357142857143rem;
   }
   .MuiButton-containedSizeLarge {
     padding: 8px 22px;
-    font-size: 1.0714285714285714rem;
+    font-size: 1.0044642857142856rem;
   }
   .MuiButton-fullWidth {
     width: 100%;
@@ -589,14 +558,14 @@ body::backdrop {
     margin: 0;
   }
   .MuiTypography-body2 {
-    font-size: 1rem;
+    font-size: 0.9375rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.43;
     letter-spacing: 0.01071em;
   }
   .MuiTypography-body1 {
-    font-size: 1.0714285714285714rem;
+    font-size: 1.0357142857142856rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.5;
@@ -604,28 +573,28 @@ body::backdrop {
   }
 @media (min-width:600px) {
   .MuiTypography-body1 {
-    font-size: 1.1667rem;
+    font-size: 1rem;
   }
 }
 @media (min-width:960px) {
   .MuiTypography-body1 {
-    font-size: 1.1667rem;
+    font-size: 1rem;
   }
 }
 @media (min-width:1280px) {
   .MuiTypography-body1 {
-    font-size: 1.1667rem;
+    font-size: 1rem;
   }
 }
   .MuiTypography-caption {
-    font-size: 0.8571428571428571rem;
+    font-size: 0.8035714285714286rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.66;
     letter-spacing: 0.03333em;
   }
   .MuiTypography-button {
-    font-size: 1rem;
+    font-size: 0.9375rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 500;
     line-height: 1.75;
@@ -633,7 +602,7 @@ body::backdrop {
     text-transform: uppercase;
   }
   .MuiTypography-h1 {
-    font-size: 3.9285714285714284rem;
+    font-size: 3.7142857142857144rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 300;
     line-height: 1;
@@ -641,21 +610,21 @@ body::backdrop {
   }
 @media (min-width:600px) {
   .MuiTypography-h1 {
-    font-size: 5.25rem;
+    font-size: 5rem;
   }
 }
 @media (min-width:960px) {
   .MuiTypography-h1 {
-    font-size: 6.25rem;
+    font-size: 5.75rem;
   }
 }
 @media (min-width:1280px) {
   .MuiTypography-h1 {
-    font-size: 6.75rem;
+    font-size: 6.5rem;
   }
 }
   .MuiTypography-h2 {
-    font-size: 2.642857142857143rem;
+    font-size: 2.508928571428571rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 300;
     line-height: 1;
@@ -663,21 +632,21 @@ body::backdrop {
   }
 @media (min-width:600px) {
   .MuiTypography-h2 {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
 }
 @media (min-width:960px) {
   .MuiTypography-h2 {
-    font-size: 4rem;
+    font-size: 3.75rem;
   }
 }
 @media (min-width:1280px) {
   .MuiTypography-h2 {
-    font-size: 4.25rem;
+    font-size: 4rem;
   }
 }
   .MuiTypography-h3 {
-    font-size: 2.2142857142857144rem;
+    font-size: 2.107142857142857rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.04;
@@ -685,21 +654,21 @@ body::backdrop {
   }
 @media (min-width:600px) {
   .MuiTypography-h3 {
-    font-size: 2.8846rem;
+    font-size: 2.6442rem;
   }
 }
 @media (min-width:960px) {
   .MuiTypography-h3 {
-    font-size: 3.125rem;
+    font-size: 2.8846rem;
   }
 }
 @media (min-width:1280px) {
   .MuiTypography-h3 {
-    font-size: 3.3654rem;
+    font-size: 3.125rem;
   }
 }
   .MuiTypography-h4 {
-    font-size: 1.7142857142857142rem;
+    font-size: 1.6383928571428572rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.17;
@@ -707,12 +676,12 @@ body::backdrop {
   }
 @media (min-width:600px) {
   .MuiTypography-h4 {
-    font-size: 2.1368rem;
+    font-size: 1.9231rem;
   }
 }
 @media (min-width:960px) {
   .MuiTypography-h4 {
-    font-size: 2.3504rem;
+    font-size: 2.1368rem;
   }
 }
 @media (min-width:1280px) {
@@ -721,7 +690,7 @@ body::backdrop {
   }
 }
   .MuiTypography-h5 {
-    font-size: 1.3571428571428572rem;
+    font-size: 1.3035714285714286rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.33;
@@ -734,7 +703,7 @@ body::backdrop {
 }
 @media (min-width:960px) {
   .MuiTypography-h5 {
-    font-size: 1.6917rem;
+    font-size: 1.5038rem;
   }
 }
 @media (min-width:1280px) {
@@ -743,7 +712,7 @@ body::backdrop {
   }
 }
   .MuiTypography-h6 {
-    font-size: 1.2142857142857142rem;
+    font-size: 1.1696428571428572rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 500;
     line-height: 1.6;
@@ -756,7 +725,7 @@ body::backdrop {
 }
 @media (min-width:960px) {
   .MuiTypography-h6 {
-    font-size: 1.4063rem;
+    font-size: 1.25rem;
   }
 }
 @media (min-width:1280px) {
@@ -765,7 +734,7 @@ body::backdrop {
   }
 }
   .MuiTypography-subtitle1 {
-    font-size: 1.0714285714285714rem;
+    font-size: 1.0357142857142856rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.75;
@@ -773,12 +742,12 @@ body::backdrop {
   }
 @media (min-width:600px) {
   .MuiTypography-subtitle1 {
-    font-size: 1.1429rem;
+    font-size: 1rem;
   }
 }
 @media (min-width:960px) {
   .MuiTypography-subtitle1 {
-    font-size: 1.1429rem;
+    font-size: 1rem;
   }
 }
 @media (min-width:1280px) {
@@ -787,14 +756,14 @@ body::backdrop {
   }
 }
   .MuiTypography-subtitle2 {
-    font-size: 1rem;
+    font-size: 0.9375rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 500;
     line-height: 1.57;
     letter-spacing: 0.00714em;
   }
   .MuiTypography-overline {
-    font-size: 0.8571428571428571rem;
+    font-size: 0.8035714285714286rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 2.66;
@@ -887,7 +856,7 @@ body::backdrop {
   .MuiLink-button.Mui-focusVisible {
     outline: auto;
   }
-  .jss101 {
+  .jss121 {
     display: flex;
     margin-left: 8px;
     user-select: none;
@@ -903,17 +872,86 @@ body::backdrop {
   .MuiBreadcrumbs-li {
     list-style: none;
   }
+  .jss6 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .jss7 {
+    width: 250px;
+    height: auto;
+    max-width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .jss8 {
+    margin-right: 16px;
+  }
+  .jss9 {
+    margin-right: 24px;
+  }
+  .jss10 {
+    display: none;
+    padding: 16px;
+    z-index: 9999;
+    position: absolute;
+    max-width: 160px;
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+  }
+  .jss10:hover {
+    display: block;
+  }
+  .jss11 {
+    display: inline-block;
+    position: relative;
+    margin-right: 24px;
+  }
+  .jss11:hover + .jss10 {
+    display: block;
+  }
 @media print {
   .jss3 {
     display: none;
   }
 }
   .jss4 {
-    flex-grow: 1;
+    display: flex;
+    padding: 8px 16px;
     justify-content: space-between;
   }
   .jss5 {
     background: #dcedc8;
+  }
+  .MuiToolbar-root {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .MuiToolbar-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiToolbar-regular {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+  .MuiToolbar-dense {
+    min-height: 48px;
   }
   .MuiGrid-container {
     width: 100%;
@@ -1413,15 +1451,15 @@ body::backdrop {
     flex-basis: 100%;
   }
 }
-  .jss266 {
+  .jss268 {
     margin-top: 40px;
   }
 @media print {
-  .jss266 {
+  .jss268 {
     display: none;
   }
 }
-  .jss267 {
+  .jss269 {
     width: auto;
     height: 50px;
     margin: 20px 7px 10px;
@@ -1500,179 +1538,179 @@ body::backdrop {
     max-width: 1920px;
   }
 }
-  .jss257 img {
+  .jss265 img {
     height: auto;
     display: block;
     max-width: 100%;
   }
-  .jss257 a {
+  .jss265 a {
     color: #212121;
   }
-  .jss257 code.blockmotion {
+  .jss265 code.blockmotion {
     color: #fff;
     background-color: #4c97ff;
   }
-  .jss257 code.blocklooks {
+  .jss265 code.blocklooks {
     color: #fff;
     background-color: #96f;
   }
-  .jss257 code.blocksound {
+  .jss265 code.blocksound {
     color: #fff;
     background-color: #cf63cf;
   }
-  .jss257 code.blockpen {
+  .jss265 code.blockpen {
     color: #fff;
     background-color: #0fbd8c;
   }
-  .jss257 code.blockdata {
+  .jss265 code.blockdata {
     color: #fff;
     background-color: #ff8c1a;
   }
-  .jss257 code.blockevents {
+  .jss265 code.blockevents {
     color: #fff;
     background-color: #ffbf00;
   }
-  .jss257 code.blockcontrol {
+  .jss265 code.blockcontrol {
     color: #fff;
     background-color: #ffab19;
   }
-  .jss257 code.blocksensing {
+  .jss265 code.blocksensing {
     color: #fff;
     background-color: #5cb1d6;
   }
-  .jss257 code.blockoperators {
+  .jss265 code.blockoperators {
     color: #fff;
     background-color: #59c059;
   }
-  .jss257 code.blockmoreblocks {
+  .jss265 code.blockmoreblocks {
     color: #fff;
     background-color: #ff6680;
   }
-  .jss257 code.microbitbasic {
+  .jss265 code.microbitbasic {
     color: #fff;
     background-color: #1e90ff;
   }
-  .jss257 code.microbitinput {
+  .jss265 code.microbitinput {
     color: #fff;
     background-color: #d400d4;
   }
-  .jss257 code.microbitmusic {
+  .jss265 code.microbitmusic {
     color: #fff;
     background-color: #e63022;
   }
-  .jss257 code.microbitled {
+  .jss265 code.microbitled {
     color: #fff;
     background-color: #5c2d91;
   }
-  .jss257 code.microbitradio {
+  .jss265 code.microbitradio {
     color: #fff;
     background-color: #e3008c;
   }
-  .jss257 code.microbitloops {
+  .jss265 code.microbitloops {
     color: #fff;
     background-color: #0a0;
   }
-  .jss257 code.microbitlogic {
+  .jss265 code.microbitlogic {
     color: #fff;
     background-color: #00a4a6;
   }
-  .jss257 code.microbitvariables {
+  .jss265 code.microbitvariables {
     color: #fff;
     background-color: #dc143c;
   }
-  .jss257 code.microbitmath {
+  .jss265 code.microbitmath {
     color: #fff;
     background-color: #9400d3;
   }
-  .jss257 code.microbitfunctions {
+  .jss265 code.microbitfunctions {
     color: #fff;
     background-color: #3455db;
   }
-  .jss257 code.microbitarrays {
+  .jss265 code.microbitarrays {
     color: #fff;
     background-color: #e65722;
   }
-  .jss257 code.microbittext {
+  .jss265 code.microbittext {
     color: #fff;
     background-color: #b8860b;
   }
-  .jss257 code.microbitgame {
+  .jss265 code.microbitgame {
     color: #fff;
     background-color: #007a4b;
   }
-  .jss257 code.microbitimages {
+  .jss265 code.microbitimages {
     color: #fff;
     background-color: #7600a8;
   }
-  .jss257 code.microbitpins {
+  .jss265 code.microbitpins {
     color: #fff;
     background-color: #b22222;
   }
-  .jss257 code.microbitserial {
+  .jss265 code.microbitserial {
     color: #fff;
     background-color: #002050;
   }
-  .jss257 code.microbitcontrol {
+  .jss265 code.microbitcontrol {
     color: #fff;
     background-color: #333;
   }
-  .jss227 {
+  .jss235 {
     margin-top: 16px;
     margin-right: 16px;
   }
 @media print {
-  .jss227 {
-    display: none;
-  }
-}
-  .jss256 {
-    margin-top: 16px;
-    margin-right: 16px;
-  }
-@media print {
-  .jss256 {
+  .jss235 {
     display: none;
   }
 }
   .jss264 {
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+@media print {
+  .jss264 {
+    display: none;
+  }
+}
+  .jss266 {
     padding: 16px;
     max-width: 700px;
     background: #dcedc8;
     margin-top: 40px;
   }
 @media print {
-  .jss264 {
+  .jss266 {
     display: none;
   }
 }
-  .jss265 {
+  .jss267 {
     margin: 8px;
   }
-  .jss226 {
+  .jss234 {
     display: none;
     font-size: 0.75em;
     font-style: italic;
   }
 @media print {
-  .jss226 {
+  .jss234 {
     display: block;
   }
 }
-  .jss114 {
+  .jss122 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  .jss115 {
+  .jss123 {
     margin-top: 16px;
   }
-  .jss115 a {
+  .jss123 a {
     color: #212121;
   }</style></head>
 <body>
-  <div id="app"><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionFixed jss3 MuiAppBar-colorSecondary mui-fixed"><div class="MuiToolbar-root MuiToolbar-regular jss4 MuiToolbar-gutters"><nav class="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"><ol class="MuiBreadcrumbs-ol"><li class="MuiBreadcrumbs-li"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" aria-label="Hjem" href="/"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></a></li><li aria-hidden="true" class="jss101 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div></div></li><li aria-hidden="true" class="jss101 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div></div></li></ol></nav><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></header><div class="MuiToolbar-root MuiToolbar-regular jss1 MuiToolbar-gutters"></div><div class="jss2"><div class="MuiContainer-root jss114 MuiContainer-maxWidthMd"><div class="MuiGrid-root MuiGrid-container MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg><h1 class="MuiTypography-root MuiTypography-h3">Hei verden</h1></div><p class="MuiTypography-root jss115 MuiTypography-body1">Skrevet av:<!-- --> <span>Andreas Amundsen</span></p><div class="jss226"><div>Kurs:<!-- --> <!-- -->Swift</div></div><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss227 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>Til lærerveiledning</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss256 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://pdf-ace.com/pdfme?print_media=1"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg></span>Last ned PDF</span></a><div class="jss257"><section class="intro"> <h1 class="intro">Introduksjon</h1> <p>Swift er et programmeringsspråk laget av Apple og er etterfølgeren til Objective-C. Med Swift kan du lage apper for iOS og OSX. For å gjennomføre dette kurset trenger du en Mac, og helst en iPhone/iPad/iPod å teste ut appen på :)</p> <p>I dag skal vi lage vår første app, nemlig en Hei Verden-app! Det er en kjent og kjær tradisjon at det første programmet man skriver i et nytt programmeringsspråk skriver &quot;Hei Verden!&quot; til skjermen.</p> <figure><img src="hei_verden.png" alt="Bilde av appen som skriver &quot;Hei Verden!&quot;"></figure> </section> <section class="activity"> <h1 class="activity">Steg 1: Sette opp Xcode</h1> <p>Xcode er Apples utviklingsverktøy, og vi skal bruke det til å skrive appen. Last ned nyeste versjon Xcode fra Mac App Store, og sørg for at du har en Apple-ID (merk. dette programmet er gratis). Vi skal starte med å sette opp et nytt prosjekt.</p> <section class="protip"> <h2 class="protip">Xcode 7 Beta vs Xcode 6</h2> <p>I denne øvelsen er skjermbildene og instruksjonene for Xcode 7 beta, men det skal fungere helt likt på Xcode 6.</p> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Åpne Xcode ved å holde <code>cmd + mellomrom</code> og søk etter <strong>Xcode</strong>. Alternativt kan du søke etter Xcode med forstørrelsesglass-ikonet øverst i høyre hjørne.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Du blir møtt med et vindu som lar deg gjøre en rekke ting. Du kan enten starte et nytt prosjekt, leke deg rundt i <strong>Playground</strong> eller se på og endre et eksisterende prosjekt.</label></p> <figure><img src="intro_skjerm.png" alt="Bilde av åpningskjermen til Xcode"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_2"><label for="cbx_2"> Trykk på <strong>Create a New Xcode project</strong>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_3"><label for="cbx_3"> En ny skjerm skal vises som lar deg velge et rammeverk for appen. Vi skal velge <strong>Single View Application</strong>, som gir oss et bra utgangspunkt for vår egen Hei Verden-app siden denne trenger bare ett skjermbilde.</label></p> <figure><img src="lag_prosjekt.png" alt="Bilde av hvordan opprette ett nytt prosjekt"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Trykker du på <strong>Next</strong> blir du tatt til en skjerm hvor du må fylle inn litt informasjon. I <strong>Product Name</strong> kan du navngi appen din (vi skal kalle vår <em>Hei Verden!</em>). <strong>Organization Name</strong> og <strong>Organization Identifier</strong> er det ikke så viktig med nå, du kan bare la den være som den er :) <strong>Language</strong> skal settes til Swift, mens <strong>Devices</strong> skal settes til iPhone.</label></p> <figure><img src="app_informasjon.png" alt="Bilde av informasjonen om app'en"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Lagre applikasjonen ved å trykke <strong>next</strong>, og deretter <strong>create</strong> (hvor du velger hvor prosjektet lagres).</label></p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Steg 2: Tekst på skjermen ved bruk av en tekstetikett</h1> <p>Vi skal nå legge til en tekstetikett for å så endre teksten i <code>Main.storyboard</code>.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Trykk på <code>Main.storyboard</code> på venstre side av skjermen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Zoom ut til du ser en firkantet skjerm. Dette representerer skjermen til enheten. Nederst i høyre hjørne av Xcode skal det være en boks, med fire kanpper på øverste rad. Vi skal velge det tredje ikonet, som ligner en hjemknapp. Nede i boksen vil det være et søkefelt. Der skal vi søke etter <code>Label</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Dra en <code>Label</code> til <code>Main.storyboard</code>, og legg den helt øverst i venstre hjørne av det store kvadratet. Du må muligens dobbeltklikke på <code>Main.storyboard</code> før du får lov til å dra <code>Label</code> dit. Dobbeltklikk på <code>Label</code>, da dette lar oss endre teksten. Som tradisjonsrike skriver vi <em>Hei verden!</em>, men det er helt opp til deg hva du vil skrive! :)</label></p> <figure><img src="drag_label.png" alt="Bilde av teksten som skrives til skjermen"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Nå skal vi kjøre appen for å teste at alt fungerer. Vi gjør dette ved å trykke på den svarte pilen (playknappen) øverst i venstre hjørne. Alternativt kan du trykke <code>cmd + r</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_10"><label for="cbx_10"> Det skal nå kjøres en simulator, og teksten <em>Hei verden!</em> skal dukke opp.</label></p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Steg 3: Få en knapp til å skrive noe til skjermen</h1> <p>Vi skal nå sørge for at ved å trykke på en knapp, vil <code>Label</code> endre seg. For å kunne følge med på denne delen av kurset er det anbefalt med noe tidligere kunnskap om grunnleggende programmering.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Om du vil spare på den første appen du lagde kan du gjerne lage et nytt Xcode-prosjekt før du går videre. Gjenta i såfall stegene 1 og 2 og sjekk at alt fungerer som det skal.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_12"><label for="cbx_12"> I tillegg til å dra inn en <code>Label</code> i <code>Main.Storyboard</code>, skal vi legge til en <code>Button</code>. En <code>Button</code> kan vi trykke på og kjøre kode knyttet til knappen. Du legger til en <code>Button</code> på samme måte som du gjorde med <code>Label</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_13"><label for="cbx_13"> Ha <code>Main.Storyboard</code> i Xcode vinduet valgt, og trykk på de to sirklene øverst i høyre hjørne i Xcode. Vinduet som dukker opp til venstre viser koden knyttet til en <code>ViewController</code>, som er den som kontrollerer hvordan app-skjermen oppfører seg. Det er her selve kodingen foregår.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_14"><label for="cbx_14"> Venstreklikk på <code>Button</code> i <code>Main.Storyboard</code>. Hold <strong>ctrl</strong> nede mens du venstreklikker og dra mot høyre. Dra streken til linjen over der det står <code>override func didReceiveMemoryWarning()</code>. Endre <code>Connection</code> til å være en <code>Action</code>, og gi den navnet <code>knapp</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_15"><label for="cbx_15"> Venstreklikk på <code>Label</code> i <code>Main.Storyboard</code>. Hold <strong>ctrl</strong> nede, venstreklikk og dra streken til mellom <code>override func viewDidLoad()</code> og <code>class ViewController: UIViewController {</code>. <code>Connection</code> lar du være <code>Outlet</code>, og sett navn til <code>etikett</code>.</label></p> <figure><img src="label_connection.png" alt="Bilde av koden for å få en knapp til å endre teksten"></figure> </li> </ul> </section> <section class="protip"> <h2 class="protip">Slippe streken på riktig sted i koden</h2> <p>Det er viktig å slippe strekene eksakt som det står i de to stegene over! Disse kobler elementene i <code>Main.storyboard</code> til koden din.</p> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_16"><label for="cbx_16"> Vi skal nå begynne å kode litt! Det er anbefalt med noe tidligere programmeringserfaring her.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_17"><label for="cbx_17"> Vi har nå laget to såkalte <code>Connections</code>. Den ene er <code>@IBOutlet weak var etikett: UILabel!</code>, som refererer til <code>Label</code> i <code>Main.Storyboard</code>. Den andre er <code>@IBAction func knapp(sender: AnyObject) { }</code></label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_18"><label for="cbx_18"> Tanken er at et klikk på knappen skal endre teksten til <code>Label</code>. Variabelen <code>etikett</code> er koblet til <code>Label</code>. Vi kan derfor få teksten til å endre seg ved å skrive</label></p> <pre><code><span class="hljs-attr">etikett.text</span> = <span class="hljs-string">"Knappen sier: Hei!"</span>
-</code></pre> <p>mellom <code>{</code> og <code>}</code> der du slapp knappen i koden (<code>func knapp</code>).</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_19"><label for="cbx_19"> Kjør appen som du lærte i Steg 2 ved å enten klikke på den svarte pilen øverst i hjørnet eller trykke <code>cmd + r</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_20"><label for="cbx_20"> Klikk på knappen og observer hva som skjer! Endret <code>Label</code> seg til teksten du skrev i <code>etikett.text = &quot;Knappen sier: Hei!&quot;</code>? Hvis etiketten ikke viser hele <code>Knappen sier: Hei!&quot;</code>, må du endre størrelsen på <code>Label</code>. Klarer du å gjøre det selv?</label></p> <figure><img src="change_label.png" alt="Bilde av den ferdige koden som endrer teksten"></figure> </li> </ul> </section> <section class="challenge"> <h2 class="challenge">Utfordring - Variabler</h2> <p>Prøv å definer en variabel nedenfor <code>@IBOutlet weak var etikett: UILabel!</code>, og sett den til å være ditt navn. Klarer du å få <code>Label</code> til å vise verdien av variabelen ved å endre <code>etikett.text</code>?</p> </section> </section> <section class="activity"> <h1 class="activity">Steg 4: Få input fra tekstfelt</h1> <p>Nå skal vi legge inn et tekstfelt i appen, så vi kan ta det brukeren skriver i tekstfeltet og vise det i <code>Label</code>.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_21"><label for="cbx_21"> I dette steget kan du godt fortsette på appen vi jobbet med i Steg 3. Å implementere tekstfeltfunksjonalitet er veldig likt som i steget over.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_22"><label for="cbx_22"> Begynn med å søke etter <code>Text Field</code> på samme sted hvor du har søkt etter <code>Label</code>og <code>Button</code>. Dra så <code>Text Field</code> inn i <code>Main.Storyboard</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_23"><label for="cbx_23"> Lag en <code>Connection</code> som du gjorde i Steg 3 og opprett den på linjen under <code>@IBOutlet weak var etikett: UILabel!</code>. Det eneste du skal endre er navnet på tekstfeltet. Bruk <code>tekstfelt</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_24"><label for="cbx_24"> I <code>@IBAction func knapp(sender: AnyObject) { }</code> kan du bytte ut <code>etikett.text = &quot;Knappen sier: Hei!&quot;</code> med <code>etikett.text = tekstfelt.text</code>. Det brukeren skriver i inn i tekstfeltet er tilgjengelig i <code>text</code>-egenskapen til tekstfeltet, og vi henter ut denne informasjonen når vi trykker på knappen.</label></p> <figure><img src="textfield_input.png" alt="Bilde av en boks som tar inn tekst"></figure> </li> </ul> </section> <section class="challenge"> <h2 class="challenge">Utfordring - Kan du lage din egen versjon?</h2> <p>Nå som du har lært det grunnleggende, hvorfor ikke lage en app som har flere knapper og tekstfelt? Kanskje du kan få den til å fortelle en morsom historie basert på ord brukeren skriver inn? Vis gjerne appen til bekjente og be om tilbakemeldinger!</p> </section> <section class="protip"> <h2 class="protip">Noen spørsmål?</h2> <p>Har du noen spørsmål angående Xcode, Swift eller ris/ros for dette kurset, send meg gjerne en mail til andreas.amundsen123@gmail.com!</p> <p>Jeg tar gjerne i mot tips til ideer til fremtidige kurs!</p> </section> </section> </div><p class="MuiTypography-root jss115 MuiTypography-body1">Lisens: <!-- --> <a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="http://creativecommons.org/licenses/by-sa/4.0/deed" target="_blank" rel="noopener">CC BY-SA 4.0</a></p><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><div class="MuiPaper-root jss264 MuiPaper-elevation1 MuiPaper-rounded"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><h2 class="MuiTypography-root MuiTypography-h4">Forbedre denne siden</h2></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Funnet en feil? Kunne noe vært bedre?</p></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!</p></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Swift: Hei verden&#x27;&amp;body=Oppgave: https://oppgaver.kidsakoder.no/swift/hei_verden/hei_verden%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/swift/hei_verden/hei_verden.md%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Rapporter et problem</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></span>Gå til forumet</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss265 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/tree/master/src/swift/hei_verden/hei_verden.md" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Vis koden og fiks selv</span></a></div></div></div></div></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionStatic jss266 MuiAppBar-colorSecondary"><div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.sparebank1.no" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/smn.098a83.jpg" alt="SpareBank1"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://ibok.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/ibok.06cd44.jpg" alt="Ibok"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.teknograd.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/teknograd.03c75e.png" alt="Teknograd"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.tekna.no/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/tekna.41a4f5.jpg" alt="Tekna"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.ntnu.edu/idi/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/ntnu_idi.5179a4.png" alt="NTNU institutt for datateknologi og informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.ntnu.edu/web/excited" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/excITEd.915706.png" alt="excited"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.mn.uio.no/ifi/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/uio_ifi.37ef13.png" alt="UIO institutt for informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.samsung.com/no/innovation/" target="_blank" rel="noopener"><img class="jss267" src="/CCV-assets/samsung.bec12f.png" alt="Samsung"/></a></div></div></header></div>
+  <div id="app"><div class="jss6"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://kidsakoder.no"><img class="jss7" alt="LKK logo" src="/CCV-assets/lkk_logo_black.a76309.png"/></a><div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss11 MuiTypography-colorPrimary" href="https://kidsakoder.no/om-lkk">Om Lær Kidsa Koding</a><div class="MuiPaper-root MuiPaper-elevation1 jss10 MuiPaper-rounded"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://kidsakoder.no/kontakt">Kontakt</a><br/><br/><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.kidsakoder.no/om-lkk/personvern-i-laer-kidsa-koding-og-kodeklubben">Personvern i Lær Kidsa Koding og Kodeklubben</a></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="https://kidsakoder.no/nyheter">Nyheter</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="/">Oppgaver</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="https://forum.kidsakoder.no">Forum</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodeklubben">Kodeklubber</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="https://kidsakoder.no/skole">Skole</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodetimen">Kodetimen</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss9 MuiTypography-colorPrimary" href="https://kidsakoder.no/bidra">Bidra?</a><button class="MuiButtonBase-root MuiIconButton-root jss8 MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionSticky jss3 MuiAppBar-colorSecondary"><div class="jss4"><nav class="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"><ol class="MuiBreadcrumbs-ol"><li class="MuiBreadcrumbs-li"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" aria-label="Hjem" href="/"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></a></li><li aria-hidden="true" class="jss121 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div></div></li><li aria-hidden="true" class="jss121 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div></div></li></ol></nav><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></header><div class="jss2"><div class="MuiContainer-root jss122 MuiContainer-maxWidthMd"><div class="MuiGrid-root MuiGrid-container MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg><h1 class="MuiTypography-root MuiTypography-h3">Hei verden</h1></div><p class="MuiTypography-root jss123 MuiTypography-body1">Skrevet av:<!-- --> <span>Andreas Amundsen</span></p><div class="jss234"><div>Kurs:<!-- --> <!-- -->Swift</div></div><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss235 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>Til lærerveiledning</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss264 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://pdf-ace.com/pdfme?print_media=1"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg></span>Last ned PDF</span></a><div class="jss265"><section class="intro"> <h1 class="intro">Introduksjon</h1> <p>Swift er et programmeringsspråk laget av Apple og er etterfølgeren til Objective-C. Med Swift kan du lage apper for iOS og OSX. For å gjennomføre dette kurset trenger du en Mac, og helst en iPhone/iPad/iPod å teste ut appen på :)</p> <p>I dag skal vi lage vår første app, nemlig en Hei Verden-app! Det er en kjent og kjær tradisjon at det første programmet man skriver i et nytt programmeringsspråk skriver &quot;Hei Verden!&quot; til skjermen.</p> <figure><img src="hei_verden.png" alt="Bilde av appen som skriver &quot;Hei Verden!&quot;"></figure> </section> <section class="activity"> <h1 class="activity">Steg 1: Sette opp Xcode</h1> <p>Xcode er Apples utviklingsverktøy, og vi skal bruke det til å skrive appen. Last ned nyeste versjon Xcode fra Mac App Store, og sørg for at du har en Apple-ID (merk. dette programmet er gratis). Vi skal starte med å sette opp et nytt prosjekt.</p> <section class="protip"> <h2 class="protip">Xcode 7 Beta vs Xcode 6</h2> <p>I denne øvelsen er skjermbildene og instruksjonene for Xcode 7 beta, men det skal fungere helt likt på Xcode 6.</p> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Åpne Xcode ved å holde <code>cmd + mellomrom</code> og søk etter <strong>Xcode</strong>. Alternativt kan du søke etter Xcode med forstørrelsesglass-ikonet øverst i høyre hjørne.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Du blir møtt med et vindu som lar deg gjøre en rekke ting. Du kan enten starte et nytt prosjekt, leke deg rundt i <strong>Playground</strong> eller se på og endre et eksisterende prosjekt.</label></p> <figure><img src="intro_skjerm.png" alt="Bilde av åpningskjermen til Xcode"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_2"><label for="cbx_2"> Trykk på <strong>Create a New Xcode project</strong>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_3"><label for="cbx_3"> En ny skjerm skal vises som lar deg velge et rammeverk for appen. Vi skal velge <strong>Single View Application</strong>, som gir oss et bra utgangspunkt for vår egen Hei Verden-app siden denne trenger bare ett skjermbilde.</label></p> <figure><img src="lag_prosjekt.png" alt="Bilde av hvordan opprette ett nytt prosjekt"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Trykker du på <strong>Next</strong> blir du tatt til en skjerm hvor du må fylle inn litt informasjon. I <strong>Product Name</strong> kan du navngi appen din (vi skal kalle vår <em>Hei Verden!</em>). <strong>Organization Name</strong> og <strong>Organization Identifier</strong> er det ikke så viktig med nå, du kan bare la den være som den er :) <strong>Language</strong> skal settes til Swift, mens <strong>Devices</strong> skal settes til iPhone.</label></p> <figure><img src="app_informasjon.png" alt="Bilde av informasjonen om app'en"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Lagre applikasjonen ved å trykke <strong>next</strong>, og deretter <strong>create</strong> (hvor du velger hvor prosjektet lagres).</label></p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Steg 2: Tekst på skjermen ved bruk av en tekstetikett</h1> <p>Vi skal nå legge til en tekstetikett for å så endre teksten i <code>Main.storyboard</code>.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Trykk på <code>Main.storyboard</code> på venstre side av skjermen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Zoom ut til du ser en firkantet skjerm. Dette representerer skjermen til enheten. Nederst i høyre hjørne av Xcode skal det være en boks, med fire kanpper på øverste rad. Vi skal velge det tredje ikonet, som ligner en hjemknapp. Nede i boksen vil det være et søkefelt. Der skal vi søke etter <code>Label</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Dra en <code>Label</code> til <code>Main.storyboard</code>, og legg den helt øverst i venstre hjørne av det store kvadratet. Du må muligens dobbeltklikke på <code>Main.storyboard</code> før du får lov til å dra <code>Label</code> dit. Dobbeltklikk på <code>Label</code>, da dette lar oss endre teksten. Som tradisjonsrike skriver vi <em>Hei verden!</em>, men det er helt opp til deg hva du vil skrive! :)</label></p> <figure><img src="drag_label.png" alt="Bilde av teksten som skrives til skjermen"></figure> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Nå skal vi kjøre appen for å teste at alt fungerer. Vi gjør dette ved å trykke på den svarte pilen (playknappen) øverst i venstre hjørne. Alternativt kan du trykke <code>cmd + r</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_10"><label for="cbx_10"> Det skal nå kjøres en simulator, og teksten <em>Hei verden!</em> skal dukke opp.</label></p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Steg 3: Få en knapp til å skrive noe til skjermen</h1> <p>Vi skal nå sørge for at ved å trykke på en knapp, vil <code>Label</code> endre seg. For å kunne følge med på denne delen av kurset er det anbefalt med noe tidligere kunnskap om grunnleggende programmering.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Om du vil spare på den første appen du lagde kan du gjerne lage et nytt Xcode-prosjekt før du går videre. Gjenta i såfall stegene 1 og 2 og sjekk at alt fungerer som det skal.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_12"><label for="cbx_12"> I tillegg til å dra inn en <code>Label</code> i <code>Main.Storyboard</code>, skal vi legge til en <code>Button</code>. En <code>Button</code> kan vi trykke på og kjøre kode knyttet til knappen. Du legger til en <code>Button</code> på samme måte som du gjorde med <code>Label</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_13"><label for="cbx_13"> Ha <code>Main.Storyboard</code> i Xcode vinduet valgt, og trykk på de to sirklene øverst i høyre hjørne i Xcode. Vinduet som dukker opp til venstre viser koden knyttet til en <code>ViewController</code>, som er den som kontrollerer hvordan app-skjermen oppfører seg. Det er her selve kodingen foregår.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_14"><label for="cbx_14"> Venstreklikk på <code>Button</code> i <code>Main.Storyboard</code>. Hold <strong>ctrl</strong> nede mens du venstreklikker og dra mot høyre. Dra streken til linjen over der det står <code>override func didReceiveMemoryWarning()</code>. Endre <code>Connection</code> til å være en <code>Action</code>, og gi den navnet <code>knapp</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_15"><label for="cbx_15"> Venstreklikk på <code>Label</code> i <code>Main.Storyboard</code>. Hold <strong>ctrl</strong> nede, venstreklikk og dra streken til mellom <code>override func viewDidLoad()</code> og <code>class ViewController: UIViewController {</code>. <code>Connection</code> lar du være <code>Outlet</code>, og sett navn til <code>etikett</code>.</label></p> <figure><img src="label_connection.png" alt="Bilde av koden for å få en knapp til å endre teksten"></figure> </li> </ul> </section> <section class="protip"> <h2 class="protip">Slippe streken på riktig sted i koden</h2> <p>Det er viktig å slippe strekene eksakt som det står i de to stegene over! Disse kobler elementene i <code>Main.storyboard</code> til koden din.</p> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_16"><label for="cbx_16"> Vi skal nå begynne å kode litt! Det er anbefalt med noe tidligere programmeringserfaring her.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_17"><label for="cbx_17"> Vi har nå laget to såkalte <code>Connections</code>. Den ene er <code>@IBOutlet weak var etikett: UILabel!</code>, som refererer til <code>Label</code> i <code>Main.Storyboard</code>. Den andre er <code>@IBAction func knapp(sender: AnyObject) { }</code></label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_18"><label for="cbx_18"> Tanken er at et klikk på knappen skal endre teksten til <code>Label</code>. Variabelen <code>etikett</code> er koblet til <code>Label</code>. Vi kan derfor få teksten til å endre seg ved å skrive</label></p> <pre><code><span class="hljs-attr">etikett.text</span> = <span class="hljs-string">"Knappen sier: Hei!"</span>
+</code></pre> <p>mellom <code>{</code> og <code>}</code> der du slapp knappen i koden (<code>func knapp</code>).</p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_19"><label for="cbx_19"> Kjør appen som du lærte i Steg 2 ved å enten klikke på den svarte pilen øverst i hjørnet eller trykke <code>cmd + r</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_20"><label for="cbx_20"> Klikk på knappen og observer hva som skjer! Endret <code>Label</code> seg til teksten du skrev i <code>etikett.text = &quot;Knappen sier: Hei!&quot;</code>? Hvis etiketten ikke viser hele <code>Knappen sier: Hei!&quot;</code>, må du endre størrelsen på <code>Label</code>. Klarer du å gjøre det selv?</label></p> <figure><img src="change_label.png" alt="Bilde av den ferdige koden som endrer teksten"></figure> </li> </ul> </section> <section class="challenge"> <h2 class="challenge">Utfordring - Variabler</h2> <p>Prøv å definer en variabel nedenfor <code>@IBOutlet weak var etikett: UILabel!</code>, og sett den til å være ditt navn. Klarer du å få <code>Label</code> til å vise verdien av variabelen ved å endre <code>etikett.text</code>?</p> </section> </section> <section class="activity"> <h1 class="activity">Steg 4: Få input fra tekstfelt</h1> <p>Nå skal vi legge inn et tekstfelt i appen, så vi kan ta det brukeren skriver i tekstfeltet og vise det i <code>Label</code>.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Sjekkliste</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_21"><label for="cbx_21"> I dette steget kan du godt fortsette på appen vi jobbet med i Steg 3. Å implementere tekstfeltfunksjonalitet er veldig likt som i steget over.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_22"><label for="cbx_22"> Begynn med å søke etter <code>Text Field</code> på samme sted hvor du har søkt etter <code>Label</code>og <code>Button</code>. Dra så <code>Text Field</code> inn i <code>Main.Storyboard</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_23"><label for="cbx_23"> Lag en <code>Connection</code> som du gjorde i Steg 3 og opprett den på linjen under <code>@IBOutlet weak var etikett: UILabel!</code>. Det eneste du skal endre er navnet på tekstfeltet. Bruk <code>tekstfelt</code>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_24"><label for="cbx_24"> I <code>@IBAction func knapp(sender: AnyObject) { }</code> kan du bytte ut <code>etikett.text = &quot;Knappen sier: Hei!&quot;</code> med <code>etikett.text = tekstfelt.text</code>. Det brukeren skriver i inn i tekstfeltet er tilgjengelig i <code>text</code>-egenskapen til tekstfeltet, og vi henter ut denne informasjonen når vi trykker på knappen.</label></p> <figure><img src="textfield_input.png" alt="Bilde av en boks som tar inn tekst"></figure> </li> </ul> </section> <section class="challenge"> <h2 class="challenge">Utfordring - Kan du lage din egen versjon?</h2> <p>Nå som du har lært det grunnleggende, hvorfor ikke lage en app som har flere knapper og tekstfelt? Kanskje du kan få den til å fortelle en morsom historie basert på ord brukeren skriver inn? Vis gjerne appen til bekjente og be om tilbakemeldinger!</p> </section> <section class="protip"> <h2 class="protip">Noen spørsmål?</h2> <p>Har du noen spørsmål angående Xcode, Swift eller ris/ros for dette kurset, send meg gjerne en mail til andreas.amundsen123@gmail.com!</p> <p>Jeg tar gjerne i mot tips til ideer til fremtidige kurs!</p> </section> </section> </div><p class="MuiTypography-root jss123 MuiTypography-body1">Lisens: <!-- --> <a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="http://creativecommons.org/licenses/by-sa/4.0/deed" target="_blank" rel="noopener">CC BY-SA 4.0</a></p><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><div class="MuiPaper-root jss266 MuiPaper-elevation1 MuiPaper-rounded"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><h2 class="MuiTypography-root MuiTypography-h4">Forbedre denne siden</h2></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Funnet en feil? Kunne noe vært bedre?</p></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!</p></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss267 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Swift: Hei verden&#x27;&amp;body=Oppgave: https://oppgaver.kidsakoder.no/swift/hei_verden/hei_verden%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/swift/hei_verden/hei_verden.md%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Rapporter et problem</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss267 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></span>Gå til forumet</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss267 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/tree/master/src/swift/hei_verden/hei_verden.md" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Vis koden og fiks selv</span></a></div></div></div></div></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionStatic jss268 MuiAppBar-colorSecondary"><div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.sparebank1.no" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/smn.098a83.jpg" alt="SpareBank1"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://ibok.no/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/ibok.06cd44.jpg" alt="Ibok"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.teknograd.no/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/teknograd.03c75e.png" alt="Teknograd"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.tekna.no/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/tekna.41a4f5.jpg" alt="Tekna"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.ntnu.edu/idi/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/ntnu_idi.5179a4.png" alt="NTNU institutt for datateknologi og informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.ntnu.edu/web/excited" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/excITEd.915706.png" alt="excited"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.mn.uio.no/ifi/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/uio_ifi.37ef13.png" alt="UIO institutt for informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.samsung.com/no/innovation/" target="_blank" rel="noopener"><img class="jss269" src="/CCV-assets/samsung.bec12f.png" alt="Samsung"/></a></div></div></header></div>
   
   <script src="/sw.js" async></script>  
-  <script src="/main.9a9119.js" async></script>  
+  <script src="/main.8ec48f.js" async></script>  
 </body>
 </html>
