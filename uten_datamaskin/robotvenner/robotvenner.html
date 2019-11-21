@@ -228,21 +228,96 @@ body::backdrop {
 .MuiList-subheader {
   padding-top: 0;
 }
-.MuiTypography-root {
-  margin: 0;
+@media (min-width:0px) and (max-width:599.95px) {
+  .jss49 {
+    display: none;
+  }
 }
-.MuiTypography-body2 {
-  font-size: 1rem;
-  font-family: Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  line-height: 1.43;
+@media (min-width:0px) {
+  .jss50 {
+    display: none;
+  }
 }
-.MuiTypography-body1 {
-  font-size: 1.0714285714285714rem;
-  font-family: Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
+@media (max-width:599.95px) {
+  .jss51 {
+    display: none;
+  }
 }
+@media (min-width:600px) and (max-width:959.95px) {
+  .jss52 {
+    display: none;
+  }
+}
+@media (min-width:600px) {
+  .jss53 {
+    display: none;
+  }
+}
+@media (max-width:959.95px) {
+  .jss54 {
+    display: none;
+  }
+}
+@media (min-width:960px) and (max-width:1279.95px) {
+  .jss55 {
+    display: none;
+  }
+}
+@media (min-width:960px) {
+  .jss56 {
+    display: none;
+  }
+}
+@media (max-width:1279.95px) {
+  .jss57 {
+    display: none;
+  }
+}
+@media (min-width:1280px) and (max-width:1919.95px) {
+  .jss58 {
+    display: none;
+  }
+}
+@media (min-width:1280px) {
+  .jss59 {
+    display: none;
+  }
+}
+@media (max-width:1919.95px) {
+  .jss60 {
+    display: none;
+  }
+}
+@media (min-width:1920px) {
+  .jss61 {
+    display: none;
+  }
+}
+@media (min-width:1920px) {
+  .jss62 {
+    display: none;
+  }
+}
+@media (min-width:0px) {
+  .jss63 {
+    display: none;
+  }
+}
+  .MuiTypography-root {
+    margin: 0;
+  }
+  .MuiTypography-body2 {
+    font-size: 1rem;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+  }
+  .MuiTypography-body1 {
+    font-size: 1.0714285714285714rem;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  }
 @media (min-width:600px) {
   .MuiTypography-body1 {
     font-size: 1.1667rem;
@@ -484,6 +559,39 @@ body::backdrop {
   .MuiTypography-displayBlock {
     display: block;
   }
+  .MuiLink-underlineNone {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover:hover {
+    text-decoration: underline;
+  }
+  .MuiLink-underlineAlways {
+    text-decoration: underline;
+  }
+  .MuiLink-button {
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiLink-button::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiLink-button.Mui-focusVisible {
+    outline: auto;
+  }
   .MuiButtonBase-root {
     color: inherit;
     border: 0;
@@ -510,6 +618,60 @@ body::backdrop {
   .MuiButtonBase-root.Mui-disabled {
     cursor: default;
     pointer-events: none;
+  }
+  .MuiListItem-root {
+    width: 100%;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    text-align: left;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: flex-start;
+    text-decoration: none;
+  }
+  .MuiListItem-root.Mui-focusVisible {
+    background-color: rgba(0, 0, 0, 0.14);
+  }
+  .MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
+    background-color: rgba(0, 0, 0, 0.14);
+  }
+  .MuiListItem-root.Mui-disabled {
+    opacity: 0.5;
+  }
+  .MuiListItem-container {
+    position: relative;
+  }
+  .MuiListItem-dense {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .MuiListItem-alignItemsFlexStart {
+    align-items: flex-start;
+  }
+  .MuiListItem-divider {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    background-clip: padding-box;
+  }
+  .MuiListItem-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .MuiListItem-button {
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .MuiListItem-button:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+@media (hover: none) {
+  .MuiListItem-button:hover {
+    background-color: transparent;
+  }
+}
+  .MuiListItem-secondaryAction {
+    padding-right: 48px;
   }
   .MuiIconButton-root {
     flex: 0 0 auto;
@@ -818,94 +980,7 @@ body::backdrop {
   .MuiButton-iconSizeLarge > *:first-child {
     font-size: 22px;
   }
-  .MuiListItem-root {
-    width: 100%;
-    display: flex;
-    position: relative;
-    box-sizing: border-box;
-    text-align: left;
-    align-items: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    justify-content: flex-start;
-    text-decoration: none;
-  }
-  .MuiListItem-root.Mui-focusVisible {
-    background-color: rgba(0, 0, 0, 0.14);
-  }
-  .MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
-    background-color: rgba(0, 0, 0, 0.14);
-  }
-  .MuiListItem-root.Mui-disabled {
-    opacity: 0.5;
-  }
-  .MuiListItem-container {
-    position: relative;
-  }
-  .MuiListItem-dense {
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-  .MuiListItem-alignItemsFlexStart {
-    align-items: flex-start;
-  }
-  .MuiListItem-divider {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-    background-clip: padding-box;
-  }
-  .MuiListItem-gutters {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .MuiListItem-button {
-    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  }
-  .MuiListItem-button:hover {
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.08);
-  }
-@media (hover: none) {
-  .MuiListItem-button:hover {
-    background-color: transparent;
-  }
-}
-  .MuiListItem-secondaryAction {
-    padding-right: 48px;
-  }
-  .MuiLink-underlineNone {
-    text-decoration: none;
-  }
-  .MuiLink-underlineHover {
-    text-decoration: none;
-  }
-  .MuiLink-underlineHover:hover {
-    text-decoration: underline;
-  }
-  .MuiLink-underlineAlways {
-    text-decoration: underline;
-  }
-  .MuiLink-button {
-    border: 0;
-    cursor: pointer;
-    margin: 0;
-    outline: 0;
-    padding: 0;
-    position: relative;
-    user-select: none;
-    border-radius: 0;
-    vertical-align: middle;
-    -moz-appearance: none;
-    background-color: transparent;
-    -webkit-appearance: none;
-    -webkit-tap-highlight-color: transparent;
-  }
-  .MuiLink-button::-moz-focus-inner {
-    border-style: none;
-  }
-  .MuiLink-button.Mui-focusVisible {
-    outline: auto;
-  }
-  .jss153 {
+  .jss140 {
     display: flex;
     margin-left: 8px;
     user-select: none;
@@ -921,94 +996,16 @@ body::backdrop {
   .MuiBreadcrumbs-li {
     list-style: none;
   }
-@media (min-width:0px) and (max-width:599.95px) {
-  .jss50 {
-    display: none;
-  }
-}
-@media (min-width:0px) {
-  .jss51 {
-    display: none;
-  }
-}
-@media (max-width:599.95px) {
-  .jss52 {
-    display: none;
-  }
-}
-@media (min-width:600px) and (max-width:959.95px) {
-  .jss53 {
-    display: none;
-  }
-}
-@media (min-width:600px) {
-  .jss54 {
-    display: none;
-  }
-}
-@media (max-width:959.95px) {
-  .jss55 {
-    display: none;
-  }
-}
-@media (min-width:960px) and (max-width:1279.95px) {
-  .jss56 {
-    display: none;
-  }
-}
-@media (min-width:960px) {
-  .jss57 {
-    display: none;
-  }
-}
-@media (max-width:1279.95px) {
-  .jss58 {
-    display: none;
-  }
-}
-@media (min-width:1280px) and (max-width:1919.95px) {
-  .jss59 {
-    display: none;
-  }
-}
-@media (min-width:1280px) {
-  .jss60 {
-    display: none;
-  }
-}
-@media (max-width:1919.95px) {
-  .jss61 {
-    display: none;
-  }
-}
-@media (min-width:1920px) {
-  .jss62 {
-    display: none;
-  }
-}
-@media (min-width:1920px) {
-  .jss63 {
-    display: none;
-  }
-}
-@media (min-width:0px) {
-  .jss64 {
-    display: none;
-  }
-}
-  .jss7 {
+  .jss8 {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .jss8 {
+  .jss9 {
     width: 250px;
     height: auto;
     max-width: 100%;
     margin-left: 16px;
-    margin-right: 16px;
-  }
-  .jss9 {
     margin-right: 16px;
   }
   .jss10 {
@@ -1032,10 +1029,6 @@ body::backdrop {
   .jss12:hover + .jss11 {
     display: block;
   }
-  .jss13 {
-    display: flex;
-    justify-content: flex-end;
-  }
 @media print {
   .jss3 {
     display: none;
@@ -1052,6 +1045,9 @@ body::backdrop {
   .jss6 {
     display: flex;
     justify-content: flex-end;
+  }
+  .jss7 {
+    margin-bottom: 40px;
   }
   .MuiGrid-container {
     width: 100%;
@@ -1551,16 +1547,16 @@ body::backdrop {
     flex-basis: 100%;
   }
 }
-  .jss300 {
+  .jss299 {
     margin-top: 40px;
     background-color: #dcedc8;
   }
 @media print {
-  .jss300 {
+  .jss299 {
     display: none;
   }
 }
-  .jss301 {
+  .jss300 {
     width: auto;
     height: 50px;
     margin: 20px 7px 10px;
@@ -1639,19 +1635,19 @@ body::backdrop {
     max-width: 1920px;
   }
 }
-  .jss297 a {
+  .jss296 a {
     color: #212121;
   }
-  .jss297 pre.blocks, .jss297 code.b {
+  .jss296 pre.blocks, .jss296 code.b {
     border: 0;
     background-color: inherit;
   }
-  .jss297 section.try {
+  .jss296 section.try {
     padding: 1px 20px 10px;
     background: #abdbea;
     border-radius: 10px;
   }
-  .jss297 section.protip, .jss297 section.tip {
+  .jss296 section.protip, .jss296 section.tip {
     color: #000;
     border: 3px solid #ff7f00;
     padding: 0 20px 20px;
@@ -1660,153 +1656,153 @@ body::backdrop {
     border-radius: 12px;
     margin-bottom: 20px;
   }
-  .jss297 section.flag {
+  .jss296 section.flag {
     border-top: 3px dotted rgb(230, 134, 45);
     margin-top: 20px;
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
-  .jss297 section.save {
+  .jss296 section.save {
     margin: 20px, 0;
     border-top: 3px solid rgb(36, 90, 154);
   }
-  .jss297 section.challenge {
+  .jss296 section.challenge {
     border: 3px solid #00b1da;
     margin-top: 20px;
     border-radius: 12px;
     margin-bottom: 20px;
     padding-bottom: 10px;
   }
-  .jss297 .blockmotion {
+  .jss296 .blockmotion {
     color: #fff;
     background-color: #4c97ff;
   }
-  .jss297 .blocklooks {
+  .jss296 .blocklooks {
     color: #fff;
     background-color: #96f;
   }
-  .jss297 .blocksound {
+  .jss296 .blocksound {
     color: #fff;
     background-color: #cf63cf;
   }
-  .jss297 .blockpen {
+  .jss296 .blockpen {
     color: #fff;
     background-color: #0fbd8c;
   }
-  .jss297 .blockdata {
+  .jss296 .blockdata {
     color: #fff;
     background-color: #ff8c1a;
   }
-  .jss297 .blockevents {
+  .jss296 .blockevents {
     color: #fff;
     background-color: #ffbf00;
   }
-  .jss297 .blockcontrol {
+  .jss296 .blockcontrol {
     color: #fff;
     background-color: #ffab19;
   }
-  .jss297 .blocksensing {
+  .jss296 .blocksensing {
     color: #fff;
     background-color: #5cb1d6;
   }
-  .jss297 .blockoperators {
+  .jss296 .blockoperators {
     color: #fff;
     background-color: #59c059;
   }
-  .jss297 .blockmoreblocks {
+  .jss296 .blockmoreblocks {
     color: #fff;
     background-color: #ff6680;
   }
-  .jss297 .microbitbasic {
+  .jss296 .microbitbasic {
     color: #fff;
     background-color: #1e90ff;
   }
-  .jss297 .microbitinput {
+  .jss296 .microbitinput {
     color: #fff;
     background-color: #d400d4;
   }
-  .jss297 .microbitmusic {
+  .jss296 .microbitmusic {
     color: #fff;
     background-color: #e63022;
   }
-  .jss297 .microbitled {
+  .jss296 .microbitled {
     color: #fff;
     background-color: #5c2d91;
   }
-  .jss297 .microbitradio {
+  .jss296 .microbitradio {
     color: #fff;
     background-color: #e3008c;
   }
-  .jss297 .microbitloops {
+  .jss296 .microbitloops {
     color: #fff;
     background-color: #0a0;
   }
-  .jss297 .microbitlogic {
+  .jss296 .microbitlogic {
     color: #fff;
     background-color: #00a4a6;
   }
-  .jss297 .microbitvariables {
+  .jss296 .microbitvariables {
     color: #fff;
     background-color: #dc143c;
   }
-  .jss297 .microbitmath {
+  .jss296 .microbitmath {
     color: #fff;
     background-color: #9400d3;
   }
-  .jss297 .microbitfunctions {
+  .jss296 .microbitfunctions {
     color: #fff;
     background-color: #3455db;
   }
-  .jss297 .microbitarrays {
+  .jss296 .microbitarrays {
     color: #fff;
     background-color: #e65722;
   }
-  .jss297 .microbittext {
+  .jss296 .microbittext {
     color: #fff;
     background-color: #b8860b;
   }
-  .jss297 .microbitgame {
+  .jss296 .microbitgame {
     color: #fff;
     background-color: #007a4b;
   }
-  .jss297 .microbitimages {
+  .jss296 .microbitimages {
     color: #fff;
     background-color: #7600a8;
   }
-  .jss297 .microbitpins {
+  .jss296 .microbitpins {
     color: #fff;
     background-color: #b22222;
   }
-  .jss297 .microbitserial {
+  .jss296 .microbitserial {
     color: #fff;
     background-color: #002050;
   }
-  .jss297 .microbitcontrol {
+  .jss296 .microbitcontrol {
     color: #fff;
     background-color: #333;
   }
-  .jss297 table {
+  .jss296 table {
     width: 100%;
     max-width: 100%;
     margin-bottom: 20px;
   }
-  .jss297 .video-container {
+  .jss296 .video-container {
     height: 0;
     margin: 30px 0 60px;
     overflow: hidden;
     position: relative;
     padding-bottom: 56.25%;
   }
-  .jss297 li.task-list-item > * > input[type=checkbox] {
+  .jss296 li.task-list-item > * > input[type=checkbox] {
     opacity: 0;
     position: absolute;
   }
-  .jss297 li.task-list-item > * > input[type=checkbox] + label {
+  .jss296 li.task-list-item > * > input[type=checkbox] + label {
     position: relative;
     font-weight: normal;
     margin-left: 0;
   }
-  .jss297 li.task-list-item > * > input[type=checkbox] + label:before {
+  .jss296 li.task-list-item > * > input[type=checkbox] + label:before {
     width: 1.3em;
     border: 3px solid #abdbea;
     height: 1.3em;
@@ -1817,31 +1813,31 @@ body::backdrop {
     line-height: 1.1em;
     border-radius: 3px;
   }
-  .jss297 li.task-list-item > * > input[type=checkbox]:checked + label:before {
+  .jss296 li.task-list-item > * > input[type=checkbox]:checked + label:before {
     content: "✓";
   }
-  .jss297 .video-container iframe {
+  .jss296 .video-container iframe {
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     position: absolute;
   }
-  .jss297 table thead:first-child tr:first-child th, .jss297 table thead:first-child tr:first-child td {
+  .jss296 table thead:first-child tr:first-child th, .jss296 table thead:first-child tr:first-child td {
     border-top: 0;
     border-bottom: 1px solid #ddd;
   }
-  .jss297 table thead tr th, .jss297 table thead tr td, .jss297 table tbody tr th, .jss297 table tbody tr td, .jss297 table tfoot tr th, .jss297 table tfoot tr td {
+  .jss296 table thead tr th, .jss296 table thead tr td, .jss296 table tbody tr th, .jss296 table tbody tr td, .jss296 table tfoot tr th, .jss296 table tfoot tr td {
     padding: 8px;
     border-top: 1px solid #ddd;
     line-height: 1.4px;
     border-right: 1px solid #ddd;
     vertical-align: top;
   }
-  .jss297 table thead tr th:last-child, .jss297 table thead tr td:last-child, .jss297 table tbody tr th:last-child, .jss297 table tbody tr td:last-child, .jss297 table tfoot tr th:last-child, .jss297 table tfoot tr td:last-child {
+  .jss296 table thead tr th:last-child, .jss296 table thead tr td:last-child, .jss296 table tbody tr th:last-child, .jss296 table tbody tr td:last-child, .jss296 table tfoot tr th:last-child, .jss296 table tfoot tr td:last-child {
     border-right: 0;
   }
-  .jss297 section.challenge h2 {
+  .jss296 section.challenge h2 {
     color: #fff;
     background: #00b1da;
     margin-top: 0;
@@ -1849,15 +1845,15 @@ body::backdrop {
     padding-left: 20px;
     padding-bottom: 10px;
   }
-  .jss297 section.challenge * {
+  .jss296 section.challenge * {
     padding: 0 20px;
   }
 @media print {
-  .jss297 section.challenge h2 {
+  .jss296 section.challenge h2 {
     border-bottom: 2px solid #00b1da;
   }
 }
-  .jss297 section.save h2 {
+  .jss296 section.save h2 {
     color: rgb(36, 90, 154);
     margin: 0;
     display: flex;
@@ -1865,11 +1861,11 @@ body::backdrop {
     padding-top: 10px;
     padding-bottom: 20px;
   }
-  .jss297 section.save h2 img {
+  .jss296 section.save h2 img {
     height: 40px;
     padding-right: 10px;
   }
-  .jss297 section.flag h2 {
+  .jss296 section.flag h2 {
     color: rgb(54, 161, 55);
     display: flex;
     margin-top: 10px;
@@ -1878,55 +1874,55 @@ body::backdrop {
     margin-bottom: 10px;
     padding-bottom: 10px;
   }
-  .jss297 section.flag h2 img {
+  .jss296 section.flag h2 img {
     height: 40px;
     padding-right: 10px;
   }
-  .jss297 section.try code {
+  .jss296 section.try code {
     color: #007cc9;
     background-color: #fff;
   }
-  .jss297 section.try li:before {
+  .jss296 section.try li:before {
     border: 3px solid #fff;
   }
-  .jss297 section.check h2 {
+  .jss296 section.check h2 {
     display: flex;
     align-items: center;
     padding-top: 4px;
     padding-bottom: 9px;
   }
-  .jss297 section.check h2 img {
+  .jss296 section.check h2 img {
     height: 40px;
     padding-right: 10px;
   }
-  .jss297 section.activity h1 {
+  .jss296 section.activity h1 {
     color: #fff;
     padding: 10px;
     background: #349946;
     border-radius: 5px;
   }
-  .jss297 section.activity.subsection h2 {
+  .jss296 section.activity.subsection h2 {
     color: #fff;
     padding: 10px;
     background: #349946;
     font-weight: 300;
     border-radius: 5px;
   }
-  .jss297 section.activity.subsection h2 ul, .jss297 section.activity.subsection h2 ol {
+  .jss296 section.activity.subsection h2 ul, .jss296 section.activity.subsection h2 ol {
     margin: 0 0 20px;
     padding: 0;
   }
-  .jss297 section.activity.subsection h2 li.task-list-item:before {
+  .jss296 section.activity.subsection h2 li.task-list-item:before {
     content: "";
     opacity: 0;
   }
-  .jss297 section.activity.subsection h2 li {
+  .jss296 section.activity.subsection h2 li {
     list-style: none;
     margin-left: 45px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .jss297 section.activity.subsection h2 li:before {
+  .jss296 section.activity.subsection h2 li:before {
     float: left;
     border: 3px solid #abdbea;
     content: "";
@@ -1934,30 +1930,30 @@ body::backdrop {
     margin-left: -40px;
     border-radius: 20px;
   }
-  .jss297 section.activity.subsection h2 li label {
+  .jss296 section.activity.subsection h2 li label {
     font-weight: normal;
     margin-left: 6px;
   }
-  .jss297 pre code {
+  .jss296 pre code {
     word-wrap: normal;
     white-space: pre;
     background-color: transparent;
   }
-  .jss297 .check ul, .jss297 .check ol, .jss297 .activity ul, .jss297 .activity ol, .jss297 .save ul, .jss297 .save ol {
+  .jss296 .check ul, .jss296 .check ol, .jss296 .activity ul, .jss296 .activity ol, .jss296 .save ul, .jss296 .save ol {
     margin: 0 0 20px;
     padding: 0;
   }
-  .jss297 .check li.task-list-item:before, .jss297 .activity li.task-list-item:before, .jss297 .save li.task-list-item:before {
+  .jss296 .check li.task-list-item:before, .jss296 .activity li.task-list-item:before, .jss296 .save li.task-list-item:before {
     content: "";
     opacity: 0;
   }
-  .jss297 .check li, .jss297 .activity li, .jss297 .save li {
+  .jss296 .check li, .jss296 .activity li, .jss296 .save li {
     list-style: none;
     margin-left: 45px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .jss297 .check li:before, .jss297 .activity li:before, .jss297 .save li:before {
+  .jss296 .check li:before, .jss296 .activity li:before, .jss296 .save li:before {
     float: left;
     border: 3px solid #abdbea;
     content: "";
@@ -1965,17 +1961,26 @@ body::backdrop {
     margin-left: -40px;
     border-radius: 20px;
   }
-  .jss297 .check li label, .jss297 .activity li label, .jss297 .save li label {
+  .jss296 .check li label, .jss296 .activity li label, .jss296 .save li label {
     font-weight: normal;
     margin-left: 6px;
   }
-  .jss297 figure img {
+  .jss296 figure img {
     height: auto;
     margin: 0 auto;
     display: block;
     padding: 20px;
     max-width: 100%;
   }
+  .jss294 {
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+@media print {
+  .jss294 {
+    display: none;
+  }
+}
   .jss295 {
     margin-top: 16px;
     margin-right: 16px;
@@ -1985,53 +1990,44 @@ body::backdrop {
     display: none;
   }
 }
-  .jss296 {
-    margin-top: 16px;
-    margin-right: 16px;
-  }
-@media print {
-  .jss296 {
-    display: none;
-  }
-}
-  .jss298 {
+  .jss297 {
     padding: 16px;
     max-width: 700px;
     background: #dcedc8;
     margin-top: 40px;
   }
 @media print {
-  .jss298 {
+  .jss297 {
     display: none;
   }
 }
-  .jss299 {
+  .jss298 {
     margin: 8px;
   }
-  .jss294 {
+  .jss293 {
     display: none;
     font-size: 0.75em;
     font-style: italic;
   }
 @media print {
-  .jss294 {
+  .jss293 {
     display: block;
   }
 }
-  .jss182 {
+  .jss181 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  .jss183 {
+  .jss182 {
     margin-top: 16px;
   }
-  .jss183 a {
+  .jss182 a {
     color: #212121;
   }</style></head>
 <body>
-  <div id="app"><div><div class="jss7"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://kidsakoder.no"><img class="jss8" alt="LKK logo" src="/CCV-assets/lkk_logo_black.a76309.png"/></a><div class="jss58"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss12 MuiTypography-colorPrimary" href="https://kidsakoder.no/om-lkk">Om Lær Kidsa Koding</a><div class="MuiPaper-root MuiPaper-elevation1 jss11 MuiPaper-rounded"><ul class="MuiList-root MuiList-padding"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" href="https://kidsakoder.no/kontakt">Kontakt</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" href="https://www.kidsakoder.no/om-lkk/personvern-i-laer-kidsa-koding-og-kodeklubben">Personvern i Lær Kidsa Koding og Kodeklubben</a></ul></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/nyheter">Nyheter</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="/">Oppgaver</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://forum.kidsakoder.no">Forum</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodeklubben">Kodeklubber</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/skole">Skole</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodetimen">Kodetimen</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/bidra">Bidra?</a></div><div class="jss60"><button class="MuiButtonBase-root MuiIconButton-root jss9 MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionSticky jss3 MuiAppBar-colorSecondary"><div class="jss4"><nav class="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"><ol class="MuiBreadcrumbs-ol"><li class="MuiBreadcrumbs-li"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" aria-label="Hjem" href="/"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></a></li><li aria-hidden="true" class="jss153 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div><div class="jss52"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/uten_datamaskin"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeSmall"><img height="16" src="/_/oppgaver/src/uten_datamaskin/logo-black.bf9326.png" alt="general.picture"/></span>Uten datamaskin</span></a></div><div class="jss54"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/uten_datamaskin"><span class="MuiIconButton-label"><img height="22" src="/_/oppgaver/src/uten_datamaskin/logo-black.bf9326.png" alt="general.picture"/></span></a></div></div></li><li aria-hidden="true" class="jss153 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div><div class="jss52"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/uten_datamaskin/robotvenner/robotvenner"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeSmall"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg></span>Mine Robotvenner</span></a></div><div class="jss54"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/uten_datamaskin/robotvenner/robotvenner"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg></span></a></div></div></li></ol></nav><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></header></div><div class="jss2"><div class="MuiContainer-root jss182 MuiContainer-maxWidthMd" role="main"><div class="MuiGrid-root MuiGrid-container MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg><h1 class="MuiTypography-root MuiTypography-h3">Mine Robotvenner</h1></div><p class="MuiTypography-root jss183 MuiTypography-body1">Skrevet av:<!-- --> <span>Oversatt fra <a href="http://thinkersmith.org/">Thinkersmith</a></span></p><p class="MuiTypography-root jss183 MuiTypography-body1">Oversatt av:<!-- --> <!-- -->Lær Kidsa Koding</p><div class="jss294"><div>Kurs:<!-- --> <!-- -->Uten_datamaskin</div></div><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss295 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>Til lærerveiledning</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss296 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://pdf-ace.com/pdfme?print_media=1"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg></span>Last ned PDF</span></a><div class="jss297"><p>Denne teksten er en oversettelse av en originaltekst fra <a href="http://thinkersmith.org/">ThinkerSmith</a>, og er lisensiert i henhold til retningslinjene nederst på siden.</p> <section class="intro"> <h1 class="intro">Introduksjon</h1> <p>Mine Robotvenner introduserer elevene for prinsippene bak programmering, og illustrerer behovet for funksjoner.</p> <p>Ved å bruke et forhåndsdefinert <em>robotordforråd</em> skal elevene styre hverandre gjennom forskjellige oppgaver, uten å diskutere dem først. Dette lærer elevene sammenhengen mellom symboler og handlinger, i tillegg til å gi verdifull innsikt i feilsøking.</p> <p>Beregnet gjennomføringstid er 1 time per klasse. Beregnet forberedelsestid: 10 minutter.</p> <figure><img src="robotvenner-i-aksjon.jpg" alt="Bilde av spillet robotvenner i aksjon"></figure> </section> <section class="activity"> <h1 class="activity">Læringsmål</h1> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Elevene skal</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Lære å omgjøre virkelige handlinger til instruksjoner.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Få praktisk erfaring i å kode med symboler.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_2"><label for="cbx_2"> Oppnå en forståelse for nødvendigheten av presisjon innen koding.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_3"><label for="cbx_3"> Erfare hvordan feilsøking gjøres for å finne feil i koden.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Forstå hvor nyttige funksjoner og parametere er (trinn 7+).</label></p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Materiell og forberedelser</h1> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Materiell</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Symbolark (1 per gruppe), <a href="robotvenner_symbolark.pdf">last ned her</a>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Pakke med koppestablefigurer (1 per gruppe), <a href="robotvenner_figurer.pdf">last ned her</a>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Engangskopper eller <a href="robotvenner_trapeser.pdf">papirtrapeser</a> (6 eller flere per gruppe).</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Blanke ark eller notatkort (1 per person).</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Noe å skrive med (1 per person).</label></p> </li> </ul> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Forberedelser</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_10"><label for="cbx_10"> Skriv ut ett <a href="robotvenner_symbolark.pdf">symbolark</a> til hver gruppe.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Skriv ut arket med <a href="robotvenner_trapeser.pdf">trapesfigurer</a>, om kopper ikke brukes.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_12"><label for="cbx_12"> Plassér koppene eller papirtrapesene på et eget bord litt unna der gruppene skal være (dette er <em>robotbiblioteket</em>).</label></p> </li> </ul> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Ordforråd</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_13"><label for="cbx_13"> <em>Algoritme</em> – en serie av instruksjoner som beskriver hvordan en kan oppnå et mål.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_14"><label for="cbx_14"> <em>Koding</em> – Omgjøre handlinger til et symbolspråk.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_15"><label for="cbx_15"> <em>Feilsøking</em> – Finne og rette feil og problemer i koden.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_16"><label for="cbx_16"> <em>Funksjon</em> – Kode som kan brukes om og om igjen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_17"><label for="cbx_17"> <em>Parameter</em> - Ekstra informasjon som kan legges til en funksjon, for å tilpasse den.</label></p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Gjennomføring</h1> <section> <h2>Introduksjon</h2> <p>Begynn med å spørre klassen om noen har hørt om roboter. Om noen har sett eller tatt på en robot? Kan en sånn maskin <em>høre</em> deg snakke? <em>Forstår</em> den faktisk det som blir sagt? Svaret på det siste spørsmålet er: <em>Ikke på samme måte som et menneske gjør</em>.</p> <p>Roboter trenger en serie med <em>instruksjoner</em>, spesifikke ting de har blitt satt til å gjøre. For å kunne gjennomføre en oppgave trenger en robot en rekke med instruksjoner (ofte kalt en algoritme) den kan utføre. I dag skal vi lære hva som trengs for å få dette til.</p> </section> <section> <h2>Start</h2> <p>Vis frem en kopi av <a href="robotvenner_symbolark.pdf">symbolarket</a> (eller skriv symbolene på tavlen). Fortell at det kun er lov å bruke disse seks symbolene i denne oppgaven. I denne utfordringen skal elevene instruere sin <em>robot</em> (en annen elev) til å bygge en gitt stabel med kopper ved å kun bruke disse gitte instruksjonene.</p> </section> <section class="protip"> <h2 class="protip">Tilpasninger</h2> </section> <section> <h2></h2> </section> </section> <section> <h1>Barnehagen og småskolen</h1> <ul> <li> <p>Gjør oppgaven med alle barna/elevene samlet. La barna/elevene gi instruksjoner som læreren skal skrive ned.</p> </li> <li> <p>La en (voksen) assistent være roboten. Assistenten forlater rommet mens barna/elevene programmerer, for så å komme tilbake og prøve å utføre koden.</p> </li> <li> <p>Om det er nok tid bytter assistenten og læreren plass. Assistenten programmerer sammen med barna/elevene, mens læreren utfører koden i etterkant.</p> </li> </ul> <section> <h3>Mellomtrinnet</h3> <ul> <li> <p>Del inn i grupper på 3 til 5 tilpasset hvordan klassen samarbeider.</p> </li> <li> <p>Forvent at alle har lyst å prøve å være robot, slik at dette vil sannsynligvis bruke hele timen.</p> </li> </ul> </section> <section> <h3>Ungdomsskolen og videregående</h3> <ul> <li> <p>Del inn i grupper på maksimalt fire elever, tre i hver gruppe er ideelt.</p> </li> <li> <p>Elevene får da nok tid til at alle får prøvd seg som robot, og kan også prøve seg på ekstraoppgavene om funksjoner som står beskrevet lenger ned.</p> </li> </ul> </section> <section> <h2>Komme i gang</h2> <ul> <li> <p>Velg en elev til å være <em>robot</em> i hver gruppe.</p> </li> <li> <p>Send roboten til <em>robotbiblioteket</em>, mens resten av gruppen er programmererne som koder.</p> </li> <li> <p>Velg en figur fra <a href="robotvenner_figurer.pdf">koppestablefigurene</a> for hver gruppe.</p> </li> <li> <p>Gruppene skal lage en algoritme for hvordan roboten skal bygge den utvalgte stabelen.</p> </li> <li> <p>De som koder skal oversette algoritmen sin til piler, som beskrevet på <a href="robotvenner_symbolark.pdf">symbolarket</a>.</p> </li> <li> <p>Når programmererne er ferdig med koden henter de roboten sin.</p> </li> <li> <p>Roboten leser pilene på arket og prøver å gjennomføre koden med bevegelser.</p> </li> <li> <p>Resten av gruppen ser etter feil, samarbeider om å rette feilene i koden, og ber deretter roboten om å kjøre programmet på nytt.</p> <figure><img src="robotvenner-smaa-bilder.jpg" alt="To bilder av robotvenner i aksjon"></figure> </li> </ul> </section> <section> <h2>Regler</h2> <ul> <li> <p>Programmererne skal <em>kun</em> benytte de seks pilene på <a href="robotvenner_symbolark.pdf">symbolarket</a>.</p> </li> <li> <p>Koppene skal være hos roboten og ikke tilgjengelig for programmererne under kodingen.</p> </li> <li> <p>Når roboten kommer tilbake til gruppen skal de ikke snakke sammen. Instruksjonene er skrevet på papiret!</p> </li> </ul> <p><em>Om elevene spør om regler som ikke er nevnt over kan du enten definere dem selv basert på egen erfaring, eller be dem å bestemme reglene i gruppa</em>.</p> </section> </section> <section class="activity"> <h1 class="activity">Praktisk eksempel</h1> <p>Det er svært nyttig å gå over et av eksemplene med samlet klasse først. Det er en stabel blant <a href="robotvenner_figurer.pdf">koppestablefigurene</a> som bare inneholder tre kopper. Hold figuren opp for klassen og gå gjennom eksempeløvelsen. En mulig løsning vil se ut som følger.</p> <figure><img src="eksempel_01.jpg" alt="Bilde av en kopp opp på to andre kopper"></figure> <p>Plasser en stabel med kopper på et bord slik atr alle kan se den. Spør klassen om noen kan fortelle hva du skal gjøre først. Gi dem eventuelt et hint om å se på de seks mulige instruksjonene på <a href="robotvenner_symbolark.pdf">symbolarket</a>. Det riktige svaret er <strong>Plukk opp koppen</strong>. Når du plukker en kopp, pass på at den løftes slik at den er høyere enn alle de andre koppene på bordet.</p> <p>Plukk opp den øverste koppen i stabelen, og mens du holder den i luften over stabelen, spør hva som nå skal gjøres med koppen. Koppen må nå flyttes <strong>Ett skritt frem</strong> (eller <strong>Ett skritt tilbake</strong>) minst to ganger. Legg merke til at <strong>Ett skritt</strong> tilsvarer en halv koppelengde, som på figuren under.</p> <figure><img src="eksempel_02.jpg" alt="Bilde av hvordan steglengde er definert"></figure> <p>Etter at dere har satt den første koppen på plass kan du gå til tavlen. Utfordre nå klassen til i fellesskap hjelpe deg med å skrive symbolene som behøves for å plassere alle tre koppene. En mulig løsning vil være</p> <figure><img src="eksempel_03.jpg" alt="Bilde av en mulig løsning med for tre stablede kopper"></figure> <p>Etter at hele <em>programmet</em> er skrevet ned kan du få en elev til å utføre det, eller du kan kjøre det selv. Si navnet på symbolene høyt etterhvert som du eller eleven flytter på koppene. For eksempel vil programmet ovenfor uttales:</p> <blockquote> <p>Plukk opp koppen. Ett skritt frem. Ett skritt frem. Sett ned koppen. Ett skritt tilbake. Ett skritt tilbake.</p> <p>Plukk opp koppen. Ett skritt frem. Ett skritt frem. Ett skritt frem. Ett skritt frem. Sett ned koppen. Ett skritt tilbake. Ett skritt tilbake. Ett skritt tilbake. Ett skritt tilbake.</p> <p>Plukk opp koppen. Ett skritt frem. Ett skritt frem. Ett skritt frem. Sett ned koppen.</p> </blockquote> </section> <section class="activity"> <h1 class="activity">Hovedøvelse</h1> <section> <h2></h2> </section> <section> <h2>Del i grupper</h2> <p>Del gruppen som tidligere nevnt under <a href="#tilpasninger">Tilpasninger</a>. Målet er å ha nok programmerere i gruppen til at gruppen hele tiden kommer videre.</p> <section> <h4>Robot</h4> <p>Velg en <em>robot</em> i hver gruppe, som skal vente i <em>robotbiblioteket</em>. Dette bør være et sted langt nok unna gruppene slik at ingen roboter får med seg hvilken stabel programmererne jobber med. Robotene kan bruke ventetiden på å øve på å stable kopper eller til å se på reglene og spørre om noe er uklart.</p> </section> <section> <h4>Program</h4> <p>Hver gruppe bør bare jobbe med en koppestablingsfigur om gangen. De kan begynne med å finne algoritmen for denne stabelen. Hvor mange kopper trenger de? Hvor mange bevegelser må til for å plassere den første koppen? Den neste koppen? Er noen kopper opp ned? Hvordan kan de instruere roboten til å snu koppen?</p> <p>Når de har funnet ut av disse spørsmålene, skal programmererne skrive ned symbolene for å lage koden på arket. Programmererne bør dobbeltsjekke koden sin før de henter roboten fra robotbiblioteket.</p> </section> <section> <h4>Kjør koden</h4> <p>Når som roboten kommer tilbake skal alle være stille. Gruppene skal unngå å vise bevegelser eller bruke ord for å hjelpe roboten. Roboten skal bare følge instruksjonene pilene gir. Om gruppen oppdager en feil, kan de stoppe programmet. De sender da roboten tilbake til robotbiblioteket, retter feilen før de henter roboten som prøver å kjøre programmet igjen fra begynnelsen.</p> </section> <section> <h4>Gjenta</h4> <p>Hver gang en gruppe løser en oppgave velge de en ny robot som sendes til robotbiblioteket. Gruppen starter også med en ny koppestablingsfigur, helst vanskeligere enn den forrige.</p> <p>Dette fortsetter til alle i gruppen har vært robot en gang, man går tom for tid, eller koppestablingsfigurene er vanskelige nok til å snakke om funksjoner (se <a href="#ekstraoppgaver">Ekstraoppgaver</a> nedenfor).</p> </section> <section class="protip"> <h3 class="protip">Tips</h3> <p>Om gruppene er i ferd med å gå tom for koppestablingsfigurer kan du utfordre dem til å lage sine egne!</p> </section> </section> </section> <section class="activity"> <h1 class="activity">Ekstraoppgaver</h1> <p>Om det er nok tid, så er dette en flott mulighet til å introdusere nyttigheten av <em>funksjoner</em>.</p> <section> <h4>Introduksjon</h4> <p>Samle klassen og fortell dem at du vil vise dem en spesiell koppestablingsfigur som de skal kode på rekordtid ... Vis dem så dette bildet:</p> <figure><img src="eksempel_04.jpg" alt="Bilde av 17 kopper stablet oppå hverandre"></figure> <p>Du vil mest sannsynlig høre surmuling, fnising og til og med at dette er umulig. Spør klassen hva problemet er? Hvorfor er denne stabelen så problematisk?</p> <p>Denne stabelen virker vanskelig, fordi hver ekstra kopp i bredden legger til to ekstra piler med <strong>Ett skritt frem</strong> og to ekstra piler med <strong>Ett skritt tilbake</strong>. For å skrive kode for denne figuren vil etterhvert instruksjonene se slik ut:</p> <figure><img src="eksempel_05.png" alt="Bilde av koden for å flytte en kopp"></figure> <p>Ofte vil elevene begynne å forkorte instruksjonene, for eksempel ved å skrive tall etter pilene:</p> <figure><img src="eksempel_06.jpg" alt="Bilde av hvordan forkorte instruksjonene"></figure> <p>Under hovedøvelsen anbefales ikke dette. Minn elevene på at de kun skal bruke de seks instruksjonene på symbolarket. Til disse mer kompliserte oppgavene trenger vi kraftigere instruksjoner. Gi elevene ros for at de tenkte selv og oppdaget behovet for funksjoner.</p> </section> <section> <h4>Forklar</h4> <p>Vis klassen at en pil etterfulgt av et tall er en smart måte å indikere at en instruksjon skal gjentas flere ganger. Ved å tillate dette, lager vi egentlig bare et nytt symbol som kan brukes for å unngå unødvendig repetisjon. Dette er nettopp ideen bak funksjoner.</p> <p>Utfordre klassen til å finne den lengste rekken med repeterende kode for hver kopp-plassering. Som instruktør kan du godta alle slags grupperinger som gir mening, men de vil nok ligne noe av det vi så tidligere:</p> <figure><img src="eksempel_07.jpg" alt="Bilde av pil notasjon med x som repitisjon"></figure> <p>Dette er en god begynnelse, men det kan forenkles ytterligere. Om vi plasserer pillene med klokken (starter på toppen), og setter dem sammen i èn får vi noe som ser slik ut:</p> <figure><img src="eksempel_08.jpg" alt="Bilde av symbolene plassert med klokken"></figure> <p>Her er <strong>x</strong> antall skritt vi først må flytte frem og deretter tilbake. Denne <strong>x</strong>'en blir <em>parameteren</em> til vår funksjon.</p> </section> <section> <h4>Parametere</h4> <p>Ovenfor har vi et pilsymbol som minner om de tidligere symbolene, men vi har også introdusert en måte å inkludere mer informasjon om hvor mange ganger vi vil at pilene framover og bakover skal brukes. I dataverdenen blir denne ekstra informasjonen kalt <em>parameter</em>. Disse parametrene kan brukes for å tilpasse allerede nyttige funksjoner til flere forskjellige situasjoner.</p> </section> <section> <h4>Omstabling</h4> <p>Nå som klassen har dette nye symbolet kan de prøve å løse en av de mer krevende koppestablefigurene. Gruppene kan samarbeide om de trenger ekstra kopper.</p> </section> </section> </div><p class="MuiTypography-root jss183 MuiTypography-body1">Lisens: <!-- --> <span><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.no">CC BY-NC-SA</a></span></p><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><div class="MuiPaper-root jss298 MuiPaper-elevation1 MuiPaper-rounded"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><h2 class="MuiTypography-root MuiTypography-h4">Forbedre denne siden</h2></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Funnet en feil? Kunne noe vært bedre?</p></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!</p></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss299 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Uten_datamaskin: Robotvenner&#x27;&amp;body=Oppgave: https://oppgaver.kidsakoder.no/uten_datamaskin/robotvenner/robotvenner%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/uten_datamaskin/robotvenner/robotvenner.md%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Rapporter et problem</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss299 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></span>Gå til forumet</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss299 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/tree/master/src/uten_datamaskin/robotvenner/robotvenner.md" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Vis koden og fiks selv</span></a></div></div></div></div></div></div><div class="MuiGrid-root jss300 MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.sparebank1.no" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/smn.098a83.jpg" alt="SpareBank1"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://ibok.no/" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/ibok.06cd44.jpg" alt="Ibok"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.teknograd.no/" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/teknograd.03c75e.png" alt="Teknograd"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.tekna.no/" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/tekna.41a4f5.jpg" alt="Tekna"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.ntnu.edu/idi/" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/ntnu_idi.5179a4.png" alt="NTNU institutt for datateknologi og informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.ntnu.edu/web/excited" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/excITEd.915706.png" alt="excited"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.mn.uio.no/ifi/" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/uio_ifi.37ef13.png" alt="UIO institutt for informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.samsung.com/no/innovation/" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/samsung.bec12f.png" alt="Samsung"/></a></div></div>
+  <div id="app"><div class="jss8"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://kidsakoder.no"><img class="jss9" alt="LKK logo" src="/CCV-assets/lkk_logo_black.a76309.png"/></a><div class="jss57"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss12 MuiTypography-colorPrimary" href="https://kidsakoder.no/om-lkk">Om Lær Kidsa Koding</a><div class="MuiPaper-root MuiPaper-elevation1 jss11 MuiPaper-rounded"><ul class="MuiList-root MuiList-padding"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" href="https://kidsakoder.no/kontakt">Kontakt</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" href="https://www.kidsakoder.no/om-lkk/personvern-i-laer-kidsa-koding-og-kodeklubben">Personvern i Lær Kidsa Koding og Kodeklubben</a></ul></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/nyheter">Nyheter</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="/">Oppgaver</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://forum.kidsakoder.no">Forum</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodeklubben">Kodeklubber</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/skole">Skole</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodetimen">Kodetimen</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/bidra">Bidra?</a></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionSticky jss3 MuiAppBar-colorSecondary"><div class="jss4"><nav class="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"><ol class="MuiBreadcrumbs-ol"><li class="MuiBreadcrumbs-li"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" aria-label="Hjem" href="/"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></a></li><li aria-hidden="true" class="jss140 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div><div class="jss51"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/uten_datamaskin"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeSmall"><img height="16" src="/_/oppgaver/src/uten_datamaskin/logo-black.bf9326.png" alt="general.picture"/></span>Uten datamaskin</span></a></div><div class="jss53"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/uten_datamaskin"><span class="MuiIconButton-label"><img height="22" src="/_/oppgaver/src/uten_datamaskin/logo-black.bf9326.png" alt="general.picture"/></span></a></div></div></li><li aria-hidden="true" class="jss140 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div><div class="jss51"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/uten_datamaskin/robotvenner/robotvenner"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeSmall"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg></span>Mine Robotvenner</span></a></div><div class="jss53"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/uten_datamaskin/robotvenner/robotvenner"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg></span></a></div></div></li></ol></nav><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="Meny"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></header><div class="jss2"><div class="MuiContainer-root jss181 MuiContainer-maxWidthMd" role="main"><div class="MuiGrid-root MuiGrid-container MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg><h1 class="MuiTypography-root MuiTypography-h3">Mine Robotvenner</h1></div><p class="MuiTypography-root jss182 MuiTypography-body1">Skrevet av:<!-- --> <span>Oversatt fra <a href="http://thinkersmith.org/">Thinkersmith</a></span></p><p class="MuiTypography-root jss182 MuiTypography-body1">Oversatt av:<!-- --> <!-- -->Lær Kidsa Koding</p><div class="jss293"><div>Kurs:<!-- --> <!-- -->Uten_datamaskin</div></div><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss294 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>Til lærerveiledning</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss295 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://pdf-ace.com/pdfme?print_media=1"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg></span>Last ned PDF</span></a><div class="jss296"><p>Denne teksten er en oversettelse av en originaltekst fra <a href="http://thinkersmith.org/">ThinkerSmith</a>, og er lisensiert i henhold til retningslinjene nederst på siden.</p> <section class="intro"> <h1 class="intro">Introduksjon</h1> <p>Mine Robotvenner introduserer elevene for prinsippene bak programmering, og illustrerer behovet for funksjoner.</p> <p>Ved å bruke et forhåndsdefinert <em>robotordforråd</em> skal elevene styre hverandre gjennom forskjellige oppgaver, uten å diskutere dem først. Dette lærer elevene sammenhengen mellom symboler og handlinger, i tillegg til å gi verdifull innsikt i feilsøking.</p> <p>Beregnet gjennomføringstid er 1 time per klasse. Beregnet forberedelsestid: 10 minutter.</p> <figure><img src="robotvenner-i-aksjon.jpg" alt="Bilde av spillet robotvenner i aksjon"></figure> </section> <section class="activity"> <h1 class="activity">Læringsmål</h1> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Elevene skal</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_0"><label for="cbx_0"> Lære å omgjøre virkelige handlinger til instruksjoner.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_1"><label for="cbx_1"> Få praktisk erfaring i å kode med symboler.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_2"><label for="cbx_2"> Oppnå en forståelse for nødvendigheten av presisjon innen koding.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_3"><label for="cbx_3"> Erfare hvordan feilsøking gjøres for å finne feil i koden.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_4"><label for="cbx_4"> Forstå hvor nyttige funksjoner og parametere er (trinn 7+).</label></p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Materiell og forberedelser</h1> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Materiell</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_5"><label for="cbx_5"> Symbolark (1 per gruppe), <a href="robotvenner_symbolark.pdf">last ned her</a>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_6"><label for="cbx_6"> Pakke med koppestablefigurer (1 per gruppe), <a href="robotvenner_figurer.pdf">last ned her</a>.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_7"><label for="cbx_7"> Engangskopper eller <a href="robotvenner_trapeser.pdf">papirtrapeser</a> (6 eller flere per gruppe).</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_8"><label for="cbx_8"> Blanke ark eller notatkort (1 per person).</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_9"><label for="cbx_9"> Noe å skrive med (1 per person).</label></p> </li> </ul> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Forberedelser</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_10"><label for="cbx_10"> Skriv ut ett <a href="robotvenner_symbolark.pdf">symbolark</a> til hver gruppe.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_11"><label for="cbx_11"> Skriv ut arket med <a href="robotvenner_trapeser.pdf">trapesfigurer</a>, om kopper ikke brukes.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_12"><label for="cbx_12"> Plassér koppene eller papirtrapesene på et eget bord litt unna der gruppene skal være (dette er <em>robotbiblioteket</em>).</label></p> </li> </ul> </section> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Ordforråd</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_13"><label for="cbx_13"> <em>Algoritme</em> – en serie av instruksjoner som beskriver hvordan en kan oppnå et mål.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_14"><label for="cbx_14"> <em>Koding</em> – Omgjøre handlinger til et symbolspråk.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_15"><label for="cbx_15"> <em>Feilsøking</em> – Finne og rette feil og problemer i koden.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_16"><label for="cbx_16"> <em>Funksjon</em> – Kode som kan brukes om og om igjen.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_17"><label for="cbx_17"> <em>Parameter</em> - Ekstra informasjon som kan legges til en funksjon, for å tilpasse den.</label></p> </li> </ul> </section> </section> <section class="activity"> <h1 class="activity">Gjennomføring</h1> <section> <h2>Introduksjon</h2> <p>Begynn med å spørre klassen om noen har hørt om roboter. Om noen har sett eller tatt på en robot? Kan en sånn maskin <em>høre</em> deg snakke? <em>Forstår</em> den faktisk det som blir sagt? Svaret på det siste spørsmålet er: <em>Ikke på samme måte som et menneske gjør</em>.</p> <p>Roboter trenger en serie med <em>instruksjoner</em>, spesifikke ting de har blitt satt til å gjøre. For å kunne gjennomføre en oppgave trenger en robot en rekke med instruksjoner (ofte kalt en algoritme) den kan utføre. I dag skal vi lære hva som trengs for å få dette til.</p> </section> <section> <h2>Start</h2> <p>Vis frem en kopi av <a href="robotvenner_symbolark.pdf">symbolarket</a> (eller skriv symbolene på tavlen). Fortell at det kun er lov å bruke disse seks symbolene i denne oppgaven. I denne utfordringen skal elevene instruere sin <em>robot</em> (en annen elev) til å bygge en gitt stabel med kopper ved å kun bruke disse gitte instruksjonene.</p> </section> <section class="protip"> <h2 class="protip">Tilpasninger</h2> </section> <section> <h2></h2> </section> </section> <section> <h1>Barnehagen og småskolen</h1> <ul> <li> <p>Gjør oppgaven med alle barna/elevene samlet. La barna/elevene gi instruksjoner som læreren skal skrive ned.</p> </li> <li> <p>La en (voksen) assistent være roboten. Assistenten forlater rommet mens barna/elevene programmerer, for så å komme tilbake og prøve å utføre koden.</p> </li> <li> <p>Om det er nok tid bytter assistenten og læreren plass. Assistenten programmerer sammen med barna/elevene, mens læreren utfører koden i etterkant.</p> </li> </ul> <section> <h3>Mellomtrinnet</h3> <ul> <li> <p>Del inn i grupper på 3 til 5 tilpasset hvordan klassen samarbeider.</p> </li> <li> <p>Forvent at alle har lyst å prøve å være robot, slik at dette vil sannsynligvis bruke hele timen.</p> </li> </ul> </section> <section> <h3>Ungdomsskolen og videregående</h3> <ul> <li> <p>Del inn i grupper på maksimalt fire elever, tre i hver gruppe er ideelt.</p> </li> <li> <p>Elevene får da nok tid til at alle får prøvd seg som robot, og kan også prøve seg på ekstraoppgavene om funksjoner som står beskrevet lenger ned.</p> </li> </ul> </section> <section> <h2>Komme i gang</h2> <ul> <li> <p>Velg en elev til å være <em>robot</em> i hver gruppe.</p> </li> <li> <p>Send roboten til <em>robotbiblioteket</em>, mens resten av gruppen er programmererne som koder.</p> </li> <li> <p>Velg en figur fra <a href="robotvenner_figurer.pdf">koppestablefigurene</a> for hver gruppe.</p> </li> <li> <p>Gruppene skal lage en algoritme for hvordan roboten skal bygge den utvalgte stabelen.</p> </li> <li> <p>De som koder skal oversette algoritmen sin til piler, som beskrevet på <a href="robotvenner_symbolark.pdf">symbolarket</a>.</p> </li> <li> <p>Når programmererne er ferdig med koden henter de roboten sin.</p> </li> <li> <p>Roboten leser pilene på arket og prøver å gjennomføre koden med bevegelser.</p> </li> <li> <p>Resten av gruppen ser etter feil, samarbeider om å rette feilene i koden, og ber deretter roboten om å kjøre programmet på nytt.</p> <figure><img src="robotvenner-smaa-bilder.jpg" alt="To bilder av robotvenner i aksjon"></figure> </li> </ul> </section> <section> <h2>Regler</h2> <ul> <li> <p>Programmererne skal <em>kun</em> benytte de seks pilene på <a href="robotvenner_symbolark.pdf">symbolarket</a>.</p> </li> <li> <p>Koppene skal være hos roboten og ikke tilgjengelig for programmererne under kodingen.</p> </li> <li> <p>Når roboten kommer tilbake til gruppen skal de ikke snakke sammen. Instruksjonene er skrevet på papiret!</p> </li> </ul> <p><em>Om elevene spør om regler som ikke er nevnt over kan du enten definere dem selv basert på egen erfaring, eller be dem å bestemme reglene i gruppa</em>.</p> </section> </section> <section class="activity"> <h1 class="activity">Praktisk eksempel</h1> <p>Det er svært nyttig å gå over et av eksemplene med samlet klasse først. Det er en stabel blant <a href="robotvenner_figurer.pdf">koppestablefigurene</a> som bare inneholder tre kopper. Hold figuren opp for klassen og gå gjennom eksempeløvelsen. En mulig løsning vil se ut som følger.</p> <figure><img src="eksempel_01.jpg" alt="Bilde av en kopp opp på to andre kopper"></figure> <p>Plasser en stabel med kopper på et bord slik atr alle kan se den. Spør klassen om noen kan fortelle hva du skal gjøre først. Gi dem eventuelt et hint om å se på de seks mulige instruksjonene på <a href="robotvenner_symbolark.pdf">symbolarket</a>. Det riktige svaret er <strong>Plukk opp koppen</strong>. Når du plukker en kopp, pass på at den løftes slik at den er høyere enn alle de andre koppene på bordet.</p> <p>Plukk opp den øverste koppen i stabelen, og mens du holder den i luften over stabelen, spør hva som nå skal gjøres med koppen. Koppen må nå flyttes <strong>Ett skritt frem</strong> (eller <strong>Ett skritt tilbake</strong>) minst to ganger. Legg merke til at <strong>Ett skritt</strong> tilsvarer en halv koppelengde, som på figuren under.</p> <figure><img src="eksempel_02.jpg" alt="Bilde av hvordan steglengde er definert"></figure> <p>Etter at dere har satt den første koppen på plass kan du gå til tavlen. Utfordre nå klassen til i fellesskap hjelpe deg med å skrive symbolene som behøves for å plassere alle tre koppene. En mulig løsning vil være</p> <figure><img src="eksempel_03.jpg" alt="Bilde av en mulig løsning med for tre stablede kopper"></figure> <p>Etter at hele <em>programmet</em> er skrevet ned kan du få en elev til å utføre det, eller du kan kjøre det selv. Si navnet på symbolene høyt etterhvert som du eller eleven flytter på koppene. For eksempel vil programmet ovenfor uttales:</p> <blockquote> <p>Plukk opp koppen. Ett skritt frem. Ett skritt frem. Sett ned koppen. Ett skritt tilbake. Ett skritt tilbake.</p> <p>Plukk opp koppen. Ett skritt frem. Ett skritt frem. Ett skritt frem. Ett skritt frem. Sett ned koppen. Ett skritt tilbake. Ett skritt tilbake. Ett skritt tilbake. Ett skritt tilbake.</p> <p>Plukk opp koppen. Ett skritt frem. Ett skritt frem. Ett skritt frem. Sett ned koppen.</p> </blockquote> </section> <section class="activity"> <h1 class="activity">Hovedøvelse</h1> <section> <h2></h2> </section> <section> <h2>Del i grupper</h2> <p>Del gruppen som tidligere nevnt under <a href="#tilpasninger">Tilpasninger</a>. Målet er å ha nok programmerere i gruppen til at gruppen hele tiden kommer videre.</p> <section> <h4>Robot</h4> <p>Velg en <em>robot</em> i hver gruppe, som skal vente i <em>robotbiblioteket</em>. Dette bør være et sted langt nok unna gruppene slik at ingen roboter får med seg hvilken stabel programmererne jobber med. Robotene kan bruke ventetiden på å øve på å stable kopper eller til å se på reglene og spørre om noe er uklart.</p> </section> <section> <h4>Program</h4> <p>Hver gruppe bør bare jobbe med en koppestablingsfigur om gangen. De kan begynne med å finne algoritmen for denne stabelen. Hvor mange kopper trenger de? Hvor mange bevegelser må til for å plassere den første koppen? Den neste koppen? Er noen kopper opp ned? Hvordan kan de instruere roboten til å snu koppen?</p> <p>Når de har funnet ut av disse spørsmålene, skal programmererne skrive ned symbolene for å lage koden på arket. Programmererne bør dobbeltsjekke koden sin før de henter roboten fra robotbiblioteket.</p> </section> <section> <h4>Kjør koden</h4> <p>Når som roboten kommer tilbake skal alle være stille. Gruppene skal unngå å vise bevegelser eller bruke ord for å hjelpe roboten. Roboten skal bare følge instruksjonene pilene gir. Om gruppen oppdager en feil, kan de stoppe programmet. De sender da roboten tilbake til robotbiblioteket, retter feilen før de henter roboten som prøver å kjøre programmet igjen fra begynnelsen.</p> </section> <section> <h4>Gjenta</h4> <p>Hver gang en gruppe løser en oppgave velge de en ny robot som sendes til robotbiblioteket. Gruppen starter også med en ny koppestablingsfigur, helst vanskeligere enn den forrige.</p> <p>Dette fortsetter til alle i gruppen har vært robot en gang, man går tom for tid, eller koppestablingsfigurene er vanskelige nok til å snakke om funksjoner (se <a href="#ekstraoppgaver">Ekstraoppgaver</a> nedenfor).</p> </section> <section class="protip"> <h3 class="protip">Tips</h3> <p>Om gruppene er i ferd med å gå tom for koppestablingsfigurer kan du utfordre dem til å lage sine egne!</p> </section> </section> </section> <section class="activity"> <h1 class="activity">Ekstraoppgaver</h1> <p>Om det er nok tid, så er dette en flott mulighet til å introdusere nyttigheten av <em>funksjoner</em>.</p> <section> <h4>Introduksjon</h4> <p>Samle klassen og fortell dem at du vil vise dem en spesiell koppestablingsfigur som de skal kode på rekordtid ... Vis dem så dette bildet:</p> <figure><img src="eksempel_04.jpg" alt="Bilde av 17 kopper stablet oppå hverandre"></figure> <p>Du vil mest sannsynlig høre surmuling, fnising og til og med at dette er umulig. Spør klassen hva problemet er? Hvorfor er denne stabelen så problematisk?</p> <p>Denne stabelen virker vanskelig, fordi hver ekstra kopp i bredden legger til to ekstra piler med <strong>Ett skritt frem</strong> og to ekstra piler med <strong>Ett skritt tilbake</strong>. For å skrive kode for denne figuren vil etterhvert instruksjonene se slik ut:</p> <figure><img src="eksempel_05.png" alt="Bilde av koden for å flytte en kopp"></figure> <p>Ofte vil elevene begynne å forkorte instruksjonene, for eksempel ved å skrive tall etter pilene:</p> <figure><img src="eksempel_06.jpg" alt="Bilde av hvordan forkorte instruksjonene"></figure> <p>Under hovedøvelsen anbefales ikke dette. Minn elevene på at de kun skal bruke de seks instruksjonene på symbolarket. Til disse mer kompliserte oppgavene trenger vi kraftigere instruksjoner. Gi elevene ros for at de tenkte selv og oppdaget behovet for funksjoner.</p> </section> <section> <h4>Forklar</h4> <p>Vis klassen at en pil etterfulgt av et tall er en smart måte å indikere at en instruksjon skal gjentas flere ganger. Ved å tillate dette, lager vi egentlig bare et nytt symbol som kan brukes for å unngå unødvendig repetisjon. Dette er nettopp ideen bak funksjoner.</p> <p>Utfordre klassen til å finne den lengste rekken med repeterende kode for hver kopp-plassering. Som instruktør kan du godta alle slags grupperinger som gir mening, men de vil nok ligne noe av det vi så tidligere:</p> <figure><img src="eksempel_07.jpg" alt="Bilde av pil notasjon med x som repitisjon"></figure> <p>Dette er en god begynnelse, men det kan forenkles ytterligere. Om vi plasserer pillene med klokken (starter på toppen), og setter dem sammen i èn får vi noe som ser slik ut:</p> <figure><img src="eksempel_08.jpg" alt="Bilde av symbolene plassert med klokken"></figure> <p>Her er <strong>x</strong> antall skritt vi først må flytte frem og deretter tilbake. Denne <strong>x</strong>'en blir <em>parameteren</em> til vår funksjon.</p> </section> <section> <h4>Parametere</h4> <p>Ovenfor har vi et pilsymbol som minner om de tidligere symbolene, men vi har også introdusert en måte å inkludere mer informasjon om hvor mange ganger vi vil at pilene framover og bakover skal brukes. I dataverdenen blir denne ekstra informasjonen kalt <em>parameter</em>. Disse parametrene kan brukes for å tilpasse allerede nyttige funksjoner til flere forskjellige situasjoner.</p> </section> <section> <h4>Omstabling</h4> <p>Nå som klassen har dette nye symbolet kan de prøve å løse en av de mer krevende koppestablefigurene. Gruppene kan samarbeide om de trenger ekstra kopper.</p> </section> </section> </div><p class="MuiTypography-root jss182 MuiTypography-body1">Lisens: <!-- --> <span><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.no">CC BY-NC-SA</a></span></p><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><div class="MuiPaper-root jss297 MuiPaper-elevation1 MuiPaper-rounded"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><h2 class="MuiTypography-root MuiTypography-h4">Forbedre denne siden</h2></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Funnet en feil? Kunne noe vært bedre?</p></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!</p></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss298 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Uten_datamaskin: Robotvenner&#x27;&amp;body=Oppgave: https://oppgaver.kidsakoder.no/uten_datamaskin/robotvenner/robotvenner%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/uten_datamaskin/robotvenner/robotvenner.md%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Rapporter et problem</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss298 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></span>Gå til forumet</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss298 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/tree/master/src/uten_datamaskin/robotvenner/robotvenner.md" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Vis koden og fiks selv</span></a></div></div></div></div></div></div><div class="MuiGrid-root jss299 MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.sparebank1.no" target="_blank" rel="noopener"><img class="jss300" src="/CCV-assets/smn.098a83.jpg" alt="SpareBank1"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://ibok.no/" target="_blank" rel="noopener"><img class="jss300" src="/CCV-assets/ibok.06cd44.jpg" alt="Ibok"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.teknograd.no/" target="_blank" rel="noopener"><img class="jss300" src="/CCV-assets/teknograd.03c75e.png" alt="Teknograd"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.tekna.no/" target="_blank" rel="noopener"><img class="jss300" src="/CCV-assets/tekna.41a4f5.jpg" alt="Tekna"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.ntnu.edu/idi/" target="_blank" rel="noopener"><img class="jss300" src="/CCV-assets/ntnu_idi.5179a4.png" alt="NTNU institutt for datateknologi og informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.ntnu.edu/web/excited" target="_blank" rel="noopener"><img class="jss300" src="/CCV-assets/excITEd.915706.png" alt="excited"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.mn.uio.no/ifi/" target="_blank" rel="noopener"><img class="jss300" src="/CCV-assets/uio_ifi.37ef13.png" alt="UIO institutt for informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.samsung.com/no/innovation/" target="_blank" rel="noopener"><img class="jss300" src="/CCV-assets/samsung.bec12f.png" alt="Samsung"/></a></div></div>
   
   <script src="/sw.js" async></script>  
-  <script src="/main.844f32.js" async></script>  
+  <script src="/main.cf69d1.js" async></script>  
 </body>
 </html>

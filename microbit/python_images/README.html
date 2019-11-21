@@ -228,21 +228,96 @@ body::backdrop {
 .MuiList-subheader {
   padding-top: 0;
 }
-.MuiTypography-root {
-  margin: 0;
+@media (min-width:0px) and (max-width:599.95px) {
+  .jss49 {
+    display: none;
+  }
 }
-.MuiTypography-body2 {
-  font-size: 1rem;
-  font-family: Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  line-height: 1.43;
+@media (min-width:0px) {
+  .jss50 {
+    display: none;
+  }
 }
-.MuiTypography-body1 {
-  font-size: 1.0714285714285714rem;
-  font-family: Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
+@media (max-width:599.95px) {
+  .jss51 {
+    display: none;
+  }
 }
+@media (min-width:600px) and (max-width:959.95px) {
+  .jss52 {
+    display: none;
+  }
+}
+@media (min-width:600px) {
+  .jss53 {
+    display: none;
+  }
+}
+@media (max-width:959.95px) {
+  .jss54 {
+    display: none;
+  }
+}
+@media (min-width:960px) and (max-width:1279.95px) {
+  .jss55 {
+    display: none;
+  }
+}
+@media (min-width:960px) {
+  .jss56 {
+    display: none;
+  }
+}
+@media (max-width:1279.95px) {
+  .jss57 {
+    display: none;
+  }
+}
+@media (min-width:1280px) and (max-width:1919.95px) {
+  .jss58 {
+    display: none;
+  }
+}
+@media (min-width:1280px) {
+  .jss59 {
+    display: none;
+  }
+}
+@media (max-width:1919.95px) {
+  .jss60 {
+    display: none;
+  }
+}
+@media (min-width:1920px) {
+  .jss61 {
+    display: none;
+  }
+}
+@media (min-width:1920px) {
+  .jss62 {
+    display: none;
+  }
+}
+@media (min-width:0px) {
+  .jss63 {
+    display: none;
+  }
+}
+  .MuiTypography-root {
+    margin: 0;
+  }
+  .MuiTypography-body2 {
+    font-size: 1rem;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+  }
+  .MuiTypography-body1 {
+    font-size: 1.0714285714285714rem;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  }
 @media (min-width:600px) {
   .MuiTypography-body1 {
     font-size: 1.1667rem;
@@ -484,6 +559,39 @@ body::backdrop {
   .MuiTypography-displayBlock {
     display: block;
   }
+  .MuiLink-underlineNone {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover:hover {
+    text-decoration: underline;
+  }
+  .MuiLink-underlineAlways {
+    text-decoration: underline;
+  }
+  .MuiLink-button {
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiLink-button::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiLink-button.Mui-focusVisible {
+    outline: auto;
+  }
   .MuiButtonBase-root {
     color: inherit;
     border: 0;
@@ -510,6 +618,60 @@ body::backdrop {
   .MuiButtonBase-root.Mui-disabled {
     cursor: default;
     pointer-events: none;
+  }
+  .MuiListItem-root {
+    width: 100%;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    text-align: left;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: flex-start;
+    text-decoration: none;
+  }
+  .MuiListItem-root.Mui-focusVisible {
+    background-color: rgba(0, 0, 0, 0.14);
+  }
+  .MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
+    background-color: rgba(0, 0, 0, 0.14);
+  }
+  .MuiListItem-root.Mui-disabled {
+    opacity: 0.5;
+  }
+  .MuiListItem-container {
+    position: relative;
+  }
+  .MuiListItem-dense {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .MuiListItem-alignItemsFlexStart {
+    align-items: flex-start;
+  }
+  .MuiListItem-divider {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    background-clip: padding-box;
+  }
+  .MuiListItem-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .MuiListItem-button {
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .MuiListItem-button:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+@media (hover: none) {
+  .MuiListItem-button:hover {
+    background-color: transparent;
+  }
+}
+  .MuiListItem-secondaryAction {
+    padding-right: 48px;
   }
   .MuiIconButton-root {
     flex: 0 0 auto;
@@ -818,94 +980,7 @@ body::backdrop {
   .MuiButton-iconSizeLarge > *:first-child {
     font-size: 22px;
   }
-  .MuiListItem-root {
-    width: 100%;
-    display: flex;
-    position: relative;
-    box-sizing: border-box;
-    text-align: left;
-    align-items: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    justify-content: flex-start;
-    text-decoration: none;
-  }
-  .MuiListItem-root.Mui-focusVisible {
-    background-color: rgba(0, 0, 0, 0.14);
-  }
-  .MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
-    background-color: rgba(0, 0, 0, 0.14);
-  }
-  .MuiListItem-root.Mui-disabled {
-    opacity: 0.5;
-  }
-  .MuiListItem-container {
-    position: relative;
-  }
-  .MuiListItem-dense {
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-  .MuiListItem-alignItemsFlexStart {
-    align-items: flex-start;
-  }
-  .MuiListItem-divider {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-    background-clip: padding-box;
-  }
-  .MuiListItem-gutters {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .MuiListItem-button {
-    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  }
-  .MuiListItem-button:hover {
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.08);
-  }
-@media (hover: none) {
-  .MuiListItem-button:hover {
-    background-color: transparent;
-  }
-}
-  .MuiListItem-secondaryAction {
-    padding-right: 48px;
-  }
-  .MuiLink-underlineNone {
-    text-decoration: none;
-  }
-  .MuiLink-underlineHover {
-    text-decoration: none;
-  }
-  .MuiLink-underlineHover:hover {
-    text-decoration: underline;
-  }
-  .MuiLink-underlineAlways {
-    text-decoration: underline;
-  }
-  .MuiLink-button {
-    border: 0;
-    cursor: pointer;
-    margin: 0;
-    outline: 0;
-    padding: 0;
-    position: relative;
-    user-select: none;
-    border-radius: 0;
-    vertical-align: middle;
-    -moz-appearance: none;
-    background-color: transparent;
-    -webkit-appearance: none;
-    -webkit-tap-highlight-color: transparent;
-  }
-  .MuiLink-button::-moz-focus-inner {
-    border-style: none;
-  }
-  .MuiLink-button.Mui-focusVisible {
-    outline: auto;
-  }
-  .jss153 {
+  .jss140 {
     display: flex;
     margin-left: 8px;
     user-select: none;
@@ -921,94 +996,16 @@ body::backdrop {
   .MuiBreadcrumbs-li {
     list-style: none;
   }
-@media (min-width:0px) and (max-width:599.95px) {
-  .jss50 {
-    display: none;
-  }
-}
-@media (min-width:0px) {
-  .jss51 {
-    display: none;
-  }
-}
-@media (max-width:599.95px) {
-  .jss52 {
-    display: none;
-  }
-}
-@media (min-width:600px) and (max-width:959.95px) {
-  .jss53 {
-    display: none;
-  }
-}
-@media (min-width:600px) {
-  .jss54 {
-    display: none;
-  }
-}
-@media (max-width:959.95px) {
-  .jss55 {
-    display: none;
-  }
-}
-@media (min-width:960px) and (max-width:1279.95px) {
-  .jss56 {
-    display: none;
-  }
-}
-@media (min-width:960px) {
-  .jss57 {
-    display: none;
-  }
-}
-@media (max-width:1279.95px) {
-  .jss58 {
-    display: none;
-  }
-}
-@media (min-width:1280px) and (max-width:1919.95px) {
-  .jss59 {
-    display: none;
-  }
-}
-@media (min-width:1280px) {
-  .jss60 {
-    display: none;
-  }
-}
-@media (max-width:1919.95px) {
-  .jss61 {
-    display: none;
-  }
-}
-@media (min-width:1920px) {
-  .jss62 {
-    display: none;
-  }
-}
-@media (min-width:1920px) {
-  .jss63 {
-    display: none;
-  }
-}
-@media (min-width:0px) {
-  .jss64 {
-    display: none;
-  }
-}
-  .jss7 {
+  .jss8 {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .jss8 {
+  .jss9 {
     width: 250px;
     height: auto;
     max-width: 100%;
     margin-left: 16px;
-    margin-right: 16px;
-  }
-  .jss9 {
     margin-right: 16px;
   }
   .jss10 {
@@ -1032,10 +1029,6 @@ body::backdrop {
   .jss12:hover + .jss11 {
     display: block;
   }
-  .jss13 {
-    display: flex;
-    justify-content: flex-end;
-  }
 @media print {
   .jss3 {
     display: none;
@@ -1052,6 +1045,9 @@ body::backdrop {
   .jss6 {
     display: flex;
     justify-content: flex-end;
+  }
+  .jss7 {
+    margin-bottom: 40px;
   }
   .MuiGrid-container {
     width: 100%;
@@ -1551,16 +1547,16 @@ body::backdrop {
     flex-basis: 100%;
   }
 }
-  .jss300 {
+  .jss299 {
     margin-top: 40px;
     background-color: #dcedc8;
   }
 @media print {
-  .jss300 {
+  .jss299 {
     display: none;
   }
 }
-  .jss301 {
+  .jss300 {
     width: auto;
     height: 50px;
     margin: 20px 7px 10px;
@@ -1639,19 +1635,19 @@ body::backdrop {
     max-width: 1920px;
   }
 }
-  .jss297 a {
+  .jss296 a {
     color: #212121;
   }
-  .jss297 pre.blocks, .jss297 code.b {
+  .jss296 pre.blocks, .jss296 code.b {
     border: 0;
     background-color: inherit;
   }
-  .jss297 section.try {
+  .jss296 section.try {
     padding: 1px 20px 10px;
     background: #abdbea;
     border-radius: 10px;
   }
-  .jss297 section.protip, .jss297 section.tip {
+  .jss296 section.protip, .jss296 section.tip {
     color: #000;
     border: 3px solid #ff7f00;
     padding: 0 20px 20px;
@@ -1660,153 +1656,153 @@ body::backdrop {
     border-radius: 12px;
     margin-bottom: 20px;
   }
-  .jss297 section.flag {
+  .jss296 section.flag {
     border-top: 3px dotted rgb(230, 134, 45);
     margin-top: 20px;
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
-  .jss297 section.save {
+  .jss296 section.save {
     margin: 20px, 0;
     border-top: 3px solid rgb(36, 90, 154);
   }
-  .jss297 section.challenge {
+  .jss296 section.challenge {
     border: 3px solid #00b1da;
     margin-top: 20px;
     border-radius: 12px;
     margin-bottom: 20px;
     padding-bottom: 10px;
   }
-  .jss297 .blockmotion {
+  .jss296 .blockmotion {
     color: #fff;
     background-color: #4c97ff;
   }
-  .jss297 .blocklooks {
+  .jss296 .blocklooks {
     color: #fff;
     background-color: #96f;
   }
-  .jss297 .blocksound {
+  .jss296 .blocksound {
     color: #fff;
     background-color: #cf63cf;
   }
-  .jss297 .blockpen {
+  .jss296 .blockpen {
     color: #fff;
     background-color: #0fbd8c;
   }
-  .jss297 .blockdata {
+  .jss296 .blockdata {
     color: #fff;
     background-color: #ff8c1a;
   }
-  .jss297 .blockevents {
+  .jss296 .blockevents {
     color: #fff;
     background-color: #ffbf00;
   }
-  .jss297 .blockcontrol {
+  .jss296 .blockcontrol {
     color: #fff;
     background-color: #ffab19;
   }
-  .jss297 .blocksensing {
+  .jss296 .blocksensing {
     color: #fff;
     background-color: #5cb1d6;
   }
-  .jss297 .blockoperators {
+  .jss296 .blockoperators {
     color: #fff;
     background-color: #59c059;
   }
-  .jss297 .blockmoreblocks {
+  .jss296 .blockmoreblocks {
     color: #fff;
     background-color: #ff6680;
   }
-  .jss297 .microbitbasic {
+  .jss296 .microbitbasic {
     color: #fff;
     background-color: #1e90ff;
   }
-  .jss297 .microbitinput {
+  .jss296 .microbitinput {
     color: #fff;
     background-color: #d400d4;
   }
-  .jss297 .microbitmusic {
+  .jss296 .microbitmusic {
     color: #fff;
     background-color: #e63022;
   }
-  .jss297 .microbitled {
+  .jss296 .microbitled {
     color: #fff;
     background-color: #5c2d91;
   }
-  .jss297 .microbitradio {
+  .jss296 .microbitradio {
     color: #fff;
     background-color: #e3008c;
   }
-  .jss297 .microbitloops {
+  .jss296 .microbitloops {
     color: #fff;
     background-color: #0a0;
   }
-  .jss297 .microbitlogic {
+  .jss296 .microbitlogic {
     color: #fff;
     background-color: #00a4a6;
   }
-  .jss297 .microbitvariables {
+  .jss296 .microbitvariables {
     color: #fff;
     background-color: #dc143c;
   }
-  .jss297 .microbitmath {
+  .jss296 .microbitmath {
     color: #fff;
     background-color: #9400d3;
   }
-  .jss297 .microbitfunctions {
+  .jss296 .microbitfunctions {
     color: #fff;
     background-color: #3455db;
   }
-  .jss297 .microbitarrays {
+  .jss296 .microbitarrays {
     color: #fff;
     background-color: #e65722;
   }
-  .jss297 .microbittext {
+  .jss296 .microbittext {
     color: #fff;
     background-color: #b8860b;
   }
-  .jss297 .microbitgame {
+  .jss296 .microbitgame {
     color: #fff;
     background-color: #007a4b;
   }
-  .jss297 .microbitimages {
+  .jss296 .microbitimages {
     color: #fff;
     background-color: #7600a8;
   }
-  .jss297 .microbitpins {
+  .jss296 .microbitpins {
     color: #fff;
     background-color: #b22222;
   }
-  .jss297 .microbitserial {
+  .jss296 .microbitserial {
     color: #fff;
     background-color: #002050;
   }
-  .jss297 .microbitcontrol {
+  .jss296 .microbitcontrol {
     color: #fff;
     background-color: #333;
   }
-  .jss297 table {
+  .jss296 table {
     width: 100%;
     max-width: 100%;
     margin-bottom: 20px;
   }
-  .jss297 .video-container {
+  .jss296 .video-container {
     height: 0;
     margin: 30px 0 60px;
     overflow: hidden;
     position: relative;
     padding-bottom: 56.25%;
   }
-  .jss297 li.task-list-item > * > input[type=checkbox] {
+  .jss296 li.task-list-item > * > input[type=checkbox] {
     opacity: 0;
     position: absolute;
   }
-  .jss297 li.task-list-item > * > input[type=checkbox] + label {
+  .jss296 li.task-list-item > * > input[type=checkbox] + label {
     position: relative;
     font-weight: normal;
     margin-left: 0;
   }
-  .jss297 li.task-list-item > * > input[type=checkbox] + label:before {
+  .jss296 li.task-list-item > * > input[type=checkbox] + label:before {
     width: 1.3em;
     border: 3px solid #abdbea;
     height: 1.3em;
@@ -1817,31 +1813,31 @@ body::backdrop {
     line-height: 1.1em;
     border-radius: 3px;
   }
-  .jss297 li.task-list-item > * > input[type=checkbox]:checked + label:before {
+  .jss296 li.task-list-item > * > input[type=checkbox]:checked + label:before {
     content: "✓";
   }
-  .jss297 .video-container iframe {
+  .jss296 .video-container iframe {
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     position: absolute;
   }
-  .jss297 table thead:first-child tr:first-child th, .jss297 table thead:first-child tr:first-child td {
+  .jss296 table thead:first-child tr:first-child th, .jss296 table thead:first-child tr:first-child td {
     border-top: 0;
     border-bottom: 1px solid #ddd;
   }
-  .jss297 table thead tr th, .jss297 table thead tr td, .jss297 table tbody tr th, .jss297 table tbody tr td, .jss297 table tfoot tr th, .jss297 table tfoot tr td {
+  .jss296 table thead tr th, .jss296 table thead tr td, .jss296 table tbody tr th, .jss296 table tbody tr td, .jss296 table tfoot tr th, .jss296 table tfoot tr td {
     padding: 8px;
     border-top: 1px solid #ddd;
     line-height: 1.4px;
     border-right: 1px solid #ddd;
     vertical-align: top;
   }
-  .jss297 table thead tr th:last-child, .jss297 table thead tr td:last-child, .jss297 table tbody tr th:last-child, .jss297 table tbody tr td:last-child, .jss297 table tfoot tr th:last-child, .jss297 table tfoot tr td:last-child {
+  .jss296 table thead tr th:last-child, .jss296 table thead tr td:last-child, .jss296 table tbody tr th:last-child, .jss296 table tbody tr td:last-child, .jss296 table tfoot tr th:last-child, .jss296 table tfoot tr td:last-child {
     border-right: 0;
   }
-  .jss297 section.challenge h2 {
+  .jss296 section.challenge h2 {
     color: #fff;
     background: #00b1da;
     margin-top: 0;
@@ -1849,15 +1845,15 @@ body::backdrop {
     padding-left: 20px;
     padding-bottom: 10px;
   }
-  .jss297 section.challenge * {
+  .jss296 section.challenge * {
     padding: 0 20px;
   }
 @media print {
-  .jss297 section.challenge h2 {
+  .jss296 section.challenge h2 {
     border-bottom: 2px solid #00b1da;
   }
 }
-  .jss297 section.save h2 {
+  .jss296 section.save h2 {
     color: rgb(36, 90, 154);
     margin: 0;
     display: flex;
@@ -1865,11 +1861,11 @@ body::backdrop {
     padding-top: 10px;
     padding-bottom: 20px;
   }
-  .jss297 section.save h2 img {
+  .jss296 section.save h2 img {
     height: 40px;
     padding-right: 10px;
   }
-  .jss297 section.flag h2 {
+  .jss296 section.flag h2 {
     color: rgb(54, 161, 55);
     display: flex;
     margin-top: 10px;
@@ -1878,55 +1874,55 @@ body::backdrop {
     margin-bottom: 10px;
     padding-bottom: 10px;
   }
-  .jss297 section.flag h2 img {
+  .jss296 section.flag h2 img {
     height: 40px;
     padding-right: 10px;
   }
-  .jss297 section.try code {
+  .jss296 section.try code {
     color: #007cc9;
     background-color: #fff;
   }
-  .jss297 section.try li:before {
+  .jss296 section.try li:before {
     border: 3px solid #fff;
   }
-  .jss297 section.check h2 {
+  .jss296 section.check h2 {
     display: flex;
     align-items: center;
     padding-top: 4px;
     padding-bottom: 9px;
   }
-  .jss297 section.check h2 img {
+  .jss296 section.check h2 img {
     height: 40px;
     padding-right: 10px;
   }
-  .jss297 section.activity h1 {
+  .jss296 section.activity h1 {
     color: #fff;
     padding: 10px;
     background: #349946;
     border-radius: 5px;
   }
-  .jss297 section.activity.subsection h2 {
+  .jss296 section.activity.subsection h2 {
     color: #fff;
     padding: 10px;
     background: #349946;
     font-weight: 300;
     border-radius: 5px;
   }
-  .jss297 section.activity.subsection h2 ul, .jss297 section.activity.subsection h2 ol {
+  .jss296 section.activity.subsection h2 ul, .jss296 section.activity.subsection h2 ol {
     margin: 0 0 20px;
     padding: 0;
   }
-  .jss297 section.activity.subsection h2 li.task-list-item:before {
+  .jss296 section.activity.subsection h2 li.task-list-item:before {
     content: "";
     opacity: 0;
   }
-  .jss297 section.activity.subsection h2 li {
+  .jss296 section.activity.subsection h2 li {
     list-style: none;
     margin-left: 45px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .jss297 section.activity.subsection h2 li:before {
+  .jss296 section.activity.subsection h2 li:before {
     float: left;
     border: 3px solid #abdbea;
     content: "";
@@ -1934,30 +1930,30 @@ body::backdrop {
     margin-left: -40px;
     border-radius: 20px;
   }
-  .jss297 section.activity.subsection h2 li label {
+  .jss296 section.activity.subsection h2 li label {
     font-weight: normal;
     margin-left: 6px;
   }
-  .jss297 pre code {
+  .jss296 pre code {
     word-wrap: normal;
     white-space: pre;
     background-color: transparent;
   }
-  .jss297 .check ul, .jss297 .check ol, .jss297 .activity ul, .jss297 .activity ol, .jss297 .save ul, .jss297 .save ol {
+  .jss296 .check ul, .jss296 .check ol, .jss296 .activity ul, .jss296 .activity ol, .jss296 .save ul, .jss296 .save ol {
     margin: 0 0 20px;
     padding: 0;
   }
-  .jss297 .check li.task-list-item:before, .jss297 .activity li.task-list-item:before, .jss297 .save li.task-list-item:before {
+  .jss296 .check li.task-list-item:before, .jss296 .activity li.task-list-item:before, .jss296 .save li.task-list-item:before {
     content: "";
     opacity: 0;
   }
-  .jss297 .check li, .jss297 .activity li, .jss297 .save li {
+  .jss296 .check li, .jss296 .activity li, .jss296 .save li {
     list-style: none;
     margin-left: 45px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .jss297 .check li:before, .jss297 .activity li:before, .jss297 .save li:before {
+  .jss296 .check li:before, .jss296 .activity li:before, .jss296 .save li:before {
     float: left;
     border: 3px solid #abdbea;
     content: "";
@@ -1965,17 +1961,26 @@ body::backdrop {
     margin-left: -40px;
     border-radius: 20px;
   }
-  .jss297 .check li label, .jss297 .activity li label, .jss297 .save li label {
+  .jss296 .check li label, .jss296 .activity li label, .jss296 .save li label {
     font-weight: normal;
     margin-left: 6px;
   }
-  .jss297 figure img {
+  .jss296 figure img {
     height: auto;
     margin: 0 auto;
     display: block;
     padding: 20px;
     max-width: 100%;
   }
+  .jss294 {
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+@media print {
+  .jss294 {
+    display: none;
+  }
+}
   .jss295 {
     margin-top: 16px;
     margin-right: 16px;
@@ -1985,53 +1990,44 @@ body::backdrop {
     display: none;
   }
 }
-  .jss296 {
-    margin-top: 16px;
-    margin-right: 16px;
-  }
-@media print {
-  .jss296 {
-    display: none;
-  }
-}
-  .jss298 {
+  .jss297 {
     padding: 16px;
     max-width: 700px;
     background: #dcedc8;
     margin-top: 40px;
   }
 @media print {
-  .jss298 {
+  .jss297 {
     display: none;
   }
 }
-  .jss299 {
+  .jss298 {
     margin: 8px;
   }
-  .jss294 {
+  .jss293 {
     display: none;
     font-size: 0.75em;
     font-style: italic;
   }
 @media print {
-  .jss294 {
+  .jss293 {
     display: block;
   }
 }
-  .jss182 {
+  .jss181 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  .jss183 {
+  .jss182 {
     margin-top: 16px;
   }
-  .jss183 a {
+  .jss182 a {
     color: #212121;
   }</style></head>
 <body>
-  <div id="app"><div><div class="jss7"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://kidsakoder.no"><img class="jss8" alt="LKK logo" src="/CCV-assets/lkk_logo_black.a76309.png"/></a><div class="jss58"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss12 MuiTypography-colorPrimary" href="https://kidsakoder.no/om-lkk">Om Lær Kidsa Koding</a><div class="MuiPaper-root MuiPaper-elevation1 jss11 MuiPaper-rounded"><ul class="MuiList-root MuiList-padding"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" href="https://kidsakoder.no/kontakt">Kontakt</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" href="https://www.kidsakoder.no/om-lkk/personvern-i-laer-kidsa-koding-og-kodeklubben">Personvern i Lær Kidsa Koding og Kodeklubben</a></ul></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/nyheter">Nyheter</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="/">Oppgaver</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://forum.kidsakoder.no">Forum</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodeklubben">Kodeklubber</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/skole">Skole</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodetimen">Kodetimen</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/bidra">Bidra?</a></div><div class="jss60"><button class="MuiButtonBase-root MuiIconButton-root jss9 MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionSticky jss3 MuiAppBar-colorSecondary"><div class="jss4"><nav class="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"><ol class="MuiBreadcrumbs-ol"><li class="MuiBreadcrumbs-li"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" aria-label="Hjem" href="/"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></a></li><li aria-hidden="true" class="jss153 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div><div class="jss52"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/microbit"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeSmall"><img height="16" src="/_/oppgaver/src/microbit/logo-black.f1dcc4.png" alt="general.picture"/></span>Micro:bit</span></a></div><div class="jss54"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/microbit"><span class="MuiIconButton-label"><img height="22" src="/_/oppgaver/src/microbit/logo-black.f1dcc4.png" alt="general.picture"/></span></a></div></div></li><li aria-hidden="true" class="jss153 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div><div class="jss52"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/microbit/python_images/README"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeSmall"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 7.77L18.39 18H5.61L12 7.77M12 4L2 20h20L12 4z"></path></svg></span>Lærerveiledning - Python: Bilder</span></a></div><div class="jss54"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/microbit/python_images/README"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 7.77L18.39 18H5.61L12 7.77M12 4L2 20h20L12 4z"></path></svg></span></a></div></div></li></ol></nav><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></header></div><div class="jss2"><div class="MuiContainer-root jss182 MuiContainer-maxWidthMd" role="main"><div class="MuiGrid-root MuiGrid-container MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 7.77L18.39 18H5.61L12 7.77M12 4L2 20h20L12 4z"></path></svg><h1 class="MuiTypography-root MuiTypography-h3">Lærerveiledning - Python: Bilder</h1></div><p class="MuiTypography-root jss183 MuiTypography-body1">Skrevet av:<!-- --> <span>Stein Olav Romslo</span></p><div class="jss294"><div>Kurs:<!-- --> <!-- -->Microbit</div><div>Tema: Elektronikk, Tekstbasert</div><div>Fag: Programmering</div><div>Klassetrinn: 5.-7. klasse, 8.-10. klasse, Videregående skole</div></div><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss295 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="/microbit/python_images/python_images_nb"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg></span>Til oppgave</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss296 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://pdf-ace.com/pdfme?print_media=1"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg></span>Last ned PDF</span></a><div class="jss297"><section class="activity"> <h1 class="activity">Om oppgaven</h1> <p>I denne oppgaven skal elevene få ulike bilder til å vises på micro:bit-skjermen.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Oppgaven passer til:</h2> <p><strong>Fag</strong>: Programmering</p> <p><strong>Anbefalte trinn</strong>: 5. trinn - VG3</p> <p><strong>Tema</strong>: Programmering.</p> <p><strong>Tidsbruk</strong>: Dobbelttime</p> </section> <section class="challenge"> <h2 class="challenge">Kompetansemål</h2> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_0"><label for="cbx_0"> <strong>Programmering, 10. trinn:</strong> bruke flere programmeringsspråk der minst ett er tekstbasert</label></li> </ul> </section> <section class="challenge"> <h2 class="challenge">Forslag til læringsmål</h2> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_1"><label for="cbx_1"> Elevene kan bruke kode til å vise bilder på skjermen.</label></li> </ul> </section> <section class="challenge"> <h2 class="challenge">Forslag til vurderingskriterier</h2> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_2"><label for="cbx_2"> Oppgaven er grunnleggende, og kan ikke brukes alene for vurdering av kompetansemålet.</label></li> </ul> </section> <section class="challenge"> <h2 class="challenge">Forutsetninger og utstyr</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_3"><label for="cbx_3"> <strong>Forutsetninger</strong>: Oppgaven er en introduksjon til micro:bit, og krever ingen forkunnskaper eller erfaring.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_4"><label for="cbx_4"> <strong>Utstyr</strong>: Datamaskin med tilgang til Internett, micro:bit og micro-usb-kabel.</label></p> </li> </ul> </section> <section> <h2>Fremgangsmåte</h2> <p>Her kommer tips, erfaring og utfordringer til de ulike stegene i den faktiske oppgaven. <a href="../python_images/python_images_nb.html" target="_blank">Klikk her for å se oppgaveteksten.</a></p> <p><em>Vi har dessverre ikke noen tips, erfaringer eller utfordringer tilknyttet denne oppgaven enda.</em></p> </section> <section class="challenge"> <h2 class="challenge">Variasjoner</h2> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_5"><label for="cbx_5"> Prøv å lage animasjoner ved å bruke ulike lysstyrker og koordinater.</label></li> </ul> </section> <section class="challenge"> <h2 class="challenge">Eksterne ressurser</h2> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_6"><label for="cbx_6"> Foreløpig ingen eksterne ressurser...</label></li> </ul> </section> </section> </div><p class="MuiTypography-root jss183 MuiTypography-body1">Lisens: <!-- --> <span><a href="https://github.com/bbcmicrobit/micropython/blob/master/LICENSE">The MIT License (MIT)</a></span></p><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><div class="MuiPaper-root jss298 MuiPaper-elevation1 MuiPaper-rounded"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><h2 class="MuiTypography-root MuiTypography-h4">Forbedre denne siden</h2></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Funnet en feil? Kunne noe vært bedre?</p></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!</p></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss299 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Microbit: Python images&#x27;&amp;body=Oppgave: https://oppgaver.kidsakoder.no/microbit/python_images/README%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/microbit/python_images/README.md%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Rapporter et problem</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss299 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></span>Gå til forumet</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss299 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/tree/master/src/microbit/python_images/README.md" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Vis koden og fiks selv</span></a></div></div></div></div></div></div><div class="MuiGrid-root jss300 MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.sparebank1.no" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/smn.098a83.jpg" alt="SpareBank1"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://ibok.no/" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/ibok.06cd44.jpg" alt="Ibok"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.teknograd.no/" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/teknograd.03c75e.png" alt="Teknograd"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.tekna.no/" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/tekna.41a4f5.jpg" alt="Tekna"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.ntnu.edu/idi/" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/ntnu_idi.5179a4.png" alt="NTNU institutt for datateknologi og informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.ntnu.edu/web/excited" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/excITEd.915706.png" alt="excited"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.mn.uio.no/ifi/" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/uio_ifi.37ef13.png" alt="UIO institutt for informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.samsung.com/no/innovation/" target="_blank" rel="noopener"><img class="jss301" src="/CCV-assets/samsung.bec12f.png" alt="Samsung"/></a></div></div>
+  <div id="app"><div class="jss8"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://kidsakoder.no"><img class="jss9" alt="LKK logo" src="/CCV-assets/lkk_logo_black.a76309.png"/></a><div class="jss57"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss12 MuiTypography-colorPrimary" href="https://kidsakoder.no/om-lkk">Om Lær Kidsa Koding</a><div class="MuiPaper-root MuiPaper-elevation1 jss11 MuiPaper-rounded"><ul class="MuiList-root MuiList-padding"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" href="https://kidsakoder.no/kontakt">Kontakt</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" href="https://www.kidsakoder.no/om-lkk/personvern-i-laer-kidsa-koding-og-kodeklubben">Personvern i Lær Kidsa Koding og Kodeklubben</a></ul></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/nyheter">Nyheter</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="/">Oppgaver</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://forum.kidsakoder.no">Forum</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodeklubben">Kodeklubber</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/skole">Skole</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodetimen">Kodetimen</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/bidra">Bidra?</a></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionSticky jss3 MuiAppBar-colorSecondary"><div class="jss4"><nav class="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"><ol class="MuiBreadcrumbs-ol"><li class="MuiBreadcrumbs-li"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" aria-label="Hjem" href="/"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></a></li><li aria-hidden="true" class="jss140 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div><div class="jss51"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/microbit"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeSmall"><img height="16" src="/_/oppgaver/src/microbit/logo-black.f1dcc4.png" alt="general.picture"/></span>Micro:bit</span></a></div><div class="jss53"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/microbit"><span class="MuiIconButton-label"><img height="22" src="/_/oppgaver/src/microbit/logo-black.f1dcc4.png" alt="general.picture"/></span></a></div></div></li><li aria-hidden="true" class="jss140 MuiBreadcrumbs-separator"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></li><li class="MuiBreadcrumbs-li"><div><div class="jss51"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/microbit/python_images/README"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeSmall"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 7.77L18.39 18H5.61L12 7.77M12 4L2 20h20L12 4z"></path></svg></span>Lærerveiledning - Python: Bilder</span></a></div><div class="jss53"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" href="/microbit/python_images/README"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 7.77L18.39 18H5.61L12 7.77M12 4L2 20h20L12 4z"></path></svg></span></a></div></div></li></ol></nav><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="Meny"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></header><div class="jss2"><div class="MuiContainer-root jss181 MuiContainer-maxWidthMd" role="main"><div class="MuiGrid-root MuiGrid-container MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 7.77L18.39 18H5.61L12 7.77M12 4L2 20h20L12 4z"></path></svg><h1 class="MuiTypography-root MuiTypography-h3">Lærerveiledning - Python: Bilder</h1></div><p class="MuiTypography-root jss182 MuiTypography-body1">Skrevet av:<!-- --> <span>Stein Olav Romslo</span></p><div class="jss293"><div>Kurs:<!-- --> <!-- -->Microbit</div><div>Tema: Elektronikk, Tekstbasert</div><div>Fag: Programmering</div><div>Klassetrinn: 5.-7. klasse, 8.-10. klasse, Videregående skole</div></div><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss294 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="/microbit/python_images/python_images_nb"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg></span>Til oppgave</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss295 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://pdf-ace.com/pdfme?print_media=1"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg></span>Last ned PDF</span></a><div class="jss296"><section class="activity"> <h1 class="activity">Om oppgaven</h1> <p>I denne oppgaven skal elevene få ulike bilder til å vises på micro:bit-skjermen.</p> <section class="check"> <h2 class="check"><img src="/CCV-assets/check.15ac74.svg" alt="check">Oppgaven passer til:</h2> <p><strong>Fag</strong>: Programmering</p> <p><strong>Anbefalte trinn</strong>: 5. trinn - VG3</p> <p><strong>Tema</strong>: Programmering.</p> <p><strong>Tidsbruk</strong>: Dobbelttime</p> </section> <section class="challenge"> <h2 class="challenge">Kompetansemål</h2> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_0"><label for="cbx_0"> <strong>Programmering, 10. trinn:</strong> bruke flere programmeringsspråk der minst ett er tekstbasert</label></li> </ul> </section> <section class="challenge"> <h2 class="challenge">Forslag til læringsmål</h2> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_1"><label for="cbx_1"> Elevene kan bruke kode til å vise bilder på skjermen.</label></li> </ul> </section> <section class="challenge"> <h2 class="challenge">Forslag til vurderingskriterier</h2> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_2"><label for="cbx_2"> Oppgaven er grunnleggende, og kan ikke brukes alene for vurdering av kompetansemålet.</label></li> </ul> </section> <section class="challenge"> <h2 class="challenge">Forutsetninger og utstyr</h2> <ul class="task-list"> <li class="task-list-item"> <p><input type="checkbox" id="cbx_3"><label for="cbx_3"> <strong>Forutsetninger</strong>: Oppgaven er en introduksjon til micro:bit, og krever ingen forkunnskaper eller erfaring.</label></p> </li> <li class="task-list-item"> <p><input type="checkbox" id="cbx_4"><label for="cbx_4"> <strong>Utstyr</strong>: Datamaskin med tilgang til Internett, micro:bit og micro-usb-kabel.</label></p> </li> </ul> </section> <section> <h2>Fremgangsmåte</h2> <p>Her kommer tips, erfaring og utfordringer til de ulike stegene i den faktiske oppgaven. <a href="../python_images/python_images_nb.html" target="_blank">Klikk her for å se oppgaveteksten.</a></p> <p><em>Vi har dessverre ikke noen tips, erfaringer eller utfordringer tilknyttet denne oppgaven enda.</em></p> </section> <section class="challenge"> <h2 class="challenge">Variasjoner</h2> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_5"><label for="cbx_5"> Prøv å lage animasjoner ved å bruke ulike lysstyrker og koordinater.</label></li> </ul> </section> <section class="challenge"> <h2 class="challenge">Eksterne ressurser</h2> <ul class="task-list"> <li class="task-list-item"><input type="checkbox" id="cbx_6"><label for="cbx_6"> Foreløpig ingen eksterne ressurser...</label></li> </ul> </section> </section> </div><p class="MuiTypography-root jss182 MuiTypography-body1">Lisens: <!-- --> <span><a href="https://github.com/bbcmicrobit/micropython/blob/master/LICENSE">The MIT License (MIT)</a></span></p><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><div class="MuiPaper-root jss297 MuiPaper-elevation1 MuiPaper-rounded"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-column MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item"><h2 class="MuiTypography-root MuiTypography-h4">Forbedre denne siden</h2></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Funnet en feil? Kunne noe vært bedre?</p></div><div class="MuiGrid-root MuiGrid-item"><p class="MuiTypography-root MuiTypography-body1">Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!</p></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss298 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/issues/new/?title=Problem med &#x27;Microbit: Python images&#x27;&amp;body=Oppgave: https://oppgaver.kidsakoder.no/microbit/python_images/README%0AOppgavens kildekode: https://github.com/kodeklubben/oppgaver/tree/master/src/microbit/python_images/README.md%0A%0ABeskriv ditt problem her. Ta gjerne med operativsystem, nettleser og eventuell kode du har skrevet.%0A" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Rapporter et problem</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss298 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://forum.kidsakoder.no/c/oppgaver" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></span>Gå til forumet</span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss298 MuiButton-outlinedPrimary" tabindex="0" role="button" aria-disabled="false" href="https://github.com/kodeklubben/oppgaver/tree/master/src/microbit/python_images/README.md" target="_blank" rel="noopener"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span>Vis koden og fiks selv</span></a></div></div></div></div></div></div><div class="MuiGrid-root jss299 MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.sparebank1.no" target="_blank" rel="noopener"><img class="jss300" src="/CCV-assets/smn.098a83.jpg" alt="SpareBank1"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://ibok.no/" target="_blank" rel="noopener"><img class="jss300" src="/CCV-assets/ibok.06cd44.jpg" alt="Ibok"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.teknograd.no/" target="_blank" rel="noopener"><img class="jss300" src="/CCV-assets/teknograd.03c75e.png" alt="Teknograd"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.tekna.no/" target="_blank" rel="noopener"><img class="jss300" src="/CCV-assets/tekna.41a4f5.jpg" alt="Tekna"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.ntnu.edu/idi/" target="_blank" rel="noopener"><img class="jss300" src="/CCV-assets/ntnu_idi.5179a4.png" alt="NTNU institutt for datateknologi og informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.ntnu.edu/web/excited" target="_blank" rel="noopener"><img class="jss300" src="/CCV-assets/excITEd.915706.png" alt="excited"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.mn.uio.no/ifi/" target="_blank" rel="noopener"><img class="jss300" src="/CCV-assets/uio_ifi.37ef13.png" alt="UIO institutt for informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.samsung.com/no/innovation/" target="_blank" rel="noopener"><img class="jss300" src="/CCV-assets/samsung.bec12f.png" alt="Samsung"/></a></div></div>
   
   <script src="/sw.js" async></script>  
-  <script src="/main.844f32.js" async></script>  
+  <script src="/main.cf69d1.js" async></script>  
 </body>
 </html>

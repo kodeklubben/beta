@@ -228,21 +228,96 @@ body::backdrop {
 .MuiList-subheader {
   padding-top: 0;
 }
-.MuiTypography-root {
-  margin: 0;
+@media (min-width:0px) and (max-width:599.95px) {
+  .jss49 {
+    display: none;
+  }
 }
-.MuiTypography-body2 {
-  font-size: 1rem;
-  font-family: Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  line-height: 1.43;
+@media (min-width:0px) {
+  .jss50 {
+    display: none;
+  }
 }
-.MuiTypography-body1 {
-  font-size: 1.0714285714285714rem;
-  font-family: Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
+@media (max-width:599.95px) {
+  .jss51 {
+    display: none;
+  }
 }
+@media (min-width:600px) and (max-width:959.95px) {
+  .jss52 {
+    display: none;
+  }
+}
+@media (min-width:600px) {
+  .jss53 {
+    display: none;
+  }
+}
+@media (max-width:959.95px) {
+  .jss54 {
+    display: none;
+  }
+}
+@media (min-width:960px) and (max-width:1279.95px) {
+  .jss55 {
+    display: none;
+  }
+}
+@media (min-width:960px) {
+  .jss56 {
+    display: none;
+  }
+}
+@media (max-width:1279.95px) {
+  .jss57 {
+    display: none;
+  }
+}
+@media (min-width:1280px) and (max-width:1919.95px) {
+  .jss58 {
+    display: none;
+  }
+}
+@media (min-width:1280px) {
+  .jss59 {
+    display: none;
+  }
+}
+@media (max-width:1919.95px) {
+  .jss60 {
+    display: none;
+  }
+}
+@media (min-width:1920px) {
+  .jss61 {
+    display: none;
+  }
+}
+@media (min-width:1920px) {
+  .jss62 {
+    display: none;
+  }
+}
+@media (min-width:0px) {
+  .jss63 {
+    display: none;
+  }
+}
+  .MuiTypography-root {
+    margin: 0;
+  }
+  .MuiTypography-body2 {
+    font-size: 1rem;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+  }
+  .MuiTypography-body1 {
+    font-size: 1.0714285714285714rem;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  }
 @media (min-width:600px) {
   .MuiTypography-body1 {
     font-size: 1.1667rem;
@@ -484,6 +559,39 @@ body::backdrop {
   .MuiTypography-displayBlock {
     display: block;
   }
+  .MuiLink-underlineNone {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover:hover {
+    text-decoration: underline;
+  }
+  .MuiLink-underlineAlways {
+    text-decoration: underline;
+  }
+  .MuiLink-button {
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiLink-button::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiLink-button.Mui-focusVisible {
+    outline: auto;
+  }
   .MuiButtonBase-root {
     color: inherit;
     border: 0;
@@ -510,6 +618,60 @@ body::backdrop {
   .MuiButtonBase-root.Mui-disabled {
     cursor: default;
     pointer-events: none;
+  }
+  .MuiListItem-root {
+    width: 100%;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    text-align: left;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: flex-start;
+    text-decoration: none;
+  }
+  .MuiListItem-root.Mui-focusVisible {
+    background-color: rgba(0, 0, 0, 0.14);
+  }
+  .MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
+    background-color: rgba(0, 0, 0, 0.14);
+  }
+  .MuiListItem-root.Mui-disabled {
+    opacity: 0.5;
+  }
+  .MuiListItem-container {
+    position: relative;
+  }
+  .MuiListItem-dense {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .MuiListItem-alignItemsFlexStart {
+    align-items: flex-start;
+  }
+  .MuiListItem-divider {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    background-clip: padding-box;
+  }
+  .MuiListItem-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .MuiListItem-button {
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .MuiListItem-button:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+@media (hover: none) {
+  .MuiListItem-button:hover {
+    background-color: transparent;
+  }
+}
+  .MuiListItem-secondaryAction {
+    padding-right: 48px;
   }
   .MuiIconButton-root {
     flex: 0 0 auto;
@@ -614,93 +776,6 @@ body::backdrop {
   .MuiSvgIcon-fontSizeLarge {
     font-size: 2.5rem;
   }
-  .MuiListItem-root {
-    width: 100%;
-    display: flex;
-    position: relative;
-    box-sizing: border-box;
-    text-align: left;
-    align-items: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    justify-content: flex-start;
-    text-decoration: none;
-  }
-  .MuiListItem-root.Mui-focusVisible {
-    background-color: rgba(0, 0, 0, 0.14);
-  }
-  .MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
-    background-color: rgba(0, 0, 0, 0.14);
-  }
-  .MuiListItem-root.Mui-disabled {
-    opacity: 0.5;
-  }
-  .MuiListItem-container {
-    position: relative;
-  }
-  .MuiListItem-dense {
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-  .MuiListItem-alignItemsFlexStart {
-    align-items: flex-start;
-  }
-  .MuiListItem-divider {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-    background-clip: padding-box;
-  }
-  .MuiListItem-gutters {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .MuiListItem-button {
-    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  }
-  .MuiListItem-button:hover {
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.08);
-  }
-@media (hover: none) {
-  .MuiListItem-button:hover {
-    background-color: transparent;
-  }
-}
-  .MuiListItem-secondaryAction {
-    padding-right: 48px;
-  }
-  .MuiLink-underlineNone {
-    text-decoration: none;
-  }
-  .MuiLink-underlineHover {
-    text-decoration: none;
-  }
-  .MuiLink-underlineHover:hover {
-    text-decoration: underline;
-  }
-  .MuiLink-underlineAlways {
-    text-decoration: underline;
-  }
-  .MuiLink-button {
-    border: 0;
-    cursor: pointer;
-    margin: 0;
-    outline: 0;
-    padding: 0;
-    position: relative;
-    user-select: none;
-    border-radius: 0;
-    vertical-align: middle;
-    -moz-appearance: none;
-    background-color: transparent;
-    -webkit-appearance: none;
-    -webkit-tap-highlight-color: transparent;
-  }
-  .MuiLink-button::-moz-focus-inner {
-    border-style: none;
-  }
-  .MuiLink-button.Mui-focusVisible {
-    outline: auto;
-  }
   .MuiBreadcrumbs-ol {
     margin: 0;
     display: flex;
@@ -711,94 +786,16 @@ body::backdrop {
   .MuiBreadcrumbs-li {
     list-style: none;
   }
-@media (min-width:0px) and (max-width:599.95px) {
-  .jss50 {
-    display: none;
-  }
-}
-@media (min-width:0px) {
-  .jss51 {
-    display: none;
-  }
-}
-@media (max-width:599.95px) {
-  .jss52 {
-    display: none;
-  }
-}
-@media (min-width:600px) and (max-width:959.95px) {
-  .jss53 {
-    display: none;
-  }
-}
-@media (min-width:600px) {
-  .jss54 {
-    display: none;
-  }
-}
-@media (max-width:959.95px) {
-  .jss55 {
-    display: none;
-  }
-}
-@media (min-width:960px) and (max-width:1279.95px) {
-  .jss56 {
-    display: none;
-  }
-}
-@media (min-width:960px) {
-  .jss57 {
-    display: none;
-  }
-}
-@media (max-width:1279.95px) {
-  .jss58 {
-    display: none;
-  }
-}
-@media (min-width:1280px) and (max-width:1919.95px) {
-  .jss59 {
-    display: none;
-  }
-}
-@media (min-width:1280px) {
-  .jss60 {
-    display: none;
-  }
-}
-@media (max-width:1919.95px) {
-  .jss61 {
-    display: none;
-  }
-}
-@media (min-width:1920px) {
-  .jss62 {
-    display: none;
-  }
-}
-@media (min-width:1920px) {
-  .jss63 {
-    display: none;
-  }
-}
-@media (min-width:0px) {
-  .jss64 {
-    display: none;
-  }
-}
-  .jss7 {
+  .jss8 {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .jss8 {
+  .jss9 {
     width: 250px;
     height: auto;
     max-width: 100%;
     margin-left: 16px;
-    margin-right: 16px;
-  }
-  .jss9 {
     margin-right: 16px;
   }
   .jss10 {
@@ -822,10 +819,6 @@ body::backdrop {
   .jss12:hover + .jss11 {
     display: block;
   }
-  .jss13 {
-    display: flex;
-    justify-content: flex-end;
-  }
 @media print {
   .jss3 {
     display: none;
@@ -842,6 +835,9 @@ body::backdrop {
   .jss6 {
     display: flex;
     justify-content: flex-end;
+  }
+  .jss7 {
+    margin-bottom: 40px;
   }
   .MuiGrid-container {
     width: 100%;
@@ -1341,16 +1337,16 @@ body::backdrop {
     flex-basis: 100%;
   }
 }
-  .jss264 {
+  .jss263 {
     margin-top: 40px;
     background-color: #dcedc8;
   }
 @media print {
-  .jss264 {
+  .jss263 {
     display: none;
   }
 }
-  .jss265 {
+  .jss264 {
     width: auto;
     height: 50px;
     margin: 20px 7px 10px;
@@ -1429,13 +1425,13 @@ body::backdrop {
     max-width: 1920px;
   }
 }
-  .jss153 {
+  .jss152 {
     margin-top: 80px;
   }</style></head>
 <body>
-  <div id="app"><div><div class="jss7"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://kidsakoder.no"><img class="jss8" alt="LKK logo" src="/CCV-assets/lkk_logo_black.a76309.png"/></a><div class="jss58"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss12 MuiTypography-colorPrimary" href="https://kidsakoder.no/om-lkk">Om Lær Kidsa Koding</a><div class="MuiPaper-root MuiPaper-elevation1 jss11 MuiPaper-rounded"><ul class="MuiList-root MuiList-padding"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" href="https://kidsakoder.no/kontakt">Kontakt</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" href="https://www.kidsakoder.no/om-lkk/personvern-i-laer-kidsa-koding-og-kodeklubben">Personvern i Lær Kidsa Koding og Kodeklubben</a></ul></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/nyheter">Nyheter</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="/">Oppgaver</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://forum.kidsakoder.no">Forum</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodeklubben">Kodeklubber</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/skole">Skole</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodetimen">Kodetimen</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/bidra">Bidra?</a></div><div class="jss60"><button class="MuiButtonBase-root MuiIconButton-root jss9 MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionSticky jss3 MuiAppBar-colorSecondary"><div class="jss4"><nav class="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"><ol class="MuiBreadcrumbs-ol"><li class="MuiBreadcrumbs-li"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" aria-label="Hjem" href="/"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></a></li></ol></nav><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></header></div><div class="jss2"><div class="MuiContainer-root MuiContainer-maxWidthLg" role="main"><div class="MuiGrid-root jss153 MuiGrid-container MuiGrid-direction-xs-column MuiGrid-align-items-xs-center"><h4 class="MuiTypography-root MuiTypography-h4">Beklager</h4><p class="MuiTypography-root MuiTypography-body1">Vi finner ikke siden du leter etter.</p><a class="MuiTypography-root MuiTypography-body1" href="/">Til forsiden</a></div></div></div><div class="MuiGrid-root jss264 MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.sparebank1.no" target="_blank" rel="noopener"><img class="jss265" src="/CCV-assets/smn.098a83.jpg" alt="SpareBank1"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://ibok.no/" target="_blank" rel="noopener"><img class="jss265" src="/CCV-assets/ibok.06cd44.jpg" alt="Ibok"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.teknograd.no/" target="_blank" rel="noopener"><img class="jss265" src="/CCV-assets/teknograd.03c75e.png" alt="Teknograd"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.tekna.no/" target="_blank" rel="noopener"><img class="jss265" src="/CCV-assets/tekna.41a4f5.jpg" alt="Tekna"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.ntnu.edu/idi/" target="_blank" rel="noopener"><img class="jss265" src="/CCV-assets/ntnu_idi.5179a4.png" alt="NTNU institutt for datateknologi og informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.ntnu.edu/web/excited" target="_blank" rel="noopener"><img class="jss265" src="/CCV-assets/excITEd.915706.png" alt="excited"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.mn.uio.no/ifi/" target="_blank" rel="noopener"><img class="jss265" src="/CCV-assets/uio_ifi.37ef13.png" alt="UIO institutt for informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.samsung.com/no/innovation/" target="_blank" rel="noopener"><img class="jss265" src="/CCV-assets/samsung.bec12f.png" alt="Samsung"/></a></div></div>
+  <div id="app"><div class="jss8"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://kidsakoder.no"><img class="jss9" alt="LKK logo" src="/CCV-assets/lkk_logo_black.a76309.png"/></a><div class="jss57"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss12 MuiTypography-colorPrimary" href="https://kidsakoder.no/om-lkk">Om Lær Kidsa Koding</a><div class="MuiPaper-root MuiPaper-elevation1 jss11 MuiPaper-rounded"><ul class="MuiList-root MuiList-padding"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" href="https://kidsakoder.no/kontakt">Kontakt</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" href="https://www.kidsakoder.no/om-lkk/personvern-i-laer-kidsa-koding-og-kodeklubben">Personvern i Lær Kidsa Koding og Kodeklubben</a></ul></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/nyheter">Nyheter</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="/">Oppgaver</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://forum.kidsakoder.no">Forum</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodeklubben">Kodeklubber</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/skole">Skole</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/kodetimen">Kodetimen</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss10 MuiTypography-colorPrimary" href="https://kidsakoder.no/bidra">Bidra?</a></div></div><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionSticky jss3 MuiAppBar-colorSecondary"><div class="jss4"><nav class="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"><ol class="MuiBreadcrumbs-ol"><li class="MuiBreadcrumbs-li"><a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" role="button" aria-disabled="false" aria-label="Hjem" href="/"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></a></li></ol></nav><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" type="button" aria-label="Meny"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-colorPrimary" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></header><div class="jss2"><div class="MuiContainer-root MuiContainer-maxWidthLg" role="main"><div class="MuiGrid-root jss152 MuiGrid-container MuiGrid-direction-xs-column MuiGrid-align-items-xs-center"><h4 class="MuiTypography-root MuiTypography-h4">Beklager</h4><p class="MuiTypography-root MuiTypography-body1">Vi finner ikke siden du leter etter.</p><a class="MuiTypography-root MuiTypography-body1" href="/">Til forsiden</a></div></div></div><div class="MuiGrid-root jss263 MuiGrid-container MuiGrid-justify-xs-center"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.sparebank1.no" target="_blank" rel="noopener"><img class="jss264" src="/CCV-assets/smn.098a83.jpg" alt="SpareBank1"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://ibok.no/" target="_blank" rel="noopener"><img class="jss264" src="/CCV-assets/ibok.06cd44.jpg" alt="Ibok"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.teknograd.no/" target="_blank" rel="noopener"><img class="jss264" src="/CCV-assets/teknograd.03c75e.png" alt="Teknograd"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.tekna.no/" target="_blank" rel="noopener"><img class="jss264" src="/CCV-assets/tekna.41a4f5.jpg" alt="Tekna"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.ntnu.edu/idi/" target="_blank" rel="noopener"><img class="jss264" src="/CCV-assets/ntnu_idi.5179a4.png" alt="NTNU institutt for datateknologi og informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.ntnu.edu/web/excited" target="_blank" rel="noopener"><img class="jss264" src="/CCV-assets/excITEd.915706.png" alt="excited"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="http://www.mn.uio.no/ifi/" target="_blank" rel="noopener"><img class="jss264" src="/CCV-assets/uio_ifi.37ef13.png" alt="UIO institutt for informatikk"/></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="https://www.samsung.com/no/innovation/" target="_blank" rel="noopener"><img class="jss264" src="/CCV-assets/samsung.bec12f.png" alt="Samsung"/></a></div></div>
   
   <script src="/sw.js" async></script>  
-  <script src="/main.844f32.js" async></script>  
+  <script src="/main.cf69d1.js" async></script>  
 </body>
 </html>
